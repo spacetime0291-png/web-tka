@@ -1,0 +1,414 @@
+{
+  "curriculum_version": "Matematika Wajib - Kurikulum Nasional & Matriks Asesmen",
+  "source_document": "matriks matwa.pdf",
+  "audit_target": "Zero-Omission & Sub-Chapter Audit",
+  "modules": [
+    {
+      "module_id": "MOD-1",
+      "module_name": "Bilangan",
+      "sub_chapters": [
+        {
+          "sub_chapter_id": "1.1",
+          "title": "Bilangan Real & Eksponen",
+          "matrix_references": [
+            "MAT-BIL-01",
+            "MAT-BIL-03"
+          ],
+          "competencies": [
+            "Memahami jenis, klasifikasi, dan sifat bilangan real (bulat, rasional, irasional, real)",
+            "Bilangan asli berpangkat bilangan bulat (eksponen positif, nol, negatif) dan sifat-sifat eksponen",
+            "Bilangan berpangkat pecahan (rasional) dan konversi bentuk pangkat ke akar"
+          ],
+          "constraints": [
+            "Bilangan meliputi bilangan real, termasuk bilangan asli berpangkat bilangan bulat atau pecahan"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "1.2",
+          "title": "Bentuk Akar & Logaritma Dasar",
+          "matrix_references": [
+            "MAT-BIL-01",
+            "MAT-BIL-03"
+          ],
+          "competencies": [
+            "Operasi aljabar bentuk akar (penjumlahan, pengurangan, perkalian, pembagian)",
+            "Merasionalkan penyebut pecahan bentuk akar (akar tunggal, sekawan binomial)",
+            "Penyederhanaan dan representasi pangkat pecahan dalam bentuk akar"
+          ],
+          "constraints": [
+            "Karakteristik bilangan irasional dan batasan nilai di bawah tanda akar (non-negatif untuk indeks genap)"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "1.3",
+          "title": "Operasi Bilangan & Sifat Hitung",
+          "matrix_references": [
+            "MAT-BIL-02"
+          ],
+          "competencies": [
+            "Operasi hitung bilangan (penjumlahan, pengurangan, perkalian, pembagian, gabungan)",
+            "Sifat-sifat operasi hitung: komutatif, asosiatif, distributif",
+            "Aplikasi perhitungan daya/energi kontekstual dan estimasi aljabar"
+          ],
+          "constraints": [
+            "Operasi gabungan dengan urutan preseden (order of operations/PEMDAS) dan aplikasi kontekstual riil"
+          ],
+          "audit_status": "LENGKAP"
+        }
+      ]
+    },
+    {
+      "module_id": "MOD-2",
+      "module_name": "Aljabar",
+      "sub_chapters": [
+        {
+          "sub_chapter_id": "2.1",
+          "title": "SPLDV & SPLTV (Sistem Persamaan Linear Multi-variabel)",
+          "matrix_references": [
+            "MAT-ALJ-01"
+          ],
+          "competencies": [
+            "Sistem Persamaan Linear Dua Variabel (SPLDV) dan metode penyelesaian (substitusi, eliminasi, gabungan, grafik, determinan Cramer)",
+            "Sistem Persamaan Linear Tiga Variabel (SPLTV) dan pemodelan matematis masalah kontekstual",
+            "Analisis jenis himpunan penyelesaian (tepat satu solusi, tak hingga banyak solusi/dependen, tidak memiliki solusi/inkonsisten)"
+          ],
+          "constraints": [
+            "Maksimum banyaknya variabel yang digunakan tiga (maks 3 variabel)"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "2.2",
+          "title": "SPtLDV & Program Linear (DHP & Nilai Optimum)",
+          "matrix_references": [
+            "MAT-ALJ-02",
+            "MAT-ALJ-03"
+          ],
+          "competencies": [
+            "Sistem Pertidaksamaan Linear Dua Variabel (SPtLDV) dan representasi Daerah Himpunan Penyelesaian (DHP)",
+            "Garis selidik dan uji titik pojok (corner point method) untuk menentukan nilai maksimum dan minimum",
+            "Model matematika permasalahan kontekstual pengusaha/industri dan fungsi objektif z = ax + by"
+          ],
+          "constraints": [
+            "Uji titik pojok pada poligon pembatas DHP, kendala non-negatif x >= 0, y >= 0"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "2.3",
+          "title": "Fungsi Linear, Kuadrat & Rasional",
+          "matrix_references": [
+            "MAT-ALJ-04"
+          ],
+          "competencies": [
+            "Domain (daerah asal), kodomain (daerah kawan), dan range (daerah hasil) fungsi",
+            "Fungsi Linear: gradien, persamaan garis, grafik",
+            "Fungsi Kuadrat: titik puncak, sumbu simetri, diskriminan, definit positif/negatif, grafik parabola",
+            "Fungsi Rasional: asimtot tegak, asimtot datar, domain asimtotik, grafik hiperbola"
+          ],
+          "constraints": [
+            "Identifikasi fungsi meliputi secara analitis dan grafis"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "2.4",
+          "title": "Komposisi & Invers Fungsi",
+          "matrix_references": [
+            "MAT-ALJ-05",
+            "MAT-ALJ-06"
+          ],
+          "competencies": [
+            "Operasi aljabar fungsi dan fungsi komposisi (f o g)(x), (g o f)(x), serta sifat-sifatnya",
+            "Invers fungsi f^-1(x), syarat fungsi memiliki invers (fungsi bijektif / one-to-one & onto)",
+            "Invers dari fungsi komposisi (f o g)^-1 = g^-1 o f^-1 dan evaluasi nilai fungsi invers secara analitis & grafis"
+          ],
+          "constraints": [
+            "Identifikasi secara analitis dan grafis (refleksi terhadap garis y = x)"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "2.5",
+          "title": "Barisan & Deret Aritmetika",
+          "matrix_references": [
+            "MAT-ALJ-07"
+          ],
+          "competencies": [
+            "Pola bilangan dan definisi barisan aritmetika (suku pertama a, beda b)",
+            "Rumus suku ke-n (Un) dan suku tengah (Ut)",
+            "Deret aritmetika (Sn), sisipan suku barisan aritmetika, dan aplikasi masalah kontekstual"
+          ],
+          "constraints": [
+            "Penerapan dalam masalah kontekstual nyata dan pola bertingkat"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "2.6",
+          "title": "Barisan & Deret Geometri, Finansial & Biologi",
+          "matrix_references": [
+            "MAT-ALJ-08",
+            "MAT-ALJ-09"
+          ],
+          "competencies": [
+            "Barisan geometri (rasio r, suku pertama a, Un = ar^{n-1})",
+            "Deret geometri berhingga (Sn) dan deret geometri tak hingga konvergen (S_inf = a/(1-r))",
+            "Aplikasi pertumbuhan (biologi/bakteri/populasi: Mt = M0(1+r)^t atau M0 * k^t)",
+            "Aplikasi peluruhan (radioaktif/penyusutan harga: Mt = M0(1-r)^t)",
+            "Aplikasi finansial: Bunga Tunggal (B = M*i*t, Mt = M(1+i*t)) dan Bunga Majemuk (Mt = M(1+i)^t)"
+          ],
+          "constraints": [
+            "Penerapan barisan dan deret termasuk masalah pertumbuhan, peluruhan, bunga tunggal, dan bunga majemuk secara eksplisit"
+          ],
+          "audit_status": "LENGKAP"
+        }
+      ]
+    },
+    {
+      "module_id": "MOD-3",
+      "module_name": "Geometri & Pengukuran",
+      "sub_chapters": [
+        {
+          "sub_chapter_id": "3.1",
+          "title": "Sudut, Garis & Bidang",
+          "matrix_references": [
+            "MAT-GEO-01",
+            "MAT-GEO-02"
+          ],
+          "competencies": [
+            "Hubungan dua garis: sejajar, berpotongan, bersilangan, berimpit",
+            "Hubungan sudut: berpelurus (suplemen), berpenyiku (komplemen), bertolak belakang, sehadap, berseberangan (dalam/luar), sepihak",
+            "Kedudukan garis terhadap bidang dan kedudukan dua bidang (sejajar, berpotongan)"
+          ],
+          "constraints": [
+            "Aksioma kedudukan titik, garis, dan bidang pada ruang Euclid"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "3.2",
+          "title": "Kesebangunan & Kekongruenan Bangun Datar",
+          "matrix_references": [
+            "MAT-GEO-03"
+          ],
+          "competencies": [
+            "Syarat kesebangunan bangun datar (sudut-sudut bersesuaian sama besar, perbandingan sisi-sisi bersesuaian senilai)",
+            "Syarat kekongruenan bangun datar (sisi-sisi dan sudut-sudut bersesuaian sama besar: SSS, SAS, ASA, AAS, RHS)",
+            "Penerapan kesebangunan pada segitiga, trapesium, dan masalah bayangan/pengukuran tidak langsung"
+          ],
+          "constraints": [
+            "Kekongruenan dan kesebangunan segitiga dan segi empat"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "3.3",
+          "title": "Dimensi Tiga & Jarak Dua Objek Geometri",
+          "matrix_references": [
+            "MAT-GEO-04",
+            "MAT-GEO-05",
+            "MAT-GEO-06"
+          ],
+          "competencies": [
+            "Bangun ruang tiga dimensi (kubus, balok, prisma, limas)",
+            "Teorema Pythagoras dan tripel Pythagoras dalam ruang 3D",
+            "Jarak dua titik, jarak titik ke garis, jarak titik ke bidang",
+            "Jarak dua garis sejajar/bersilangan, jarak garis ke bidang, jarak dua bidang sejajar"
+          ],
+          "constraints": [
+            "Meliputi jarak dua titik, dua garis, dua bidang, titik-garis, dan titik-bidang"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "3.4",
+          "title": "Keliling & Luas Bangun Datar (Segitiga, Segi Empat, Lingkaran & Gabungan)",
+          "matrix_references": [
+            "MAT-GEO-07"
+          ],
+          "competencies": [
+            "Keliling dan luas segitiga (aturan sinus luas, rumus Heron, L = 1/2*a*t)",
+            "Keliling dan luas segi empat (persegi, persegi panjang, jajar genjang, belah ketupat, layang-layang, trapesium)",
+            "Keliling, luas lingkaran, panjang busur, luas juring, luas tembereng",
+            "Bangun datar gabungan dari segitiga dan lingkaran"
+          ],
+          "constraints": [
+            "Bangun datar meliputi segitiga, segi empat, lingkaran, dan gabungan segitiga dan lingkaran"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "3.5",
+          "title": "Volume, Luas Permukaan Sisi Datar/Lengkung & Jaring-jaring",
+          "matrix_references": [
+            "MAT-GEO-08",
+            "MAT-GEO-09"
+          ],
+          "competencies": [
+            "Bangun ruang sisi datar beraturan: kubus, balok, prisma, limas (luas permukaan dan volume)",
+            "Bangun ruang sisi lengkung beraturan: tabung (silinder), kerucut, bola (luas permukaan dan volume)",
+            "Jaring-jaring bangun ruang (kubus, balok, prisma, limas, tabung, kerucut) dan bangun ruang majemuk/gabungan"
+          ],
+          "constraints": [
+            "Bangun ruang beraturan sisi datar dan sisi lengkung serta jaring-jaring bangun ruang"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "3.6",
+          "title": "Transformasi Geometri Titik",
+          "matrix_references": [
+            "MAT-GEO-10"
+          ],
+          "competencies": [
+            "Translasi titik T(a, b): (x', y') = (x+a, y+b)",
+            "Refleksi titik terhadap sumbu X, sumbu Y, garis y=x, garis y=-x, titik asal O(0,0), garis x=h, garis y=k",
+            "Rotasi titik R(P, theta) terhadap pusat O(0,0) dan P(a,b) sebesar sudut theta (90, 180, 270)",
+            "Dilatasi titik [P, k] terhadap pusat O(0,0) dan P(a,b) dengan faktor skala k",
+            "Komposisi transformasi geometri titik menggunakan matriks transformasi"
+          ],
+          "constraints": [
+            "Transformasi geometri (translasi, refleksi, rotasi, dilatasi, serta komposisinya) dari titik"
+          ],
+          "audit_status": "LENGKAP"
+        }
+      ]
+    },
+    {
+      "module_id": "MOD-4",
+      "module_name": "Trigonometri",
+      "sub_chapters": [
+        {
+          "sub_chapter_id": "4.1",
+          "title": "Perbandingan Sisi Segitiga Siku-siku",
+          "matrix_references": [
+            "MAT-TRI-01"
+          ],
+          "competencies": [
+            "Definisi dasar perbandingan trigonometri segitiga siku-siku: sinus (depan/miring), kosinus (samping/miring), tangen (depan/samping)",
+            "Definisi kebalikan trigonometri: kosekan (1/sin), sekan (1/cos), kotangen (1/tan)",
+            "Identitas dasar trigonometri: sin^2(x) + cos^2(x) = 1, 1 + tan^2(x) = sec^2(x), 1 + cot^2(x) = csc^2(x)"
+          ],
+          "constraints": [
+            "Mencakup seluruh 6 perbandingan trigonometri: sinus, kosinus, tangen, kotangen, sekan, kosekan"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "4.2",
+          "title": "Sudut Istimewa & Kuadran II Sudut Tumpul",
+          "matrix_references": [
+            "MAT-TRI-02",
+            "MAT-TRI-03"
+          ],
+          "competencies": [
+            "Nilai perbandingan trigonometri sudut-sudut istimewa (0, 30, 45, 60, 90 derajat)",
+            "Trigonometri di empat kuadran (tanda rasio: All-Sin-Tan-Cos)",
+            "Karakteristik sudut tumpul di Kuadran II (90 < alpha <= 180 derajat): sin(180-alpha) = sin alpha, cos(180-alpha) = -cos alpha, tan(180-alpha) = -tan alpha",
+            "Sudut berelasi Kuadran I, II, III, IV, dan sudut negatif"
+          ],
+          "constraints": [
+            "Eksplisit mencakup sudut tumpul kuadran II dan sudut berelasi"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "4.3",
+          "title": "Aplikasi Nyata Sudut Elevasi & Depresi",
+          "matrix_references": [
+            "MAT-TRI-04"
+          ],
+          "competencies": [
+            "Pengertian sudut elevasi (melihat ke atas) dan sudut depresi (melihat ke bawah)",
+            "Pemodelan matematis pengukuran tinggi pohon, gedung, menara, tiang bendera",
+            "Aturan Sinus dan Aturan Cosinus pada segitiga sembarang untuk pengukuran jarak tidak langsung"
+          ],
+          "constraints": [
+            "Aplikasi kontekstual lapangan nyata dan pemecahan masalah tinggi/jarak"
+          ],
+          "audit_status": "LENGKAP"
+        }
+      ]
+    },
+    {
+      "module_id": "MOD-5",
+      "module_name": "Data & Peluang",
+      "sub_chapters": [
+        {
+          "sub_chapter_id": "5.1",
+          "title": "Visualisasi Data Diagram & Grafik",
+          "matrix_references": [
+            "MAT-DAT-01"
+          ],
+          "competencies": [
+            "Penyajian data tabel frekuensi tunggal dan berkelompok",
+            "Diagram batang (bar chart), diagram garis (line chart), diagram lingkaran (pie chart/derajat/persen)",
+            "Histogram, poligon frekuensi, dan ogive (kumulatif positif/negatif)",
+            "Interpretasi data kontekstual: membaca informasi tersembunyi, tren, data hilang"
+          ],
+          "constraints": [
+            "Diagram batang, garis, lingkaran, grafik, tabel, dan bentuk visual"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "5.2",
+          "title": "Ukuran Pemusatan & Penyebaran Tunggal/Kelompok",
+          "matrix_references": [
+            "MAT-DAT-02",
+            "MAT-DAT-03"
+          ],
+          "competencies": [
+            "Ukuran Pemusatan Data Tunggal & Kelompok: Mean (rata-rata hitung), Median (nilai tengah kuartil tengah Q2), Modus (nilai paling sering muncul)",
+            "Ukuran Letak Data: Kuartil bawah (Q1), Kuartil tengah (Q2), Kuartil atas (Q3), Desil, Persentil",
+            "Ukuran Penyebaran Data Tunggal & Kelompok: Jangkauan (Range), Jangkauan Interkuartil (Hamparan H = Q3 - Q1), Simpangan Kuartil (Qd = 1/2 H), Simpangan Rata-rata (SR), Ragam/Varians (s^2), Simpangan Baku/Standar Deviasi (s)"
+          ],
+          "constraints": [
+            "Mencakup data tunggal dan data kelompok secara komprehensif"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "5.3",
+          "title": "Aturan Perkalian & Pencacahan",
+          "matrix_references": [
+            "MAT-DAT-04"
+          ],
+          "competencies": [
+            "Aturan Penjumlahan dan Aturan Perkalian (Fundamental Counting Principle / Kaidah Pengisian Tempat / Filling Slots)",
+            "Notasi Faktorial (n!) dan sifat-sifatnya",
+            "Permutasi: permutasi unsur berbeda, permutasi unsur yang sama, permutasi siklis",
+            "Kombinasi: pemilihan tanpa memperhatikan urutan, ekspansi binomial Newton"
+          ],
+          "constraints": [
+            "Aturan pencacahan kontekstual, pembedaan ketat permutasi vs kombinasi"
+          ],
+          "audit_status": "LENGKAP"
+        },
+        {
+          "sub_chapter_id": "5.4",
+          "title": "Peluang Tunggal & Majemuk",
+          "matrix_references": [
+            "MAT-DAT-05",
+            "MAT-DAT-06"
+          ],
+          "competencies": [
+            "Ruang sampel S, titik sampel, frekuensi relatif, peluang kejadian tunggal P(A) = n(A)/n(S), frekuensi harapan Fh = n * P(A)",
+            "Peluang komplemen kejadian P(A') = 1 - P(A)",
+            "Peluang kejadian majemuk saling lepas: P(A U B) = P(A) + P(B)",
+            "Peluang kejadian majemuk tidak saling lepas: P(A U B) = P(A) + P(B) - P(A n B)",
+            "Peluang kejadian saling bebas: P(A n B) = P(A) * P(B)",
+            "Peluang kejadian bersyarat: P(A | B) = P(A n B) / P(B)"
+          ],
+          "constraints": [
+            "Peluang tunggal dan majemuk kontekstual nyata (tabel kontinjensi, pengambilan bola, probabilitas hotel/kamar)"
+          ],
+          "audit_status": "LENGKAP"
+        }
+      ]
+    }
+  ]
+}
