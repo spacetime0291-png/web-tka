@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matematika Wajib SMA - Modul Interaktif & Drilling Soal 100% Silabus</title>
+  <title>Matematika Wajib SMA - Modul Belajar & Drilling Interaktif 100% Silabus</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,6 +15,7 @@
             brand: {
               50: '#eff6ff',
               100: '#dbeafe',
+              200: '#bfdbfe',
               500: '#3b82f6',
               600: '#2563eb',
               700: '#1d4ed8',
@@ -55,21 +56,21 @@
         </div>
         <div>
           <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-tight">Matematika Wajib SMA</h1>
-          <p class="text-xs text-slate-500 font-medium">Modul Interaktif & Bank 46 Soal Analitis</p>
+          <p class="text-xs text-slate-500 font-medium">Modul Interaktif, Rangkuman, Variasi Soal & Bank 46 Soal</p>
         </div>
       </div>
 
-      <!-- Navigation Tabs & Score Summary -->
+      <!-- Main Navigation Tabs & Score Summary -->
       <div class="flex items-center space-x-2 sm:space-x-4">
         <div class="hidden sm:flex bg-slate-100 p-1 rounded-xl">
           <button id="tabMateri" onclick="switchTab('materi')" class="px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 bg-white text-brand-700 shadow-xs">
-            <i class="fa-solid fa-book-open mr-1.5"></i> Materi Lengkap
+            <i class="fa-solid fa-book-open mr-1.5"></i> Materi Belajar
           </button>
           <button id="tabDrilling" onclick="switchTab('drilling')" class="px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900">
             <i class="fa-solid fa-pen-to-square mr-1.5"></i> Drilling Soal (46)
           </button>
           <button id="tabAudit" onclick="switchTab('audit')" class="px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900">
-            <i class="fa-solid fa-clipboard-check mr-1.5"></i> Audit Matriks
+            <i class="fa-solid fa-clipboard-check mr-1.5"></i> Audit Matriks Silabus
           </button>
         </div>
 
@@ -83,9 +84,9 @@
 
     <!-- Mobile Tab Row -->
     <div class="sm:hidden flex border-t border-slate-200 bg-slate-50 px-2 py-1 justify-around text-xs font-semibold">
-      <button onclick="switchTab('materi')" id="mobileTabMateri" class="py-1 px-3 text-brand-700 border-b-2 border-brand-600">Materi</button>
-      <button onclick="switchTab('drilling')" id="mobileTabDrilling" class="py-1 px-3 text-slate-600">Drilling</button>
-      <button onclick="switchTab('audit')" id="mobileTabAudit" class="py-1 px-3 text-slate-600">Audit</button>
+      <button onclick="switchTab('materi')" id="mobileTabMateri" class="py-1 px-3 text-brand-700 border-b-2 border-brand-600 font-bold">Materi</button>
+      <button onclick="switchTab('drilling')" id="mobileTabDrilling" class="py-1 px-3 text-slate-600">Drilling (46)</button>
+      <button onclick="switchTab('audit')" id="mobileTabAudit" class="py-1 px-3 text-slate-600">Audit Matriks</button>
     </div>
   </header>
 
@@ -103,8 +104,16 @@
       <div class="p-3 border-b border-slate-100">
         <div class="relative">
           <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-xs text-slate-400"></i>
-          <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="Cari materi atau topik..." class="w-full bg-slate-100 text-xs pl-8 pr-3 py-2 rounded-lg border-none focus:outline-brand-500 focus:bg-white transition-all">
+          <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="Cari materi, rumus, topik..." class="w-full bg-slate-100 text-xs pl-8 pr-3 py-2 rounded-lg border-none focus:outline-brand-500 focus:bg-white transition-all">
         </div>
+      </div>
+
+      <!-- Tombol Kembali ke Katalog Semua Materi -->
+      <div class="px-3 pt-3">
+        <button onclick="showCatalogView()" class="w-full py-2 px-3 rounded-xl text-xs font-bold bg-slate-100 hover:bg-brand-50 hover:text-brand-700 text-slate-700 flex items-center justify-center space-x-2 transition-all">
+          <i class="fa-solid fa-grid-2 mr-1"></i>
+          <span>Katalog Semua Materi</span>
+        </button>
       </div>
 
       <!-- Module & Sub-chapter List -->
@@ -114,8 +123,8 @@
 
       <!-- Curriculum Audit Badge in Sidebar Footer -->
       <div class="p-3 bg-slate-50 border-t border-slate-200 text-xs text-slate-600 flex items-center justify-between">
-        <span class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Audit Silabus 100%</span>
-        <span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-bold">20/20</span>
+        <span class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5"></i> Silabus 100% Lengkap</span>
+        <span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-bold">22 Sub-bab</span>
       </div>
     </aside>
 
@@ -125,108 +134,262 @@
     <!-- Main Content Area -->
     <main class="flex-1 min-w-0">
 
-      <!-- View 1: Materi Lengkap View -->
+      <!-- ================= VIEW 1: TAB MATERI ================= -->
       <section id="viewMateri" class="space-y-6">
-        <!-- Sub-chapter Header Banner -->
-        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs">
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-            <div class="flex items-center gap-2">
-              <span id="materiModuleBadge" class="bg-brand-50 text-brand-700 border border-brand-200 text-xs font-bold px-2.5 py-1 rounded-md">MOD-1</span>
-              <span id="materiSubIdBadge" class="bg-slate-100 text-slate-700 text-xs font-semibold px-2 py-1 rounded-md">Sub-bab 1.1</span>
-            </div>
-            <span class="inline-flex items-center text-xs font-medium text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-              <i class="fa-solid fa-shield-check mr-1.5"></i> Terverifikasi Matriks Asesmen
-            </span>
-          </div>
-          <h2 id="materiTitle" class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">Bilangan Real & Eksponen</h2>
-          <p id="materiSubtitle" class="text-xs sm:text-sm text-slate-500 mt-1">Definisi formal, penurunan rumus KaTeX, batasan kasus, contoh riil, dan trik cepat.</p>
-        </div>
 
-        <!-- 5 Mandatory Section Tabs / Accordions -->
-        <div class="space-y-4">
-          <!-- 1. Teori & Definisi -->
-          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-            <div class="bg-slate-50/80 px-5 py-3 border-b border-slate-200 flex items-center justify-between cursor-pointer" onclick="toggleSection('secTeori')">
-              <div class="flex items-center space-x-2.5">
-                <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs">1</span>
-                <h3 class="font-bold text-slate-800 text-sm sm:text-base">Teori Dasar & Definisi Formal</h3>
-              </div>
-              <i id="iconSecTeori" class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
+        <!-- 1A: KATALOG LIST MATERI (CARD LIST VIEW) -->
+        <div id="materiCatalogView" class="space-y-6">
+          <!-- Catalog Banner & Stats -->
+          <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-indigo-900 rounded-2xl p-6 sm:p-8 text-white shadow-sm relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+              <span class="inline-flex items-center text-xs font-bold bg-white/20 px-3 py-1 rounded-full mb-3 backdrop-blur-xs">
+                <i class="fa-solid fa-graduation-cap mr-1.5"></i> Kurikulum Matematika Wajib SMA
+              </span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Katalog Modul Pembelajaran</h2>
+              <p class="text-xs sm:text-sm text-blue-100 mt-2 leading-relaxed">
+                Pilih topik materi di bawah untuk mengakses <strong>Materi Lengkap</strong>, <strong>Rangkuman Padat</strong>, <strong>Contoh Variasi Soal</strong>, dan <strong>Latihan Soal Interaktif</strong>.
+              </p>
             </div>
-            <div id="secTeori" class="p-5 text-sm markdown-body"></div>
+            <div class="hidden sm:block absolute right-6 bottom-4 opacity-15 text-8xl font-black">
+              $\sum$
+            </div>
           </div>
 
-          <!-- 2. Rumus KaTeX -->
-          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs formula-box">
-            <div class="bg-indigo-50/50 px-5 py-3 border-b border-indigo-100 flex items-center justify-between cursor-pointer" onclick="toggleSection('secRumus')">
-              <div class="flex items-center space-x-2.5">
-                <span class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs">2</span>
-                <h3 class="font-bold text-indigo-950 text-sm sm:text-base">Penurunan & Daftar Rumus Lengkap (KaTeX)</h3>
-              </div>
-              <i id="iconSecRumus" class="fa-solid fa-chevron-up text-xs text-indigo-400"></i>
-            </div>
-            <div id="secRumus" class="p-5 text-sm markdown-body"></div>
+          <!-- Modul Filter Pills -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="catalogFilterPills">
+            <button onclick="filterCatalogByModule('ALL')" id="pill_ALL" class="catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-brand-600 text-white shadow-xs">
+              Semua (22 Materi)
+            </button>
+            <button onclick="filterCatalogByModule('MOD-1')" id="pill_MOD-1" class="catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">
+              Bilangan
+            </button>
+            <button onclick="filterCatalogByModule('MOD-2')" id="pill_MOD-2" class="catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">
+              Aljabar
+            </button>
+            <button onclick="filterCatalogByModule('MOD-3')" id="pill_MOD-3" class="catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">
+              Geometri & Pengukuran
+            </button>
+            <button onclick="filterCatalogByModule('MOD-4')" id="pill_MOD-4" class="catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">
+              Trigonometri
+            </button>
+            <button onclick="filterCatalogByModule('MOD-5')" id="pill_MOD-5" class="catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">
+              Data & Peluang
+            </button>
           </div>
 
-          <!-- 3. Karakteristik & Batasan Kasus -->
-          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs constraint-box">
-            <div class="bg-amber-50/60 px-5 py-3 border-b border-amber-100 flex items-center justify-between cursor-pointer" onclick="toggleSection('secBatasan')">
-              <div class="flex items-center space-x-2.5">
-                <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs">3</span>
-                <h3 class="font-bold text-amber-950 text-sm sm:text-base">Karakteristik, Sifat & Batasan Kasus Khusus</h3>
-              </div>
-              <i id="iconSecBatasan" class="fa-solid fa-chevron-up text-xs text-amber-400"></i>
-            </div>
-            <div id="secBatasan" class="p-5 text-sm markdown-body"></div>
-          </div>
-
-          <!-- 4. Contoh Kasus Riil & Kontekstual -->
-          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-            <div class="bg-slate-50/80 px-5 py-3 border-b border-slate-200 flex items-center justify-between cursor-pointer" onclick="toggleSection('secContoh')">
-              <div class="flex items-center space-x-2.5">
-                <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs">4</span>
-                <h3 class="font-bold text-slate-800 text-sm sm:text-base">Contoh Kasus Riil & Kontekstual Lengkap</h3>
-              </div>
-              <i id="iconSecContoh" class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
-            </div>
-            <div id="secContoh" class="p-5 text-sm markdown-body"></div>
-          </div>
-
-          <!-- 5. Trik Cepat Analisis -->
-          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs trick-box">
-            <div class="bg-sky-50/60 px-5 py-3 border-b border-sky-100 flex items-center justify-between cursor-pointer" onclick="toggleSection('secTrik')">
-              <div class="flex items-center space-x-2.5">
-                <span class="w-7 h-7 rounded-lg bg-sky-200 text-sky-800 flex items-center justify-center font-bold text-xs"><i class="fa-solid fa-bolt"></i></span>
-                <h3 class="font-bold text-sky-950 text-sm sm:text-base">Trik Analisis Cepat (Fast Analytical Shortcuts)</h3>
-              </div>
-              <i id="iconSecTrik" class="fa-solid fa-chevron-up text-xs text-sky-400"></i>
-            </div>
-            <div id="secTrik" class="p-5 text-sm markdown-body"></div>
+          <!-- Grid Daftar Card Materi -->
+          <div id="materiCardGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+            <!-- Injected via JavaScript -->
           </div>
         </div>
 
-        <!-- Action Button: Jump to Drilling of this Subchapter -->
-        <div class="flex justify-end pt-2">
-          <button onclick="jumpToDrillingCurrentSub()" class="inline-flex items-center px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm rounded-xl shadow-sm transition-all duration-150">
-            Latihan Soal Sub-bab Ini <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-          </button>
+        <!-- 1B: TAMPILAN DETAIL MATERI (DENGAN 4 PILIHAN TAB) -->
+        <div id="materiDetailView" class="hidden space-y-6">
+          <!-- Navigation Bar (Back + Breadcrumb + Prev/Next) -->
+          <div class="flex items-center justify-between bg-white rounded-xl p-3 sm:px-4 border border-slate-200/80 shadow-xs">
+            <button onclick="showCatalogView()" class="inline-flex items-center text-xs font-bold text-brand-700 hover:text-brand-900 bg-brand-50 hover:bg-brand-100 px-3 py-1.5 rounded-lg transition-all">
+              <i class="fa-solid fa-arrow-left mr-1.5"></i> Kembali ke Katalog
+            </button>
+            <div id="detailBreadcrumb" class="hidden sm:flex items-center space-x-1.5 text-xs text-slate-500 font-medium">
+              <span>Modul</span>
+              <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+              <span id="bcSubId" class="font-bold text-slate-800">1.1</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <button id="btnPrevSub" onclick="navigateSubChapter(-1)" class="p-1.5 text-xs text-slate-600 hover:bg-slate-100 rounded-lg" title="Sub-bab Sebelumnya">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button id="btnNextSub" onclick="navigateSubChapter(1)" class="p-1.5 text-xs text-slate-600 hover:bg-slate-100 rounded-lg" title="Sub-bab Berikutnya">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sub-chapter Title Banner -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span id="detailModuleBadge" class="bg-brand-50 text-brand-700 border border-brand-200 text-xs font-bold px-2.5 py-1 rounded-md">MOD-1 Bilangan</span>
+                <span id="detailSubIdBadge" class="bg-slate-100 text-slate-700 text-xs font-mono font-semibold px-2 py-1 rounded-md">Sub-bab 1.1</span>
+              </div>
+              <span class="inline-flex items-center text-xs font-medium text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                <i class="fa-solid fa-shield-check mr-1.5"></i> Silabus Matriks 100% Terverifikasi
+              </span>
+            </div>
+            <h2 id="detailShortTitle" class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">Eksponen & Pangkat</h2>
+            <p id="detailFullTitle" class="text-xs sm:text-sm text-slate-500 mt-0.5">Bilangan Real & Eksponen</p>
+            
+            <!-- Sub-topics Pills -->
+            <div id="detailSubTopicsList" class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-slate-100">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- 4 PILIHAN TAB SUB-BAB: Materi | Rangkuman | Variasi Soal | Latihan Soal -->
+          <div class="bg-white rounded-2xl border border-slate-200/80 p-2 shadow-xs">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 bg-slate-100 p-1.5 rounded-xl text-xs font-bold text-center">
+              <button id="subTabBtn_materi" onclick="switchSubDetailTab('materi')" class="sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 bg-white text-brand-700 shadow-xs flex items-center justify-center space-x-1.5">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Materi Lengkap</span>
+              </button>
+              <button id="subTabBtn_rangkuman" onclick="switchSubDetailTab('rangkuman')" class="sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Rangkuman</span>
+              </button>
+              <button id="subTabBtn_variasi" onclick="switchSubDetailTab('variasi')" class="sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Contoh Variasi Soal</span>
+              </button>
+              <button id="subTabBtn_latihan" onclick="switchSubDetailTab('latihan')" class="sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5">
+                <i class="fa-solid fa-pen-clip"></i>
+                <span>Latihan Soal (<span id="detailLatihanCount">0</span>)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- SUB-PANE 1: MATERI LENGKAP -->
+          <div id="subPane_materi" class="space-y-4">
+            <!-- 1. Teori & Definisi -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+              <div class="bg-slate-50/80 px-5 py-3 border-b border-slate-200 flex items-center justify-between cursor-pointer" onclick="toggleSection('secTeori')">
+                <div class="flex items-center space-x-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs">1</span>
+                  <h3 class="font-bold text-slate-800 text-sm sm:text-base">Teori Dasar & Definisi Terstruktur</h3>
+                </div>
+                <i id="iconSecTeori" class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
+              </div>
+              <div id="secTeori" class="p-5 text-sm markdown-body"></div>
+            </div>
+
+            <!-- 2. Rumus KaTeX -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs formula-box">
+              <div class="bg-indigo-50/50 px-5 py-3 border-b border-indigo-100 flex items-center justify-between cursor-pointer" onclick="toggleSection('secRumus')">
+                <div class="flex items-center space-x-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs">2</span>
+                  <h3 class="font-bold text-indigo-950 text-sm sm:text-base">Tabel & Penurunan Rumus Lengkap (KaTeX)</h3>
+                </div>
+                <i id="iconSecRumus" class="fa-solid fa-chevron-up text-xs text-indigo-400"></i>
+              </div>
+              <div id="secRumus" class="p-5 text-sm markdown-body"></div>
+            </div>
+
+            <!-- 3. Karakteristik & Batasan Kasus -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs constraint-box">
+              <div class="bg-amber-50/60 px-5 py-3 border-b border-amber-100 flex items-center justify-between cursor-pointer" onclick="toggleSection('secBatasan')">
+                <div class="flex items-center space-x-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs">3</span>
+                  <h3 class="font-bold text-amber-950 text-sm sm:text-base">Karakteristik, Sifat & Batasan Kasus Khusus</h3>
+                </div>
+                <i id="iconSecBatasan" class="fa-solid fa-chevron-up text-xs text-amber-400"></i>
+              </div>
+              <div id="secBatasan" class="p-5 text-sm markdown-body"></div>
+            </div>
+
+            <!-- 4. Contoh Kasus Riil & Kontekstual -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+              <div class="bg-slate-50/80 px-5 py-3 border-b border-slate-200 flex items-center justify-between cursor-pointer" onclick="toggleSection('secContoh')">
+                <div class="flex items-center space-x-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs">4</span>
+                  <h3 class="font-bold text-slate-800 text-sm sm:text-base">Contoh Kasus Riil & Kontekstual Lengkap</h3>
+                </div>
+                <i id="iconSecContoh" class="fa-solid fa-chevron-up text-xs text-slate-400"></i>
+              </div>
+              <div id="secContoh" class="p-5 text-sm markdown-body"></div>
+            </div>
+
+            <!-- 5. Trik Cepat Analisis -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs trick-box">
+              <div class="bg-sky-50/60 px-5 py-3 border-b border-sky-100 flex items-center justify-between cursor-pointer" onclick="toggleSection('secTrik')">
+                <div class="flex items-center space-x-2.5">
+                  <span class="w-7 h-7 rounded-lg bg-sky-200 text-sky-800 flex items-center justify-center font-bold text-xs"><i class="fa-solid fa-bolt"></i></span>
+                  <h3 class="font-bold text-sky-950 text-sm sm:text-base">Trik Analisis Cepat (Fast Analytical Shortcuts)</h3>
+                </div>
+                <i id="iconSecTrik" class="fa-solid fa-chevron-up text-xs text-sky-400"></i>
+              </div>
+              <div id="secTrik" class="p-5 text-sm markdown-body"></div>
+            </div>
+          </div>
+
+          <!-- SUB-PANE 2: RANGKUMAN (CHEAT SHEET PADAT) -->
+          <div id="subPane_rangkuman" class="hidden space-y-4">
+            <div class="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-xs">
+              <div class="flex items-center space-x-3 mb-4 pb-3 border-b border-slate-100">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-lg font-bold">
+                  <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Rangkuman Materi & Formula Kunci</h3>
+                  <p class="text-xs text-slate-500">Format ringkas padat berisi prinsip emas, cheatsheet rumus, dan hal wajib ingat.</p>
+                </div>
+              </div>
+              <div id="detailRangkumanBody" class="text-sm markdown-body">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- SUB-PANE 3: CONTOH VARIASI SOAL -->
+          <div id="subPane_variasi" class="hidden space-y-4">
+            <div class="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs">
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center text-lg font-bold">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div>
+                  <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Variasi Tipe Soal Materi Ini</h3>
+                  <p class="text-xs text-slate-500">Pelajari berbagai pola bentuk soal, konsep kunci penyelesaian, dan langkah terstruktur KaTeX.</p>
+                </div>
+              </div>
+              
+              <!-- Container Cards Variasi Soal -->
+              <div id="detailVariasiList" class="space-y-5">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- SUB-PANE 4: LATIHAN SOAL INTERAKTIF KHUSUS SUB-BAB INI -->
+          <div id="subPane_latihan" class="hidden space-y-4">
+            <div class="bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs">
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-pen-clip"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Drilling Latihan Soal Sub-bab Ini</h3>
+                    <p class="text-xs text-slate-500">Kerjakan langsung soal latihan, periksa jawaban, dan pelajari pembahasan lengkapnya.</p>
+                  </div>
+                </div>
+                <button onclick="resetSubDrillingAnswers()" class="text-xs font-semibold text-rose-600 hover:text-rose-700 bg-rose-50 px-3 py-1.5 rounded-lg border border-rose-200">
+                  <i class="fa-solid fa-rotate-left mr-1"></i> Reset Jawaban Sub-bab
+                </button>
+              </div>
+
+              <!-- List Soal Sub-bab Ini -->
+              <div id="detailSubQuestionsContainer" class="space-y-6">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <!-- View 2: Drilling Soal Interaktif View -->
+      <!-- ================= VIEW 2: DRILLING SEMUA 46 SOAL ================= -->
       <section id="viewDrilling" class="hidden space-y-6">
         <!-- Drilling Header & Filter Toolbar -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex flex-wrap items-center justify-between gap-4">
           <div>
-            <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">Drilling Soal Interaktif Matematika Wajib</h2>
-            <p class="text-xs text-slate-500 mt-0.5">Semua 46 Soal Asli Kurikulum Lengkap dengan Penjelasan KaTeX Langkah demi Langkah.</p>
+            <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">Bank 46 Soal Analitis & Drilling Interaktif</h2>
+            <p class="text-xs text-slate-500 mt-0.5">Seluruh 46 Soal Kurikulum Lengkap dengan Validasi Interaktif dan Pembahasan Langkah KaTeX.</p>
           </div>
           <div class="flex items-center gap-3">
             <select id="filterSubChapterSelect" onchange="filterQuestionsBySub(this.value)" class="text-xs font-semibold bg-slate-100 border border-slate-200 rounded-lg px-3 py-2 text-slate-700 focus:outline-brand-500">
               <option value="ALL">Semua Soal (46 Soal)</option>
             </select>
             <button onclick="resetAllDrillingAnswers()" class="text-xs font-semibold text-rose-600 hover:text-rose-700 bg-rose-50 px-3 py-2 rounded-lg border border-rose-200">
-              <i class="fa-solid fa-rotate-left mr-1"></i> Reset
+              <i class="fa-solid fa-rotate-left mr-1"></i> Reset Semua
             </button>
           </div>
         </div>
@@ -237,35 +400,39 @@
         </div>
       </section>
 
-      <!-- View 3: Audit Kurikulum & Matriks View -->
+      <!-- ================= VIEW 3: AUDIT KURIKULUM & MATRIKS ================= -->
       <section id="viewAudit" class="hidden space-y-6">
+        <!-- Banner Header Audit -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs">
-          <div class="flex items-center justify-between mb-2">
-            <h2 class="text-xl font-extrabold text-slate-900 tracking-tight">Audit Checklist Kurikulum & Asesmen</h2>
-            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full border border-emerald-300">
-              100% LENGKAP TANPA RESIDU
-            </span>
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+            <div>
+              <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full border border-emerald-300">
+                <i class="fa-solid fa-circle-check mr-1 text-emerald-600"></i> STATUS 100% LENGKAP TANPA RESIDU
+              </span>
+              <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight mt-2">Audit Kurikulum & Penjabaran Sub-Materi Detail</h2>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="toggleAllAuditDetails()" id="btnToggleAllAudit" class="text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-xl transition-all">
+                <i class="fa-solid fa-arrows-up-down mr-1.5"></i> Buka / Tutup Semua Detail
+              </button>
+            </div>
           </div>
-          <p class="text-xs sm:text-sm text-slate-600">Cross-check resmi terhadap seluruh baris kompetensi, materi, dan batasan pada <code class="bg-slate-100 px-1.5 py-0.5 rounded text-slate-800">matriks matwa.pdf</code>.</p>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            Penjabaran komprehensif seluruh <strong>Bab</strong>, <strong>Sub-bab</strong>, <strong>Rincian Sub-Materi Detail</strong>, serta batasan asesmen resmi dari <code class="bg-slate-100 px-1.5 py-0.5 rounded text-slate-800 font-mono">matriks matwa.pdf</code>.
+          </p>
+
+          <!-- Audit Quick Search -->
+          <div class="mt-4 pt-4 border-t border-slate-100">
+            <div class="relative max-w-md">
+              <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-xs text-slate-400"></i>
+              <input type="text" id="auditSearchInput" oninput="filterAuditList(this.value)" placeholder="Filter audit berdasarkan bab, sub-bab, atau kata kunci..." class="w-full bg-slate-50 text-xs pl-8 pr-3 py-2 rounded-xl border border-slate-200 focus:outline-brand-500 focus:bg-white transition-all">
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-slate-200 text-xs sm:text-sm">
-              <thead class="bg-slate-50">
-                <tr>
-                  <th class="px-4 py-3 text-left font-bold text-slate-700">Kode</th>
-                  <th class="px-4 py-3 text-left font-bold text-slate-700">Modul & Sub-bab</th>
-                  <th class="px-4 py-3 text-left font-bold text-slate-700">Parameter Kompetensi & Batasan</th>
-                  <th class="px-4 py-3 text-center font-bold text-slate-700">Soal Terkait</th>
-                  <th class="px-4 py-3 text-center font-bold text-slate-700">Status Audit</th>
-                </tr>
-              </thead>
-              <tbody id="auditTableBody" class="divide-y divide-slate-100 text-slate-600">
-                <!-- Injected via JavaScript -->
-              </tbody>
-            </table>
-          </div>
+        <!-- Hierarchical Audit Cards Container -->
+        <div id="auditListContainer" class="space-y-5">
+          <!-- Injected via JavaScript -->
         </div>
       </section>
 
@@ -275,8 +442,8 @@
   <!-- Footer -->
   <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
-      <p class="font-medium text-slate-700">Aplikasi Modul & Drilling Interaktif Matematika Wajib SMA</p>
-      <p class="mt-1">Dirancang dengan Cakupan 100% Zero-Omission berbasis <span class="font-semibold text-slate-600">matriks matwa.pdf</span> dan Bank Soal 46 Butir <span class="font-semibold text-slate-600">soal matwa.pdf</span>.</p>
+      <p class="font-medium text-slate-700">Aplikasi Modul Belajar & Drilling Interaktif Matematika Wajib SMA</p>
+      <p class="mt-1">Cakupan 100% Zero-Omission: Materi Terstruktur, Rangkuman Padat, Variasi Soal, dan Bank Soal 46 Butir.</p>
     </div>
   </footer>
 

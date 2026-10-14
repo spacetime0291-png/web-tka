@@ -124,14 +124,44 @@ code, pre {
   border-left: 4px solid #f59e0b;
 }
 
-/* Smooth Transitions */
+/* Smooth Transitions & Cards */
 .nav-item {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.question-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.question-card, .catalog-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
-.question-card:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+.question-card:hover, .catalog-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+.catalog-card:hover {
+  transform: translateY(-2px);
+  border-color: #93c5fd;
+}
+
+/* Sub-topic Pill */
+.sub-topic-pill {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Variasi Soal Card */
+.variasi-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+.variasi-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
