@@ -1,1199 +1,910 @@
-// Interactive Learning & Drilling Engine for Matematika Wajib SMA
+/**
+ * TKA Physics & Advanced Mathematics Drilling Lab
+ * Anti-AI Tactile Neo-Brutalist Academic Web Application
+ */
 
-let currentSubId = "1.1";
-let activeTab = "materi";
-let activeSubDetailTab = "materi";
-let catalogFilterMod = "ALL";
-let userAnswers = {}; // { questionId: answer }
-let submittedQuestions = {}; // { questionId: { isCorrect: boolean, feedback: string } }
-let filterSub = "ALL";
-let isAuditAllExpanded = true;
+// 1. DATA BANK: 4 Realistic High-Difficulty TKA Questions (UTBK-STEI Grade)
+const questionsData = [
+  {
+    id: 1,
+    subject: "FISIKA",
+    category: "Dinamika Rotasi & Torsi",
+    difficulty: "HOTS / Setara UTBK-STEI",
+    statement: `Sebuah silinder pejal homogen bermassa $M = 2\\text{ kg}$ dan jari-jari $R = 20\\text{ cm}$ dapat berputar bebas tanpa gesekan terhadap poros horizontal tetap yang melalui pusat massanya (momen inersia $I = \\frac{1}{2}MR^2$). Dua buah balok bermassa $m_1 = 3\\text{ kg}$ dan $m_2 = 1\\text{ kg}$ dihubungkan oleh seutas tali ringan tak elastis yang melilit katrol tersebut tanpa selip. Jika sistem dilepaskan dari keadaan diam dan percepatan gravitasi $g = 10\\text{ m/s}^2$, tentukan percepatan sudut putaran katrol $(\\alpha)$ serta besar selisih tegangan tali pada kedua sisi katrol $(T_1 - T_2)$!`,
+    hasDiagram: true,
+    diagramSvg: `
+      <svg class="diagram-svg" viewBox="0 0 360 270" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <!-- Blueprint Grid Ceiling Bracket -->
+        <line x1="80" y1="25" x2="280" y2="25" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+        <line x1="100" y1="25" x2="115" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="130" y1="25" x2="145" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="160" y1="25" x2="175" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="190" y1="25" x2="205" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="220" y1="25" x2="235" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="250" y1="25" x2="265" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
+        
+        <!-- Pulley Mounting Hanger -->
+        <polygon points="175,25 185,25 182,75 178,75" fill="#38BDF8" opacity="0.4"/>
+        <line x1="180" y1="25" x2="180" y2="75" stroke="#38BDF8" stroke-width="2"/>
+        
+        <!-- Pulley Disk -->
+        <circle cx="180" cy="75" r="50" fill="#0A192F" stroke="#38BDF8" stroke-width="2.5"/>
+        <circle cx="180" cy="75" r="44" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+        <circle cx="180" cy="75" r="7" fill="#38BDF8"/>
+        
+        <!-- Radius & Label -->
+        <line x1="180" y1="75" x2="225" y2="50" stroke="#FACC15" stroke-width="1.5" stroke-dasharray="2 2"/>
+        <text x="205" y="55" fill="#FACC15" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">R=20cm</text>
+        <text x="145" y="98" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11">M=2kg</text>
+        
+        <!-- Rotation Alpha Vector Arrow -->
+        <path d="M 160 40 A 30 30 0 0 0 145 75" fill="none" stroke="#FF5A26" stroke-width="2" marker-end="url(#arrow-orange)"/>
+        <text x="130" y="50" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">α</text>
+        
+        <!-- Left Rope & Mass m1 -->
+        <line x1="130" y1="75" x2="130" y2="160" stroke="#E0F2FE" stroke-width="2.5"/>
+        <!-- Mass 1 Box -->
+        <rect x="108" y="160" width="44" height="44" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+        <text x="116" y="186" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">m₁=3kg</text>
+        
+        <!-- Forces on m1 -->
+        <line x1="130" y1="160" x2="130" y2="130" stroke="#22C55E" stroke-width="2"/>
+        <polygon points="127,133 130,125 133,133" fill="#22C55E"/>
+        <text x="136" y="138" fill="#22C55E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">T₁</text>
+        
+        <line x1="130" y1="204" x2="130" y2="238" stroke="#EF4444" stroke-width="2"/>
+        <polygon points="127,235 130,243 133,235" fill="#EF4444"/>
+        <text x="136" y="235" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">m₁g</text>
+        
+        <text x="82" y="188" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">a ↓</text>
+        
+        <!-- Right Rope & Mass m2 -->
+        <line x1="230" y1="75" x2="230" y2="140" stroke="#E0F2FE" stroke-width="2.5"/>
+        <!-- Mass 2 Box -->
+        <rect x="210" y="140" width="40" height="40" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+        <text x="217" y="165" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">m₂=1kg</text>
+        
+        <!-- Forces on m2 -->
+        <line x1="230" y1="140" x2="230" y2="110" stroke="#22C55E" stroke-width="2"/>
+        <polygon points="227,113 230,105 233,113" fill="#22C55E"/>
+        <text x="236" y="118" fill="#22C55E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">T₂</text>
+        
+        <line x1="230" y1="180" x2="230" y2="210" stroke="#EF4444" stroke-width="2"/>
+        <polygon points="227,207 230,215 233,207" fill="#EF4444"/>
+        <text x="236" y="208" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">m₂g</text>
+        
+        <text x="258" y="165" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">a ↑</text>
+      </svg>
+    `,
+    diagramCaption: "SKEMA FREE-BODY DIAGRAM: KATROL BERMASSA & BEBAN GANTUNG",
+    options: [
+      "$\\alpha = 15\\text{ rad/s}^2$ dan $T_1 - T_2 = 3\\text{ N}$",
+      "$\\alpha = 20\\text{ rad/s}^2$ dan $T_1 - T_2 = 4\\text{ N}$",
+      "$\\alpha = 25\\text{ rad/s}^2$ dan $T_1 - T_2 = 5\\text{ N}$",
+      "$\\alpha = 10\\text{ rad/s}^2$ dan $T_1 - T_2 = 2\\text{ N}$",
+      "$\\alpha = 20\\text{ rad/s}^2$ dan $T_1 - T_2 = 8\\text{ N}$"
+    ],
+    correctIndex: 1, // B
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Prinsip Dinamika Sistem Translasi & Rotasi Terkopel:</strong><br>
+          1. Hukum II Newton Translasi: $\\Sigma F = m a$<br>
+          2. Hukum II Newton Rotasi: $\\Sigma \\tau = I \\alpha$<br>
+          3. Syarat Tali Tidak Selip (No-slip): $a = \\alpha R \\iff \\alpha = \\frac{a}{R}$<br>
+          4. Momen Inersia Silinder Pejal Homogen: $I = \\frac{1}{2} M R^2$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>
+            <strong>Persamaan Gerak Translasi Beban $m_1$ (bergerak turun dipercepat):</strong>
+            $$m_1 g - T_1 = m_1 a \\implies T_1 = m_1(g - a)$$
+          </li>
+          <li>
+            <strong>Persamaan Gerak Translasi Beban $m_2$ (bergerak naik dipercepat):</strong>
+            $$T_2 - m_2 g = m_2 a \\implies T_2 = m_2(g + a)$$
+          </li>
+          <li>
+            <strong>Persamaan Dinamika Rotasi Katrol Bermassa:</strong>
+            Katrol berputar searah jarum jam karena ditarik oleh selisih torsi kedua tali:
+            $$\\Sigma \\tau = I \\alpha \\implies (T_1 - T_2) R = \\left(\\frac{1}{2} M R^2\\right) \\left(\\frac{a}{R}\\right)$$
+            Bagi kedua ruas dengan $R$:
+            $$T_1 - T_2 = \\frac{1}{2} M a$$
+          </li>
+          <li>
+            <strong>Substitusi Nilai Tegangan Tali untuk Mencari Percepatan Tangensial $a$:</strong>
+            $$m_1(g - a) - m_2(g + a) = \\frac{1}{2} M a$$
+            $$(m_1 - m_2)g = \\left(m_1 + m_2 + \\frac{1}{2} M\\right) a$$
+            $$a = \\frac{(m_1 - m_2)g}{m_1 + m_2 + \\frac{1}{2} M}$$
+          </li>
+          <li>
+            <strong>Perhitungan Numerik Percepatan Linier $a$:</strong>
+            $$a = \\frac{(3 - 1)(10)}{3 + 1 + \\frac{1}{2}(2)} = \\frac{20}{3 + 1 + 1} = \\frac{20}{5} = 4\\text{ m/s}^2$$
+          </li>
+          <li>
+            <strong>Perhitungan Percepatan Sudut $(\\alpha)$:</strong>
+            Karena $R = 20\\text{ cm} = 0.2\\text{ m}$:
+            $$\\alpha = \\frac{a}{R} = \\frac{4\\text{ m/s}^2}{0.2\\text{ m}} = 20\\text{ rad/s}^2$$
+          </li>
+          <li>
+            <strong>Perhitungan Selisih Tegangan Tali $(T_1 - T_2)$:</strong>
+            $$T_1 - T_2 = \\frac{1}{2} M a = \\frac{1}{2}(2\\text{ kg})(4\\text{ m/s}^2) = 4\\text{ N}$$
+            <em>(Sebagai verifikasi: $T_1 = 3(10 - 4) = 18\\text{ N}$, $T_2 = 1(10 + 4) = 14\\text{ N} \\implies 18 - 14 = 4\\text{ N}$)</em>
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          <strong>⚠️ Jebakan Konseptual & Numerik yang Sering Terjadi:</strong><br>
+          • <strong>Asumsi Katrol Ideal ($T_1 = T_2$):</strong> Pada soal UTBK tingkat lanjut, katrol memiliki massa $M$. Jika siswa menganggap $T_1 = T_2$, maka selisih torsi bernilai 0 dan katrol tidak mungkin berputar dipercepat.<br>
+          • <strong>Kesalahan Konversi Satuan $R$:</strong> Jari-jari harus diubah dari $20\\text{ cm}$ menjadi $0.2\\text{ m}$. Lupa konversi menghasilkan $\\alpha = \\frac{4}{20} = 0.2\\text{ rad/s}^2$.<br>
+          • <strong>Inersia Pejal vs Berongga:</strong> Menggunakan $I = M R^2$ (silinder tipis berongga) bukannya $\\frac{1}{2} M R^2$ (silinder pejal) menghasilkan percepatan $a = 3.33\\text{ m/s}^2$ yang keliru.
+        </div>
+      `
+    }
+  },
+  {
+    id: 2,
+    subject: "FISIKA",
+    category: "Rangkaian Arus Searah & Kirchhoff",
+    difficulty: "HOTS / Setara UTBK-STEI",
+    statement: `Perhatikan skema rangkaian listrik tertutup 2-loop di bawah ini. Rangkaian ditenagai oleh dua sumber tegangan ggl ideal $\\mathcal{E}_1 = 24\\text{ V}$ dan $\\mathcal{E}_2 = 12\\text{ V}$, serta dihubungkan dengan tiga resistor $R_1 = 3\\,\\Omega$, $R_2 = 6\\,\\Omega$, dan $R_3 = 6\\,\\Omega$. Tentukan besar kuat arus yang mengalir melalui hambatan cabang tengah $R_2$ ($I_{R2}$) dengan arah dari simpul $A$ ke simpul $B$, serta besar beda potensial antara kedua simpul ($V_{AB} = V_A - V_B$)!`,
+    hasDiagram: true,
+    diagramSvg: `
+      <svg class="diagram-svg" viewBox="0 0 380 250" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <!-- Node Points A and B -->
+        <circle cx="190" cy="40" r="5" fill="#FACC15"/>
+        <text x="195" y="32" fill="#FACC15" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">Simpul A</text>
+        
+        <circle cx="190" cy="210" r="5" fill="#FACC15"/>
+        <text x="195" y="230" fill="#FACC15" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">Simpul B (Ground)</text>
 
-// Helper for KaTeX math rendering
-function renderKaTeX(element) {
-  if (window.renderMathInElement && element) {
-    try {
-      window.renderMathInElement(element, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false },
-          { left: "\\[", right: "\\]", display: true },
-          { left: "\\(", right: "\\)", display: false }
-        ],
-        throwOnError: false
-      });
-    } catch (e) {
-      console.warn("KaTeX rendering warning:", e);
+        <!-- Left Loop Wires -->
+        <polyline points="190,40 50,40 50,90" fill="none" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Battery E1 (24V) -->
+        <line x1="35" y1="90" x2="65" y2="90" stroke="#22C55E" stroke-width="3"/> <!-- Long plate (+) -->
+        <line x1="42" y1="98" x2="58" y2="98" stroke="#EF4444" stroke-width="1.5"/> <!-- Short plate (-) -->
+        <text x="70" y="96" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ℰ₁=24V</text>
+        
+        <polyline points="50,98 50,130" fill="none" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Resistor R1 (3 ohm) ZigZag -->
+        <polyline points="50,130 42,135 58,142 42,149 58,156 50,161" fill="none" stroke="#FACC15" stroke-width="2"/>
+        <text x="68" y="150" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11">R₁=3Ω</text>
+        <polyline points="50,161 50,210 190,210" fill="none" stroke="#38BDF8" stroke-width="2"/>
+
+        <!-- Middle Branch (R2) -->
+        <line x1="190" y1="40" x2="190" y2="95" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Resistor R2 (6 ohm) ZigZag -->
+        <polyline points="190,95 182,102 198,110 182,118 198,126 190,133" fill="none" stroke="#FACC15" stroke-width="2"/>
+        <text x="206" y="118" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">R₂=6Ω</text>
+        <line x1="190" y1="133" x2="190" y2="210" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Current Arrow I_R2 -->
+        <line x1="172" y1="100" x2="172" y2="135" stroke="#FF5A26" stroke-width="2"/>
+        <polygon points="169,132 172,140 175,132" fill="#FF5A26"/>
+        <text x="140" y="122" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">I_R2 ↓</text>
+
+        <!-- Right Loop Wires -->
+        <polyline points="190,40 330,40 330,90" fill="none" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Battery E2 (12V) -->
+        <line x1="315" y1="90" x2="345" y2="90" stroke="#22C55E" stroke-width="3"/> <!-- Long plate (+) -->
+        <line x1="322" y1="98" x2="338" y2="98" stroke="#EF4444" stroke-width="1.5"/> <!-- Short plate (-) -->
+        <text x="265" y="96" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ℰ₂=12V</text>
+        
+        <polyline points="330,98 330,130" fill="none" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Resistor R3 (6 ohm) ZigZag -->
+        <polyline points="330,130 322,135 338,142 322,149 338,156 330,161" fill="none" stroke="#FACC15" stroke-width="2"/>
+        <text x="272" y="150" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11">R₃=6Ω</text>
+        <polyline points="330,161 330,210 190,210" fill="none" stroke="#38BDF8" stroke-width="2"/>
+
+        <!-- Loop Indicators -->
+        <path d="M 100 110 A 18 18 0 1 1 120 130" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text x="100" y="130" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">Loop 1</text>
+        
+        <path d="M 260 110 A 18 18 0 1 0 240 130" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text x="245" y="130" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">Loop 2</text>
+      </svg>
+    `,
+    diagramCaption: "SKEMA 2-LOOP MULTI-BRANCH: HUKUM KIRCHHOFF & SIMPUL NODAL",
+    options: [
+      "$I_{R2} = 2.50\\text{ A}$ dan $V_{AB} = 15.0\\text{ V}$",
+      "$I_{R2} = 2.00\\text{ A}$ dan $V_{AB} = 12.0\\text{ V}$",
+      "$I_{R2} = 3.00\\text{ A}$ dan $V_{AB} = 18.0\\text{ V}$",
+      "$I_{R2} = 1.50\\text{ A}$ dan $V_{AB} = 9.0\\text{ V}$",
+      "$I_{R2} = 3.50\\text{ A}$ dan $V_{AB} = 21.0\\text{ V}$"
+    ],
+    correctIndex: 0, // A
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Metode Cepat Analisis Nodal (Node Voltage Method):</strong><br>
+          Daripada menyelesaikan 2 persamaan loop KVL dengan determinan yang rawan tanda minus terbalik, gunakan Hukum I Kirchhoff (KCL) pada Simpul $A$:<br>
+          Tetapkan simpul referensi tanah (ground) pada simpul bawah $B$ dengan $V_B = 0\\text{ V}$. Maka beda potensial $V_{AB} = V_A - 0 = V_A$.<br>
+          $$\\Sigma I_{\\text{keluar dari node } A} = 0 \\implies \\sum \\frac{V_A - V_k}{R_k} = 0$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>
+            <strong>Perumusan Arus Tiap Cabang yang Meninggalkan Simpul $A$:</strong>
+            <ul>
+              <li>Cabang kiri (melalui ggl $\\mathcal{E}_1 = 24\\text{ V}$ dan $R_1 = 3\\,\\Omega$):
+                $$I_1 = \\frac{V_A - 24}{3}$$
+              </li>
+              <li>Cabang tengah (melalui $R_2 = 6\\,\\Omega$ menuju $V_B = 0$):
+                $$I_2 = \\frac{V_A - 0}{6} = \\frac{V_A}{6}$$
+              </li>
+              <li>Cabang kanan (melalui ggl $\\mathcal{E}_2 = 12\\text{ V}$ dan $R_3 = 6\\,\\Omega$):
+                $$I_3 = \\frac{V_A - 12}{6}$$
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Penerapan KCL pada Simpul $A$:</strong>
+            $$I_1 + I_2 + I_3 = 0$$
+            $$\\frac{V_A - 24}{3} + \\frac{V_A}{6} + \\frac{V_A - 12}{6} = 0$$
+          </li>
+          <li>
+            <strong>Eliminasi Penyebut dengan Mengalikan Seluruh Ruas dengan 6:</strong>
+            $$2(V_A - 24) + V_A + (V_A - 12) = 0$$
+            $$2V_A - 48 + V_A + V_A - 12 = 0$$
+            $$4V_A - 60 = 0 \\implies 4V_A = 60 \\implies V_A = 15.0\\text{ V}$$
+          </li>
+          <li>
+            <strong>Menentukan Beda Potensial $V_{AB}$:</strong>
+            $$V_{AB} = V_A - V_B = 15.0\\text{ V} - 0\\text{ V} = 15.0\\text{ V}$$
+          </li>
+          <li>
+            <strong>Menghitung Kuat Arus Cabang Tengah ($I_{R2}$):</strong>
+            $$I_{R2} = \\frac{V_{AB}}{R_2} = \\frac{15.0\\text{ V}}{6\\,\\Omega} = 2.50\\text{ A}$$
+            Karena hasilnya positif, arah arus mengalir tepat dari simpul berpotensial tinggi $A$ ke simpul berpotensial rendah $B$ (ke arah bawah).
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          <strong>⚠️ Jebakan Konseptual & Trik Pemeriksaan Arus Cabang:</strong><br>
+          • <strong>Arus Cabang Kiri:</strong> $I_{\\text{kiri}} = \\frac{24 - 15}{3} = 3.00\\text{ A}$ (mengalir masuk ke simpul $A$).<br>
+          • <strong>Arus Cabang Kanan:</strong> $I_{\\text{kanan}} = \\frac{15 - 12}{6} = 0.50\\text{ A}$ (mengalir keluar dari simpul $A$).<br>
+          • <strong>Verifikasi Kirchhoff I:</strong> $I_{\\text{masuk}} = 3.00\\text{ A}$, $I_{\\text{keluar}} = I_2 + I_3 = 2.50\\text{ A} + 0.50\\text{ A} = 3.00\\text{ A}$ (Konsisten 100%!).<br>
+          • <strong>Jebakan Tanda Ggl:</strong> Jika kutub baterai kanan dianggap mendorong arus ke arah berlawanan tanpa memperhatikan bahwa $V_A = 15\\text{ V} > 12\\text{ V}$, baterai $\\mathcal{E}_2$ sebenarnya sedang mengalami proses pengisian (charging).
+        </div>
+      `
+    }
+  },
+  {
+    id: 3,
+    subject: "MATEMATIKA",
+    category: "Kalkulus Integral Tentu",
+    difficulty: "HOTS / Setara UTBK-STEI",
+    statement: `Tentukan nilai eksak dari integral tentu fungsi trigonometri berikut yang melibatkan pembagian kuadrat cosinus:
+$$I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx$$`,
+    hasDiagram: false,
+    options: [
+      "$\\frac{\\pi^2}{8}$",
+      "$\\frac{\\pi^2}{4}$",
+      "$\\frac{\\pi^2}{2}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\pi^2 - 2\\pi$"
+    ],
+    correctIndex: 1, // B
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>King's Property (Sifat Refleksi Simetri Integral Tentu):</strong><br>
+          Untuk sebarang fungsi kontinu $f(x)$ pada interval $[a, b]$:<br>
+          $$\\int_{a}^{b} f(x) \\, dx = \\int_{a}^{b} f(a + b - x) \\, dx$$
+          Sifat ini sangat ampuh mengeliminasi faktor polinomial $x$ pada pembilang perkalian trigonometri periodik $[0, \\pi]$.<br>
+          Turunan standar arcus tangen: $\\int \\frac{1}{1 + u^2} \\, du = \\arctan(u) + C$.
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>
+            <strong>Definisikan Persamaan Integral Asli:</strong>
+            $$I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx \\quad \\text{--- (Persamaan 1)}$$
+          </li>
+          <li>
+            <strong>Terapkan King's Property dengan Batas $a = 0$ dan $b = \\pi$ ($x \\to \\pi - x$):</strong>
+            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x) \\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)} \\, dx$$
+            Berdasarkan identitas relasi sudut trigonometri:
+            $$\\sin(\\pi - x) = \\sin x, \\quad \\cos(\\pi - x) = -\\cos x \\implies \\cos^2(\\pi - x) = \\cos^2 x$$
+            Sehingga diperoleh:
+            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x) \\sin x}{1 + \\cos^2 x} \\, dx \\quad \\text{--- (Persamaan 2)}$$
+          </li>
+          <li>
+            <strong>Pecah Integral (Persamaan 2) Menjadi Dua Suku:</strong>
+            $$I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx - \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx$$
+            Perhatikan bahwa suku integral kedua tidak lain adalah definisi $I$ semula:
+            $$I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx - I$$
+          </li>
+          <li>
+            <strong>Pindahkan Suku $-I$ ke Ruas Kiri:</strong>
+            $$2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx$$
+          </li>
+          <li>
+            <strong>Gunakan Metode Substitusi Variabel $u$:</strong>
+            Misalkan $u = \\cos x \\implies du = -\\sin x \\, dx \\iff \\sin x \\, dx = -du$.<br>
+            Perubahan batas integrasi:
+            <ul>
+              <li>Batas bawah: saat $x = 0 \\implies u = \\cos(0) = 1$</li>
+              <li>Batas atas: saat $x = \\pi \\implies u = \\cos(\\pi) = -1$</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Evaluasi Integral Menggunakan Batas Baru:</strong>
+            $$2I = \\pi \\int_{1}^{-1} \\frac{-du}{1 + u^2} = \\pi \\int_{-1}^{1} \\frac{du}{1 + u^2}$$
+            Karena fungsi $\\frac{1}{1 + u^2}$ genap, atau langsung gunakan anti-turunan $\\arctan(u)$:
+            $$2I = \\pi \\Big[ \\arctan(u) \\Big]_{-1}^{1} = \\pi \\Big( \\arctan(1) - \\arctan(-1) \\Big)$$
+            $$2I = \\pi \\left( \\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) \\right) = \\pi \\left( \\frac{\\pi}{2} \\right) = \\frac{\\pi^2}{2}$$
+          </li>
+          <li>
+            <strong>Selesaikan untuk Nilai $I$:</strong>
+            $$I = \\frac{\\pi^2 / 2}{2} = \\frac{\\pi^2}{4}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          <strong>⚠️ Jebakan yang Sering Menjebak Peserta Ujian:</strong><br>
+          • <strong>Lupa Membagi Dua di Langkah Akhir:</strong> Kesalahan fatal paling umum adalah melupakan koefisien 2 pada $2I = \\frac{\\pi^2}{2}$, sehingga memilih jawaban $\\frac{\\pi^2}{2}$ (Opsi C).<br>
+          • <strong>Mencoba Integral Parsial Langsung:</strong> Menetapkan $u = x$ dan $dv = \\frac{\\sin x}{1 + \\cos^2 x}dx$ akan menghasilkan anti-turunan $-\\arctan(\\cos x)$, yang saat diintegralkan kembali menuntut integral $\\int \\arctan(\\cos x) dx$ yang jauh lebih rumit dan memakan waktu.<br>
+          • <strong>Tanda Minus Batas Balik:</strong> Menghilangkan tanda negatif saat $du = -\\sin x dx$ sehingga menghasilkan batas yang terbalik dan nilai integral bernilai negatif.
+        </div>
+      `
+    }
+  },
+  {
+    id: 4,
+    subject: "MATEMATIKA",
+    category: "Vektor & Matriks Transformasi Geometri",
+    difficulty: "HOTS / Setara UTBK-STEI",
+    statement: `Diberikan dua buah vektor pada bidang Cartesius $\\mathbb{R}^2$: $\\vec{u} = \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$ dan $\\vec{v} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$. Vektor $\\vec{w}$ merupakan proyeksi ortogonal dari vektor $\\vec{u}$ pada arah vektor $\\vec{v}$. Selanjutnya, vektor $\\vec{w}$ ditransformasikan secara berturut-turut oleh rotasi sebesar $+90^\\circ$ berpusat di titik asal $(0,0)$ berlawanan arah putaran jarum jam yang diwakili matriks $R$, lalu dilanjutkan dengan refleksi terhadap garis simetri $y = x$ yang diwakili matriks $M$. Tentukan vektor bayangan akhir $\\vec{w}''$!`,
+    hasDiagram: false,
+    options: [
+      "$\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$",
+      "$\\begin{pmatrix} -2 \\\\ 1 \\end{pmatrix}$",
+      "$\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$"
+    ],
+    correctIndex: 0, // A
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Dua Fondasi Utama: Proyeksi Vektor & Komposisi Matriks:</strong><br>
+          1. <strong>Vektor Proyeksi Ortogonal $\\vec{u}$ pada $\\vec{v}$:</strong>
+             $$\\vec{w} = \\operatorname{proj}_{\\vec{v}} \\vec{u} = \\left( \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{v}|^2} \\right) \\vec{v}$$
+          2. <strong>Matriks Rotasi $+90^\\circ$:</strong> $R_{90^\\circ} = \\begin{pmatrix} \\cos 90^\\circ & -\\sin 90^\\circ \\\\ \\sin 90^\\circ & \\cos 90^\\circ \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$<br>
+          3. <strong>Matriks Refleksi Garis $y = x$:</strong> $M = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$<br>
+          4. <strong>Komposisi Transformasi:</strong> Transformasi pertama $R$ dilanjutkan transformasi kedua $M$ dinyatakan oleh perkalian matriks dari kiri: $T = M \\cdot R$.
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>
+            <strong>Hitung Perkalian Skalar (Dot Product) $\\vec{u} \\cdot \\vec{v}$:</strong>
+            $$\\vec{u} \\cdot \\vec{v} = (3)(2) + (1)(4) = 6 + 4 = 10$$
+          </li>
+          <li>
+            <strong>Hitung Kuadrat Panjang Vektor Acuan $|\\vec{v}|^2$:</strong>
+            $$|\\vec{v}|^2 = 2^2 + 4^2 = 4 + 16 = 20$$
+          </li>
+          <li>
+            <strong>Tentukan Vektor Proyeksi Ortogonal $\\vec{w}$:</strong>
+            $$\\vec{w} = \\left( \\frac{10}{20} \\right) \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} = \\frac{1}{2} \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$$
+          </li>
+          <li>
+            <strong>Tentukan Matriks Komposisi Total $T = M \\cdot R$:</strong>
+            $$T = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$$
+            Lakukan perkalian baris kali kolom:
+            $$T = \\begin{pmatrix} (0)(0) + (1)(1) & (0)(-1) + (1)(0) \\\\ (1)(0) + (0)(1) & (1)(-1) + (0)(0) \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$$
+            <em>(Catatan Geometri: Matriks $\\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$ setara dengan refleksi terhadap sumbu-$x$!)</em>
+          </li>
+          <li>
+            <strong>Hitung Bayangan Akhir $\\vec{w}''$:</strong>
+            $$\\vec{w}'' = T \\cdot \\vec{w} = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} (1)(1) + (0)(2) \\\\ (0)(1) + (-1)(2) \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          <strong>⚠️ Jebakan Urutan Matriks & Skalar Proyeksi:</strong><br>
+          • <strong>Urutan Perkalian Matriks:</strong> Transformasi $R$ lalu $M$ dihitung dengan $M \\cdot R$, bukan $R \\cdot M$. Jika terbalik menghitung $R \\cdot M = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ (refleksi sumbu-$y$), maka hasilnya adalah $\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$ (Opsi C).<br>
+          • <strong>Berhenti di Bayangan Pertama:</strong> Hasil rotasi pertama adalah $\\vec{w}' = R \\vec{w} = \\begin{pmatrix} -2 \\\\ 1 \\end{pmatrix}$ (Opsi B). Siswa yang tidak teliti seringkali memilih opsi ini karena mengira soal telah selesai.<br>
+          • <strong>Penyebut Proyeksi:</strong> Membagi dengan $|\\vec{v}| = \\sqrt{20}$ bukannya $|\\vec{v}|^2 = 20$ merupakan kesalahan umum antara proyeksi skalar ortogonal (panjang) dan proyeksi vektor ortogonal.
+        </div>
+      `
     }
   }
-}
+];
 
-// Format markdown text to HTML
-function renderMarkdown(mdText) {
-  if (!mdText) return "";
-  if (window.marked) {
-    return marked.parse(mdText);
+// 2. APPLICATION STATE MANAGEMENT
+const state = {
+  currentIndex: 0,
+  userAnswers: new Array(questionsData.length).fill(null),
+  isVerified: new Array(questionsData.length).fill(false),
+  isRagu: new Array(questionsData.length).fill(false),
+  solutionOpen: new Array(questionsData.length).fill(false),
+  theme: localStorage.getItem('tka_theme') || 'light',
+  timerSeconds: 20 * 60, // 20 minutes countdown
+  timerRunning: true,
+  timerInterval: null
+};
+
+// 3. INITIALIZATION
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const qNum = parseInt(urlParams.get('q'));
+  if (!isNaN(qNum) && qNum >= 1 && qNum <= questionsData.length) {
+    state.currentIndex = qNum - 1;
   }
-  return mdText.replace(/\n/g, "<br>");
-}
+  if (urlParams.get('verified') === '1') {
+    state.userAnswers[state.currentIndex] = questionsData[state.currentIndex].correctIndex;
+    state.isVerified[state.currentIndex] = true;
+    state.solutionOpen[state.currentIndex] = true;
+  }
+  if (urlParams.get('dark') === '1') {
+    state.theme = 'dark';
+  }
 
-// Get array of all sub-chapter objects in sequence
-function getAllSubChaptersList() {
-  if (!window.APP_DATA || !window.APP_DATA.matrix) return [];
-  const list = [];
-  window.APP_DATA.matrix.modules.forEach((mod) => {
-    mod.sub_chapters.forEach((sc) => {
-      list.push({
-        ...sc,
-        module_id: mod.module_id,
-        module_name: mod.module_name
-      });
-    });
-  });
-  return list;
-}
+  initTheme();
+  initTimer();
+  renderCurrentQuestion();
+  renderMatrixGrid();
+  updateStats();
+  bindGlobalEvents();
 
-// Initialize Application
-document.addEventListener("DOMContentLoaded", () => {
-  setupSidebarNavigation();
-  setupFilterDropdown();
-  renderCatalogGrid();
-  loadSubChapter(currentSubId);
-  renderAuditList();
-  updateScoreBoard();
-
-  // Mobile sidebar toggle
-  const sidebar = document.getElementById("sidebar");
-  const sidebarToggle = document.getElementById("sidebarToggle");
-  const sidebarClose = document.getElementById("sidebarClose");
-  const sidebarBackdrop = document.getElementById("sidebarBackdrop");
-
-  if (sidebarToggle && sidebar && sidebarBackdrop) {
-    sidebarToggle.addEventListener("click", () => {
-      sidebar.classList.remove("-translate-x-full");
-      sidebarBackdrop.classList.remove("hidden");
-    });
-    sidebarClose.addEventListener("click", () => {
-      sidebar.classList.add("-translate-x-full");
-      sidebarBackdrop.classList.add("hidden");
-    });
-    sidebarBackdrop.addEventListener("click", () => {
-      sidebar.classList.add("-translate-x-full");
-      sidebarBackdrop.classList.add("hidden");
-    });
+  if (urlParams.get('modal') === '1') {
+    openCheatSheetModal();
   }
 });
 
-// Setup sidebar modules and sub-chapters
-function setupSidebarNavigation() {
-  const container = document.getElementById("moduleNavList");
-  if (!container || !window.APP_DATA || !window.APP_DATA.matrix) return;
-
-  const matrix = window.APP_DATA.matrix;
-  let html = "";
-
-  matrix.modules.forEach((mod) => {
-    html += `
-      <div class="space-y-1">
-        <div class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 px-2 py-1 flex items-center justify-between">
-          <span>${mod.module_name}</span>
-          <span class="text-[10px] bg-slate-200/70 text-slate-600 px-1.5 py-0.5 rounded font-mono">${mod.module_id}</span>
-        </div>
-        <div class="space-y-0.5">
-    `;
-
-    mod.sub_chapters.forEach((sc) => {
-      const isSelected = sc.sub_chapter_id === currentSubId;
-      const qCount = getQuestionCountForSub(sc.sub_chapter_id);
-      const displayTitle = sc.short_title || sc.title;
-
-      html += `
-        <button onclick="selectSubChapter('${sc.sub_chapter_id}')" 
-          id="navBtn_${sc.sub_chapter_id.replace('.', '_')}"
-          class="w-full text-left px-2.5 py-2 rounded-xl text-xs font-semibold flex items-center justify-between transition-all nav-item ${
-            isSelected
-              ? "bg-brand-50 text-brand-700 border border-brand-200/80 shadow-xs font-bold"
-              : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-          }">
-          <div class="flex items-center space-x-2 truncate">
-            <span class="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded ${
-              isSelected ? "bg-brand-600 text-white" : "bg-slate-200/70 text-slate-600"
-            }">${sc.sub_chapter_id}</span>
-            <span class="truncate">${displayTitle}</span>
-          </div>
-          <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full ${
-            qCount > 0 ? "bg-blue-100 text-blue-700" : "bg-slate-100 text-slate-400"
-          }">${qCount}</span>
-        </button>
-      `;
-    });
-
-    html += `
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
+// 4. THEME CONTROLLER
+function initTheme() {
+  document.documentElement.setAttribute('data-theme', state.theme);
+  updateThemeIcon();
 }
 
-// Get question count for a sub-chapter
-function getQuestionCountForSub(subId) {
-  if (!window.APP_DATA || !window.APP_DATA.questions) return 0;
-  return window.APP_DATA.questions.filter((q) => q.sub_chapter_id === subId).length;
+function toggleTheme() {
+  state.theme = state.theme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', state.theme);
+  localStorage.setItem('tka_theme', state.theme);
+  updateThemeIcon();
 }
 
-// Select a sub-chapter from sidebar or card
-function selectSubChapter(subId, initialTab = "materi") {
-  currentSubId = subId;
-  setupSidebarNavigation();
-  showDetailView(subId, initialTab);
-
-  // Close mobile sidebar if open
-  const sidebar = document.getElementById("sidebar");
-  const sidebarBackdrop = document.getElementById("sidebarBackdrop");
-  if (sidebar && !sidebar.classList.contains("-translate-x-full")) {
-    sidebar.classList.add("-translate-x-full");
-    if (sidebarBackdrop) sidebarBackdrop.classList.add("hidden");
+function updateThemeIcon() {
+  const icon = document.getElementById('themeIcon');
+  if (icon) {
+    icon.className = state.theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
   }
 }
 
-// Switch between Main Tabs (Materi, Drilling, Audit)
-function switchTab(tabName) {
-  activeTab = tabName;
-
-  const viewMateri = document.getElementById("viewMateri");
-  const viewDrilling = document.getElementById("viewDrilling");
-  const viewAudit = document.getElementById("viewAudit");
-
-  const tabMateri = document.getElementById("tabMateri");
-  const tabDrilling = document.getElementById("tabDrilling");
-  const tabAudit = document.getElementById("tabAudit");
-
-  // Mobile tabs
-  const mTabMateri = document.getElementById("mobileTabMateri");
-  const mTabDrilling = document.getElementById("mobileTabDrilling");
-  const mTabAudit = document.getElementById("mobileTabAudit");
-
-  [viewMateri, viewDrilling, viewAudit].forEach((v) => v.classList.add("hidden"));
-  [tabMateri, tabDrilling, tabAudit].forEach((t) => {
-    t.className = "px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900";
-  });
-  if (mTabMateri && mTabDrilling && mTabAudit) {
-    [mTabMateri, mTabDrilling, mTabAudit].forEach((t) => {
-      t.className = "py-1 px-3 text-slate-600";
-    });
-  }
-
-  if (tabName === "materi") {
-    viewMateri.classList.remove("hidden");
-    tabMateri.className = "px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 bg-white text-brand-700 shadow-xs";
-    if (mTabMateri) mTabMateri.className = "py-1 px-3 text-brand-700 border-b-2 border-brand-600 font-bold";
-  } else if (tabName === "drilling") {
-    viewDrilling.classList.remove("hidden");
-    tabDrilling.className = "px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 bg-white text-brand-700 shadow-xs";
-    if (mTabDrilling) mTabDrilling.className = "py-1 px-3 text-brand-700 border-b-2 border-brand-600 font-bold";
-    renderQuestionsList();
-  } else if (tabName === "audit") {
-    viewAudit.classList.remove("hidden");
-    tabAudit.className = "px-4 py-1.5 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-150 bg-white text-brand-700 shadow-xs";
-    if (mTabAudit) mTabAudit.className = "py-1 px-3 text-brand-700 border-b-2 border-brand-600 font-bold";
-    renderAuditList();
-  }
-}
-
-// ==========================================
-// VIEW 1A: KATALOG LIST MATERI
-// ==========================================
-
-function showCatalogView() {
-  switchTab("materi");
-  const catalogView = document.getElementById("materiCatalogView");
-  const detailView = document.getElementById("materiDetailView");
-  if (catalogView) catalogView.classList.remove("hidden");
-  if (detailView) detailView.classList.add("hidden");
-  renderCatalogGrid();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-function filterCatalogByModule(modId) {
-  catalogFilterMod = modId;
-  const pills = document.querySelectorAll(".catalog-filter-btn");
-  pills.forEach((p) => {
-    p.className = "catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white border border-slate-200 text-slate-700 hover:bg-slate-100";
-  });
-  const activePill = document.getElementById(`pill_${modId}`);
-  if (activePill) {
-    activePill.className = "catalog-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-brand-600 text-white shadow-xs";
-  }
-  renderCatalogGrid();
-}
-
-function renderCatalogGrid() {
-  const container = document.getElementById("materiCardGrid");
-  if (!container || !window.APP_DATA || !window.APP_DATA.matrix) return;
-
-  const allSub = getAllSubChaptersList();
-  const filtered = catalogFilterMod === "ALL" ? allSub : allSub.filter((s) => s.module_id === catalogFilterMod);
-
-  let html = "";
-  filtered.forEach((sc) => {
-    const qCount = getQuestionCountForSub(sc.sub_chapter_id);
-    const subTopics = sc.sub_topics || [];
-    const shortTitle = sc.short_title || sc.title;
-
-    // Module color scheme
-    let modColor = "bg-blue-50 text-blue-700 border-blue-200";
-    if (sc.module_id === "MOD-2") modColor = "bg-purple-50 text-purple-700 border-purple-200";
-    if (sc.module_id === "MOD-3") modColor = "bg-emerald-50 text-emerald-700 border-emerald-200";
-    if (sc.module_id === "MOD-4") modColor = "bg-amber-50 text-amber-700 border-amber-200";
-    if (sc.module_id === "MOD-5") modColor = "bg-rose-50 text-rose-700 border-rose-200";
-
-    html += `
-      <div class="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-xs catalog-card flex flex-col justify-between">
-        <div>
-          <!-- Header Card -->
-          <div class="flex items-center justify-between gap-2 mb-3">
-            <div class="flex items-center space-x-2">
-              <span class="text-[11px] font-bold font-mono px-2 py-0.5 rounded-md border ${modColor}">
-                ${sc.module_id}
-              </span>
-              <span class="text-[11px] font-mono font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">
-                Sub ${sc.sub_chapter_id}
-              </span>
-            </div>
-            <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full ${
-              qCount > 0 ? "bg-brand-50 text-brand-700 border border-brand-200" : "bg-slate-100 text-slate-400"
-            }">
-              <i class="fa-solid fa-pen-to-square text-[10px] mr-1"></i> ${qCount} Soal
-            </span>
-          </div>
-
-          <!-- Title -->
-          <h3 class="text-base font-extrabold text-slate-900 tracking-tight leading-snug hover:text-brand-600 transition-colors cursor-pointer" onclick="selectSubChapter('${sc.sub_chapter_id}', 'materi')">
-            ${shortTitle}
-          </h3>
-          <p class="text-xs text-slate-500 mt-1 font-medium">${sc.title}</p>
-
-          <!-- Sub-topics Pills Preview -->
-          <div class="flex flex-wrap gap-1.5 mt-3 pt-3 border-t border-slate-100">
-            ${subTopics
-              .slice(0, 3)
-              .map(
-                (st) =>
-                  `<span class="sub-topic-pill truncate max-w-[200px]" title="${st}"><i class="fa-solid fa-circle-small mr-1 text-[8px] text-slate-400"></i>${st}</span>`
-              )
-              .join("")}
-            ${
-              subTopics.length > 3
-                ? `<span class="sub-topic-pill text-slate-400 font-semibold">+${subTopics.length - 3} lainnya</span>`
-                : ""
-            }
-          </div>
-        </div>
-
-        <!-- 4 Quick Choice Action Buttons -->
-        <div class="mt-5 pt-3 border-t border-slate-100 grid grid-cols-4 gap-1.5 text-center text-[11px] font-bold">
-          <button onclick="selectSubChapter('${sc.sub_chapter_id}', 'materi')" class="py-1.5 px-1 rounded-lg bg-slate-100 hover:bg-brand-50 hover:text-brand-700 text-slate-700 transition-all flex flex-col items-center justify-center gap-0.5" title="Materi Lengkap">
-            <i class="fa-solid fa-book-open text-xs"></i>
-            <span class="truncate">Materi</span>
-          </button>
-          <button onclick="selectSubChapter('${sc.sub_chapter_id}', 'rangkuman')" class="py-1.5 px-1 rounded-lg bg-slate-100 hover:bg-amber-50 hover:text-amber-800 text-slate-700 transition-all flex flex-col items-center justify-center gap-0.5" title="Rangkuman Materi">
-            <i class="fa-solid fa-file-lines text-xs text-amber-600"></i>
-            <span class="truncate">Rangkuman</span>
-          </button>
-          <button onclick="selectSubChapter('${sc.sub_chapter_id}', 'variasi')" class="py-1.5 px-1 rounded-lg bg-slate-100 hover:bg-indigo-50 hover:text-indigo-800 text-slate-700 transition-all flex flex-col items-center justify-center gap-0.5" title="Contoh Variasi Soal">
-            <i class="fa-solid fa-lightbulb text-xs text-indigo-600"></i>
-            <span class="truncate">Variasi</span>
-          </button>
-          <button onclick="selectSubChapter('${sc.sub_chapter_id}', 'latihan')" class="py-1.5 px-1 rounded-lg bg-slate-100 hover:bg-emerald-50 hover:text-emerald-800 text-slate-700 transition-all flex flex-col items-center justify-center gap-0.5" title="Latihan Soal Sub-bab">
-            <i class="fa-solid fa-pen-clip text-xs text-emerald-600"></i>
-            <span class="truncate">Latihan</span>
-          </button>
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-}
-
-// ==========================================
-// VIEW 1B: TAMPILAN DETAIL MATERI
-// ==========================================
-
-function showDetailView(subId, initialTab = "materi") {
-  switchTab("materi");
-  const catalogView = document.getElementById("materiCatalogView");
-  const detailView = document.getElementById("materiDetailView");
-  if (catalogView) catalogView.classList.add("hidden");
-  if (detailView) detailView.classList.remove("hidden");
-
-  loadSubChapter(subId);
-  switchSubDetailTab(initialTab);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-function loadSubChapter(subId) {
-  if (!window.APP_DATA || !window.APP_DATA.subchapters) return;
-
-  const data = window.APP_DATA.subchapters[subId];
-  if (!data) return;
-
-  currentSubId = subId;
-
-  // Header Banner
-  const shortTitle = data.short_title || data.title;
-  document.getElementById("detailModuleBadge").innerText = `${data.module_id} ${data.module_name}`;
-  document.getElementById("detailSubIdBadge").innerText = `Sub-bab ${data.sub_chapter_id}`;
-  document.getElementById("detailShortTitle").innerText = shortTitle;
-  document.getElementById("detailFullTitle").innerText = data.title;
-  document.getElementById("bcSubId").innerText = `${data.sub_chapter_id} ${shortTitle}`;
-
-  // Sub-topics Pills
-  const topicsContainer = document.getElementById("detailSubTopicsList");
-  if (topicsContainer) {
-    const topics = data.sub_topics || [];
-    topicsContainer.innerHTML = topics
-      .map(
-        (t) =>
-          `<span class="sub-topic-pill"><i class="fa-solid fa-check text-emerald-600 mr-1.5 text-[10px]"></i>${t}</span>`
-      )
-      .join("");
-  }
-
-  // Question count in sub-tab button
-  const qCount = getQuestionCountForSub(subId);
-  const qCountEl = document.getElementById("detailLatihanCount");
-  if (qCountEl) qCountEl.innerText = qCount;
-
-  // 1. Pane Materi Lengkap
-  const secTeori = document.getElementById("secTeori");
-  const secRumus = document.getElementById("secRumus");
-  const secBatasan = document.getElementById("secBatasan");
-  const secContoh = document.getElementById("secContoh");
-  const secTrik = document.getElementById("secTrik");
-
-  if (secTeori) secTeori.innerHTML = renderMarkdown(data.teori_definisi);
-  if (secRumus) secRumus.innerHTML = renderMarkdown(data.rumus_katex);
-  if (secBatasan) secBatasan.innerHTML = renderMarkdown(data.karakteristik_batasan);
-  if (secContoh) secContoh.innerHTML = renderMarkdown(data.contoh_kontekstual);
-  if (secTrik) secTrik.innerHTML = renderMarkdown(data.trik_cepat);
-
-  // 2. Pane Rangkuman
-  const rangkumanEl = document.getElementById("detailRangkumanBody");
-  if (rangkumanEl) {
-    rangkumanEl.innerHTML = renderMarkdown(data.rangkuman || "Rangkuman sedang diperbarui.");
-  }
-
-  // 3. Pane Variasi Soal
-  renderVariasiSoalList(data.variasi_soal || []);
-
-  // 4. Pane Latihan Soal Sub-bab
-  renderSubChapterQuestions(subId);
-
-  // Render KaTeX for all panels
-  setTimeout(() => {
-    const detailContainer = document.getElementById("materiDetailView");
-    if (detailContainer) renderKaTeX(detailContainer);
-  }, 50);
-}
-
-// Switch between the 4 Sub-Tabs inside Sub-Chapter View
-function switchSubDetailTab(tabName) {
-  activeSubDetailTab = tabName;
-
-  const btnMateri = document.getElementById("subTabBtn_materi");
-  const btnRangkuman = document.getElementById("subTabBtn_rangkuman");
-  const btnVariasi = document.getElementById("subTabBtn_variasi");
-  const btnLatihan = document.getElementById("subTabBtn_latihan");
-
-  const paneMateri = document.getElementById("subPane_materi");
-  const paneRangkuman = document.getElementById("subPane_rangkuman");
-  const paneVariasi = document.getElementById("subPane_variasi");
-  const paneLatihan = document.getElementById("subPane_latihan");
-
-  const buttons = [btnMateri, btnRangkuman, btnVariasi, btnLatihan];
-  const panes = [paneMateri, paneRangkuman, paneVariasi, paneLatihan];
-
-  panes.forEach((p) => p && p.classList.add("hidden"));
-  buttons.forEach((b) => {
-    if (b) {
-      b.className =
-        "sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 text-slate-600 hover:text-slate-900 flex items-center justify-center space-x-1.5";
-    }
-  });
-
-  if (tabName === "materi") {
-    paneMateri.classList.remove("hidden");
-    btnMateri.className =
-      "sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 bg-white text-brand-700 shadow-xs font-extrabold flex items-center justify-center space-x-1.5";
-  } else if (tabName === "rangkuman") {
-    paneRangkuman.classList.remove("hidden");
-    btnRangkuman.className =
-      "sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 bg-white text-amber-700 shadow-xs font-extrabold flex items-center justify-center space-x-1.5";
-  } else if (tabName === "variasi") {
-    paneVariasi.classList.remove("hidden");
-    btnVariasi.className =
-      "sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 bg-white text-indigo-700 shadow-xs font-extrabold flex items-center justify-center space-x-1.5";
-  } else if (tabName === "latihan") {
-    paneLatihan.classList.remove("hidden");
-    btnLatihan.className =
-      "sub-tab-btn py-2.5 px-3 rounded-lg transition-all duration-150 bg-white text-emerald-700 shadow-xs font-extrabold flex items-center justify-center space-x-1.5";
-  }
-
-  // Trigger KaTeX on pane switch
-  const activePane = document.getElementById(`subPane_${tabName}`);
-  if (activePane) renderKaTeX(activePane);
-}
-
-// Render Variasi Soal Cards
-function renderVariasiSoalList(variasiList) {
-  const container = document.getElementById("detailVariasiList");
-  if (!container) return;
-
-  if (variasiList.length === 0) {
-    container.innerHTML = `
-      <div class="p-6 text-center text-slate-500 text-xs">
-        Variasi soal untuk sub-bab ini sedang disiapkan.
-      </div>
-    `;
-    return;
-  }
-
-  let html = "";
-  variasiList.forEach((v, idx) => {
-    html += `
-      <div class="variasi-card p-5 sm:p-6 space-y-4">
-        <!-- Badge & Tipe -->
-        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
-            <i class="fa-solid fa-shapes mr-1.5"></i> ${v.tipe}
-          </span>
-          <span class="text-xs font-semibold text-slate-400">Pola #${idx + 1}</span>
-        </div>
-
-        <!-- Soal -->
-        <div class="text-sm font-semibold text-slate-800 leading-relaxed q-stem">
-          ${renderMarkdown(v.soal)}
-        </div>
-
-        <!-- Konsep Kunci -->
-        <div class="bg-amber-50/70 border-l-4 border-amber-500 p-3 rounded-r-xl text-xs text-amber-900 flex items-start space-x-2">
-          <i class="fa-solid fa-key mt-0.5 text-amber-600"></i>
-          <div>
-            <strong>Konsep Kunci:</strong> ${v.konsep_kunci}
-          </div>
-        </div>
-
-        <!-- Langkah Penyelesaian Terstruktur -->
-        <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 text-xs sm:text-sm text-slate-700 markdown-body">
-          <div class="font-bold text-slate-800 mb-2 flex items-center text-xs uppercase tracking-wider text-slate-500">
-            <i class="fa-solid fa-list-check mr-1.5 text-brand-600"></i> Langkah Penyelesaian Terstruktur (KaTeX):
-          </div>
-          ${renderMarkdown(v.solusi)}
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-  container.querySelectorAll(".q-stem, .markdown-body").forEach((el) => renderKaTeX(el));
-}
-
-// Render Questions inside Sub-Chapter View (Tab Latihan Soal)
-function renderSubChapterQuestions(subId) {
-  const container = document.getElementById("detailSubQuestionsContainer");
-  if (!container || !window.APP_DATA || !window.APP_DATA.questions) return;
-
-  const qList = window.APP_DATA.questions.filter((q) => q.sub_chapter_id === subId);
-
-  if (qList.length === 0) {
-    container.innerHTML = `
-      <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 text-center">
-        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mx-auto text-slate-400 mb-3">
-          <i class="fa-solid fa-folder-open text-xl"></i>
-        </div>
-        <h4 class="font-bold text-slate-800 text-sm">Tidak Ada Butir Soal Langsung pada Sub-bab Ini</h4>
-        <p class="text-xs text-slate-500 mt-1 max-w-md mx-auto">
-          Materi pada sub-bab ini diuji secara integratif pada topik gabungan di bank soal utama.
-        </p>
-        <button onclick="switchTab('drilling')" class="mt-4 px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-xl shadow-xs transition-all">
-          Buka Bank 46 Soal Lengkap
-        </button>
-      </div>
-    `;
-    return;
-  }
-
-  let html = "";
-  qList.forEach((q) => {
-    const isSubmitted = !!submittedQuestions[q.id];
-    const submission = submittedQuestions[q.id];
-
-    html += `
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs question-card" id="sub_qcard_${q.id}">
-        <!-- Question Card Header -->
-        <div class="bg-slate-50/80 px-6 py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-2">
-          <div class="flex items-center space-x-2">
-            <span class="w-7 h-7 rounded-lg bg-brand-600 text-white font-bold text-xs flex items-center justify-center">
-              #${q.id}
-            </span>
-            <span class="text-xs font-bold text-slate-700">${q.topic}</span>
-          </div>
-
-          <div class="flex items-center space-x-2">
-            <span class="text-[11px] font-semibold text-slate-500 bg-white border border-slate-200 px-2 py-0.5 rounded">
-              ${q.type === "PG" ? "Pilihan Ganda" : q.type === "PGK_MCMA" ? "Pilihan Ganda Kompleks" : "Kategori Benar/Salah"}
-            </span>
-            ${
-              isSubmitted
-                ? submission.isCorrect
-                  ? `<span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300"><i class="fa-solid fa-check mr-1"></i> Benar</span>`
-                  : `<span class="text-xs font-bold text-rose-700 bg-rose-100 px-2.5 py-0.5 rounded-full border border-rose-300"><i class="fa-solid fa-xmark mr-1"></i> Salah</span>`
-                : ""
-            }
-          </div>
-        </div>
-
-        <!-- Question Body -->
-        <div class="p-6 space-y-4">
-          <div class="text-sm font-medium text-slate-800 leading-relaxed q-stem">
-            ${renderMarkdown(q.question_stem)}
-          </div>
-
-          ${
-            q.image
-              ? `
-              <div class="my-4 text-center">
-                <img src="${q.image}" alt="Diagram Soal ${q.id}" class="max-h-72 mx-auto rounded-lg border border-slate-200 shadow-xs bg-white p-1">
-              </div>
-            `
-              : ""
-          }
-
-          <div class="pt-2">
-            ${renderQuestionOptions(q)}
-          </div>
-
-          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-            <button onclick="checkQuestionAnswer(${q.id}, true)" class="px-5 py-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all">
-              <i class="fa-solid fa-circle-check mr-1.5"></i> Periksa Jawaban
-            </button>
-
-            ${
-              isSubmitted
-                ? `
-              <button onclick="toggleExplanation(${q.id})" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center">
-                <span>Pembahasan Langkah Demi Langkah</span>
-                <i id="iconExp_${q.id}" class="fa-solid fa-chevron-down ml-1.5 text-[10px]"></i>
-              </button>
-            `
-                : ""
-            }
-          </div>
-
-          <div id="explanation_${q.id}" class="${isSubmitted ? "" : "hidden"} mt-4 p-5 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 markdown-body">
-            <div class="font-extrabold text-slate-800 mb-2 flex items-center text-sm">
-              <i class="fa-solid fa-lightbulb text-amber-500 mr-2"></i> Pembahasan Analitis KaTeX (Kunci: ${formatKeyDisplay(q.correct_answer)})
-            </div>
-            ${renderMarkdown(q.explanation)}
-          </div>
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-  container.querySelectorAll(".q-stem, .q-option, .markdown-body").forEach((el) => renderKaTeX(el));
-}
-
-// Reset Sub-chapter answers
-function resetSubDrillingAnswers() {
-  const qList = window.APP_DATA.questions.filter((q) => q.sub_chapter_id === currentSubId);
-  qList.forEach((q) => {
-    delete userAnswers[q.id];
-    delete submittedQuestions[q.id];
-  });
-  updateScoreBoard();
-  renderSubChapterQuestions(currentSubId);
-}
-
-// Navigate Next / Previous Sub-chapter
-function navigateSubChapter(direction) {
-  const allSub = getAllSubChaptersList();
-  const currentIndex = allSub.findIndex((s) => s.sub_chapter_id === currentSubId);
-  if (currentIndex === -1) return;
-
-  const newIndex = currentIndex + direction;
-  if (newIndex >= 0 && newIndex < allSub.length) {
-    selectSubChapter(allSub[newIndex].sub_chapter_id, activeSubDetailTab);
-  }
-}
-
-// Toggle Section Accordion in Tab 1
-function toggleSection(secId) {
-  const el = document.getElementById(secId);
-  const icon = document.getElementById("icon" + secId.charAt(0).toUpperCase() + secId.slice(1));
-  if (!el) return;
-
-  if (el.classList.contains("hidden")) {
-    el.classList.remove("hidden");
-    if (icon) icon.className = "fa-solid fa-chevron-up text-xs text-slate-400";
-    renderKaTeX(el);
-  } else {
-    el.classList.add("hidden");
-    if (icon) icon.className = "fa-solid fa-chevron-down text-xs text-slate-400";
-  }
-}
-
-// ==========================================
-// VIEW 2: DRILLING SEMUA 46 SOAL
-// ==========================================
-
-function setupFilterDropdown() {
-  const select = document.getElementById("filterSubChapterSelect");
-  if (!select || !window.APP_DATA || !window.APP_DATA.matrix) return;
-
-  let options = `<option value="ALL">Semua 46 Soal Lengkap</option>`;
-  window.APP_DATA.matrix.modules.forEach((mod) => {
-    options += `<optgroup label="${mod.module_id} - ${mod.module_name}">`;
-    mod.sub_chapters.forEach((sc) => {
-      const qCount = getQuestionCountForSub(sc.sub_chapter_id);
-      const title = sc.short_title || sc.title;
-      options += `<option value="${sc.sub_chapter_id}">Sub ${sc.sub_chapter_id}: ${title} (${qCount} soal)</option>`;
-    });
-    options += `</optgroup>`;
-  });
-  select.innerHTML = options;
-}
-
-function filterQuestionsBySub(subId) {
-  filterSub = subId;
-  renderQuestionsList();
-}
-
-function renderQuestionsList() {
-  const container = document.getElementById("questionsContainer");
-  if (!container || !window.APP_DATA || !window.APP_DATA.questions) return;
-
-  let qList = window.APP_DATA.questions;
-  if (filterSub !== "ALL") {
-    qList = qList.filter((q) => q.sub_chapter_id === filterSub);
-  }
-
-  if (qList.length === 0) {
-    container.innerHTML = `
-      <div class="bg-white rounded-2xl p-8 border border-slate-200 text-center">
-        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mx-auto text-slate-400 mb-3">
-          <i class="fa-solid fa-folder-open text-xl"></i>
-        </div>
-        <h3 class="font-bold text-slate-800">Tidak ada soal langsung pada filter ini</h3>
-        <p class="text-xs text-slate-500 mt-1">Gunakan opsi "Semua 46 Soal Lengkap" untuk menjelajahi seluruh bank soal.</p>
-      </div>
-    `;
-    return;
-  }
-
-  let html = "";
-  qList.forEach((q) => {
-    const isSubmitted = !!submittedQuestions[q.id];
-    const submission = submittedQuestions[q.id];
-
-    html += `
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs question-card" id="qcard_${q.id}">
-        <!-- Question Card Header -->
-        <div class="bg-slate-50/80 px-6 py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-2">
-          <div class="flex items-center space-x-2">
-            <span class="w-7 h-7 rounded-lg bg-brand-600 text-white font-bold text-xs flex items-center justify-center">
-              #${q.id}
-            </span>
-            <span class="text-xs font-bold text-slate-700">${q.topic}</span>
-            <span class="text-[10px] bg-slate-200 text-slate-700 px-2 py-0.5 rounded-full font-mono font-semibold cursor-pointer hover:bg-brand-100 hover:text-brand-800" onclick="selectSubChapter('${q.sub_chapter_id}', 'materi')">Sub ${q.sub_chapter_id}</span>
-          </div>
-
-          <div class="flex items-center space-x-2">
-            <span class="text-[11px] font-semibold text-slate-500 bg-white border border-slate-200 px-2 py-0.5 rounded">
-              ${q.type === "PG" ? "Pilihan Ganda" : q.type === "PGK_MCMA" ? "Pilihan Ganda Kompleks" : "Kategori Benar/Salah"}
-            </span>
-            ${
-              isSubmitted
-                ? submission.isCorrect
-                  ? `<span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300"><i class="fa-solid fa-check mr-1"></i> Benar</span>`
-                  : `<span class="text-xs font-bold text-rose-700 bg-rose-100 px-2.5 py-0.5 rounded-full border border-rose-300"><i class="fa-solid fa-xmark mr-1"></i> Salah</span>`
-                : ""
-            }
-          </div>
-        </div>
-
-        <!-- Question Body -->
-        <div class="p-6 space-y-4">
-          <div class="text-sm font-medium text-slate-800 leading-relaxed q-stem">
-            ${renderMarkdown(q.question_stem)}
-          </div>
-
-          ${
-            q.image
-              ? `
-              <div class="my-4 text-center">
-                <img src="${q.image}" alt="Diagram Soal ${q.id}" class="max-h-72 mx-auto rounded-lg border border-slate-200 shadow-xs bg-white p-1">
-              </div>
-            `
-              : ""
-          }
-
-          <div class="pt-2">
-            ${renderQuestionOptions(q)}
-          </div>
-
-          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-            <button onclick="checkQuestionAnswer(${q.id})" class="px-5 py-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all">
-              <i class="fa-solid fa-circle-check mr-1.5"></i> Periksa Jawaban
-            </button>
-
-            ${
-              isSubmitted
-                ? `
-              <button onclick="toggleExplanation(${q.id})" class="text-xs font-bold text-brand-600 hover:text-brand-800 flex items-center">
-                <span>Pembahasan Langkah Demi Langkah</span>
-                <i id="iconExp_${q.id}" class="fa-solid fa-chevron-down ml-1.5 text-[10px]"></i>
-              </button>
-            `
-                : ""
-            }
-          </div>
-
-          <div id="explanation_${q.id}" class="${isSubmitted ? "" : "hidden"} mt-4 p-5 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 markdown-body">
-            <div class="font-extrabold text-slate-800 mb-2 flex items-center text-sm">
-              <i class="fa-solid fa-lightbulb text-amber-500 mr-2"></i> Pembahasan Analitis KaTeX (Kunci: ${formatKeyDisplay(q.correct_answer)})
-            </div>
-            ${renderMarkdown(q.explanation)}
-          </div>
-        </div>
-      </div>
-    `;
-  });
-
-  container.innerHTML = html;
-  container.querySelectorAll(".q-stem, .q-option, .markdown-body").forEach((el) => renderKaTeX(el));
-}
-
-// Render Question Options based on type
-function renderQuestionOptions(q) {
-  const currentAns = userAnswers[q.id];
-
-  if (q.type === "PG") {
-    let out = `<div class="space-y-2.5">`;
-    q.options.forEach((opt) => {
-      const isSelected = currentAns === opt.label;
-      out += `
-        <label class="flex items-start p-3 rounded-xl border cursor-pointer transition-all ${
-          isSelected
-            ? "border-brand-500 bg-brand-50/60 text-brand-950 font-semibold"
-            : "border-slate-200 hover:bg-slate-50 text-slate-700"
-        }">
-          <input type="radio" name="opt_q_${q.id}" value="${opt.label}" ${isSelected ? "checked" : ""} 
-            onchange="selectRadioAnswer(${q.id}, '${opt.label}')" class="mt-0.5 text-brand-600 focus:ring-brand-500">
-          <span class="ml-3 text-xs sm:text-sm flex-1 q-option">
-            <strong class="text-slate-900 mr-1.5">${opt.label}.</strong> ${opt.text}
-          </span>
-        </label>
-      `;
-    });
-    out += `</div>`;
-    return out;
-  } else if (q.type === "PGK_MCMA") {
-    let out = `<div class="space-y-2.5">`;
-    const ansArray = Array.isArray(currentAns) ? currentAns : [];
-    q.options.forEach((opt) => {
-      const isChecked = ansArray.includes(opt.label);
-      out += `
-        <label class="flex items-start p-3 rounded-xl border cursor-pointer transition-all ${
-          isChecked
-            ? "border-brand-500 bg-brand-50/60 text-brand-950 font-semibold"
-            : "border-slate-200 hover:bg-slate-50 text-slate-700"
-        }">
-          <input type="checkbox" name="opt_mcma_q_${q.id}" value="${opt.label}" ${isChecked ? "checked" : ""} 
-            onchange="toggleCheckboxAnswer(${q.id}, '${opt.label}')" class="mt-0.5 text-brand-600 rounded focus:ring-brand-500">
-          <span class="ml-3 text-xs sm:text-sm flex-1 q-option">
-            <strong class="text-slate-900 mr-1.5">${opt.label}.</strong> ${opt.text}
-          </span>
-        </label>
-      `;
-    });
-    out += `</div>`;
-    return out;
-  } else if (q.type === "PGK_KATEGORI") {
-    const ansObj = typeof currentAns === "object" && currentAns !== null ? currentAns : {};
-    let out = `
-      <div class="overflow-x-auto">
-        <table class="min-w-full divide-y divide-slate-200 text-xs sm:text-sm border border-slate-200 rounded-xl overflow-hidden">
-          <thead class="bg-slate-100">
-            <tr>
-              <th class="px-4 py-2.5 text-left font-bold text-slate-700">Pernyataan</th>
-              <th class="px-3 py-2.5 text-center font-bold text-slate-700 w-24">Benar</th>
-              <th class="px-3 py-2.5 text-center font-bold text-slate-700 w-24">Salah</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-100">
-    `;
-
-    q.statements.forEach((stmt, idx) => {
-      const chosen = ansObj[idx];
-      out += `
-        <tr class="hover:bg-slate-50">
-          <td class="px-4 py-3 text-slate-800 q-option">${stmt.text}</td>
-          <td class="px-3 py-3 text-center">
-            <input type="radio" name="stmt_${q.id}_${idx}" value="Benar" ${chosen === "Benar" ? "checked" : ""}
-              onchange="selectCategoryAnswer(${q.id}, ${idx}, 'Benar')" class="text-emerald-600 focus:ring-emerald-500">
-          </td>
-          <td class="px-3 py-3 text-center">
-            <input type="radio" name="stmt_${q.id}_${idx}" value="Salah" ${chosen === "Salah" ? "checked" : ""}
-              onchange="selectCategoryAnswer(${q.id}, ${idx}, 'Salah')" class="text-rose-600 focus:ring-rose-500">
-          </td>
-        </tr>
-      `;
-    });
-
-    out += `
-          </tbody>
-        </table>
-      </div>
-    `;
-    return out;
-  }
-  return "";
-}
-
-function selectRadioAnswer(qId, val) {
-  userAnswers[qId] = val;
-}
-
-function toggleCheckboxAnswer(qId, val) {
-  if (!Array.isArray(userAnswers[qId])) {
-    userAnswers[qId] = [];
-  }
-  const idx = userAnswers[qId].indexOf(val);
-  if (idx > -1) {
-    userAnswers[qId].splice(idx, 1);
-  } else {
-    userAnswers[qId].push(val);
-  }
-}
-
-function selectCategoryAnswer(qId, stmtIdx, val) {
-  if (typeof userAnswers[qId] !== "object" || userAnswers[qId] === null) {
-    userAnswers[qId] = {};
-  }
-  userAnswers[qId][stmtIdx] = val;
-}
-
-function checkQuestionAnswer(qId, isFromSubPane = false) {
-  const q = window.APP_DATA.questions.find((item) => item.id === qId);
-  if (!q) return;
-
-  const userAns = userAnswers[qId];
-  if (userAns === undefined) {
-    alert("Silakan pilih jawaban Anda terlebih dahulu sebelum memeriksa!");
-    return;
-  }
-
-  let isCorrect = false;
-
-  if (q.type === "PG") {
-    isCorrect = userAns === q.correct_answer;
-  } else if (q.type === "PGK_MCMA") {
-    const sortedUser = Array.isArray(userAns) ? [...userAns].sort().join(",") : "";
-    const sortedKey = Array.isArray(q.correct_answer) ? [...q.correct_answer].sort().join(",") : q.correct_answer;
-    isCorrect = sortedUser === sortedKey;
-  } else if (q.type === "PGK_KATEGORI") {
-    const keys = Object.keys(q.correct_answer);
-    isCorrect = keys.every((k) => userAns && userAns[k] === q.correct_answer[k]);
-  }
-
-  submittedQuestions[qId] = { isCorrect };
-  updateScoreBoard();
-
-  if (isFromSubPane) {
-    renderSubChapterQuestions(currentSubId);
-    const card = document.getElementById(`sub_qcard_${qId}`);
-    if (card) card.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  } else {
-    renderQuestionsList();
-    const card = document.getElementById(`qcard_${qId}`);
-    if (card) card.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
-}
-
-function toggleExplanation(qId) {
-  const exp = document.getElementById(`explanation_${qId}`);
-  const icon = document.getElementById(`iconExp_${qId}`);
-  if (!exp) return;
-
-  if (exp.classList.contains("hidden")) {
-    exp.classList.remove("hidden");
-    if (icon) icon.className = "fa-solid fa-chevron-up ml-1.5 text-[10px]";
-    renderKaTeX(exp);
-  } else {
-    exp.classList.add("hidden");
-    if (icon) icon.className = "fa-solid fa-chevron-down ml-1.5 text-[10px]";
-  }
-}
-
-function formatKeyDisplay(key) {
-  if (typeof key === "object" && !Array.isArray(key)) {
-    return Object.entries(key).map(([k, v]) => `Pernyataan ${parseInt(k) + 1}: ${v}`).join(", ");
-  }
-  if (Array.isArray(key)) {
-    return key.join(", ");
-  }
-  return key;
-}
-
-function resetAllDrillingAnswers() {
-  userAnswers = {};
-  submittedQuestions = {};
-  updateScoreBoard();
-  renderQuestionsList();
-  if (activeSubDetailTab === "latihan") {
-    renderSubChapterQuestions(currentSubId);
-  }
-}
-
-function updateScoreBoard() {
-  const scoreText = document.getElementById("scoreText");
-  if (!scoreText) return;
-
-  const totalSubmitted = Object.keys(submittedQuestions).length;
-  const correctCount = Object.values(submittedQuestions).filter((s) => s.isCorrect).length;
-
-  scoreText.innerText = `Skor: ${correctCount} / ${totalSubmitted} (${totalSubmitted > 0 ? Math.round((correctCount / totalSubmitted) * 100) : 0}%)`;
-}
-
-// ==========================================
-// VIEW 3: AUDIT KURIKULUM LENGKAP & SUB-MATERI DETAIL
-// ==========================================
-
-function renderAuditList(filterQuery = "") {
-  const container = document.getElementById("auditListContainer");
-  if (!container || !window.APP_DATA || !window.APP_DATA.matrix) return;
-
-  const matrix = window.APP_DATA.matrix;
-  let html = "";
-  const query = filterQuery.toLowerCase().trim();
-
-  matrix.modules.forEach((mod) => {
-    // Filter sub-chapters if search query present
-    const matchedSubs = mod.sub_chapters.filter((sc) => {
-      if (!query) return true;
-      const titleMatch = (sc.short_title || "").toLowerCase().includes(query) || sc.title.toLowerCase().includes(query);
-      const subTopicMatch = (sc.sub_topics || []).some((st) => st.toLowerCase().includes(query));
-      const compMatch = (sc.competencies || []).some((c) => c.toLowerCase().includes(query));
-      return titleMatch || subTopicMatch || compMatch || sc.sub_chapter_id.includes(query);
-    });
-
-    if (matchedSubs.length === 0) return;
-
-    html += `
-      <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
-        <!-- Module Header -->
-        <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2">
-          <div class="flex items-center space-x-3">
-            <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-extrabold text-xs flex items-center justify-center shadow-xs">
-              ${mod.module_id.replace("MOD-", "M")}
-            </span>
-            <div>
-              <h3 class="text-base font-extrabold text-slate-900">${mod.module_name}</h3>
-              <p class="text-xs text-slate-500 font-mono">${mod.module_id} • ${matchedSubs.length} Sub-bab Terverifikasi</p>
-            </div>
-          </div>
-          <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full border border-emerald-300">
-            <i class="fa-solid fa-check mr-1 text-emerald-600"></i> Terverifikasi 100%
-          </span>
-        </div>
-
-        <!-- Sub-chapters List -->
-        <div class="divide-y divide-slate-100">
-    `;
-
-    matchedSubs.forEach((sc) => {
-      const qIds = window.APP_DATA.questions
-        .filter((q) => q.sub_chapter_id === sc.sub_chapter_id)
-        .map((q) => q.id);
-
-      const subTopics = sc.sub_topics || [];
-      const shortTitle = sc.short_title || sc.title;
-
-      html += `
-        <div class="p-6 hover:bg-slate-50/50 transition-colors">
-          <div class="flex flex-wrap items-start justify-between gap-3">
-            <!-- Sub-chapter Title -->
-            <div class="space-y-1">
-              <div class="flex items-center space-x-2">
-                <span class="text-xs font-mono font-bold bg-brand-50 text-brand-700 border border-brand-200 px-2 py-0.5 rounded">
-                  Sub-bab ${sc.sub_chapter_id}
-                </span>
-                <h4 class="text-base font-extrabold text-slate-900">${shortTitle}</h4>
-              </div>
-              <p class="text-xs text-slate-500 font-medium">${sc.title}</p>
-            </div>
-
-            <!-- Action & Questions -->
-            <div class="flex items-center space-x-2">
-              <button onclick="selectSubChapter('${sc.sub_chapter_id}', 'materi')" class="px-3 py-1.5 bg-brand-50 hover:bg-brand-100 text-brand-700 text-xs font-bold rounded-lg transition-all flex items-center">
-                <span>Buka Materi</span>
-                <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
-              </button>
-            </div>
-          </div>
-
-          <!-- Penjabaran Sub-Materi Detail (Permintaan User #5) -->
-          <div class="mt-4 pt-3 border-t border-slate-100">
-            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center justify-between">
-              <span><i class="fa-solid fa-layer-group text-brand-500 mr-1.5"></i> Penjabaran Sub-Materi Detail:</span>
-              <span class="text-[11px] font-mono text-slate-400 font-normal">${subTopics.length} Topik Rinci</span>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 audit-subtopics-list">
-              ${subTopics
-                .map(
-                  (st, idx) => `
-                <div class="flex items-start space-x-2 text-xs text-slate-700 bg-slate-50 p-2 rounded-lg border border-slate-100">
-                  <span class="text-brand-600 font-mono font-bold mt-0.5">${idx + 1}.</span>
-                  <span>${st}</span>
-                </div>
-              `
-                )
-                .join("")}
-            </div>
-          </div>
-
-          <!-- Parameter Matriks & Batasan Silabus -->
-          <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/80">
-            <div>
-              <span class="font-bold text-slate-700 block mb-1">
-                <i class="fa-solid fa-bullseye text-blue-500 mr-1"></i> Kompetensi Kurikulum:
-              </span>
-              <ul class="list-disc list-inside space-y-0.5 text-slate-600">
-                ${sc.competencies.map((c) => `<li>${c}</li>`).join("")}
-              </ul>
-            </div>
-            <div>
-              <span class="font-bold text-amber-900 block mb-1">
-                <i class="fa-solid fa-shield-halved text-amber-500 mr-1"></i> Batasan & Ketentuan Khusus:
-              </span>
-              <p class="text-slate-600 leading-relaxed">${sc.constraints ? sc.constraints.join("; ") : "Mengikuti kaidah umum kurikulum."}</p>
-              
-              <!-- Soal Terkait -->
-              <div class="mt-2 pt-2 border-t border-slate-200/60 flex items-center space-x-2">
-                <span class="font-bold text-slate-700">Soal Terkait:</span>
-                ${
-                  qIds.length > 0
-                    ? qIds
-                        .map(
-                          (id) =>
-                            `<button onclick="openQuestionInDrilling(${id})" class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-[10px] font-bold px-2 py-0.5 rounded-md transition-all">#${id}</button>`
-                        )
-                        .join(" ")
-                    : `<span class="text-slate-400 italic">Diuji secara integratif</span>`
-                }
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-
-    html += `
-        </div>
-      </div>
-    `;
-  });
-
-  if (!html) {
-    container.innerHTML = `
-      <div class="bg-white rounded-2xl p-8 border border-slate-200 text-center text-slate-500 text-xs">
-        Tidak ditemukan data audit yang sesuai dengan kata kunci "${filterQuery}".
-      </div>
-    `;
-    return;
-  }
-
-  container.innerHTML = html;
-}
-
-function filterAuditList(query) {
-  renderAuditList(query);
-}
-
-function toggleAllAuditDetails() {
-  const lists = document.querySelectorAll(".audit-subtopics-list");
-  isAuditAllExpanded = !isAuditAllExpanded;
-  lists.forEach((l) => {
-    if (isAuditAllExpanded) {
-      l.classList.remove("hidden");
-    } else {
-      l.classList.add("hidden");
-    }
-  });
-  const btn = document.getElementById("btnToggleAllAudit");
-  if (btn) {
-    btn.innerHTML = isAuditAllExpanded
-      ? `<i class="fa-solid fa-arrows-up-down mr-1.5"></i> Tutup Semua Detail`
-      : `<i class="fa-solid fa-arrows-up-down mr-1.5"></i> Buka Semua Detail`;
-  }
-}
-
-function openQuestionInDrilling(qId) {
-  switchTab("drilling");
-  const q = window.APP_DATA.questions.find((item) => item.id === qId);
-  if (q) {
-    const select = document.getElementById("filterSubChapterSelect");
-    if (select) select.value = "ALL";
-    filterQuestionsBySub("ALL");
-    setTimeout(() => {
-      const card = document.getElementById(`qcard_${qId}`);
-      if (card) {
-        card.scrollIntoView({ behavior: "smooth", block: "center" });
-        card.classList.add("ring-2", "ring-brand-500");
-        setTimeout(() => card.classList.remove("ring-2", "ring-brand-500"), 2000);
+// 5. TIMER CONTROLLER
+function initTimer() {
+  const timerDisplay = document.getElementById('timerText');
+  const timerPill = document.getElementById('timerPill');
+  
+  function tick() {
+    if (!state.timerRunning) return;
+    if (state.timerSeconds > 0) {
+      state.timerSeconds--;
+      const mins = Math.floor(state.timerSeconds / 60);
+      const secs = state.timerSeconds % 60;
+      if (timerDisplay) {
+        timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
       }
-    }, 100);
+      if (state.timerSeconds < 300 && timerPill) {
+        timerPill.classList.add('urgent');
+      }
+    } else {
+      clearInterval(state.timerInterval);
+      state.timerRunning = false;
+      alert('Waktu drilling telah berakhir! Mari periksa hasil evaluasi Anda.');
+    }
+  }
+
+  state.timerInterval = setInterval(tick, 1000);
+}
+
+function toggleTimerPause() {
+  state.timerRunning = !state.timerRunning;
+  const timerPill = document.getElementById('timerPill');
+  if (timerPill) {
+    timerPill.style.opacity = state.timerRunning ? '1' : '0.65';
+    timerPill.title = state.timerRunning ? 'Klik untuk jeda timer' : 'Timer dijeda - klik untuk lanjut';
   }
 }
 
-// Live Search in Sidebar
-function handleSearch(query) {
-  query = query.toLowerCase().trim();
-  if (!query) {
-    setupSidebarNavigation();
+// 6. QUESTION RENDERING ENGINE
+function renderCurrentQuestion() {
+  const q = questionsData[state.currentIndex];
+  const total = questionsData.length;
+
+  // Header Elements
+  const headerTopic = document.getElementById('headerTopic');
+  const headerProgressFill = document.getElementById('headerProgressFill');
+  if (headerTopic) {
+    headerTopic.textContent = `${q.subject}: ${q.category}`;
+  }
+  if (headerProgressFill) {
+    const progressPercent = ((state.currentIndex + 1) / total) * 100;
+    headerProgressFill.style.width = `${progressPercent}%`;
+  }
+
+  // Question Meta
+  const questionNumBadge = document.getElementById('questionNumBadge');
+  const subjectBadge = document.getElementById('subjectBadge');
+  const difficultyBadge = document.getElementById('difficultyBadge');
+  const btnRagu = document.getElementById('btnRagu');
+
+  if (questionNumBadge) questionNumBadge.textContent = `SOAL 0${q.id}`;
+  if (subjectBadge) {
+    subjectBadge.textContent = q.subject;
+    subjectBadge.className = `tactile-badge ${q.subject === 'FISIKA' ? 'badge-physics' : 'badge-math'}`;
+  }
+  if (difficultyBadge) difficultyBadge.textContent = q.difficulty;
+  
+  if (btnRagu) {
+    if (state.isRagu[state.currentIndex]) {
+      btnRagu.classList.add('active');
+      btnRagu.innerHTML = '<i class="fa-solid fa-bookmark mr-1"></i> Ragu-ragu (Ditandai)';
+    } else {
+      btnRagu.classList.remove('active');
+      btnRagu.innerHTML = '<i class="fa-regular fa-bookmark mr-1"></i> Tandai Ragu-ragu';
+    }
+  }
+
+  // Problem Text Statement
+  const problemStatement = document.getElementById('problemStatement');
+  if (problemStatement) {
+    problemStatement.innerHTML = q.statement;
+  }
+
+  // Diagram Box Handling
+  const diagramBox = document.getElementById('diagramBox');
+  const diagramContent = document.getElementById('diagramContent');
+  const diagramCaption = document.getElementById('diagramCaption');
+  if (q.hasDiagram && diagramBox && diagramContent && diagramCaption) {
+    diagramBox.classList.remove('hidden');
+    diagramContent.innerHTML = q.diagramSvg;
+    diagramCaption.textContent = q.diagramCaption;
+  } else if (diagramBox) {
+    diagramBox.classList.add('hidden');
+  }
+
+  // Options List Rendering
+  const optionsList = document.getElementById('optionsList');
+  if (optionsList) {
+    const letters = ['A', 'B', 'C', 'D', 'E'];
+    const chosen = state.userAnswers[state.currentIndex];
+    const verified = state.isVerified[state.currentIndex];
+
+    optionsList.innerHTML = q.options.map((opt, idx) => {
+      let stateClass = '';
+      if (verified) {
+        if (idx === q.correctIndex) {
+          stateClass = 'correct disabled-verified';
+        } else if (idx === chosen) {
+          stateClass = 'wrong disabled-verified';
+        } else {
+          stateClass = 'disabled-verified';
+        }
+      } else if (chosen === idx) {
+        stateClass = 'selected';
+      }
+
+      return `
+        <button class="option-card ${stateClass}" onclick="handleOptionSelect(${idx})" ${verified ? 'disabled' : ''}>
+          <div class="option-badge">[${letters[idx]}]</div>
+          <div class="option-text">${opt}</div>
+          ${verified && idx === q.correctIndex ? '<i class="fa-solid fa-circle-check text-green-600 ml-auto text-xl"></i>' : ''}
+          ${verified && idx === chosen && idx !== q.correctIndex ? '<i class="fa-solid fa-circle-xmark text-red-600 ml-auto text-xl"></i>' : ''}
+        </button>
+      `;
+    }).join('');
+  }
+
+  // Solution Accordion Rendering
+  const solutionAccordion = document.getElementById('solutionAccordion');
+  const solutionConcept = document.getElementById('solutionConcept');
+  const solutionSteps = document.getElementById('solutionSteps');
+  const solutionPitfalls = document.getElementById('solutionPitfalls');
+
+  if (solutionConcept) solutionConcept.innerHTML = q.solution.concept;
+  if (solutionSteps) solutionSteps.innerHTML = q.solution.steps;
+  if (solutionPitfalls) solutionPitfalls.innerHTML = q.solution.pitfalls;
+
+  if (solutionAccordion) {
+    if (state.solutionOpen[state.currentIndex]) {
+      solutionAccordion.classList.add('open');
+    } else {
+      solutionAccordion.classList.remove('open');
+    }
+  }
+
+  // Update Action Bar Button Texts
+  updateBottomActionBar();
+
+  // Trigger KaTeX Formula Typesetting
+  triggerMathTypeset();
+
+  // Scroll smoothly to top of problem card
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// 7. MATH RENDERING WITH FORMULA OVERFLOW PROTECTION
+function triggerMathTypeset() {
+  if (window.renderMathInElement) {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false,
+      output: 'htmlAndMathml'
+    });
+
+    // Mobile Formula Overflow Safeguard: Ensure all KaTeX displays have a wrapper
+    document.querySelectorAll('.katex-display').forEach(el => {
+      if (!el.parentElement.classList.contains('formula-scroll')) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'formula-scroll';
+        el.parentNode.insertBefore(wrapper, el);
+        wrapper.appendChild(el);
+      }
+    });
+  }
+}
+
+// 8. INTERACTIVE ACTIONS: SELECTION, CHECK, RAGU, ACCORDION
+function handleOptionSelect(optionIndex) {
+  if (state.isVerified[state.currentIndex]) return;
+  state.userAnswers[state.currentIndex] = optionIndex;
+  renderCurrentQuestion();
+  renderMatrixGrid();
+  updateStats();
+}
+
+function toggleRagu() {
+  state.isRagu[state.currentIndex] = !state.isRagu[state.currentIndex];
+  renderCurrentQuestion();
+  renderMatrixGrid();
+  updateStats();
+}
+
+function toggleSolutionAccordion() {
+  state.solutionOpen[state.currentIndex] = !state.solutionOpen[state.currentIndex];
+  const solutionAccordion = document.getElementById('solutionAccordion');
+  if (solutionAccordion) {
+    if (state.solutionOpen[state.currentIndex]) {
+      solutionAccordion.classList.add('open');
+      triggerMathTypeset();
+    } else {
+      solutionAccordion.classList.remove('open');
+    }
+  }
+}
+
+function handleCheckAnswer() {
+  const chosen = state.userAnswers[state.currentIndex];
+  if (chosen === null) {
+    alert('Silakan pilih salah satu opsi jawaban (A, B, C, D, atau E) terlebih dahulu!');
     return;
   }
 
-  const container = document.getElementById("moduleNavList");
-  if (!container || !window.APP_DATA || !window.APP_DATA.matrix) return;
+  // Mark as verified
+  state.isVerified[state.currentIndex] = true;
+  // Automatically open solution accordion
+  state.solutionOpen[state.currentIndex] = true;
 
-  let html = `<div class="space-y-1">`;
-  const allSubs = getAllSubChaptersList();
-  const filtered = allSubs.filter((sc) => {
-    const titleMatch = (sc.short_title || "").toLowerCase().includes(query) || sc.title.toLowerCase().includes(query);
-    const topicMatch = (sc.sub_topics || []).some((st) => st.toLowerCase().includes(query));
-    return titleMatch || topicMatch || sc.sub_chapter_id.includes(query);
+  renderCurrentQuestion();
+  renderMatrixGrid();
+  updateStats();
+}
+
+function handlePrevQuestion() {
+  if (state.currentIndex > 0) {
+    state.currentIndex--;
+    renderCurrentQuestion();
+    renderMatrixGrid();
+  }
+}
+
+function handleNextQuestion() {
+  if (state.currentIndex < questionsData.length - 1) {
+    state.currentIndex++;
+    renderCurrentQuestion();
+    renderMatrixGrid();
+  }
+}
+
+function jumpToQuestion(idx) {
+  if (idx >= 0 && idx < questionsData.length) {
+    state.currentIndex = idx;
+    closeMobileDrawer();
+    renderCurrentQuestion();
+    renderMatrixGrid();
+  }
+}
+
+function updateBottomActionBar() {
+  const btnPrev = document.getElementById('btnPrev');
+  const btnNext = document.getElementById('btnNext');
+  const btnCheck = document.getElementById('btnCheck');
+
+  if (btnPrev) {
+    btnPrev.disabled = state.currentIndex === 0;
+  }
+  if (btnNext) {
+    btnNext.disabled = state.currentIndex === questionsData.length - 1;
+  }
+  if (btnCheck) {
+    const verified = state.isVerified[state.currentIndex];
+    if (verified) {
+      btnCheck.innerHTML = '<i class="fa-solid fa-book-open mr-1.5"></i> <span id="btnCheckText">Pembahasan</span>';
+      btnCheck.className = 'tactile-btn tactile-btn-secondary';
+      btnCheck.onclick = toggleSolutionAccordion;
+    } else {
+      btnCheck.innerHTML = '<i class="fa-solid fa-circle-check mr-1.5"></i> <span id="btnCheckText">Cek Jawaban</span>';
+      btnCheck.className = 'tactile-btn tactile-btn-primary';
+      btnCheck.onclick = handleCheckAnswer;
+    }
+  }
+}
+
+// 9. MATRIX GRID & ACCURACY STATS
+function renderMatrixGrid() {
+  const containers = [
+    document.getElementById('matrixGridDesktop'),
+    document.getElementById('matrixGridMobile')
+  ];
+
+  containers.forEach(container => {
+    if (!container) return;
+    container.innerHTML = questionsData.map((q, idx) => {
+      let statusClass = '';
+      const chosen = state.userAnswers[idx];
+      const verified = state.isVerified[idx];
+      const isRagu = state.isRagu[idx];
+      const isActive = idx === state.currentIndex;
+
+      if (verified) {
+        if (chosen === q.correctIndex) {
+          statusClass = 'answered-correct';
+        } else {
+          statusClass = 'answered-wrong';
+        }
+      } else if (isRagu) {
+        statusClass = 'ragu';
+      } else if (chosen !== null) {
+        statusClass = 'answered';
+      }
+
+      return `
+        <button class="matrix-btn ${statusClass} ${isActive ? 'active' : ''}" onclick="jumpToQuestion(${idx})" title="Soal 0${q.id} (${q.subject})">
+          0${q.id}
+          ${isRagu && !statusClass.includes('ragu') ? '<span class="ragu-indicator"></span>' : ''}
+        </button>
+      `;
+    }).join('');
+  });
+}
+
+function updateStats() {
+  const total = questionsData.length;
+  let answeredCount = 0;
+  let correctCount = 0;
+  let wrongCount = 0;
+
+  state.userAnswers.forEach((ans, idx) => {
+    if (ans !== null) answeredCount++;
+    if (state.isVerified[idx]) {
+      if (ans === questionsData[idx].correctIndex) {
+        correctCount++;
+      } else {
+        wrongCount++;
+      }
+    }
   });
 
-  if (filtered.length === 0) {
-    container.innerHTML = `<div class="p-3 text-xs text-slate-400 text-center">Tidak ada hasil cocok.</div>`;
-    return;
+  const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+
+  const statAnswered = document.getElementById('statAnswered');
+  const statCorrect = document.getElementById('statCorrect');
+  const statAccuracy = document.getElementById('statAccuracy');
+  const statRemaining = document.getElementById('statRemaining');
+
+  if (statAnswered) statAnswered.textContent = `${answeredCount}/${total}`;
+  if (statCorrect) statCorrect.textContent = `${correctCount}`;
+  if (statAccuracy) statAccuracy.textContent = `${accuracy}%`;
+  if (statRemaining) statRemaining.textContent = `${total - answeredCount}`;
+}
+
+// 10. MODAL & DRAWER CONTROLS
+function openCheatSheetModal() {
+  const modal = document.getElementById('cheatSheetModal');
+  if (modal) {
+    modal.classList.add('open');
+    triggerMathTypeset();
+  }
+}
+
+function closeCheatSheetModal() {
+  const modal = document.getElementById('cheatSheetModal');
+  if (modal) {
+    modal.classList.remove('open');
+  }
+}
+
+function openMobileDrawer() {
+  const overlay = document.getElementById('mobileDrawerOverlay');
+  const sheet = document.getElementById('mobileDrawerSheet');
+  if (overlay && sheet) {
+    overlay.classList.add('open');
+    sheet.classList.add('open');
+  }
+}
+
+function closeMobileDrawer() {
+  const overlay = document.getElementById('mobileDrawerOverlay');
+  const sheet = document.getElementById('mobileDrawerSheet');
+  if (overlay && sheet) {
+    overlay.classList.remove('open');
+    sheet.classList.remove('open');
+  }
+}
+
+// 11. GLOBAL EVENT LISTENERS & KEYBOARD SHORTCUTS
+function bindGlobalEvents() {
+  // Keyboard Shortcuts: A-E, Enter, Arrow keys, R
+  window.addEventListener('keydown', (e) => {
+    // If modal is open and Esc pressed, close it
+    if (e.key === 'Escape') {
+      closeCheatSheetModal();
+      closeMobileDrawer();
+      return;
+    }
+
+    // Ignore keyboard shortcuts if user is typing in an input
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const key = e.key.toUpperCase();
+    if (['A', 'B', 'C', 'D', 'E'].includes(key)) {
+      const idx = key.charCodeAt(0) - 65; // A->0, B->1, etc.
+      handleOptionSelect(idx);
+    } else if (['1', '2', '3', '4', '5'].includes(key)) {
+      const idx = parseInt(key) - 1;
+      handleOptionSelect(idx);
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (!state.isVerified[state.currentIndex]) {
+        handleCheckAnswer();
+      } else {
+        toggleSolutionAccordion();
+      }
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      handlePrevQuestion();
+    } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      handleNextQuestion();
+    } else if (key === 'R') {
+      e.preventDefault();
+      toggleRagu();
+    }
+  });
+
+  // Close modals when clicking overlay background
+  const cheatSheetModal = document.getElementById('cheatSheetModal');
+  if (cheatSheetModal) {
+    cheatSheetModal.addEventListener('click', (e) => {
+      if (e.target === cheatSheetModal) closeCheatSheetModal();
+    });
   }
 
-  filtered.forEach((sc) => {
-    const shortTitle = sc.short_title || sc.title;
-    html += `
-      <button onclick="selectSubChapter('${sc.sub_chapter_id}', 'materi')" 
-        class="w-full text-left px-2.5 py-2 rounded-xl text-xs font-semibold flex items-center justify-between hover:bg-slate-100 text-slate-700">
-        <span class="truncate"><strong class="font-mono text-brand-600">${sc.sub_chapter_id}</strong> ${shortTitle}</span>
-      </button>
-    `;
-  });
-  html += `</div>`;
-  container.innerHTML = html;
+  const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
+  if (mobileDrawerOverlay) {
+    mobileDrawerOverlay.addEventListener('click', closeMobileDrawer);
+  }
 }
