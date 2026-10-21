@@ -11,15 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- KaTeX Math Rendering CSS & JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- Custom Tactile Neo-Brutalist Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Custom Tactile Neo-Brutalist Stylesheet (Cache Busting v2.2) -->
+  <link rel="stylesheet" href="styles.css?v=2.2">
 </head>
 <body>
 
@@ -254,6 +254,42 @@
   </div>
 
   <!-- ===================================================================
+       COMPLETION / EVALUATION SUMMARY MODAL
+       =================================================================== -->
+  <div id="completionModal" class="tactile-modal-overlay">
+    <div class="tactile-modal-card" style="max-width: 460px; text-align: center;">
+      <div class="modal-header" style="justify-content: center;">
+        <h3 class="modal-title"><i class="fa-solid fa-trophy mr-2 text-amber-500"></i>Hasil Evaluasi Drilling TKA</h3>
+      </div>
+      <div style="padding: 24px;">
+        <div style="font-size: 2.8rem; margin-bottom: 8px;">🎯</div>
+        <h4 id="evalTitle" class="font-heading text-xl mb-1">Drilling Selesai!</h4>
+        <p id="evalSubtitle" class="text-zinc-600 dark:text-zinc-300 text-sm mb-6">Seluruh butir soal HOTS telah dikerjakan & diverifikasi.</p>
+        
+        <div class="stats-grid mb-6">
+          <div class="stat-box">
+            <div id="evalScore" class="stat-value text-green-600">0/4</div>
+            <div class="stat-label">Jawaban Benar</div>
+          </div>
+          <div class="stat-box">
+            <div id="evalAccuracy" class="stat-value text-blue-600">0%</div>
+            <div class="stat-label">Tingkat Akurasi</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+          <button class="tactile-btn tactile-btn-secondary" onclick="closeCompletionModal()">
+            <i class="fa-solid fa-eye mr-1.5"></i> Review Pembahasan
+          </button>
+          <button class="tactile-btn tactile-btn-primary" onclick="restartDrilling()">
+            <i class="fa-solid fa-rotate-right mr-1.5"></i> Ulangi Drilling
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
        FORMULA CHEAT-SHEET MODAL
        =================================================================== -->
   <div id="cheatSheetModal" class="tactile-modal-overlay">
@@ -330,7 +366,7 @@
     </div>
   </div>
 
-  <!-- Application Controller Script -->
-  <script src="app.js"></script>
+  <!-- Application Controller Script (Cache Busting v2.2) -->
+  <script src="app.js?v=2.2"></script>
 </body>
 </html>

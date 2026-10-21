@@ -517,7 +517,8 @@ function toggleTimerPause() {
 }
 
 // 6. QUESTION RENDERING ENGINE
-function renderCurrentQuestion() {
+// 6. QUESTION RENDERING ENGINE
+function renderCurrentQuestion(shouldScrollToTop = false) {
   const q = questionsData[state.currentIndex];
   const total = questionsData.length;
 
@@ -629,13 +630,20 @@ function renderCurrentQuestion() {
   // Trigger KaTeX Formula Typesetting
   triggerMathTypeset();
 
-  // Scroll smoothly to top of problem card
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Only scroll smoothly to top when switching questions
+  if (shouldScrollToTop) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
-// 7. MATH RENDERING WITH FORMULA OVERFLOW PROTECTION
+// 7. MATH RENDERING WITH ASYNC POLLING & FORMULA OVERFLOW PROTECTION
+let mathPollTimer = null;
 function triggerMathTypeset() {
   if (window.renderMathInElement) {
+    if (mathPollTimer) {
+      clearInterval(mathPollTimer);
+      mathPollTimer = null;
+    }
     renderMathInElement(document.body, {
       delimiters: [
         { left: '$$', right: '$$', display: true },
@@ -654,6 +662,20 @@ function triggerMathTypeset() {
         wrapper.appendChild(el);
       }
     });
+  } else if (!mathPollTimer) {
+    // If KaTeX is still loading from CDN, poll every 80ms (up to 3 seconds)
+    let attempts = 0;
+    mathPollTimer = setInterval(() => {
+      attempts++;
+      if (window.renderMathInElement) {
+        clearInterval(mathPollTimer);
+        mathPollTimer = null;
+        triggerMathTypeset();
+      } else if (attempts > 35) {
+        clearInterval(mathPollTimer);
+        mathPollTimer = null;
+      }
+    }, 80);
   }
 }
 
@@ -661,14 +683,34 @@ function triggerMathTypeset() {
 function handleOptionSelect(optionIndex) {
   if (state.isVerified[state.currentIndex]) return;
   state.userAnswers[state.currentIndex] = optionIndex;
-  renderCurrentQuestion();
+
+  // Update classes directly in the DOM without re-rendering or jumping
+  const optionCards = document.querySelectorAll('.option-card');
+  optionCards.forEach((btn, idx) => {
+    if (idx === optionIndex) {
+      btn.classList.add('selected');
+    } else {
+      btn.classList.remove('selected');
+    }
+  });
+
   renderMatrixGrid();
   updateStats();
+  updateBottomActionBar();
 }
 
 function toggleRagu() {
   state.isRagu[state.currentIndex] = !state.isRagu[state.currentIndex];
-  renderCurrentQuestion();
+  const btnRagu = document.getElementById('btnRagu');
+  if (btnRagu) {
+    if (state.isRagu[state.currentIndex]) {
+      btnRagu.classList.add('active');
+      btnRagu.innerHTML = '<i class="fa-solid fa-bookmark mr-1"></i> Ragu-ragu (Ditandai)';
+    } else {
+      btnRagu.classList.remove('active');
+      btnRagu.innerHTML = '<i class="fa-regular fa-bookmark mr-1"></i> Tandai Ragu-ragu';
+    }
+  }
   renderMatrixGrid();
   updateStats();
 }
@@ -680,6 +722,9 @@ function toggleSolutionAccordion() {
     if (state.solutionOpen[state.currentIndex]) {
       solutionAccordion.classList.add('open');
       triggerMathTypeset();
+      setTimeout(() => {
+        solutionAccordion.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 50);
     } else {
       solutionAccordion.classList.remove('open');
     }
@@ -698,15 +743,29 @@ function handleCheckAnswer() {
   // Automatically open solution accordion
   state.solutionOpen[state.currentIndex] = true;
 
-  renderCurrentQuestion();
+  // Re-render question options without scrolling to top
+  renderCurrentQuestion(false);
   renderMatrixGrid();
   updateStats();
+
+  // Scroll smoothly to solution accordion
+  setTimeout(() => {
+    const solutionAccordion = document.getElementById('solutionAccordion');
+    if (solutionAccordion) {
+      solutionAccordion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
+
+  // Check if all questions are completed and verified
+  if (state.isVerified.every(Boolean)) {
+    setTimeout(openCompletionModal, 1200);
+  }
 }
 
 function handlePrevQuestion() {
   if (state.currentIndex > 0) {
     state.currentIndex--;
-    renderCurrentQuestion();
+    renderCurrentQuestion(true);
     renderMatrixGrid();
   }
 }
@@ -714,7 +773,7 @@ function handlePrevQuestion() {
 function handleNextQuestion() {
   if (state.currentIndex < questionsData.length - 1) {
     state.currentIndex++;
-    renderCurrentQuestion();
+    renderCurrentQuestion(true);
     renderMatrixGrid();
   }
 }
@@ -723,7 +782,7 @@ function jumpToQuestion(idx) {
   if (idx >= 0 && idx < questionsData.length) {
     state.currentIndex = idx;
     closeMobileDrawer();
-    renderCurrentQuestion();
+    renderCurrentQuestion(true);
     renderMatrixGrid();
   }
 }
@@ -822,6 +881,64 @@ function updateStats() {
 }
 
 // 10. MODAL & DRAWER CONTROLS
+function openCompletionModal() {
+  const modal = document.getElementById('completionModal');
+  if (!modal) return;
+  
+  let correctCount = 0;
+  state.userAnswers.forEach((ans, idx) => {
+    if (state.isVerified[idx] && ans === questionsData[idx].correctIndex) {
+      correctCount++;
+    }
+  });
+  const total = questionsData.length;
+  const accuracy = Math.round((correctCount / total) * 100);
+
+  const evalScore = document.getElementById('evalScore');
+  const evalAccuracy = document.getElementById('evalAccuracy');
+  const evalTitle = document.getElementById('evalTitle');
+  const evalSubtitle = document.getElementById('evalSubtitle');
+
+  if (evalScore) evalScore.textContent = `${correctCount}/${total}`;
+  if (evalAccuracy) evalAccuracy.textContent = `${accuracy}%`;
+  if (evalTitle) {
+    if (accuracy >= 75) {
+      evalTitle.textContent = 'Luar Biasa! Pemahaman Sangat Baik!';
+    } else if (accuracy >= 50) {
+      evalTitle.textContent = 'Kerja Bagus! Siap Hadapi UTBK!';
+    } else {
+      evalTitle.textContent = 'Tetap Semangat! Pelajari Pembahasan!';
+    }
+  }
+  if (evalSubtitle) {
+    evalSubtitle.textContent = `Anda berhasil menyelesaikan seluruh ${total} butir soal HOTS TKA.`;
+  }
+
+  modal.classList.add('open');
+}
+
+function closeCompletionModal() {
+  const modal = document.getElementById('completionModal');
+  if (modal) {
+    modal.classList.remove('open');
+  }
+}
+
+function restartDrilling() {
+  closeCompletionModal();
+  state.currentIndex = 0;
+  state.userAnswers = new Array(questionsData.length).fill(null);
+  state.isVerified = new Array(questionsData.length).fill(false);
+  state.isRagu = new Array(questionsData.length).fill(false);
+  state.solutionOpen = new Array(questionsData.length).fill(false);
+  state.timerSeconds = 20 * 60;
+  state.timerRunning = true;
+
+  renderCurrentQuestion(true);
+  renderMatrixGrid();
+  updateStats();
+}
+
 function openCheatSheetModal() {
   const modal = document.getElementById('cheatSheetModal');
   if (modal) {
@@ -862,6 +979,7 @@ function bindGlobalEvents() {
     // If modal is open and Esc pressed, close it
     if (e.key === 'Escape') {
       closeCheatSheetModal();
+      closeCompletionModal();
       closeMobileDrawer();
       return;
     }
@@ -900,6 +1018,13 @@ function bindGlobalEvents() {
   if (cheatSheetModal) {
     cheatSheetModal.addEventListener('click', (e) => {
       if (e.target === cheatSheetModal) closeCheatSheetModal();
+    });
+  }
+
+  const completionModal = document.getElementById('completionModal');
+  if (completionModal) {
+    completionModal.addEventListener('click', (e) => {
+      if (e.target === completionModal) closeCompletionModal();
     });
   }
 
