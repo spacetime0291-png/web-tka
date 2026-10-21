@@ -18,8 +18,8 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- Custom Tactile Neo-Brutalist Stylesheet (Cache Busting v3.0) -->
-  <link rel="stylesheet" href="styles.css?v=3.0">
+  <!-- Custom Tactile Neo-Brutalist Stylesheet (Cache Busting v3.1) -->
+  <link rel="stylesheet" href="styles.css?v=3.1">
 </head>
 <body>
 
@@ -80,6 +80,9 @@
          =================================================================== -->
     <div id="syllabusView" class="view-container">
       
+      <!-- In-Progress Drilling Session Resume Banner -->
+      <div id="activeSessionBanner" class="resume-banner hidden"></div>
+
       <!-- Syllabus Hero & Stats Overview -->
       <section class="tactile-card syllabus-hero">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
@@ -422,6 +425,9 @@
             <button id="pillProgresif" class="config-pill pill-progresif" onclick="setSetupProgressiveDifficulty()">
               ⚡ Progresif (M → S → H)
             </button>
+            <button id="pillWrongOnly" class="config-pill pill-wrong" onclick="toggleSetupWrongOnly()" title="Hanya latih soal yang pernah dijawab salah">
+              ❌ Soal Pernah Salah (<span id="wrongCountBadge">0</span>)
+            </button>
           </div>
           <div id="setupAvailableCount" style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 6px;">
             Ditemukan 38 butir soal pada cakupan ini.
@@ -611,54 +617,56 @@
   </div>
 
   <!-- ===================================================================
-       MODAL 3: FORMULA CHEAT-SHEET MODAL
+       SLIDE-OVER SIDE DRAWER: BANK RUMUS KUNCI
        =================================================================== -->
-  <div id="cheatSheetModal" class="tactile-modal-overlay">
-    <div class="tactile-modal-card">
-      <div class="modal-header">
-        <h3 class="modal-title"><i class="fa-solid fa-book mr-2"></i>Bank Rumus Kunci TKA</h3>
-        <button class="icon-btn-header" onclick="closeCheatSheetModal()" aria-label="Tutup Modal">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+  <div id="cheatSheetDrawerBackdrop" class="drawer-backdrop" onclick="closeCheatSheetModal()"></div>
+  <aside id="cheatSheetDrawer" class="slideover-drawer" aria-label="Bank Rumus Kunci">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <i class="fa-solid fa-book text-blue-600"></i>
+        <h3 class="font-heading" style="font-size: 1.1rem;">Bank Rumus Kunci TKA</h3>
       </div>
-      <div class="modal-content-scroll">
-        <!-- Fisika - Dinamika Rotasi -->
-        <h4 class="font-heading text-lg mb-2 text-orange-600">1. Fisika: Dinamika Rotasi</h4>
-        <div class="callout-box mb-4">
-          <p>• Momen Gaya (Torsi): $\tau = F \cdot r \cdot \sin\theta = I \alpha$</p>
-          <p>• Momen Inersia Silinder Pejal: $I = \frac{1}{2} M R^2$</p>
-          <p>• Hubungan Linier-Sudut: $a = \alpha R$, $v = \omega R$</p>
-          <p>• Energi Kinetik Total Menggelinding: $E_k = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$</p>
-        </div>
+      <button class="icon-btn-header" onclick="closeCheatSheetModal()" aria-label="Tutup Drawer (ESC)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-content-scroll">
+      <!-- Fisika - Dinamika Rotasi -->
+      <h4 class="font-heading text-lg mb-2 text-orange-600">1. Fisika: Dinamika Rotasi</h4>
+      <div class="callout-box mb-4">
+        <p>• Momen Gaya (Torsi): $\tau = F \cdot r \cdot \sin\theta = I \alpha$</p>
+        <p>• Momen Inersia Silinder Pejal: $I = \frac{1}{2} M R^2$</p>
+        <p>• Hubungan Linier-Sudut: $a = \alpha R$, $v = \omega R$</p>
+        <p>• Energi Kinetik Total Menggelinding: $E_k = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$</p>
+      </div>
 
-        <!-- Fisika - Rangkaian Kirchhoff -->
-        <h4 class="font-heading text-lg mb-2 text-orange-600">2. Fisika: Hukum Kirchhoff Arus Searah</h4>
-        <div class="callout-box mb-4">
-          <p>• Hukum I Kirchhoff (KCL Simpul): $\Sigma I_{\text{masuk}} = \Sigma I_{\text{keluar}}$</p>
-          <p>• Hukum II Kirchhoff (KVL Loop): $\Sigma \mathcal{E} + \Sigma (I R) = 0$</p>
-          <p>• Analisis Potensial Simpul (Nodal Analysis): $\sum_{k} \frac{V_{\text{node}} - V_k}{R_k} = 0$</p>
-        </div>
+      <!-- Fisika - Rangkaian Kirchhoff -->
+      <h4 class="font-heading text-lg mb-2 text-orange-600">2. Fisika: Hukum Kirchhoff Arus Searah</h4>
+      <div class="callout-box mb-4">
+        <p>• Hukum I Kirchhoff (KCL Simpul): $\Sigma I_{\text{masuk}} = \Sigma I_{\text{keluar}}$</p>
+        <p>• Hukum II Kirchhoff (KVL Loop): $\Sigma \mathcal{E} + \Sigma (I R) = 0$</p>
+        <p>• Analisis Potensial Simpul (Nodal Analysis): $\sum_{k} \frac{V_{\text{node}} - V_k}{R_k} = 0$</p>
+      </div>
 
-        <!-- Matematika - Bab Fundamental & King's Property -->
-        <h4 class="font-heading text-lg mb-2 text-blue-600">3. Matematika: Bab Fundamental & Simetri</h4>
-        <div class="callout-box mb-4">
-          <p>• Identitas Pythagoras: $\sin^2 x + \cos^2 x = 1$</p>
-          <p>• Sudut Rangkap Kosinus: $\cos 2x = 1 - 2\sin^2 x = 2\cos^2 x - 1$</p>
-          <p>• King's Property: $\int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a + b - x) \, dx$</p>
-          <p>• Anti-turunan Baku: $\int \frac{1}{1 + u^2} du = \arctan(u) + C$</p>
-        </div>
+      <!-- Matematika - Bab Fundamental & King's Property -->
+      <h4 class="font-heading text-lg mb-2 text-blue-600">3. Matematika: Bab Fundamental & Simetri</h4>
+      <div class="callout-box mb-4">
+        <p>• Identitas Pythagoras: $\sin^2 x + \cos^2 x = 1$</p>
+        <p>• Sudut Rangkap Kosinus: $\cos 2x = 1 - 2\sin^2 x = 2\cos^2 x - 1$</p>
+        <p>• King's Property: $\int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a + b - x) \, dx$</p>
+        <p>• Anti-turunan Baku: $\int \frac{1}{1 + u^2} du = \arctan(u) + C$</p>
+      </div>
 
-        <!-- Matematika - Matriks & Vektor -->
-        <h4 class="font-heading text-lg mb-2 text-blue-600">4. Matematika: Vektor & Matriks Transformasi</h4>
-        <div class="callout-box mb-4">
-          <p>• Proyeksi Ortogonal $\vec{u}$ pada $\vec{v}$: $\operatorname{proj}_{\vec{v}} \vec{u} = \left( \frac{\vec{u} \cdot \vec{v}}{|\vec{v}|^2} \right) \vec{v}$</p>
-          <p>• Matriks Rotasi $+90^\circ$: $R_{90^\circ} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$</p>
-          <p>• Matriks Refleksi Garis $y = -x$: $M_{y=-x} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}$</p>
-          <p>• Komposisi Transformasi: $T = M_2 \cdot M_1$ (Dikalikan dari kanan ke kiri)</p>
-        </div>
+      <!-- Matematika - Matriks & Vektor -->
+      <h4 class="font-heading text-lg mb-2 text-blue-600">4. Matematika: Vektor & Matriks Transformasi</h4>
+      <div class="callout-box mb-4">
+        <p>• Proyeksi Ortogonal $\vec{u}$ pada $\vec{v}$: $\operatorname{proj}_{\vec{v}} \vec{u} = \left( \frac{\vec{u} \cdot \vec{v}}{|\vec{v}|^2} \right) \vec{v}$</p>
+        <p>• Matriks Rotasi $+90^\circ$: $R_{90^\circ} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$</p>
+        <p>• Matriks Refleksi Garis $y = -x$: $M_{y=-x} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}$</p>
+        <p>• Komposisi Transformasi: $T = M_2 \cdot M_1$ (Dikalikan dari kanan ke kiri)</p>
       </div>
     </div>
-  </div>
+  </aside>
 
   <!-- ===================================================================
        MOBILE QUESTION SHEET DRAWER
@@ -693,6 +701,6 @@
   <script src="data/questions-mudah.js"></script>
   <script src="data/questions-sedang.js"></script>
   <script src="data/questions-hots.js"></script>
-  <script src="app.js?v=3.0"></script>
+  <script src="app.js?v=3.1"></script>
 </body>
 </html>

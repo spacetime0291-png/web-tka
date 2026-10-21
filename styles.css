@@ -1073,6 +1073,73 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   line-height: 1.7;
 }
 
+/* ==========================================================================
+   Slide-Over Side Drawer: Bank Rumus Kunci (Tactile Semi-Independent)
+   ========================================================================== */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 104;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slideover-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 460px;
+  max-width: 92vw;
+  background: var(--card-bg);
+  border-left: 2px solid var(--ink);
+  box-shadow: -6px 0 0 0 var(--shadow-color);
+  z-index: 105;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slideover-drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  padding: 14px 18px;
+  border-bottom: 1.5px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.drawer-content-scroll {
+  padding: 20px;
+  overflow-y: auto;
+  line-height: 1.7;
+  flex: 1;
+}
+
+/* Semi-independent drawer on desktop (>= 1024px):
+   Left problem canvas stays fully visible and interactive without blackout! */
+@media (min-width: 1024px) {
+  .drawer-backdrop.open {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    pointer-events: none !important;
+  }
+}
+
 /* Mobile Question Sheet Drawer */
 .mobile-drawer-overlay {
   position: fixed;
@@ -1354,51 +1421,287 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border-left: 8px solid var(--accent-math);
 }
 
+/* Chapter Accordions & Compact Layout (Cognitive Overload Free) */
 .chapters-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-@media (min-width: 900px) {
-  .chapters-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.chapter-card {
-  padding: 18px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 12px;
+}
+
+.chapter-accordion {
+  background: var(--card-bg);
   border: 1.5px solid var(--ink);
   border-radius: 10px;
-  background: var(--card-bg);
   box-shadow: 3px 3px 0px 0px var(--shadow-color);
-  transition: transform 0.12s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.15s ease;
+  overflow: hidden;
 }
 
-.chapter-card:hover {
-  transform: translateY(-2px);
+.chapter-accordion.foundation-accordion {
+  border: 2px solid var(--accent-math);
+  box-shadow: 3px 3px 0px 0px var(--shadow-color);
 }
 
-.chapter-card.foundation-card {
-  border: 2px solid #2563EB;
-  background: #F8FAFC;
-  box-shadow: 4px 4px 0px 0px #18181B;
-}
-
-[data-theme="dark"] .chapter-card.foundation-card {
-  background: #0F172A;
+[data-theme="dark"] .chapter-accordion.foundation-accordion {
   border-color: #3B82F6;
 }
 
-.chapter-top-bar {
+.chapter-accordion-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  user-select: none;
+  background: var(--card-bg);
+  transition: background-color 0.12s ease;
+}
+
+.chapter-accordion-header:hover {
+  background: var(--bg);
+}
+
+.accordion-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+}
+
+.accordion-chevron {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.chapter-accordion.open .accordion-chevron {
+  transform: rotate(90deg);
+  color: var(--ink);
+}
+
+.accordion-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.accordion-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.accordion-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.chapter-tier-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: var(--bg);
+  border: 1.2px solid var(--ink);
+  border-radius: 6px;
+  padding: 3px 8px;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.tactile-btn-drill-chapter {
+  padding: 4px 10px !important;
+  font-size: 0.78rem !important;
+  border-radius: 6px !important;
+  gap: 4px !important;
+}
+
+/* Thin 4px Progress Track */
+.chapter-progress-track {
+  height: 4px;
+  background: var(--bg);
+  border-top: 1px solid var(--dot-color);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.chapter-progress-fill {
+  height: 100%;
+  background: var(--correct);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foundation-accordion .chapter-progress-fill {
+  background: var(--accent-math);
+}
+
+/* Accordion Smooth Grid-Template-Rows Animation */
+.chapter-accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 240ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chapter-accordion.open .chapter-accordion-content {
+  grid-template-rows: 1fr;
+}
+
+.chapter-accordion-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.subtopic-compact-list {
+  padding: 10px 14px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--card-bg);
+  border-top: 1px dashed var(--dot-color);
+}
+
+/* Compact 1-line Sub-topic Item */
+.subtopic-compact-row {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 8px;
+  padding: 7px 12px;
+  background: var(--bg);
+  border: 1.2px solid var(--ink);
+  border-radius: 8px;
+  transition: background-color 0.1s ease;
+}
+
+.subtopic-compact-row:hover {
+  background: var(--card-bg);
+}
+
+.subtopic-compact-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.2px solid var(--ink);
+  flex-shrink: 0;
+}
+
+.status-dot.dot-mastered {
+  background: var(--correct);
+}
+
+.status-dot.dot-unmastered {
+  background: #CBD5E1;
+  opacity: 0.5;
+}
+
+[data-theme="dark"] .status-dot.dot-unmastered {
+  background: #475569;
+}
+
+.subtopic-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--card-bg);
+  border: 1px solid var(--ink);
+  padding: 1px 5px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.subtopic-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .subtopic-name {
+    font-size: 0.82rem;
+    white-space: normal;
+  }
+  .subtopic-compact-row {
+    padding: 8px 10px;
+  }
+  .chapter-accordion-header {
+    padding: 10px 12px;
+  }
+}
+
+.subtopic-compact-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.subtopic-count-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  background: var(--card-bg);
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+
+.tactile-btn-compact {
+  padding: 3px 8px !important;
+  font-size: 0.74rem !important;
+  border-radius: 6px !important;
+  gap: 4px !important;
+}
+
+/* Resume In-Progress Session Banner */
+.resume-banner {
+  background: var(--ragu-bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 0px 0px var(--shadow-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+[data-theme="dark"] .resume-banner {
+  background: #422006;
+}
+
+.resume-banner-text {
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+
+.resume-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .chapter-badge-fondasi {
@@ -1413,46 +1716,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   padding: 2px 8px;
   border-radius: 6px;
   letter-spacing: 0.05em;
-}
-
-.subtopic-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 14px 0;
-}
-
-.subtopic-item {
-  background: var(--bg);
-  border: 1.2px solid var(--ink);
-  border-radius: 8px;
-  padding: 10px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.subtopic-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.subtopic-code {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 700;
-  background: var(--card-bg);
-  border: 1px solid var(--ink);
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-.subtopic-indicators {
-  font-size: 0.8rem;
-  color: var(--ink-muted);
-  line-height: 1.5;
 }
 
 /* ==========================================================================
@@ -1524,6 +1787,16 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .config-pill.active.pill-progresif {
   background: #7C3AED;
   color: #FFFFFF;
+}
+
+.config-pill.active.pill-wrong {
+  background: #DC2626;
+  color: #FFFFFF;
+  border-color: #991B1B;
+}
+
+.config-pill.pill-wrong {
+  border-style: dashed;
 }
 
 /* Mode Selection Cards */

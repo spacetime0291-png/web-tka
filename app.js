@@ -40,6 +40,7 @@ const state = {
     scopeTitle: 'Semua Materi',
     difficulties: ['mudah', 'sedang', 'hots'],
     isProgressive: false,
+    wrongOnly: false,
     mode: 'latihan',
     timerMode: 'countdown',
     questionCount: 10,
@@ -48,16 +49,83 @@ const state = {
   }
 };
 
+if (typeof window !== 'undefined') {
+  window.state = state;
+}
+
 // LocalStorage Persistence Keys
 const STORAGE_KEY_MASTERY = 'TKA_MASTERY_PROGRESS_V3';
 const STORAGE_KEY_THEME = 'tka_theme_preference';
+const STORAGE_KEY_ACCORDION = 'tka_syllabus_accordion_state';
+const STORAGE_KEY_SESSION = 'tka_drilling_session_state';
+const STORAGE_KEY_WRONG_QUESTIONS = 'tka_wrong_questions_history';
+
+if (typeof window !== 'undefined') {
+  window.STORAGE_KEY_MASTERY = STORAGE_KEY_MASTERY;
+  window.STORAGE_KEY_THEME = STORAGE_KEY_THEME;
+  window.STORAGE_KEY_ACCORDION = STORAGE_KEY_ACCORDION;
+  window.STORAGE_KEY_SESSION = STORAGE_KEY_SESSION;
+  window.STORAGE_KEY_WRONG_QUESTIONS = STORAGE_KEY_WRONG_QUESTIONS;
+}
 
 // ============================================================================
-// 2. CENTRAL QUESTION AGGREGATOR HELPER
+// 2. CENTRAL QUESTION AGGREGATOR & PERSISTENCE HELPERS
 // ============================================================================
+function getWrongQuestionsHistory() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_WRONG_QUESTIONS);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function recordWrongQuestion(questionId) {
+  try {
+    const list = getWrongQuestionsHistory();
+    if (!list.includes(questionId)) {
+      list.push(questionId);
+      localStorage.setItem(STORAGE_KEY_WRONG_QUESTIONS, JSON.stringify(list));
+    }
+  } catch (e) {}
+}
+
+function getAccordionState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_ACCORDION);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  // Default state: Only the first chapter ('fis-kin') is open
+  return ['fis-kin'];
+}
+
+function saveAccordionState(stateList) {
+  try {
+    localStorage.setItem(STORAGE_KEY_ACCORDION, JSON.stringify(stateList));
+  } catch (e) {}
+}
+
+function toggleChapterAccordion(chapterId) {
+  let list = getAccordionState();
+  const index = list.indexOf(chapterId);
+  const el = document.getElementById(`accordion-${chapterId}`);
+  const header = document.getElementById(`accordion-header-${chapterId}`);
+
+  if (index > -1) {
+    list.splice(index, 1);
+    if (el) el.classList.remove('open');
+    if (header) header.setAttribute('aria-expanded', 'false');
+  } else {
+    list.push(chapterId);
+    if (el) el.classList.add('open');
+    if (header) header.setAttribute('aria-expanded', 'true');
+  }
+  saveAccordionState(list);
+}
+
 /**
- * Merges and filters questions dynamically by subject, chapterId, subTopicId, and difficulty.
- * @param {Object} filter - { subject, chapterId, subTopicId, difficulty, progressive }
+ * Merges and filters questions dynamically by subject, chapterId, subTopicId, difficulty, and wrong history.
+ * @param {Object} filter - { subject, chapterId, subTopicId, difficulty, progressive, wrongOnly }
  * @returns {Array} Filtered and cloned question objects
  */
 function getFilteredQuestions(filter = {}) {
@@ -81,6 +149,13 @@ function getFilteredQuestions(filter = {}) {
     else combined = [...mudahPool, ...sedangPool, ...hotsPool];
   } else {
     combined = [...mudahPool, ...sedangPool, ...hotsPool];
+  }
+
+  // Filter by Wrong Questions history if wrongOnly is requested
+  const wrongOnly = filter.wrongOnly !== undefined ? filter.wrongOnly : state.setupForm.wrongOnly;
+  if (wrongOnly) {
+    const wrongList = getWrongQuestionsHistory();
+    combined = combined.filter(q => wrongList.includes(q.id));
   }
 
   // Filter by Scope: Subject/Pillar, Chapter, SubTopic
@@ -121,6 +196,7 @@ if (typeof document !== 'undefined') {
     renderSyllabusHub();
     updateGlobalCounters();
     bindGlobalEvents();
+    checkActiveSessionResume();
     triggerMathTypeset();
   });
 }
@@ -148,8 +224,124 @@ function updateThemeIcon(theme) {
   }
 }
 
+// Session Persistence & Resume Handlers
+function saveSessionState() {
+  if (!state.questions || state.questions.length === 0) return;
+  try {
+    const payload = {
+      sessionScope: state.sessionScope,
+      sessionMode: state.sessionMode,
+      timerMode: state.timerMode,
+      totalDurationSeconds: state.totalDurationSeconds,
+      timerSeconds: state.timerSeconds,
+      currentIndex: state.currentIndex,
+      questions: state.questions,
+      userAnswers: state.userAnswers,
+      isVerified: state.isVerified,
+      isRagu: state.isRagu,
+      solutionOpen: state.solutionOpen,
+      isReviewMode: state.isReviewMode,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(STORAGE_KEY_SESSION, JSON.stringify(payload));
+  } catch (e) {}
+}
+
+function clearSessionState() {
+  try {
+    localStorage.removeItem(STORAGE_KEY_SESSION);
+  } catch (e) {}
+  checkActiveSessionResume();
+}
+
+function checkActiveSessionResume() {
+  const banner = document.getElementById('activeSessionBanner');
+  if (!banner) return;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_SESSION);
+    if (!raw) {
+      banner.classList.add('hidden');
+      banner.innerHTML = '';
+      return;
+    }
+    const data = JSON.parse(raw);
+    if (!data.questions || data.questions.length === 0) {
+      banner.classList.add('hidden');
+      banner.innerHTML = '';
+      return;
+    }
+
+    const answeredCount = (data.userAnswers || []).filter(a => a !== null).length;
+    const totalCount = data.questions.length;
+    const currentQ = (data.currentIndex || 0) + 1;
+    const scopeTitle = data.sessionScope && data.sessionScope.scopeTitle ? data.sessionScope.scopeTitle : 'Drilling TKA';
+
+    banner.innerHTML = `
+      <div class="resume-banner-text">
+        <i class="fa-solid fa-clock-rotate-left mr-1.5 text-amber-600"></i>
+        <strong>Sesi Belajar Tersimpan (${scopeTitle}):</strong> ${answeredCount} dari ${totalCount} terjawab • Posisi Soal #${currentQ}.
+      </div>
+      <div class="resume-banner-actions">
+        <button class="tactile-btn tactile-btn-primary" style="padding: 5px 12px; font-size: 0.8rem;" onclick="resumeActiveDrillSession()">
+          <i class="fa-solid fa-play mr-1"></i> Lanjutkan Sesi
+        </button>
+        <button class="tactile-btn tactile-btn-secondary" style="padding: 5px 10px; font-size: 0.8rem;" onclick="discardActiveDrillSession()" title="Buang Sesi Ini">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+    `;
+    banner.classList.remove('hidden');
+  } catch (e) {
+    banner.classList.add('hidden');
+  }
+}
+
+function resumeActiveDrillSession() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_SESSION);
+    if (!raw) return;
+    const data = JSON.parse(raw);
+    if (!data.questions || data.questions.length === 0) return;
+
+    state.sessionScope = data.sessionScope;
+    state.sessionMode = data.sessionMode || 'latihan';
+    state.timerMode = data.timerMode || 'countdown';
+    state.totalDurationSeconds = data.totalDurationSeconds || 0;
+    state.timerSeconds = data.timerSeconds || 0;
+    state.currentIndex = data.currentIndex || 0;
+    state.questions = data.questions;
+    state.userAnswers = data.userAnswers || new Array(data.questions.length).fill(null);
+    state.isVerified = data.isVerified || new Array(data.questions.length).fill(false);
+    state.isRagu = data.isRagu || new Array(data.questions.length).fill(false);
+    state.solutionOpen = data.solutionOpen || new Array(data.questions.length).fill(false);
+    state.isReviewMode = Boolean(data.isReviewMode);
+
+    state.timerRunning = true;
+    startTimer();
+    showWorkspaceView();
+    renderCurrentQuestion(true);
+    renderMatrixGrid();
+    updateStats();
+  } catch (e) {
+    alert('Gagal memuat sesi tersimpan.');
+  }
+}
+
+function discardActiveDrillSession() {
+  if (confirm('Apakah Anda yakin ingin menghapus sesi belajar tersimpan ini? Progres jawaban sesi ini akan dibuang.')) {
+    clearSessionState();
+  }
+}
+
 // Switch between Peta Silabus (Hub) and Workspace View
 function showSyllabusView() {
+  // If leaving active workspace, save state and pause timer
+  if (state.currentView === 'workspace' && state.questions.length > 0) {
+    saveSessionState();
+    if (state.timerInterval) clearInterval(state.timerInterval);
+    state.timerRunning = false;
+  }
+
   state.currentView = 'syllabus';
   
   // Hide workspace elements
@@ -167,12 +359,21 @@ function showSyllabusView() {
   if (btnMobileDrawerTrigger) btnMobileDrawerTrigger.classList.add('hidden');
   if (syllabusView) syllabusView.classList.remove('hidden');
 
-  // Update header title
+  // Update header title and syllabus toggle button
   const headerTopic = document.getElementById('headerTopic');
   if (headerTopic) headerTopic.textContent = 'Peta Silabus & Kurikulum TKA';
 
+  const btnHeaderSyllabus = document.getElementById('btnHeaderSyllabus');
+  if (btnHeaderSyllabus) {
+    btnHeaderSyllabus.innerHTML = '<i class="fa-solid fa-map"></i> <span class="sm:inline">Silabus</span>';
+    btnHeaderSyllabus.title = 'Buka Peta Silabus Lengkap';
+  }
+
   const headerProgressFill = document.getElementById('headerProgressFill');
   if (headerProgressFill) headerProgressFill.style.width = '0%';
+
+  // Check and render active session banner if any
+  checkActiveSessionResume();
 
   // Re-render mastery stats
   renderSyllabusHub();
@@ -200,6 +401,13 @@ function showWorkspaceView() {
     headerModeBadge.className = `tactile-badge ${state.sessionMode === 'ujian' ? 'badge-physics' : 'badge-neutral'}`;
   }
   if (btnMobileDrawerTrigger) btnMobileDrawerTrigger.classList.remove('hidden');
+
+  // Update navbar syllabus button to indicate quick exit back to syllabus
+  const btnHeaderSyllabus = document.getElementById('btnHeaderSyllabus');
+  if (btnHeaderSyllabus) {
+    btnHeaderSyllabus.innerHTML = '<i class="fa-solid fa-arrow-left"></i> <span class="sm:inline">Silabus</span>';
+    btnHeaderSyllabus.title = 'Kembali ke Peta Silabus';
+  }
 }
 
 // ============================================================================
@@ -311,17 +519,22 @@ function renderSyllabusHub() {
 
 function renderChapterCard(chapter, pillarId) {
   const isFoundation = Boolean(chapter.isFoundation);
-  const questionsInChapter = getFilteredQuestions({ chapterId: chapter.id });
+  const questionsInChapter = getFilteredQuestions({ chapterId: chapter.id, wrongOnly: false });
   const countMudah = questionsInChapter.filter(q => q.difficulty === 'mudah').length;
   const countSedang = questionsInChapter.filter(q => q.difficulty === 'sedang').length;
   const countHots = questionsInChapter.filter(q => q.difficulty === 'hots').length;
   const masteryPercent = calculateChapterMastery(chapter.id);
+  const openList = getAccordionState();
+  const isOpen = openList.includes(chapter.id);
+  const mastery = getMasteryData();
 
   return `
-    <article class="chapter-card ${isFoundation ? 'foundation-card' : ''}">
-      <div>
-        <div class="chapter-top-bar">
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+    <article class="chapter-accordion ${isOpen ? 'open' : ''} ${isFoundation ? 'foundation-accordion' : ''}" id="accordion-${chapter.id}">
+      <!-- Accordion Header (Minimal, No cognitive overload) -->
+      <div id="accordion-header-${chapter.id}" class="chapter-accordion-header" onclick="toggleChapterAccordion('${chapter.id}')" role="button" aria-expanded="${isOpen}">
+        <div class="accordion-header-left">
+          <i class="fa-solid fa-chevron-right accordion-chevron"></i>
+          <div class="accordion-title-wrap">
             ${isFoundation ? `
               <span class="chapter-badge-fondasi">
                 <i class="fa-solid fa-bolt mr-1"></i> FONDASI
@@ -329,72 +542,56 @@ function renderChapterCard(chapter, pillarId) {
             ` : `
               <span class="subtopic-code">${chapter.id.toUpperCase()}</span>
             `}
-            <span class="font-mono text-xs text-zinc-500 font-bold">
-              ${chapter.subTopics.length} Sub-Topik • ${questionsInChapter.length} Butir Soal
-            </span>
+            <h3 class="accordion-title">${chapter.title}</h3>
           </div>
-
-          <!-- Quick Chapter Drill Trigger Button -->
-          <button class="tactile-btn ${isFoundation ? 'tactile-btn-primary' : ''}" 
-                  style="padding: 6px 12px; font-size: 0.82rem;"
-                  onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')">
-            <i class="fa-solid fa-play mr-1"></i> Drill Bab
+        </div>
+        <div class="accordion-header-right">
+          <span class="chapter-tier-badge" title="Tersedia: Mudah, Sedang, HOTS">
+            M: ${countMudah} | S: ${countSedang} | H: ${countHots}
+          </span>
+          <button class="tactile-btn tactile-btn-drill-chapter ${isFoundation ? 'tactile-btn-primary' : ''}" 
+                  onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')"
+                  title="Drill Semua Soal di Bab Ini">
+            <i class="fa-solid fa-play"></i>
+            <span>Drill</span>
           </button>
-        </div>
-
-        <h3 class="font-heading" style="font-size: 1.15rem; margin-bottom: 6px;">
-          ${chapter.title}
-        </h3>
-        <p class="text-zinc-600 dark:text-zinc-300" style="font-size: 0.82rem; margin-bottom: 12px; line-height: 1.5;">
-          ${chapter.description || ''}
-        </p>
-
-        <!-- Chapter Mastery Progress Bar -->
-        <div style="margin-bottom: 14px;">
-          <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; margin-bottom: 4px;">
-            <span>Tingkat Penguasaan</span>
-            <span class="${masteryPercent >= 75 ? 'text-green-600' : 'text-blue-600'}">${masteryPercent}%</span>
-          </div>
-          <div class="tier-progress-track">
-            <div class="tier-progress-fill ${isFoundation ? 'tier-fill-sedang' : 'tier-fill-mudah'}" style="width: ${masteryPercent}%;"></div>
-          </div>
-        </div>
-
-        <!-- Subtopics List (Micro-indicators) -->
-        <div class="subtopic-list">
-          ${chapter.subTopics.map(sub => {
-            const subQuestions = getFilteredQuestions({ subTopicId: sub.id });
-            return `
-              <div class="subtopic-item">
-                <div class="subtopic-head">
-                  <div style="display: flex; align-items: center; gap: 6px;">
-                    <span class="subtopic-code">${sub.id}</span>
-                    <strong style="font-size: 0.88rem;">${sub.title}</strong>
-                  </div>
-                  <button class="tactile-btn" style="padding: 3px 8px; font-size: 0.74rem;"
-                          onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.id} - ${sub.title}')">
-                    <i class="fa-solid fa-bullseye mr-1"></i> Drill
-                  </button>
-                </div>
-                <div class="subtopic-indicators">
-                  ${sub.indicators}
-                </div>
-                <div style="display: flex; gap: 6px; font-size: 0.72rem; color: var(--ink-faint); margin-top: 2px;">
-                  <span>Tersedia: <strong>${subQuestions.length} Soal</strong></span>
-                </div>
-              </div>
-            `;
-          }).join('')}
         </div>
       </div>
 
-      <!-- Chapter Footer Tier Pills Summary -->
-      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--dot-color); font-size: 0.75rem;">
-        <span class="font-mono text-zinc-500">Tier: ${countMudah}M / ${countSedang}S / ${countHots}H</span>
-        <button class="tactile-btn tactile-btn-secondary" style="padding: 4px 10px; font-size: 0.78rem;"
-                onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')">
-          Mulai Drilling Sesi
-        </button>
+      <!-- Thin 4px Progress Track -->
+      <div class="chapter-progress-track" title="Tingkat Penguasaan: ${masteryPercent}%">
+        <div class="chapter-progress-fill" style="width: ${masteryPercent}%;"></div>
+      </div>
+
+      <!-- Collapsible Content via CSS Grid transition -->
+      <div class="chapter-accordion-content">
+        <div class="chapter-accordion-inner">
+          <div class="subtopic-compact-list">
+            ${chapter.subTopics.map(sub => {
+              const subQuestions = getFilteredQuestions({ subTopicId: sub.id, wrongOnly: false });
+              const isMastered = subQuestions.length > 0 && subQuestions.every(q => mastery[q.id] && mastery[q.id].correct > 0);
+              return `
+                <div class="subtopic-compact-row">
+                  <div class="subtopic-compact-left">
+                    <span class="status-dot ${isMastered ? 'dot-mastered' : 'dot-unmastered'}" 
+                          title="${isMastered ? 'Materi Terkuasai (100%)' : 'Belum Dikerjakan / Belum Kuasai'}"></span>
+                    <span class="subtopic-code">${sub.id}</span>
+                    <span class="subtopic-name">${sub.title}</span>
+                  </div>
+                  <div class="subtopic-compact-right">
+                    <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
+                    <button class="tactile-btn tactile-btn-compact" 
+                            onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.id} - ${sub.title}')"
+                            title="Latih Sub-Topik Ini">
+                      <i class="fa-solid fa-bullseye"></i>
+                      <span>Latih</span>
+                    </button>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
       </div>
     </article>
   `;
@@ -409,10 +606,17 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   state.setupForm.subTopicId = subTopicId;
   state.setupForm.scopeTitle = scopeTitle;
   state.setupForm.isProgressive = false;
+  state.setupForm.wrongOnly = false;
 
   const modal = document.getElementById('drillSetupModal');
   const scopeSubtitle = document.getElementById('setupScopeSubtitle');
   if (scopeSubtitle) scopeSubtitle.textContent = scopeTitle;
+
+  // Update badge for available wrong questions
+  const wrongCountBadge = document.getElementById('wrongCountBadge');
+  if (wrongCountBadge) {
+    wrongCountBadge.textContent = getWrongQuestionsHistory().length;
+  }
 
   // Refresh active pills styling
   syncSetupPillStyles();
@@ -448,16 +652,29 @@ function setSetupProgressiveDifficulty() {
   updateSetupPreviewCount();
 }
 
+function toggleSetupWrongOnly() {
+  const wrongList = getWrongQuestionsHistory();
+  if (!state.setupForm.wrongOnly && wrongList.length === 0) {
+    alert('Belum ada riwayat soal salah. Silakan berlatih terlebih dahulu!');
+    return;
+  }
+  state.setupForm.wrongOnly = !state.setupForm.wrongOnly;
+  syncSetupPillStyles();
+  updateSetupPreviewCount();
+}
+
 function syncSetupPillStyles() {
   const pillM = document.getElementById('pillMudah');
   const pillS = document.getElementById('pillSedang');
   const pillH = document.getElementById('pillHots');
   const pillP = document.getElementById('pillProgresif');
+  const pillW = document.getElementById('pillWrongOnly');
 
   if (pillM) pillM.className = `config-pill pill-mudah ${state.setupForm.difficulties.includes('mudah') && !state.setupForm.isProgressive ? 'active' : ''}`;
   if (pillS) pillS.className = `config-pill pill-sedang ${state.setupForm.difficulties.includes('sedang') && !state.setupForm.isProgressive ? 'active' : ''}`;
   if (pillH) pillH.className = `config-pill pill-hots ${state.setupForm.difficulties.includes('hots') && !state.setupForm.isProgressive ? 'active' : ''}`;
   if (pillP) pillP.className = `config-pill pill-progresif ${state.setupForm.isProgressive ? 'active' : ''}`;
+  if (pillW) pillW.className = `config-pill pill-wrong ${state.setupForm.wrongOnly ? 'active' : ''}`;
 }
 
 function selectSetupMode(mode) {
@@ -520,7 +737,8 @@ function updateSetupPreviewCount() {
     chapterId: state.setupForm.chapterId,
     subTopicId: state.setupForm.subTopicId,
     difficulties: state.setupForm.difficulties,
-    progressive: state.setupForm.isProgressive
+    progressive: state.setupForm.isProgressive,
+    wrongOnly: state.setupForm.wrongOnly
   });
 
   countEl.textContent = `Ditemukan ${matches.length} butir soal yang sesuai dengan kombinasi filter ini.`;
@@ -533,7 +751,8 @@ function startConfiguredDrillSession() {
     chapterId: state.setupForm.chapterId,
     subTopicId: state.setupForm.subTopicId,
     difficulties: state.setupForm.difficulties,
-    progressive: state.setupForm.isProgressive
+    progressive: state.setupForm.isProgressive,
+    wrongOnly: state.setupForm.wrongOnly
   });
 
   if (matches.length === 0) {
@@ -596,6 +815,9 @@ function startConfiguredDrillSession() {
   renderCurrentQuestion(true);
   renderMatrixGrid();
   updateStats();
+
+  // Save initial session state
+  saveSessionState();
 }
 
 // ============================================================================
@@ -632,6 +854,11 @@ function startTimer() {
       // Stopwatch Mode
       state.timerSeconds++;
       updateTimerDisplay();
+    }
+
+    // Periodically save active timer state every 5 seconds
+    if (Math.abs(state.timerSeconds) % 5 === 0) {
+      saveSessionState();
     }
   }
 
@@ -884,6 +1111,7 @@ function handleOptionSelect(optionIndex) {
   renderMatrixGrid();
   updateStats();
   updateBottomActionBar();
+  saveSessionState();
 }
 
 function toggleRagu() {
@@ -900,6 +1128,7 @@ function toggleRagu() {
   }
   renderMatrixGrid();
   updateStats();
+  saveSessionState();
 }
 
 function toggleSolutionAccordion() {
@@ -916,6 +1145,7 @@ function toggleSolutionAccordion() {
       solutionAccordion.classList.remove('open');
     }
   }
+  saveSessionState();
 }
 
 function handleCheckAnswer() {
@@ -944,10 +1174,14 @@ function handleCheckAnswer() {
   const currentQ = state.questions[state.currentIndex];
   const isCorrect = chosen === currentQ.correctIndex;
   saveMasteryProgress(currentQ.id, isCorrect);
+  if (!isCorrect) {
+    recordWrongQuestion(currentQ.id);
+  }
 
   renderCurrentQuestion(false);
   renderMatrixGrid();
   updateStats();
+  saveSessionState();
 
   setTimeout(() => {
     const solutionAccordion = document.getElementById('solutionAccordion');
@@ -967,6 +1201,7 @@ function handlePrevQuestion() {
     state.currentIndex--;
     renderCurrentQuestion(true);
     renderMatrixGrid();
+    saveSessionState();
   }
 }
 
@@ -975,6 +1210,7 @@ function handleNextQuestion() {
     state.currentIndex++;
     renderCurrentQuestion(true);
     renderMatrixGrid();
+    saveSessionState();
   }
 }
 
@@ -984,6 +1220,7 @@ function jumpToQuestion(idx) {
     closeMobileDrawer();
     renderCurrentQuestion(true);
     renderMatrixGrid();
+    saveSessionState();
   }
 }
 
@@ -1153,6 +1390,7 @@ function finishDrillingSession() {
     if (chosen === null) {
       emptyCount++;
       saveMasteryProgress(q.id, false);
+      recordWrongQuestion(q.id);
     } else if (chosen === q.correctIndex) {
       correctCount++;
       if (tierStats[diff]) tierStats[diff].correct++;
@@ -1160,11 +1398,15 @@ function finishDrillingSession() {
     } else {
       wrongCount++;
       saveMasteryProgress(q.id, false);
+      recordWrongQuestion(q.id);
     }
   });
 
   const total = state.questions.length;
   const finalScore = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+  // Clear session state since session has officially finished
+  clearSessionState();
 
   // Calculate Average Time per Question
   const totalSecondsSpent = state.timerMode === 'countdown'
@@ -1260,25 +1502,28 @@ function reviewWrongQuestionsOnly() {
 
 function restartCurrentDrillSession() {
   closeCompletionModal();
+  clearSessionState();
   if (state.sessionScope) {
     startConfiguredDrillSession();
   }
 }
 
 // ============================================================================
-// 11. FORMULA CHEAT-SHEET & MOBILE DRAWER
+// 11. FORMULA CHEAT-SHEET DRAWER & MOBILE SHEET
 // ============================================================================
 function openCheatSheetModal() {
-  const modal = document.getElementById('cheatSheetModal');
-  if (modal) {
-    modal.classList.add('open');
-    triggerMathTypeset();
-  }
+  const drawer = document.getElementById('cheatSheetDrawer');
+  const backdrop = document.getElementById('cheatSheetDrawerBackdrop');
+  if (drawer) drawer.classList.add('open');
+  if (backdrop) backdrop.classList.add('open');
+  triggerMathTypeset();
 }
 
 function closeCheatSheetModal() {
-  const modal = document.getElementById('cheatSheetModal');
-  if (modal) modal.classList.remove('open');
+  const drawer = document.getElementById('cheatSheetDrawer');
+  const backdrop = document.getElementById('cheatSheetDrawerBackdrop');
+  if (drawer) drawer.classList.remove('open');
+  if (backdrop) backdrop.classList.remove('open');
 }
 
 function openMobileDrawer() {
@@ -1304,7 +1549,7 @@ function closeMobileDrawer() {
 // ============================================================================
 function bindGlobalEvents() {
   window.addEventListener('keydown', (e) => {
-    // Escape closes all open modals
+    // Escape closes all open modals and slideover drawer
     if (e.key === 'Escape') {
       closeCheatSheetModal();
       closeCompletionModal();
@@ -1346,13 +1591,12 @@ function bindGlobalEvents() {
   });
 
   // Modal overlay click to close
-  ['cheatSheetModal', 'completionModal', 'drillSetupModal'].forEach(id => {
+  ['completionModal', 'drillSetupModal'].forEach(id => {
     const el = document.getElementById(id);
     if (el) {
       el.addEventListener('click', (e) => {
         if (e.target === el) {
-          if (id === 'cheatSheetModal') closeCheatSheetModal();
-          else if (id === 'completionModal') closeCompletionModal();
+          if (id === 'completionModal') closeCompletionModal();
           else if (id === 'drillSetupModal') closeDrillSetupModal();
         }
       });
