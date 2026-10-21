@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>TKA Physics & Advanced Mathematics Drilling Lab</title>
+  <title>TKA Physics & Mathematics Drilling Platform</title>
 
   <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,8 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- Custom Tactile Neo-Brutalist Stylesheet (Cache Busting v2.2) -->
-  <link rel="stylesheet" href="styles.css?v=2.2">
+  <!-- Custom Tactile Neo-Brutalist Stylesheet (Cache Busting v3.0) -->
+  <link rel="stylesheet" href="styles.css?v=3.0">
 </head>
 <body>
 
@@ -28,16 +28,30 @@
     <div class="header-container">
       <!-- Brand & Topic Badge -->
       <div class="brand-section">
-        <span class="brand-tag">TKA-LAB</span>
-        <span id="headerTopic" class="topic-badge-header">FISIKA: Dinamika Rotasi & Torsi</span>
+        <span class="brand-tag" onclick="showSyllabusView()" style="cursor: pointer;" title="Kembali ke Peta Silabus">TKA-LAB</span>
+        <span id="headerTopic" class="topic-badge-header">Peta Silabus & Kurikulum TKA</span>
       </div>
 
-      <!-- Controls: Timer, Theme Toggle, Mobile Drawer -->
+      <!-- Controls: Navigation, Timer, Theme Toggle, Mobile Drawer -->
       <div class="header-controls">
-        <!-- Monospace Countdown Timer -->
-        <div id="timerPill" class="timer-pill" onclick="toggleTimerPause()" title="Klik untuk menjeda/melanjutkan timer">
+        <!-- View Switching & Quick Actions -->
+        <button id="btnHeaderSyllabus" class="tactile-btn" style="padding: 6px 12px; font-size: 0.82rem;" onclick="showSyllabusView()" title="Buka Peta Silabus Lengkap">
+          <i class="fa-solid fa-map"></i>
+          <span class="sm:inline">Silabus</span>
+        </button>
+
+        <button id="btnHeaderQuickDrill" class="tactile-btn tactile-btn-primary" style="padding: 6px 12px; font-size: 0.82rem;" onclick="openDrillSetupModal('all', 'all', 'all', 'Drilling Campuran Semua Bab')" title="Mulai Sesi Campuran Cepat">
+          <i class="fa-solid fa-bolt"></i>
+          <span class="sm:inline">Drill Kilat</span>
+        </button>
+
+        <!-- Current Session Mode Badge (Only visible during workspace drilling) -->
+        <span id="headerModeBadge" class="tactile-badge badge-neutral hidden" style="font-size: 0.75rem;">Latihan</span>
+
+        <!-- Monospace Timer Pill -->
+        <div id="timerPill" class="timer-pill hidden" onclick="toggleTimerPause()" title="Klik untuk menjeda/melanjutkan timer">
           <i class="fa-regular fa-clock"></i>
-          <span id="timerText">20:00</span>
+          <span id="timerText">00:00</span>
         </div>
 
         <!-- Light/Dark Mode Switcher -->
@@ -45,202 +59,321 @@
           <i id="themeIcon" class="fa-solid fa-moon"></i>
         </button>
 
-        <!-- Mobile Drawer Trigger Button -->
-        <button class="icon-btn-header lg:hidden" onclick="openMobileDrawer()" title="Buka Daftar Soal" aria-label="Buka Daftar Soal">
+        <!-- Mobile Drawer Trigger Button (Only active during drilling) -->
+        <button id="btnMobileDrawerTrigger" class="icon-btn-header lg:hidden hidden" onclick="openMobileDrawer()" title="Buka Daftar Soal" aria-label="Buka Daftar Soal">
           <i class="fa-solid fa-table-cells"></i>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Thin Progress Bar Strip directly under Header -->
+  <!-- Progress Bar Strip under Header -->
   <div class="header-progress-strip">
-    <div id="headerProgressFill" class="header-progress-fill"></div>
+    <div id="headerProgressFill" class="header-progress-fill" style="width: 0%;"></div>
   </div>
 
-  <!-- Main Responsive Split Workspace -->
+  <!-- Main Content Wrapper -->
   <main class="workspace-wrapper">
-    <div class="workspace-layout">
 
-      <!-- ===================================================================
-           LEFT COLUMN: Main Problem Canvas & Interactive Options
-           =================================================================== -->
-      <section class="problem-column">
-        <article class="tactile-card problem-card">
-          <!-- Question Metadata Bar -->
-          <div class="problem-meta-bar">
-            <div class="meta-tags-left">
-              <span id="questionNumBadge" class="problem-number-tag">SOAL 01</span>
-              <span id="subjectBadge" class="tactile-badge badge-physics">FISIKA</span>
-              <span id="difficultyBadge" class="problem-difficulty-tag">HOTS / Setara UTBK-STEI</span>
+    <!-- ===================================================================
+         VIEW 1: PETA SILABUS & KURIKULUM (SYLLABUS HUB)
+         =================================================================== -->
+    <div id="syllabusView" class="view-container">
+      
+      <!-- Syllabus Hero & Stats Overview -->
+      <section class="tactile-card syllabus-hero">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+              <span class="tactile-badge badge-physics">KURIKULUM TKA SAINTEK</span>
+              <span class="tactile-badge badge-math">UTBK / SIMAK / STEI</span>
             </div>
-            <!-- Bookmark / Doubt Button -->
-            <button id="btnRagu" class="tactile-btn tactile-btn-ragu" onclick="toggleRagu()" style="padding: 6px 12px; font-size: 0.82rem;">
-              <i class="fa-regular fa-bookmark mr-1"></i> Tandai Ragu-ragu
-            </button>
+            <h1 class="font-heading" style="font-size: 1.65rem; margin-bottom: 6px;">Platform Drilling Fisika & Matematika</h1>
+            <p class="text-zinc-600 dark:text-zinc-300" style="font-size: 0.92rem; max-width: 680px; line-height: 1.6;">
+              Arsitektur drilling modular 3-tier difficulty (<strong>Mudah</strong>, <strong>Sedang</strong>, <strong>HOTS</strong>) yang terstruktur berdasarkan silabus lengkap Fisika TKA dan Matematika (termasuk <strong>Bab Fundamental / Materi Prasyarat</strong>).
+            </p>
           </div>
-
-          <!-- Problem Statement Body -->
-          <div id="problemStatement" class="problem-text">
-            <!-- KaTeX question text will be rendered here -->
-          </div>
-
-          <!-- Dedicated Blueprint Diagram Component -->
-          <div id="diagramBox" class="diagram-box hidden">
-            <div id="diagramContent" class="diagram-svg-container"></div>
-            <div id="diagramCaption" class="diagram-caption">SKEMA SISTEM FISIKA</div>
-          </div>
-
-          <!-- Tactile Option Cards (A, B, C, D, E) -->
-          <div id="optionsList" class="options-list">
-            <!-- Dynamic option cards loaded here -->
-          </div>
-
-          <!-- Accordion Step-by-Step Solution (Pembahasan) -->
-          <div id="solutionAccordion" class="solution-accordion">
-            <button class="solution-header-btn" onclick="toggleSolutionAccordion()">
-              <div class="solution-header-title">
-                <i class="fa-solid fa-lightbulb text-amber-500"></i>
-                <span>Pembahasan Lengkap & Analisis Soal</span>
-              </div>
-              <i class="fa-solid fa-chevron-down solution-chevron"></i>
-            </button>
-
-            <div class="solution-body">
-              <!-- Section 1: Konsep Dasar / Rumus Cepat -->
-              <div class="solution-section-block">
-                <div class="solution-block-title konsep">
-                  <i class="fa-solid fa-key"></i>
-                  <span>1. Konsep Dasar & Rumus Kunci</span>
-                </div>
-                <div id="solutionConcept" class="solution-block-content"></div>
-              </div>
-
-              <!-- Section 2: Langkah Penyelesaian (Step-by-step LaTeX) -->
-              <div class="solution-section-block">
-                <div class="solution-block-title langkah">
-                  <i class="fa-solid fa-calculator"></i>
-                  <span>2. Langkah Penyelesaian Sistematis</span>
-                </div>
-                <div id="solutionSteps" class="solution-block-content"></div>
-              </div>
-
-              <!-- Section 3: Analisis Jebakan Soal (Common Pitfalls) -->
-              <div class="solution-section-block">
-                <div class="solution-block-title jebakan">
-                  <i class="fa-solid fa-triangle-exclamation"></i>
-                  <span>3. Analisis Jebakan Soal & Kesalahan Umum</span>
-                </div>
-                <div id="solutionPitfalls" class="solution-block-content"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- ===================================================================
-           RIGHT COLUMN: Sticky Desktop Dashboard
-           =================================================================== -->
-      <aside class="desktop-dashboard">
-        <!-- Question Matrix Card -->
-        <div class="tactile-card dashboard-card">
-          <div class="dashboard-card-title">
-            <span><i class="fa-solid fa-border-all mr-2"></i>Navigasi Soal</span>
-            <span class="font-mono text-xs text-zinc-500">4 Butir HOTS</span>
-          </div>
-          
-          <div id="matrixGridDesktop" class="matrix-grid">
-            <!-- 4 Questions Matrix Buttons -->
-          </div>
-
-          <!-- Matrix Legend -->
-          <div class="matrix-legend">
-            <div class="legend-item">
-              <span class="legend-dot" style="background: var(--card-bg);"></span> Belum
-            </div>
-            <div class="legend-item">
-              <span class="legend-dot" style="background: var(--ragu);"></span> Ragu
-            </div>
-            <div class="legend-item">
-              <span class="legend-dot" style="background: var(--correct);"></span> Benar
-            </div>
-            <div class="legend-item">
-              <span class="legend-dot" style="background: var(--wrong);"></span> Salah
-            </div>
-          </div>
-        </div>
-
-        <!-- Session Accuracy Stats Card -->
-        <div class="tactile-card dashboard-card">
-          <div class="dashboard-card-title">
-            <span><i class="fa-solid fa-chart-pie mr-2"></i>Statistik Pengerjaan</span>
-          </div>
-          <div class="stats-grid">
-            <div class="stat-box">
-              <div id="statAnswered" class="stat-value">0/4</div>
-              <div class="stat-label">Terjawab</div>
-            </div>
-            <div class="stat-box">
-              <div id="statCorrect" class="stat-value text-green-600">0</div>
-              <div class="stat-label">Jawaban Benar</div>
-            </div>
-            <div class="stat-box">
-              <div id="statAccuracy" class="stat-value">0%</div>
-              <div class="stat-label">Akurasi</div>
-            </div>
-            <div class="stat-box">
-              <div id="statRemaining" class="stat-value text-amber-600">4</div>
-              <div class="stat-label">Sisa Soal</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Formula Cheat-Sheet Quick Modal Trigger -->
-        <div class="tactile-card dashboard-card">
-          <button class="tactile-btn tactile-btn-secondary w-full" onclick="openCheatSheetModal()">
-            <i class="fa-solid fa-book mr-2"></i> Rumus Cepat & Ringkasan
+          <button class="tactile-btn tactile-btn-primary" onclick="openDrillSetupModal('all', 'all', 'all', 'Simulasi Campuran TKA (Fisika & Matematika)')">
+            <i class="fa-solid fa-play mr-1.5"></i> Mulai Drilling Campuran
           </button>
         </div>
 
-        <!-- Keyboard Shortcuts Legend Card -->
-        <div class="tactile-card dashboard-card">
-          <div class="dashboard-card-title">
-            <span><i class="fa-solid fa-keyboard mr-2"></i>Pintasan Keyboard</span>
+        <!-- Global Question Bank Counters & Mastery -->
+        <div class="hero-stats-row">
+          <div class="hero-stat-box">
+            <div id="statTotalBankQuestions" class="hero-stat-value">38</div>
+            <div class="hero-stat-label">Total Soal di Bank</div>
           </div>
-          <div class="shortcut-list">
-            <div class="shortcut-row">
-              <span class="text-zinc-600 dark:text-zinc-300">Pilih Opsi A - E</span>
-              <span class="kbd-badge">A</span> ... <span class="kbd-badge">E</span>
+          <div class="hero-stat-box">
+            <div id="statTotalChapters" class="hero-stat-value">10</div>
+            <div class="hero-stat-label">Bab Terpetakan</div>
+          </div>
+          <div class="hero-stat-box">
+            <div id="statTierBreakdown" class="hero-stat-value" style="font-size: 0.95rem; line-height: 1.8;">
+              <span style="color: #16A34A;">18 M</span> • <span style="color: #D97706;">14 S</span> • <span style="color: #DC2626;">6 H</span>
             </div>
-            <div class="shortcut-row">
-              <span class="text-zinc-600 dark:text-zinc-300">Cek / Buka Pembahasan</span>
-              <span class="kbd-badge">Enter</span>
-            </div>
-            <div class="shortcut-row">
-              <span class="text-zinc-600 dark:text-zinc-300">Navigasi Soal</span>
-              <span class="kbd-badge">←</span> <span class="kbd-badge">→</span>
-            </div>
-            <div class="shortcut-row">
-              <span class="text-zinc-600 dark:text-zinc-300">Tandai Ragu-ragu</span>
-              <span class="kbd-badge">R</span>
-            </div>
+            <div class="hero-stat-label">Mudah • Sedang • HOTS</div>
+          </div>
+          <div class="hero-stat-box">
+            <div id="statOverallMastery" class="hero-stat-value text-blue-600">0%</div>
+            <div class="hero-stat-label">Penguasaan Keseluruhan</div>
           </div>
         </div>
-      </aside>
+      </section>
+
+      <!-- Pillar Selector Tabs -->
+      <div class="pillar-tabs">
+        <button id="tabFilterAll" class="pillar-tab-btn active" onclick="switchPillarFilter('all')">
+          <i class="fa-solid fa-layer-group mr-1.5"></i> Semua Pilar
+        </button>
+        <button id="tabFilterPhys" class="pillar-tab-btn tab-phys" onclick="switchPillarFilter('fisika')">
+          <i class="fa-solid fa-bolt-lightning mr-1.5"></i> Pilar 1: Fisika (TKA)
+        </button>
+        <button id="tabFilterMath" class="pillar-tab-btn tab-math" onclick="switchPillarFilter('matematika')">
+          <i class="fa-solid fa-calculator mr-1.5"></i> Pilar 2: Matematika & Fondasi
+        </button>
+      </div>
+
+      <!-- PILAR 1: FISIKA CONTAINER -->
+      <section id="pillarFisikaSection" class="pillar-section">
+        <div class="pillar-header-banner pillar-phys-banner">
+          <div>
+            <h2 class="font-heading" style="font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-bolt-lightning text-orange-600"></i> PILAR 1: FISIKA (TKA)
+            </h2>
+            <p style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 2px;">
+              Mekanika, Fluida, Gelombang, Termodinamika, dan Kelistrikan
+            </p>
+          </div>
+          <button class="tactile-btn" style="padding: 6px 14px; font-size: 0.82rem;" onclick="openDrillSetupModal('fisika', 'all', 'all', 'Semua Bab Fisika (TKA)')">
+            <i class="fa-solid fa-play mr-1"></i> Drill Fisika
+          </button>
+        </div>
+        <div id="chaptersContainerFisika" class="chapters-grid">
+          <!-- Dynamically populated via JS from SYLLABUS_DATA -->
+        </div>
+      </section>
+
+      <!-- PILAR 2: MATEMATIKA CONTAINER -->
+      <section id="pillarMatematikaSection" class="pillar-section">
+        <div class="pillar-header-banner pillar-math-banner">
+          <div>
+            <h2 class="font-heading" style="font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-calculator text-blue-600"></i> PILAR 2: MATEMATIKA (TKA & Fundamental)
+            </h2>
+            <p style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 2px;">
+              Bab Fundamental (Prasyarat Wajib), Aljabar Lanjut, Geometri & Pengukuran, serta Trigonometri & Limit
+            </p>
+          </div>
+          <button class="tactile-btn" style="padding: 6px 14px; font-size: 0.82rem;" onclick="openDrillSetupModal('matematika', 'all', 'all', 'Semua Bab Matematika')">
+            <i class="fa-solid fa-play mr-1"></i> Drill Matematika
+          </button>
+        </div>
+        <div id="chaptersContainerMatematika" class="chapters-grid">
+          <!-- Dynamically populated via JS from SYLLABUS_DATA -->
+        </div>
+      </section>
 
     </div>
+
+    <!-- ===================================================================
+         VIEW 2: DRILLING WORKSPACE (PRACTICE & EXAM MODES)
+         =================================================================== -->
+    <div id="workspaceView" class="view-container hidden">
+      <div class="workspace-layout">
+
+        <!-- LEFT COLUMN: Main Problem Canvas & Interactive Options -->
+        <section class="problem-column">
+          <article class="tactile-card problem-card">
+            
+            <!-- Question Metadata Bar -->
+            <div class="problem-meta-bar">
+              <div class="meta-tags-left">
+                <span id="questionNumBadge" class="problem-number-tag">SOAL 01</span>
+                <span id="subjectBadge" class="tactile-badge badge-physics">FISIKA</span>
+                <span id="difficultyBadge" class="problem-difficulty-tag">HOTS</span>
+              </div>
+              <!-- Bookmark / Doubt Button -->
+              <button id="btnRagu" class="tactile-btn tactile-btn-ragu" onclick="toggleRagu()" style="padding: 6px 12px; font-size: 0.82rem;">
+                <i class="fa-regular fa-bookmark mr-1"></i> Tandai Ragu-ragu
+              </button>
+            </div>
+
+            <!-- Problem Statement Body -->
+            <div id="problemStatement" class="problem-text">
+              <!-- Rendered via KaTeX -->
+            </div>
+
+            <!-- Dedicated Blueprint Diagram Component -->
+            <div id="diagramBox" class="diagram-box hidden">
+              <div id="diagramContent" class="diagram-svg-container"></div>
+              <div id="diagramCaption" class="diagram-caption">SKEMA SISTEM FISIKA</div>
+            </div>
+
+            <!-- Tactile Option Cards (A, B, C, D, E) -->
+            <div id="optionsList" class="options-list">
+              <!-- Populated via JS -->
+            </div>
+
+            <!-- In Exam Mode: Locked Notice Banner -->
+            <div id="examLockedNotice" class="exam-locked-banner hidden">
+              <i class="fa-solid fa-lock text-lg"></i>
+              <span><strong>Mode Ujian (Simulasi TKA):</strong> Pembahasan dan verifikasi kunci jawaban dikunci hingga seluruh sesi selesai dan Anda menekan tombol "Selesai & Kumpulkan".</span>
+            </div>
+
+            <!-- In Practice Mode: Accordion Step-by-Step Solution (Pembahasan) -->
+            <div id="solutionAccordion" class="solution-accordion">
+              <button class="solution-header-btn" onclick="toggleSolutionAccordion()">
+                <div class="solution-header-title">
+                  <i class="fa-solid fa-lightbulb text-amber-500"></i>
+                  <span>Pembahasan Lengkap & Analisis Soal</span>
+                </div>
+                <i class="fa-solid fa-chevron-down solution-chevron"></i>
+              </button>
+
+              <div class="solution-body">
+                <!-- Section 1: Konsep Dasar / Rumus Kunci -->
+                <div class="solution-section-block">
+                  <div class="solution-block-title konsep">
+                    <i class="fa-solid fa-key"></i>
+                    <span>1. Konsep Dasar & Rumus Kunci</span>
+                  </div>
+                  <div id="solutionConcept" class="solution-block-content"></div>
+                </div>
+
+                <!-- Section 2: Langkah Penyelesaian Sistematis -->
+                <div class="solution-section-block">
+                  <div class="solution-block-title langkah">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>2. Langkah Penyelesaian Sistematis</span>
+                  </div>
+                  <div id="solutionSteps" class="solution-block-content"></div>
+                </div>
+
+                <!-- Section 3: Analisis Jebakan Soal (Common Pitfalls) -->
+                <div class="solution-section-block">
+                  <div class="solution-block-title jebakan">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>3. Analisis Jebakan Soal & Kesalahan Umum</span>
+                  </div>
+                  <div id="solutionPitfalls" class="solution-block-content"></div>
+                </div>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <!-- RIGHT COLUMN: Sticky Desktop Dashboard -->
+        <aside class="desktop-dashboard">
+          
+          <!-- Question Status Matrix Card -->
+          <div class="tactile-card dashboard-card">
+            <div class="dashboard-card-title">
+              <span><i class="fa-solid fa-border-all mr-2"></i>Navigasi Soal</span>
+              <span id="matrixCountBadge" class="font-mono text-xs text-zinc-500">0 Butir</span>
+            </div>
+            
+            <div id="matrixGridDesktop" class="matrix-grid">
+              <!-- Matrix buttons populated via JS -->
+            </div>
+
+            <!-- Matrix Legend -->
+            <div class="matrix-legend">
+              <div class="legend-item"><span class="legend-dot" style="background: var(--card-bg);"></span> Belum</div>
+              <div class="legend-item"><span class="legend-dot" style="background: var(--ragu);"></span> Ragu</div>
+              <div class="legend-item"><span class="legend-dot" style="background: var(--correct);"></span> Benar</div>
+              <div class="legend-item"><span class="legend-dot" style="background: var(--wrong);"></span> Salah</div>
+            </div>
+          </div>
+
+          <!-- Session Accuracy Stats Card -->
+          <div class="tactile-card dashboard-card">
+            <div class="dashboard-card-title">
+              <span><i class="fa-solid fa-chart-pie mr-2"></i>Statistik Sesi</span>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-box">
+                <div id="statAnswered" class="stat-value">0/0</div>
+                <div class="stat-label">Terjawab</div>
+              </div>
+              <div class="stat-box">
+                <div id="statCorrect" class="stat-value text-green-600">0</div>
+                <div class="stat-label">Benar</div>
+              </div>
+              <div class="stat-box">
+                <div id="statAccuracy" class="stat-value">0%</div>
+                <div class="stat-label">Akurasi</div>
+              </div>
+              <div class="stat-box">
+                <div id="statRemaining" class="stat-value text-amber-600">0</div>
+                <div class="stat-label">Sisa</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exam Action Button (In Exam Mode) -->
+          <div id="examFinishBox" class="tactile-card dashboard-card hidden">
+            <button class="tactile-btn tactile-btn-primary w-full" onclick="confirmFinishExamSession()">
+              <i class="fa-solid fa-paper-plane mr-2"></i> Selesai & Kumpulkan Sesi
+            </button>
+          </div>
+
+          <!-- Quick Navigation Actions -->
+          <div class="tactile-card dashboard-card">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <button class="tactile-btn tactile-btn-secondary w-full" onclick="openCheatSheetModal()">
+                <i class="fa-solid fa-book mr-2"></i> Bank Rumus Kunci
+              </button>
+              <button class="tactile-btn w-full" onclick="showSyllabusView()" style="font-size: 0.85rem;">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Peta Silabus
+              </button>
+            </div>
+          </div>
+
+          <!-- Keyboard Shortcuts Legend Card -->
+          <div class="tactile-card dashboard-card">
+            <div class="dashboard-card-title">
+              <span><i class="fa-solid fa-keyboard mr-2"></i>Pintasan Keyboard</span>
+            </div>
+            <div class="shortcut-list">
+              <div class="shortcut-row">
+                <span class="text-zinc-600 dark:text-zinc-300">Pilih Opsi</span>
+                <div><span class="kbd-badge">A</span> ... <span class="kbd-badge">E</span></div>
+              </div>
+              <div class="shortcut-row">
+                <span class="text-zinc-600 dark:text-zinc-300">Cek / Pembahasan</span>
+                <span class="kbd-badge">Enter</span>
+              </div>
+              <div class="shortcut-row">
+                <span class="text-zinc-600 dark:text-zinc-300">Ganti Soal</span>
+                <div><span class="kbd-badge">←</span> <span class="kbd-badge">→</span></div>
+              </div>
+              <div class="shortcut-row">
+                <span class="text-zinc-600 dark:text-zinc-300">Tandai Ragu</span>
+                <span class="kbd-badge">R</span>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
   </main>
 
   <!-- ===================================================================
-       STICKY BOTTOM ACTION BAR (Mobile & Desktop Thumb Reach)
+       STICKY BOTTOM ACTION BAR (During Active Workspace Drill)
        =================================================================== -->
-  <div class="sticky-bottom-bar">
+  <div id="stickyBottomBar" class="sticky-bottom-bar hidden">
     <div class="bottom-bar-inner">
       <button id="btnPrev" class="tactile-btn action-btn-nav" onclick="handlePrevQuestion()">
         <i class="fa-solid fa-arrow-left"></i>
         <span class="nav-btn-text">Sebelumnya</span>
       </button>
 
+      <!-- Center Action: Mode Latihan = Cek Jawaban / Pembahasan; Mode Ujian = Tandai Ragu-ragu / Kumpulkan -->
       <button id="btnCheck" class="tactile-btn tactile-btn-primary" onclick="handleCheckAnswer()">
         <i class="fa-solid fa-circle-check mr-1.5"></i>
         <span id="btnCheckText">Cek Jawaban</span>
@@ -254,43 +387,231 @@
   </div>
 
   <!-- ===================================================================
-       COMPLETION / EVALUATION SUMMARY MODAL
+       MODAL 1: ATUR SESI DRILLING (SETUP & CONFIGURATOR)
        =================================================================== -->
-  <div id="completionModal" class="tactile-modal-overlay">
-    <div class="tactile-modal-card" style="max-width: 460px; text-align: center;">
-      <div class="modal-header" style="justify-content: center;">
-        <h3 class="modal-title"><i class="fa-solid fa-trophy mr-2 text-amber-500"></i>Hasil Evaluasi Drilling TKA</h3>
+  <div id="drillSetupModal" class="tactile-modal-overlay">
+    <div class="tactile-modal-card" style="max-width: 580px;">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title"><i class="fa-solid fa-sliders mr-2"></i>Atur Sesi Drilling</h3>
+          <p id="setupScopeSubtitle" style="font-size: 0.8rem; color: var(--ink-muted); margin-top: 2px;">Semua Materi</p>
+        </div>
+        <button class="icon-btn-header" onclick="closeDrillSetupModal()" aria-label="Tutup Konfigurasi">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-      <div style="padding: 24px;">
-        <div style="font-size: 2.8rem; margin-bottom: 8px;">🎯</div>
-        <h4 id="evalTitle" class="font-heading text-xl mb-1">Drilling Selesai!</h4>
-        <p id="evalSubtitle" class="text-zinc-600 dark:text-zinc-300 text-sm mb-6">Seluruh butir soal HOTS telah dikerjakan & diverifikasi.</p>
+
+      <div class="modal-content-scroll">
         
-        <div class="stats-grid mb-6">
-          <div class="stat-box">
-            <div id="evalScore" class="stat-value text-green-600">0/4</div>
-            <div class="stat-label">Jawaban Benar</div>
+        <!-- 1. Filter Tingkat Kesulitan (Multi-Select Pills) -->
+        <div class="config-group">
+          <label class="config-label">
+            <i class="fa-solid fa-layer-group text-blue-600"></i>
+            1. Filter Tingkat Kesulitan:
+          </label>
+          <div class="pill-group">
+            <button id="pillMudah" class="config-pill active pill-mudah" onclick="toggleSetupDifficulty('mudah')">
+              🟢 Mudah
+            </button>
+            <button id="pillSedang" class="config-pill active pill-sedang" onclick="toggleSetupDifficulty('sedang')">
+              🟡 Sedang
+            </button>
+            <button id="pillHots" class="config-pill active pill-hots" onclick="toggleSetupDifficulty('hots')">
+              🔴 HOTS
+            </button>
+            <button id="pillProgresif" class="config-pill pill-progresif" onclick="setSetupProgressiveDifficulty()">
+              ⚡ Progresif (M → S → H)
+            </button>
           </div>
-          <div class="stat-box">
-            <div id="evalAccuracy" class="stat-value text-blue-600">0%</div>
-            <div class="stat-label">Tingkat Akurasi</div>
+          <div id="setupAvailableCount" style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 6px;">
+            Ditemukan 38 butir soal pada cakupan ini.
           </div>
         </div>
 
-        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-          <button class="tactile-btn tactile-btn-secondary" onclick="closeCompletionModal()">
-            <i class="fa-solid fa-eye mr-1.5"></i> Review Pembahasan
-          </button>
-          <button class="tactile-btn tactile-btn-primary" onclick="restartDrilling()">
-            <i class="fa-solid fa-rotate-right mr-1.5"></i> Ulangi Drilling
-          </button>
+        <!-- 2. Mode Pengerjaan -->
+        <div class="config-group">
+          <label class="config-label">
+            <i class="fa-solid fa-graduation-cap text-orange-600"></i>
+            2. Mode Pengerjaan:
+          </label>
+          <div class="mode-card-grid">
+            <div id="modeLatihanCard" class="mode-choice-card selected" onclick="selectSetupMode('latihan')">
+              <div class="mode-title">
+                <i class="fa-solid fa-book-open text-green-600"></i> Mode Latihan (Belajar)
+              </div>
+              <div class="mode-desc">
+                Cek jawaban instan & lihat pembahasan langkah demi langkah di setiap nomor soal.
+              </div>
+            </div>
+            <div id="modeUjianCard" class="mode-choice-card" onclick="selectSetupMode('ujian')">
+              <div class="mode-title">
+                <i class="fa-solid fa-stopwatch text-red-600"></i> Mode Ujian (Simulasi)
+              </div>
+              <div class="mode-desc">
+                Pembahasan dikunci hingga seluruh sesi diselesaikan. Skor akhir & rapor analisis di akhir.
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- 3. Pengaturan Waktu (Timer Mode) -->
+        <div class="config-group">
+          <label class="config-label">
+            <i class="fa-regular fa-clock text-amber-600"></i>
+            3. Pengaturan Waktu:
+          </label>
+          <div class="pill-group">
+            <button id="timerOptCountdown" class="config-pill active" onclick="selectSetupTimerMode('countdown')">
+              ⏳ Countdown (2 Menit / Soal)
+            </button>
+            <button id="timerOptStopwatch" class="config-pill" onclick="selectSetupTimerMode('stopwatch')">
+              ⏱️ Stopwatch (Tanpa Batas Waktu)
+            </button>
+          </div>
+          <div id="setupTimerDetails" style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 6px;">
+            Batas waktu dihitung otomatis berdasarkan jumlah butir soal. Peringatan merah saat sisa waktu &lt; 20%.
+          </div>
+        </div>
+
+        <!-- 4. Jumlah Soal & Urutan -->
+        <div class="config-group">
+          <label class="config-label">
+            <i class="fa-solid fa-list-ol text-purple-600"></i>
+            4. Jumlah Butir Soal:
+          </label>
+          <div class="pill-group" style="margin-bottom: 12px;">
+            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount(5)">5 Soal</button>
+            <button class="config-pill setup-count-pill active" onclick="selectSetupQuestionCount(10)">10 Soal</button>
+            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount(15)">15 Soal</button>
+            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount('all')">Semua Tersedia</button>
+          </div>
+
+          <!-- Toggles -->
+          <div class="toggle-row" onclick="toggleSetupCheckbox('chkShuffleQuestions')">
+            <span style="font-size: 0.88rem; font-weight: 600;">Acak Urutan Soal</span>
+            <input type="checkbox" id="chkShuffleQuestions" class="toggle-input hidden" checked>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="toggle-row" onclick="toggleSetupCheckbox('chkShuffleOptions')">
+            <span style="font-size: 0.88rem; font-weight: 600;">Acak Posisi Opsi (A - E)</span>
+            <input type="checkbox" id="chkShuffleOptions" class="toggle-input hidden" checked>
+            <div class="toggle-switch"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Buttons -->
+      <div style="padding: 16px 20px; border-top: 1.5px solid var(--ink); background: var(--bg); display: flex; justify-content: flex-end; gap: 10px;">
+        <button class="tactile-btn tactile-btn-secondary" onclick="closeDrillSetupModal()">
+          Batal
+        </button>
+        <button class="tactile-btn tactile-btn-primary" onclick="startConfiguredDrillSession()">
+          <i class="fa-solid fa-rocket mr-1.5"></i> Mulai Sesi Sekarang
+        </button>
       </div>
     </div>
   </div>
 
   <!-- ===================================================================
-       FORMULA CHEAT-SHEET MODAL
+       MODAL 2: RAPOR HASIL DRILLING (SUMMARY & EVALUATION SCREEN)
+       =================================================================== -->
+  <div id="completionModal" class="tactile-modal-overlay">
+    <div class="tactile-modal-card rapor-card" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-trophy mr-2 text-amber-500"></i>Rapor Hasil Drilling TKA</h3>
+        <button class="icon-btn-header" onclick="closeCompletionModal()" aria-label="Tutup Rapor">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-content-scroll">
+        <!-- Hero Score Banner -->
+        <div class="rapor-score-hero">
+          <div style="font-size: 2.2rem; margin-bottom: 2px;">🎯</div>
+          <h4 id="raporGradeTitle" class="font-heading text-xl mb-1">Drilling Selesai!</h4>
+          <div id="raporFinalScore" class="rapor-final-score">80</div>
+          <p id="raporSummarySubtitle" class="text-zinc-600 dark:text-zinc-300 text-sm">
+            Skor Ujian TKA (Skala 0 - 100)
+          </p>
+        </div>
+
+        <!-- Benar / Salah / Kosong Breakdown -->
+        <div class="stats-grid mb-4">
+          <div class="stat-box">
+            <div id="raporCorrectCount" class="stat-value text-green-600">8</div>
+            <div class="stat-label">Benar</div>
+          </div>
+          <div class="stat-box">
+            <div id="raporWrongCount" class="stat-value text-red-600">2</div>
+            <div class="stat-label">Salah</div>
+          </div>
+          <div class="stat-box">
+            <div id="raporEmptyCount" class="stat-value text-zinc-500">0</div>
+            <div class="stat-label">Kosong</div>
+          </div>
+          <div class="stat-box">
+            <div id="raporAvgTime" class="stat-value font-mono" style="font-size: 1.1rem;">1m 15s</div>
+            <div class="stat-label">Rata-rata/Soal</div>
+          </div>
+        </div>
+
+        <!-- Accuracy per Difficulty Tier Breakdown -->
+        <h5 class="font-heading text-sm mb-2" style="text-transform: uppercase; letter-spacing: 0.04em;">
+          Akurasi per Tingkat Kesulitan:
+        </h5>
+        <div class="tier-accuracy-list">
+          <!-- Mudah -->
+          <div class="tier-accuracy-item">
+            <div class="tier-label-row">
+              <span style="color: #16A34A;">🟢 Tingkat Mudah</span>
+              <span id="raporTierAccuracyMudah">100% (4/4)</span>
+            </div>
+            <div class="tier-progress-track">
+              <div id="raporTierFillMudah" class="tier-progress-fill tier-fill-mudah" style="width: 100%;"></div>
+            </div>
+          </div>
+          <!-- Sedang -->
+          <div class="tier-accuracy-item">
+            <div class="tier-label-row">
+              <span style="color: #D97706;">🟡 Tingkat Sedang</span>
+              <span id="raporTierAccuracySedang">75% (3/4)</span>
+            </div>
+            <div class="tier-progress-track">
+              <div id="raporTierFillSedang" class="tier-progress-fill tier-fill-sedang" style="width: 75%;"></div>
+            </div>
+          </div>
+          <!-- HOTS -->
+          <div class="tier-accuracy-item">
+            <div class="tier-label-row">
+              <span style="color: #DC2626;">🔴 Tingkat HOTS / UTBK</span>
+              <span id="raporTierAccuracyHots">50% (1/2)</span>
+            </div>
+            <div class="tier-progress-track">
+              <div id="raporTierFillHots" class="tier-progress-fill tier-fill-hots" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Buttons Footer -->
+      <div style="padding: 16px 20px; border-top: 1.5px solid var(--ink); background: var(--bg); display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
+        <button id="btnReviewWrong" class="tactile-btn tactile-btn-secondary" onclick="reviewWrongQuestionsOnly()">
+          <i class="fa-solid fa-magnifying-glass mr-1.5"></i> Review Soal Salah
+        </button>
+        <button class="tactile-btn tactile-btn-primary" onclick="restartCurrentDrillSession()">
+          <i class="fa-solid fa-rotate-right mr-1.5"></i> Ulangi Sesi Ini
+        </button>
+        <button class="tactile-btn" onclick="showSyllabusView(); closeCompletionModal();">
+          <i class="fa-solid fa-map mr-1.5"></i> Kembali ke Peta Silabus
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL 3: FORMULA CHEAT-SHEET MODAL
        =================================================================== -->
   <div id="cheatSheetModal" class="tactile-modal-overlay">
     <div class="tactile-modal-card">
@@ -318,12 +639,13 @@
           <p>• Analisis Potensial Simpul (Nodal Analysis): $\sum_{k} \frac{V_{\text{node}} - V_k}{R_k} = 0$</p>
         </div>
 
-        <!-- Matematika - Integral Simetri -->
-        <h4 class="font-heading text-lg mb-2 text-blue-600">3. Matematika: King's Property Integral</h4>
+        <!-- Matematika - Bab Fundamental & King's Property -->
+        <h4 class="font-heading text-lg mb-2 text-blue-600">3. Matematika: Bab Fundamental & Simetri</h4>
         <div class="callout-box mb-4">
-          <p>• Teorema Simetri: $\int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a + b - x) \, dx$</p>
-          <p>• Khusus interval $[0, \pi]$: $\int_{0}^{\pi} x f(\sin x) dx = \frac{\pi}{2} \int_{0}^{\pi} f(\sin x) dx$</p>
-          <p>• Anti-turunan Trigonometri Baku: $\int \frac{1}{1 + u^2} du = \arctan(u) + C$</p>
+          <p>• Identitas Pythagoras: $\sin^2 x + \cos^2 x = 1$</p>
+          <p>• Sudut Rangkap Kosinus: $\cos 2x = 1 - 2\sin^2 x = 2\cos^2 x - 1$</p>
+          <p>• King's Property: $\int_{a}^{b} f(x) \, dx = \int_{a}^{b} f(a + b - x) \, dx$</p>
+          <p>• Anti-turunan Baku: $\int \frac{1}{1 + u^2} du = \arctan(u) + C$</p>
         </div>
 
         <!-- Matematika - Matriks & Vektor -->
@@ -331,8 +653,8 @@
         <div class="callout-box mb-4">
           <p>• Proyeksi Ortogonal $\vec{u}$ pada $\vec{v}$: $\operatorname{proj}_{\vec{v}} \vec{u} = \left( \frac{\vec{u} \cdot \vec{v}}{|\vec{v}|^2} \right) \vec{v}$</p>
           <p>• Matriks Rotasi $+90^\circ$: $R_{90^\circ} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$</p>
-          <p>• Matriks Refleksi Garis $y = x$: $M_{y=x} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$</p>
-          <p>• Komposisi Transformasi: $T = M \cdot R$ (Dikalikan dari kanan ke kiri)</p>
+          <p>• Matriks Refleksi Garis $y = -x$: $M_{y=-x} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix}$</p>
+          <p>• Komposisi Transformasi: $T = M_2 \cdot M_1$ (Dikalikan dari kanan ke kiri)</p>
         </div>
       </div>
     </div>
@@ -366,7 +688,11 @@
     </div>
   </div>
 
-  <!-- Application Controller Script (Cache Busting v2.2) -->
-  <script src="app.js?v=2.2"></script>
+  <!-- Application Scripts: Syllabus Hierarchy, 3-Tier Question Data, Controller -->
+  <script src="data/syllabusData.js"></script>
+  <script src="data/questions-mudah.js"></script>
+  <script src="data/questions-sedang.js"></script>
+  <script src="data/questions-hots.js"></script>
+  <script src="app.js?v=3.0"></script>
 </body>
 </html>

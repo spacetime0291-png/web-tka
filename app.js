@@ -1,510 +1,652 @@
 /**
- * TKA Physics & Advanced Mathematics Drilling Lab
+ * TKA Physics & Advanced Mathematics Drilling Platform
  * Anti-AI Tactile Neo-Brutalist Academic Web Application
+ * Modular 3-Tier Architecture & Complete 2-Pillar Syllabus
  */
 
-// 1. DATA BANK: 4 Realistic High-Difficulty TKA Questions (UTBK-STEI Grade)
-const questionsData = [
-  {
-    id: 1,
-    subject: "FISIKA",
-    category: "Dinamika Rotasi & Torsi",
-    difficulty: "HOTS / Setara UTBK-STEI",
-    statement: `Sebuah silinder pejal homogen bermassa $M = 2\\text{ kg}$ dan jari-jari $R = 20\\text{ cm}$ dapat berputar bebas tanpa gesekan terhadap poros horizontal tetap yang melalui pusat massanya (momen inersia $I = \\frac{1}{2}MR^2$). Dua buah balok bermassa $m_1 = 3\\text{ kg}$ dan $m_2 = 1\\text{ kg}$ dihubungkan oleh seutas tali ringan tak elastis yang melilit katrol tersebut tanpa selip. Jika sistem dilepaskan dari keadaan diam dan percepatan gravitasi $g = 10\\text{ m/s}^2$, tentukan percepatan sudut putaran katrol $(\\alpha)$ serta besar selisih tegangan tali pada kedua sisi katrol $(T_1 - T_2)$!`,
-    hasDiagram: true,
-    diagramSvg: `
-      <svg class="diagram-svg" viewBox="0 0 360 270" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        <!-- Blueprint Grid Ceiling Bracket -->
-        <line x1="80" y1="25" x2="280" y2="25" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
-        <line x1="100" y1="25" x2="115" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
-        <line x1="130" y1="25" x2="145" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
-        <line x1="160" y1="25" x2="175" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
-        <line x1="190" y1="25" x2="205" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
-        <line x1="220" y1="25" x2="235" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
-        <line x1="250" y1="25" x2="265" y2="10" stroke="#38BDF8" stroke-width="1.5"/>
-        
-        <!-- Pulley Mounting Hanger -->
-        <polygon points="175,25 185,25 182,75 178,75" fill="#38BDF8" opacity="0.4"/>
-        <line x1="180" y1="25" x2="180" y2="75" stroke="#38BDF8" stroke-width="2"/>
-        
-        <!-- Pulley Disk -->
-        <circle cx="180" cy="75" r="50" fill="#0A192F" stroke="#38BDF8" stroke-width="2.5"/>
-        <circle cx="180" cy="75" r="44" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
-        <circle cx="180" cy="75" r="7" fill="#38BDF8"/>
-        
-        <!-- Radius & Label -->
-        <line x1="180" y1="75" x2="225" y2="50" stroke="#FACC15" stroke-width="1.5" stroke-dasharray="2 2"/>
-        <text x="205" y="55" fill="#FACC15" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">R=20cm</text>
-        <text x="145" y="98" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11">M=2kg</text>
-        
-        <!-- Rotation Alpha Vector Arrow -->
-        <path d="M 160 40 A 30 30 0 0 0 145 75" fill="none" stroke="#FF5A26" stroke-width="2" marker-end="url(#arrow-orange)"/>
-        <text x="130" y="50" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">α</text>
-        
-        <!-- Left Rope & Mass m1 -->
-        <line x1="130" y1="75" x2="130" y2="160" stroke="#E0F2FE" stroke-width="2.5"/>
-        <!-- Mass 1 Box -->
-        <rect x="108" y="160" width="44" height="44" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
-        <text x="116" y="186" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">m₁=3kg</text>
-        
-        <!-- Forces on m1 -->
-        <line x1="130" y1="160" x2="130" y2="130" stroke="#22C55E" stroke-width="2"/>
-        <polygon points="127,133 130,125 133,133" fill="#22C55E"/>
-        <text x="136" y="138" fill="#22C55E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">T₁</text>
-        
-        <line x1="130" y1="204" x2="130" y2="238" stroke="#EF4444" stroke-width="2"/>
-        <polygon points="127,235 130,243 133,235" fill="#EF4444"/>
-        <text x="136" y="235" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">m₁g</text>
-        
-        <text x="82" y="188" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">a ↓</text>
-        
-        <!-- Right Rope & Mass m2 -->
-        <line x1="230" y1="75" x2="230" y2="140" stroke="#E0F2FE" stroke-width="2.5"/>
-        <!-- Mass 2 Box -->
-        <rect x="210" y="140" width="40" height="40" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
-        <text x="217" y="165" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">m₂=1kg</text>
-        
-        <!-- Forces on m2 -->
-        <line x1="230" y1="140" x2="230" y2="110" stroke="#22C55E" stroke-width="2"/>
-        <polygon points="227,113 230,105 233,113" fill="#22C55E"/>
-        <text x="236" y="118" fill="#22C55E" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">T₂</text>
-        
-        <line x1="230" y1="180" x2="230" y2="210" stroke="#EF4444" stroke-width="2"/>
-        <polygon points="227,207 230,215 233,207" fill="#EF4444"/>
-        <text x="236" y="208" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">m₂g</text>
-        
-        <text x="258" y="165" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">a ↑</text>
-      </svg>
-    `,
-    diagramCaption: "SKEMA FREE-BODY DIAGRAM: KATROL BERMASSA & BEBAN GANTUNG",
-    options: [
-      "$\\alpha = 15\\text{ rad/s}^2$ dan $T_1 - T_2 = 3\\text{ N}$",
-      "$\\alpha = 20\\text{ rad/s}^2$ dan $T_1 - T_2 = 4\\text{ N}$",
-      "$\\alpha = 25\\text{ rad/s}^2$ dan $T_1 - T_2 = 5\\text{ N}$",
-      "$\\alpha = 10\\text{ rad/s}^2$ dan $T_1 - T_2 = 2\\text{ N}$",
-      "$\\alpha = 20\\text{ rad/s}^2$ dan $T_1 - T_2 = 8\\text{ N}$"
-    ],
-    correctIndex: 1, // B
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Prinsip Dinamika Sistem Translasi & Rotasi Terkopel:</strong><br>
-          1. Hukum II Newton Translasi: $\\Sigma F = m a$<br>
-          2. Hukum II Newton Rotasi: $\\Sigma \\tau = I \\alpha$<br>
-          3. Syarat Tali Tidak Selip (No-slip): $a = \\alpha R \\iff \\alpha = \\frac{a}{R}$<br>
-          4. Momen Inersia Silinder Pejal Homogen: $I = \\frac{1}{2} M R^2$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>
-            <strong>Persamaan Gerak Translasi Beban $m_1$ (bergerak turun dipercepat):</strong>
-            $$m_1 g - T_1 = m_1 a \\implies T_1 = m_1(g - a)$$
-          </li>
-          <li>
-            <strong>Persamaan Gerak Translasi Beban $m_2$ (bergerak naik dipercepat):</strong>
-            $$T_2 - m_2 g = m_2 a \\implies T_2 = m_2(g + a)$$
-          </li>
-          <li>
-            <strong>Persamaan Dinamika Rotasi Katrol Bermassa:</strong>
-            Katrol berputar searah jarum jam karena ditarik oleh selisih torsi kedua tali:
-            $$\\Sigma \\tau = I \\alpha \\implies (T_1 - T_2) R = \\left(\\frac{1}{2} M R^2\\right) \\left(\\frac{a}{R}\\right)$$
-            Bagi kedua ruas dengan $R$:
-            $$T_1 - T_2 = \\frac{1}{2} M a$$
-          </li>
-          <li>
-            <strong>Substitusi Nilai Tegangan Tali untuk Mencari Percepatan Tangensial $a$:</strong>
-            $$m_1(g - a) - m_2(g + a) = \\frac{1}{2} M a$$
-            $$(m_1 - m_2)g = \\left(m_1 + m_2 + \\frac{1}{2} M\\right) a$$
-            $$a = \\frac{(m_1 - m_2)g}{m_1 + m_2 + \\frac{1}{2} M}$$
-          </li>
-          <li>
-            <strong>Perhitungan Numerik Percepatan Linier $a$:</strong>
-            $$a = \\frac{(3 - 1)(10)}{3 + 1 + \\frac{1}{2}(2)} = \\frac{20}{3 + 1 + 1} = \\frac{20}{5} = 4\\text{ m/s}^2$$
-          </li>
-          <li>
-            <strong>Perhitungan Percepatan Sudut $(\\alpha)$:</strong>
-            Karena $R = 20\\text{ cm} = 0.2\\text{ m}$:
-            $$\\alpha = \\frac{a}{R} = \\frac{4\\text{ m/s}^2}{0.2\\text{ m}} = 20\\text{ rad/s}^2$$
-          </li>
-          <li>
-            <strong>Perhitungan Selisih Tegangan Tali $(T_1 - T_2)$:</strong>
-            $$T_1 - T_2 = \\frac{1}{2} M a = \\frac{1}{2}(2\\text{ kg})(4\\text{ m/s}^2) = 4\\text{ N}$$
-            <em>(Sebagai verifikasi: $T_1 = 3(10 - 4) = 18\\text{ N}$, $T_2 = 1(10 + 4) = 14\\text{ N} \\implies 18 - 14 = 4\\text{ N}$)</em>
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          <strong>⚠️ Jebakan Konseptual & Numerik yang Sering Terjadi:</strong><br>
-          • <strong>Asumsi Katrol Ideal ($T_1 = T_2$):</strong> Pada soal UTBK tingkat lanjut, katrol memiliki massa $M$. Jika siswa menganggap $T_1 = T_2$, maka selisih torsi bernilai 0 dan katrol tidak mungkin berputar dipercepat.<br>
-          • <strong>Kesalahan Konversi Satuan $R$:</strong> Jari-jari harus diubah dari $20\\text{ cm}$ menjadi $0.2\\text{ m}$. Lupa konversi menghasilkan $\\alpha = \\frac{4}{20} = 0.2\\text{ rad/s}^2$.<br>
-          • <strong>Inersia Pejal vs Berongga:</strong> Menggunakan $I = M R^2$ (silinder tipis berongga) bukannya $\\frac{1}{2} M R^2$ (silinder pejal) menghasilkan percepatan $a = 3.33\\text{ m/s}^2$ yang keliru.
-        </div>
-      `
-    }
-  },
-  {
-    id: 2,
-    subject: "FISIKA",
-    category: "Rangkaian Arus Searah & Kirchhoff",
-    difficulty: "HOTS / Setara UTBK-STEI",
-    statement: `Perhatikan skema rangkaian listrik tertutup 2-loop di bawah ini. Rangkaian ditenagai oleh dua sumber tegangan ggl ideal $\\mathcal{E}_1 = 24\\text{ V}$ dan $\\mathcal{E}_2 = 12\\text{ V}$, serta dihubungkan dengan tiga resistor $R_1 = 3\\,\\Omega$, $R_2 = 6\\,\\Omega$, dan $R_3 = 6\\,\\Omega$. Tentukan besar kuat arus yang mengalir melalui hambatan cabang tengah $R_2$ ($I_{R2}$) dengan arah dari simpul $A$ ke simpul $B$, serta besar beda potensial antara kedua simpul ($V_{AB} = V_A - V_B$)!`,
-    hasDiagram: true,
-    diagramSvg: `
-      <svg class="diagram-svg" viewBox="0 0 380 250" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        <!-- Node Points A and B -->
-        <circle cx="190" cy="40" r="5" fill="#FACC15"/>
-        <text x="195" y="32" fill="#FACC15" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">Simpul A</text>
-        
-        <circle cx="190" cy="210" r="5" fill="#FACC15"/>
-        <text x="195" y="230" fill="#FACC15" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold">Simpul B (Ground)</text>
-
-        <!-- Left Loop Wires -->
-        <polyline points="190,40 50,40 50,90" fill="none" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Battery E1 (24V) -->
-        <line x1="35" y1="90" x2="65" y2="90" stroke="#22C55E" stroke-width="3"/> <!-- Long plate (+) -->
-        <line x1="42" y1="98" x2="58" y2="98" stroke="#EF4444" stroke-width="1.5"/> <!-- Short plate (-) -->
-        <text x="70" y="96" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ℰ₁=24V</text>
-        
-        <polyline points="50,98 50,130" fill="none" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Resistor R1 (3 ohm) ZigZag -->
-        <polyline points="50,130 42,135 58,142 42,149 58,156 50,161" fill="none" stroke="#FACC15" stroke-width="2"/>
-        <text x="68" y="150" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11">R₁=3Ω</text>
-        <polyline points="50,161 50,210 190,210" fill="none" stroke="#38BDF8" stroke-width="2"/>
-
-        <!-- Middle Branch (R2) -->
-        <line x1="190" y1="40" x2="190" y2="95" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Resistor R2 (6 ohm) ZigZag -->
-        <polyline points="190,95 182,102 198,110 182,118 198,126 190,133" fill="none" stroke="#FACC15" stroke-width="2"/>
-        <text x="206" y="118" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">R₂=6Ω</text>
-        <line x1="190" y1="133" x2="190" y2="210" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Current Arrow I_R2 -->
-        <line x1="172" y1="100" x2="172" y2="135" stroke="#FF5A26" stroke-width="2"/>
-        <polygon points="169,132 172,140 175,132" fill="#FF5A26"/>
-        <text x="140" y="122" fill="#FF5A26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">I_R2 ↓</text>
-
-        <!-- Right Loop Wires -->
-        <polyline points="190,40 330,40 330,90" fill="none" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Battery E2 (12V) -->
-        <line x1="315" y1="90" x2="345" y2="90" stroke="#22C55E" stroke-width="3"/> <!-- Long plate (+) -->
-        <line x1="322" y1="98" x2="338" y2="98" stroke="#EF4444" stroke-width="1.5"/> <!-- Short plate (-) -->
-        <text x="265" y="96" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">ℰ₂=12V</text>
-        
-        <polyline points="330,98 330,130" fill="none" stroke="#38BDF8" stroke-width="2"/>
-        <!-- Resistor R3 (6 ohm) ZigZag -->
-        <polyline points="330,130 322,135 338,142 322,149 338,156 330,161" fill="none" stroke="#FACC15" stroke-width="2"/>
-        <text x="272" y="150" fill="#E0F2FE" font-family="'JetBrains Mono', monospace" font-size="11">R₃=6Ω</text>
-        <polyline points="330,161 330,210 190,210" fill="none" stroke="#38BDF8" stroke-width="2"/>
-
-        <!-- Loop Indicators -->
-        <path d="M 100 110 A 18 18 0 1 1 120 130" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <text x="100" y="130" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">Loop 1</text>
-        
-        <path d="M 260 110 A 18 18 0 1 0 240 130" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <text x="245" y="130" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">Loop 2</text>
-      </svg>
-    `,
-    diagramCaption: "SKEMA 2-LOOP MULTI-BRANCH: HUKUM KIRCHHOFF & SIMPUL NODAL",
-    options: [
-      "$I_{R2} = 2.50\\text{ A}$ dan $V_{AB} = 15.0\\text{ V}$",
-      "$I_{R2} = 2.00\\text{ A}$ dan $V_{AB} = 12.0\\text{ V}$",
-      "$I_{R2} = 3.00\\text{ A}$ dan $V_{AB} = 18.0\\text{ V}$",
-      "$I_{R2} = 1.50\\text{ A}$ dan $V_{AB} = 9.0\\text{ V}$",
-      "$I_{R2} = 3.50\\text{ A}$ dan $V_{AB} = 21.0\\text{ V}$"
-    ],
-    correctIndex: 0, // A
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Metode Cepat Analisis Nodal (Node Voltage Method):</strong><br>
-          Daripada menyelesaikan 2 persamaan loop KVL dengan determinan yang rawan tanda minus terbalik, gunakan Hukum I Kirchhoff (KCL) pada Simpul $A$:<br>
-          Tetapkan simpul referensi tanah (ground) pada simpul bawah $B$ dengan $V_B = 0\\text{ V}$. Maka beda potensial $V_{AB} = V_A - 0 = V_A$.<br>
-          $$\\Sigma I_{\\text{keluar dari node } A} = 0 \\implies \\sum \\frac{V_A - V_k}{R_k} = 0$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>
-            <strong>Perumusan Arus Tiap Cabang yang Meninggalkan Simpul $A$:</strong>
-            <ul>
-              <li>Cabang kiri (melalui ggl $\\mathcal{E}_1 = 24\\text{ V}$ dan $R_1 = 3\\,\\Omega$):
-                $$I_1 = \\frac{V_A - 24}{3}$$
-              </li>
-              <li>Cabang tengah (melalui $R_2 = 6\\,\\Omega$ menuju $V_B = 0$):
-                $$I_2 = \\frac{V_A - 0}{6} = \\frac{V_A}{6}$$
-              </li>
-              <li>Cabang kanan (melalui ggl $\\mathcal{E}_2 = 12\\text{ V}$ dan $R_3 = 6\\,\\Omega$):
-                $$I_3 = \\frac{V_A - 12}{6}$$
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Penerapan KCL pada Simpul $A$:</strong>
-            $$I_1 + I_2 + I_3 = 0$$
-            $$\\frac{V_A - 24}{3} + \\frac{V_A}{6} + \\frac{V_A - 12}{6} = 0$$
-          </li>
-          <li>
-            <strong>Eliminasi Penyebut dengan Mengalikan Seluruh Ruas dengan 6:</strong>
-            $$2(V_A - 24) + V_A + (V_A - 12) = 0$$
-            $$2V_A - 48 + V_A + V_A - 12 = 0$$
-            $$4V_A - 60 = 0 \\implies 4V_A = 60 \\implies V_A = 15.0\\text{ V}$$
-          </li>
-          <li>
-            <strong>Menentukan Beda Potensial $V_{AB}$:</strong>
-            $$V_{AB} = V_A - V_B = 15.0\\text{ V} - 0\\text{ V} = 15.0\\text{ V}$$
-          </li>
-          <li>
-            <strong>Menghitung Kuat Arus Cabang Tengah ($I_{R2}$):</strong>
-            $$I_{R2} = \\frac{V_{AB}}{R_2} = \\frac{15.0\\text{ V}}{6\\,\\Omega} = 2.50\\text{ A}$$
-            Karena hasilnya positif, arah arus mengalir tepat dari simpul berpotensial tinggi $A$ ke simpul berpotensial rendah $B$ (ke arah bawah).
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          <strong>⚠️ Jebakan Konseptual & Trik Pemeriksaan Arus Cabang:</strong><br>
-          • <strong>Arus Cabang Kiri:</strong> $I_{\\text{kiri}} = \\frac{24 - 15}{3} = 3.00\\text{ A}$ (mengalir masuk ke simpul $A$).<br>
-          • <strong>Arus Cabang Kanan:</strong> $I_{\\text{kanan}} = \\frac{15 - 12}{6} = 0.50\\text{ A}$ (mengalir keluar dari simpul $A$).<br>
-          • <strong>Verifikasi Kirchhoff I:</strong> $I_{\\text{masuk}} = 3.00\\text{ A}$, $I_{\\text{keluar}} = I_2 + I_3 = 2.50\\text{ A} + 0.50\\text{ A} = 3.00\\text{ A}$ (Konsisten 100%!).<br>
-          • <strong>Jebakan Tanda Ggl:</strong> Jika kutub baterai kanan dianggap mendorong arus ke arah berlawanan tanpa memperhatikan bahwa $V_A = 15\\text{ V} > 12\\text{ V}$, baterai $\\mathcal{E}_2$ sebenarnya sedang mengalami proses pengisian (charging).
-        </div>
-      `
-    }
-  },
-  {
-    id: 3,
-    subject: "MATEMATIKA",
-    category: "Kalkulus Integral Tentu",
-    difficulty: "HOTS / Setara UTBK-STEI",
-    statement: `Tentukan nilai eksak dari integral tentu fungsi trigonometri berikut yang melibatkan pembagian kuadrat cosinus:
-$$I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx$$`,
-    hasDiagram: false,
-    options: [
-      "$\\frac{\\pi^2}{8}$",
-      "$\\frac{\\pi^2}{4}$",
-      "$\\frac{\\pi^2}{2}$",
-      "$\\frac{\\pi}{4}$",
-      "$\\pi^2 - 2\\pi$"
-    ],
-    correctIndex: 1, // B
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>King's Property (Sifat Refleksi Simetri Integral Tentu):</strong><br>
-          Untuk sebarang fungsi kontinu $f(x)$ pada interval $[a, b]$:<br>
-          $$\\int_{a}^{b} f(x) \\, dx = \\int_{a}^{b} f(a + b - x) \\, dx$$
-          Sifat ini sangat ampuh mengeliminasi faktor polinomial $x$ pada pembilang perkalian trigonometri periodik $[0, \\pi]$.<br>
-          Turunan standar arcus tangen: $\\int \\frac{1}{1 + u^2} \\, du = \\arctan(u) + C$.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>
-            <strong>Definisikan Persamaan Integral Asli:</strong>
-            $$I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx \\quad \\text{--- (Persamaan 1)}$$
-          </li>
-          <li>
-            <strong>Terapkan King's Property dengan Batas $a = 0$ dan $b = \\pi$ ($x \\to \\pi - x$):</strong>
-            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x) \\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)} \\, dx$$
-            Berdasarkan identitas relasi sudut trigonometri:
-            $$\\sin(\\pi - x) = \\sin x, \\quad \\cos(\\pi - x) = -\\cos x \\implies \\cos^2(\\pi - x) = \\cos^2 x$$
-            Sehingga diperoleh:
-            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x) \\sin x}{1 + \\cos^2 x} \\, dx \\quad \\text{--- (Persamaan 2)}$$
-          </li>
-          <li>
-            <strong>Pecah Integral (Persamaan 2) Menjadi Dua Suku:</strong>
-            $$I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx - \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx$$
-            Perhatikan bahwa suku integral kedua tidak lain adalah definisi $I$ semula:
-            $$I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx - I$$
-          </li>
-          <li>
-            <strong>Pindahkan Suku $-I$ ke Ruas Kiri:</strong>
-            $$2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx$$
-          </li>
-          <li>
-            <strong>Gunakan Metode Substitusi Variabel $u$:</strong>
-            Misalkan $u = \\cos x \\implies du = -\\sin x \\, dx \\iff \\sin x \\, dx = -du$.<br>
-            Perubahan batas integrasi:
-            <ul>
-              <li>Batas bawah: saat $x = 0 \\implies u = \\cos(0) = 1$</li>
-              <li>Batas atas: saat $x = \\pi \\implies u = \\cos(\\pi) = -1$</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Evaluasi Integral Menggunakan Batas Baru:</strong>
-            $$2I = \\pi \\int_{1}^{-1} \\frac{-du}{1 + u^2} = \\pi \\int_{-1}^{1} \\frac{du}{1 + u^2}$$
-            Karena fungsi $\\frac{1}{1 + u^2}$ genap, atau langsung gunakan anti-turunan $\\arctan(u)$:
-            $$2I = \\pi \\Big[ \\arctan(u) \\Big]_{-1}^{1} = \\pi \\Big( \\arctan(1) - \\arctan(-1) \\Big)$$
-            $$2I = \\pi \\left( \\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) \\right) = \\pi \\left( \\frac{\\pi}{2} \\right) = \\frac{\\pi^2}{2}$$
-          </li>
-          <li>
-            <strong>Selesaikan untuk Nilai $I$:</strong>
-            $$I = \\frac{\\pi^2 / 2}{2} = \\frac{\\pi^2}{4}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          <strong>⚠️ Jebakan yang Sering Menjebak Peserta Ujian:</strong><br>
-          • <strong>Lupa Membagi Dua di Langkah Akhir:</strong> Kesalahan fatal paling umum adalah melupakan koefisien 2 pada $2I = \\frac{\\pi^2}{2}$, sehingga memilih jawaban $\\frac{\\pi^2}{2}$ (Opsi C).<br>
-          • <strong>Mencoba Integral Parsial Langsung:</strong> Menetapkan $u = x$ dan $dv = \\frac{\\sin x}{1 + \\cos^2 x}dx$ akan menghasilkan anti-turunan $-\\arctan(\\cos x)$, yang saat diintegralkan kembali menuntut integral $\\int \\arctan(\\cos x) dx$ yang jauh lebih rumit dan memakan waktu.<br>
-          • <strong>Tanda Minus Batas Balik:</strong> Menghilangkan tanda negatif saat $du = -\\sin x dx$ sehingga menghasilkan batas yang terbalik dan nilai integral bernilai negatif.
-        </div>
-      `
-    }
-  },
-  {
-    id: 4,
-    subject: "MATEMATIKA",
-    category: "Vektor & Matriks Transformasi Geometri",
-    difficulty: "HOTS / Setara UTBK-STEI",
-    statement: `Diberikan dua buah vektor pada bidang Cartesius $\\mathbb{R}^2$: $\\vec{u} = \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}$ dan $\\vec{v} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$. Vektor $\\vec{w}$ merupakan proyeksi ortogonal dari vektor $\\vec{u}$ pada arah vektor $\\vec{v}$. Selanjutnya, vektor $\\vec{w}$ ditransformasikan secara berturut-turut oleh rotasi sebesar $+90^\\circ$ berpusat di titik asal $(0,0)$ berlawanan arah putaran jarum jam yang diwakili matriks $R$, lalu dilanjutkan dengan refleksi terhadap garis simetri $y = x$ yang diwakili matriks $M$. Tentukan vektor bayangan akhir $\\vec{w}''$!`,
-    hasDiagram: false,
-    options: [
-      "$\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$",
-      "$\\begin{pmatrix} -2 \\\\ 1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$"
-    ],
-    correctIndex: 0, // A
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Dua Fondasi Utama: Proyeksi Vektor & Komposisi Matriks:</strong><br>
-          1. <strong>Vektor Proyeksi Ortogonal $\\vec{u}$ pada $\\vec{v}$:</strong>
-             $$\\vec{w} = \\operatorname{proj}_{\\vec{v}} \\vec{u} = \\left( \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{v}|^2} \\right) \\vec{v}$$
-          2. <strong>Matriks Rotasi $+90^\\circ$:</strong> $R_{90^\\circ} = \\begin{pmatrix} \\cos 90^\\circ & -\\sin 90^\\circ \\\\ \\sin 90^\\circ & \\cos 90^\\circ \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$<br>
-          3. <strong>Matriks Refleksi Garis $y = x$:</strong> $M = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$<br>
-          4. <strong>Komposisi Transformasi:</strong> Transformasi pertama $R$ dilanjutkan transformasi kedua $M$ dinyatakan oleh perkalian matriks dari kiri: $T = M \\cdot R$.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>
-            <strong>Hitung Perkalian Skalar (Dot Product) $\\vec{u} \\cdot \\vec{v}$:</strong>
-            $$\\vec{u} \\cdot \\vec{v} = (3)(2) + (1)(4) = 6 + 4 = 10$$
-          </li>
-          <li>
-            <strong>Hitung Kuadrat Panjang Vektor Acuan $|\\vec{v}|^2$:</strong>
-            $$|\\vec{v}|^2 = 2^2 + 4^2 = 4 + 16 = 20$$
-          </li>
-          <li>
-            <strong>Tentukan Vektor Proyeksi Ortogonal $\\vec{w}$:</strong>
-            $$\\vec{w} = \\left( \\frac{10}{20} \\right) \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} = \\frac{1}{2} \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$$
-          </li>
-          <li>
-            <strong>Tentukan Matriks Komposisi Total $T = M \\cdot R$:</strong>
-            $$T = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$$
-            Lakukan perkalian baris kali kolom:
-            $$T = \\begin{pmatrix} (0)(0) + (1)(1) & (0)(-1) + (1)(0) \\\\ (1)(0) + (0)(1) & (1)(-1) + (0)(0) \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$$
-            <em>(Catatan Geometri: Matriks $\\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$ setara dengan refleksi terhadap sumbu-$x$!)</em>
-          </li>
-          <li>
-            <strong>Hitung Bayangan Akhir $\\vec{w}''$:</strong>
-            $$\\vec{w}'' = T \\cdot \\vec{w} = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} (1)(1) + (0)(2) \\\\ (0)(1) + (-1)(2) \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          <strong>⚠️ Jebakan Urutan Matriks & Skalar Proyeksi:</strong><br>
-          • <strong>Urutan Perkalian Matriks:</strong> Transformasi $R$ lalu $M$ dihitung dengan $M \\cdot R$, bukan $R \\cdot M$. Jika terbalik menghitung $R \\cdot M = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ (refleksi sumbu-$y$), maka hasilnya adalah $\\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$ (Opsi C).<br>
-          • <strong>Berhenti di Bayangan Pertama:</strong> Hasil rotasi pertama adalah $\\vec{w}' = R \\vec{w} = \\begin{pmatrix} -2 \\\\ 1 \\end{pmatrix}$ (Opsi B). Siswa yang tidak teliti seringkali memilih opsi ini karena mengira soal telah selesai.<br>
-          • <strong>Penyebut Proyeksi:</strong> Membagi dengan $|\\vec{v}| = \\sqrt{20}$ bukannya $|\\vec{v}|^2 = 20$ merupakan kesalahan umum antara proyeksi skalar ortogonal (panjang) dan proyeksi vektor ortogonal.
-        </div>
-      `
-    }
-  }
-];
-
-// 2. APPLICATION STATE MANAGEMENT
+// ============================================================================
+// 1. GLOBAL STATE & CONFIGURATION
+// ============================================================================
 const state = {
+  currentView: 'syllabus', // 'syllabus' | 'workspace'
+  activePillarFilter: 'all', // 'all' | 'fisika' | 'matematika'
+  
+  // Active Drilling Session
+  sessionScope: null, // { subject, chapterId, subTopicId, title }
+  sessionMode: 'latihan', // 'latihan' | 'ujian'
+  timerMode: 'countdown', // 'countdown' | 'stopwatch'
+  totalDurationSeconds: 0,
+  timerSeconds: 0,
+  timerInterval: null,
+  timerRunning: false,
+  sessionStartTime: 0,
+  sessionEndTime: 0,
+  isReviewMode: false,
+
+  // Question Dataset for Active Session
+  questions: [],
   currentIndex: 0,
-  userAnswers: new Array(questionsData.length).fill(null),
-  isVerified: new Array(questionsData.length).fill(false),
-  isRagu: new Array(questionsData.length).fill(false),
-  solutionOpen: new Array(questionsData.length).fill(false),
-  theme: localStorage.getItem('tka_theme') || 'light',
-  timerSeconds: 20 * 60, // 20 minutes countdown
-  timerRunning: true,
-  timerInterval: null
+  userAnswers: [],
+  isVerified: [],
+  isRagu: [],
+  solutionOpen: [],
+  questionTimeSpent: [],
+
+  // Drill Setup Modal Form State
+  setupForm: {
+    subject: 'all',
+    chapterId: 'all',
+    subTopicId: 'all',
+    scopeTitle: 'Semua Materi',
+    difficulties: ['mudah', 'sedang', 'hots'],
+    isProgressive: false,
+    mode: 'latihan',
+    timerMode: 'countdown',
+    questionCount: 10,
+    shuffleQuestions: true,
+    shuffleOptions: true
+  }
 };
 
-// 3. INITIALIZATION
-document.addEventListener('DOMContentLoaded', () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const qNum = parseInt(urlParams.get('q'));
-  if (!isNaN(qNum) && qNum >= 1 && qNum <= questionsData.length) {
-    state.currentIndex = qNum - 1;
-  }
-  if (urlParams.get('verified') === '1') {
-    state.userAnswers[state.currentIndex] = questionsData[state.currentIndex].correctIndex;
-    state.isVerified[state.currentIndex] = true;
-    state.solutionOpen[state.currentIndex] = true;
-  }
-  if (urlParams.get('dark') === '1') {
-    state.theme = 'dark';
+// LocalStorage Persistence Keys
+const STORAGE_KEY_MASTERY = 'TKA_MASTERY_PROGRESS_V3';
+const STORAGE_KEY_THEME = 'tka_theme_preference';
+
+// ============================================================================
+// 2. CENTRAL QUESTION AGGREGATOR HELPER
+// ============================================================================
+/**
+ * Merges and filters questions dynamically by subject, chapterId, subTopicId, and difficulty.
+ * @param {Object} filter - { subject, chapterId, subTopicId, difficulty, progressive }
+ * @returns {Array} Filtered and cloned question objects
+ */
+function getFilteredQuestions(filter = {}) {
+  const mudahPool = Array.isArray(window.QUESTIONS_MUDAH) ? window.QUESTIONS_MUDAH : [];
+  const sedangPool = Array.isArray(window.QUESTIONS_SEDANG) ? window.QUESTIONS_SEDANG : [];
+  const hotsPool = Array.isArray(window.QUESTIONS_HOTS) ? window.QUESTIONS_HOTS : [];
+
+  let combined = [];
+
+  // Handle Progressive order vs Standard difficulty selection
+  if (filter.progressive) {
+    combined = [...mudahPool, ...sedangPool, ...hotsPool];
+  } else if (filter.difficulties && Array.isArray(filter.difficulties)) {
+    if (filter.difficulties.includes('mudah')) combined.push(...mudahPool);
+    if (filter.difficulties.includes('sedang')) combined.push(...sedangPool);
+    if (filter.difficulties.includes('hots')) combined.push(...hotsPool);
+  } else if (filter.difficulty) {
+    if (filter.difficulty === 'mudah') combined = [...mudahPool];
+    else if (filter.difficulty === 'sedang') combined = [...sedangPool];
+    else if (filter.difficulty === 'hots') combined = [...hotsPool];
+    else combined = [...mudahPool, ...sedangPool, ...hotsPool];
+  } else {
+    combined = [...mudahPool, ...sedangPool, ...hotsPool];
   }
 
-  initTheme();
-  initTimer();
-  renderCurrentQuestion();
-  renderMatrixGrid();
-  updateStats();
-  bindGlobalEvents();
+  // Filter by Scope: Subject/Pillar, Chapter, SubTopic
+  return combined.filter(q => {
+    // Subject filter
+    if (filter.subject && filter.subject !== 'all') {
+      const qSubject = (q.pillarId || q.subject || '').toLowerCase();
+      const targetSubject = filter.subject.toLowerCase();
+      if (qSubject !== targetSubject && !qSubject.includes(targetSubject)) {
+        return false;
+      }
+    }
 
-  if (urlParams.get('modal') === '1') {
-    openCheatSheetModal();
-  }
-});
+    // Chapter filter
+    if (filter.chapterId && filter.chapterId !== 'all') {
+      if (q.chapterId !== filter.chapterId) {
+        return false;
+      }
+    }
 
-// 4. THEME CONTROLLER
+    // SubTopic filter
+    if (filter.subTopicId && filter.subTopicId !== 'all') {
+      if (q.subTopicId !== filter.subTopicId) {
+        return false;
+      }
+    }
+
+    return true;
+  });
+}
+
+// ============================================================================
+// 3. APPLICATION INITIALIZATION & SYLLABUS HUB
+// ============================================================================
+if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    renderSyllabusHub();
+    updateGlobalCounters();
+    bindGlobalEvents();
+    triggerMathTypeset();
+  });
+}
+
 function initTheme() {
-  document.documentElement.setAttribute('data-theme', state.theme);
-  updateThemeIcon();
+  if (typeof document === 'undefined' || typeof localStorage === 'undefined') return;
+  const savedTheme = localStorage.getItem(STORAGE_KEY_THEME) || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  updateThemeIcon(savedTheme);
 }
 
 function toggleTheme() {
-  state.theme = state.theme === 'light' ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', state.theme);
-  localStorage.setItem('tka_theme', state.theme);
-  updateThemeIcon();
+  if (typeof document === 'undefined' || typeof localStorage === 'undefined') return;
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem(STORAGE_KEY_THEME, newTheme);
+  updateThemeIcon(newTheme);
 }
 
-function updateThemeIcon() {
+function updateThemeIcon(theme) {
   const icon = document.getElementById('themeIcon');
   if (icon) {
-    icon.className = state.theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+    icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
   }
 }
 
-// 5. TIMER CONTROLLER
-function initTimer() {
-  const timerDisplay = document.getElementById('timerText');
-  const timerPill = document.getElementById('timerPill');
+// Switch between Peta Silabus (Hub) and Workspace View
+function showSyllabusView() {
+  state.currentView = 'syllabus';
   
+  // Hide workspace elements
+  const workspaceView = document.getElementById('workspaceView');
+  const stickyBottomBar = document.getElementById('stickyBottomBar');
+  const timerPill = document.getElementById('timerPill');
+  const headerModeBadge = document.getElementById('headerModeBadge');
+  const btnMobileDrawerTrigger = document.getElementById('btnMobileDrawerTrigger');
+  const syllabusView = document.getElementById('syllabusView');
+
+  if (workspaceView) workspaceView.classList.add('hidden');
+  if (stickyBottomBar) stickyBottomBar.classList.add('hidden');
+  if (timerPill) timerPill.classList.add('hidden');
+  if (headerModeBadge) headerModeBadge.classList.add('hidden');
+  if (btnMobileDrawerTrigger) btnMobileDrawerTrigger.classList.add('hidden');
+  if (syllabusView) syllabusView.classList.remove('hidden');
+
+  // Update header title
+  const headerTopic = document.getElementById('headerTopic');
+  if (headerTopic) headerTopic.textContent = 'Peta Silabus & Kurikulum TKA';
+
+  const headerProgressFill = document.getElementById('headerProgressFill');
+  if (headerProgressFill) headerProgressFill.style.width = '0%';
+
+  // Re-render mastery stats
+  renderSyllabusHub();
+  updateGlobalCounters();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showWorkspaceView() {
+  state.currentView = 'workspace';
+  
+  const syllabusView = document.getElementById('syllabusView');
+  const workspaceView = document.getElementById('workspaceView');
+  const stickyBottomBar = document.getElementById('stickyBottomBar');
+  const timerPill = document.getElementById('timerPill');
+  const headerModeBadge = document.getElementById('headerModeBadge');
+  const btnMobileDrawerTrigger = document.getElementById('btnMobileDrawerTrigger');
+
+  if (syllabusView) syllabusView.classList.add('hidden');
+  if (workspaceView) workspaceView.classList.remove('hidden');
+  if (stickyBottomBar) stickyBottomBar.classList.remove('hidden');
+  if (timerPill) timerPill.classList.remove('hidden');
+  if (headerModeBadge) {
+    headerModeBadge.classList.remove('hidden');
+    headerModeBadge.textContent = state.sessionMode === 'ujian' ? 'Mode Ujian (Simulasi)' : 'Mode Latihan (Belajar)';
+    headerModeBadge.className = `tactile-badge ${state.sessionMode === 'ujian' ? 'badge-physics' : 'badge-neutral'}`;
+  }
+  if (btnMobileDrawerTrigger) btnMobileDrawerTrigger.classList.remove('hidden');
+}
+
+// ============================================================================
+// 4. SYLLABUS MAP & HIERARCHY RENDERING
+// ============================================================================
+function getMasteryData() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_MASTERY);
+    return raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveMasteryProgress(questionId, isCorrect) {
+  const mastery = getMasteryData();
+  if (!mastery[questionId]) {
+    mastery[questionId] = { attempts: 0, correct: 0 };
+  }
+  mastery[questionId].attempts++;
+  if (isCorrect) mastery[questionId].correct++;
+  localStorage.setItem(STORAGE_KEY_MASTERY, JSON.stringify(mastery));
+}
+
+function calculateChapterMastery(chapterId) {
+  const questions = getFilteredQuestions({ chapterId });
+  if (questions.length === 0) return 0;
+  const mastery = getMasteryData();
+  let masteredCount = 0;
+  questions.forEach(q => {
+    if (mastery[q.id] && mastery[q.id].correct > 0) {
+      masteredCount++;
+    }
+  });
+  return Math.round((masteredCount / questions.length) * 100);
+}
+
+function updateGlobalCounters() {
+  const mudahCount = (window.QUESTIONS_MUDAH || []).length;
+  const sedangCount = (window.QUESTIONS_SEDANG || []).length;
+  const hotsCount = (window.QUESTIONS_HOTS || []).length;
+  const total = mudahCount + sedangCount + hotsCount;
+
+  const statTotal = document.getElementById('statTotalBankQuestions');
+  const statTier = document.getElementById('statTierBreakdown');
+  const statMastery = document.getElementById('statOverallMastery');
+
+  if (statTotal) statTotal.textContent = total;
+  if (statTier) {
+    statTier.innerHTML = `<span style="color: #16A34A;">${mudahCount} M</span> • <span style="color: #D97706;">${sedangCount} S</span> • <span style="color: #DC2626;">${hotsCount} H</span>`;
+  }
+
+  // Calculate Overall Mastery
+  const mastery = getMasteryData();
+  let totalMastered = 0;
+  [...(window.QUESTIONS_MUDAH || []), ...(window.QUESTIONS_SEDANG || []), ...(window.QUESTIONS_HOTS || [])].forEach(q => {
+    if (mastery[q.id] && mastery[q.id].correct > 0) totalMastered++;
+  });
+  const overallPercent = total > 0 ? Math.round((totalMastered / total) * 100) : 0;
+  if (statMastery) statMastery.textContent = `${overallPercent}%`;
+}
+
+function switchPillarFilter(pillarId) {
+  state.activePillarFilter = pillarId;
+  
+  const tabAll = document.getElementById('tabFilterAll');
+  const tabPhys = document.getElementById('tabFilterPhys');
+  const tabMath = document.getElementById('tabFilterMath');
+  const secPhys = document.getElementById('pillarFisikaSection');
+  const secMath = document.getElementById('pillarMatematikaSection');
+
+  [tabAll, tabPhys, tabMath].forEach(t => t && t.classList.remove('active'));
+
+  if (pillarId === 'all') {
+    if (tabAll) tabAll.classList.add('active');
+    if (secPhys) secPhys.classList.remove('hidden');
+    if (secMath) secMath.classList.remove('hidden');
+  } else if (pillarId === 'fisika') {
+    if (tabPhys) tabPhys.classList.add('active');
+    if (secPhys) secPhys.classList.remove('hidden');
+    if (secMath) secMath.classList.add('hidden');
+  } else if (pillarId === 'matematika') {
+    if (tabMath) tabMath.classList.add('active');
+    if (secPhys) secPhys.classList.add('hidden');
+    if (secMath) secMath.classList.remove('hidden');
+  }
+}
+
+function renderSyllabusHub() {
+  if (!window.SYLLABUS_DATA || !window.SYLLABUS_DATA.pillars) return;
+
+  const fisikaPillar = window.SYLLABUS_DATA.pillars.find(p => p.id === 'fisika');
+  const matematikaPillar = window.SYLLABUS_DATA.pillars.find(p => p.id === 'matematika');
+
+  const containerPhys = document.getElementById('chaptersContainerFisika');
+  const containerMath = document.getElementById('chaptersContainerMatematika');
+
+  if (fisikaPillar && containerPhys) {
+    containerPhys.innerHTML = fisikaPillar.chapters.map(ch => renderChapterCard(ch, 'fisika')).join('');
+  }
+
+  if (matematikaPillar && containerMath) {
+    containerMath.innerHTML = matematikaPillar.chapters.map(ch => renderChapterCard(ch, 'matematika')).join('');
+  }
+
+  // Trigger KaTeX for any mathematical indicator formulas in syllabus
+  triggerMathTypeset();
+}
+
+function renderChapterCard(chapter, pillarId) {
+  const isFoundation = Boolean(chapter.isFoundation);
+  const questionsInChapter = getFilteredQuestions({ chapterId: chapter.id });
+  const countMudah = questionsInChapter.filter(q => q.difficulty === 'mudah').length;
+  const countSedang = questionsInChapter.filter(q => q.difficulty === 'sedang').length;
+  const countHots = questionsInChapter.filter(q => q.difficulty === 'hots').length;
+  const masteryPercent = calculateChapterMastery(chapter.id);
+
+  return `
+    <article class="chapter-card ${isFoundation ? 'foundation-card' : ''}">
+      <div>
+        <div class="chapter-top-bar">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            ${isFoundation ? `
+              <span class="chapter-badge-fondasi">
+                <i class="fa-solid fa-bolt mr-1"></i> FONDASI
+              </span>
+            ` : `
+              <span class="subtopic-code">${chapter.id.toUpperCase()}</span>
+            `}
+            <span class="font-mono text-xs text-zinc-500 font-bold">
+              ${chapter.subTopics.length} Sub-Topik • ${questionsInChapter.length} Butir Soal
+            </span>
+          </div>
+
+          <!-- Quick Chapter Drill Trigger Button -->
+          <button class="tactile-btn ${isFoundation ? 'tactile-btn-primary' : ''}" 
+                  style="padding: 6px 12px; font-size: 0.82rem;"
+                  onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')">
+            <i class="fa-solid fa-play mr-1"></i> Drill Bab
+          </button>
+        </div>
+
+        <h3 class="font-heading" style="font-size: 1.15rem; margin-bottom: 6px;">
+          ${chapter.title}
+        </h3>
+        <p class="text-zinc-600 dark:text-zinc-300" style="font-size: 0.82rem; margin-bottom: 12px; line-height: 1.5;">
+          ${chapter.description || ''}
+        </p>
+
+        <!-- Chapter Mastery Progress Bar -->
+        <div style="margin-bottom: 14px;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; margin-bottom: 4px;">
+            <span>Tingkat Penguasaan</span>
+            <span class="${masteryPercent >= 75 ? 'text-green-600' : 'text-blue-600'}">${masteryPercent}%</span>
+          </div>
+          <div class="tier-progress-track">
+            <div class="tier-progress-fill ${isFoundation ? 'tier-fill-sedang' : 'tier-fill-mudah'}" style="width: ${masteryPercent}%;"></div>
+          </div>
+        </div>
+
+        <!-- Subtopics List (Micro-indicators) -->
+        <div class="subtopic-list">
+          ${chapter.subTopics.map(sub => {
+            const subQuestions = getFilteredQuestions({ subTopicId: sub.id });
+            return `
+              <div class="subtopic-item">
+                <div class="subtopic-head">
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <span class="subtopic-code">${sub.id}</span>
+                    <strong style="font-size: 0.88rem;">${sub.title}</strong>
+                  </div>
+                  <button class="tactile-btn" style="padding: 3px 8px; font-size: 0.74rem;"
+                          onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.id} - ${sub.title}')">
+                    <i class="fa-solid fa-bullseye mr-1"></i> Drill
+                  </button>
+                </div>
+                <div class="subtopic-indicators">
+                  ${sub.indicators}
+                </div>
+                <div style="display: flex; gap: 6px; font-size: 0.72rem; color: var(--ink-faint); margin-top: 2px;">
+                  <span>Tersedia: <strong>${subQuestions.length} Soal</strong></span>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
+      <!-- Chapter Footer Tier Pills Summary -->
+      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--dot-color); font-size: 0.75rem;">
+        <span class="font-mono text-zinc-500">Tier: ${countMudah}M / ${countSedang}S / ${countHots}H</span>
+        <button class="tactile-btn tactile-btn-secondary" style="padding: 4px 10px; font-size: 0.78rem;"
+                onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')">
+          Mulai Drilling Sesi
+        </button>
+      </div>
+    </article>
+  `;
+}
+
+// ============================================================================
+// 5. DRILL SETUP MODAL / CONFIGURATOR LOGIC
+// ============================================================================
+function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'all', scopeTitle = 'Semua Materi') {
+  state.setupForm.subject = subject;
+  state.setupForm.chapterId = chapterId;
+  state.setupForm.subTopicId = subTopicId;
+  state.setupForm.scopeTitle = scopeTitle;
+  state.setupForm.isProgressive = false;
+
+  const modal = document.getElementById('drillSetupModal');
+  const scopeSubtitle = document.getElementById('setupScopeSubtitle');
+  if (scopeSubtitle) scopeSubtitle.textContent = scopeTitle;
+
+  // Refresh active pills styling
+  syncSetupPillStyles();
+  updateSetupPreviewCount();
+
+  if (modal) modal.classList.add('open');
+}
+
+function closeDrillSetupModal() {
+  const modal = document.getElementById('drillSetupModal');
+  if (modal) modal.classList.remove('open');
+}
+
+function toggleSetupDifficulty(diff) {
+  state.setupForm.isProgressive = false;
+  const arr = state.setupForm.difficulties;
+  const idx = arr.indexOf(diff);
+  if (idx > -1) {
+    if (arr.length > 1) { // Prevent empty selection
+      arr.splice(idx, 1);
+    }
+  } else {
+    arr.push(diff);
+  }
+  syncSetupPillStyles();
+  updateSetupPreviewCount();
+}
+
+function setSetupProgressiveDifficulty() {
+  state.setupForm.isProgressive = true;
+  state.setupForm.difficulties = ['mudah', 'sedang', 'hots'];
+  syncSetupPillStyles();
+  updateSetupPreviewCount();
+}
+
+function syncSetupPillStyles() {
+  const pillM = document.getElementById('pillMudah');
+  const pillS = document.getElementById('pillSedang');
+  const pillH = document.getElementById('pillHots');
+  const pillP = document.getElementById('pillProgresif');
+
+  if (pillM) pillM.className = `config-pill pill-mudah ${state.setupForm.difficulties.includes('mudah') && !state.setupForm.isProgressive ? 'active' : ''}`;
+  if (pillS) pillS.className = `config-pill pill-sedang ${state.setupForm.difficulties.includes('sedang') && !state.setupForm.isProgressive ? 'active' : ''}`;
+  if (pillH) pillH.className = `config-pill pill-hots ${state.setupForm.difficulties.includes('hots') && !state.setupForm.isProgressive ? 'active' : ''}`;
+  if (pillP) pillP.className = `config-pill pill-progresif ${state.setupForm.isProgressive ? 'active' : ''}`;
+}
+
+function selectSetupMode(mode) {
+  state.setupForm.mode = mode;
+  const cardLatihan = document.getElementById('modeLatihanCard');
+  const cardUjian = document.getElementById('modeUjianCard');
+
+  if (cardLatihan) cardLatihan.className = `mode-choice-card ${mode === 'latihan' ? 'selected' : ''}`;
+  if (cardUjian) cardUjian.className = `mode-choice-card ${mode === 'ujian' ? 'selected' : ''}`;
+}
+
+function selectSetupTimerMode(mode) {
+  state.setupForm.timerMode = mode;
+  const optCountdown = document.getElementById('timerOptCountdown');
+  const optStopwatch = document.getElementById('timerOptStopwatch');
+  const details = document.getElementById('setupTimerDetails');
+
+  if (optCountdown) optCountdown.className = `config-pill ${mode === 'countdown' ? 'active' : ''}`;
+  if (optStopwatch) optStopwatch.className = `config-pill ${mode === 'stopwatch' ? 'active' : ''}`;
+
+  if (details) {
+    if (mode === 'countdown') {
+      details.textContent = 'Batas waktu otomatis dihitung (2 menit × jumlah butir soal) dengan peringatan merah saat sisa < 20%.';
+    } else {
+      details.textContent = 'Stopwatch menghitung maju durasi pengerjaan Anda tanpa batas waktu pemblokiran.';
+    }
+  }
+}
+
+function selectSetupQuestionCount(count) {
+  state.setupForm.questionCount = count;
+  const buttons = document.querySelectorAll('.setup-count-pill');
+  buttons.forEach(btn => {
+    const text = btn.textContent;
+    if (count === 'all' && text.includes('Semua')) {
+      btn.classList.add('active');
+    } else if (typeof count === 'number' && text.startsWith(`${count} `)) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+function toggleSetupCheckbox(id) {
+  const chk = document.getElementById(id);
+  if (chk) {
+    chk.checked = !chk.checked;
+    if (id === 'chkShuffleQuestions') state.setupForm.shuffleQuestions = chk.checked;
+    if (id === 'chkShuffleOptions') state.setupForm.shuffleOptions = chk.checked;
+  }
+}
+
+function updateSetupPreviewCount() {
+  const countEl = document.getElementById('setupAvailableCount');
+  if (!countEl) return;
+
+  const matches = getFilteredQuestions({
+    subject: state.setupForm.subject,
+    chapterId: state.setupForm.chapterId,
+    subTopicId: state.setupForm.subTopicId,
+    difficulties: state.setupForm.difficulties,
+    progressive: state.setupForm.isProgressive
+  });
+
+  countEl.textContent = `Ditemukan ${matches.length} butir soal yang sesuai dengan kombinasi filter ini.`;
+}
+
+// Start Session from Configurator
+function startConfiguredDrillSession() {
+  const matches = getFilteredQuestions({
+    subject: state.setupForm.subject,
+    chapterId: state.setupForm.chapterId,
+    subTopicId: state.setupForm.subTopicId,
+    difficulties: state.setupForm.difficulties,
+    progressive: state.setupForm.isProgressive
+  });
+
+  if (matches.length === 0) {
+    alert('Tidak ada soal yang sesuai dengan kombinasi filter ini. Silakan pilih filter tingkat kesulitan atau cakupan materi lainnya.');
+    return;
+  }
+
+  // Deep clone questions so shuffling options does not mutate original data bank
+  let sessionPool = JSON.parse(JSON.stringify(matches));
+
+  // Acak urutan soal jika opsi shuffle aktif dan bukan mode progresif murni
+  if (state.setupForm.shuffleQuestions && !state.setupForm.isProgressive) {
+    sessionPool.sort(() => Math.random() - 0.5);
+  }
+
+  // Terapkan batasan jumlah soal
+  let finalQuestions = sessionPool;
+  if (typeof state.setupForm.questionCount === 'number' && state.setupForm.questionCount > 0) {
+    finalQuestions = sessionPool.slice(0, state.setupForm.questionCount);
+  }
+
+  // Acak posisi opsi (A - E) jika diaktifkan
+  if (state.setupForm.shuffleOptions) {
+    finalQuestions.forEach(q => {
+      const origCorrect = q.options[q.correctIndex];
+      const shuffledOptions = [...q.options].sort(() => Math.random() - 0.5);
+      q.correctIndex = shuffledOptions.indexOf(origCorrect);
+      q.options = shuffledOptions;
+    });
+  }
+
+  // Setup state for active session
+  state.questions = finalQuestions;
+  state.currentIndex = 0;
+  state.sessionScope = { ...state.setupForm };
+  state.sessionMode = state.setupForm.mode;
+  state.timerMode = state.setupForm.timerMode;
+  state.isReviewMode = false;
+  state.userAnswers = new Array(finalQuestions.length).fill(null);
+  state.isVerified = new Array(finalQuestions.length).fill(false);
+  state.isRagu = new Array(finalQuestions.length).fill(false);
+  state.solutionOpen = new Array(finalQuestions.length).fill(false);
+  state.questionTimeSpent = new Array(finalQuestions.length).fill(0);
+  state.sessionStartTime = Date.now();
+
+  // Setup Timer
+  if (state.timerMode === 'countdown') {
+    state.totalDurationSeconds = finalQuestions.length * 2 * 60; // 2 menit per soal
+    state.timerSeconds = state.totalDurationSeconds;
+  } else {
+    state.totalDurationSeconds = 0;
+    state.timerSeconds = 0; // Stopwatch mulai dari 0
+  }
+  state.timerRunning = true;
+  startTimer();
+
+  // Close modal and switch views
+  closeDrillSetupModal();
+  showWorkspaceView();
+  renderCurrentQuestion(true);
+  renderMatrixGrid();
+  updateStats();
+}
+
+// ============================================================================
+// 6. TIMER ENGINE (COUNTDOWN & STOPWATCH WITH URGENCY MONITOR)
+// ============================================================================
+function startTimer() {
+  if (state.timerInterval) clearInterval(state.timerInterval);
+
   function tick() {
     if (!state.timerRunning) return;
-    if (state.timerSeconds > 0) {
+
+    if (state.timerMode === 'countdown') {
       state.timerSeconds--;
-      const mins = Math.floor(state.timerSeconds / 60);
-      const secs = state.timerSeconds % 60;
-      if (timerDisplay) {
-        timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      updateTimerDisplay();
+
+      // Urgency Alert when < 20% time left
+      const timerPill = document.getElementById('timerPill');
+      if (timerPill && state.totalDurationSeconds > 0) {
+        const percentLeft = (state.timerSeconds / state.totalDurationSeconds) * 100;
+        if (percentLeft <= 20) {
+          timerPill.classList.add('urgent');
+        } else {
+          timerPill.classList.remove('urgent');
+        }
       }
-      if (state.timerSeconds < 300 && timerPill) {
-        timerPill.classList.add('urgent');
+
+      if (state.timerSeconds <= 0) {
+        clearInterval(state.timerInterval);
+        state.timerRunning = false;
+        alert('⏱️ Waktu pengerjaan telah habis! Sistem akan mengumpulkan lembar jawaban Anda.');
+        finishDrillingSession();
       }
     } else {
-      clearInterval(state.timerInterval);
-      state.timerRunning = false;
-      alert('Waktu drilling telah berakhir! Mari periksa hasil evaluasi Anda.');
+      // Stopwatch Mode
+      state.timerSeconds++;
+      updateTimerDisplay();
     }
   }
 
+  updateTimerDisplay();
   state.timerInterval = setInterval(tick, 1000);
+}
+
+function updateTimerDisplay() {
+  const timerText = document.getElementById('timerText');
+  if (!timerText) return;
+
+  const mins = Math.floor(Math.abs(state.timerSeconds) / 60);
+  const secs = Math.abs(state.timerSeconds) % 60;
+  const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+  timerText.textContent = formatted;
 }
 
 function toggleTimerPause() {
@@ -512,40 +654,62 @@ function toggleTimerPause() {
   const timerPill = document.getElementById('timerPill');
   if (timerPill) {
     timerPill.style.opacity = state.timerRunning ? '1' : '0.65';
-    timerPill.title = state.timerRunning ? 'Klik untuk jeda timer' : 'Timer dijeda - klik untuk lanjut';
+    timerPill.title = state.timerRunning ? 'Klik untuk menjeda timer' : 'Timer dijeda - klik untuk lanjut';
   }
 }
 
-// 6. QUESTION RENDERING ENGINE
-// 6. QUESTION RENDERING ENGINE
+// ============================================================================
+// 7. WORKSPACE QUESTION RENDERING ENGINE
+// ============================================================================
 function renderCurrentQuestion(shouldScrollToTop = false) {
-  const q = questionsData[state.currentIndex];
-  const total = questionsData.length;
+  if (!state.questions || state.questions.length === 0) return;
+
+  const q = state.questions[state.currentIndex];
+  const total = state.questions.length;
 
   // Header Elements
   const headerTopic = document.getElementById('headerTopic');
   const headerProgressFill = document.getElementById('headerProgressFill');
   if (headerTopic) {
-    headerTopic.textContent = `${q.subject}: ${q.category}`;
+    headerTopic.textContent = `${q.subject}: ${q.category || q.subTopicId}`;
   }
   if (headerProgressFill) {
     const progressPercent = ((state.currentIndex + 1) / total) * 100;
     headerProgressFill.style.width = `${progressPercent}%`;
   }
 
-  // Question Meta
+  // Question Metadata Badges
   const questionNumBadge = document.getElementById('questionNumBadge');
   const subjectBadge = document.getElementById('subjectBadge');
   const difficultyBadge = document.getElementById('difficultyBadge');
   const btnRagu = document.getElementById('btnRagu');
 
-  if (questionNumBadge) questionNumBadge.textContent = `SOAL 0${q.id}`;
+  if (questionNumBadge) {
+    questionNumBadge.textContent = `SOAL ${String(state.currentIndex + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+  }
+
   if (subjectBadge) {
     subjectBadge.textContent = q.subject;
     subjectBadge.className = `tactile-badge ${q.subject === 'FISIKA' ? 'badge-physics' : 'badge-math'}`;
   }
-  if (difficultyBadge) difficultyBadge.textContent = q.difficulty;
-  
+
+  if (difficultyBadge) {
+    let diffClass = 'badge-neutral';
+    let diffLabel = q.difficultyLabel || 'Sedang';
+    if (q.difficulty === 'mudah') {
+      diffClass = 'text-green-600 font-bold';
+      diffLabel = '🟢 MUDAH';
+    } else if (q.difficulty === 'sedang') {
+      diffClass = 'text-amber-600 font-bold';
+      diffLabel = '🟡 SEDANG';
+    } else if (q.difficulty === 'hots') {
+      diffClass = 'text-red-600 font-bold';
+      diffLabel = '🔴 HOTS / UTBK';
+    }
+    difficultyBadge.innerHTML = diffLabel;
+  }
+
+  // Bookmark / Doubt State
   if (btnRagu) {
     if (state.isRagu[state.currentIndex]) {
       btnRagu.classList.add('active');
@@ -562,24 +726,24 @@ function renderCurrentQuestion(shouldScrollToTop = false) {
     problemStatement.innerHTML = q.statement;
   }
 
-  // Diagram Box Handling
+  // Blueprint SVG Diagram Box
   const diagramBox = document.getElementById('diagramBox');
   const diagramContent = document.getElementById('diagramContent');
   const diagramCaption = document.getElementById('diagramCaption');
-  if (q.hasDiagram && diagramBox && diagramContent && diagramCaption) {
+  if (q.hasDiagram && q.diagramSvg && diagramBox && diagramContent && diagramCaption) {
     diagramBox.classList.remove('hidden');
     diagramContent.innerHTML = q.diagramSvg;
-    diagramCaption.textContent = q.diagramCaption;
+    diagramCaption.textContent = q.diagramCaption || 'SKEMA SISTEM FISIKA';
   } else if (diagramBox) {
     diagramBox.classList.add('hidden');
   }
 
-  // Options List Rendering
+  // Options List
   const optionsList = document.getElementById('optionsList');
   if (optionsList) {
     const letters = ['A', 'B', 'C', 'D', 'E'];
     const chosen = state.userAnswers[state.currentIndex];
-    const verified = state.isVerified[state.currentIndex];
+    const verified = state.isVerified[state.currentIndex] || state.isReviewMode;
 
     optionsList.innerHTML = q.options.map((opt, idx) => {
       let stateClass = '';
@@ -606,37 +770,56 @@ function renderCurrentQuestion(shouldScrollToTop = false) {
     }).join('');
   }
 
-  // Solution Accordion Rendering
+  // Solution Accordion vs Exam Locked Notice
   const solutionAccordion = document.getElementById('solutionAccordion');
+  const examLockedNotice = document.getElementById('examLockedNotice');
   const solutionConcept = document.getElementById('solutionConcept');
   const solutionSteps = document.getElementById('solutionSteps');
   const solutionPitfalls = document.getElementById('solutionPitfalls');
 
-  if (solutionConcept) solutionConcept.innerHTML = q.solution.concept;
-  if (solutionSteps) solutionSteps.innerHTML = q.solution.steps;
-  if (solutionPitfalls) solutionPitfalls.innerHTML = q.solution.pitfalls;
+  if (state.sessionMode === 'ujian' && !state.isReviewMode) {
+    // Mode Ujian: Pembahasan dikunci
+    if (solutionAccordion) solutionAccordion.classList.add('hidden');
+    if (examLockedNotice) examLockedNotice.classList.remove('hidden');
+  } else {
+    // Mode Latihan atau Mode Review Rapor: Pembahasan tersedia
+    if (examLockedNotice) examLockedNotice.classList.add('hidden');
+    if (solutionAccordion) {
+      solutionAccordion.classList.remove('hidden');
+      if (solutionConcept) solutionConcept.innerHTML = q.solution ? q.solution.concept : '';
+      if (solutionSteps) solutionSteps.innerHTML = q.solution ? q.solution.steps : '';
+      if (solutionPitfalls) solutionPitfalls.innerHTML = q.solution ? q.solution.pitfalls : '';
 
-  if (solutionAccordion) {
-    if (state.solutionOpen[state.currentIndex]) {
-      solutionAccordion.classList.add('open');
-    } else {
-      solutionAccordion.classList.remove('open');
+      if (state.solutionOpen[state.currentIndex] || state.isReviewMode) {
+        solutionAccordion.classList.add('open');
+      } else {
+        solutionAccordion.classList.remove('open');
+      }
     }
   }
 
-  // Update Action Bar Button Texts
+  // Action Bar Button Labels
   updateBottomActionBar();
+
+  // Desktop Finish Exam Action Visibility
+  const examFinishBox = document.getElementById('examFinishBox');
+  if (examFinishBox) {
+    if (state.sessionMode === 'ujian' && !state.isReviewMode) {
+      examFinishBox.classList.remove('hidden');
+    } else {
+      examFinishBox.classList.add('hidden');
+    }
+  }
 
   // Trigger KaTeX Formula Typesetting
   triggerMathTypeset();
 
-  // Only scroll smoothly to top when switching questions
   if (shouldScrollToTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
 
-// 7. MATH RENDERING WITH ASYNC POLLING & FORMULA OVERFLOW PROTECTION
+// Math Typesetting Engine with Overflow Protection
 let mathPollTimer = null;
 function triggerMathTypeset() {
   if (window.renderMathInElement) {
@@ -663,7 +846,6 @@ function triggerMathTypeset() {
       }
     });
   } else if (!mathPollTimer) {
-    // If KaTeX is still loading from CDN, poll every 80ms (up to 3 seconds)
     let attempts = 0;
     mathPollTimer = setInterval(() => {
       attempts++;
@@ -679,12 +861,17 @@ function triggerMathTypeset() {
   }
 }
 
-// 8. INTERACTIVE ACTIONS: SELECTION, CHECK, RAGU, ACCORDION
+// ============================================================================
+// 8. INTERACTIVE ACTIONS (SELECT, CHECK, RAGU, ACCORDION)
+// ============================================================================
 function handleOptionSelect(optionIndex) {
-  if (state.isVerified[state.currentIndex]) return;
+  if ((state.isVerified[state.currentIndex] && state.sessionMode === 'latihan') || state.isReviewMode) {
+    return;
+  }
+
   state.userAnswers[state.currentIndex] = optionIndex;
 
-  // Update classes directly in the DOM without re-rendering or jumping
+  // Visual option card update
   const optionCards = document.querySelectorAll('.option-card');
   optionCards.forEach((btn, idx) => {
     if (idx === optionIndex) {
@@ -733,22 +920,35 @@ function toggleSolutionAccordion() {
 
 function handleCheckAnswer() {
   const chosen = state.userAnswers[state.currentIndex];
+  
+  if (state.sessionMode === 'ujian' && !state.isReviewMode) {
+    // In Exam Mode: Center button functions as Next Question or Finish
+    if (state.currentIndex === state.questions.length - 1) {
+      confirmFinishExamSession();
+    } else {
+      handleNextQuestion();
+    }
+    return;
+  }
+
+  // In Practice Mode: Verify answer and show solution
   if (chosen === null) {
     alert('Silakan pilih salah satu opsi jawaban (A, B, C, D, atau E) terlebih dahulu!');
     return;
   }
 
-  // Mark as verified
   state.isVerified[state.currentIndex] = true;
-  // Automatically open solution accordion
   state.solutionOpen[state.currentIndex] = true;
 
-  // Re-render question options without scrolling to top
+  // Save mastery progress to localStorage
+  const currentQ = state.questions[state.currentIndex];
+  const isCorrect = chosen === currentQ.correctIndex;
+  saveMasteryProgress(currentQ.id, isCorrect);
+
   renderCurrentQuestion(false);
   renderMatrixGrid();
   updateStats();
 
-  // Scroll smoothly to solution accordion
   setTimeout(() => {
     const solutionAccordion = document.getElementById('solutionAccordion');
     if (solutionAccordion) {
@@ -756,9 +956,9 @@ function handleCheckAnswer() {
     }
   }, 100);
 
-  // Check if all questions are completed and verified
+  // If all questions are verified in practice mode, open completion modal
   if (state.isVerified.every(Boolean)) {
-    setTimeout(openCompletionModal, 1200);
+    setTimeout(finishDrillingSession, 1200);
   }
 }
 
@@ -771,7 +971,7 @@ function handlePrevQuestion() {
 }
 
 function handleNextQuestion() {
-  if (state.currentIndex < questionsData.length - 1) {
+  if (state.currentIndex < state.questions.length - 1) {
     state.currentIndex++;
     renderCurrentQuestion(true);
     renderMatrixGrid();
@@ -779,7 +979,7 @@ function handleNextQuestion() {
 }
 
 function jumpToQuestion(idx) {
-  if (idx >= 0 && idx < questionsData.length) {
+  if (idx >= 0 && idx < state.questions.length) {
     state.currentIndex = idx;
     closeMobileDrawer();
     renderCurrentQuestion(true);
@@ -791,40 +991,61 @@ function updateBottomActionBar() {
   const btnPrev = document.getElementById('btnPrev');
   const btnNext = document.getElementById('btnNext');
   const btnCheck = document.getElementById('btnCheck');
+  const total = state.questions.length;
 
   if (btnPrev) {
     btnPrev.disabled = state.currentIndex === 0;
   }
   if (btnNext) {
-    btnNext.disabled = state.currentIndex === questionsData.length - 1;
+    btnNext.disabled = state.currentIndex === total - 1;
   }
+
   if (btnCheck) {
-    const verified = state.isVerified[state.currentIndex];
-    if (verified) {
-      btnCheck.innerHTML = '<i class="fa-solid fa-book-open mr-1.5"></i> <span id="btnCheckText">Pembahasan</span>';
-      btnCheck.className = 'tactile-btn tactile-btn-secondary';
-      btnCheck.onclick = toggleSolutionAccordion;
+    if (state.sessionMode === 'ujian' && !state.isReviewMode) {
+      if (state.currentIndex === total - 1) {
+        btnCheck.innerHTML = '<i class="fa-solid fa-paper-plane mr-1.5"></i> <span id="btnCheckText">Kumpulkan Ujian</span>';
+        btnCheck.className = 'tactile-btn tactile-btn-primary';
+        btnCheck.onclick = confirmFinishExamSession;
+      } else {
+        btnCheck.innerHTML = '<i class="fa-solid fa-arrow-right mr-1.5"></i> <span id="btnCheckText">Lanjut Soal</span>';
+        btnCheck.className = 'tactile-btn tactile-btn-secondary';
+        btnCheck.onclick = handleNextQuestion;
+      }
     } else {
-      btnCheck.innerHTML = '<i class="fa-solid fa-circle-check mr-1.5"></i> <span id="btnCheckText">Cek Jawaban</span>';
-      btnCheck.className = 'tactile-btn tactile-btn-primary';
-      btnCheck.onclick = handleCheckAnswer;
+      // Practice Mode or Review Mode
+      const verified = state.isVerified[state.currentIndex] || state.isReviewMode;
+      if (verified) {
+        btnCheck.innerHTML = '<i class="fa-solid fa-book-open mr-1.5"></i> <span id="btnCheckText">Pembahasan</span>';
+        btnCheck.className = 'tactile-btn tactile-btn-secondary';
+        btnCheck.onclick = toggleSolutionAccordion;
+      } else {
+        btnCheck.innerHTML = '<i class="fa-solid fa-circle-check mr-1.5"></i> <span id="btnCheckText">Cek Jawaban</span>';
+        btnCheck.className = 'tactile-btn tactile-btn-primary';
+        btnCheck.onclick = handleCheckAnswer;
+      }
     }
   }
 }
 
-// 9. MATRIX GRID & ACCURACY STATS
+// ============================================================================
+// 9. QUESTION MATRIX & PROGRESS STATS
+// ============================================================================
 function renderMatrixGrid() {
   const containers = [
     document.getElementById('matrixGridDesktop'),
     document.getElementById('matrixGridMobile')
   ];
 
+  const total = state.questions.length;
+  const countBadge = document.getElementById('matrixCountBadge');
+  if (countBadge) countBadge.textContent = `${total} Butir`;
+
   containers.forEach(container => {
     if (!container) return;
-    container.innerHTML = questionsData.map((q, idx) => {
+    container.innerHTML = state.questions.map((q, idx) => {
       let statusClass = '';
       const chosen = state.userAnswers[idx];
-      const verified = state.isVerified[idx];
+      const verified = state.isVerified[idx] || state.isReviewMode;
       const isRagu = state.isRagu[idx];
       const isActive = idx === state.currentIndex;
 
@@ -841,8 +1062,10 @@ function renderMatrixGrid() {
       }
 
       return `
-        <button class="matrix-btn ${statusClass} ${isActive ? 'active' : ''}" onclick="jumpToQuestion(${idx})" title="Soal 0${q.id} (${q.subject})">
-          0${q.id}
+        <button class="matrix-btn ${statusClass} ${isActive ? 'active' : ''}" 
+                onclick="jumpToQuestion(${idx})" 
+                title="Soal ${idx + 1} (${q.subject} - ${q.difficulty.toUpperCase()})">
+          ${String(idx + 1).padStart(2, '0')}
           ${isRagu && !statusClass.includes('ragu') ? '<span class="ragu-indicator"></span>' : ''}
         </button>
       `;
@@ -851,15 +1074,15 @@ function renderMatrixGrid() {
 }
 
 function updateStats() {
-  const total = questionsData.length;
+  const total = state.questions.length;
   let answeredCount = 0;
   let correctCount = 0;
   let wrongCount = 0;
 
   state.userAnswers.forEach((ans, idx) => {
     if (ans !== null) answeredCount++;
-    if (state.isVerified[idx]) {
-      if (ans === questionsData[idx].correctIndex) {
+    if (state.isVerified[idx] || state.isReviewMode) {
+      if (ans === state.questions[idx].correctIndex) {
         correctCount++;
       } else {
         wrongCount++;
@@ -880,65 +1103,171 @@ function updateStats() {
   if (statRemaining) statRemaining.textContent = `${total - answeredCount}`;
 }
 
-// 10. MODAL & DRAWER CONTROLS
-function openCompletionModal() {
-  const modal = document.getElementById('completionModal');
-  if (!modal) return;
-  
+// ============================================================================
+// 10. END-OF-SESSION SUMMARY & REVIEW SCREEN (RAPOR HASIL DRILLING)
+// ============================================================================
+function confirmFinishExamSession() {
+  const answeredCount = state.userAnswers.filter(a => a !== null).length;
+  const total = state.questions.length;
+  const raguCount = state.isRagu.filter(Boolean).length;
+
+  let msg = `Apakah Anda yakin ingin mengakhiri dan mengumpulkan sesi drilling ini?\n\n• Terjawab: ${answeredCount} dari ${total} butir`;
+  if (raguCount > 0) {
+    msg += `\n• Masih ada ${raguCount} soal ditandai Ragu-ragu!`;
+  }
+  if (answeredCount < total) {
+    msg += `\n• Peringatan: ${total - answeredCount} soal belum diisi!`;
+  }
+
+  if (confirm(msg)) {
+    finishDrillingSession();
+  }
+}
+
+function finishDrillingSession() {
+  if (state.timerInterval) clearInterval(state.timerInterval);
+  state.timerRunning = false;
+  state.sessionEndTime = Date.now();
+
+  // Mark all questions as verified for final grading
+  state.isVerified = new Array(state.questions.length).fill(true);
+
+  // Compute final score and breakdown
   let correctCount = 0;
-  state.userAnswers.forEach((ans, idx) => {
-    if (state.isVerified[idx] && ans === questionsData[idx].correctIndex) {
+  let wrongCount = 0;
+  let emptyCount = 0;
+
+  // Breakdown per Difficulty Tier
+  const tierStats = {
+    mudah: { total: 0, correct: 0 },
+    sedang: { total: 0, correct: 0 },
+    hots: { total: 0, correct: 0 }
+  };
+
+  state.questions.forEach((q, idx) => {
+    const chosen = state.userAnswers[idx];
+    const diff = q.difficulty || 'sedang';
+
+    if (tierStats[diff]) tierStats[diff].total++;
+
+    if (chosen === null) {
+      emptyCount++;
+      saveMasteryProgress(q.id, false);
+    } else if (chosen === q.correctIndex) {
       correctCount++;
+      if (tierStats[diff]) tierStats[diff].correct++;
+      saveMasteryProgress(q.id, true);
+    } else {
+      wrongCount++;
+      saveMasteryProgress(q.id, false);
     }
   });
-  const total = questionsData.length;
-  const accuracy = Math.round((correctCount / total) * 100);
 
-  const evalScore = document.getElementById('evalScore');
-  const evalAccuracy = document.getElementById('evalAccuracy');
-  const evalTitle = document.getElementById('evalTitle');
-  const evalSubtitle = document.getElementById('evalSubtitle');
+  const total = state.questions.length;
+  const finalScore = total > 0 ? Math.round((correctCount / total) * 100) : 0;
 
-  if (evalScore) evalScore.textContent = `${correctCount}/${total}`;
-  if (evalAccuracy) evalAccuracy.textContent = `${accuracy}%`;
-  if (evalTitle) {
-    if (accuracy >= 75) {
-      evalTitle.textContent = 'Luar Biasa! Pemahaman Sangat Baik!';
-    } else if (accuracy >= 50) {
-      evalTitle.textContent = 'Kerja Bagus! Siap Hadapi UTBK!';
+  // Calculate Average Time per Question
+  const totalSecondsSpent = state.timerMode === 'countdown'
+    ? (state.totalDurationSeconds - Math.max(0, state.timerSeconds))
+    : state.timerSeconds;
+  const avgSeconds = total > 0 ? Math.round(totalSecondsSpent / total) : 0;
+  const avgMins = Math.floor(avgSeconds / 60);
+  const avgRemSecs = avgSeconds % 60;
+  const formattedAvg = avgMins > 0 ? `${avgMins}m ${avgRemSecs}s` : `${avgRemSecs}s`;
+
+  // Populate Rapor Modal DOM Elements
+  const raporGradeTitle = document.getElementById('raporGradeTitle');
+  const raporFinalScore = document.getElementById('raporFinalScore');
+  const raporSummarySubtitle = document.getElementById('raporSummarySubtitle');
+  const raporCorrectCount = document.getElementById('raporCorrectCount');
+  const raporWrongCount = document.getElementById('raporWrongCount');
+  const raporEmptyCount = document.getElementById('raporEmptyCount');
+  const raporAvgTime = document.getElementById('raporAvgTime');
+
+  if (raporFinalScore) raporFinalScore.textContent = finalScore;
+  if (raporCorrectCount) raporCorrectCount.textContent = correctCount;
+  if (raporWrongCount) raporWrongCount.textContent = wrongCount;
+  if (raporEmptyCount) raporEmptyCount.textContent = emptyCount;
+  if (raporAvgTime) raporAvgTime.textContent = formattedAvg;
+
+  if (raporGradeTitle) {
+    if (finalScore >= 85) {
+      raporGradeTitle.textContent = '🌟 Luar Biasa! Penguasaan Sangat Tinggi!';
+      if (raporSummarySubtitle) raporSummarySubtitle.textContent = 'Performa Anda siap bersaing di tingkat UTBK Saintek / STEI!';
+    } else if (finalScore >= 65) {
+      raporGradeTitle.textContent = '👍 Kerja Bagus! Pemahaman Solid!';
+      if (raporSummarySubtitle) raporSummarySubtitle.textContent = 'Tingkatkan lagi ketelitian pada analisis multi-step dan HOTS.';
     } else {
-      evalTitle.textContent = 'Tetap Semangat! Pelajari Pembahasan!';
+      raporGradeTitle.textContent = '📚 Perlu Penguatan Konsep Dasar!';
+      if (raporSummarySubtitle) raporSummarySubtitle.textContent = 'Pelajari pembahasan langkah demi langkah pada soal yang keliru.';
     }
   }
-  if (evalSubtitle) {
-    evalSubtitle.textContent = `Anda berhasil menyelesaikan seluruh ${total} butir soal HOTS TKA.`;
-  }
 
-  modal.classList.add('open');
+  // Populate Tier Accuracy Bars
+  const populateTierBar = (tierKey, labelId, fillId) => {
+    const labelEl = document.getElementById(labelId);
+    const fillEl = document.getElementById(fillId);
+    const stat = tierStats[tierKey];
+    if (stat.total === 0) {
+      if (labelEl) labelEl.textContent = 'Tidak diuji (0 butir)';
+      if (fillEl) fillEl.style.width = '0%';
+    } else {
+      const pct = Math.round((stat.correct / stat.total) * 100);
+      if (labelEl) labelEl.textContent = `${pct}% (${stat.correct}/${stat.total})`;
+      if (fillEl) fillEl.style.width = `${pct}%`;
+    }
+  };
+
+  populateTierBar('mudah', 'raporTierAccuracyMudah', 'raporTierFillMudah');
+  populateTierBar('sedang', 'raporTierAccuracySedang', 'raporTierFillSedang');
+  populateTierBar('hots', 'raporTierAccuracyHots', 'raporTierFillHots');
+
+  // Open Completion Modal
+  const modal = document.getElementById('completionModal');
+  if (modal) modal.classList.add('open');
+
+  // Also refresh matrix and stats in workspace background
+  renderMatrixGrid();
+  updateStats();
 }
 
 function closeCompletionModal() {
   const modal = document.getElementById('completionModal');
-  if (modal) {
-    modal.classList.remove('open');
-  }
+  if (modal) modal.classList.remove('open');
 }
 
-function restartDrilling() {
+// Review Incorrect Questions Only
+function reviewWrongQuestionsOnly() {
   closeCompletionModal();
-  state.currentIndex = 0;
-  state.userAnswers = new Array(questionsData.length).fill(null);
-  state.isVerified = new Array(questionsData.length).fill(false);
-  state.isRagu = new Array(questionsData.length).fill(false);
-  state.solutionOpen = new Array(questionsData.length).fill(false);
-  state.timerSeconds = 20 * 60;
-  state.timerRunning = true;
+  state.isReviewMode = true;
+
+  // Find index of first incorrect answer
+  let firstWrongIndex = -1;
+  for (let i = 0; i < state.questions.length; i++) {
+    if (state.userAnswers[i] !== state.questions[i].correctIndex) {
+      firstWrongIndex = i;
+      break;
+    }
+  }
+
+  state.currentIndex = firstWrongIndex !== -1 ? firstWrongIndex : 0;
+  state.solutionOpen = new Array(state.questions.length).fill(true);
 
   renderCurrentQuestion(true);
   renderMatrixGrid();
   updateStats();
 }
 
+function restartCurrentDrillSession() {
+  closeCompletionModal();
+  if (state.sessionScope) {
+    startConfiguredDrillSession();
+  }
+}
+
+// ============================================================================
+// 11. FORMULA CHEAT-SHEET & MOBILE DRAWER
+// ============================================================================
 function openCheatSheetModal() {
   const modal = document.getElementById('cheatSheetModal');
   if (modal) {
@@ -949,9 +1278,7 @@ function openCheatSheetModal() {
 
 function closeCheatSheetModal() {
   const modal = document.getElementById('cheatSheetModal');
-  if (modal) {
-    modal.classList.remove('open');
-  }
+  if (modal) modal.classList.remove('open');
 }
 
 function openMobileDrawer() {
@@ -972,31 +1299,36 @@ function closeMobileDrawer() {
   }
 }
 
-// 11. GLOBAL EVENT LISTENERS & KEYBOARD SHORTCUTS
+// ============================================================================
+// 12. GLOBAL EVENT LISTENERS & KEYBOARD SHORTCUTS
+// ============================================================================
 function bindGlobalEvents() {
-  // Keyboard Shortcuts: A-E, Enter, Arrow keys, R
   window.addEventListener('keydown', (e) => {
-    // If modal is open and Esc pressed, close it
+    // Escape closes all open modals
     if (e.key === 'Escape') {
       closeCheatSheetModal();
       closeCompletionModal();
+      closeDrillSetupModal();
       closeMobileDrawer();
       return;
     }
 
-    // Ignore keyboard shortcuts if user is typing in an input
+    // Ignore hotkeys when typing in form inputs
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    // Only active during workspace drilling
+    if (state.currentView !== 'workspace') return;
 
     const key = e.key.toUpperCase();
     if (['A', 'B', 'C', 'D', 'E'].includes(key)) {
-      const idx = key.charCodeAt(0) - 65; // A->0, B->1, etc.
+      const idx = key.charCodeAt(0) - 65;
       handleOptionSelect(idx);
     } else if (['1', '2', '3', '4', '5'].includes(key)) {
-      const idx = parseInt(key) - 1;
+      const idx = parseInt(key, 10) - 1;
       handleOptionSelect(idx);
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      if (!state.isVerified[state.currentIndex]) {
+      if (state.sessionMode === 'latihan' && !state.isVerified[state.currentIndex]) {
         handleCheckAnswer();
       } else {
         toggleSolutionAccordion();
@@ -1013,20 +1345,19 @@ function bindGlobalEvents() {
     }
   });
 
-  // Close modals when clicking overlay background
-  const cheatSheetModal = document.getElementById('cheatSheetModal');
-  if (cheatSheetModal) {
-    cheatSheetModal.addEventListener('click', (e) => {
-      if (e.target === cheatSheetModal) closeCheatSheetModal();
-    });
-  }
-
-  const completionModal = document.getElementById('completionModal');
-  if (completionModal) {
-    completionModal.addEventListener('click', (e) => {
-      if (e.target === completionModal) closeCompletionModal();
-    });
-  }
+  // Modal overlay click to close
+  ['cheatSheetModal', 'completionModal', 'drillSetupModal'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', (e) => {
+        if (e.target === el) {
+          if (id === 'cheatSheetModal') closeCheatSheetModal();
+          else if (id === 'completionModal') closeCompletionModal();
+          else if (id === 'drillSetupModal') closeDrillSetupModal();
+        }
+      });
+    }
+  });
 
   const mobileDrawerOverlay = document.getElementById('mobileDrawerOverlay');
   if (mobileDrawerOverlay) {
