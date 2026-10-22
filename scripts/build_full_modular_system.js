@@ -1,0 +1,632 @@
+/**
+ * scripts/build_full_modular_system.js
+ * Generates the complete 28-subtopic modular bank soal architecture.
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// 1. Load existing questions from memory
+global.window = global;
+require('../data/syllabusData.js');
+require('../data/questions-mudah.js');
+require('../data/questions-sedang.js');
+require('../data/questions-hots.js');
+require('../data/bank-soal.js');
+const { supplementaryQuestions } = require('./supplementary_questions.js');
+const { drillingQuestions } = require('./add_drilling_questions.js');
+const { drillingQuestionsBatch2 } = require('./add_drilling_questions_batch2.js');
+
+const rawMudah = (window.QUESTIONS_MUDAH || []).slice();
+const rawSedang = (window.QUESTIONS_SEDANG || []).slice();
+const rawHots = (window.QUESTIONS_HOTS || []).slice();
+
+console.log(`Starting modular build. Input pool: Mudah=${rawMudah.length}, Sedang=${rawSedang.length}, HOTS=${rawHots.length}`);
+
+// Map subTopicId to directory & file
+const subTopicConfig = {
+  // FISIKA
+  'fis-kin-1': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-kin',
+    chapterName: 'Kinematika',
+    subTopicId: 'fis-kin-1',
+    title: 'Pengukuran',
+    indicators: 'Prinsip kerja dan pembacaan jangka sorong; mikrometer sekrup; neraca tiga lengan; kaidah pelaporan dan perhitungan angka penting.',
+    relPath: 'fisika/01-kinematika/01-pengukuran.js'
+  },
+  'fis-kin-2': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-kin',
+    chapterName: 'Kinematika',
+    subTopicId: 'fis-kin-2',
+    title: 'Gerak Lurus',
+    indicators: 'Konsep jarak dan perpindahan (skalar & vektor); kelajuan dan kecepatan; karakteristik dan grafik GLB; karakteristik, rumus, dan grafik GLBB.',
+    relPath: 'fisika/01-kinematika/02-gerak-lurus.js'
+  },
+  'fis-kin-3': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-kin',
+    chapterName: 'Kinematika',
+    subTopicId: 'fis-kin-3',
+    title: 'Gerak Lengkung',
+    indicators: 'Komponen kecepatan dan posisi gerak parabola pada bidang horizontal; titik tertinggi dan jarak tempuh maksimum gerak parabola; besaran sudut, kecepatan linier, dan percepatan sentripetal pada GMB.',
+    relPath: 'fisika/01-kinematika/03-gerak-lengkung.js'
+  },
+  'fis-din-1': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-din',
+    chapterName: 'Dinamika',
+    subTopicId: 'fis-din-1',
+    title: 'Hubungan Gaya dan Gerak',
+    indicators: 'Hukum I Newton (kelembaman); Hukum II Newton; Hukum III Newton; penguraian diagram gaya (berat, normal, gesek statis/kinetis, tegangan tali).',
+    relPath: 'fisika/02-dinamika/01-gaya-dan-gerak.js'
+  },
+  'fis-din-2': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-din',
+    chapterName: 'Dinamika',
+    subTopicId: 'fis-din-2',
+    title: 'Momentum dan Impuls',
+    indicators: 'Konsep dan besaran momentum linier; impuls dan teorema impuls-momentum; Hukum Kekekalan Momentum pada tumbukan.',
+    relPath: 'fisika/02-dinamika/02-momentum-dan-impuls.js'
+  },
+  'fis-din-3': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-din',
+    chapterName: 'Dinamika',
+    subTopicId: 'fis-din-3',
+    title: 'Dinamika Rotasi',
+    indicators: 'Konsep dan perhitungan momen gaya (torsi); momen inersia berbagai benda tegar; Hukum Newton pada gerak rotasi.',
+    relPath: 'fisika/02-dinamika/03-dinamika-rotasi.js'
+  },
+  'fis-flu-1': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-flu',
+    chapterName: 'Fluida',
+    subTopicId: 'fis-flu-1',
+    title: 'Fluida Statis',
+    indicators: 'Tekanan hidrostatis dan tekanan mutlak; Hukum Pascal pada sistem hidrolik; Hukum Archimedes dan kondisi terapung, melayang, tenggelam.',
+    relPath: 'fisika/03-fluida/01-fluida-statis.js'
+  },
+  'fis-flu-2': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-flu',
+    chapterName: 'Fluida',
+    subTopicId: 'fis-flu-2',
+    title: 'Fluida Dinamis',
+    indicators: 'Persamaan kontinuitas dan debit aliran; penerapan Persamaan Bernoulli dalam kehidupan dan teknologi.',
+    relPath: 'fisika/03-fluida/02-fluida-dinamis.js'
+  },
+  'fis-gel-1': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-gel',
+    chapterName: 'Gelombang',
+    subTopicId: 'fis-gel-1',
+    title: 'Gelombang Bunyi',
+    indicators: 'Karakteristik rambatan gelombang mekanik bunyi; sumber bunyi (dawai dan pipa organa); intensitas dan taraf intensitas bunyi.',
+    relPath: 'fisika/04-gelombang/01-gelombang-bunyi.js'
+  },
+  'fis-gel-2': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-gel',
+    chapterName: 'Gelombang',
+    subTopicId: 'fis-gel-2',
+    title: 'Gelombang Cahaya',
+    indicators: 'Spektrum gelombang elektromagnetik; pemantulan dan pembiasan cahaya; cermin datar, cekung, cembung; lensa cekung dan cembung; prinsip kerja alat optik.',
+    relPath: 'fisika/04-gelombang/02-gelombang-cahaya.js'
+  },
+  'fis-ter-1': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-ter',
+    chapterName: 'Kalor dan Termodinamika',
+    subTopicId: 'fis-ter-1',
+    title: 'Kalor dan Perpindahannya',
+    indicators: 'Pengaruh kalor terhadap suhu; perubahan wujud (kalor laten); pemuaian panjang, luas, volume; konduksi, konveksi, radiasi; Asas Black.',
+    relPath: 'fisika/05-kalor-termodinamika/01-kalor-dan-perpindahannya.js'
+  },
+  'fis-ter-2': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-ter',
+    chapterName: 'Kalor dan Termodinamika',
+    subTopicId: 'fis-ter-2',
+    title: 'Pemanasan Global',
+    indicators: 'Proses fisik efek rumah kaca; faktor-faktor penyebab pemanasan global; solusi penanggulangan pemanasan global.',
+    relPath: 'fisika/05-kalor-termodinamika/02-pemanasan-global.js'
+  },
+  'fis-ter-3': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-ter',
+    chapterName: 'Kalor dan Termodinamika',
+    subTopicId: 'fis-ter-3',
+    title: 'Gas Ideal',
+    indicators: 'Hukum Boyle; Hukum Boyle-Gay Lussac; persamaan umum gas ideal PV = nRT; kelajuan efektif molekul.',
+    relPath: 'fisika/05-kalor-termodinamika/03-gas-ideal.js'
+  },
+  'fis-ter-4': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-ter',
+    chapterName: 'Kalor dan Termodinamika',
+    subTopicId: 'fis-ter-4',
+    title: 'Termodinamika',
+    indicators: 'Empat proses termodinamika (isobarik, isokhorik, isotermal, adiabatik); usaha luar dan perubahan energi dalam; Hukum I & II Termodinamika; siklus Carnot.',
+    relPath: 'fisika/05-kalor-termodinamika/04-termodinamika.js'
+  },
+  'fis-lis-1': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-lis',
+    chapterName: 'Kelistrikan',
+    subTopicId: 'fis-lis-1',
+    title: 'Listrik Statis',
+    indicators: 'Muatan listrik dan interaksi elektrostatik; Hukum Coulomb; kuat medan listrik; potensial dan energi potensial listrik.',
+    relPath: 'fisika/06-kelistrikan/01-listrik-statis.js'
+  },
+  'fis-lis-2': {
+    pillar: 'fisika',
+    pillarName: 'Fisika (TKA)',
+    chapterId: 'fis-lis',
+    chapterName: 'Kelistrikan',
+    subTopicId: 'fis-lis-2',
+    title: 'Rangkaian Arus Searah (DC)',
+    indicators: 'Hukum Ohm; Hukum I Kirchhoff; Hukum II Kirchhoff loop tertutup; hambatan pengganti campuran; energi dan daya listrik.',
+    relPath: 'fisika/06-kelistrikan/02-rangkaian-arus-searah.js'
+  },
+
+  // MATEMATIKA LANJUT
+  'mtk-alj-1': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-alj',
+    chapterName: 'Aljabar',
+    subTopicId: 'mtk-alj-1',
+    title: 'Matriks',
+    indicators: 'Penjumlahan dan pengurangan matriks; perkalian skalar & antarmatriks; determinan 2x2 & 3x3; invers 2x2 & 3x3; SPL dan program linear dengan matriks.',
+    relPath: 'matematika-lanjut/01-aljabar/01-matriks.js'
+  },
+  'mtk-alj-2': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-alj',
+    chapterName: 'Aljabar',
+    subTopicId: 'mtk-alj-2',
+    title: 'Polinomial',
+    indicators: 'Operasi polinomial orde <= 4; pembagian bersusun & skema Horner; pemfaktoran suku banyak hingga faktor linear; Teorema Sisa; Teorema Faktor.',
+    relPath: 'matematika-lanjut/01-aljabar/02-polinomial.js'
+  },
+  'mtk-alj-3': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-alj',
+    chapterName: 'Aljabar',
+    subTopicId: 'mtk-alj-3',
+    title: 'Fungsi',
+    indicators: 'Domain, kodomain, range, grafik fungsi polinom, rasional, bentuk akar, eksponen, logaritma, nilai mutlak, dan trigonometri.',
+    relPath: 'matematika-lanjut/01-aljabar/03-fungsi.js'
+  },
+  'mtk-geo-1': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-geo',
+    chapterName: 'Geometri dan Pengukuran',
+    subTopicId: 'mtk-geo-1',
+    title: 'Vektor',
+    indicators: 'Komponen vektor R2 & R3; besar/panjang vektor; penjumlahan & pengurangan; perkalian skalar dua vektor (dot product).',
+    relPath: 'matematika-lanjut/02-geometri-pengukuran/01-vektor.js'
+  },
+  'mtk-geo-2': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-geo',
+    chapterName: 'Geometri dan Pengukuran',
+    subTopicId: 'mtk-geo-2',
+    title: 'Lingkaran',
+    indicators: 'Persamaan lingkaran (0,0) & (a,b); bentuk umum; garis singgung titik pada lingkaran, gradien tertentu, titik di luar; keliling, luas, busur, juring.',
+    relPath: 'matematika-lanjut/02-geometri-pengukuran/02-lingkaran.js'
+  },
+  'mtk-geo-3': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-geo',
+    chapterName: 'Geometri dan Pengukuran',
+    subTopicId: 'mtk-geo-3',
+    title: 'Transformasi Geometri',
+    indicators: 'Translasi, refleksi, rotasi, dilatasi pada titik, garis, bangun datar; komposisi transformasi; representasi perkalian matriks.',
+    relPath: 'matematika-lanjut/02-geometri-pengukuran/03-transformasi-geometri.js'
+  },
+  'mtk-tri-1': {
+    pillar: 'matematika',
+    pillarName: 'Matematika Lanjut (TKA)',
+    chapterId: 'mtk-tri',
+    chapterName: 'Trigonometri',
+    subTopicId: 'mtk-tri-1',
+    title: 'Limit Fungsi',
+    indicators: 'Limit fungsi aljabar (substitusi, pemfaktoran, rasionalisasi akar tanpa L\'Hopital); limit fungsi trigonometri (teorema dasar & manipulasi identitas tanpa L\'Hopital).',
+    relPath: 'matematika-lanjut/03-trigonometri/01-limit-fungsi.js'
+  },
+
+  // BAB FUNDAMENTAL (PRASYARAT)
+  'mtk-fun-1': {
+    pillar: 'matematika',
+    pillarName: 'Bab Fundamental (Materi Prasyarat)',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-1',
+    title: 'Trigonometri Analitik Dasar',
+    indicators: 'Definisi sin, cos, tan segitiga siku-siku; sudut istimewa kuadran I; relasi sudut kuadran II, III, IV; identitas Pythagoras; sudut rangkap; jumlah & selisih sudut.',
+    relPath: 'fundamental/01-trigonometri-analitik-dasar.js'
+  },
+  'mtk-fun-2': {
+    pillar: 'matematika',
+    pillarName: 'Bab Fundamental (Materi Prasyarat)',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-2',
+    title: 'Aljabar Elementer',
+    indicators: 'Bentuk aljabar, suku sejenis, pemfaktoran kuadrat; penyederhanaan pecahan aljabar; metode substitusi & eliminasi SPLDV dan SPLTV.',
+    relPath: 'fundamental/02-aljabar-elementer.js'
+  },
+  'mtk-fun-3': {
+    pillar: 'matematika',
+    pillarName: 'Bab Fundamental (Materi Prasyarat)',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-3',
+    title: 'Geometri Analitik Bidang',
+    indicators: 'Titik koordinat Kartesius & jarak antartitik; persamaan garis lurus; gradien sejajar & tegak lurus; jarak titik ke garis lurus.',
+    relPath: 'fundamental/03-geometri-analitik-bidang.js'
+  },
+  'mtk-fun-4': {
+    pillar: 'matematika',
+    pillarName: 'Bab Fundamental (Materi Prasyarat)',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-4',
+    title: 'Pertidaksamaan dan Nilai Mutlak',
+    indicators: 'Syarat pecahan terdefinisi; syarat bentuk akar terdefinisi; sifat dasar persamaan & pertidaksamaan nilai mutlak.',
+    relPath: 'fundamental/04-pertidaksamaan-dan-nilai-mutlak.js'
+  },
+  'mtk-fun-5': {
+    pillar: 'matematika',
+    pillarName: 'Bab Fundamental (Materi Prasyarat)',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-5',
+    title: 'Eksponen dan Logaritma',
+    indicators: 'Aturan pangkat bulat & rasional; perpangkatan basis asli; sifat logaritma (kali, bagi, pangkat numerus); sifat perubahan basis logaritma.',
+    relPath: 'fundamental/05-eksponen-dan-logaritma.js'
+  }
+};
+
+// Subtopic bucket collections
+const subtopicBuckets = {};
+Object.keys(subTopicConfig).forEach(id => {
+  subtopicBuckets[id] = [];
+});
+
+const seenIds = new Set();
+function addQuestion(q) {
+  if (!q.id || seenIds.has(q.id)) return;
+  seenIds.add(q.id);
+
+  // If question is a GMB question from bank-soal (Gerak Melingkar), reassign to fis-kin-3
+  if (q.category && q.category.includes('Gerak Melingkar') && q.chapterId === 'fis-din') {
+    q.chapterId = 'fis-kin';
+    q.subTopicId = 'fis-kin-3';
+  }
+
+  // Push to proper bucket
+  if (subtopicBuckets[q.subTopicId]) {
+    subtopicBuckets[q.subTopicId].push(q);
+  } else {
+    console.warn('Unknown subtopic for question:', q.id, q.subTopicId);
+  }
+}
+
+// 1. Ingest existing questions
+[...rawMudah, ...rawSedang, ...rawHots].forEach(q => addQuestion(q));
+
+// 2. Ingest supplementary questions
+supplementaryQuestions.forEach(q => addQuestion(q));
+
+// 3. Ingest prioritized drilling questions (Batch 1 & Batch 2)
+drillingQuestions.forEach(q => addQuestion(q));
+drillingQuestionsBatch2.forEach(q => addQuestion(q));
+
+console.log(`Ingested all questions. Grand total unique questions: ${seenIds.size}`);
+
+// Write individual subtopic files
+const baseDir = path.resolve(__dirname, '../data/bank-soal');
+
+Object.keys(subTopicConfig).forEach(subTopicId => {
+  const conf = subTopicConfig[subTopicId];
+  const questions = subtopicBuckets[subTopicId] || [];
+  const fullPath = path.join(baseDir, conf.relPath);
+  const targetDir = path.dirname(fullPath);
+
+  if (!fs.existsSync(targetDir)) {
+    fs.mkdirSync(targetDir, { recursive: true });
+  }
+
+  const countMudah = questions.filter(q => q.difficulty === 'mudah').length;
+  const countSedang = questions.filter(q => q.difficulty === 'sedang').length;
+  const countHots = questions.filter(q => q.difficulty === 'hots').length;
+
+  const fileContent = `/**
+ * Bank Soal TKA: ${conf.pillarName} - ${conf.chapterName}
+ * Sub-topik: ${conf.title} (${conf.subTopicId})
+ * Indikator: ${conf.indicators}
+ * 
+ * Total Butir Soal: ${questions.length} Soal (Mudah: ${countMudah}, Sedang: ${countSedang}, HOTS: ${countHots})
+ * Arsitektur: Modul Mandiri (Browser & Node.js Compatible)
+ */
+
+(function() {
+  const subTopicId = "${conf.subTopicId}";
+  const questions = ${JSON.stringify(questions, null, 2)};
+
+  // Self-register to browser global namespace
+  if (typeof window !== "undefined") {
+    window.TKA_BANK_SOAL = window.TKA_BANK_SOAL || {};
+    window.TKA_BANK_SOAL[subTopicId] = questions;
+  }
+
+  // CommonJS Node.js export
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = questions;
+  }
+})();
+`;
+
+  fs.writeFileSync(fullPath, fileContent, 'utf8');
+  console.log(`Written ${conf.relPath} (${questions.length} questions: M:${countMudah}, S:${countSedang}, H:${countHots})`);
+});
+
+// 3. Generate index.js (Node.js aggregator)
+const indexFileContent = `/**
+ * Master Index Aggregator for TKA Modular Bank Soal
+ * Provides unified access to all 28 subtopics across 3 pillars.
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const subtopics = {
+${Object.keys(subTopicConfig).map(id => `  "${id}": require('./${subTopicConfig[id].relPath}')`).join(',\n')}
+};
+
+// Flattened pools
+const allQuestions = [];
+const questionsMudah = [];
+const questionsSedang = [];
+const questionsHots = [];
+
+Object.keys(subtopics).forEach(id => {
+  const list = subtopics[id];
+  list.forEach(q => {
+    allQuestions.push(q);
+    if (q.difficulty === 'mudah') questionsMudah.push(q);
+    else if (q.difficulty === 'sedang') questionsSedang.push(q);
+    else if (q.difficulty === 'hots') questionsHots.push(q);
+  });
+});
+
+module.exports = {
+  subtopics,
+  allQuestions,
+  questionsMudah,
+  questionsSedang,
+  questionsHots
+};
+`;
+
+fs.writeFileSync(path.join(baseDir, 'index.js'), indexFileContent, 'utf8');
+console.log('Written data/bank-soal/index.js');
+
+// 4. Generate bank-soal-bundle.js (Browser-ready combined file)
+const allCompiledQuestions = [];
+const bundleMudah = [];
+const bundleSedang = [];
+const bundleHots = [];
+
+Object.keys(subTopicConfig).forEach(id => {
+  const list = subtopicBuckets[id] || [];
+  list.forEach(q => {
+    allCompiledQuestions.push(q);
+    if (q.difficulty === 'mudah') bundleMudah.push(q);
+    else if (q.difficulty === 'sedang') bundleSedang.push(q);
+    else if (q.difficulty === 'hots') bundleHots.push(q);
+  });
+});
+
+const bundleContent = `/**
+ * TKA Platform Question Bank: Unified Modular Bundle
+ * Auto-generated from data/bank-soal/ modular subtopic files.
+ * Total Questions: ${allCompiledQuestions.length} (Mudah: ${bundleMudah.length}, Sedang: ${bundleSedang.length}, HOTS: ${bundleHots.length})
+ */
+
+(function() {
+  const ALL_QUESTIONS = ${JSON.stringify(allCompiledQuestions, null, 2)};
+  const QUESTIONS_MUDAH = ${JSON.stringify(bundleMudah, null, 2)};
+  const QUESTIONS_SEDANG = ${JSON.stringify(bundleSedang, null, 2)};
+  const QUESTIONS_HOTS = ${JSON.stringify(bundleHots, null, 2)};
+
+  if (typeof window !== "undefined") {
+    window.BANK_SOAL_ALL = ALL_QUESTIONS;
+    window.QUESTIONS_MUDAH = QUESTIONS_MUDAH;
+    window.QUESTIONS_SEDANG = QUESTIONS_SEDANG;
+    window.QUESTIONS_HOTS = QUESTIONS_HOTS;
+
+    // Dictionary by subTopicId
+    window.TKA_BANK_SOAL = {};
+    ALL_QUESTIONS.forEach(q => {
+      if (!window.TKA_BANK_SOAL[q.subTopicId]) {
+        window.TKA_BANK_SOAL[q.subTopicId] = [];
+      }
+      window.TKA_BANK_SOAL[q.subTopicId].push(q);
+    });
+
+    console.info(\`[TKA Bank Soal] Modular bundle loaded successfully: \${ALL_QUESTIONS.length} questions across 28 subtopics.\`);
+  }
+
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = {
+      ALL_QUESTIONS,
+      QUESTIONS_MUDAH,
+      QUESTIONS_SEDANG,
+      QUESTIONS_HOTS
+    };
+  }
+})();
+`;
+
+fs.writeFileSync(path.join(baseDir, 'bank-soal-bundle.js'), bundleContent, 'utf8');
+console.log('Written data/bank-soal/bank-soal-bundle.js');
+
+// 5. Update data/questions-mudah.js, data/questions-sedang.js, data/questions-hots.js for backwards compatibility
+fs.writeFileSync(
+  path.resolve(__dirname, '../data/questions-mudah.js'),
+  `/** Auto-generated backward compatibility layer */\nwindow.QUESTIONS_MUDAH = ${JSON.stringify(bundleMudah, null, 2)};\nif (typeof module !== 'undefined') module.exports = window.QUESTIONS_MUDAH;\n`,
+  'utf8'
+);
+
+fs.writeFileSync(
+  path.resolve(__dirname, '../data/questions-sedang.js'),
+  `/** Auto-generated backward compatibility layer */\nwindow.QUESTIONS_SEDANG = ${JSON.stringify(bundleSedang, null, 2)};\nif (typeof module !== 'undefined') module.exports = window.QUESTIONS_SEDANG;\n`,
+  'utf8'
+);
+
+fs.writeFileSync(
+  path.resolve(__dirname, '../data/questions-hots.js'),
+  `/** Auto-generated backward compatibility layer */\nwindow.QUESTIONS_HOTS = ${JSON.stringify(bundleHots, null, 2)};\nif (typeof module !== 'undefined') module.exports = window.QUESTIONS_HOTS;\n`,
+  'utf8'
+);
+
+console.log('Synchronized questions-mudah.js, questions-sedang.js, questions-hots.js');
+
+// 6. Generate Developer README in data/bank-soal/
+const readmeContent = `# Bank Soal TKA: Fisika & Matematika Lanjut (Modular Architecture)
+
+Direktori ini memuat seluruh bank soal yang telah terstruktur secara modular dan komprehensif berdasarkan silabus resmi TKA Saintek (Fisika, Matematika Lanjut, dan Bab Fundamental Prasyarat).
+
+Setiap sub-topik materi memiliki file tersendiri sehingga memudahkan pemeliharaan, penambahan soal baru, maupun penelaahan kurikulum tanpa perlu mengedit file monolitik yang besar.
+
+---
+
+## 📁 Struktur Direktori
+
+\`\`\`
+data/bank-soal/
+├── fisika/
+│   ├── 01-kinematika/
+│   │   ├── 01-pengukuran.js            (fis-kin-1)
+│   │   ├── 02-gerak-lurus.js           (fis-kin-2)
+│   │   └── 03-gerak-lengkung.js        (fis-kin-3)
+│   ├── 02-dinamika/
+│   │   ├── 01-gaya-dan-gerak.js        (fis-din-1)
+│   │   ├── 02-momentum-dan-impuls.js   (fis-din-2)
+│   │   └── 03-dinamika-rotasi.js       (fis-din-3)
+│   ├── 03-fluida/
+│   │   ├── 01-fluida-statis.js         (fis-flu-1)
+│   │   └── 02-fluida-dinamis.js        (fis-flu-2)
+│   ├── 04-gelombang/
+│   │   ├── 01-gelombang-bunyi.js       (fis-gel-1)
+│   │   └── 02-gelombang-cahaya.js      (fis-gel-2)
+│   ├── 05-kalor-termodinamika/
+│   │   ├── 01-kalor-dan-perpindahannya.js (fis-ter-1)
+│   │   ├── 02-pemanasan-global.js         (fis-ter-2)
+│   │   ├── 03-gas-ideal.js                (fis-ter-3)
+│   │   └── 04-termodinamika.js            (fis-ter-4)
+│   └── 06-kelistrikan/
+│       ├── 01-listrik-statis.js        (fis-lis-1)
+│       └── 02-rangkaian-arus-searah.js (fis-lis-2)
+├── matematika-lanjut/
+│   ├── 01-aljabar/
+│   │   ├── 01-matriks.js               (mtk-alj-1)
+│   │   ├── 02-polinomial.js            (mtk-alj-2)
+│   │   └── 03-fungsi.js                (mtk-alj-3)
+│   ├── 02-geometri-pengukuran/
+│   │   ├── 01-vektor.js                (mtk-geo-1)
+│   │   ├── 02-lingkaran.js             (mtk-geo-2)
+│   │   └── 03-transformasi-geometri.js (mtk-geo-3)
+│   └── 03-trigonometri/
+│       └── 01-limit-fungsi.js          (mtk-tri-1)
+├── fundamental/
+│   ├── 01-trigonometri-analitik-dasar.js (mtk-fun-1)
+│   ├── 02-aljabar-elementer.js           (mtk-fun-2)
+│   ├── 03-geometri-analitik-bidang.js    (mtk-fun-3)
+│   ├── 04-pertidaksamaan-dan-nilai-mutlak.js (mtk-fun-4)
+│   └── 05-eksponen-dan-logaritma.js      (mtk-fun-5)
+├── bank-soal-bundle.js                 (Browser bundle terkompilasi)
+├── index.js                            (Node.js master aggregator)
+└── README.md                           (Dokumentasi panduan ini)
+\`\`\`
+
+---
+
+## 🛠️ Format Standar Butir Soal
+
+Setiap soal ditulis dalam format objek JSON/JS berikut:
+
+\`\`\`javascript
+{
+  id: "kode-unik-soal",              // Contoh: "fis-kin-01", "mudah-fis-01"
+  subject: "FISIKA",                 // "FISIKA" atau "MATEMATIKA"
+  pillarId: "fisika",                // "fisika" atau "matematika"
+  chapterId: "fis-kin",              // Sesuai id pada syllabusData.js
+  subTopicId: "fis-kin-1",           // Sesuai id sub-topik pada syllabusData.js
+  category: "Nama Indikator Topik",  // Contoh: "Pembacaan Jangka Sorong"
+  difficulty: "mudah",               // "mudah", "sedang", atau "hots"
+  difficultyLabel: "Mudah",          // "Mudah", "Sedang", atau "HOTS"
+  statement: "Teks soal dengan KaTeX Math ($...$)",
+  hasDiagram: false,                 // true jika menyertakan diagram SVG
+  diagramSvg: "",                    // String kode SVG (jika ada)
+  diagramCaption: "",
+  options: [                         // Tepat 5 pilihan (A, B, C, D, E)
+    "Opsi A",
+    "Opsi B",
+    "Opsi C",
+    "Opsi D",
+    "Opsi E"
+  ],
+  correctIndex: 0,                   // 0 untuk A, 1 untuk B, 2 untuk C, 3 untuk D, 4 untuk E
+  solution: {
+    concept: "Penjelasan konsep / teori kunci KaTeX",
+    steps: "Langkah-langkah sistematis penyelesaian",
+    pitfalls: "Jebakan / kesalahan umum yang sering dialami siswa"
+  }
+}
+\`\`\`
+
+---
+
+## 🚀 Cara Menambahkan Soal Baru
+
+Untuk menambahkan soal baru ke dalam bank soal:
+1. Buka file sub-topik yang sesuai di dalam folder \`data/bank-soal/\` (misalnya untuk menambahkan soal Mikrometer Sekrup, buka \`data/bank-soal/fisika/01-kinematika/01-pengukuran.js\`).
+2. Tambahkan objek soal baru ke dalam array \`questions\`.
+3. Jalankan perintah kompilasi dan validasi:
+   \`\`\`bash
+   node scripts/build_full_modular_system.js
+   \`\`\`
+   Script akan secara otomatis memvalidasi struktur data dan meregenerasi bundle browser.
+`;
+
+fs.writeFileSync(path.join(baseDir, 'README.md'), readmeContent, 'utf8');
+console.log('Written data/bank-soal/README.md');
+
+console.log('\n--- FULL MODULAR BUILD COMPLETED SUCCESSFULLY ---');

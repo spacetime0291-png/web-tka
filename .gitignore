@@ -17,3 +17,4 @@ get_metrics.js
 metrics_page.html
 capture_cdp_mobile.js
 capture_cheatsheet.js
+node_modules/

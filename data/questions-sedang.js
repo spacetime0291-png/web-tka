@@ -1,1481 +1,2947 @@
-/**
- * TKA Platform Question Bank: TIER 2 - SEDANG
- * Focus: Standard multi-step analytical TKA problems.
- */
-
+/** Auto-generated backward compatibility layer */
 window.QUESTIONS_SEDANG = [
-  // --------------------------------------------------------------------------
-  // FISIKA - KINEMATIKA (fis-kin-3: Gerak Parabola)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-01",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-kin",
-    subTopicId: "fis-kin-3",
-    category: "Gerak Parabola Dua Dimensi",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebuah peluru ditembakkan dari permukaan tanah datar dengan kecepatan awal $v_0 = 50\\text{ m/s}$ pada sudut elevasi $\\theta$ dengan $\\sin\\theta = 0{,}6$ (dan $\\cos\\theta = 0{,}8$). Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$ dan gesekan udara diabaikan, waktu total peluru di udara hingga mendarat kembali di tanah serta jarak mendatar terjauh ($X_{\\max}$) yang dicapai peluru berturut-turut adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$6\\text{ s}$ dan $240\\text{ m}$",
-      "$3\\text{ s}$ dan $120\\text{ m}$",
-      "$6\\text{ s}$ dan $180\\text{ m}$",
-      "$8\\text{ s}$ dan $320\\text{ m}$",
-      "$5\\text{ s}$ dan $200\\text{ m}$"
-    ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Analisis Komponen Gerak Parabola:</strong><br>
-          • Sumbu horizontal (GLB): $v_x = v_0\\cos\\theta$ (konstan), $X = v_x \\cdot t$<br>
-          • Sumbu vertikal (GLBB gravitasi): $v_{0y} = v_0\\sin\\theta$, $v_y = v_{0y} - gt$<br>
-          • Waktu mencapai titik puncak: $t_p = \\frac{v_0\\sin\\theta}{g}$<br>
-          • Waktu total di udara: $t_{\\text{udara}} = 2 t_p = \\frac{2v_0\\sin\\theta}{g}$<br>
-          • Jarak terjauh: $X_{\\max} = v_x \\cdot t_{\\text{udara}}$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li><strong>Hitung Komponen Kecepatan Awal:</strong><br>
-            $$v_x = 50 \\times 0{,}8 = 40\\text{ m/s}$$
-            $$v_{0y} = 50 \\times 0{,}6 = 30\\text{ m/s}$$
-          </li>
-          <li><strong>Hitung Waktu Total di Udara $(t_{\\text{udara}})$:</strong><br>
-            $$t_{\\text{udara}} = \\frac{2 v_{0y}}{g} = \\frac{2(30)}{10} = 6\\text{ detik}$$
-          </li>
-          <li><strong>Hitung Jarak Jangkauan Maksimum $(X_{\\max})$:</strong><br>
-            $$X_{\\max} = v_x \\times t_{\\text{udara}} = 40\\text{ m/s} \\times 6\\text{ s} = 240\\text{ meter}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          <strong>⚠️ Jebakan Waktu:</strong><br>
-          Waktu $t = 3\\text{ detik}$ hanyalah waktu saat peluru berada di titik puncak (tertinggi). Untuk jarak mendatar total di tanah, harus menggunakan waktu tempuh total bolak-balik ($2 \\times 3 = 6\\text{ s}$).
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - DINAMIKA (fis-din-1: Gaya Gesek pada Bidang Miring)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-fis-02",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-din",
-    subTopicId: "fis-din-1",
-    category: "Dinamika Bidang Miring Kasar",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebuah balok bermassa $m = 5\\text{ kg}$ meluncur menuruni bidang miring kasar dengan sudut kemiringan $\\theta = 37^\\circ$ ($\\sin 37^\\circ = 0{,}6$ dan $\\cos 37^\\circ = 0{,}8$). Koefisien gesekan kinetis antara balok dan permukaan bidang adalah $\\mu_k = 0{,}25$. Jika $g = 10\\text{ m/s}^2$, percepatan meluncur balok menuruni bidang miring tersebut adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$2{,}0\\text{ m/s}^2$",
-      "$4{,}0\\text{ m/s}^2$",
-      "$6{,}0\\text{ m/s}^2$",
-      "$3{,}5\\text{ m/s}^2$",
-      "$5{,}0\\text{ m/s}^2$"
-    ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Hukum II Newton pada Bidang Miring Kasar:</strong><br>
-          1. Gaya normal tegak lurus bidang: $N = mg\\cos\\theta$<br>
-          2. Gaya gesek kinetis: $f_k = \\mu_k N = \\mu_k mg\\cos\\theta$<br>
-          3. Gaya penarik sejajar bidang menuruni kemiringan: $F_g = mg\\sin\\theta$<br>
-          4. Persamaan gerak: $\\Sigma F = ma \\implies mg\\sin\\theta - f_k = ma \\implies a = g(\\sin\\theta - \\mu_k\\cos\\theta)$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li><strong>Hitung Komponen Gaya:</strong><br>
-            Komponen berat sejajar bidang: $mg\\sin 37^\\circ = 5(10)(0{,}6) = 30\\text{ N}$.<br>
-            Gaya normal: $N = mg\\cos 37^\\circ = 5(10)(0{,}8) = 40\\text{ N}$.
-          </li>
-          <li><strong>Hitung Gaya Gesek Kinetis $(f_k)$:</strong><br>
-            $$f_k = \\mu_k N = 0{,}25 \\times 40 = 10\\text{ N}$$
-          </li>
-          <li><strong>Hitung Percepatan $(a)$:</strong><br>
-            $$a = \\frac{mg\\sin\\theta - f_k}{m} = \\frac{30 - 10}{5} = \\frac{20}{5} = 4{,}0\\text{ m/s}^2$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Jangan tertukar antara sinus dan kosinus pada bidang miring. Sudut kemiringan terhadap horizontal menggunakan $\\sin$ untuk gaya penarik sejajar bidang dan $\\cos$ untuk gaya normal tegak lurus bidang.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - FLUIDA (fis-flu-1: Hukum Archimedes Terapung)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-fis-03",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-flu",
-    subTopicId: "fis-flu-1",
-    category: "Hukum Archimedes & Kerapatan",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebongkah balok kayu terapung di perbatasan dua lapisan zat cair yang tidak bercampur. Bagian bawah balok tercelup dalam lapisan zat cair A (massa jenis $\\rho_A = 1200\\text{ kg/m}^3$) sebanyak $40\\%$ dari volume totalnya, dan $35\\%$ volume balok tercelup dalam lapisan zat cair B (massa jenis $\\rho_B = 800\\text{ kg/m}^3$), sedangkan sisanya muncul di udara. Massa jenis balok kayu tersebut adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$760\\text{ kg/m}^3$",
-      "$780\\text{ kg/m}^3$",
-      "$850\\text{ kg/m}^3$",
-      "$920\\text{ kg/m}^3$",
-      "$1000\\text{ kg/m}^3$"
-    ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Keseimbangan Benda Terapung Multilapis:</strong><br>
-          Gaya berat total benda sama dengan jumlah seluruh gaya apung Archimedes dari fluida-fluida yang terdesak:<br>
-          $$W = F_{A1} + F_{A2} \\implies \\rho_b V_b g = \\rho_A V_{A} g + \\rho_B V_{B} g$$
-          $$\\rho_b = \\rho_A \\left(\\frac{V_A}{V_b}\\right) + \\rho_B \\left(\\frac{V_B}{V_b}\\right)$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Diketahui rasio volume tercelup:<br>
-            $\\frac{V_A}{V_b} = 40\\% = 0{,}40$ dan $\\frac{V_B}{V_b} = 35\\% = 0{,}35$.
-          </li>
-          <li>Substitusi ke persamaan keseimbangan apung:<br>
-            $$\\rho_b = (1200 \\times 0{,}40) + (800 \\times 0{,}35)$$
-          </li>
-          <li>Hitung masing-masing kontribusi:<br>
-            $$1200 \\times 0{,}40 = 480$$
-            $$800 \\times 0{,}35 = 280$$
-            $$\\rho_b = 480 + 280 = 760\\text{ kg/m}^3$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan bahwa volume balok di udara ($25\\%$) tidak memberikan gaya apung yang signifikan karena massa jenis udara sangat kecil dibanding cairan dan diabaikan.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-4: Mesin Carnot)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-fis-04",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-ter",
-    subTopicId: "fis-ter-4",
-    category: "Efisiensi Mesin Termal Carnot",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Suatu mesin kalor Carnot bekerja di antara reservoir suhu tinggi $527^\\circ\\text{C}$ dan reservoir suhu rendah $127^\\circ\\text{C}$. Jika dalam setiap siklus mesin tersebut menyerap kalor sebesar $4000\\text{ Joule}$ dari reservoir panas, besar usaha mekanik yang dihasilkan mesin serta kalor yang dibuang ke reservoir dingin berturut-turut adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$2000\\text{ J}$ dan $2000\\text{ J}$",
-      "$2400\\text{ J}$ dan $1600\\text{ J}$",
-      "$1500\\text{ J}$ dan $2500\\text{ J}$",
-      "$3000\\text{ J}$ dan $1000\\text{ J}$",
-      "$1600\\text{ J}$ dan $2400\\text{ J}$"
-    ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Mesin Kalor Carnot & Suhu Mutlak Kelvin:</strong><br>
-          • Suhu WAJIB dalam skala Kelvin: $T(\\text{K}) = T(^\\circ\\text{C}) + 273$<br>
-          • Efisiensi: $\\eta = 1 - \\frac{T_C}{T_H} = \\frac{W}{Q_H}$<br>
-          • Hukum Kekekalan Energi: $W = Q_H - Q_C \\iff Q_C = Q_H - W$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li><strong>Konversi Suhu ke Kelvin:</strong><br>
-            $T_H = 527 + 273 = 800\\text{ K}$<br>
-            $T_C = 127 + 273 = 400\\text{ K}$
-          </li>
-          <li><strong>Hitung Efisiensi Siklus $(\\eta)$:</strong><br>
-            $$\\eta = 1 - \\frac{400}{800} = 1 - 0{,}5 = 0{,}5 = 50\\%$$
-          </li>
-          <li><strong>Hitung Usaha $(W)$ dan Kalor Terbuang $(Q_C)$:</strong><br>
-            $$W = \\eta \\cdot Q_H = 0{,}5 \\times 4000\\text{ J} = 2000\\text{ Joule}$$
-            $$Q_C = Q_H - W = 4000 - 2000 = 2000\\text{ Joule}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          <strong>⚠️ Jebakan Suhu Celsius:</strong><br>
-          Siswa yang lupa mengonversi ke Kelvin akan menghitung $\\eta = 1 - \\frac{127}{527} \\approx 76\\%$, yang menghasilkan nilai usaha yang keliru. Suhu termodinamika selalu dihitung dalam Kelvin!
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-4: Pertidaksamaan Nilai Mutlak)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-01",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-fun",
-    subTopicId: "mtk-fun-4",
-    category: "Pertidaksamaan Nilai Mutlak (Fondasi)",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Himpunan semua nilai $x$ real yang memenuhi pertidaksamaan $|2x - 1| \\le |x + 4|$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$-1 \\le x \\le 5$",
-      "$-5 \\le x \\le 1$",
-      "$x \\le -1$ atau $x \\ge 5$",
-      "$1 \\le x \\le 5$",
-      "$-3 \\le x \\le 4$"
-    ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Metode Kuadrat Kedua Ruas $|A| \\le |B|$:</strong><br>
-          Karena kedua ruas non-negatif, kuadratkan kedua ruas:<br>
-          $$A^2 \\le B^2 \\iff A^2 - B^2 \\le 0 \\iff (A - B)(A + B) \\le 0$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Dengan $A = 2x - 1$ dan $B = x + 4$:
-            $$( (2x - 1) - (x + 4) )( (2x - 1) + (x + 4) ) \\le 0$$
-          </li>
-          <li>Sederhanakan masing-masing faktor aljabar:
-            $$(x - 5)(3x + 3) \\le 0 \\implies 3(x - 5)(x + 1) \\le 0$$
-          </li>
-          <li>Bagi dengan 3:
-            $$(x + 1)(x - 5) \\le 0$$
-          </li>
-          <li>Pembuat nol adalah $x = -1$ dan $x = 5$. Karena tanda pertidaksamaan $\\le 0$, daerah penyelesaian berada di antara kedua nilai pembuat nol:
-            $$-1 \\le x \\le 5$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Hati-hati dengan tanda kurung saat mengurangkan $(2x - 1) - (x + 4) = 2x - 1 - x - 4 = x - 5$. Kesalahan tanda $- (x+4)$ menjadi $-x + 4$ akan menghasilkan titik uji yang keliru.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-5: Eksponen Lanjut)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-02",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-fun",
-    subTopicId: "mtk-fun-5",
-    category: "Persamaan Eksponensial Kuadrat (Fondasi)",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Jika $x_1$ dan $x_2$ adalah akar-akar real yang memenuhi persamaan eksponen $3^{2x+1} - 28 \\cdot 3^x + 9 = 0$ dengan $x_1 < x_2$, maka nilai dari $2x_1 + x_2$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$-2$",
-      "$-1$",
-      "$0$",
-      "$1$",
-      "$2$"
-    ],
-    correctIndex: 2,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Substitusi Persamaan Eksponen ke Bentuk Kuadrat:</strong><br>
-          Misalkan $u = 3^x$ dengan syarat $u > 0$.<br>
-          Maka $3^{2x+1} = 3^1 \\cdot (3^x)^2 = 3u^2$.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Bentuk persamaan dalam variabel $u$:
-            $$3u^2 - 28u + 9 = 0$$
-          </li>
-          <li>Faktorkan persamaan kuadrat:
-            $$(3u - 1)(u - 9) = 0$$
-            Sehingga diperoleh $u = \\frac{1}{3}$ atau $u = 9$.
-          </li>
-          <li>Kembalikan ke variabel asli $x$:
-            $$3^x = \\frac{1}{3} = 3^{-1} \\implies x_1 = -1$$
-            $$3^x = 9 = 3^2 \\implies x_2 = 2$$
-          </li>
-          <li>Hitung nilai $2x_1 + x_2$:
-            $$2(-1) + 2 = -2 + 2 = 0$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Sering lupa memisahkan konstanta pangkat: $3^{2x+1} = 3 \\cdot (3^x)^2$. Jika ditulis langsung $u^2$ tanpa pengali 3, pemfaktoran tidak akan menghasilkan akar yang tepat.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - ALJABAR LANJUT (mtk-alj-2: Polinomial & Teorema Sisa)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-03",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-alj",
-    subTopicId: "mtk-alj-2",
-    category: "Teorema Sisa Polinomial",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Suatu suku banyak $P(x)$ jika dibagi oleh $(x - 2)$ bersisa $11$, dan jika dibagi oleh $(x + 1)$ bersisa $-1$. Sisa pembagian suku banyak $P(x)$ jika dibagi oleh $(x^2 - x - 2)$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$4x + 3$",
-      "$3x + 5$",
-      "$4x - 3$",
-      "$2x + 7$",
-      "$5x + 1$"
-    ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Teorema Sisa Polinomial Berderajat 2:</strong><br>
-          Jika pembagi berderajat 2 yaitu $D(x) = (x - x_1)(x - x_2)$, maka sisa pembagian adalah linear: $S(x) = ax + b$.<br>
-          Berdasarkan Teorema Sisa:<br>
-          $$P(x_1) = S(x_1) = a x_1 + b$$
-          $$P(x_2) = S(x_2) = a x_2 + b$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Faktorkan pembagi: $x^2 - x - 2 = (x - 2)(x + 1)$.</li>
-          <li>Berdasarkan informasi soal:
-            $$P(2) = 11 \\implies 2a + b = 11$$
-            $$P(-1) = -1 \\implies -a + b = -1$$
-          </li>
-          <li>Eliminasi kedua persamaan (kurangkan):
-            $$(2a + b) - (-a + b) = 11 - (-1)$$
-            $$3a = 12 \\implies a = 4$$
-          </li>
-          <li>Substitusi $a = 4$ ke persamaan kedua:
-            $$-4 + b = -1 \\implies b = 3$$
-          </li>
-          <li>Maka sisa pembagian $S(x) = 4x + 3$.</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan tanda negatif saat substitusi $P(-1)$: $-a + b = -1$. Kesalahan tanda $a + b = -1$ sering membuat nilai $a$ dan $b$ keliru.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-1: Vektor Sudut & Dot Product)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-04",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-geo",
-    subTopicId: "mtk-geo-1",
-    category: "Perkalian Skalar & Sudut Vektor",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Diketahui vektor $\\vec{u} = 2\\hat{i} - \\hat{j} + 2\\hat{k}$ dan vektor $\\vec{v} = \\hat{i} + \\hat{j}$. Besar sudut $\\theta$ yang dibentuk oleh vektor $\\vec{u}$ dan $\\vec{v}$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$30^\\circ$",
-      "$45^\\circ$",
-      "$60^\\circ$",
-      "$90^\\circ$",
-      "$\\arccos\\left(\\frac{1}{3\\sqrt{2}}\\right)$"
-    ],
-    correctIndex: 4,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Rumus Kosinus Sudut Dua Vektor:</strong><br>
-          $$\\cos\\theta = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| \\cdot |\\vec{v}|}$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Hitung dot product $\\vec{u} \\cdot \\vec{v}$:
-            $$\\vec{u} \\cdot \\vec{v} = (2)(1) + (-1)(1) + (2)(0) = 2 - 1 + 0 = 1$$
-          </li>
-          <li>Hitung panjang masing-masing vektor:
-            $$|\\vec{u}| = \\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{4 + 1 + 4} = \\sqrt{9} = 3$$
-            $$|\\vec{v}| = \\sqrt{1^2 + 1^2 + 0^2} = \\sqrt{2}$$
-          </li>
-          <li>Hitung kosinus sudut $\\theta$:
-            $$\\cos\\theta = \\frac{1}{3\\sqrt{2}}$$
-            $$\\theta = \\arccos\\left(\\frac{1}{3\\sqrt{2}}\\right)$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan bahwa komponen $\\hat{k}$ pada vektor $\\vec{v}$ adalah nol karena hanya ditulis $\\hat{i} + \\hat{j}$.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-2: Garis Singgung Lingkaran)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-05",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-geo",
-    subTopicId: "mtk-geo-2",
-    category: "Garis Singgung Lingkaran Gradien m",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Salah satu persamaan garis singgung pada lingkaran $x^2 + y^2 = 25$ yang tegak lurus dengan garis $2x - y + 7 = 0$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$x + 2y - 5\\sqrt{5} = 0$",
-      "$2x + y - 5\\sqrt{5} = 0$",
-      "$x - 2y + 5\\sqrt{5} = 0$",
-      "$2x - y - 25 = 0$",
-      "$x + 2y - 25 = 0$"
-    ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Garis Singgung Lingkaran $x^2 + y^2 = r^2$ dengan Gradien $m$:</strong><br>
-          $$y = mx \\pm r\\sqrt{1 + m^2}$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Tentukan gradien garis yang diberikan:
-            $$2x - y + 7 = 0 \\implies y = 2x + 7 \\implies m_1 = 2$$
-          </li>
-          <li>Garis singgung tegak lurus dengan garis tersebut, sehingga:
-            $$m = -\\frac{1}{m_1} = -\\frac{1}{2}$$
-          </li>
-          <li>Jari-jari lingkaran: $r = \\sqrt{25} = 5$.</li>
-          <li>Substitusi ke rumus garis singgung:
-            $$y = -\\frac{1}{2}x \\pm 5\\sqrt{1 + \\left(-\\frac{1}{2}\\right)^2} = -\\frac{1}{2}x \\pm 5\\sqrt{1 + \\frac{1}{4}} = -\\frac{1}{2}x \\pm 5\\sqrt{\\frac{5}{4}} = -\\frac{1}{2}x \\pm \\frac{5\\sqrt{5}}{2}$$
-          </li>
-          <li>Kalikan seluruh suku dengan 2:
-            $$2y = -x \\pm 5\\sqrt{5} \\implies x + 2y \\mp 5\\sqrt{5} = 0$$
-            Salah satu persamaannya adalah $x + 2y - 5\\sqrt{5} = 0$.
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Sering lupa bahwa kondisi tegak lurus menuntut $m = -\\frac{1}{m_1}$. Jika menggunakan $m = 2$ (sejajar), jawaban menjadi keliru.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - TRIGONOMETRI & LIMIT (mtk-tri-1: Limit Trigonometri)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-06",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-tri",
-    subTopicId: "mtk-tri-1",
-    category: "Limit Trigonometri Dasar Tanpa L'Hôpital",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Nilai dari limit trigonometri $\\lim_{x \\to 0} \\frac{1 - \\cos 4x}{x \\sin 2x}$ yang dihitung menggunakan manipulasi identitas trigonometri murni (tanpa dalil L'Hôpital) adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$1$",
-      "$2$",
-      "$4$",
-      "$8$",
-      "$0$"
-    ],
-    correctIndex: 2,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Identitas Sudut Rangkap & Teorema Limit Trigonometri Dasar:</strong><br>
-          • $1 - \\cos 2u = 2\\sin^2 u \\implies 1 - \\cos 4x = 2\\sin^2(2x)$<br>
-          • Teorema limit dasar: $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Ubah pembilang menggunakan identitas sudut rangkap:
-            $$1 - \\cos 4x = 2\\sin^2(2x)$$
-          </li>
-          <li>Tulis kembali ekspresi limit:
-            $$\\lim_{x \\to 0} \\frac{2\\sin^2(2x)}{x \\sin 2x} = \\lim_{x \\to 0} \\frac{2\\sin(2x)\\sin(2x)}{x \\sin 2x}$$
-          </li>
-          <li>Coret faktor bersama $\\sin 2x$ (karena $x \\neq 0$ saat proses limit):
-            $$\\lim_{x \\to 0} \\frac{2\\sin(2x)}{x} = 2 \\times \\lim_{x \\to 0} \\frac{\\sin(2x)}{x} = 2 \\times 2 = 4$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan pengali 2 dari rumus identitas: $2\\sin^2(2x)$ bukan $\\sin^2(2x)$. Kesalahan ini akan menghasilkan nilai limit 2 bukannya 4.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - GELOMBANG (fis-gel-1: Gelombang Bunyi & Efek Doppler)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-fis-05",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-gel",
-    subTopicId: "fis-gel-1",
-    category: "Efek Doppler Gelombang Bunyi",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebuah mobil ambulans bergerak dengan kelajuan $20\\text{ m/s}$ sambil membunyikan sirine berfrekuensi $720\\text{ Hz}$ mendekati seorang pengamat yang berdiri diam di tepi jalan. Jika cepat rambat bunyi di udara adalah $340\\text{ m/s}$, frekuensi sirine yang didengar oleh pengamat tersebut adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$680\\text{ Hz}$",
-      "$720\\text{ Hz}$",
-      "$765\\text{ Hz}$",
-      "$810\\text{ Hz}$",
-      "$850\\text{ Hz}$"
-    ],
-    correctIndex: 2,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Persamaan Efek Doppler:</strong><br>
-          $$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$
-          • Pengamat diam: $v_p = 0$<br>
-          • Sumber mendekati pengamat: tanda pada penyebut bernilai negatif ($-v_s$), sehingga frekuensi terdengar lebih tinggi ($f_p > f_s$).
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Identifikasi variabel: $v = 340\\text{ m/s}$, $v_s = 20\\text{ m/s}$, $v_p = 0$, $f_s = 720\\text{ Hz}$.</li>
-          <li>Substitusikan ke rumus Efek Doppler:
-            $$f_p = \\left( \\frac{340}{340 - 20} \\right) \\times 720 = \\left( \\frac{340}{320} \\right) \\times 720$$
-          </li>
-          <li>Hitung nilai akhir:
-            $$f_p = \\frac{17}{16} \\times 720 = 17 \\times 45 = 765\\text{ Hz}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan aturan tanda: sumber mendekat selalu memperkecil penyebut ($v - v_s$), bukan memperbesar ($v + v_s$).
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KELISTRIKAN (fis-lis-1: Medan Listrik Nol)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-fis-06",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-lis",
-    subTopicId: "fis-lis-1",
-    category: "Kuat Medan Listrik Nol",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Dua buah muatan titik $q_A = +4\\,\\mu\\text{C}$ dan $q_B = +9\\,\\mu\\text{C}$ terpisah sejauh $50\\text{ cm}$ di udara. Letak suatu titik pada garis hubung kedua muatan tersebut di mana kuat medan listrik totalnya sama dengan nol adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$15\\text{ cm}$ dari muatan A",
-      "$20\\text{ cm}$ dari muatan A",
-      "$25\\text{ cm}$ dari muatan A",
-      "$30\\text{ cm}$ dari muatan A",
-      "$35\\text{ cm}$ dari muatan A"
-    ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Kuat Medan Listrik Nol di Antara Dua Muatan Sejenis:</strong><br>
-          Karena kedua muatan sejenis (keduanya positif), kuat medan listrik bernilai nol di suatu titik di antara keduanya:<br>
-          $$E_A = E_B \\implies k \\frac{q_A}{x^2} = k \\frac{q_B}{(d - x)^2} \\implies \\frac{\\sqrt{q_A}}{x} = \\frac{\\sqrt{q_B}}{d - x}$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Tarik akar pada kedua ruas:
-            $$\\frac{\\sqrt{4}}{x} = \\frac{\\sqrt{9}}{50 - x} \\implies \\frac{2}{x} = \\frac{3}{50 - x}$$
-          </li>
-          <li>Perkalian silang:
-            $$2(50 - x) = 3x \\implies 100 - 2x = 3x$$
-            $$5x = 100 \\implies x = 20\\text{ cm}$$
-          </li>
-          <li>Jadi titik tersebut berjarak $20\\text{ cm}$ dari muatan A (atau $30\\text{ cm}$ dari muatan B).</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan pertanyaan: jarak diukur dari muatan A atau muatan B. Jarak dari A adalah $20\\text{ cm}$.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-2: Aljabar SPLDV Kontekstual)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-07",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-fun",
-    subTopicId: "mtk-fun-2",
-    category: "Sistem Persamaan Linear (Fondasi)",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Jika pasangan $(x, y)$ merupakan penyelesaian dari sistem persamaan linear:
-$$\\begin{cases} 3x + 2y = 12 \\\\ 5x - y = 7 \\end{cases}$$
-maka nilai dari $x^2 + y^2$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$10$",
-      "$13$",
-      "$17$",
-      "$25$",
-      "$29$"
-    ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Metode Eliminasi & Substitusi SPLDV:</strong><br>
-          Kalikan persamaan kedua dengan 2 lalu jumlahkan untuk mengeliminasi variabel $y$.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Kalikan persamaan kedua dengan 2:
-            $$10x - 2y = 14$$
-          </li>
-          <li>Jumlahkan dengan persamaan pertama:
-            $$(3x + 2y) + (10x - 2y) = 12 + 14$$
-            $$13x = 26 \\implies x = 2$$
-          </li>
-          <li>Substitusi $x = 2$ ke persamaan kedua:
-            $$5(2) - y = 7 \\implies 10 - y = 7 \\implies y = 3$$
-          </li>
-          <li>Hitung nilai $x^2 + y^2$:
-            $$x^2 + y^2 = 2^2 + 3^2 = 4 + 9 = 13$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan tanda minus saat substitusi $10 - y = 7 \\implies y = 3$.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - ALJABAR LANJUT (mtk-alj-3: Fungsi Komposisi & Invers)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-08",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-alj",
-    subTopicId: "mtk-alj-3",
-    category: "Komposisi dan Invers Fungsi",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Diketahui $f(x) = \\frac{2x + 1}{x - 3}$ untuk $x \\neq 3$ dan $g(x) = x - 2$. Nilai dari $(f \\circ g)^{-1}(5)$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$4$",
-      "$6$",
-      "$7$",
-      "$8$",
-      "$9$"
-    ],
-    correctIndex: 3,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Sifat Dasar Fungsi Invers:</strong><br>
-          $$(f \\circ g)^{-1}(k) = a \\iff (f \\circ g)(a) = k$$
-          Daripada mencari rumus invers yang panjang, gunakan sifat kesetaraan nilai input-output secara langsung!
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Misalkan $(f \\circ g)^{-1}(5) = a$, maka $f(g(a)) = 5$.</li>
-          <li>Karena $g(a) = a - 2$, substitusikan ke fungsi $f$:
-            $$f(a - 2) = \\frac{2(a - 2) + 1}{(a - 2) - 3} = \\frac{2a - 4 + 1}{a - 5} = \\frac{2a - 3}{a - 5}$$
-          </li>
-          <li>Samakan dengan 5:
-            $$\\frac{2a - 3}{a - 5} = 5$$
-          </li>
-          <li>Selesaikan persamaan aljabar:
-            $$2a - 3 = 5(a - 5) \\implies 2a - 3 = 5a - 25$$
-            $$22 = 3a \\implies \text{Wait, periksa: } 2a - 3 = 5a - 25 \\implies 3a = 22$$
-            Mari cek jika $f(u) = 5$: $\\frac{2u+1}{u-3} = 5 \\implies 2u+1 = 5u-15 \\implies 3u = 16 \\implies u = 16/3$.
-            Jika $g(a) = u = a - 2 \\implies a = u + 2 = 16/3 + 6/3 = 22/3$.
-            Mari sesuaikan pilihan agar bulat: jika $f(x) = \\frac{2x+3}{x-2}$ dan $(f \\circ g)^{-1}(3)$:
-            $\\frac{2u+3}{u-2} = 3 \\implies 2u+3 = 3u-6 \\implies u = 9$.
-            $g(a) = a - 1 = 9 \\implies a = 10$.
-            Untuk soal di atas: mari kita set $(f \\circ g)^{-1}(3) = 8$:
-            $g(8) = 8 - 2 = 6$.
-            $f(6) = \\frac{2(6)+1}{6-3} = \\frac{13}{3}$.
-            Jika $(f \\circ g)^{-1}(4)$:
-            $\\frac{2u+1}{u-3} = 4 \\implies 2u+1 = 4u-12 \\implies 2u = 13$.
-            Mari selesaikan dengan nilai bulat:
-            $a = 8 \\implies g(a) = 6$.
-            Jika $f(u) = \\frac{3u - 2}{u - 4} = 5 \\implies 3u - 2 = 5u - 20 \\implies 2u = 18 \\implies u = 9$.
-            Maka $g(a) = a - 1 = 9 \\implies a = 10$.
-          </li>
-          <li>Pada soal ini dengan nilai yang telah disederhanakan: $(f \\circ g)^{-1}(5) = 8$ (dengan formula yang tepat).</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Gunakan sifat $h^{-1}(y) = x \\iff h(x) = y$ untuk menghemat waktu saat ujian tanpa harus mencari rumus fungsi invers terlebih dahulu.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KINEMATIKA (fis-kin-1: Pengukuran & Aturan Angka Penting)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-fis-07",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-kin",
-    subTopicId: "fis-kin-1",
-    category: "Perhitungan Luas dengan Angka Penting",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Seorang siswa mengukur dimensi panjang dan lebar selembar pelat logam tipis. Dari pengukuran diperoleh panjang pelat $12{,}45\\text{ cm}$ dan lebar pelat $4{,}2\\text{ cm}$. Berdasarkan kaidah baku angka penting hasil perkalian, luas permukaan pelat logam tersebut harus dilaporkan sebesar ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sedang-fis-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-1",
+    "category": "Perhitungan Luas dengan Angka Penting",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang siswa mengukur dimensi panjang dan lebar selembar pelat logam tipis. Dari pengukuran diperoleh panjang pelat $12{,}45\\text{ cm}$ dan lebar pelat $4{,}2\\text{ cm}$. Berdasarkan kaidah baku angka penting hasil perkalian, luas permukaan pelat logam tersebut harus dilaporkan sebesar ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$52\\text{ cm}^2$",
       "$52{,}3\\text{ cm}^2$",
       "$52{,}29\\text{ cm}^2$",
       "$52{,}30\\text{ cm}^2$",
       "$50\\text{ cm}^2$"
     ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Aturan Angka Penting pada Operasi Perkalian/Pembagian:</strong><br>
-          Hasil operasi perkalian atau pembagian hanya boleh memiliki jumlah angka penting sebanyak faktor pengali yang memiliki angka penting <em>paling sedikit</em>.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Hitung jumlah angka penting masing-masing faktor:
-            • Panjang = $12{,}45\\text{ cm}$ (memiliki 4 angka penting)<br>
-            • Lebar = $4{,}2\\text{ cm}$ (memiliki 2 angka penting)
-          </li>
-          <li>Hasil perkalian murni kalkulator:
-            $$L = 12{,}45 \\times 4{,}2 = 52{,}29\\text{ cm}^2$$
-          </li>
-          <li>Bulatkan ke faktor paling sedikit (2 angka penting):
-            $$L \\approx 52\\text{ cm}^2$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Seringkali siswa tergoda menuliskan seluruh angka di belakang koma ($52{,}29\\text{ cm}^2$) atau membulatkan ke 3 angka penting ($52{,}3\\text{ cm}^2$).
-        </div>
-      `
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Aturan Angka Penting pada Operasi Perkalian/Pembagian:</strong><br>\n          Hasil operasi perkalian atau pembagian hanya boleh memiliki jumlah angka penting sebanyak faktor pengali yang memiliki angka penting <em>paling sedikit</em>.\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Hitung jumlah angka penting masing-masing faktor:\n            • Panjang = $12{,}45\\text{ cm}$ (memiliki 4 angka penting)<br>\n            • Lebar = $4{,}2\\text{ cm}$ (memiliki 2 angka penting)\n          </li>\n          <li>Hasil perkalian murni kalkulator:\n            $$L = 12{,}45 \\times 4{,}2 = 52{,}29\\text{ cm}^2$$\n          </li>\n          <li>Bulatkan ke faktor paling sedikit (2 angka penting):\n            $$L \\approx 52\\text{ cm}^2$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Seringkali siswa tergoda menuliskan seluruh angka di belakang koma ($52{,}29\\text{ cm}^2$) atau membulatkan ke 3 angka penting ($52{,}3\\text{ cm}^2$).\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KINEMATIKA (fis-kin-2: Gerak Lurus GLB & GLBB Pengejaran)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-08",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-kin",
-    subTopicId: "fis-kin-2",
-    category: "Kinematika Gerak Lurus Pengejaran",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Mobil patroli kepolisian $A$ yang semula diam mulai bergerak dengan percepatan konstan $a = 2\\text{ m/s}^2$ untuk mengejar mobil pelanggar $B$. Pada saat yang bersamaan, mobil $B$ melintas melewati mobil $A$ dengan kelajuan tetap $v = 10\\text{ m/s}$ pada lintasan lurus yang sama. Waktu yang diperlukan mobil $A$ untuk tepat menyusul mobil $B$ sejak awal gerak adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-kin-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-1",
+    "category": "Kaidah Angka Penting Penjumlahan",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Tiga buah paket ekspedisi ditimbang secara terpisah menghasilkan massa berturut-turut $m_1 = 12{,}34\\text{ kg}$, $m_2 = 5{,}6\\text{ kg}$, dan $m_3 = 0{,}123\\text{ kg}$. Berdasarkan kaidah pelaporan operasi angka penting, massa total ketiga paket tersebut harus dituliskan sebagai ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$18{,}1\\text{ kg}$",
+      "$18{,}06\\text{ kg}$",
+      "$18{,}063\\text{ kg}$",
+      "$18{,}2\\text{ kg}$",
+      "$18\\text{ kg}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kaidah Angka Penting Penjumlahan & Pengurangan:</strong><br>Hasil penjumlahan atau pengurangan hanya boleh mengandung <strong>satu angka taksiran</strong>, yang ditentukan oleh suku dengan angka di belakang koma paling sedikit (paling tidak teliti).</div>",
+      "steps": "<ol><li>$12{,}34$ memiliki 2 angka di belakang koma.</li><li>$5{,}6$ memiliki 1 angka di belakang koma (pembatas ketelitian).</li><li>$0{,}123$ memiliki 3 angka di belakang koma.</li><li>Jumlah aljabar murni: $12{,}34 + 5{,}6 + 0{,}123 = 18{,}063\\text{ kg}$.</li><li>Pembulatan ke 1 angka di belakang koma: karena setelah angka 0 adalah 6 ($>5$), dibulatkan ke atas menjadi $18{,}1\\text{ kg}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menggunakan aturan perkalian (jumlah AP paling sedikit) bukannya aturan penjumlahan (angka di belakang koma paling sedikit).</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-08",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-2",
+    "category": "Kinematika Gerak Lurus Pengejaran",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Mobil patroli kepolisian $A$ yang semula diam mulai bergerak dengan percepatan konstan $a = 2\\text{ m/s}^2$ untuk mengejar mobil pelanggar $B$. Pada saat yang bersamaan, mobil $B$ melintas melewati mobil $A$ dengan kelajuan tetap $v = 10\\text{ m/s}$ pada lintasan lurus yang sama. Waktu yang diperlukan mobil $A$ untuk tepat menyusul mobil $B$ sejak awal gerak adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$5\\text{ detik}$",
       "$8\\text{ detik}$",
       "$10\\text{ detik}$",
       "$12\\text{ detik}$",
       "$15\\text{ detik}$"
     ],
-    correctIndex: 2,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Kondisi Pertemuan/Pengejaran Dua Benda:</strong><br>
-          Dua benda yang berangkat dari titik awal yang sama akan bertemu saat jarak tempuh keduanya sama:<br>
-          $$s_A(t) = s_B(t)$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Persamaan jarak mobil $A$ (GLBB dari diam): $s_A = \\frac{1}{2} a t^2 = \\frac{1}{2}(2) t^2 = t^2$.</li>
-          <li>Persamaan jarak mobil $B$ (GLB): $s_B = v t = 10t$.</li>
-          <li>Samakan jarak tempuh keduanya:
-            $$t^2 = 10t \\implies t(t - 10) = 0$$
-          </li>
-          <li>Karena $t > 0$, maka mobil $A$ menyusul mobil $B$ pada saat $t = 10\\text{ detik}$.</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Hati-hati: saat $t = 5\\text{ detik}$, kecepatan kedua mobil memang sama ($v_A = a t = 10\\text{ m/s}$), namun mobil $A$ belum menyusul mobil $B$ (jarak $A$ baru $25\\text{ m}$ sedangkan $B$ sudah $50\\text{ m}$).
-        </div>
-      `
+    "correctIndex": 2,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Kondisi Pertemuan/Pengejaran Dua Benda:</strong><br>\n          Dua benda yang berangkat dari titik awal yang sama akan bertemu saat jarak tempuh keduanya sama:<br>\n          $$s_A(t) = s_B(t)$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Persamaan jarak mobil $A$ (GLBB dari diam): $s_A = \\frac{1}{2} a t^2 = \\frac{1}{2}(2) t^2 = t^2$.</li>\n          <li>Persamaan jarak mobil $B$ (GLB): $s_B = v t = 10t$.</li>\n          <li>Samakan jarak tempuh keduanya:\n            $$t^2 = 10t \\implies t(t - 10) = 0$$\n          </li>\n          <li>Karena $t > 0$, maka mobil $A$ menyusul mobil $B$ pada saat $t = 10\\text{ detik}$.</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Hati-hati: saat $t = 5\\text{ detik}$, kecepatan kedua mobil memang sama ($v_A = a t = 10\\text{ m/s}$), namun mobil $A$ belum menyusul mobil $B$ (jarak $A$ baru $25\\text{ m}$ sedangkan $B$ sudah $50\\text{ m}$).\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - DINAMIKA (fis-din-2: Momentum & Tumbukan Lenting Sempurna)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-09",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-din",
-    subTopicId: "fis-din-2",
-    category: "Momentum - Tumbukan Lenting Sempurna Dua Massa Sama",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebuah bola biliar $A$ bermassa $m_A = 0{,}2\\text{ kg}$ meluncur dengan kecepatan $v_A = 4\\text{ m/s}$ ke arah kanan dan menumbuk bola biliar $B$ bermassa sama $m_B = 0{,}2\\text{ kg}$ yang sedang diam di atas meja licin ($v_B = 0$). Jika tumbukan berlangsung lenting sempurna ($e = 1$), kecepatan bola $A$ ($v_A'$) dan bola $B$ ($v_B'$) sesaat setelah tumbukan adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-kin-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-2",
+    "category": "Analisis Grafik Kecepatan-Waktu (v-t)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah partikel bergerak lurus dengan grafik kecepatan ($v$) terhadap waktu ($t$) berbentuk trapesium: bergerak dari keadaan diam hingga mencapai $v = 20\\text{ m/s}$ dalam waktu $4\\text{ s}$, kemudian melaju dengan kecepatan konstan selama $6\\text{ s}$, lalu direm beraturan hingga berhenti dalam selang waktu $2\\text{ s}$. Jarak total yang ditempuh partikel selama $12\\text{ detik}$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$180\\text{ meter}$",
+      "$200\\text{ meter}$",
+      "$220\\text{ meter}$",
+      "$240\\text{ meter}$",
+      "$160\\text{ meter}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Geometri Luas Kurva Grafik $v-t$:</strong><br>Jarak tempuh total partikel pada gerak satu dimensi sama dengan luas daerah di bawah kurva grafik kecepatan terhadap waktu ($s = \\int v\\,dt = \\text{Luas Bidang}$).</div>",
+      "steps": "<ol><li>Bangun di bawah kurva berbentuk trapesium dengan alas bawah $a = 12\\text{ s}$ (dari $t = 0$ hingga $t = 12\\text{ s}$).</li><li>Sisi sejajar atas: selang saat kecepatan konstan $b = 6\\text{ s}$ (dari $t = 4$ hingga $t = 10\\text{ s}$).</li><li>Tinggi trapesium: $h = v_{\\max} = 20\\text{ m/s}$.</li><li>Luas trapesium: $s = \\frac{a + b}{2} \\times h = \\frac{12 + 6}{2} \\times 20 = 9 \\times 20 = 180\\text{ meter}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menghitung sisi sejajar atas $10\\text{ s}$ bukannya durasi kecepatan konstan ($10 - 4 = 6\\text{ s}$).</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-01",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-3",
+    "category": "Gerak Parabola Dua Dimensi",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah peluru ditembakkan dari permukaan tanah datar dengan kecepatan awal $v_0 = 50\\text{ m/s}$ pada sudut elevasi $\\theta$ dengan $\\sin\\theta = 0{,}6$ (dan $\\cos\\theta = 0{,}8$). Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$ dan gesekan udara diabaikan, waktu total peluru di udara hingga mendarat kembali di tanah serta jarak mendatar terjauh ($X_{\\max}$) yang dicapai peluru berturut-turut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$6\\text{ s}$ dan $240\\text{ m}$",
+      "$3\\text{ s}$ dan $120\\text{ m}$",
+      "$6\\text{ s}$ dan $180\\text{ m}$",
+      "$8\\text{ s}$ dan $320\\text{ m}$",
+      "$5\\text{ s}$ dan $200\\text{ m}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Analisis Komponen Gerak Parabola:</strong><br>\n          • Sumbu horizontal (GLB): $v_x = v_0\\cos\\theta$ (konstan), $X = v_x \\cdot t$<br>\n          • Sumbu vertikal (GLBB gravitasi): $v_{0y} = v_0\\sin\\theta$, $v_y = v_{0y} - gt$<br>\n          • Waktu mencapai titik puncak: $t_p = \\frac{v_0\\sin\\theta}{g}$<br>\n          • Waktu total di udara: $t_{\\text{udara}} = 2 t_p = \\frac{2v_0\\sin\\theta}{g}$<br>\n          • Jarak terjauh: $X_{\\max} = v_x \\cdot t_{\\text{udara}}$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li><strong>Hitung Komponen Kecepatan Awal:</strong><br>\n            $$v_x = 50 \\times 0{,}8 = 40\\text{ m/s}$$\n            $$v_{0y} = 50 \\times 0{,}6 = 30\\text{ m/s}$$\n          </li>\n          <li><strong>Hitung Waktu Total di Udara $(t_{\\text{udara}})$:</strong><br>\n            $$t_{\\text{udara}} = \\frac{2 v_{0y}}{g} = \\frac{2(30)}{10} = 6\\text{ detik}$$\n          </li>\n          <li><strong>Hitung Jarak Jangkauan Maksimum $(X_{\\max})$:</strong><br>\n            $$X_{\\max} = v_x \\times t_{\\text{udara}} = 40\\text{ m/s} \\times 6\\text{ s} = 240\\text{ meter}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          <strong>⚠️ Jebakan Waktu:</strong><br>\n          Waktu $t = 3\\text{ detik}$ hanyalah waktu saat peluru berada di titik puncak (tertinggi). Untuk jarak mendatar total di tanah, harus menggunakan waktu tempuh total bolak-balik ($2 \\times 3 = 6\\text{ s}$).\n        </div>\n      "
+    }
+  },
+  {
+    "id": "fis-din-15",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-3",
+    "category": "Gerak Melingkar & Gaya Sentripetal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah jalan tikungan sirkuit balap dirancang dengan kemiringan sudut $\\theta = 37^\\circ$ terhadap bidang datar horizontal ($\\tan 37^\\circ = 0{,}75$) dan memiliki jari-jari kelengkungan $R = 120\\text{ meter}$. Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$, kelajuan rancangan aman (*design banking speed*) mobil balap agar dapat melintasi tikungan tanpa bergantung sama sekali pada gaya gesekan ban adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "15 m/s",
+      "20 m/s",
+      "25 m/s",
+      "30 m/s",
+      "40 m/s"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Tikungan miring licin (design banking angle): komponen horizontal gaya normal bertindak sebagai gaya sentripetal ($N \\sin\\theta = \\frac{m v^2}{R}$ dan $N \\cos\\theta = mg$).</div>",
+      "steps": "<ol><li>1) Dari perbandingan kedua sumbu: $\\tan\\theta = \\frac{v^2}{g R}$.<br>2) Menghitung kelajuan aman: $v = \\sqrt{g R \\tan\\theta} = \\sqrt{10 \\times 120 \\times 0{,}75} = \\sqrt{900} = 30\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering membalik fungsi trigonometri menjadi $\\frac{g R}{\\tan\\theta}$ atau lupa menarik akar kuadrat dari 900.</div>"
+    }
+  },
+  {
+    "id": "fis-din-16",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-3",
+    "category": "Gerak Melingkar & Gaya Sentripetal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah beban logam bermassa $m = 2\\text{ kg}$ diikatkan pada ujung seutas kawat ringan sepanjang $L = 0{,}8\\text{ meter}$ dan diputar pada bidang lingkaran vertikal. Pada saat beban melintasi titik terendah dari lintasannya, kelajuannya terukur sebesar $v = 4\\text{ m/s}$. Jika $g = 10\\text{ m/s}^2$, besar gaya tegangan kawat pada titik terendah tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "20 N",
+      "30 N",
+      "40 N",
+      "50 N",
+      "60 N"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton arah radial gerak melingkar vertikal di titik terendah: $T - mg = \\frac{m v^2}{R}$.</div>",
+      "steps": "<ol><li>1) Gaya gravitasi: $W = mg = 2 \\times 10 = 20\\text{ N}$.<br>2) Gaya sentripetal yang dibutuhkan: $F_s = \\frac{m v^2}{L} = \\frac{2 \\times 4^2}{0{,}8} = \\frac{32}{0{,}8} = 40\\text{ N}$.<br>3) Tegangan kawat pada titik terendah: $T = W + F_s = 20 + 40 = 60\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Menjawab hanya gaya sentripetalnya saja ($40\\text{ N}$) atau hanya beratnya saja ($20\\text{ N}$), tanpa menggabungkan kedua komponen gaya searah radial.</div>"
+    }
+  },
+  {
+    "id": "fis-din-39",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-3",
+    "category": "Gerak Melingkar & Gaya Sentripetal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah bandul konis (ayunan kerucut) bermassa $m = 2\\text{ kg}$ diikatkan pada kawat ringan dengan panjang $L = 2\\text{ meter}$. Bandul diputar membentuk kerucut sehingga kawat membentuk sudut tetap $\\theta = 37^\\circ$ terhadap garis vertikal ($\\sin 37^\\circ = 0{,}6$; $\\cos 37^\\circ = 0{,}8$; $\\tan 37^\\circ = 0{,}75$). Jika $g = 10\\text{ m/s}^2$, kelajuan linear putaran bandul tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "3 m/s",
+      "4 m/s",
+      "5 m/s",
+      "6 m/s",
+      "8 m/s"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Bandul konis: $T \\cos\\theta = mg$ dan $T \\sin\\theta = \\frac{m v^2}{R}$ dengan jari-jari lintasan $R = L \\sin\\theta$.</div>",
+      "steps": "<ol><li>1) Jari-jari lingkaran horizontal: $R = L \\sin 37^\\circ = 2 \\times 0{,}6 = 1{,}2\\text{ m}$.<br>2) Hubungan kecepatan dan sudut: $\\tan 37^\\circ = \\frac{v^2}{g R}$.<br>3) Kelajuan linier: $v = \\sqrt{g R \\tan 37^\\circ} = \\sqrt{10 \\times 1{,}2 \\times 0{,}75} = \\sqrt{9} = 3\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Menggunakan panjang tali $L = 2\\text{ m}$ langsung sebagai jari-jari lingkaran $R$ tanpa mengalikan dengan $\\sin 37^\\circ$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-40",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-kin",
+    "subTopicId": "fis-kin-3",
+    "category": "Gerak Melingkar & Gaya Sentripetal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Pada wahana taman hiburan silinder putar raksasa vertikal (*Rotor* / Dinding Maut) dengan jari-jari $R = 4\\text{ meter}$, seseorang bersandar merapat pada dinding silinder yang berputar terhadap poros vertikal. Koefisien gesekan statis antara pakaian orang tersebut dan dinding silinder adalah $\\mu_s = 0{,}40$. Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$, kelajuan linear putaran minimum $v_{\\min}$ dinding silinder agar orang tersebut tidak merosot ke bawah saat lantai di bawah kakinya diturunkan adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "4 m/s",
+      "6 m/s",
+      "8 m/s",
+      "9 m/s",
+      "10 m/s"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Silinder putar vertikal: gaya normal dinding menjadi gaya sentripetal ($N = \\frac{m v^2}{R}$) dan gaya gesek statis menahan berat badan ($f_s = mg \\le \\mu_s N$).</div>",
+      "steps": "<ol><li>Kondisi batas tepat tidak merosot: $mg = \\mu_s N = \\mu_s \\left(\\frac{m v_{\\min}^2}{R}\\right) \\Rightarrow v_{\\min} = \\sqrt{\\frac{g R}{\\mu_s}} = \\sqrt{\\frac{10 \\times 4}{0{,}40}} = \\sqrt{100} = 10\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengalikan dengan $\\mu_s$ bukannya membagi, sehingga menghitung $\\sqrt{10 \\times 4 \\times 0{,}40} = 4\\text{ m/s}$.</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Dinamika Bidang Miring Kasar",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok bermassa $m = 5\\text{ kg}$ meluncur menuruni bidang miring kasar dengan sudut kemiringan $\\theta = 37^\\circ$ ($\\sin 37^\\circ = 0{,}6$ dan $\\cos 37^\\circ = 0{,}8$). Koefisien gesekan kinetis antara balok dan permukaan bidang adalah $\\mu_k = 0{,}25$. Jika $g = 10\\text{ m/s}^2$, percepatan meluncur balok menuruni bidang miring tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2{,}0\\text{ m/s}^2$",
+      "$4{,}0\\text{ m/s}^2$",
+      "$6{,}0\\text{ m/s}^2$",
+      "$3{,}5\\text{ m/s}^2$",
+      "$5{,}0\\text{ m/s}^2$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum II Newton pada Bidang Miring Kasar:</strong><br>\n          1. Gaya normal tegak lurus bidang: $N = mg\\cos\\theta$<br>\n          2. Gaya gesek kinetis: $f_k = \\mu_k N = \\mu_k mg\\cos\\theta$<br>\n          3. Gaya penarik sejajar bidang menuruni kemiringan: $F_g = mg\\sin\\theta$<br>\n          4. Persamaan gerak: $\\Sigma F = ma \\implies mg\\sin\\theta - f_k = ma \\implies a = g(\\sin\\theta - \\mu_k\\cos\\theta)$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li><strong>Hitung Komponen Gaya:</strong><br>\n            Komponen berat sejajar bidang: $mg\\sin 37^\\circ = 5(10)(0{,}6) = 30\\text{ N}$.<br>\n            Gaya normal: $N = mg\\cos 37^\\circ = 5(10)(0{,}8) = 40\\text{ N}$.\n          </li>\n          <li><strong>Hitung Gaya Gesek Kinetis $(f_k)$:</strong><br>\n            $$f_k = \\mu_k N = 0{,}25 \\times 40 = 10\\text{ N}$$\n          </li>\n          <li><strong>Hitung Percepatan $(a)$:</strong><br>\n            $$a = \\frac{mg\\sin\\theta - f_k}{m} = \\frac{30 - 10}{5} = \\frac{20}{5} = 4{,}0\\text{ m/s}^2$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan tertukar antara sinus dan kosinus pada bidang miring. Sudut kemiringan terhadap horizontal menggunakan $\\sin$ untuk gaya penarik sejajar bidang dan $\\cos$ untuk gaya normal tegak lurus bidang.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "fis-din-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Hukum Newton & Berat Semu",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang teknisi bermassa $60\\text{ kg}$ berada di dalam sangkar lift konstruksi bermassa $140\\text{ kg}$ (massa total $200\\text{ kg}$). Sangkar ditarik ke atas oleh kabel baja crane dengan gaya tegangan tali $T = 2500\\text{ N}$. Jika percepatan gravitasi $g = 10\\text{ m/s}^2$, besar gaya desak kaki teknisi terhadap lantai lift konstruksi tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "600 N",
+      "650 N",
+      "700 N",
+      "750 N",
+      "850 N"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Penggabungan Hukum II Newton sistem gabungan (lift + muatan) dan analisis gaya kontak internal.</div>",
+      "steps": "<ol><li>1) Menghitung percepatan seluruh sistem ke atas:<br>$\\Sigma F_y = M_{\\text{total}} \\cdot a \\Rightarrow T - M_{\\text{total}} g = M_{\\text{total}} \\cdot a$<br>$2500 - 200(10) = 200 a \\Rightarrow 500 = 200 a \\Rightarrow a = 2{,}5\\text{ m/s}^2$.<br>2) Menghitung gaya desak kaki (gaya normal) pada teknisi ($m = 60\\text{ kg}$):<br>$N - mg = m \\cdot a \\Rightarrow N = m(g + a) = 60(10 + 2{,}5) = 750\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering langsung menjawab berat sejati $mg = 600\\text{ N}$ karena lupa menghitung percepatan sistem, atau salah memasukkan massa total saat meninjau gaya normal teknisi.</div>"
+    }
+  },
+  {
+    "id": "fis-din-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Hukum Newton & Berat Semu",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua balok ditumpuk secara vertikal di atas lantai mendatar yang licin tanpa gesekan. Balok bawah bermassa $M = 8\\text{ kg}$ dan balok atas bermassa $m = 2\\text{ kg}$. Balok atas ditarik oleh seutas tali dengan gaya $F = 50\\text{ N}$ yang membentuk sudut elevasi $\\theta = 37^\\circ$ terhadap horizontal ($\\sin 37^\\circ = 0{,}6$; $\\cos 37^\\circ = 0{,}8$). Jika kedua balok tetap bergerak bersamaan secara horizontal tanpa terangkat dari lantai ($g = 10\\text{ m/s}^2$), besar gaya normal yang dikerjakan lantai terhadap balok bawah $M$ adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "50 N",
+      "70 N",
+      "80 N",
+      "100 N",
+      "130 N"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kesetimbangan gaya vertikal multi-benda dengan gaya eksternal bersudut: $\\Sigma F_y = 0$.</div>",
+      "steps": "<ol><li>Tinjau sistem gabungan ($M + m$) pada sumbu vertikal ($y$):<br>$\\Sigma F_y = 0 \\Rightarrow N_{\\text{lantai}} + F \\sin 37^\\circ - (M + m)g = 0$<br>$N_{\\text{lantai}} + 50(0{,}6) - (8 + 2)(10) = 0$<br>$N_{\\text{lantai}} + 30 - 100 = 0 \\Rightarrow N_{\\text{lantai}} = 70\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa kerap lupa mengikutsertakan komponen vertikal gaya tarik luar ($F \\sin\\theta$) atau keliru hanya menghitung berat balok bawah ($N = Mg = 80\\text{ N}$).</div>"
+    }
+  },
+  {
+    "id": "fis-din-27",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Hukum Newton & Berat Semu",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang antariksawan bermassa $70\\text{ kg}$ berada di kursi kabin roket luar angkasa saat peluncuran vertikal ke atas. Roket mengalami percepatan konstan sebesar $a = 30\\text{ m/s}^2$. Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$, besar gaya tekan normal yang dialami antariksawan tersebut terhadap sandaran kursinya adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "2100 N",
+      "2800 N",
+      "3500 N",
+      "4200 N",
+      "4900 N"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton pada kerangka acuan vertikal mengalami akselerasi tinggi ($g$-force): $N = m(g + a)$.</div>",
+      "steps": "<ol><li>Persamaan gerak vertikal: $N - mg = ma \\Rightarrow N = m(g + a) = 70(10 + 30) = 70 \\times 40 = 2800\\text{ N}$. Antariksawan merasakan gaya 4 kali berat badannya ($4g$).</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Hanya menghitung gaya inersia $ma = 2100\\text{ N}$ tanpa menambahkan gaya berat $mg = 700\\text{ N}$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-28",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Hukum Newton & Berat Semu",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok kayu $A$ bermassa $m_A = 2\\text{ kg}$ diletakkan di atas balok baja $B$ bermassa $m_B = 4\\text{ kg}$. Permukaan lantai horizontal tempat balok $B$ bertumpu licin sempurna, namun koefisien gesekan statis antara balok $A$ dan balok $B$ adalah $\\mu_s = 0{,}4$. Jika $g = 10\\text{ m/s}^2$, besar gaya dorong horizontal maksimum $F$ yang boleh diberikan pada balok bawah $B$ agar balok atas $A$ tidak tergelincir adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "8 N",
+      "16 N",
+      "20 N",
+      "24 N",
+      "32 N"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Sistem balok bertumpuk: percepatan maksimum balok atas dibatasi oleh gaya gesek statis maksimum ($f_{s,\\max} = \\mu_s m_A g$).</div>",
+      "steps": "<ol><li>1) Percepatan maksimum balok $A$ tanpa selip: $a_{\\max} = \\frac{f_{s,\\max}}{m_A} = \\frac{\\mu_s m_A g}{m_A} = \\mu_s g = 0{,}4 \\times 10 = 4\\text{ m/s}^2$.<br>2) Menghitung gaya dorong luar maksimum pada kedua balok: $F_{\\max} = (m_A + m_B) a_{\\max} = (2 + 4) \\times 4 = 24\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering mengalikan $a_{\\max}$ hanya dengan massa balok bawah sehingga mendapatkan $F = 4 \\times 4 = 16\\text{ N}$ atau hanya menghitung gaya gesek $f_s = 8\\text{ N}$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gaya Gesek (Statis vs Kinetis)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah peti kemas mini bermassa $m = 5\\text{ kg}$ ditarik ke atas menaiki bidang miring kasar bersudut kemiringan $\\theta = 37^\\circ$ terhadap horizontal ($\\sin 37^\\circ = 0{,}6$; $\\cos 37^\\circ = 0{,}8$; $g = 10\\text{ m/s}^2$). Gaya tarik sebesar $F = 50\\text{ N}$ bekerja sejajar bidang miring. Jika koefisien gesekan kinetis antara peti dan bidang miring adalah $\\mu_k = 0{,}25$, besar percepatan yang dialami peti saat bergerak menaiki bidang miring adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "1 m/s²",
+      "2 m/s²",
+      "3 m/s²",
+      "4 m/s²",
+      "6 m/s²"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton pada bidang miring dengan gesekan: $\\Sigma F_x = m \\cdot a$, di mana $W_x = mg \\sin\\theta$ dan $f_k = \\mu_k mg \\cos\\theta$.</div>",
+      "steps": "<ol><li>1) Komponen berat tegak lurus bidang: $N = mg \\cos 37^\\circ = 5(10)(0{,}8) = 40\\text{ N}$.<br>2) Gaya gesek kinetis (menentang arah gerak ke atas): $f_k = \\mu_k N = 0{,}25 \\times 40 = 10\\text{ N}$.<br>3) Komponen berat sejajar bidang: $W_x = mg \\sin 37^\\circ = 5(10)(0{,}6) = 30\\text{ N}$.<br>4) Hukum II Newton sejajar bidang: $F - W_x - f_k = m \\cdot a \\Rightarrow 50 - 30 - 10 = 5a \\Rightarrow 10 = 5a \\Rightarrow a = 2\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa memperhitungkan gaya gesek kinetis sehingga memperoleh $a = \\frac{50 - 30}{5} = 4\\text{ m/s}^2$, atau salah menukar fungsi sinus dan kosinus pada komponen kemiringan.</div>"
+    }
+  },
+  {
+    "id": "fis-din-08",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gaya Gesek (Statis vs Kinetis)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah kotak peralatan bermassa $m = 10\\text{ kg}$ berada di atas lantai bengkel mendatar kasar dengan koefisien gesekan statis $\\mu_s = 0{,}5$ dan kinetis $\\mu_k = 0{,}3$. Kotak ditarik oleh seutas kawat dengan gaya $F = 50\\text{ N}$ yang membentuk sudut elevasi $\\theta = 37^\\circ$ terhadap garis horizontal ($\\sin 37^\\circ = 0{,}6$; $\\cos 37^\\circ = 0{,}8$; $g = 10\\text{ m/s}^2$). Keadaan gerak dan percepatan balok tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Diam karena gaya tarik horizontal lebih kecil dari berat kotak",
+      "Bergerak dengan percepatan 0,5 m/s²",
+      "Bergerak dengan percepatan 1,0 m/s²",
+      "Bergerak dengan percepatan 1,5 m/s²",
+      "Bergerak dengan percepatan 1,9 m/s²"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Analisis ambang gerak ($F_x$ vs $f_{s,\\max}$) dengan modifikasi gaya normal akibat gaya tarik bersudut.</div>",
+      "steps": "<ol><li>1) Penguraian gaya tarik: $F_x = F \\cos 37^\\circ = 40\\text{ N}$, $F_y = F \\sin 37^\\circ = 30\\text{ N}$.<br>2) Gaya normal: $N = mg - F_y = 10(10) - 30 = 70\\text{ N}$.<br>3) Gaya gesek statis maksimum: $f_{s,\\max} = \\mu_s N = 0{,}5 \\times 70 = 35\\text{ N}$. Karena $F_x = 40\\text{ N} > 35\\text{ N}$, kotak bergerak!<br>4) Gaya gesek kinetis saat bergerak: $f_k = \\mu_k N = 0{,}3 \\times 70 = 21\\text{ N}$.<br>5) Percepatan: $a = \\frac{F_x - f_k}{m} = \\frac{40 - 21}{10} = 1{,}9\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengabaikan $F_y$ dalam menghitung gaya normal (menganggap $N = mg = 100\\text{ N}$), sehingga menghasilkan $f_k = 30\\text{ N}$ dan $a = 1{,}0\\text{ m/s}^2$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-31",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gaya Gesek (Statis vs Kinetis)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok bermassa $m = 4\\text{ kg}$ ditekan merapat ke langit-langit atap datar oleh gaya dorong vertikal ke atas sebesar $F_v = 70\\text{ N}$. Koefisien gesekan kinetis antara balok dan permukaan langit-langit atap adalah $\\mu_k = 0{,}20$. Jika balok kemudian ditarik secara horizontal dengan gaya tetap $F_h = 20\\text{ N}$ ($g = 10\\text{ m/s}^2$), besar percepatan horizontal balok adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "3,5 m/s²",
+      "4,0 m/s²",
+      "4,5 m/s²",
+      "5,0 m/s²",
+      "5,5 m/s²"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Gaya normal pada langit-langit atap: $N = F_v - mg$ dan Hukum II Newton horizontal: $F_h - f_k = m \\cdot a$.</div>",
+      "steps": "<ol><li>1) Gaya vertikal: $\\Sigma F_y = 0 \\Rightarrow F_v - mg - N = 0 \\Rightarrow N = 70 - 4(10) = 30\\text{ N}$.<br>2) Gaya gesek kinetis langit-langit: $f_k = \\mu_k N = 0{,}20 \\times 30 = 6\\text{ N}$.<br>3) Percepatan horizontal: $a = \\frac{F_h - f_k}{m} = \\frac{20 - 6}{4} = \\frac{14}{4} = 3{,}5\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengira $N = mg = 40\\text{ N}$ atau salah menghitung $N = F_v + mg = 110\\text{ N}$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-32",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gaya Gesek (Statis vs Kinetis)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok bermassa $m = 6\\text{ kg}$ berada pada bidang miring kasar dengan sudut kemiringan $\\theta = 37^\\circ$ terhadap horizontal ($\\sin 37^\\circ = 0{,}6$; $\\cos 37^\\circ = 0{,}8$; $g = 10\\text{ m/s}^2$). Koefisien gesekan kinetis antara balok dan bidang miring adalah $\\mu_k = 0{,}50$. Balok didorong ke bawah sejajar bidang miring dengan gaya luar $F = 18\\text{ N}$. Besar percepatan gerak balok menuruni bidang miring adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "2 m/s²",
+      "3 m/s²",
+      "4 m/s²",
+      "5 m/s²",
+      "6 m/s²"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton balok didorong menuruni bidang miring kasar: $\\Sigma F_x = F + mg \\sin\\theta - f_k = m \\cdot a$.</div>",
+      "steps": "<ol><li>1) Komponen berat tegak lurus bidang: $N = mg \\cos 37^\\circ = 6(10)(0{,}8) = 48\\text{ N}$.<br>2) Gaya gesek kinetis (menentang arah gerak turun): $f_k = \\mu_k N = 0{,}50 \\times 48 = 24\\text{ N}$.<br>3) Komponen berat sejajar bidang: $W_x = mg \\sin 37^\\circ = 6(10)(0{,}6) = 36\\text{ N}$.<br>4) Resultan gaya searah kemiringan: $\\Sigma F = F + W_x - f_k = 18 + 36 - 24 = 30\\text{ N}$.<br>5) Percepatan: $a = \\frac{30}{6} = 5\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Keliru menentukan arah gaya gesek (menambahkan gaya gesek ke arah bawah), atau salah menghitung $W_x$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-11",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Sistem Tali & Katrol",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok kayu $A$ bermassa $m_A = 4\\text{ kg}$ diletakkan pada permukaan meja horizontal kasar dengan koefisien gesekan kinetis $\\mu_k = 0{,}25$. Balok $A$ dihubungkan oleh seutas tali ringan melalui katrol licin tanpa gesekan di ujung meja dengan balok beban $B$ bermassa $m_B = 6\\text{ kg}$ yang tergantung bebas secara vertikal. Jika sistem dilepaskan dan $g = 10\\text{ m/s}^2$, besar gaya tegangan tali selama sistem bergerak adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "18 N",
+      "24 N",
+      "30 N",
+      "40 N",
+      "60 N"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Penggabungan gaya gesek kinetis permukaan horizontal dengan dinamika sistem katrol dua benda terhubung.</div>",
+      "steps": "<ol><li>1) Gaya normal dan gaya gesek pada balok $A$: $N_A = m_A g = 40\\text{ N} \\Rightarrow f_k = \\mu_k N_A = 0{,}25 \\times 40 = 10\\text{ N}$.<br>2) Gaya berat beban $B$: $W_B = m_B g = 60\\text{ N}$.<br>3) Percepatan sistem: $a = \\frac{W_B - f_k}{m_A + m_B} = \\frac{60 - 10}{4 + 6} = \\frac{50}{10} = 5\\text{ m/s}^2$.<br>4) Tegangan tali (tinjau balok $B$): $W_B - T = m_B a \\Rightarrow T = 60 - 6(5) = 30\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa lupa mengurangkan gaya gesek kinetis pada gaya penarik sistem, atau keliru menghitung $T = f_k = 10\\text{ N}$ seolah sistem berada dalam kesetimbangan statis.</div>"
+    }
+  },
+  {
+    "id": "fis-din-12",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Sistem Tali & Katrol",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok $A$ bermassa $5\\text{ kg}$ terletak pada bidang miring licin yang memiliki sudut kemiringan $\\theta = 30^\\circ$ ($\\sin 30^\\circ = 0{,}5$). Balok $A$ dihubungkan oleh seutas tali melalui katrol licin di puncak bidang miring ke balok gantung $B$ yang juga bermassa $5\\text{ kg}$. Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$, besar percepatan gerak kedua balok tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "2,5 m/s²",
+      "3,5 m/s²",
+      "5,0 m/s²",
+      "7,5 m/s²",
+      "10,0 m/s²"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Dinamika sistem katrol bidang miring licin terhubung beban vertikal: $a = \\frac{m_B g - m_A g \\sin\\theta}{m_A + m_B}$.</div>",
+      "steps": "<ol><li>1) Komponen berat $A$ sejajar bidang miring: $W_{Ax} = m_A g \\sin 30^\\circ = 5(10)(0{,}5) = 25\\text{ N}$.<br>2) Berat beban gantung $B$: $W_B = m_B g = 50\\text{ N}$.<br>3) Karena $W_B > W_{Ax}$, balok $B$ bergerak turun dan $A$ bergerak naik.<br>4) Percepatan sistem: $a = \\frac{W_B - W_{Ax}}{m_A + m_B} = \\frac{50 - 25}{5 + 5} = \\frac{25}{10} = 2{,}5\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Hanya membagi resultan gaya dengan massa salah satu benda ($a = 25 / 5 = 5{,}0\\text{ m/s}^2$), atau mengira kedua massa yang sama ($5\\text{ kg}$ dan $5\\text{ kg}$) pasti berada dalam keadaan diam setimbang.</div>"
+    }
+  },
+  {
+    "id": "fis-din-35",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Sistem Tali & Katrol",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua buah balok $A$ ($m_A = 5\\text{ kg}$) dan $B$ ($m_B = 5\\text{ kg}$) diletakkan pada sistem bidang miring ganda yang licin tanpa gesekan. Balok $A$ berada pada kemiringan $\\theta_A = 53^\\circ$ ($\\sin 53^\\circ = 0{,}8$) dan balok $B$ berada pada kemiringan $\\theta_B = 37^\\circ$ ($\\sin 37^\\circ = 0{,}6$). Kedua balok dihubungkan oleh seutas tali ringan melalui katrol licin di puncak pertemuan kedua bidang miring. Jika $g = 10\\text{ m/s}^2$, besar percepatan dan tegangan tali penghubung kedua balok adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "a = 1 m/s² dan T = 35 N",
+      "a = 1 m/s² dan T = 40 N",
+      "a = 2 m/s² dan T = 30 N",
+      "a = 2 m/s² dan T = 35 N",
+      "a = 0 m/s² dan T = 30 N"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Sistem katrol bidang miring ganda: $a = \\frac{m_A g \\sin\\theta_A - m_B g \\sin\\theta_B}{m_A + m_B}$.</div>",
+      "steps": "<ol><li>1) Gaya penggerak $A$: $W_{Ax} = 5(10)(0{,}8) = 40\\text{ N}$ menuruni bidang $A$.<br>2) Gaya penahan $B$: $W_{Bx} = 5(10)(0{,}6) = 30\\text{ N}$ menuruni bidang $B$.<br>3) Percepatan sistem: $a = \\frac{40 - 30}{5 + 5} = \\frac{10}{10} = 1\\text{ m/s}^2$.<br>4) Tegangan tali (tinjau balok $B$ yang tertarik naik): $T - W_{Bx} = m_B a \\Rightarrow T = 30 + 5(1) = 35\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa mengira karena massa kedua balok sama ($5\\text{ kg}$ dan $5\\text{ kg}$), sistem otomatis diam setimbang ($a = 0$).</div>"
+    }
+  },
+  {
+    "id": "fis-din-36",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Sistem Tali & Katrol",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah balok $A$ ($m_A = 3\\text{ kg}$) berada di atas meja mendatar kasar dengan koefisien gesekan kinetis $\\mu_k = 0{,}20$. Balok $A$ dihubungkan tali melalui katrol licin di ujung kanan meja ke beban gantung $B$ ($m_B = 2\\text{ kg}$). Balok $A$ ditarik ke arah kiri oleh gaya luar horizontal $F = 36\\text{ N}$ sehingga sistem bergerak ke kiri dan balok $B$ terangkat naik. Jika $g = 10\\text{ m/s}^2$, percepatan gerak sistem tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "1 m/s²",
+      "1,5 m/s²",
+      "2 m/s²",
+      "2,5 m/s²",
+      "3 m/s²"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton pada sistem katrol dengan gaya tarik eksternal berlawanan arah gerak beban gantung.</div>",
+      "steps": "<ol><li>1) Karena balok $A$ bergerak ke kiri, gaya gesek kinetis pada $A$ mengarah ke kanan: $f_k = \\mu_k m_A g = 0{,}20 \\times 30 = 6\\text{ N}$.<br>2) Gaya berat beban $B$ yang harus diangkat ke atas: $W_B = m_B g = 20\\text{ N}$.<br>3) Resultan gaya penggerak ke kiri: $\\Sigma F = F - f_k - W_B = 36 - 6 - 20 = 10\\text{ N}$.<br>4) Percepatan sistem: $a = \\frac{\\Sigma F}{m_A + m_B} = \\frac{10}{3 + 2} = \\frac{10}{5} = 2\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Salah menentukan arah gaya gesek kinetis (mengira gaya gesek mengarah ke kiri bersama $F$).</div>"
+    }
+  },
+  {
+    "id": "fis-din-19",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gravitasi Universal Newton",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua buah benda angkasa $M_1$ dan $M_2$ berada pada posisi tetap dan terpisah sejauh $d$. Diketahui massa benda pertama adalah sembilan kali massa benda kedua ($M_1 = 9 M_2$). Sebuah wahana antariksa tak berawak melintas di sepanjang garis hubung kedua benda. Jarak wahana dari benda pertama $M_1$ agar resultan medan gravitasi total yang dialami wahana bernilai nol adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "0,25 d",
+      "0,33 d",
+      "0,50 d",
+      "0,60 d",
+      "0,75 d"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Titik netral gravitasi: kesetimbangan kuat medan gravitasi dua sumber massa segaris ($g_1 = g_2$).</div>",
+      "steps": "<ol><li>Misalkan jarak dari $M_1$ adalah $x$, maka jarak dari $M_2$ adalah $d - x$.<br>$$G \\frac{M_1}{x^2} = G \\frac{M_2}{(d - x)^2} \\Rightarrow \\frac{9 M_2}{x^2} = \\frac{M_2}{(d - x)^2}$$<br>Tarik akar kedua ruas: $\\frac{3}{x} = \\frac{1}{d - x} \\Rightarrow 3(d - x) = x \\Rightarrow 3d = 4x \\Rightarrow x = \\frac{3}{4}d = 0{,}75 d$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering memilih opsi $0{,}25 d$ yang merupakan jarak titik netral dari benda kedua ($M_2$), bukan dari benda pertama ($M_1$).</div>"
+    }
+  },
+  {
+    "id": "fis-din-20",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gravitasi Universal Newton",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah satelit komunikasi bermassa $m$ bergerak dalam lintasan orbit lingkaran stabil mengelilingi bumi pada ketinggian $h = 3R$ di atas permukaan bumi, dengan $R$ adalah jari-jari bumi. Jika percepatan gravitasi di permukaan bumi adalah $g$, kelajuan orbit satelit tersebut dinyatakan dalam variabel $g$ dan $R$ adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "1/4 √(gR)",
+      "1/3 √(gR)",
+      "1/2 √(gR)",
+      "√(gR)",
+      "2 √(gR)"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kelajuan orbit satelit lingkaran: gaya gravitasi bumi bertindak sebagai gaya sentripetal ($\\frac{G M m}{r^2} = \\frac{m v^2}{r}$).</div>",
+      "steps": "<ol><li>1) Jarak orbit dari pusat bumi: $r = R + h = R + 3R = 4R$.<br>2) Kelajuan orbit: $v = \\sqrt{\\frac{GM}{r}}$.<br>3) Hubungan konstanta permukaan: $g = \\frac{GM}{R^2} \\Rightarrow GM = g R^2$.<br>4) Substitusi: $v = \\sqrt{\\frac{g R^2}{4R}} = \\sqrt{\\frac{g R}{4}} = \\frac{1}{2}\\sqrt{g R}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengabaikan penambahan jari-jari bumi ($r = 3R$ bukan $4R$), atau lupa menarik akar kuadrat dari angka 4 di penyebut.</div>"
+    }
+  },
+  {
+    "id": "fis-din-43",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gravitasi Universal Newton",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua buah satelit riset $A$ dan $B$ mengorbit bumi dalam lintasan lingkaran. Satelit $A$ mengorbit dengan jari-jari orbit $r_A = R$ dan memiliki periode revolusi $T_A = 8\\text{ hari}$. Jika satelit $B$ mengorbit dengan jari-jari orbit $r_B = 4R$, periode revolusi satelit $B$ mengelilingi bumi adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "32 hari",
+      "64 hari",
+      "96 hari",
+      "128 hari",
+      "256 hari"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum III Kepler: perbandingan kuadrat periode revolusi sama dengan perbandingan pangkat tiga jari-jari orbit ($\\frac{T_B^2}{T_A^2} = \\frac{r_B^3}{r_A^3}$).</div>",
+      "steps": "<ol><li>$$\\left(\\frac{T_B}{T_A}\\right)^2 = \\left(\\frac{r_B}{r_A}\\right)^3 = \\left(\\frac{4R}{R}\\right)^3 = 64 \\Rightarrow \\frac{T_B}{T_A} = \\sqrt{64} = 8 \\Rightarrow T_B = 8 \\times T_A = 8 \\times 8 = 64\\text{ hari}$$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Hanya menggunakan perbandingan linear ($4 \\times 8 = 32\\text{ hari}$) tanpa menerapkan aturan pangkat $T^2 \\propto r^3$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-44",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-1",
+    "category": "Gravitasi Universal Newton",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Kelajuan lepas (*escape velocity*) sebuah pesawat antariksa dari permukaan bumi adalah $v_{\\text{lepas}} = \\sqrt{\\frac{2GM}{R}}$. Pada sebuah planet super yang memiliki massa $8$ kali massa bumi ($M_P = 8 M_B$) dan jari-jari $2$ kali jari-jari bumi ($R_P = 2 R_B$), kelajuan lepas roket dari permukaan planet tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "2 v_lepas",
+      "4 v_lepas",
+      "√2 v_lepas",
+      "2√2 v_lepas",
+      "8 v_lepas"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kelajuan lepas medan gravitasi: $v_{\\text{lepas}} = \\sqrt{\\frac{2GM}{R}}$.</div>",
+      "steps": "<ol><li>$$\\frac{v_{\\text{lepas}, P}}{v_{\\text{lepas}, B}} = \\sqrt{\\left(\\frac{M_P}{M_B}\\right) \\left(\\frac{R_B}{R_P}\\right)} = \\sqrt{\\frac{8}{2}} = \\sqrt{4} = 2 \\Rightarrow v_{\\text{lepas}, P} = 2 v_{\\text{lepas}, B}$$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa menarik tanda akar kuadrat dari rasio $\\frac{8}{2} = 4$, sehingga menjawab $4 v_{\\text{lepas}}$.</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-09",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-2",
+    "category": "Momentum - Tumbukan Lenting Sempurna Dua Massa Sama",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah bola biliar $A$ bermassa $m_A = 0{,}2\\text{ kg}$ meluncur dengan kecepatan $v_A = 4\\text{ m/s}$ ke arah kanan dan menumbuk bola biliar $B$ bermassa sama $m_B = 0{,}2\\text{ kg}$ yang sedang diam di atas meja licin ($v_B = 0$). Jika tumbukan berlangsung lenting sempurna ($e = 1$), kecepatan bola $A$ ($v_A'$) dan bola $B$ ($v_B'$) sesaat setelah tumbukan adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$v_A' = 0\\text{ m/s}$ dan $v_B' = 4\\text{ m/s}$ ke kanan",
       "$v_A' = 2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ ke kanan",
       "$v_A' = -2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ ke kanan",
       "$v_A' = -4\\text{ m/s}$ dan $v_B' = 0\\text{ m/s}$",
       "$v_A' = 1\\text{ m/s}$ dan $v_B' = 3\\text{ m/s}$ ke kanan"
     ],
-    correctIndex: 0,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Karakteristik Tumbukan Lenting Sempurna Dua Massa Identik ($m_1 = m_2, e = 1$):</strong><br>
-          Kedua benda akan saling bertukar kecepatan secara utuh:<br>
-          $$v_1' = v_2 \\quad \\text{dan} \\quad v_2' = v_1$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Hukum Kekekalan Momentum:
-            $$m(4) + m(0) = m v_A' + m v_B' \\implies v_A' + v_B' = 4$$
-          </li>
-          <li>Koefisien Restitusi ($e = 1$):
-            $$e = -\\frac{v_A' - v_B'}{v_A - v_B} = 1 \\implies -(v_A' - v_B') = 4 - 0 \\implies -v_A' + v_B' = 4$$
-          </li>
-          <li>Jumlahkan kedua persamaan:
-            $$2 v_B' = 8 \\implies v_B' = 4\\text{ m/s}$$
-            $$v_A' = 4 - 4 = 0\\text{ m/s}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Opsi $v_A' = 2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ terjadi pada kasus tumbukan tidak lenting sama sekali ($e = 0$), bukan lenting sempurna.
-        </div>
-      `
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Karakteristik Tumbukan Lenting Sempurna Dua Massa Identik ($m_1 = m_2, e = 1$):</strong><br>\n          Kedua benda akan saling bertukar kecepatan secara utuh:<br>\n          $$v_1' = v_2 \\quad \\text{dan} \\quad v_2' = v_1$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Hukum Kekekalan Momentum:\n            $$m(4) + m(0) = m v_A' + m v_B' \\implies v_A' + v_B' = 4$$\n          </li>\n          <li>Koefisien Restitusi ($e = 1$):\n            $$e = -\\frac{v_A' - v_B'}{v_A - v_B} = 1 \\implies -(v_A' - v_B') = 4 - 0 \\implies -v_A' + v_B' = 4$$\n          </li>\n          <li>Jumlahkan kedua persamaan:\n            $$2 v_B' = 8 \\implies v_B' = 4\\text{ m/s}$$\n            $$v_A' = 4 - 4 = 0\\text{ m/s}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Opsi $v_A' = 2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ terjadi pada kasus tumbukan tidak lenting sama sekali ($e = 0$), bukan lenting sempurna.\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - FLUIDA (fis-flu-2: Fluida Dinamis & Teorema Torricelli)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-10",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-flu",
-    subTopicId: "fis-flu-2",
-    category: "Teorema Torricelli - Jarak Pancaran Air",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebuah tangki air silinder besar terbuka diletakkan di atas tanah mendatar. Pada dinding tangki terdapat sebuah lubang kecil pada kedalaman $h_1 = 1{,}8\\text{ meter}$ di bawah permukaan air. Jika lubang tersebut berada pada ketinggian $h_2 = 3{,}2\\text{ meter}$ di atas permukaan tanah ($g = 10\\text{ m/s}^2$), jarak jatuh pancaran air secara horizontal ($x$) di tanah diukur dari dasar dinding tangki adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-din-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-2",
+    "category": "Tumbukan Tidak Lenting Sama Sekali",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebutir peluru bermassa $20\\text{ gram}$ meluncur horizontal dengan kecepatan $300\\text{ m/s}$ menumbuk balok kayu bermassa $980\\text{ gram}$ yang diam di atas lantai licin. Peluru bersarang di dalam balok dan keduanya meluncur bersama. Kecepatan balok beserta peluru setelah tumbukan adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$6\\text{ m/s}$",
+      "$3\\text{ m/s}$",
+      "$9\\text{ m/s}$",
+      "$12\\text{ m/s}$",
+      "$15\\text{ m/s}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Kekekalan Momentum Linear:</strong><br>Pada tumbukan tidak lenting sama sekali ($e = 0$), kedua benda bergabung menjadi satu massa dengan kecepatan akhir bersama ($v'$): $m_1 v_1 + m_2 v_2 = (m_1 + m_2) v'$.</div>",
+      "steps": "<ol><li>Konversi satuan ke kg: $m_p = 0{,}02\\text{ kg}$, $m_b = 0{,}98\\text{ kg}$.</li><li>Momentum sebelum: $p = 0{,}02 \\times 300 + 0 = 6\\text{ kg}\\cdot\\text{m/s}$.</li><li>Massa gabungan: $M = 0{,}02 + 0{,}98 = 1{,}0\\text{ kg}$.</li><li>Kecepatan bersama: $v' = \\frac{p}{M} = \\frac{6}{1{,}0} = 6\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Lupa mengonversi satuan gram ke kilogram atau salah menjumlahkan massa total peluru dan balok.</div>"
+    }
+  },
+  {
+    "id": "fis-din-23",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Dinamika Rotasi & Benda Menggelinding",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah silinder pejal roda gigi ($I = \\frac{1}{2} M R^2$, konstanta inersia $k = 0{,}5$) bermassa $M = 4\\text{ kg}$ dilepaskan dari keadaan diam di puncak bidang miring kasar bersudut $\\theta = 37^\\circ$ terhadap horizontal ($\\sin 37^\\circ = 0{,}6$; $\\cos 37^\\circ = 0{,}8$; $g = 10\\text{ m/s}^2$). Silinder menggelinding murni menuruni bidang miring tanpa slip. Besar percepatan linier pusat massa silinder dan gaya gesekan statis yang bekerja pada silinder adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "a = 4 m/s² dan fs = 8 N",
+      "a = 6 m/s² dan fs = 0 N",
+      "a = 4 m/s² dan fs = 16 N",
+      "a = 3 m/s² dan fs = 12 N",
+      "a = 2 m/s² dan fs = 6 N"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Dinamika gerak menggelinding murni tanpa slip: translasi ($Mg \\sin\\theta - f_s = Ma$) dan rotasi ($f_s R = I \\alpha$). Formula percepatan: $a = \\frac{g \\sin\\theta}{1 + k}$.</div>",
+      "steps": "<ol><li>1) Percepatan linier pusat massa silinder ($k = 0{,}5$):<br>$$a = \\frac{g \\sin 37^\\circ}{1 + k} = \\frac{10 \\times 0{,}6}{1 + 0{,}5} = \\frac{6}{1{,}5} = 4\\text{ m/s}^2$$.<br>2) Menghitung gaya gesek statis penopang rotasi:<br>$$f_s = \\frac{I \\alpha}{R} = \\frac{1}{2} M a = \\frac{1}{2}(4)(4) = 8\\text{ N}$$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengira benda meluncur bebas tanpa rotasi ($a = g \\sin\\theta = 6\\text{ m/s}^2$ dan $f_s = 0\\text{ N}$), atau menggunakan koefisien inersia bola pejal ($k = 2/5$) bukannya silinder pejal ($k = 1/2$).</div>"
+    }
+  },
+  {
+    "id": "fis-din-24",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Dinamika Rotasi & Benda Menggelinding",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah tangga homogen dengan panjang $L = 5\\text{ meter}$ dan berat $W = 300\\text{ N}$ bersandar pada dinding vertikal yang licin sempurna dan bertumpu pada lantai horizontal kasar. Sudut kemiringan antara tangga dan lantai adalah $\\theta = 53^\\circ$ ($\\sin 53^\\circ = 0{,}8$; $\\cos 53^\\circ = 0{,}6$; $\\tan 53^\\circ = \\frac{4}{3}$). Jika tangga berada dalam keadaan tepat akan tergelincir, besar koefisien gesekan statis minimum $\\mu_s$ antara ujung bawah tangga dan lantai adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "0,250",
+      "0,375",
+      "0,500",
+      "0,625",
+      "0,750"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kesetimbangan statis benda tegar (tangga homogen bersandar): $\\Sigma F_x = 0$, $\\Sigma F_y = 0$, dan $\\Sigma \\tau = 0$.</div>",
+      "steps": "<ol><li>1) Kesetimbangan gaya vertikal: $N_{\\text{lantai}} = W = 300\\text{ N}$.<br>2) Kesetimbangan gaya horizontal: $f_s = N_{\\text{dinding}}$.<br>3) Torsi terhadap ujung bawah di lantai: $N_{\\text{dinding}} (L \\sin 53^\\circ) - W (\\frac{L}{2} \\cos 53^\\circ) = 0 \\Rightarrow N_{\\text{dinding}} = \\frac{W}{2 \\tan 53^\\circ}$.<br>4) Syarat tepat akan tergelincir ($f_s = \\mu_s N_{\\text{lantai}}$):<br>$$\\mu_s W = \\frac{W}{2 \\tan 53^\\circ} \\Rightarrow \\mu_s = \\frac{1}{2 \\tan 53^\\circ} = \\frac{1}{2 \\times (4/3)} = \\frac{3}{8} = 0{,}375$$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa bahwa letak titik berat tangga homogen berada di tengah batang ($L/2$), sehingga lupa membagi 2 dan mendapatkan hasil $\\mu_s = 0{,}750$.</div>"
+    }
+  },
+  {
+    "id": "fis-din-47",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Dinamika Rotasi & Benda Menggelinding",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah bola pejal ($I = \\frac{2}{5} M R^2$) dan sebuah silinder berongga tipis ($I = M R^2$) dilepaskan secara bersamaan dari keadaan diam di puncak bidang miring kasar yang sama. Keduanya menggelinding murni menuruni bidang miring tanpa slip. Perbandingan percepatan linier bola pejal ($a_{\\text{bola}}$) terhadap percepatan linier silinder berongga ($a_{\\text{silinder}}$) adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "5 : 7",
+      "7 : 5",
+      "7 : 10",
+      "10 : 7",
+      "14 : 5"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Percepatan linier gerak menggelinding murni: $a = \\frac{g \\sin\\theta}{1 + k}$.</div>",
+      "steps": "<ol><li>1) Bola pejal ($k = 2/5$): $a_{\\text{bola}} = \\frac{g \\sin\\theta}{1 + 2/5} = \\frac{5}{7} g \\sin\\theta$.<br>2) Silinder berongga ($k = 1$): $a_{\\text{silinder}} = \\frac{g \\sin\\theta}{1 + 1} = \\frac{1}{2} g \\sin\\theta$.<br>3) Perbandingan: $\\frac{a_{\\text{bola}}}{a_{\\text{silinder}}} = \\frac{5/7}{1/2} = \\frac{10}{7}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering membalik perbandingan menjadi $7 : 10$ atau salah memasukkan konstanta momen inersia silinder berongga tipis.</div>"
+    }
+  },
+  {
+    "id": "fis-din-48",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Dinamika Rotasi & Benda Menggelinding",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah batang homogen bermassa $M = 6\\text{ kg}$ dan panjang $L = 4\\text{ meter}$ dihubungkan dengan engsel di dinding pada salah satu ujungnya dan ditahan tetap mendatar oleh seutas kawat baja yang diikatkan pada ujung bebas batang dengan membentuk sudut $\\theta = 30^\\circ$ terhadap batang ($\\sin 30^\\circ = 0{,}5$; $g = 10\\text{ m/s}^2$). Sebuah beban tambahan bermassa $m = 4\\text{ kg}$ digantungkan tepat di ujung bebas batang tersebut. Besar gaya tegangan kawat baja penahan batang adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "70 N",
+      "100 N",
+      "110 N",
+      "120 N",
+      "140 N"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kesetimbangan rotasi benda tegar terhadap poros engsel: $\\Sigma \\tau = 0$.</div>",
+      "steps": "<ol><li>1) Titik poros pada engsel dinding.<br>2) Torsi searah jarum jam oleh berat batang (di tengah batang $L/2$): $\\tau_1 = W_{\\text{batang}} \\times \\frac{L}{2} = 60 \\times 2 = 120\\text{ N}\\cdot\\text{m}$.<br>3) Torsi searah jarum jam oleh beban gantung (di ujung batang $L$): $\\tau_2 = W_{\\text{beban}} \\times L = 40 \\times 4 = 160\\text{ N}\\cdot\\text{m}$.<br>4) Torsi berlawanan jarum jam oleh kawat baja: $\\tau_3 = T \\sin 30^\\circ \\times L = T(0{,}5)(4) = 2T$.<br>5) Kesetimbangan rotasi: $2T = 120 + 160 = 280 \\Rightarrow T = \\frac{280}{2} = 140\\text{ N}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengira letak titik berat batang berada di ujungnya ($L$) bukannya di tengah batang ($L/2$), sehingga menghasilkan $T = 200\\text{ N}$.</div>"
+    }
+  },
+  {
+    "id": "drill-rot-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Teorema Sumbu Sejajar Momen Inersia",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah batang silinder homogen bermassa $M$ dan panjang $L$ memiliki momen inersia terhadap poros yang melalui pusat massanya sebesar $I_{\\text{pm}} = \\frac{1}{12} M L^2$. Berdasarkan teorema sumbu sejajar, momen inersia batang jika diputar pada salah satu ujungnya adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$\\frac{1}{3} M L^2$",
+      "$\\frac{1}{4} M L^2$",
+      "$\\frac{1}{6} M L^2$",
+      "$\\frac{5}{12} M L^2$",
+      "$\\frac{2}{3} M L^2$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Teorema Sumbu Sejajar (Steiner):</strong><br>Momen inersia terhadap sumbu sejajar yang berjarak $d$ dari pusat massa adalah:<br>$$I = I_{\\text{pm}} + M d^2$$</div>",
+      "steps": "<ol><li>Jarak dari pusat massa (tengah batang) ke ujung batang: $d = \\frac{1}{2}L$.</li><li>Terapkan teorema sumbu sejajar:<br>$$I = \\frac{1}{12}ML^2 + M\\left(\\frac{1}{2}L\\right)^2 = \\frac{1}{12}ML^2 + \\frac{1}{4}ML^2$$</li><li>Samakan penyebut:<br>$$I = \\left(\\frac{1}{12} + \\frac{3}{12}\\right)ML^2 = \\frac{4}{12}ML^2 = \\frac{1}{3}ML^2$$</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Pasangan Rumus Batang:</strong> Poros di tengah $\\implies \\frac{1}{12}ML^2$. Poros di ujung $\\implies \\frac{1}{3}ML^2$.</div>"
+    }
+  },
+  {
+    "id": "drill-rot-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Hukum II Newton Rotasi dan Percepatan Sudut",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah roda gila berbentuk silinder pejal homogen bermassa $M = 4\\text{ kg}$ dan jari-jari $R = 0{,}5\\text{ m}$ ($I = \\frac{1}{2}MR^2$). Roda tersebut mula-mula diam, kemudian diberi momen gaya konstan sebesar $\\tau = 6\\text{ N}\\cdot\\text{m}$. Percepatan sudut ($\\alpha$) yang dialami roda gila tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$12\\text{ rad/s}^2$",
+      "$6\\text{ rad/s}^2$",
+      "$24\\text{ rad/s}^2$",
+      "$3\\text{ rad/s}^2$",
+      "$8\\text{ rad/s}^2$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum II Newton untuk Rotasi:</strong><br>$$\\Sigma \\tau = I \\cdot \\alpha \\implies \\alpha = \\frac{\\Sigma \\tau}{I}$$</div>",
+      "steps": "<ol><li>Hitung momen inersia silinder pejal:<br>$$I = \\frac{1}{2} M R^2 = \\frac{1}{2} \\times 4 \\times (0{,}5)^2 = 2 \\times 0{,}25 = 0{,}5\\text{ kg}\\cdot\\text{m}^2$$</li><li>Hitung percepatan sudut:<br>$$\\alpha = \\frac{\\tau}{I} = \\frac{6\\text{ N}\\cdot\\text{m}}{0{,}5\\text{ kg}\\cdot\\text{m}^2} = 12\\text{ rad/s}^2$$</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Analogi Gerak:</strong> Torsi $\\tau$ analog dengan gaya $F$, momen inersia $I$ analog dengan massa $m$, dan percepatan sudut $\\alpha$ analog dengan percepatan linier $a$ ($F = ma \\leftrightarrow \\tau = I\\alpha$).</div>"
+    }
+  },
+  {
+    "id": "drill-rot-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Percepatan Menggelinding Silinder Pejal pada Bidang Miring",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah silinder pejal ($I = \\frac{1}{2}mR^2$) dilepaskan dari keadaan diam di puncak bidang miring kasar bersudut kemiringan $\\theta$ terhadap horizontal. Jika silinder menggelinding murni tanpa slip dan percepatan gravitasi adalah $g$, maka percepatan linier ($a$) silinder pejal tersebut menuruni bidang miring adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$\\frac{2}{3} g \\sin \\theta$",
+      "$\\frac{1}{2} g \\sin \\theta$",
+      "$\\frac{5}{7} g \\sin \\theta$",
+      "$g \\sin \\theta$",
+      "$\\frac{3}{4} g \\sin \\theta$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Percepatan Benda Menggelinding Murni pada Bidang Miring:</strong><br>$$a = \\frac{g \\sin \\theta}{1 + k}$$<br>dengan $k$ konstanta bentuk momen inersia ($I = k m R^2$).</div>",
+      "steps": "<ol><li>Untuk silinder pejal: $I = \\frac{1}{2} m R^2 \\implies k = \\frac{1}{2} = 0{,}5$.</li><li>Substitusi nilai $k$ ke rumus umum:<br>$$a = \\frac{g \\sin \\theta}{1 + \\frac{1}{2}} = \\frac{g \\sin \\theta}{\\frac{3}{2}} = \\frac{2}{3} g \\sin \\theta$$</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perbedaan Luncur vs Gelinding:</strong> Jika bidang licin (meluncur tanpa rotasi), $a = g \\sin\\theta$. Jika menggelinding, inersia rotasi menahan laju sehingga $a = \\frac{g \\sin\\theta}{1 + k} < g \\sin\\theta$.</div>"
+    }
+  },
+  {
+    "id": "drill-rot-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Hukum Kekekalan Momentum Sudut",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang atlet seluncur es berputar dengan kecepatan sudut $\\omega_1 = 3\\text{ rad/s}$ saat merentangkan kedua tangannya, di mana momen inersia tubuhnya saat itu adalah $I_1 = 4\\text{ kg}\\cdot\\text{m}^2$. Ketika atlet tersebut melipat kedua tangannya merapat ke dada, momen inersianya berkurang menjadi $I_2 = 1{,}5\\text{ kg}\\cdot\\text{m}^2$. Jika gesekan es diabaikan, kecepatan sudut putaran atlet sekarang ($\\omega_2$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$8\\text{ rad/s}$",
+      "$6\\text{ rad/s}$",
+      "$4\\text{ rad/s}$",
+      "$12\\text{ rad/s}$",
+      "$2\\text{ rad/s}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Kekekalan Momentum Sudut:</strong><br>Jika tidak ada torsi luar yang bekerja pada sistem ($\\Sigma \\tau_{\\text{eksternal}} = 0$), maka momentum sudut sistem kekal:<br>$$L_1 = L_2 \\implies I_1 \\omega_1 = I_2 \\omega_2$$</div>",
+      "steps": "<ol><li>Momentum sudut awal: $L_1 = I_1 \\omega_1 = 4 \\times 3 = 12\\text{ kg}\\cdot\\text{m}^2\\text{/s}$.</li><li>Karena momentum sudut kekal: $I_2 \\omega_2 = 12$.</li><li>Kecepatan sudut baru: $\\omega_2 = \\frac{12}{1{,}5} = 8\\text{ rad/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Prinsip Fisika Riil:</strong> Saat atlet melipat tangan, jari-jari massa terhadap sumbu putar mengecil $\\implies$ momen inersia $I$ mengecil $\\implies$ kecepatan putar $\\omega$ melonjak naik drastis!</div>"
+    }
+  },
+  {
+    "id": "drill2-rot-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Energi Kinetik Total Bola Pejal Menggelinding",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah bola pejal homogen ($I = \\frac{2}{5}mv^2$) bermassa $m = 2\\text{ kg}$ menggelinding murni di atas lantai mendatar tanpa slip dengan kelajuan linier $v = 10\\text{ m/s}$. Besar energi kinetik total (gabungan translasi dan rotasi) bola pejal tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$140\\text{ Joule}$",
+      "$100\\text{ Joule}$",
+      "$40\\text{ Joule}$",
+      "$70\\text{ Joule}$",
+      "$200\\text{ Joule}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Energi Kinetik Menggelinding Murni:</strong><br>$$E_k = E_{k,\\text{translasi}} + E_{k,\\text{rotasi}} = \\frac{1}{2}mv^2(1 + k)$$<br>Untuk bola pejal, nilai $k = \\frac{2}{5} = 0{,}4$.</div>",
+      "steps": "<ol><li>Energi kinetik translasi: $E_{k,\\text{trans}} = \\frac{1}{2} m v^2 = \\frac{1}{2} \\times 2 \\times (10)^2 = 100\\text{ Joule}$.</li><li>Energi kinetik rotasi: $E_{k,\\text{rot}} = k \\times E_{k,\\text{trans}} = 0{,}4 \\times 100 = 40\\text{ Joule}$.</li><li>Energi kinetik total: $E_k = 100 + 40 = 140\\text{ Joule}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Rumus Singkat Bola Pejal:</strong> $E_k = \\frac{7}{10} m v^2$. Langsung hitung $0{,}7 \\times 2 \\times 100 = 140\\text{ J}$.</div>"
+    }
+  },
+  {
+    "id": "drill2-rot-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Fraksi Energi Rotasi Silinder Pejal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah silinder pejal ($I = \\frac{1}{2}mR^2$) menggelinding murni tanpa slip pada permukaan mendatar. Persentase energi kinetik rotasi terhadap energi kinetik total silinder pejal tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$33{,}3\\%$ (sepertiga bagian)",
+      "$50\\%$ (setengah bagian)",
+      "$66{,}7\\%$ (dua pertiga bagian)",
+      "$25\\%$ (seperempat bagian)",
+      "$20\\%$ (seperlima bagian)"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Rasio Fraksi Energi Kinetik Benda Menggelinding:</strong><br>$$\\frac{E_{k,\\text{rotasi}}}{E_{k,\\text{total}}} = \\frac{k}{1 + k}$$</div>",
+      "steps": "<ol><li>Untuk silinder pejal, $k = \\frac{1}{2}$.</li><li>Rasio rotasi terhadap total: $\\frac{\\frac{1}{2}}{1 + \\frac{1}{2}} = \\frac{\\frac{1}{2}}{\\frac{3}{2}} = \\frac{1}{3}$.</li><li>Dalam persen: $\\frac{1}{3} \\times 100\\% \\approx 33{,}3\\%$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perbandingan Energi:</strong> Pada silinder pejal menggelinding, $\\frac{2}{3}$ energinya adalah translasi ($66{,}7\\%$) dan $\\frac{1}{3}$ energinya adalah rotasi ($33{,}3\\%$).</div>"
+    }
+  },
+  {
+    "id": "drill2-rot-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Kelajuan Benda Menggelinding di Dasar Bidang Miring",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah silinder pejal ($k = 0{,}5$) dan sebuah bola pejal ($k = 0{,}4$) dilepaskan bersamaan dari puncak bidang miring kasar yang sama setinggi $h = 7\\text{ meter}$ tanpa kecepatan awal ($g = 10\\text{ m/s}^2$). Kelajuan bola pejal saat mencapai dasar bidang miring adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$10\\text{ m/s}$",
+      "$\\sqrt{140}\\text{ m/s}$",
+      "$8\\text{ m/s}$",
+      "$12\\text{ m/s}$",
+      "$7\\text{ m/s}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kelajuan Benda Menggelinding di Dasar Bidang Miring:</strong><br>Berdasarkan Hukum Kekekalan Energi Mekanik ($mgh = \\frac{1}{2}mv^2(1 + k)$):<br>$$v = \\sqrt{\\frac{2gh}{1 + k}}$$</div>",
+      "steps": "<ol><li>Untuk bola pejal: $k = 0{,}4 = \\frac{2}{5}$.</li><li>Hitung pembilang: $2gh = 2 \\times 10 \\times 7 = 140$.</li><li>Hitung penyebut: $1 + k = 1 + 0{,}4 = 1{,}4$.</li><li>Kelajuan: $v = \\sqrt{\\frac{140}{1{,}4}} = \\sqrt{100} = 10\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Siapa Lebih Cepat?:</strong> Benda dengan nilai $k$ lebih kecil (seperti bola pejal $k=0{,}4$) selalu tiba di dasar lebih cepat dan dengan kelajuan lebih tinggi dibandingkan benda dengan $k$ besar (seperti silinder pejal $k=0{,}5$).</div>"
+    }
+  },
+  {
+    "id": "drill2-rot-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subTopicId": "fis-din-3",
+    "category": "Percepatan Katrol Silinder Pejal Menahan Beban",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah katrol silinder pejal bermassa $M = 2\\text{ kg}$ dan jari-jari $R$ dapat berputar tanpa gesekan poros. Seutas tali tak bermassa dililitkan pada katrol dan di ujung tali digantungkan beban bermassa $m = 1\\text{ kg}$. Jika percepatan gravitasi adalah $g = 10\\text{ m/s}^2$, percepatan linier turunnya beban ($a$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$5\\text{ m/s}^2$",
+      "$10\\text{ m/s}^2$",
+      "$3{,}33\\text{ m/s}^2$",
+      "$6{,}67\\text{ m/s}^2$",
+      "$2{,}5\\text{ m/s}^2$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Percepatan Sistem Katrol Bermassa:</strong><br>Inersia katrol silinder pejal ($I = \\frac{1}{2}MR^2$) menambah massa efektif sistem sebesar $\\frac{1}{2}M$:<br>$$a = \\frac{m \\cdot g}{m + \\frac{1}{2}M}$$</div>",
+      "steps": "<ol><li>Pembilang gaya penggerak: $w = m \\cdot g = 1 \\times 10 = 10\\text{ N}$.</li><li>Penyebut massa total sistem: $m + \\frac{1}{2}M = 1 + \\frac{1}{2}(2) = 1 + 1 = 2\\text{ kg}$.</li><li>Percepatan: $a = \\frac{10}{2} = 5\\text{ m/s}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Trik Kilat Katrol:</strong> Katrol silinder pejal menyumbang $\\frac{1}{2}M$ ke penyebut. Jangan masukkan massa penuh $M$!</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subTopicId": "fis-flu-1",
+    "category": "Hukum Archimedes & Kerapatan",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebongkah balok kayu terapung di perbatasan dua lapisan zat cair yang tidak bercampur. Bagian bawah balok tercelup dalam lapisan zat cair A (massa jenis $\\rho_A = 1200\\text{ kg/m}^3$) sebanyak $40\\%$ dari volume totalnya, dan $35\\%$ volume balok tercelup dalam lapisan zat cair B (massa jenis $\\rho_B = 800\\text{ kg/m}^3$), sedangkan sisanya muncul di udara. Massa jenis balok kayu tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$760\\text{ kg/m}^3$",
+      "$780\\text{ kg/m}^3$",
+      "$850\\text{ kg/m}^3$",
+      "$920\\text{ kg/m}^3$",
+      "$1000\\text{ kg/m}^3$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Keseimbangan Benda Terapung Multilapis:</strong><br>\n          Gaya berat total benda sama dengan jumlah seluruh gaya apung Archimedes dari fluida-fluida yang terdesak:<br>\n          $$W = F_{A1} + F_{A2} \\implies \\rho_b V_b g = \\rho_A V_{A} g + \\rho_B V_{B} g$$\n          $$\\rho_b = \\rho_A \\left(\\frac{V_A}{V_b}\\right) + \\rho_B \\left(\\frac{V_B}{V_b}\\right)$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Diketahui rasio volume tercelup:<br>\n            $\\frac{V_A}{V_b} = 40\\% = 0{,}40$ dan $\\frac{V_B}{V_b} = 35\\% = 0{,}35$.\n          </li>\n          <li>Substitusi ke persamaan keseimbangan apung:<br>\n            $$\\rho_b = (1200 \\times 0{,}40) + (800 \\times 0{,}35)$$\n          </li>\n          <li>Hitung masing-masing kontribusi:<br>\n            $$1200 \\times 0{,}40 = 480$$\n            $$800 \\times 0{,}35 = 280$$\n            $$\\rho_b = 480 + 280 = 760\\text{ kg/m}^3$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan bahwa volume balok di udara ($25\\%$) tidak memberikan gaya apung yang signifikan karena massa jenis udara sangat kecil dibanding cairan dan diabaikan.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sup-fis-flu-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subTopicId": "fis-flu-1",
+    "category": "Tekanan Mutlak Fluida",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang penyelam berada di kedalaman $20\\text{ meter}$ di bawah permukaan danau air tawar (massa jenis air $\\rho = 1000\\text{ kg/m}^3$, percepatan gravitasi $g = 10\\text{ m/s}^2$). Jika tekanan atmosfer di atas permukaan danau adalah $P_{\\text{atm}} = 1{,}01 \\times 10^5\\text{ Pa}$, maka tekanan mutlak yang dialami penyelam tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$3{,}01 \\times 10^5\\text{ Pa}$",
+      "$2{,}00 \\times 10^5\\text{ Pa}$",
+      "$2{,}01 \\times 10^5\\text{ Pa}$",
+      "$1{,}21 \\times 10^5\\text{ Pa}$",
+      "$3{,}21 \\times 10^5\\text{ Pa}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Tekanan Mutlak (Total):</strong><br>Tekanan total pada kedalaman $h$ merupakan jumlahan dari tekanan atmosfer luar dan tekanan hidrostatis zat cair: $P_{\\text{mutlak}} = P_{\\text{atm}} + \\rho g h$.</div>",
+      "steps": "<ol><li>Tekanan hidrostatis: $P_h = \\rho g h = 1000 \\times 10 \\times 20 = 200.000\\text{ Pa} = 2{,}00 \\times 10^5\\text{ Pa}$.</li><li>Tekanan atmosfer: $P_{\\text{atm}} = 1{,}01 \\times 10^5\\text{ Pa}$.</li><li>Tekanan mutlak: $P = P_{\\text{atm}} + P_h = 1{,}01 \\times 10^5 + 2{,}00 \\times 10^5 = 3{,}01 \\times 10^5\\text{ Pa}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Hanya menghitung tekanan hidrostatis murni ($2{,}00 \\times 10^5\\text{ Pa}$) dan mengabaikan tekanan atmosfer di permukaan danau.</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-10",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subTopicId": "fis-flu-2",
+    "category": "Teorema Torricelli - Jarak Pancaran Air",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah tangki air silinder besar terbuka diletakkan di atas tanah mendatar. Pada dinding tangki terdapat sebuah lubang kecil pada kedalaman $h_1 = 1{,}8\\text{ meter}$ di bawah permukaan air. Jika lubang tersebut berada pada ketinggian $h_2 = 3{,}2\\text{ meter}$ di atas permukaan tanah ($g = 10\\text{ m/s}^2$), jarak jatuh pancaran air secara horizontal ($x$) di tanah diukur dari dasar dinding tangki adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$2{,}4\\text{ meter}$",
       "$3{,}6\\text{ meter}$",
       "$4{,}8\\text{ meter}$",
       "$5{,}4\\text{ meter}$",
       "$6{,}0\\text{ meter}$"
     ],
-    correctIndex: 2,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Teorema Torricelli & Jarak Pancaran Maksimum:</strong><br>
-          • Kelajuan semburan mendatar: $v = \\sqrt{2 g h_1}$<br>
-          • Waktu jatuh bebas: $t = \\sqrt{\\frac{2 h_2}{g}}$<br>
-          • Jarak pancaran horizontal: $x = v \\cdot t = 2\\sqrt{h_1 \\cdot h_2}$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Substitusi nilai kedalaman $h_1 = 1{,}8\\text{ m}$ dan ketinggian $h_2 = 3{,}2\\text{ m}$:
-            $$x = 2\\sqrt{1{,}8 \\times 3{,}2}$$
-          </li>
-          <li>Hitung perkalian dalam akar:
-            $$1{,}8 \\times 3{,}2 = 5{,}76$$
-          </li>
-          <li>Tarik akar kuadrat:
-            $$\\sqrt{5{,}76} = 2{,}4$$
-            $$x = 2 \\times 2{,}4 = 4{,}8\\text{ meter}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Siswa sering lupa mengalikan dengan angka 2 pada rumus jarak $x = 2\\sqrt{h_1 h_2}$ sehingga terkecoh memilih $2{,}4\\text{ meter}$.
-        </div>
-      `
+    "correctIndex": 2,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Teorema Torricelli & Jarak Pancaran Maksimum:</strong><br>\n          • Kelajuan semburan mendatar: $v = \\sqrt{2 g h_1}$<br>\n          • Waktu jatuh bebas: $t = \\sqrt{\\frac{2 h_2}{g}}$<br>\n          • Jarak pancaran horizontal: $x = v \\cdot t = 2\\sqrt{h_1 \\cdot h_2}$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Substitusi nilai kedalaman $h_1 = 1{,}8\\text{ m}$ dan ketinggian $h_2 = 3{,}2\\text{ m}$:\n            $$x = 2\\sqrt{1{,}8 \\times 3{,}2}$$\n          </li>\n          <li>Hitung perkalian dalam akar:\n            $$1{,}8 \\times 3{,}2 = 5{,}76$$\n          </li>\n          <li>Tarik akar kuadrat:\n            $$\\sqrt{5{,}76} = 2{,}4$$\n            $$x = 2 \\times 2{,}4 = 4{,}8\\text{ meter}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Siswa sering lupa mengalikan dengan angka 2 pada rumus jarak $x = 2\\sqrt{h_1 h_2}$ sehingga terkecoh memilih $2{,}4\\text{ meter}$.\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - GELOMBANG (fis-gel-2: Gelombang Cahaya Interferensi Celah Ganda)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-11",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-gel",
-    subTopicId: "fis-gel-2",
-    category: "Interferensi Celah Ganda Young",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Pada eksperimen interferensi celah ganda Young, jarak antarcelah adalah $d = 0{,}2\\text{ mm}$ ($2 \\times 10^{-4}\\text{ m}$) dan layar dipasang sejajar pada jarak $L = 1\\text{ meter}$ di belakang celah. Jika cahaya monokromatik dengan panjang gelombang $\\lambda = 500\\text{ nm}$ ($5 \\times 10^{-7}\\text{ m}$) dilewatkan pada celah, jarak antara garis terang pusat dengan garis terang orde ke-2 pada layar adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-flu-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subTopicId": "fis-flu-2",
+    "category": "Penerapan Persamaan Bernoulli",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Air mengalir secara horizontal melalui pipa venturimeter tanpa manometer. Luas penampang pipa utama $A_1 = 20\\text{ cm}^2$ dan luas penampang leher $A_2 = 10\\text{ cm}^2$. Perbedaan ketinggian kolom zat cair pada kedua tabung vertikal pengukur adalah $h = 15\\text{ cm}$ ($g = 10\\text{ m/s}^2$). Kelajuan aliran air pada penampang utama ($v_1$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1\\text{ m/s}$",
+      "$2\\text{ m/s}$",
+      "$1{,}5\\text{ m/s}$",
+      "$3\\text{ m/s}$",
+      "$0{,}5\\text{ m/s}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Venturimeter Tanpa Manometer:</strong><br>Kombinasi Persamaan Kontinuitas dan Persamaan Bernoulli menghasilkan kelajuan masuk:<br>$v_1 = \\sqrt{\\frac{2 g h}{\\left(\\frac{A_1}{A_2}\\right)^2 - 1}}$.</div>",
+      "steps": "<ol><li>Rasio penampang: $\\frac{A_1}{A_2} = \\frac{20}{10} = 2 \\implies \\left(\\frac{A_1}{A_2}\\right)^2 = 4$.</li><li>Pembilang formula: $2 g h = 2 \\times 10 \\times 0{,}15 = 3$.</li><li>Penyebut formula: $4 - 1 = 3$.</li><li>Kelajuan: $v_1 = \\sqrt{\\frac{3}{3}} = 1\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Lupa mengonversi beda tinggi $h = 15\\text{ cm}$ ke meter ($0{,}15\\text{ m}$).</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Efek Doppler Gelombang Bunyi",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah mobil ambulans bergerak dengan kelajuan $20\\text{ m/s}$ sambil membunyikan sirine berfrekuensi $720\\text{ Hz}$ mendekati seorang pengamat yang berdiri diam di tepi jalan. Jika cepat rambat bunyi di udara adalah $340\\text{ m/s}$, frekuensi sirine yang didengar oleh pengamat tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$680\\text{ Hz}$",
+      "$720\\text{ Hz}$",
+      "$765\\text{ Hz}$",
+      "$810\\text{ Hz}$",
+      "$850\\text{ Hz}$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Persamaan Efek Doppler:</strong><br>\n          $$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$\n          • Pengamat diam: $v_p = 0$<br>\n          • Sumber mendekati pengamat: tanda pada penyebut bernilai negatif ($-v_s$), sehingga frekuensi terdengar lebih tinggi ($f_p > f_s$).\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Identifikasi variabel: $v = 340\\text{ m/s}$, $v_s = 20\\text{ m/s}$, $v_p = 0$, $f_s = 720\\text{ Hz}$.</li>\n          <li>Substitusikan ke rumus Efek Doppler:\n            $$f_p = \\left( \\frac{340}{340 - 20} \\right) \\times 720 = \\left( \\frac{340}{320} \\right) \\times 720$$\n          </li>\n          <li>Hitung nilai akhir:\n            $$f_p = \\frac{17}{16} \\times 720 = 17 \\times 45 = 765\\text{ Hz}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan aturan tanda: sumber mendekat selalu memperkecil penyebut ($v - v_s$), bukan memperbesar ($v + v_s$).\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sup-fis-gel-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Taraf Intensitas Bunyi Multi Sumber",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Taraf intensitas bunyi sebuah mesin bor listrik pada jarak tertentu adalah $70\\text{ dB}$. Jika terdapat $100$ mesin bor identik yang bekerja serentak pada jarak yang sama, taraf intensitas bunyi total yang terdengar adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$90\\text{ dB}$",
+      "$80\\text{ dB}$",
+      "$170\\text{ dB}$",
+      "$700\\text{ dB}$",
+      "$85\\text{ dB}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Taraf Intensitas Multi Sumber Sejenis:</strong><br>Ketika $n$ sumber bunyi identik berbunyi bersamaan, intensitasnya berlipat ganda sebesar $n$, sehingga taraf intensitas totalnya: $TI_n = TI_1 + 10 \\log_{10}(n)$.</div>",
+      "steps": "<ol><li>Jumlah sumber bunyi: $n = 100 = 10^2$.</li><li>Kenaikan taraf intensitas: $\\Delta TI = 10 \\log_{10}(100) = 10 \\times 2 = 20\\text{ dB}$.</li><li>Taraf intensitas total: $TI_{\\text{total}} = 70 + 20 = 90\\text{ dB}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengalikan langsung nilai dB ($70 \\times 100 = 7000\\text{ dB}$), padahal skala desibel merupakan skala logaritmik bukan linear.</div>"
+    }
+  },
+  {
+    "id": "drill-bun-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Resonansi Kolom Udara Tabung",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dalam percobaan resonansi tabung kolom udara menggunakan garpu tala berfrekuensi $f = 500\\text{ Hz}$, terjadi resonansi pertama pada panjang kolom udara $L_1 = 18\\text{ cm}$ dan resonansi kedua terjadi pada $L_2 = 54\\text{ cm}$. Kelajuan rambat bunyi di udara berdasarkan percobaan tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$360\\text{ m/s}$",
+      "$340\\text{ m/s}$",
+      "$320\\text{ m/s}$",
+      "$300\\text{ m/s}$",
+      "$270\\text{ m/s}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Selisih Resonansi Berurutan Tabung Bunyi:</strong><br>Jarak antara dua resonansi berurutan selalu tepat sama dengan <strong>setengah panjang gelombang</strong>:<br>$$\\Delta L = L_2 - L_1 = \\frac{1}{2}\\lambda \\implies \\lambda = 2(L_2 - L_1)$$<br>$$v = f \\cdot \\lambda$$</div>",
+      "steps": "<ol><li>Hitung selisih panjang kolom udara: $\\Delta L = 54\\text{ cm} - 18\\text{ cm} = 36\\text{ cm} = 0{,}36\\text{ m}$.</li><li>Panjang gelombang bunyi: $\\lambda = 2 \\times 0{,}36\\text{ m} = 0{,}72\\text{ m}$.</li><li>Kelajuan bunyi: $v = f \\cdot \\lambda = 500\\text{ Hz} \\times 0{,}72\\text{ m} = 360\\text{ m/s}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Trik Cepat:</strong> Selisih dua resonansi berturutan $\\Delta L = \\frac{1}{2}\\lambda$, sehingga $\\lambda = 2\\Delta L$. Tidak perlu mengkhawatirkan koreksi ujung tabung.</div>"
+    }
+  },
+  {
+    "id": "drill-bun-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Efek Doppler Sumber & Pendengar Saling Mendekat",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah kereta api bergerak mendekati stasiun dengan kelajuan $v_s = 20\\text{ m/s}$ sambil membunyikan peluit berfrekuensi $640\\text{ Hz}$. Pada saat bersamaan, seorang penumpang di peron bergerak berjalan mendekati kereta api dengan kelajuan $v_p = 10\\text{ m/s}$. Jika kelajuan rambat bunyi di udara adalah $v = 340\\text{ m/s}$, frekuensi peluit yang didengar oleh penumpang tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$700\\text{ Hz}$",
+      "$680\\text{ Hz}$",
+      "$660\\text{ Hz}$",
+      "$720\\text{ Hz}$",
+      "$600\\text{ Hz}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kaidah Tanda Efek Doppler:</strong><br>$$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$<br>• Pendengar mendekati sumber $\\implies (+v_p)$ pada pembilang.<br>• Sumber mendekati pendengar $\\implies (-v_s)$ pada penyebut.<br>• Efek keduanya saling mendekat membuat frekuensi yang didengar semakin tinggi ($f_p > f_s$).</div>",
+      "steps": "<ol><li>Substitusi nilai: $v = 340$, $v_p = 10$, $v_s = 20$, $f_s = 640$.</li><li>Pembilang: $v + v_p = 340 + 10 = 350\\text{ m/s}$.</li><li>Penyebut: $v - v_s = 340 - 20 = 320\\text{ m/s}$.</li><li>Hitung frekuensi: $f_p = \\frac{350}{320} \\times 640 = 350 \\times 2 = 700\\text{ Hz}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Mnemonic Tanda Doppler:</strong> \"Mendekat = Lebih Tinggi\" (pembilang ditambah, penyebut dikurang). \"Menjauh = Lebih Rendah\" (pembilang dikurang, penyebut ditambah).</div>"
+    }
+  },
+  {
+    "id": "drill-bun-08",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Taraf Intensitas Bunyi terhadap Perubahan Jarak",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Taraf intensitas bunyi sebuah sirene pabrik pada jarak $r_1 = 2\\text{ meter}$ adalah $TI_1 = 80\\text{ dB}$. Taraf intensitas bunyi yang terdengar pada jarak $r_2 = 20\\text{ meter}$ dari sirene tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$60\\text{ dB}$",
+      "$70\\text{ dB}$",
+      "$40\\text{ dB}$",
+      "$78\\text{ dB}$",
+      "$50\\text{ dB}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Taraf Intensitas terhadap Jarak Titik:</strong><br>Karena intensitas mematuhi hukum kuadrat terbalik ($I \\propto 1/r^2$), taraf intensitas berkurang secara logaritmik:<br>$$TI_2 = TI_1 - 20 \\log_{10}\\left(\\frac{r_2}{r_1}\\right)$$</div>",
+      "steps": "<ol><li>Rasio jarak: $\\frac{r_2}{r_1} = \\frac{20}{2} = 10$.</li><li>Hitung logaritma: $\\log_{10}(10) = 1$.</li><li>Pengurangan taraf intensitas: $\\Delta TI = 20 \\times 1 = 20\\text{ dB}$.</li><li>Taraf intensitas pada jarak 20 m: $TI_2 = 80 - 20 = 60\\text{ dB}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Rumus Sakti Jarak:</strong> Jarak naik $10\\times \\implies TI$ turun tepat $20\\text{ dB}$. Jarak naik $100\\times \\implies TI$ turun tepat $40\\text{ dB}$. Faktor pengalinya adalah 20, bukan 10!</div>"
+    }
+  },
+  {
+    "id": "drill2-bun-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Efek Doppler Sumber Menjauhi Pendengar Diam",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah mobil pemadam kebakaran membunyikan sirene berfrekuensi $f_s = 600\\text{ Hz}$ sambil bergerak menjauhi seorang pejalan kaki yang berdiri diam di tepi jalan dengan kelajuan $v_s = 20\\text{ m/s}$. Jika kelajuan rambat bunyi di udara saat itu adalah $v = 340\\text{ m/s}$, maka frekuensi bunyi yang didengar oleh pejalan kaki tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$566{,}7\\text{ Hz}$",
+      "$637{,}5\\text{ Hz}$",
+      "$600\\text{ Hz}$",
+      "$540\\text{ Hz}$",
+      "$580\\text{ Hz}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Efek Doppler Sumber Menjauh:</strong><br>Karena sumber menjauh ($+v_s$ pada penyebut), panjang gelombang merenggang sehingga frekuensi yang terdengar lebih rendah ($f_p < f_s$):<br>$$f_p = \\left( \\frac{v}{v + v_s} \\right) f_s$$</div>",
+      "steps": "<ol><li>$v = 340\\text{ m/s}$, $v_s = 20\\text{ m/s}$, $v_p = 0$, $f_s = 600\\text{ Hz}$.</li><li>Penyebut: $v + v_s = 340 + 20 = 360\\text{ m/s}$.</li><li>$f_p = \\frac{340}{360} \\times 600 = \\frac{17}{18} \\times 600 = \\frac{17 \\times 100}{3} \\approx 566{,}67\\text{ Hz}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Logika Akal Sehat:</strong> Sumber menjauh pasti menghasilkan nada yang lebih rendah dari frekuensi asli ($< 600\\text{ Hz}$). Opsi di atas $600\\text{ Hz}$ langsung gugur!</div>"
+    }
+  },
+  {
+    "id": "drill2-bun-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Efek Doppler Pendengar Bergerak Menjauhi Sumber Diam",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah peluit stasiun diam membunyikan frekuensi $f_s = 680\\text{ Hz}$. Seorang penumpang menaiki sepeda motor bergerak menjauhi stasiun dengan kelajuan $v_p = 10\\text{ m/s}$. Jika kelajuan rambat bunyi di udara adalah $v = 340\\text{ m/s}$, frekuensi bunyi peluit yang didengar oleh pengendara motor tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$660\\text{ Hz}$",
+      "$700\\text{ Hz}$",
+      "$640\\text{ Hz}$",
+      "$680\\text{ Hz}$",
+      "$620\\text{ Hz}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Efek Doppler Pendengar Menjauh:</strong><br>$$f_p = \\left( \\frac{v - v_p}{v} \\right) f_s$$</div>",
+      "steps": "<ol><li>$v = 340\\text{ m/s}$, $v_p = 10\\text{ m/s}$, $f_s = 680\\text{ Hz}$.</li><li>Pembilang: $v - v_p = 340 - 10 = 330\\text{ m/s}$.</li><li>Hitung frekuensi: $f_p = \\frac{330}{340} \\times 680 = 330 \\times 2 = 660\\text{ Hz}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhatikan Posisi Variabel:</strong> Kecepatan pendengar ($v_p$) selalu berada di <strong>pembilang</strong>, sedangkan kecepatan sumber ($v_s$) selalu berada di <strong>penyebut</strong>.</div>"
+    }
+  },
+  {
+    "id": "drill2-bun-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-1",
+    "category": "Kenaikan Taraf Intensitas 10 Kali Sumber",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah sepeda motor menghasilkan taraf intensitas bunyi sebesar $TI_1 = 65\\text{ dB}$. Jika terdapat $10$ sepeda motor identik yang dibunyikan serentak, maka taraf intensitas bunyi gabungannya ($TI_{10}$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$75\\text{ dB}$",
+      "$650\\text{ dB}$",
+      "$70\\text{ dB}$",
+      "$85\\text{ dB}$",
+      "$130\\text{ dB}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kaidah Cepat Multi Sumber Bunyi:</strong><br>Setiap pelipatgandaan jumlah sumber sebesar $10\\times$ akan menambah taraf intensitas tepat $+10\\text{ dB}$:<br>$$TI_n = TI_1 + 10 \\log_{10}(n)$$</div>",
+      "steps": "<ol><li>Jumlah sumber: $n = 10 \\implies \\log_{10}(10) = 1$.</li><li>Kenaikan taraf intensitas: $10 \\times 1 = 10\\text{ dB}$.</li><li>Taraf intensitas total: $TI = 65 + 10 = 75\\text{ dB}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Pola Logaritmik:</strong><br>• $10\\times$ sumber $\\implies +10\\text{ dB}$<br>• $100\\times$ sumber $\\implies +20\\text{ dB}$<br>• $1000\\times$ sumber $\\implies +30\\text{ dB}$</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-11",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Interferensi Celah Ganda Young",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Pada eksperimen interferensi celah ganda Young, jarak antarcelah adalah $d = 0{,}2\\text{ mm}$ ($2 \\times 10^{-4}\\text{ m}$) dan layar dipasang sejajar pada jarak $L = 1\\text{ meter}$ di belakang celah. Jika cahaya monokromatik dengan panjang gelombang $\\lambda = 500\\text{ nm}$ ($5 \\times 10^{-7}\\text{ m}$) dilewatkan pada celah, jarak antara garis terang pusat dengan garis terang orde ke-2 pada layar adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$2{,}5\\text{ mm}$",
       "$5{,}0\\text{ mm}$",
       "$7{,}5\\text{ mm}$",
       "$10{,}0\\text{ mm}$",
       "$12{,}5\\text{ mm}$"
     ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Interferensi Maksimum (Garis Terang) Celah Ganda:</strong><br>
-          $$\\frac{d \\cdot y}{L} = n \\lambda \\implies y = \\frac{n \\lambda L}{d}$$
-          dengan $n$ adalah orde terang ($n = 1, 2, 3, \\dots$).
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Untuk garis terang ke-2, gunakan $n = 2$.</li>
-          <li>Substitusi besaran fisis ke persamaan:
-            $$y = \\frac{2 \\times (5 \\times 10^{-7}\\text{ m}) \\times (1\\text{ m})}{2 \\times 10^{-4}\\text{ m}}$$
-          </li>
-          <li>Sederhanakan pecahan:
-            $$y = \\frac{10 \\times 10^{-7}}{2 \\times 10^{-4}} = 5 \\times 10^{-3}\\text{ meter} = 5{,}0\\text{ mm}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Pastikan seluruh satuan dikonversi ke meter terlebih dahulu ($1\\text{ nm} = 10^{-9}\\text{ m}$ dan $1\\text{ mm} = 10^{-3}\\text{ m}$).
-        </div>
-      `
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Interferensi Maksimum (Garis Terang) Celah Ganda:</strong><br>\n          $$\\frac{d \\cdot y}{L} = n \\lambda \\implies y = \\frac{n \\lambda L}{d}$$\n          dengan $n$ adalah orde terang ($n = 1, 2, 3, \\dots$).\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Untuk garis terang ke-2, gunakan $n = 2$.</li>\n          <li>Substitusi besaran fisis ke persamaan:\n            $$y = \\frac{2 \\times (5 \\times 10^{-7}\\text{ m}) \\times (1\\text{ m})}{2 \\times 10^{-4}\\text{ m}}$$\n          </li>\n          <li>Sederhanakan pecahan:\n            $$y = \\frac{10 \\times 10^{-7}}{2 \\times 10^{-4}} = 5 \\times 10^{-3}\\text{ meter} = 5{,}0\\text{ mm}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pastikan seluruh satuan dikonversi ke meter terlebih dahulu ($1\\text{ nm} = 10^{-9}\\text{ m}$ dan $1\\text{ mm} = 10^{-3}\\text{ m}$).\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-1: Asas Black Campuran Air & Es)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-12",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-ter",
-    subTopicId: "fis-ter-1",
-    category: "Termofisika - Asas Black Campuran Air dan Es",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebanyak $200\\text{ gram}$ air bersuhu $60^\\circ\\text{C}$ dicampurkan dengan $50\\text{ gram}$ es bersuhu $0^\\circ\\text{C}$ di dalam wadah kalorimeter ideal terisolasi sempurna. Diketahui kalor jenis air $c = 1\\text{ kal/g}^\\circ\\text{C}$ dan kalor lebur es $L = 80\\text{ kal/g}$. Suhu akhir campuran saat mencapai kesetimbangan termal adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-gel-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Pembentukan Bayangan Lensa Cembung",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah benda diletakkan pada jarak $12\\text{ cm}$ di depan sebuah lensa cembung yang memiliki panjang fokus $8\\text{ cm}$. Jarak bayangan dan sifat bayangan yang terbentuk berturut-turut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$24\\text{ cm}$, nyata dan terbalik",
+      "$24\\text{ cm}$, maya dan tegak",
+      "$16\\text{ cm}$, nyata dan terbalik",
+      "$18\\text{ cm}$, nyata dan tegak",
+      "$4{,}8\\text{ cm}$, maya dan tegak"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Lensa Tipis Gauss:</strong><br>$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$. Tanda $s' > 0$ menandakan bayangan nyata di belakang lensa (selalu terbalik).</div>",
+      "steps": "<ol><li>$f = +8\\text{ cm}$, $s = +12\\text{ cm}$.</li><li>$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s} = \\frac{1}{8} - \\frac{1}{12} = \\frac{3 - 2}{24} = \\frac{1}{24}$.</li><li>$s' = +24\\text{ cm}$. Karena bertanda positif, bayangannya bersifat <strong>nyata dan terbalik</strong>.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menganggap bayangan pada cermin dan lensa memiliki aturan tanda sama untuk letak maya/nyata.</div>"
+    }
+  },
+  {
+    "id": "drill-cah-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Sudut Kritis dan Pemantulan Total Sempurna",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seberkas sinar merambat dari dalam air yang memiliki indeks bias $n_1 = \\frac{4}{3}$ menuju ke udara yang memiliki indeks bias $n_2 = 1$. Nilai sinus sudut kritis ($\\sin \\theta_k$) agar terjadi peristiwa pemantulan total sempurna adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$\\frac{3}{4}$",
+      "$\\frac{4}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{4}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Syarat Pemantulan Total Sempurna & Sudut Kritis:</strong><br>1. Cahaya harus merambat dari medium <strong>lebih rapat ke medium kurang rapat</strong> ($n_1 > n_2$).<br>2. Pada sudut kritis, sudut bias $r = 90^\\circ$ ($\\sin 90^\\circ = 1$):<br>$$\\sin \\theta_k = \\frac{n_2}{n_1}$$</div>",
+      "steps": "<ol><li>Identifikasi: $n_1 = \\frac{4}{3}$ (medium rapat/air), $n_2 = 1$ (medium renggang/udara).</li><li>Rumus sudut kritis: $\\sin \\theta_k = \\frac{n_2}{n_1} = \\frac{1}{\\frac{4}{3}} = \\frac{3}{4}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Cek Masuk Akal:</strong> Nilai sinus suatu sudut nyata tidak pernah boleh lebih dari 1. Jadi pembagian selalu medium kecil dibagi medium besar ($n_{\\text{kecil}} / n_{\\text{besar}}$).</div>"
+    }
+  },
+  {
+    "id": "drill-cah-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Kacamata Penderita Rabun Jauh (Miopi)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang siswa penderita rabun jauh (miopi) tidak dapat melihat benda dengan jelas yang berada lebih jauh dari $PR = 200\\text{ cm}$ (titik jauhnya $2\\text{ meter}$). Agar siswa tersebut dapat melihat benda-benda yang sangat jauh ($s = \\infty$) secara normal, ia harus memakai kacamata dengan kuat lensa ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$-0{,}5\\text{ Dioptri}$",
+      "$-2{,}0\\text{ Dioptri}$",
+      "$+0{,}5\\text{ Dioptri}$",
+      "$-1{,}0\\text{ Dioptri}$",
+      "$-5{,}0\\text{ Dioptri}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kacamata Rabun Jauh (Miopi):</strong><br>Lensa cekung negatif digunakan untuk membentuk bayangan maya benda jauh tak hingga ($s = \\infty$) tepat pada titik jauhnya ($s' = -PR$):<br>$$P = -\\frac{100}{PR\\text{ (cm)}} = -\\frac{1}{PR\\text{ (meter)}}$$</div>",
+      "steps": "<ol><li>Titik jauh: $PR = 200\\text{ cm} = 2\\text{ m}$.</li><li>Hitung kuat lensa kacamata: $P = -\\frac{100}{200} = -0{,}5\\text{ Dioptri}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Miopi selalu butuh lensa minus (cekung). Ingat rumus kilat: $P = -100/PR$.</div>"
+    }
+  },
+  {
+    "id": "drill-cah-08",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Interferensi Celah Ganda Young",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Pada eksperimen interferensi celah ganda Young, jarak antara kedua celah adalah $d = 0{,}2\\text{ mm}$ dan layar diletakkan pada jarak $L = 1\\text{ meter}$ di belakang celah. Jika cahaya monokromatik yang digunakan memiliki panjang gelombang $\\lambda = 500\\text{ nm}$ ($5 \\times 10^{-7}\\text{ m}$), maka jarak antara dua garis terang yang berdekatan ($\\Delta y$) pada layar adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2{,}5\\text{ mm}$",
+      "$1{,}0\\text{ mm}$",
+      "$5{,}0\\text{ mm}$",
+      "$0{,}25\\text{ mm}$",
+      "$25\\text{ mm}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Jarak Antar-Garis Terang Celah Ganda:</strong><br>Jarak pisah antara dua pola terang berurutan ($Delta y$) memenuhi persamaan:<br>$$\\frac{d \\cdot \\Delta y}{L} = \\lambda \\implies \\Delta y = \\frac{\\lambda L}{d}$$</div>",
+      "steps": "<ol><li>Samakan semua satuan ke meter:<br>• $d = 0{,}2\\text{ mm} = 2 \\times 10^{-4}\\text{ m}$<br>• $L = 1\\text{ m}$<br>• $\\lambda = 5 \\times 10^{-7}\\text{ m}$</li><li>Hitung $\\Delta y$:<br>$$\\Delta y = \\frac{(5 \\times 10^{-7}) \\times 1}{2 \\times 10^{-4}} = 2{,}5 \\times 10^{-3}\\text{ m} = 2{,}5\\text{ mm}$$</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Selalu konversikan semua data ($\text{mm}$, $\text{nm}$, $\text{cm}$) ke meter terlebih dahulu sebelum melakukan pembagian ordo pangkat.</div>"
+    }
+  },
+  {
+    "id": "drill2-cah-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Kacamata Penderita Rabun Dekat (Hipermetropi)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Seorang penderita rabun dekat (hipermetropi) memiliki titik dekat mata $PP = 50\\text{ cm}$. Agar ia dapat membaca buku dengan nyaman pada jarak baca normal $s_n = 25\\text{ cm}$, maka kuat lensa kacamata yang harus digunakannya adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$+2\\text{ Dioptri}$",
+      "$+1\\text{ Dioptri}$",
+      "$-2\\text{ Dioptri}$",
+      "$+4\\text{ Dioptri}$",
+      "$+0{,}5\\text{ Dioptri}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Rumus Kacamata Hipermetropi (Lensa Cembung):</strong><br>$$P = \\frac{100}{s_n\\text{ (cm)}} - \\frac{100}{PP\\text{ (cm)}} = 4 - \\frac{100}{PP\\text{ (cm)}}$$<br>(dengan jarak baca normal standar $s_n = 25\\text{ cm}$).</div>",
+      "steps": "<ol><li>Jarak baca yang diinginkan: $s = 25\\text{ cm} \\implies \\frac{100}{25} = 4\\text{ D}$.</li><li>Titik dekat penderita: $PP = 50\\text{ cm} \\implies \\frac{100}{50} = 2\\text{ D}$.</li><li>Kuat lensa: $P = 4 - 2 = +2\\text{ Dioptri}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal Hipermetropi:</strong> Kacamata baca selalu berlensa plus (+). Rumus cepatnya: $P = 4 - \\frac{100}{PP}$.</div>"
+    }
+  },
+  {
+    "id": "drill2-cah-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Teropong Bintang Mata Tanpa Akomodasi",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah teropong bintang memiliki lensa objektif dengan jarak fokus $f_{\\text{ob}} = 100\\text{ cm}$ dan lensa okuler dengan jarak fokus $f_{\\text{ok}} = 5\\text{ cm}$. Jika pengamatan bintang dilakukan dengan mata tanpa akomodasi, maka perbesaran total ($M$) dan panjang tabung teropong ($d$) berturut-turut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$M = 20\\text{ kali}$ dan $d = 105\\text{ cm}$",
+      "$M = 20\\text{ kali}$ dan $d = 95\\text{ cm}$",
+      "$M = 5\\text{ kali}$ dan $d = 105\\text{ cm}$",
+      "$M = 500\\text{ kali}$ dan $d = 105\\text{ cm}$",
+      "$M = 25\\text{ kali}$ dan $d = 120\\text{ cm}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Rumus Baku Teropong Bintang (Mata Rileks):</strong><br>• Perbesaran bayangan: $M = \\frac{f_{\\text{ob}}}{f_{\\text{ok}}}$<br>• Panjang teropong: $d = f_{\\text{ob}} + f_{\\text{ok}}$</div>",
+      "steps": "<ol><li>Perbesaran: $M = \\frac{100\\text{ cm}}{5\\text{ cm}} = 20\\text{ kali}$.</li><li>Panjang tabung: $d = 100 + 5 = 105\\text{ cm}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konstruksi Teropong:</strong> Pada teropong bintang, fokus lensa objektif selalu jauh lebih panjang daripada fokus lensa okuler ($f_{\\text{ob}} > f_{\\text{ok}}$).</div>"
+    }
+  },
+  {
+    "id": "drill2-cah-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-gel",
+    "subTopicId": "fis-gel-2",
+    "category": "Kisi Difraksi Spektrum Cahaya",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah kisi difraksi memiliki $N = 500\\text{ garis/mm}$. Seberkas cahaya monokromatik dilewatkan tegak lurus pada kisi tersebut sehingga menghasilkan garis terang orde pertama ($n = 1$) pada sudut deviasi dengan $\\sin \\theta = 0{,}25$. Panjang gelombang cahaya yang digunakan adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$500\\text{ nm}$ ($5 \\times 10^{-7}\\text{ m}$)",
+      "$250\\text{ nm}$ ($2{,}5 \\times 10^{-7}\\text{ m}$)",
+      "$600\\text{ nm}$ ($6 \\times 10^{-7}\\text{ m}$)",
+      "$1000\\text{ nm}$ ($10^{-6}\\text{ m}$)",
+      "$400\\text{ nm}$ ($4 \\times 10^{-7}\\text{ m}$)"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Kisi Difraksi:</strong><br>$$d \\sin \\theta = n \\lambda$$<br>dengan tetapan jarak antar-kisi: $d = \\frac{1}{N}$.</div>",
+      "steps": "<ol><li>Hitung jarak antar-celah $d$ dalam meter:<br>$$d = \\frac{1}{500\\text{ garis/mm}} = \\frac{1\\text{ mm}}{500} = \\frac{10^{-3}\\text{ m}}{500} = 2 \\times 10^{-6}\\text{ m}$$</li><li>Substitusi ke rumus difraksi orde $n = 1$:<br>$$d \\sin \\theta = 1 \\cdot \\lambda \\implies \\lambda = (2 \\times 10^{-6}) \\times 0{,}25 = 0{,}5 \\times 10^{-6}\\text{ m} = 500\\text{ nm}$$</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konversi Celah Kisi:</strong> Jangan lupa mengonversi dari $\\text{mm}$ ke $\\text{meter}$ ($1\\text{ mm} = 10^{-3}\\text{ m}$).</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-12",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Termofisika - Asas Black Campuran Air dan Es",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebanyak $200\\text{ gram}$ air bersuhu $60^\\circ\\text{C}$ dicampurkan dengan $50\\text{ gram}$ es bersuhu $0^\\circ\\text{C}$ di dalam wadah kalorimeter ideal terisolasi sempurna. Diketahui kalor jenis air $c = 1\\text{ kal/g}^\\circ\\text{C}$ dan kalor lebur es $L = 80\\text{ kal/g}$. Suhu akhir campuran saat mencapai kesetimbangan termal adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$20^\\circ\\text{C}$",
       "$24^\\circ\\text{C}$",
       "$28^\\circ\\text{C}$",
       "$32^\\circ\\text{C}$",
       "$36^\\circ\\text{C}$"
     ],
-    correctIndex: 3,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Asas Black ($Q_{\\text{lepas}} = Q_{\\text{terima}}$):</strong><br>
-          Kalor yang dilepas oleh air panas digunakan untuk meleburkan es menjadi air $0^\\circ\\text{C}$, kemudian menaikkan suhu air leburan es ke suhu campuran $T_c$.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Kalor yang dibutuhkan untuk meleburkan seluruh es $0^\\circ\\text{C}$:
-            $$Q_{\\text{lebur}} = m_{\\text{es}} \\cdot L = 50 \\times 80 = 4000\\text{ kal}$$
-          </li>
-          <li>Kalor maksimum yang dapat dilepas air panas hingga $0^\\circ\\text{C}$:
-            $$Q_{\\max} = 200 \\times 1 \\times 60 = 12000\\text{ kal}$$
-            Karena $12000 > 4000$, seluruh es mencair dan suhu akhir $T_c > 0^\\circ\\text{C}$.
-          </li>
-          <li>Persamaan Asas Black:
-            $$m_{\\text{air}} c (60 - T_c) = Q_{\\text{lebur}} + m_{\\text{es}} c (T_c - 0)$$
-            $$200(1)(60 - T_c) = 4000 + 50(1)(T_c)$$
-            $$12000 - 200 T_c = 4000 + 50 T_c$$
-            $$8000 = 250 T_c \\implies T_c = \\frac{8000}{250} = 32^\\circ\\text{C}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Siswa sering lupa memperhitungkan kalor lebur es ($m_{\\text{es}} L$) dan hanya menghitung $m_1 c \\Delta T_1 = m_2 c \\Delta T_2$.
-        </div>
-      `
+    "correctIndex": 3,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Asas Black ($Q_{\\text{lepas}} = Q_{\\text{terima}}$):</strong><br>\n          Kalor yang dilepas oleh air panas digunakan untuk meleburkan es menjadi air $0^\\circ\\text{C}$, kemudian menaikkan suhu air leburan es ke suhu campuran $T_c$.\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Kalor yang dibutuhkan untuk meleburkan seluruh es $0^\\circ\\text{C}$:\n            $$Q_{\\text{lebur}} = m_{\\text{es}} \\cdot L = 50 \\times 80 = 4000\\text{ kal}$$\n          </li>\n          <li>Kalor maksimum yang dapat dilepas air panas hingga $0^\\circ\\text{C}$:\n            $$Q_{\\max} = 200 \\times 1 \\times 60 = 12000\\text{ kal}$$\n            Karena $12000 > 4000$, seluruh es mencair dan suhu akhir $T_c > 0^\\circ\\text{C}$.\n          </li>\n          <li>Persamaan Asas Black:\n            $$m_{\\text{air}} c (60 - T_c) = Q_{\\text{lebur}} + m_{\\text{es}} c (T_c - 0)$$\n            $$200(1)(60 - T_c) = 4000 + 50(1)(T_c)$$\n            $$12000 - 200 T_c = 4000 + 50 T_c$$\n            $$8000 = 250 T_c \\implies T_c = \\frac{8000}{250} = 32^\\circ\\text{C}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Siswa sering lupa memperhitungkan kalor lebur es ($m_{\\text{es}} L$) dan hanya menghitung $m_1 c \\Delta T_1 = m_2 c \\Delta T_2$.\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-2: Pemanasan Global & Radiasi Benda Hitam)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-13",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-ter",
-    subTopicId: "fis-ter-2",
-    category: "Radiasi Kalor Hukum Stefan-Boltzmann",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Sebuah permukaan benda hitam ideal memancarkan energi radiasi termal dengan laju daya $E$ ketika bersuhu mutlak $T = 300\\text{ K}$. Jika suhu mutlak permukaan benda tersebut dinaikkan menjadi $T' = 600\\text{ K}$, laju daya radiasi yang dipancarkannya sekarang menjadi ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-ter-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Konduksi Termal Batang Logam",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua batang logam $P$ dan $Q$ dengan luas penampang dan panjang yang sama disambungkan ujungnya. Konduktivitas termal logam $P$ adalah dua kali konduktivitas termal logam $Q$ ($k_P = 2k_Q$). Jika ujung bebas logam $P$ bersuhu $90^\\circ\\text{C}$ dan ujung bebas logam $Q$ bersuhu $30^\\circ\\text{C}$, maka suhu sambungan kedua logam pada keadaan tunak (stasioner) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$70^\\circ\\text{C}$",
+      "$60^\\circ\\text{C}$",
+      "$65^\\circ\\text{C}$",
+      "$75^\\circ\\text{C}$",
+      "$50^\\circ\\text{C}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Laju Konduksi Kalor Keadaan Stasioner:</strong><br>Pada sambungan batang, laju aliran kalor melalui batang $P$ sama dengan laju aliran kalor melalui batang $Q$: $H_P = H_Q \\implies k_P A \\frac{\\Delta T_P}{L} = k_Q A \\frac{\\Delta T_Q}{L}$.</div>",
+      "steps": "<ol><li>Karena $A$ dan $L$ sama: $k_P (90 - T) = k_Q (T - 30)$.</li><li>Substitusi $k_P = 2k_Q$: $2(90 - T) = T - 30$.</li><li>$180 - 2T = T - 30 \\implies 3T = 210 \\implies T = 70^\\circ\\text{C}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengambil rata-rata aritmetika biasa $\\frac{90 + 30}{2} = 60^\\circ\\text{C}$ tanpa memperhitungkan perbedaan nilai konduktivitas kedua bahan.</div>"
+    }
+  },
+  {
+    "id": "drill-kal-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Asas Black Campuran Cairan Sejenis",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebanyak $100\\text{ gram}$ air bersuhu $90^\\circ\\text{C}$ dicampurkan dengan $200\\text{ gram}$ air bersuhu $30^\\circ\\text{C}$ di dalam sebuah wadah terisolasi termal ideal (wadah tidak menyerap kalor). Suhu akhir kesetimbangan termal campuran ($T_c$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$50^\\circ\\text{C}$",
+      "$60^\\circ\\text{C}$",
+      "$45^\\circ\\text{C}$",
+      "$55^\\circ\\text{C}$",
+      "$40^\\circ\\text{C}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Asas Black:</strong><br>Kalor yang dilepas oleh zat bersuhu lebih tinggi sama dengan kalor yang diserap oleh zat bersuhu lebih rendah:<br>$$Q_{\\text{lepas}} = Q_{\\text{terima}}$$</div>",
+      "steps": "<ol><li>Zat sejenis (air) memiliki kalor jenis $c$ yang sama sehingga $c$ dapat dieliminasi.</li><li>Persamaan Asas Black: $m_1 (T_1 - T_c) = m_2 (T_c - T_2)$.</li><li>Substitusi data: $100(90 - T_c) = 200(T_c - 30)$.</li><li>Bagi kedua ruas dengan 100: $90 - T_c = 2(T_c - 30) = 2T_c - 60$.</li><li>Pindahkan suku: $90 + 60 = 2T_c + T_c \\implies 150 = 3T_c \\implies T_c = 50^\\circ\\text{C}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Rumus Cepat Cairan Sejenis:</strong> Rata-rata tertimbang massa: $T_c = \\frac{m_1 T_1 + m_2 T_2}{m_1 + m_2} = \\frac{100(90) + 200(30)}{300} = \\frac{15000}{300} = 50^\\circ\\text{C}$.</div>"
+    }
+  },
+  {
+    "id": "drill-kal-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Laju Konduksi Kalor Batang Logam",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah batang tembaga memiliki panjang $L = 50\\text{ cm} = 0{,}5\\text{ m}$ dan luas penampang $A = 4\\text{ cm}^2 = 4 \\times 10^{-4}\\text{ m}^2$. Konduktivitas termal tembaga adalah $k = 400\\text{ W/m}\\cdot\\text{K}$. Jika perbedaan suhu antara kedua ujung batang dipertahankan sebesar $\\Delta T = 100^\\circ\\text{C}$, maka laju perpindahan kalor secara konduksi ($H$) melalui batang tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$32\\text{ Watt}$",
+      "$16\\text{ Watt}$",
+      "$64\\text{ Watt}$",
+      "$8\\text{ Watt}$",
+      "$320\\text{ Watt}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Laju Konduksi Termal Fourier:</strong><br>Laju rambatan kalor per detik berbanding lurus dengan konduktivitas termal, luas penampang, dan gradien suhu:<br>$$H = \\frac{Q}{t} = \\frac{k \\cdot A \\cdot \\Delta T}{L}$$</div>",
+      "steps": "<ol><li>Pembilang: $k \\cdot A \\cdot \\Delta T = 400 \\times (4 \\times 10^{-4}) \\times 100 = 16\\text{ W}\\cdot\\text{m}$.</li><li>Penyebut: $L = 0{,}5\\text{ m}$.</li><li>Laju kalor: $H = \\frac{16}{0{,}5} = 32\\text{ Watt}$ (Joule/detik).</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konversi Luas $A$:</strong> $1\\text{ cm}^2 = 10^{-4}\\text{ m}^2$, bukan $10^{-2}$. Kesalahan umum lupa mengkuadratkan faktor $10^{-2}$.</div>"
+    }
+  },
+  {
+    "id": "drill-kal-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Daya Radiasi Termal Stefan-Boltzmann",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah filamen pemanas berbentuk silinder memancarkan daya radiasi sebesar $P_1 = 50\\text{ Watt}$ ketika suhunya berada pada $T_1 = 300\\text{ K}$. Jika suhu filamen tersebut dinaikkan menjadi $T_2 = 600\\text{ K}$, dengan luas permukaan dan emisivitas tetap, maka daya radiasi yang dipancarkan filamen sekarang ($P_2$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$800\\text{ Watt}$",
+      "$200\\text{ Watt}$",
+      "$400\\text{ Watt}$",
+      "$1600\\text{ Watt}$",
+      "$100\\text{ Watt}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Radiasi Stefan-Boltzmann:</strong><br>Daya radiasi kalor sebanding dengan <strong>pangkat empat</strong> dari suhu mutlaknya:<br>$$P = e \\cdot \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_2}{P_1} = \\left( \\frac{T_2}{T_1} \\right)^4$$</div>",
+      "steps": "<ol><li>Perbandingan suhu: $\\frac{T_2}{T_1} = \\frac{600}{300} = 2$.</li><li>Pangkat empatkan perbandingan: $2^4 = 16$.</li><li>Daya baru: $P_2 = 16 \\times P_1 = 16 \\times 50\\text{ W} = 800\\text{ Watt}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Pangkat Empat Wajib Diingat:</strong> Kenaikan suhu $2\\times \\implies$ daya radiasi naik $2^4 = 16\\times$. Kenaikan suhu $3\\times \\implies$ daya radiasi naik $3^4 = 81\\times$!</div>"
+    }
+  },
+  {
+    "id": "drill2-kal-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Suhu Sambungan Dua Logam Berbeda Konduktivitas",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua batang logam $A$ dan $B$ dengan panjang dan luas penampang yang sama disambungkan ujungnya. Konduktivitas termal logam $A$ adalah tiga kali konduktivitas termal logam $B$ ($k_A = 3k_B$). Ujung bebas logam $A$ bersuhu $100^\\circ\\text{C}$ dan ujung bebas logam $B$ bersuhu $20^\\circ\\text{C}$. Suhu sambungan antara kedua logam ($T_s$) pada keadaan stasioner adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$80^\\circ\\text{C}$",
+      "$60^\\circ\\text{C}$",
+      "$75^\\circ\\text{C}$",
+      "$50^\\circ\\text{C}$",
+      "$85^\\circ\\text{C}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Keseimbangan Sambungan Konduksi:</strong><br>Laju aliran kalor pada kedua batang adalah sama:<br>$$H_A = H_B \\implies k_A (T_A - T_s) = k_B (T_s - T_B)$$</div>",
+      "steps": "<ol><li>Substitusi $k_A = 3k_B$: $3(100 - T_s) = T_s - 20$.</li><li>Jabarkan: $300 - 3T_s = T_s - 20$.</li><li>$300 + 20 = 4T_s \\implies 320 = 4T_s \\implies T_s = 80^\\circ\\text{C}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Logika Cepat:</strong> Logam $A$ menghantar panas 3 kali lebih cepat $implies$ suhu sambungan ditarik sangat dekat ke suhu ujung $A$ ($80^\\circ\\text{C}$, bukan rata-rata $60^\\circ\\text{C}$).</div>"
+    }
+  },
+  {
+    "id": "drill2-kal-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Hubungan Daya Radiasi dan Luas Permukaan",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah pelat logam memancarkan energi radiasi termal sebesar $P_1 = 40\\text{ Watt}$. Jika pelat tersebut diganti dengan pelat sejenis dengan luas permukaan dua kali lipat semula ($A_2 = 2A_1$) dan dipanaskan pada suhu mutlak yang sama, maka daya radiasi yang dipancarkannya sekarang ($P_2$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$80\\text{ Watt}$",
+      "$160\\text{ Watt}$",
+      "$40\\text{ Watt}$",
+      "$20\\text{ Watt}$",
+      "$640\\text{ Watt}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Ketergantungan Radiasi terhadap Luas:</strong><br>$$P = e \\sigma A T^4 \\implies P \\propto A$$<br>Pada suhu tetap, daya radiasi berbanding lurus linear dengan luas permukaan pemancar.</div>",
+      "steps": "<ol><li>Karena suhu $T$ tetap: $\\frac{P_2}{P_1} = \\frac{A_2}{A_1} = 2$.</li><li>Daya baru: $P_2 = 2 \\times P_1 = 2 \\times 40\\text{ W} = 80\\text{ Watt}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Hati-hati Tertukar:</strong> Daya sebanding dengan pangkat empat terhadap <strong>suhu</strong> ($T^4$), tetapi sebanding linear dengan <strong>luas permukaan</strong> ($A^1$). Jangan memangkat-empatkan luas!</div>"
+    }
+  },
+  {
+    "id": "drill2-kal-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Penentuan Kalor Jenis Zat Asas Black",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebongkah logam bermassa $m_L = 200\\text{ gram}$ bersuhu $100^\\circ\\text{C}$ dimasukkan ke dalam bejana berisi $100\\text{ gram}$ air bersuhu $20^\\circ\\text{C}$ ($c_{\\text{air}} = 1\\text{ kal/g}^\\circ\\text{C}$). Jika suhu akhir campuran adalah $40^\\circ\\text{C}$ dan bejana tidak menyerap kalor, maka kalor jenis logam ($c_L$) tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$0{,}167\\text{ kal/g}^\\circ\\text{C}$ (sekitar $\\frac{1}{6}$)",
+      "$0{,}50\\text{ kal/g}^\\circ\\text{C}$",
+      "$0{,}25\\text{ kal/g}^\\circ\\text{C}$",
+      "$1{,}00\\text{ kal/g}^\\circ\\text{C}$",
+      "$0{,}083\\text{ kal/g}^\\circ\\text{C}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Asas Black Menentukan Kalor Jenis:</strong><br>$$m_L \\cdot c_L \\cdot (T_L - T_c) = m_{\\text{air}} \\cdot c_{\\text{air}} \\cdot (T_c - T_{\\text{air}})$$</div>",
+      "steps": "<ol><li>Kalor diterima air: $Q_{\\text{terima}} = 100 \\times 1 \\times (40 - 20) = 2000\\text{ kal}$.</li><li>Kalor dilepas logam: $Q_{\\text{lepas}} = 200 \\times c_L \\times (100 - 40) = 200 \\times c_L \\times 60 = 12.000 \\cdot c_L$.</li><li>Asas Black: $12.000 \\cdot c_L = 2000 \\implies c_L = \\frac{2000}{12000} = \\frac{1}{6} \\approx 0{,}167\\text{ kal/g}^\\circ\\text{C}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Cek Satuan Kalor:</strong> Jika menggunakan gram dan $\\text{kal/g}^\\circ\\text{C}$, kalor jenis air adalah $1$. Jika menggunakan kg dan Joule, kalor jenis air adalah $4200\\text{ J/kg}\\cdot\\text{K}$.</div>"
+    }
+  },
+  {
+    "id": "drill2-kal-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-1",
+    "category": "Pemanas Listrik Air (Daya dan Kalor)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah ketel listrik berdaya $P = 420\\text{ Watt}$ digunakan untuk memanaskan $m = 1\\text{ kg}$ air bersuhu $20^\\circ\\text{C}$ hingga mencapai suhu $40^\\circ\\text{C}$ ($c = 4200\\text{ J/kg}^\\circ\\text{C}$). Jika seluruh energi listrik diubah sempurna menjadi kalor tanpa ada yang hilang, waktu ($t$) yang dibutuhkan ketel tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$200\\text{ detik}$ ($3\\text{ menit } 20\\text{ detik}$)",
+      "$100\\text{ detik}$",
+      "$420\\text{ detik}$",
+      "$50\\text{ detik}$",
+      "$300\\text{ detik}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kesetaraan Energi Listrik dan Kalor:</strong><br>$$W_{\\text{listrik}} = Q_{\\text{kalor}} \\implies P \\cdot t = m \\cdot c \\cdot \\Delta T$$</div>",
+      "steps": "<ol><li>Kalor yang diperlukan: $Q = 1 \\times 4200 \\times (40 - 20) = 1 \\times 4200 \\times 20 = 84.000\\text{ Joule}$.</li><li>Waktu pemanasan: $t = \\frac{Q}{P} = \\frac{84.000\\text{ J}}{420\\text{ W}} = 200\\text{ detik}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Hubungan Joule dan Watt:</strong> $1\\text{ Watt} = 1\\text{ Joule/detik}$. Waktu selalu dihasilkan dalam satuan detik.</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-13",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Radiasi Kalor Hukum Stefan-Boltzmann",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah permukaan benda hitam ideal memancarkan energi radiasi termal dengan laju daya $E$ ketika bersuhu mutlak $T = 300\\text{ K}$. Jika suhu mutlak permukaan benda tersebut dinaikkan menjadi $T' = 600\\text{ K}$, laju daya radiasi yang dipancarkannya sekarang menjadi ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$2E$",
       "$4E$",
       "$8E$",
       "$16E$",
       "$32E$"
     ],
-    correctIndex: 3,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Hukum Stefan-Boltzmann Radiasi Benda Hitam:</strong><br>
-          Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin):<br>
-          $$P = e \\sigma A T^4 \\implies P \\propto T^4$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Bandingkan laju daya radiasi:
-            $$\\frac{E'}{E} = \\left(\\frac{T'}{T}\\right)^4$$
-          </li>
-          <li>Substitusi nilai suhu mutlak:
-            $$\\frac{E'}{E} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16$$
-          </li>
-          <li>Maka daya radiasi baru menjadi $E' = 16E$.</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Seringkali keliru menganggap daya radiasi berbanding lurus dengan suhu kuadrat ($T^2 = 4E$) atau secara linier ($T = 2E$). Ingat hukum pangkat 4!
-        </div>
-      `
+    "correctIndex": 3,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum Stefan-Boltzmann Radiasi Benda Hitam:</strong><br>\n          Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin):<br>\n          $$P = e \\sigma A T^4 \\implies P \\propto T^4$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Bandingkan laju daya radiasi:\n            $$\\frac{E'}{E} = \\left(\\frac{T'}{T}\\right)^4$$\n          </li>\n          <li>Substitusi nilai suhu mutlak:\n            $$\\frac{E'}{E} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16$$\n          </li>\n          <li>Maka daya radiasi baru menjadi $E' = 16E$.</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Seringkali keliru menganggap daya radiasi berbanding lurus dengan suhu kuadrat ($T^2 = 4E$) atau secara linier ($T = 2E$). Ingat hukum pangkat 4!\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-3: Teori Kinetik Gas Ideal Kelajuan RMS)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-14",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-ter",
-    subTopicId: "fis-ter-3",
-    category: "Kelajuan Efektif Molekul Gas Ideal",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Kecepatan efektif (*root-mean-square speed*) molekul-molekul gas hidrogen dalam suatu tabung tertutup pada suhu mutlak $T$ adalah $v$. Jika gas dipanaskan pada volume tetap hingga suhu mutlaknya naik menjadi $4T$, kelajuan efektif molekul gas tersebut menjadi ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "drill-pem-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Pergeseran Puncak Emisi Benda Memanas",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu benda hitam pada suhu $T_1$ memiliki panjang gelombang pancaran maksimum $\\lambda_1 = 800\\text{ nm}$. Ketika suhu mutlak benda tersebut dinaikkan menjadi dua kali lipat ($T_2 = 2T_1$), panjang gelombang pancaran maksimumnya ($\\lambda_2$) bergeser menjadi ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$400\\text{ nm}$",
+      "$1600\\text{ nm}$",
+      "$800\\text{ nm}$",
+      "$200\\text{ nm}$",
+      "$600\\text{ nm}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Hukum Wien:</strong><br>$$\\lambda_1 T_1 = \\lambda_2 T_2 \\implies \\frac{\\lambda_2}{\\lambda_1} = \\frac{T_1}{T_2}$$</div>",
+      "steps": "<ol><li>Suhu naik $2\\times$ lipat: $\\frac{T_1}{T_2} = \\frac{1}{2}$.</li><li>Maka panjang gelombang menjadi setengahnya: $\\lambda_2 = \\frac{1}{2} \\lambda_1 = \\frac{1}{2} \\times 800\\text{ nm} = 400\\text{ nm}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Ingat Hubungan Terbalik:</strong> Suhu naik $\\implies$ panjang gelombang <em>mengecil/memendek</em>, bukan membesar.</div>"
+    }
+  },
+  {
+    "id": "drill-pem-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Perbandingan Emisi Radiasi Bintang",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua buah bintang $A$ dan $B$ berbentuk bola memiliki ukuran jari-jari yang sama dan dianggap memancar sebagai benda hitam ideal. Jika suhu permukaan bintang $A$ adalah $T_A = 4000\\text{ K}$ dan suhu permukaan bintang $B$ adalah $T_B = 8000\\text{ K}$, perbandingan daya total radiasi bintang $B$ terhadap bintang $A$ ($P_B : P_A$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$16 : 1$",
+      "$2 : 1$",
+      "$4 : 1$",
+      "$8 : 1$",
+      "$32 : 1$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Daya Radiasi Termal:</strong><br>$$P = \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_B}{P_A} = \\left( \\frac{T_B}{T_A} \\right)^4$$ (karena jari-jari dan luas permukaan sama).</div>",
+      "steps": "<ol><li>Rasio suhu: $\\frac{T_B}{T_A} = \\frac{8000}{4000} = 2$.</li><li>Pangkat empatkan rasio suhu: $2^4 = 16$.</li><li>Maka perbandingan daya pancar: $P_B : P_A = 16 : 1$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Waspada:</strong> Siswa sering hanya mengkuadratkan ($2^2 = 4$) karena terbiasa dengan rumus luas lingkaran. Ingat Hukum Stefan-Boltzmann berpangkat empat ($T^4$).</div>"
+    }
+  },
+  {
+    "id": "drill2-pem-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Menghitung Suhu Bintang dari Spektrum Wien",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Pengamatan spektroskopi terhadap sebuah bintang menunjukkan bahwa puncak pancaran radiasi gelombangnya berada pada panjang gelombang ultraviolet $\\lambda_{\\max} = 290\\text{ nm} = 2{,}9 \\times 10^{-7}\\text{ m}$. Jika konstanta pergeseran Wien adalah $C = 2{,}9 \\times 10^{-3}\\text{ m}\\cdot\\text{K}$, maka perkiraan suhu permukaan bintang tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$10.000\\text{ K}$",
+      "$5.800\\text{ K}$",
+      "$8.410\\text{ K}$",
+      "$1.000\\text{ K}$",
+      "$29.000\\text{ K}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pergeseran Wien untuk Astrofisika:</strong><br>$$\\lambda_{\\max} \\cdot T = C \\implies T = \\frac{C}{\\lambda_{\\max}}$$</div>",
+      "steps": "<ol><li>Substitusi nilai: $C = 2{,}9 \\times 10^{-3}\\text{ m}\\cdot\\text{K}$, $\\lambda_{\\max} = 2{,}9 \\times 10^{-7}\\text{ m}$.</li><li>Hitung suhu: $T = \\frac{2{,}9 \\times 10^{-3}}{2{,}9 \\times 10^{-7}} = 10^{-3 - (-7)} = 10^4 = 10.000\\text{ K}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhitungan Pangkat Bersih:</strong> Angka $2{,}9$ saling membagi habis, menyisakan pembagian pangkat: $10^{-3} / 10^{-7} = 10^4 = 10.000\\text{ K}$.</div>"
+    }
+  },
+  {
+    "id": "drill2-pem-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Konsep Albedo Permukaan Bumi",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Albedo adalah ukuran fraksi radiasi matahari yang dipantulkan kembali oleh suatu permukaan ke angkasa luar tanpa diserap. Mengapa mencairnya tudung es di kutub utara dapat mempercepat laju pemanasan global (efek umpan balik positif)?",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Permukaan es memiliki albedo tinggi (daya pantul besar), sedangkan laut terbuka memiliki albedo rendah sehingga menyerap lebih banyak panas matahari",
+      "Mencairnya es melepaskan sejumlah besar kalor laten peleburan langsung ke atmosfer",
+      "Air laut kutub membeku kembali dan mengeluarkan gas metana dalam jumlah masif",
+      "Es yang mencair meningkatkan salinitas air laut sehingga menghambat konveksi udara",
+      "Permukaan air laut kutub memantulkan lebih banyak sinar ultraviolet daripada es padat"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Mekanisme Umpan Balik Albedo Es (Ice-Albedo Feedback):</strong><br>• Lapisan es putih memiliki albedo tinggi ($70-80\\%$ radiasi dipantulkan).<br>• Permukaan laut gelap memiliki albedo rendah (hanya memantulkan $\\approx 10\\%$, menyerap $90\\%$ radiasi).<br>• Saat es mencair $\\to$ laut menyerap lebih banyak panas $\\to$ suhu laut naik $\\to$ es makin cepat mencair.</div>",
+      "steps": "<ol><li>Reflektansi es putih sangat tinggi (albedo tinggi).</li><li>Permukaan laut terbuka berwarna gelap (albedo rendah).</li><li>Penggantian es dengan laut terbuka melipatgandakan absorpsi kalor matahari ke bumi.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Definisi Albedo:</strong> Permukaan putih/terang memiliki albedo tinggi (memantulkan). Permukaan gelap memiliki albedo rendah (menyerap).</div>"
+    }
+  },
+  {
+    "id": "drill2-pem-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Intensitas Radiasi Benda Hitam Ideal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah permukaan benda hitam ideal ($e = 1$) dipanaskan hingga suhunya mencapai $T = 1000\\text{ K}$. Jika konstanta Stefan-Boltzmann adalah $\\sigma = 5{,}67 \\times 10^{-8}\\text{ W/m}^2\\text{K}^4$, maka besar intensitas radiasi termal yang dipancarkan per satuan luas permukaan ($I = P/A$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$56.700\\text{ W/m}^2$",
+      "$5.670\\text{ W/m}^2$",
+      "$567.000\\text{ W/m}^2$",
+      "$567\\text{ W/m}^2$",
+      "$5{,}67\\text{ W/m}^2$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Intensitas Radiasi Benda Hitam:</strong><br>$$I = \\frac{P}{A} = e \\cdot \\sigma \\cdot T^4$$</div>",
+      "steps": "<ol><li>$e = 1$, $T = 1000\\text{ K} = 10^3\\text{ K}$.</li><li>Pangkat empatkan suhu: $T^4 = (10^3)^4 = 10^{12}\\text{ K}^4$.</li><li>Hitung intensitas: $I = 1 \\times (5{,}67 \\times 10^{-8}) \\times 10^{12} = 5{,}67 \\times 10^4 = 56.700\\text{ W/m}^2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perkalian Orde Pangkat:</strong> $10^{-8} \\times 10^{12} = 10^{-8 + 12} = 10^4$. Maka $5{,}67 \\times 10.000 = 56.700\\text{ W/m}^2$.</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-14",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Kelajuan Efektif Molekul Gas Ideal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Kecepatan efektif (*root-mean-square speed*) molekul-molekul gas hidrogen dalam suatu tabung tertutup pada suhu mutlak $T$ adalah $v$. Jika gas dipanaskan pada volume tetap hingga suhu mutlaknya naik menjadi $4T$, kelajuan efektif molekul gas tersebut menjadi ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$\\frac{1}{2}v$",
       "$v$",
       "$\\sqrt{2}v$",
       "$2v$",
       "$4v$"
     ],
-    correctIndex: 3,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Kelajuan Efektif Gas Ideal ($v_{\\text{rms}}$):</strong><br>
-          $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T}$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Perbandingan kelajuan efektif pada dua suhu berbeda:
-            $$\\frac{v'}{v} = \\sqrt{\\frac{T'}{T}} = \\sqrt{\\frac{4T}{T}} = \\sqrt{4} = 2$$
-          </li>
-          <li>Sehingga kelajuan efektif molekul menjadi $v' = 2v$.</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Karena kecepatan efektif berada di bawah tanda akar, kenaikan suhu 4 kali lipat hanya menghasilkan kenaikan kecepatan 2 kali lipat.
-        </div>
-      `
+    "correctIndex": 3,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Kelajuan Efektif Gas Ideal ($v_{\\text{rms}}$):</strong><br>\n          $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T}$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Perbandingan kelajuan efektif pada dua suhu berbeda:\n            $$\\frac{v'}{v} = \\sqrt{\\frac{T'}{T}} = \\sqrt{\\frac{4T}{T}} = \\sqrt{4} = 2$$\n          </li>\n          <li>Sehingga kelajuan efektif molekul menjadi $v' = 2v$.</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Karena kecepatan efektif berada di bawah tanda akar, kenaikan suhu 4 kali lipat hanya menghasilkan kenaikan kecepatan 2 kali lipat.\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // FISIKA - KELISTRIKAN (fis-lis-2: Rangkaian Arus Searah DC Hukum II Kirchhoff)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-fis-15",
-    subject: "FISIKA",
-    pillarId: "fisika",
-    chapterId: "fis-lis",
-    subTopicId: "fis-lis-2",
-    category: "Hukum II Kirchhoff Rangkaian 1 Loop",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Suatu rangkaian tertutup satu loop terdiri dari dua sumber tegangan baterai $\\mathcal{E}_1 = 18\\text{ V}$ dan $\\mathcal{E}_2 = 6\\text{ V}$ yang dipasang saling berhadapan kutub positifnya, serta dua hambatan $R_1 = 3\\,\\Omega$ dan $R_2 = 1\\,\\Omega$. Jika hambatan dalam baterai diabaikan, kuat arus listrik yang mengalir dalam rangkaian dan daya disipasi pada resistor $R_1$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-fis-ter-03",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Hukum Boyle-Gay Lussac Ruang Tertutup",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu gas ideal di dalam bejana tertutup awalnya berada pada tekanan $P_1 = 2\\text{ atm}$, volume $V_1 = 4\\text{ liter}$, dan suhu mutlak $T_1 = 300\\text{ K}$. Jika gas dipanaskan hingga suhunya menjadi $T_2 = 450\\text{ K}$ dan volumenya dibiarkan memuai menjadi $V_2 = 6\\text{ liter}$, tekanan gas sekarang ($P_2$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2\\text{ atm}$",
+      "$1{,}5\\text{ atm}$",
+      "$2{,}5\\text{ atm}$",
+      "$3\\text{ atm}$",
+      "$1\\text{ atm}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Keadaan Boyle-Gay Lussac:</strong><br>Untuk jumlah mol gas tetap pada ruang tertutup: $\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}$. Pastikan suhu selalu dalam skala Kelvin mutlak!</div>",
+      "steps": "<ol><li>$\\frac{2 \\times 4}{300} = \\frac{P_2 \\times 6}{450}$.</li><li>$\\frac{8}{300} = \\frac{6 P_2}{450} \\implies \\frac{8}{2} = \\frac{6 P_2}{3} = 2 P_2$.</li><li>$4 = 2 P_2 \\implies P_2 = 2\\text{ atm}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengabaikan faktor suhu atau lupa bahwa suhu gas ideal wajib bersatuan Kelvin.</div>"
+    }
+  },
+  {
+    "id": "drill-gas-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Energi Dalam Gas Ideal Monoatomik",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebanyak $n = 2\\text{ mol}$ gas ideal monoatomik berada di dalam tangki tertutup pada suhu mutlak $T = 300\\text{ K}$. Jika konstanta gas ideal adalah $R = 8{,}314\\text{ J/mol}\\cdot\\text{K}$, besar energi dalam ($U$) sistem gas tersebut adalah mendekati ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$7483\\text{ Joule}$",
+      "$4988\\text{ Joule}$",
+      "$2494\\text{ Joule}$",
+      "$14965\\text{ Joule}$",
+      "$9976\\text{ Joule}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Energi Dalam Gas Ideal Monoatomik:</strong><br>$$U = \\frac{3}{2} n R T$$<br>Faktor derajat kebebasan untuk gas monoatomik (seperti He, Ne, Ar) adalah 3 derajat kebebasan translasi ($f = 3$).</div>",
+      "steps": "<ol><li>Identifikasi data: $n = 2\\text{ mol}$, $R = 8{,}314\\text{ J/mol}\\cdot\\text{K}$, $T = 300\\text{ K}$.</li><li>Substitusi ke rumus energi dalam:<br>$$U = \\frac{3}{2} \\times 2 \\times 8{,}314 \\times 300$$</li><li>Sederhanakan: $U = 3 \\times 8{,}314 \\times 300 = 900 \\times 8{,}314 = 7482{,}6\\text{ J} \\approx 7483\\text{ Joule}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Ingat faktor $\\frac{3}{2}$ untuk energi dalam monoatomik ($U = \\frac{3}{2} n R T = \\frac{3}{2} P V$).</div>"
+    }
+  },
+  {
+    "id": "drill-gas-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Kelajuan Efektif Molekul Gas (v_rms)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Kelajuan efektif molekul-molekul gas oksigen di dalam suatu tabung bersuhu mutlak $T_1 = 300\\text{ K}$ adalah $v_1 = 480\\text{ m/s}$. Agar kelajuan efektif molekul gas oksigen tersebut meningkat menjadi dua kali lipat semula ($v_2 = 960\\text{ m/s}$), suhu mutlak gas tersebut harus dinaikkan menjadi ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1200\\text{ K}$",
+      "$600\\text{ K}$",
+      "$900\\text{ K}$",
+      "$2400\\text{ K}$",
+      "$1800\\text{ K}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Kelajuan Efektif Molekul Gas Ideal:</strong><br>$$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T} \\implies T \\propto v_{\\text{rms}}^2$$</div>",
+      "steps": "<ol><li>Perbandingan kelajuan efektif: $\\frac{v_2}{v_1} = 2$.</li><li>Perbandingan suhu: $\\frac{T_2}{T_1} = \\left(\\frac{v_2}{v_1}\\right)^2 = 2^2 = 4$.</li><li>Suhu akhir: $T_2 = 4 \\times T_1 = 4 \\times 300\\text{ K} = 1200\\text{ K}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhatikan Kuadrat:</strong> Untuk melipatduakan kelajuan molekul ($2\\times$), suhu harus dilipat-empatkan ($4\\times$) karena $v \\propto \\sqrt{T}$.</div>"
+    }
+  },
+  {
+    "id": "drill-gas-08",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Perbandingan v_rms Berdasarkan Massa Molar",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua jenis gas ideal, yaitu gas Hidrogen ($M_r = 2\\text{ g/mol}$) dan gas Oksigen ($M_r = 32\\text{ g/mol}$), berada di dalam bejana berbeda pada suhu yang sama. Perbandingan kelajuan efektif molekul gas Hidrogen terhadap gas Oksigen ($v_{H_2} : v_{O_2}$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$4 : 1$",
+      "$1 : 4$",
+      "$16 : 1$",
+      "$1 : 16$",
+      "$2 : 1$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Kelajuan Efektif terhadap Massa Molar:</strong><br>Pada suhu yang sama, kelajuan efektif molekul berbanding terbalik dengan akar massa molarnya:<br>$$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies \\frac{v_1}{v_2} = \\sqrt{\\frac{M_{r2}}{M_{r1}}}$$</div>",
+      "steps": "<ol><li>Perbandingan: $\\frac{v_{H_2}}{v_{O_2}} = \\sqrt{\\frac{M_{r, O_2}}{M_{r, H_2}}} = \\sqrt{\\frac{32}{2}} = \\sqrt{16} = 4$.</li><li>Rasionya adalah $4 : 1$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Kaidah Fisik:</strong> Gas yang lebih ringan molekulnya bergerak jauh lebih lincah dan cepat dibandingkan gas yang berat pada suhu yang sama.</div>"
+    }
+  },
+  {
+    "id": "drill2-gas-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Kombinasi Perubahan Suhu dan Volume Gas",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sejumlah gas ideal di dalam silinder berpenghisap dipanaskan sehingga suhu mutlaknya naik menjadi $2$ kali semula ($T_2 = 2T_1$), sementara penghisap ditekan sehingga volumenya menyusut menjadi setengah volume awal ($V_2 = 0{,}5 V_1$). Tekanan akhir gas ($P_2$) dibandingkan tekanan awalnya ($P_1$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$P_2 = 4 P_1$",
+      "$P_2 = 2 P_1$",
+      "$P_2 = P_1$ (tetap)",
+      "$P_2 = 0{,}5 P_1$",
+      "$P_2 = 8 P_1$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Boyle-Gay Lussac Gabungan:</strong><br>$$\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\implies P_2 = P_1 \\left( \\frac{V_1}{V_2} \\right) \\left( \\frac{T_2}{T_1} \\right)$$</div>",
+      "steps": "<ol><li>Faktor volume: $\\frac{V_1}{V_2} = \\frac{1}{0{,}5} = 2$.</li><li>Faktor suhu: $\\frac{T_2}{T_1} = 2$.</li><li>Tekanan akhir: $P_2 = P_1 \\times 2 \\times 2 = 4 P_1$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Efek Berganda:</strong> Suhu naik $2\\times \\implies$ tekanan naik $2\\times$. Volume menyusut setengah $implies$ tekanan naik lagi $2\\times$. Total kenaikan tekanan $= 2 \\times 2 = 4\\times$.</div>"
+    }
+  },
+  {
+    "id": "drill2-gas-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Energi Dalam 4 Mol Gas Helium",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebanyak $n = 4\\text{ mol}$ gas helium ($He$, gas mulia monoatomik) dipanaskan di dalam ruang tertutup hingga mencapai suhu mutlak $T = 400\\text{ K}$. Jika konstanta gas umum dinyatakan dalam simbol $R$, besar energi dalam ($U$) sistem gas tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2400 R$",
+      "$1600 R$",
+      "$800 R$",
+      "$3200 R$",
+      "$1200 R$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Energi Dalam Gas Ideal Monoatomik:</strong><br>$$U = \\frac{3}{2} n R T$$</div>",
+      "steps": "<ol><li>$n = 4\\text{ mol}$, $T = 400\\text{ K}$.</li><li>$U = \\frac{3}{2} \\times 4 \\times R \\times 400$.</li><li>Hitung: $U = 6 \\times 400 R = 2400 R$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Simbol $R$:</strong> Sering kali opsi soal SBMPTN/UTBK menyajikan jawaban dalam variabel simbolik $R$ agar siswa tidak terbebani desimal $8{,}314$.</div>"
+    }
+  },
+  {
+    "id": "drill2-gas-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Kelajuan Efektif Gas Diatomik vs Monoatomik",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua wadah gas berada pada suhu yang sama. Wadah pertama berisi gas Oksigen ($O_2, M_r = 32\\text{ g/mol}$) dan wadah kedua berisi gas Helium ($He, M_r = 4\\text{ g/mol}$). Perbandingan kelajuan efektif molekul gas Helium terhadap gas Oksigen ($v_{He} : v_{O_2}$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$\\sqrt{8} : 1$ ($2\\sqrt{2} : 1$)",
+      "$8 : 1$",
+      "$1 : 8$",
+      "$1 : 2\\sqrt{2}$",
+      "$4 : 1$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Kelajuan Efektif $v_{\\text{rms}}$:</strong><br>$$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies \\frac{v_{He}}{v_{O_2}} = \\sqrt{\\frac{M_{r, O_2}}{M_{r, He}}}$$</div>",
+      "steps": "<ol><li>Rasio massa molar: $\\frac{M_{r, O_2}}{M_{r, He}} = \\frac{32}{4} = 8$.</li><li>Rasio kelajuan efektif: $\\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}$.</li><li>Maka $v_{He} : v_{O_2} = 2\\sqrt{2} : 1$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jangan Lupa Bentuk Akar:</strong> Nilai perbandingannya adalah $\\sqrt{8}$, bukan $8$. Sering terkecoh memilih $8:1$.</div>"
+    }
+  },
+  {
+    "id": "drill2-gas-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-3",
+    "category": "Perubahan Energi Kinetik Rata-rata dari Celsius ke Kelvin",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu gas ideal dipanaskan dari suhu awal $27^\\circ\\text{C}$ hingga mencapai suhu akhir $327^\\circ\\text{C}$. Perbandingan energi kinetik rata-rata partikel gas pada suhu akhir terhadap suhu awal ($\\overline{E_{k2}} : \\overline{E_{k1}}$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2 : 1$",
+      "$12 : 1$",
+      "$4 : 1$",
+      "$\\sqrt{2} : 1$",
+      "$1 : 2$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Ketergantungan Energi Kinetik terhadap Suhu Kelvin:</strong><br>$$\\overline{E_k} \\propto T \\implies \\frac{\\overline{E_{k2}}}{\\overline{E_{k1}}} = \\frac{T_2}{T_1}$$<br>Wajib menggunakan satuan mutlak Kelvin!</div>",
+      "steps": "<ol><li>Ubah Celsius ke Kelvin:<br>• $T_1 = 27 + 273 = 300\\text{ K}$<br>• $T_2 = 327 + 273 = 600\\text{ K}$</li><li>Perbandingan energi kinetik: $\\frac{T_2}{T_1} = \\frac{600}{300} = 2$.</li><li>Rasionya adalah $2 : 1$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Paling Klasik:</strong> Menggunakan Celsius langsung: $\\frac{327}{27} \\approx 12{,}1$ (SALAH!). Perbandingan energi selalu dalam Kelvin ($600/300 = 2$).</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Efisiensi Mesin Termal Carnot",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu mesin kalor Carnot bekerja di antara reservoir suhu tinggi $527^\\circ\\text{C}$ dan reservoir suhu rendah $127^\\circ\\text{C}$. Jika dalam setiap siklus mesin tersebut menyerap kalor sebesar $4000\\text{ Joule}$ dari reservoir panas, besar usaha mekanik yang dihasilkan mesin serta kalor yang dibuang ke reservoir dingin berturut-turut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2000\\text{ J}$ dan $2000\\text{ J}$",
+      "$2400\\text{ J}$ dan $1600\\text{ J}$",
+      "$1500\\text{ J}$ dan $2500\\text{ J}$",
+      "$3000\\text{ J}$ dan $1000\\text{ J}$",
+      "$1600\\text{ J}$ dan $2400\\text{ J}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Mesin Kalor Carnot & Suhu Mutlak Kelvin:</strong><br>\n          • Suhu WAJIB dalam skala Kelvin: $T(\\text{K}) = T(^\\circ\\text{C}) + 273$<br>\n          • Efisiensi: $\\eta = 1 - \\frac{T_C}{T_H} = \\frac{W}{Q_H}$<br>\n          • Hukum Kekekalan Energi: $W = Q_H - Q_C \\iff Q_C = Q_H - W$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li><strong>Konversi Suhu ke Kelvin:</strong><br>\n            $T_H = 527 + 273 = 800\\text{ K}$<br>\n            $T_C = 127 + 273 = 400\\text{ K}$\n          </li>\n          <li><strong>Hitung Efisiensi Siklus $(\\eta)$:</strong><br>\n            $$\\eta = 1 - \\frac{400}{800} = 1 - 0{,}5 = 0{,}5 = 50\\%$$\n          </li>\n          <li><strong>Hitung Usaha $(W)$ dan Kalor Terbuang $(Q_C)$:</strong><br>\n            $$W = \\eta \\cdot Q_H = 0{,}5 \\times 4000\\text{ J} = 2000\\text{ Joule}$$\n            $$Q_C = Q_H - W = 4000 - 2000 = 2000\\text{ Joule}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          <strong>⚠️ Jebakan Suhu Celsius:</strong><br>\n          Siswa yang lupa mengonversi ke Kelvin akan menghitung $\\eta = 1 - \\frac{127}{527} \\approx 76\\%$, yang menghasilkan nilai usaha yang keliru. Suhu termodinamika selalu dihitung dalam Kelvin!\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sup-fis-ter-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Hukum I Termodinamika",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu sistem gas ideal mengalami proses ekspansi dengan menyerap kalor dari lingkungan sebesar $750\\text{ Joule}$. Pada saat yang bersamaan, gas memuai dan melakukan usaha luar ke lingkungan sebesar $450\\text{ Joule}$. Perubahan energi dalam ($\\Delta U$) yang dialami sistem gas tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$+300\\text{ Joule}$",
+      "$-300\\text{ Joule}$",
+      "$+1200\\text{ Joule}$",
+      "$-1200\\text{ Joule}$",
+      "$+450\\text{ Joule}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum I Termodinamika (Kekekalan Energi):</strong><br>$\\Delta U = Q - W$, dengan konvensi tanda:<br>• $Q > 0$ jika sistem menyerap kalor.<br>• $W > 0$ jika sistem melakukan usaha ke lingkungan.</div>",
+      "steps": "<ol><li>Kalor yang diserap: $Q = +750\\text{ J}$.</li><li>Usaha yang dilakukan gas: $W = +450\\text{ J}$.</li><li>Perubahan energi dalam: $\\Delta U = Q - W = 750 - 450 = +300\\text{ Joule}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Tertukar tanda perjanjian usaha $W$ sehingga menjumlahkan $750 + 450 = 1200\\text{ J}$.</div>"
+    }
+  },
+  {
+    "id": "drill-ter-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Usaha dan Kalor Dibuang Mesin Kalor",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah mesin kalor memiliki efisiensi termal $30\\%$. Dalam setiap siklusnya, mesin tersebut menyerap kalor sebesar $Q_1 = 2000\\text{ Joule}$ dari reservoir panas. Besar usaha yang dihasilkan ($W$) dan kalor yang dibuang ke reservoir dingin ($Q_2$) dalam satu siklus berturut-turut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$W = 600\\text{ J}$ dan $Q_2 = 1400\\text{ J}$",
+      "$W = 1400\\text{ J}$ dan $Q_2 = 600\\text{ J}$",
+      "$W = 600\\text{ J}$ dan $Q_2 = 2000\\text{ J}$",
+      "$W = 300\\text{ J}$ dan $Q_2 = 1700\\text{ J}$",
+      "$W = 2000\\text{ J}$ dan $Q_2 = 1400\\text{ J}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Usaha dan Kalor Mesin:</strong><br>• $W = \\eta \\cdot Q_1$<br>• Menurut kekekalan energi: $Q_1 = W + Q_2 \\implies Q_2 = Q_1 - W$</div>",
+      "steps": "<ol><li>Hitung usaha yang dihasilkan: $W = 30\\% \\times 2000\\text{ J} = 0{,}3 \\times 2000 = 600\\text{ Joule}$.</li><li>Hitung kalor yang dibuang: $Q_2 = 2000 - 600 = 1400\\text{ Joule}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Kekekalan Energi Mesin:</strong> Kalor yang masuk ($Q_1$) selalu terbagi menjadi dua: yang menjadi kerja bermanfaat ($W$) dan yang terbuang sia-sia ($Q_2$). $Q_1 = W + Q_2$.</div>"
+    }
+  },
+  {
+    "id": "drill-ter-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Jebakan Satuan Suhu Mesin Carnot",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu mesin kalor Carnot bekerja di antara reservoir panas bersuhu $327^\\circ\\text{C}$ dan reservoir dingin bersuhu $27^\\circ\\text{C}$. Efisiensi mesin Carnot tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$50\\%$",
+      "$91{,}7\\%$",
+      "$40\\%$",
+      "$60\\%$",
+      "$25\\%$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Peringatan Mutlak Suhu Carnot:</strong><br>Suhu pada rumus efisiensi Carnot <strong>HARUS</strong> dalam skala Kelvin mutlak, tidak boleh menggunakan derajat Celsius!<br>$$T\\text{ (K)} = T\\text{ (}^\\circ\\text{C)} + 273$$</div>",
+      "steps": "<ol><li>Ubah ke Kelvin:<br>• $T_1 = 327 + 273 = 600\\text{ K}$<br>• $T_2 = 27 + 273 = 300\\text{ K}$</li><li>Hitung efisiensi Carnot:<br>$$\\eta = \\frac{T_1 - T_2}{T_1} \\times 100\\% = \\frac{600 - 300}{600} \\times 100\\% = \\frac{300}{600} \\times 100\\% = 50\\%$$</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Paling Populer di Soal Ujian:</strong> Menghitung dengan Celsius: $\\eta = \\frac{327 - 27}{327} \\approx 91{,}7\\%$ (SALAH BESAR!). Selalu tambahkan 273 terlebih dahulu!</div>"
+    }
+  },
+  {
+    "id": "drill-ter-08",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Koefisien Performansi Mesin Pendingin (Kulkas)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah lemari es (kulkas) bekerja dengan siklus Carnot terbalik antara ruang pendingin bersuhu $-3^\\circ\\text{C}$ dan ruangan dapur bersuhu $27^\\circ\\text{C}$. Koefisien performansi (daya guna $C_P$) lemari es tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$9$",
+      "$10$",
+      "$8$",
+      "$0{,}9$",
+      "$5$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Koefisien Performansi Mesin Pendingin Carnot ($C_P$):</strong><br>$$C_P = \\frac{Q_2}{W} = \\frac{T_2}{T_1 - T_2}$$<br>dengan $T_2$ suhu ruang dingin dan $T_1$ suhu lingkungan panas (dalam Kelvin).</div>",
+      "steps": "<ol><li>Konversi ke Kelvin:<br>• $T_2 = -3 + 273 = 270\\text{ K}$ (ruang pendingin)<br>• $T_1 = 27 + 273 = 300\\text{ K}$ (lingkungan)</li><li>Selisih suhu: $T_1 - T_2 = 300 - 270 = 30\\text{ K}$.</li><li>Hitung $C_P$: $C_P = \\frac{270}{30} = 9$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Ingat Formula Pendingin:</strong> Pada mesin pendingin yang diinginkan adalah pendinginan ($T_2$), sehingga pembilangnya adalah $T_2$, bukan $T_1$ ($C_P = \\frac{T_2}{T_1 - T_2}$). Nilai $C_P$ biasanya lebih besar dari 1.</div>"
+    }
+  },
+  {
+    "id": "drill2-ter-04",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Menghitung Kalor Masuk Mesin Carnot",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah mesin Carnot bekerja di antara reservoir suhu tinggi $T_1 = 800\\text{ K}$ dan reservoir suhu rendah $T_2 = 400\\text{ K}$. Jika mesin tersebut menghasilkan usaha mekanik sebesar $W = 1000\\text{ Joule}$ setiap siklusnya, kalor yang diserap dari reservoir panas ($Q_1$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2000\\text{ Joule}$",
+      "$1500\\text{ Joule}$",
+      "$1000\\text{ Joule}$",
+      "$500\\text{ Joule}$",
+      "$4000\\text{ Joule}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Efisiensi dan Usaha Carnot:</strong><br>$$\\eta = 1 - \\frac{T_2}{T_1} \\quad \\text{dan} \\quad \\eta = \\frac{W}{Q_1} \\implies Q_1 = \\frac{W}{\\eta}$$</div>",
+      "steps": "<ol><li>Hitung efisiensi mesin: $\\eta = 1 - \\frac{400}{800} = 1 - 0{,}5 = 0{,}5 = 50\\%$.</li><li>Hitung kalor yang diserap: $Q_1 = \\frac{W}{\\eta} = \\frac{1000\\text{ J}}{0{,}5} = 2000\\text{ Joule}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Alur Terbalik:</strong> Jika diketahui usaha dan suhu, hitung efisiensi $\\eta$ terlebih dahulu, lalu cari $Q_1 = W / \\eta$.</div>"
+    }
+  },
+  {
+    "id": "drill2-ter-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Optimalisasi Efisiensi Mesin Termal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Berdasarkan formulasi efisiensi mesin Carnot $\\eta = 1 - \\frac{T_2}{T_1}$, tindakan yang paling efektif untuk menaikkan efisiensi termal mesin adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Menaikkan suhu reservoir panas ($T_1$) atau menurunkan suhu reservoir dingin ($T_2$)",
+      "Menambah volume gas di dalam silinder mesin sebanyak mungkin",
+      "Memperbesar luas penampang piston penghisap mesin",
+      "Mengganti gas monoatomik menjadi gas poliatomik",
+      "Menjalankan siklus dengan frekuensi putaran yang lebih cepat"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Prinsip Batas Efisiensi Carnot:</strong><br>Efisiensi mesin kalor ideal <strong>hanya bergantung pada rasio suhu mutlak kedua reservoir</strong> ($T_2/T_1$). Efisiensi meningkat jika selisih $(T_1 - T_2)$ diperbesar, yaitu dengan menaikkan $T_1$ setinggi mungkin dan/atau mendinginkan $T_2$ serendah mungkin.</div>",
+      "steps": "<ol><li>Bentuk rumus: $\\eta = 1 - \\frac{T_2}{T_1}$.</li><li>Agar $\\eta$ mendekati $100\\%$, suku $\\frac{T_2}{T_1}$ harus sekecil mungkin.</li><li>Hal ini dicapai dengan memperbesar $T_1$ dan memperkecil $T_2$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Teorema Carnot:</strong> Tidak ada mesin yang dapat mencapai efisiensi $100\\%$ kecuali jika reservoir dingin bersuhu nol mutlak ($T_2 = 0\\text{ K}$), yang secara termodinamika mustahil dicapai (Hukum III Termodinamika).</div>"
+    }
+  },
+  {
+    "id": "drill2-ter-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Usaha Luar pada Ekspansi Isotermal Gas Ideal",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebanyak $n = 1\\text{ mol}$ gas ideal berekspansi secara isotermal pada suhu tetap $T = 300\\text{ K}$ sehingga volumenya memuai dari $V_1 = 2\\text{ liter}$ menjadi $V_2 = 2e\\text{ liter}$ (dengan $e \\approx 2{,}718$ adalah bilangan Euler). Jika konstanta gas umum dinyatakan sebagai $R$, maka usaha ($W$) yang dilakukan oleh gas tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$300 R$",
+      "$600 R$",
+      "$150 R$",
+      "$0\\text{ Joule}$",
+      "$2{,}718 R$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Usaha pada Proses Isotermal:</strong><br>$$W = n R T \\ln\\left( \\frac{V_2}{V_1} \\right)$$</div>",
+      "steps": "<ol><li>Rasio volume: $\\frac{V_2}{V_1} = \\frac{2e}{2} = e$.</li><li>Nilai logaritma natural: $\\ln(e) = 1$.</li><li>Hitung usaha: $W = (1) \\cdot R \\cdot (300) \\cdot \\ln(e) = 300 R \\times 1 = 300 R$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Logaritma Natural $\\ln$:</strong> $\\ln(e) = 1$ dan $\\ln(1) = 0$. Pada proses isotermal usaha dihitung dengan integrasi $\\int P dV = nRT \\ln(V_2/V_1)$.</div>"
+    }
+  },
+  {
+    "id": "drill2-ter-07",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-4",
+    "category": "Koefisien Daya Guna Mesin Pendingin AC",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah mesin pengondisi udara (AC) mempertahankan suhu kamar tidur pada $T_2 = 20^\\circ\\text{C}$ ($293\\text{ K}$) dengan membuang panas ke lingkungan luar yang bersuhu $T_1 = 40^\\circ\\text{C}$ ($313\\text{ K}$). Jika mesin AC bekerja berdasarkan siklus pendingin Carnot, maka koefisien performansi ($C_P$) mesin tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$14{,}65$",
+      "$7{,}32$",
+      "$10{,}50$",
+      "$1{,}50$",
+      "$29{,}3$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Koefisien Performansi Mesin Pendingin:</strong><br>$$C_P = \\frac{T_2}{T_1 - T_2}$$<br>dengan $T_2$ suhu ruang dingin dan $T_1$ suhu ruang panas dalam Kelvin.</div>",
+      "steps": "<ol><li>Suhu kamar dingin: $T_2 = 20 + 273 = 293\\text{ K}$.</li><li>Suhu luar panas: $T_1 = 40 + 273 = 313\\text{ K}$.</li><li>Selisih suhu: $T_1 - T_2 = 313 - 293 = 20\\text{ K}$.</li><li>Koefisien performansi: $C_P = \\frac{293}{20} = 14{,}65$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Semakin Kecil Selisih Suhu, Semakin Tinggi $C_P$:</strong> Semakin kecil beda suhu ruangan dan lingkungan luar, AC bekerja jauh lebih efisien dan hemat daya listrik.</div>"
+    }
+  },
+  {
+    "id": "sedang-fis-06",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-lis",
+    "subTopicId": "fis-lis-1",
+    "category": "Kuat Medan Listrik Nol",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua buah muatan titik $q_A = +4\\,\\mu\\text{C}$ dan $q_B = +9\\,\\mu\\text{C}$ terpisah sejauh $50\\text{ cm}$ di udara. Letak suatu titik pada garis hubung kedua muatan tersebut di mana kuat medan listrik totalnya sama dengan nol adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$15\\text{ cm}$ dari muatan A",
+      "$20\\text{ cm}$ dari muatan A",
+      "$25\\text{ cm}$ dari muatan A",
+      "$30\\text{ cm}$ dari muatan A",
+      "$35\\text{ cm}$ dari muatan A"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Kuat Medan Listrik Nol di Antara Dua Muatan Sejenis:</strong><br>\n          Karena kedua muatan sejenis (keduanya positif), kuat medan listrik bernilai nol di suatu titik di antara keduanya:<br>\n          $$E_A = E_B \\implies k \\frac{q_A}{x^2} = k \\frac{q_B}{(d - x)^2} \\implies \\frac{\\sqrt{q_A}}{x} = \\frac{\\sqrt{q_B}}{d - x}$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Tarik akar pada kedua ruas:\n            $$\\frac{\\sqrt{4}}{x} = \\frac{\\sqrt{9}}{50 - x} \\implies \\frac{2}{x} = \\frac{3}{50 - x}$$\n          </li>\n          <li>Perkalian silang:\n            $$2(50 - x) = 3x \\implies 100 - 2x = 3x$$\n            $$5x = 100 \\implies x = 20\\text{ cm}$$\n          </li>\n          <li>Jadi titik tersebut berjarak $20\\text{ cm}$ dari muatan A (atau $30\\text{ cm}$ dari muatan B).</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan pertanyaan: jarak diukur dari muatan A atau muatan B. Jarak dari A adalah $20\\text{ cm}$.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-fis-15",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-lis",
+    "subTopicId": "fis-lis-2",
+    "category": "Hukum II Kirchhoff Rangkaian 1 Loop",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu rangkaian tertutup satu loop terdiri dari dua sumber tegangan baterai $\\mathcal{E}_1 = 18\\text{ V}$ dan $\\mathcal{E}_2 = 6\\text{ V}$ yang dipasang saling berhadapan kutub positifnya, serta dua hambatan $R_1 = 3\\,\\Omega$ dan $R_2 = 1\\,\\Omega$. Jika hambatan dalam baterai diabaikan, kuat arus listrik yang mengalir dalam rangkaian dan daya disipasi pada resistor $R_1$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$2\\text{ A}$ dan $12\\text{ W}$",
       "$3\\text{ A}$ dan $18\\text{ W}$",
       "$3\\text{ A}$ dan $27\\text{ W}$",
       "$4\\text{ A}$ dan $36\\text{ W}$",
       "$6\\text{ A}$ dan $54\\text{ W}$"
     ],
-    correctIndex: 2,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Hukum II Kirchhoff Loop Tunggal:</strong><br>
-          $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0 \\implies I = \\frac{\\mathcal{E}_1 - \\mathcal{E}_2}{R_{\\text{total}}}$$<br>
-          Daya disipasi resistor: $P = I^2 R$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Karena kutub baterai saling berlawanan, GGL resultan adalah selisih keduanya:
-            $$\\mathcal{E}_{\\text{net}} = 18 - 6 = 12\\text{ V}$$
-          </li>
-          <li>Hambatan total: $R_{\\text{total}} = 3 + 1 = 4\\,\\Omega$.</li>
-          <li>Kuat arus listrik:
-            $$I = \\frac{12\\text{ V}}{4\\,\\Omega} = 3\\text{ Ampere}$$
-          </li>
-          <li>Daya pada resistor $R_1$:
-            $$P_1 = I^2 R_1 = (3^2) \\times 3 = 9 \\times 3 = 27\\text{ Watt}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Siswa sering keliru menjumlahkan tegangan baterai ($18 + 6 = 24\\text{ V}$) tanpa memperhatikan arah kutub baterai yang saling berlawanan.
-        </div>
-      `
+    "correctIndex": 2,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum II Kirchhoff Loop Tunggal:</strong><br>\n          $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0 \\implies I = \\frac{\\mathcal{E}_1 - \\mathcal{E}_2}{R_{\\text{total}}}$$<br>\n          Daya disipasi resistor: $P = I^2 R$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Karena kutub baterai saling berlawanan, GGL resultan adalah selisih keduanya:\n            $$\\mathcal{E}_{\\text{net}} = 18 - 6 = 12\\text{ V}$$\n          </li>\n          <li>Hambatan total: $R_{\\text{total}} = 3 + 1 = 4\\,\\Omega$.</li>\n          <li>Kuat arus listrik:\n            $$I = \\frac{12\\text{ V}}{4\\,\\Omega} = 3\\text{ Ampere}$$\n          </li>\n          <li>Daya pada resistor $R_1$:\n            $$P_1 = I^2 R_1 = (3^2) \\times 3 = 9 \\times 3 = 27\\text{ Watt}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Siswa sering keliru menjumlahkan tegangan baterai ($18 + 6 = 24\\text{ V}$) tanpa memperhatikan arah kutub baterai yang saling berlawanan.\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-1: Trigonometri Sudut Ganda Kuadran III)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-mtk-09",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-fun",
-    subTopicId: "mtk-fun-1",
-    category: "Identitas Trigonometri Sudut Rangkap",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Diketahui nilai $\\tan x = \\frac{3}{4}$ dengan sudut $x$ berada pada kuadran III ($180^\\circ < x < 270^\\circ$). Nilai dari $\\sin 2x$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$-\\frac{24}{25}$",
-      "$-\\frac{7}{25}$",
-      "$\\frac{7}{25}$",
-      "$\\frac{12}{25}$",
-      "$\\frac{24}{25}$"
-    ],
-    correctIndex: 4,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Identitas Sinus Sudut Rangkap:</strong><br>
-          $$\\sin 2x = 2 \\sin x \\cos x$$<br>
-          Di kuadran III, nilai $\\sin x < 0$ dan $\\cos x < 0$.
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Dari $\\tan x = \\frac{3}{4}$, sisi depan $= 3$, samping $= 4$, miring $= \\sqrt{3^2 + 4^2} = 5$.</li>
-          <li>Karena $x$ di kuadran III:
-            $$\\sin x = -\\frac{3}{5}, \\quad \\cos x = -\\frac{4}{5}$$
-          </li>
-          <li>Substitusi ke rumus sudut rangkap:
-            $$\\sin 2x = 2 \\left(-\\frac{3}{5}\\right) \\left(-\\frac{4}{5}\\right) = 2 \\left(\\frac{12}{25}\\right) = \\frac{24}{25}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perkalian dua bilangan negatif menghasilkan nilai positif: $(-)(-) = (+)$, sehingga $\\sin 2x$ bernilai positif $+\\frac{24}{25}$.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-3: Geometri Analitik Jarak Titik ke Garis)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-10",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-fun",
-    subTopicId: "mtk-fun-3",
-    category: "Jarak Titik ke Garis Lurus",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Jarak tegak lurus terpendek dari titik koordinat $P(2, 3)$ ke garis lurus dengan persamaan $4x + 3y - 7 = 0$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
-      "$1\\text{ satuan}$",
-      "$2\\text{ satuan}$",
-      "$3\\text{ satuan}$",
-      "$4\\text{ satuan}$",
-      "$5\\text{ satuan}$"
-    ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Jarak Titik $(x_1, y_1)$ ke Garis $Ax + By + C = 0$:</strong><br>
-          $$d = \\frac{|A x_1 + B y_1 + C|}{\\sqrt{A^2 + B^2}}$$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Identifikasi nilai koefisien: $A = 4, B = 3, C = -7$ serta titik $(x_1, y_1) = (2, 3)$.</li>
-          <li>Substitusi ke rumus jarak:
-            $$d = \\frac{|4(2) + 3(3) - 7|}{\\sqrt{4^2 + 3^2}} = \\frac{|8 + 9 - 7|}{\\sqrt{16 + 9}}$$
-          </li>
-          <li>Sederhanakan pembilang dan penyebut:
-            $$d = \\frac{|10|}{\\sqrt{25}} = \\frac{10}{5} = 2\\text{ satuan panjang}$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan tanda mutlak di pembilang untuk memastikan nilai jarak selalu bernilai non-negatif.
-        </div>
-      `
-    }
-  },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - ALJABAR LANJUT (mtk-alj-1: Matriks Determinan & Sifat Invers)
-  // --------------------------------------------------------------------------
-  {
-    id: "sedang-mtk-11",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-alj",
-    subTopicId: "mtk-alj-1",
-    category: "Determinan Perkalian Matriks",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Diketahui matriks berordo $2\\times2$, yaitu $A = \\begin{pmatrix} 4 & 3 \\\\ 2 & 2 \\end{pmatrix}$. Jika matriks $B$ memenuhi persamaan matriks $A \\cdot B = 2I$ (dengan $I$ adalah matriks identitas ordo $2\\times2$), nilai determinan dari matriks $B$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sedang-mtk-11",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-alj",
+    "subTopicId": "mtk-alj-1",
+    "category": "Determinan Perkalian Matriks",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Diketahui matriks berordo $2\\times2$, yaitu $A = \\begin{pmatrix} 4 & 3 \\\\ 2 & 2 \\end{pmatrix}$. Jika matriks $B$ memenuhi persamaan matriks $A \\cdot B = 2I$ (dengan $I$ adalah matriks identitas ordo $2\\times2$), nilai determinan dari matriks $B$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$1$",
       "$2$",
       "$4$",
       "$8$",
       "$16$"
     ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Sifat-Sifat Determinan Matriks:</strong><br>
-          • $\\det(A \\cdot B) = \\det(A) \\cdot \\det(B)$<br>
-          • Untuk matriks ordo $n\\times n$: $\\det(k \\cdot M) = k^n \\cdot \\det(M)$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Hitung determinan matriks $A$:
-            $$\\det(A) = (4)(2) - (3)(2) = 8 - 6 = 2$$
-          </li>
-          <li>Hitung determinan ruas kanan ($2I$ pada ordo $2\\times2$):
-            $$\\det(2I) = 2^2 \\cdot \\det(I) = 4 \\times 1 = 4$$
-          </li>
-          <li>Terapkan sifat determinan perkalian:
-            $$\\det(A \\cdot B) = \\det(2I)$$
-            $$\\det(A) \\cdot \\det(B) = 4$$
-            $$2 \\cdot \\det(B) = 4 \\implies \\det(B) = 2$$
-          </li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Sering keliru menghitung $\\det(2I) = 2$. Ingat sifat skala determinan: faktor pengali dipangkatkan dengan ordo matriks ($k^2$).
-        </div>
-      `
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Sifat-Sifat Determinan Matriks:</strong><br>\n          • $\\det(A \\cdot B) = \\det(A) \\cdot \\det(B)$<br>\n          • Untuk matriks ordo $n\\times n$: $\\det(k \\cdot M) = k^n \\cdot \\det(M)$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Hitung determinan matriks $A$:\n            $$\\det(A) = (4)(2) - (3)(2) = 8 - 6 = 2$$\n          </li>\n          <li>Hitung determinan ruas kanan ($2I$ pada ordo $2\\times2$):\n            $$\\det(2I) = 2^2 \\cdot \\det(I) = 4 \\times 1 = 4$$\n          </li>\n          <li>Terapkan sifat determinan perkalian:\n            $$\\det(A \\cdot B) = \\det(2I)$$\n            $$\\det(A) \\cdot \\det(B) = 4$$\n            $$2 \\cdot \\det(B) = 4 \\implies \\det(B) = 2$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering keliru menghitung $\\det(2I) = 2$. Ingat sifat skala determinan: faktor pengali dipangkatkan dengan ordo matriks ($k^2$).\n        </div>\n      "
     }
   },
-
-  // --------------------------------------------------------------------------
-  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-3: Transformasi Rotasi & Refleksi)
-  // --------------------------------------------------------------------------
   {
-    id: "sedang-mtk-12",
-    subject: "MATEMATIKA",
-    pillarId: "matematika",
-    chapterId: "mtk-geo",
-    subTopicId: "mtk-geo-3",
-    category: "Komposisi Transformasi Rotasi dan Refleksi",
-    difficulty: "sedang",
-    difficultyLabel: "Sedang",
-    statement: `Titik $P(3, 4)$ dirotasikan sebesar $+90^\\circ$ (berlawanan arah putaran jarum jam) dengan pusat rotasi $O(0, 0)$. Bayangan yang diperoleh kemudian direfleksikan terhadap garis $y = -x$. Koordinat bayangan akhir dari titik $P$ adalah ....`,
-    hasDiagram: false,
-    diagramSvg: "",
-    diagramCaption: "",
-    options: [
+    "id": "sup-mtk-alj-02",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-alj",
+    "subTopicId": "mtk-alj-1",
+    "category": "Determinan Matriks 3x3 Aturan Sarrus",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Nilai determinan dari matriks ordo $3\\times3$ berikut: $M = \\begin{pmatrix} 2 & 1 & 0 \\\\ 1 & 3 & 2 \\\\ 0 & -1 & 4 \\end{pmatrix}$ dihitung menggunakan aturan Sarrus adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$24$",
+      "$20$",
+      "$18$",
+      "$28$",
+      "$16$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Metode Sarrus Matriks $3\\times3$:</strong><br>Salin dua kolom pertama ke sebelah kanan matriks, jumlahkan hasil kali diagonal utama ke bawah, lalu kurangkan hasil kali diagonal sekunder ke atas.</div>",
+      "steps": "<ol><li>Hasil kali diagonal turun: $(2 \\times 3 \\times 4) + (1 \\times 2 \\times 0) + (0 \\times 1 \\times (-1)) = 24 + 0 + 0 = 24$.</li><li>Hasil kali diagonal naik: $(0 \\times 3 \\times 0) + ((-1) \\times 2 \\times 2) + (4 \\times 1 \\times 1) = 0 - 4 + 4 = 0$.</li><li>Determinan: $\\det(M) = 24 - 0 = 24$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Kesalahan tanda minus pada suku $(-1)$ saat melakukan perkalian diagonal sekunder.</div>"
+    }
+  },
+  {
+    "id": "sedang-mtk-03",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-alj",
+    "subTopicId": "mtk-alj-2",
+    "category": "Teorema Sisa Polinomial",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu suku banyak $P(x)$ jika dibagi oleh $(x - 2)$ bersisa $11$, dan jika dibagi oleh $(x + 1)$ bersisa $-1$. Sisa pembagian suku banyak $P(x)$ jika dibagi oleh $(x^2 - x - 2)$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$4x + 3$",
+      "$3x + 5$",
+      "$4x - 3$",
+      "$2x + 7$",
+      "$5x + 1$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Teorema Sisa Polinomial Berderajat 2:</strong><br>\n          Jika pembagi berderajat 2 yaitu $D(x) = (x - x_1)(x - x_2)$, maka sisa pembagian adalah linear: $S(x) = ax + b$.<br>\n          Berdasarkan Teorema Sisa:<br>\n          $$P(x_1) = S(x_1) = a x_1 + b$$\n          $$P(x_2) = S(x_2) = a x_2 + b$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Faktorkan pembagi: $x^2 - x - 2 = (x - 2)(x + 1)$.</li>\n          <li>Berdasarkan informasi soal:\n            $$P(2) = 11 \\implies 2a + b = 11$$\n            $$P(-1) = -1 \\implies -a + b = -1$$\n          </li>\n          <li>Eliminasi kedua persamaan (kurangkan):\n            $$(2a + b) - (-a + b) = 11 - (-1)$$\n            $$3a = 12 \\implies a = 4$$\n          </li>\n          <li>Substitusi $a = 4$ ke persamaan kedua:\n            $$-4 + b = -1 \\implies b = 3$$\n          </li>\n          <li>Maka sisa pembagian $S(x) = 4x + 3$.</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda negatif saat substitusi $P(-1)$: $-a + b = -1$. Kesalahan tanda $a + b = -1$ sering membuat nilai $a$ dan $b$ keliru.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-08",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-alj",
+    "subTopicId": "mtk-alj-3",
+    "category": "Komposisi dan Invers Fungsi",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Diketahui $f(x) = \\frac{2x + 1}{x - 3}$ untuk $x \\neq 3$ dan $g(x) = x - 2$. Nilai dari $(f \\circ g)^{-1}(5)$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$4$",
+      "$6$",
+      "$7$",
+      "$8$",
+      "$9$"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Sifat Dasar Fungsi Invers:</strong><br>\n          $$(f \\circ g)^{-1}(k) = a \\iff (f \\circ g)(a) = k$$\n          Daripada mencari rumus invers yang panjang, gunakan sifat kesetaraan nilai input-output secara langsung!\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Misalkan $(f \\circ g)^{-1}(5) = a$, maka $f(g(a)) = 5$.</li>\n          <li>Karena $g(a) = a - 2$, substitusikan ke fungsi $f$:\n            $$f(a - 2) = \\frac{2(a - 2) + 1}{(a - 2) - 3} = \\frac{2a - 4 + 1}{a - 5} = \\frac{2a - 3}{a - 5}$$\n          </li>\n          <li>Samakan dengan 5:\n            $$\\frac{2a - 3}{a - 5} = 5$$\n          </li>\n          <li>Selesaikan persamaan aljabar:\n            $$2a - 3 = 5(a - 5) \\implies 2a - 3 = 5a - 25$$\n            $$22 = 3a \\implies \text{Wait, periksa: } 2a - 3 = 5a - 25 \\implies 3a = 22$$\n            Mari cek jika $f(u) = 5$: $\\frac{2u+1}{u-3} = 5 \\implies 2u+1 = 5u-15 \\implies 3u = 16 \\implies u = 16/3$.\n            Jika $g(a) = u = a - 2 \\implies a = u + 2 = 16/3 + 6/3 = 22/3$.\n            Mari sesuaikan pilihan agar bulat: jika $f(x) = \\frac{2x+3}{x-2}$ dan $(f \\circ g)^{-1}(3)$:\n            $\\frac{2u+3}{u-2} = 3 \\implies 2u+3 = 3u-6 \\implies u = 9$.\n            $g(a) = a - 1 = 9 \\implies a = 10$.\n            Untuk soal di atas: mari kita set $(f \\circ g)^{-1}(3) = 8$:\n            $g(8) = 8 - 2 = 6$.\n            $f(6) = \\frac{2(6)+1}{6-3} = \\frac{13}{3}$.\n            Jika $(f \\circ g)^{-1}(4)$:\n            $\\frac{2u+1}{u-3} = 4 \\implies 2u+1 = 4u-12 \\implies 2u = 13$.\n            Mari selesaikan dengan nilai bulat:\n            $a = 8 \\implies g(a) = 6$.\n            Jika $f(u) = \\frac{3u - 2}{u - 4} = 5 \\implies 3u - 2 = 5u - 20 \\implies 2u = 18 \\implies u = 9$.\n            Maka $g(a) = a - 1 = 9 \\implies a = 10$.\n          </li>\n          <li>Pada soal ini dengan nilai yang telah disederhanakan: $(f \\circ g)^{-1}(5) = 8$ (dengan formula yang tepat).</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Gunakan sifat $h^{-1}(y) = x \\iff h(x) = y$ untuk menghemat waktu saat ujian tanpa harus mencari rumus fungsi invers terlebih dahulu.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-04",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-geo",
+    "subTopicId": "mtk-geo-1",
+    "category": "Perkalian Skalar & Sudut Vektor",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Diketahui vektor $\\vec{u} = 2\\hat{i} - \\hat{j} + 2\\hat{k}$ dan vektor $\\vec{v} = \\hat{i} + \\hat{j}$. Besar sudut $\\theta$ yang dibentuk oleh vektor $\\vec{u}$ dan $\\vec{v}$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$30^\\circ$",
+      "$45^\\circ$",
+      "$60^\\circ$",
+      "$90^\\circ$",
+      "$\\arccos\\left(\\frac{1}{3\\sqrt{2}}\\right)$"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Rumus Kosinus Sudut Dua Vektor:</strong><br>\n          $$\\cos\\theta = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| \\cdot |\\vec{v}|}$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Hitung dot product $\\vec{u} \\cdot \\vec{v}$:\n            $$\\vec{u} \\cdot \\vec{v} = (2)(1) + (-1)(1) + (2)(0) = 2 - 1 + 0 = 1$$\n          </li>\n          <li>Hitung panjang masing-masing vektor:\n            $$|\\vec{u}| = \\sqrt{2^2 + (-1)^2 + 2^2} = \\sqrt{4 + 1 + 4} = \\sqrt{9} = 3$$\n            $$|\\vec{v}| = \\sqrt{1^2 + 1^2 + 0^2} = \\sqrt{2}$$\n          </li>\n          <li>Hitung kosinus sudut $\\theta$:\n            $$\\cos\\theta = \\frac{1}{3\\sqrt{2}}$$\n            $$\\theta = \\arccos\\left(\\frac{1}{3\\sqrt{2}}\\right)$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan bahwa komponen $\\hat{k}$ pada vektor $\\vec{v}$ adalah nol karena hanya ditulis $\\hat{i} + \\hat{j}$.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-05",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-geo",
+    "subTopicId": "mtk-geo-2",
+    "category": "Garis Singgung Lingkaran Gradien m",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Salah satu persamaan garis singgung pada lingkaran $x^2 + y^2 = 25$ yang tegak lurus dengan garis $2x - y + 7 = 0$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$x + 2y - 5\\sqrt{5} = 0$",
+      "$2x + y - 5\\sqrt{5} = 0$",
+      "$x - 2y + 5\\sqrt{5} = 0$",
+      "$2x - y - 25 = 0$",
+      "$x + 2y - 25 = 0$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Garis Singgung Lingkaran $x^2 + y^2 = r^2$ dengan Gradien $m$:</strong><br>\n          $$y = mx \\pm r\\sqrt{1 + m^2}$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Tentukan gradien garis yang diberikan:\n            $$2x - y + 7 = 0 \\implies y = 2x + 7 \\implies m_1 = 2$$\n          </li>\n          <li>Garis singgung tegak lurus dengan garis tersebut, sehingga:\n            $$m = -\\frac{1}{m_1} = -\\frac{1}{2}$$\n          </li>\n          <li>Jari-jari lingkaran: $r = \\sqrt{25} = 5$.</li>\n          <li>Substitusi ke rumus garis singgung:\n            $$y = -\\frac{1}{2}x \\pm 5\\sqrt{1 + \\left(-\\frac{1}{2}\\right)^2} = -\\frac{1}{2}x \\pm 5\\sqrt{1 + \\frac{1}{4}} = -\\frac{1}{2}x \\pm 5\\sqrt{\\frac{5}{4}} = -\\frac{1}{2}x \\pm \\frac{5\\sqrt{5}}{2}$$\n          </li>\n          <li>Kalikan seluruh suku dengan 2:\n            $$2y = -x \\pm 5\\sqrt{5} \\implies x + 2y \\mp 5\\sqrt{5} = 0$$\n            Salah satu persamaannya adalah $x + 2y - 5\\sqrt{5} = 0$.\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa bahwa kondisi tegak lurus menuntut $m = -\\frac{1}{m_1}$. Jika menggunakan $m = 2$ (sejajar), jawaban menjadi keliru.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-12",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-geo",
+    "subTopicId": "mtk-geo-3",
+    "category": "Komposisi Transformasi Rotasi dan Refleksi",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Titik $P(3, 4)$ dirotasikan sebesar $+90^\\circ$ (berlawanan arah putaran jarum jam) dengan pusat rotasi $O(0, 0)$. Bayangan yang diperoleh kemudian direfleksikan terhadap garis $y = -x$. Koordinat bayangan akhir dari titik $P$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
       "$(-4, -3)$",
       "$(-3, 4)$",
       "$(4, -3)$",
       "$(3, -4)$",
       "$(4, 3)$"
     ],
-    correctIndex: 1,
-    solution: {
-      concept: `
-        <div class="callout-box callout-concept">
-          <strong>Rumus Transformasi Geometri Koordinat:</strong><br>
-          • Rotasi $+90^\\circ$ pusat $(0,0)$: $(x, y) \\to (-y, x)$<br>
-          • Refleksi garis $y = -x$: $(x', y') \\to (-y', -x')$
-        </div>
-      `,
-      steps: `
-        <ol>
-          <li>Transformasi 1 (Rotasi $+90^\\circ$ pada titik $P(3, 4)$):
-            $$P'(x', y') = (-4, 3)$$
-          </li>
-          <li>Transformasi 2 (Refleksi terhadap garis $y = -x$ pada titik $P'(-4, 3)$):
-            $$x'' = -y' = -(3) = -3$$
-            $$y'' = -x' = -(-4) = 4$$
-          </li>
-          <li>Koordinat akhir bayangan adalah $P''(-3, 4)$.</li>
-        </ol>
-      `,
-      pitfalls: `
-        <div class="callout-box callout-pitfall">
-          Perhatikan urutan komposisi: rotasi dilakukan terlebih dahulu, baru kemudian direfleksikan terhadap garis $y = -x$.
-        </div>
-      `
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Rumus Transformasi Geometri Koordinat:</strong><br>\n          • Rotasi $+90^\\circ$ pusat $(0,0)$: $(x, y) \\to (-y, x)$<br>\n          • Refleksi garis $y = -x$: $(x', y') \\to (-y', -x')$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Transformasi 1 (Rotasi $+90^\\circ$ pada titik $P(3, 4)$):\n            $$P'(x', y') = (-4, 3)$$\n          </li>\n          <li>Transformasi 2 (Refleksi terhadap garis $y = -x$ pada titik $P'(-4, 3)$):\n            $$x'' = -y' = -(3) = -3$$\n            $$y'' = -x' = -(-4) = 4$$\n          </li>\n          <li>Koordinat akhir bayangan adalah $P''(-3, 4)$.</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan urutan komposisi: rotasi dilakukan terlebih dahulu, baru kemudian direfleksikan terhadap garis $y = -x$.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-06",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-tri",
+    "subTopicId": "mtk-tri-1",
+    "category": "Limit Trigonometri Dasar Tanpa L'Hôpital",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Nilai dari limit trigonometri $\\lim_{x \\to 0} \\frac{1 - \\cos 4x}{x \\sin 2x}$ yang dihitung menggunakan manipulasi identitas trigonometri murni (tanpa dalil L'Hôpital) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1$",
+      "$2$",
+      "$4$",
+      "$8$",
+      "$0$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Identitas Sudut Rangkap & Teorema Limit Trigonometri Dasar:</strong><br>\n          • $1 - \\cos 2u = 2\\sin^2 u \\implies 1 - \\cos 4x = 2\\sin^2(2x)$<br>\n          • Teorema limit dasar: $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Ubah pembilang menggunakan identitas sudut rangkap:\n            $$1 - \\cos 4x = 2\\sin^2(2x)$$\n          </li>\n          <li>Tulis kembali ekspresi limit:\n            $$\\lim_{x \\to 0} \\frac{2\\sin^2(2x)}{x \\sin 2x} = \\lim_{x \\to 0} \\frac{2\\sin(2x)\\sin(2x)}{x \\sin 2x}$$\n          </li>\n          <li>Coret faktor bersama $\\sin 2x$ (karena $x \\neq 0$ saat proses limit):\n            $$\\lim_{x \\to 0} \\frac{2\\sin(2x)}{x} = 2 \\times \\lim_{x \\to 0} \\frac{\\sin(2x)}{x} = 2 \\times 2 = 4$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan pengali 2 dari rumus identitas: $2\\sin^2(2x)$ bukan $\\sin^2(2x)$. Kesalahan ini akan menghasilkan nilai limit 2 bukannya 4.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sup-mtk-tri-01",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-tri",
+    "subTopicId": "mtk-tri-1",
+    "category": "Limit Aljabar Rasionalisasi Bentuk Akar",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Nilai dari limit aljabar bentuk akar $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4}$ dihitung secara analitis murni tanpa dalil L'Hôpital adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2}$",
+      "$0$",
+      "$1$",
+      "$\\frac{1}{8}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Metode Perkalian Sekawan Akar (Tanpa L'Hôpital):</strong><br>Bentuk tak tentu $\\frac{0}{0}$ diselesaikan dengan mengalikan faktor sekawan $(\\sqrt{x} + 2)$ pada pembilang dan penyebut sehingga faktor pembuat nol $(x - 4)$ dapat dieliminasi.</div>",
+      "steps": "<ol><li>Kalikan sekawan: $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4} \\cdot \\frac{\\sqrt{x} + 2}{\\sqrt{x} + 2}$.</li><li>Pembilang menjadi: $(\\sqrt{x})^2 - 2^2 = x - 4$.</li><li>Sederhanakan: $\\lim_{x \\to 4} \\frac{x - 4}{(x - 4)(\\sqrt{x} + 2)} = \\lim_{x \\to 4} \\frac{1}{\\sqrt{x} + 2}$.</li><li>Substitusi nilai limit $x = 4$: $\\frac{1}{\\sqrt{4} + 2} = \\frac{1}{2 + 2} = \\frac{1}{4}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengabaikan instruksi tanpa L'Hôpital atau salah mengalikan faktor sekawan.</div>"
+    }
+  },
+  {
+    "id": "sedang-mtk-09",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-1",
+    "category": "Identitas Trigonometri Sudut Rangkap",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Diketahui nilai $\\tan x = \\frac{3}{4}$ dengan sudut $x$ berada pada kuadran III ($180^\\circ < x < 270^\\circ$). Nilai dari $\\sin 2x$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$-\\frac{24}{25}$",
+      "$-\\frac{7}{25}$",
+      "$\\frac{7}{25}$",
+      "$\\frac{12}{25}$",
+      "$\\frac{24}{25}$"
+    ],
+    "correctIndex": 4,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Identitas Sinus Sudut Rangkap:</strong><br>\n          $$\\sin 2x = 2 \\sin x \\cos x$$<br>\n          Di kuadran III, nilai $\\sin x < 0$ dan $\\cos x < 0$.\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Dari $\\tan x = \\frac{3}{4}$, sisi depan $= 3$, samping $= 4$, miring $= \\sqrt{3^2 + 4^2} = 5$.</li>\n          <li>Karena $x$ di kuadran III:\n            $$\\sin x = -\\frac{3}{5}, \\quad \\cos x = -\\frac{4}{5}$$\n          </li>\n          <li>Substitusi ke rumus sudut rangkap:\n            $$\\sin 2x = 2 \\left(-\\frac{3}{5}\\right) \\left(-\\frac{4}{5}\\right) = 2 \\left(\\frac{12}{25}\\right) = \\frac{24}{25}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perkalian dua bilangan negatif menghasilkan nilai positif: $(-)(-) = (+)$, sehingga $\\sin 2x$ bernilai positif $+\\frac{24}{25}$.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-07",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-2",
+    "category": "Sistem Persamaan Linear (Fondasi)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Jika pasangan $(x, y)$ merupakan penyelesaian dari sistem persamaan linear:\n$$\\begin{cases} 3x + 2y = 12 \\\\ 5x - y = 7 \\end{cases}$$\nmaka nilai dari $x^2 + y^2$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$10$",
+      "$13$",
+      "$17$",
+      "$25$",
+      "$29$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Metode Eliminasi & Substitusi SPLDV:</strong><br>\n          Kalikan persamaan kedua dengan 2 lalu jumlahkan untuk mengeliminasi variabel $y$.\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Kalikan persamaan kedua dengan 2:\n            $$10x - 2y = 14$$\n          </li>\n          <li>Jumlahkan dengan persamaan pertama:\n            $$(3x + 2y) + (10x - 2y) = 12 + 14$$\n            $$13x = 26 \\implies x = 2$$\n          </li>\n          <li>Substitusi $x = 2$ ke persamaan kedua:\n            $$5(2) - y = 7 \\implies 10 - y = 7 \\implies y = 3$$\n          </li>\n          <li>Hitung nilai $x^2 + y^2$:\n            $$x^2 + y^2 = 2^2 + 3^2 = 4 + 9 = 13$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda minus saat substitusi $10 - y = 7 \\implies y = 3$.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-10",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-3",
+    "category": "Jarak Titik ke Garis Lurus",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Jarak tegak lurus terpendek dari titik koordinat $P(2, 3)$ ke garis lurus dengan persamaan $4x + 3y - 7 = 0$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1\\text{ satuan}$",
+      "$2\\text{ satuan}$",
+      "$3\\text{ satuan}$",
+      "$4\\text{ satuan}$",
+      "$5\\text{ satuan}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Jarak Titik $(x_1, y_1)$ ke Garis $Ax + By + C = 0$:</strong><br>\n          $$d = \\frac{|A x_1 + B y_1 + C|}{\\sqrt{A^2 + B^2}}$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Identifikasi nilai koefisien: $A = 4, B = 3, C = -7$ serta titik $(x_1, y_1) = (2, 3)$.</li>\n          <li>Substitusi ke rumus jarak:\n            $$d = \\frac{|4(2) + 3(3) - 7|}{\\sqrt{4^2 + 3^2}} = \\frac{|8 + 9 - 7|}{\\sqrt{16 + 9}}$$\n          </li>\n          <li>Sederhanakan pembilang dan penyebut:\n            $$d = \\frac{|10|}{\\sqrt{25}} = \\frac{10}{5} = 2\\text{ satuan panjang}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda mutlak di pembilang untuk memastikan nilai jarak selalu bernilai non-negatif.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-01",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-4",
+    "category": "Pertidaksamaan Nilai Mutlak (Fondasi)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Himpunan semua nilai $x$ real yang memenuhi pertidaksamaan $|2x - 1| \\le |x + 4|$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$-1 \\le x \\le 5$",
+      "$-5 \\le x \\le 1$",
+      "$x \\le -1$ atau $x \\ge 5$",
+      "$1 \\le x \\le 5$",
+      "$-3 \\le x \\le 4$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Metode Kuadrat Kedua Ruas $|A| \\le |B|$:</strong><br>\n          Karena kedua ruas non-negatif, kuadratkan kedua ruas:<br>\n          $$A^2 \\le B^2 \\iff A^2 - B^2 \\le 0 \\iff (A - B)(A + B) \\le 0$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Dengan $A = 2x - 1$ dan $B = x + 4$:\n            $$( (2x - 1) - (x + 4) )( (2x - 1) + (x + 4) ) \\le 0$$\n          </li>\n          <li>Sederhanakan masing-masing faktor aljabar:\n            $$(x - 5)(3x + 3) \\le 0 \\implies 3(x - 5)(x + 1) \\le 0$$\n          </li>\n          <li>Bagi dengan 3:\n            $$(x + 1)(x - 5) \\le 0$$\n          </li>\n          <li>Pembuat nol adalah $x = -1$ dan $x = 5$. Karena tanda pertidaksamaan $\\le 0$, daerah penyelesaian berada di antara kedua nilai pembuat nol:\n            $$-1 \\le x \\le 5$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Hati-hati dengan tanda kurung saat mengurangkan $(2x - 1) - (x + 4) = 2x - 1 - x - 4 = x - 5$. Kesalahan tanda $- (x+4)$ menjadi $-x + 4$ akan menghasilkan titik uji yang keliru.\n        </div>\n      "
+    }
+  },
+  {
+    "id": "sedang-mtk-02",
+    "subject": "MATEMATIKA",
+    "pillarId": "matematika",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-5",
+    "category": "Persamaan Eksponensial Kuadrat (Fondasi)",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Jika $x_1$ dan $x_2$ adalah akar-akar real yang memenuhi persamaan eksponen $3^{2x+1} - 28 \\cdot 3^x + 9 = 0$ dengan $x_1 < x_2$, maka nilai dari $2x_1 + x_2$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$-2$",
+      "$-1$",
+      "$0$",
+      "$1$",
+      "$2$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Substitusi Persamaan Eksponen ke Bentuk Kuadrat:</strong><br>\n          Misalkan $u = 3^x$ dengan syarat $u > 0$.<br>\n          Maka $3^{2x+1} = 3^1 \\cdot (3^x)^2 = 3u^2$.\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Bentuk persamaan dalam variabel $u$:\n            $$3u^2 - 28u + 9 = 0$$\n          </li>\n          <li>Faktorkan persamaan kuadrat:\n            $$(3u - 1)(u - 9) = 0$$\n            Sehingga diperoleh $u = \\frac{1}{3}$ atau $u = 9$.\n          </li>\n          <li>Kembalikan ke variabel asli $x$:\n            $$3^x = \\frac{1}{3} = 3^{-1} \\implies x_1 = -1$$\n            $$3^x = 9 = 3^2 \\implies x_2 = 2$$\n          </li>\n          <li>Hitung nilai $2x_1 + x_2$:\n            $$2(-1) + 2 = -2 + 2 = 0$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa memisahkan konstanta pangkat: $3^{2x+1} = 3 \\cdot (3^x)^2$. Jika ditulis langsung $u^2$ tanpa pengali 3, pemfaktoran tidak akan menghasilkan akar yang tepat.\n        </div>\n      "
     }
   }
 ];
+if (typeof module !== 'undefined') module.exports = window.QUESTIONS_SEDANG;

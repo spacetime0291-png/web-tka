@@ -1608,3 +1608,15 @@ function bindGlobalEvents() {
     mobileDrawerOverlay.addEventListener('click', closeMobileDrawer);
   }
 }
+
+// Global and Module Exports for Testing & Integration
+if (typeof window !== 'undefined') {
+  window.getFilteredQuestions = getFilteredQuestions;
+  window.state = state;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    getFilteredQuestions,
+    state
+  };
+}
