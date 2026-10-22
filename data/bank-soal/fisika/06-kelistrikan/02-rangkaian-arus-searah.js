@@ -1,7 +1,7 @@
 /**
  * Bank Soal TKA: Fisika (TKA) - Kelistrikan
  * Sub-topik: Rangkaian Arus Searah (DC) (fis-lis-2)
- * Indikator: Hukum Ohm; Hukum I Kirchhoff; Hukum II Kirchhoff loop tertutup; hambatan pengganti campuran; energi dan daya listrik.
+ * Indikator: Hukum Ohm; Hukum I Kirchhoff; Hukum II Kirchhoff; hambatan pengganti seri-paralel; energi & daya listrik.
  * 
  * Total Butir Soal: 4 Soal (Mudah: 2, Sedang: 1, HOTS: 1)
  * Arsitektur: Modul Mandiri (Browser & Node.js Compatible)
@@ -35,7 +35,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hambatan Pengganti Seri & Paralel:</strong><br>\n          • Paralel dua resistor: $R_p = \\frac{R_1 R_2}{R_1 + R_2}$<br>\n          • Seri gabungan: $R_{\\text{total}} = R_p + R_3$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Hitung hambatan paralel $R_1$ dan $R_2$:\n            $$R_p = \\frac{6 \\times 12}{6 + 12} = \\frac{72}{18} = 4\\,\\Omega$$\n          </li>\n          <li>Jumlahkan secara seri dengan $R_3$:\n            $$R_{\\text{total}} = R_p + R_3 = 4\\,\\Omega + 4\\,\\Omega = 8\\,\\Omega$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan langsung menjumlahkan seluruh resistor ($6 + 12 + 4 = 22\\,\\Omega$), perhatikan hubungan paralel antara $R_1$ dan $R_2$.\n        </div>\n      "
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Rangkaian Arus Searah (DC)",
+    "subTopic": "Rangkaian Arus Searah (DC)",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "sup-fis-lis-02",
@@ -62,7 +66,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Daya Listrik Kuadratik Terhadap Tegangan:</strong><br>$P = \\frac{V^2}{R}$. Karena hambatan filamen lampu $R$ tetap, perbandingan daya listrik adalah kuadrat perbandingan tegangan: $\\frac{P_2}{P_1} = \\left(\\frac{V_2}{V_1}\\right)^2$.</div>",
       "steps": "<ol><li>Rasio tegangan: $\\frac{V_2}{V_1} = \\frac{110}{220} = \\frac{1}{2}$.</li><li>Rasio daya: $\\frac{P_2}{P_1} = \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4}$.</li><li>Daya lampu: $P_2 = \\frac{1}{4} \\times 100 = 25\\text{ Watt}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Siswa sering keliru menganggap hubungan linier $P \\propto V$ sehingga menjawab setengahnya ($50\\text{ W}$).</div>"
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Rangkaian Arus Searah (DC)",
+    "subTopic": "Rangkaian Arus Searah (DC)",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "sedang-fis-15",
@@ -89,7 +97,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum II Kirchhoff Loop Tunggal:</strong><br>\n          $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0 \\implies I = \\frac{\\mathcal{E}_1 - \\mathcal{E}_2}{R_{\\text{total}}}$$<br>\n          Daya disipasi resistor: $P = I^2 R$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Karena kutub baterai saling berlawanan, GGL resultan adalah selisih keduanya:\n            $$\\mathcal{E}_{\\text{net}} = 18 - 6 = 12\\text{ V}$$\n          </li>\n          <li>Hambatan total: $R_{\\text{total}} = 3 + 1 = 4\\,\\Omega$.</li>\n          <li>Kuat arus listrik:\n            $$I = \\frac{12\\text{ V}}{4\\,\\Omega} = 3\\text{ Ampere}$$\n          </li>\n          <li>Daya pada resistor $R_1$:\n            $$P_1 = I^2 R_1 = (3^2) \\times 3 = 9 \\times 3 = 27\\text{ Watt}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Siswa sering keliru menjumlahkan tegangan baterai ($18 + 6 = 24\\text{ V}$) tanpa memperhatikan arah kutub baterai yang saling berlawanan.\n        </div>\n      "
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Rangkaian Arus Searah (DC)",
+    "subTopic": "Rangkaian Arus Searah (DC)",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "hots-fis-02",
@@ -116,7 +128,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Analisis Tegangan Nodal (Node Voltage Method):</strong><br>\n          Tetapkan simpul referensi tanah (ground) pada simpul bawah $B$ dengan $V_B = 0\\text{ V}$. Maka beda potensial $V_{AB} = V_A - 0 = V_A$.<br>\n          $$\\Sigma I_{\\text{keluar dari node } A} = 0 \\implies \\sum \\frac{V_A - V_k}{R_k} = 0$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>\n            <strong>Rumuskan Arus Keluar dari Simpul A:</strong><br>\n            • Cabang kiri: $I_1 = \\frac{V_A - 24}{3}$<br>\n            • Cabang tengah: $I_2 = \\frac{V_A - 0}{6}$<br>\n            • Cabang kanan: $I_3 = \\frac{V_A - 12}{6}$\n          </li>\n          <li>\n            <strong>Penerapan KCL pada Simpul A:</strong><br>\n            $$\\frac{V_A - 24}{3} + \\frac{V_A}{6} + \\frac{V_A - 12}{6} = 0$$\n          </li>\n          <li>\n            <strong>Kalikan dengan 6 untuk Menghilangkan Pecahan:</strong><br>\n            $$2(V_A - 24) + V_A + (V_A - 12) = 0$$\n            $$2V_A - 48 + V_A + V_A - 12 = 0$$\n            $$4V_A = 60 \\implies V_A = 15{,}0\\text{ V}$$\n          </li>\n          <li>\n            <strong>Hitung Arus Cabang Tengah $I_{R2}$:</strong><br>\n            $$I_{R2} = \\frac{V_A}{R_2} = \\frac{15{,}0\\text{ V}}{6\\,\\Omega} = 2{,}50\\text{ A}$$\n            $$V_{AB} = V_A - V_B = 15{,}0 - 0 = 15{,}0\\text{ V}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering terjadi kekeliruan polaritas baterai: pelat panjang bernilai positif ($+24\\text{ V}$ dan $+12\\text{ V}$). Pastikan arah arus konsisten keluar atau masuk simpul.\n        </div>\n      "
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Rangkaian Arus Searah (DC)",
+    "subTopic": "Rangkaian Arus Searah (DC)",
+    "chapterTitle": "Kelistrikan"
   }
 ];
 

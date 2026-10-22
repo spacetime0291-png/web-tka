@@ -1,7 +1,7 @@
 /**
  * Bank Soal TKA: Fisika (TKA) - Kalor dan Termodinamika
  * Sub-topik: Pemanasan Global (fis-ter-2)
- * Indikator: Proses fisik efek rumah kaca; faktor-faktor penyebab pemanasan global; solusi penanggulangan pemanasan global.
+ * Indikator: Mekanisme efek rumah kaca; faktor penyebab; solusi penanggulangan.
  * 
  * Total Butir Soal: 13 Soal (Mudah: 7, Sedang: 6, HOTS: 0)
  * Arsitektur: Modul Mandiri (Browser & Node.js Compatible)
@@ -35,7 +35,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Fisika Efek Rumah Kaca:</strong><br>\n          Permukaan bumi menyerap cahaya tampak dari matahari dan meradiasikannya kembali sebagai radiasi termal bergelombang panjang yaitu <em>radiasi inframerah</em>, yang kemudian diserap oleh molekul gas rumah kaca ($CO_2, CH_4, H_2O$) sehingga memerangkap panas di troposfer.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Radiasi matahari yang masuk didominasi cahaya tampak dan UV dekat.</li>\n          <li>Radiasi bumi yang dipancarkan kembali adalah radiasi inframerah termal.</li>\n          <li>Gas rumah kaca memiliki pita serapan getaran molekul pada spektrum inframerah.</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan tertukar dengan lapisan ozon di stratosfer yang menyerap radiasi ultraviolet (UV). Efek rumah kaca berkaitan dengan penyerapan radiasi inframerah.\n        </div>\n      "
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-pem-01",
@@ -62,7 +66,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pergeseran Wien:</strong><br>Panjang gelombang intensitas maksimum berbanding terbalik dengan suhu mutlak benda:<br>$$\\lambda_{\\max} \\cdot T = C = 2{,}9 \\times 10^{-3}\\text{ m}\\cdot\\text{K} \\implies \\lambda_{\\max} = \\frac{C}{T}$$</div>",
       "steps": "<ol><li>Substitusi data: $\\lambda_{\\max} = \\frac{2{,}9 \\times 10^{-3}}{6000} = \\frac{2{,}9 \\times 10^{-3}}{6 \\times 10^3}$.</li><li>$\\lambda_{\\max} \\approx 0{,}4833 \\times 10^{-6}\\text{ m} = 483 \\times 10^{-9}\\text{ m} = 483\\text{ nm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Fisik:</strong> Makin panas suatu benda, warnanya bergeser dari merah $\\to$ kuning $\\to$ putih/biru (panjang gelombangnya semakin pendek!).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-pem-03",
@@ -89,7 +97,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Proses Fisik Efek Rumah Kaca:</strong><br>Radiasi matahari yang masuk sebagian besar berupa gelombang pendek (cahaya tampak) yang lolos melewati atmosfer. Permukaan bumi menyerap energi ini lalu memancarkannya kembali sebagai <strong>gelombang panjang (inframerah termal)</strong> yang diserap oleh gas rumah kaca sehingga terperangkap di atmosfer.</div>",
       "steps": "<ol><li>Gelombang masuk: Gelombang pendek / cahaya tampak (transparan bagi gas rumah kaca).</li><li>Gelombang terpancar dari bumi: Gelombang panjang / inframerah.</li><li>Peran gas rumah kaca: Mengabsorpsi radiasi inframerah dan memancarkannya kembali ke permukaan bumi.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Bedakan:</strong> Lapisan ozon ($O_3$) menyerap sinar Ultraviolet (UV). Gas rumah kaca ($CO_2, CH_4$) menyerap sinar Inframerah (panas).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-pem-04",
@@ -116,88 +128,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Global Warming Potential (GWP):</strong><br>Metana ($CH_4$) memiliki indeks GWP sekitar 25–28 kali lebih kuat daripada $CO_2$ dalam kurun waktu 100 tahun dalam hal efektivitas penyerapan radiasi inframerah.</div>",
       "steps": "<ol><li>Molekul $CH_4$ memiliki ikatan kimia yang mampu bergetar dan mengabsorpsi spektrum gelombang inframerah termal secara sangat efektif.</li><li>Oleh sebab itu, penurunan emisi gas metana dari sektor limbah dan peternakan menjadi salah satu prioritas mitigasi iklim terpenting.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Catatan Konseptual:</strong> $CO_2$ adalah kontributor terbesar berdasarkan total volume emisi, tetapi $CH_4$ jauh lebih efektif memerangkap kalor per satu satuan molekul.</div>"
-    }
-  },
-  {
-    "id": "sedang-fis-13",
-    "subject": "FISIKA",
-    "pillarId": "fisika",
-    "chapterId": "fis-ter",
-    "subTopicId": "fis-ter-2",
-    "category": "Radiasi Kalor Hukum Stefan-Boltzmann",
-    "difficulty": "sedang",
-    "difficultyLabel": "Sedang",
-    "statement": "Sebuah permukaan benda hitam ideal memancarkan energi radiasi termal dengan laju daya $E$ ketika bersuhu mutlak $T = 300\\text{ K}$. Jika suhu mutlak permukaan benda tersebut dinaikkan menjadi $T' = 600\\text{ K}$, laju daya radiasi yang dipancarkannya sekarang menjadi ....",
-    "hasDiagram": false,
-    "diagramSvg": "",
-    "diagramCaption": "",
-    "options": [
-      "$2E$",
-      "$4E$",
-      "$8E$",
-      "$16E$",
-      "$32E$"
-    ],
-    "correctIndex": 3,
-    "solution": {
-      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum Stefan-Boltzmann Radiasi Benda Hitam:</strong><br>\n          Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin):<br>\n          $$P = e \\sigma A T^4 \\implies P \\propto T^4$$\n        </div>\n      ",
-      "steps": "\n        <ol>\n          <li>Bandingkan laju daya radiasi:\n            $$\\frac{E'}{E} = \\left(\\frac{T'}{T}\\right)^4$$\n          </li>\n          <li>Substitusi nilai suhu mutlak:\n            $$\\frac{E'}{E} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16$$\n          </li>\n          <li>Maka daya radiasi baru menjadi $E' = 16E$.</li>\n        </ol>\n      ",
-      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Seringkali keliru menganggap daya radiasi berbanding lurus dengan suhu kuadrat ($T^2 = 4E$) atau secara linier ($T = 2E$). Ingat hukum pangkat 4!\n        </div>\n      "
-    }
-  },
-  {
-    "id": "drill-pem-02",
-    "subject": "FISIKA",
-    "pillarId": "fisika",
-    "chapterId": "fis-ter",
-    "subTopicId": "fis-ter-2",
-    "category": "Pergeseran Puncak Emisi Benda Memanas",
-    "difficulty": "sedang",
-    "difficultyLabel": "Sedang",
-    "statement": "Suatu benda hitam pada suhu $T_1$ memiliki panjang gelombang pancaran maksimum $\\lambda_1 = 800\\text{ nm}$. Ketika suhu mutlak benda tersebut dinaikkan menjadi dua kali lipat ($T_2 = 2T_1$), panjang gelombang pancaran maksimumnya ($\\lambda_2$) bergeser menjadi ....",
-    "hasDiagram": false,
-    "diagramSvg": "",
-    "diagramCaption": "",
-    "options": [
-      "$400\\text{ nm}$",
-      "$1600\\text{ nm}$",
-      "$800\\text{ nm}$",
-      "$200\\text{ nm}$",
-      "$600\\text{ nm}$"
-    ],
-    "correctIndex": 0,
-    "solution": {
-      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Hukum Wien:</strong><br>$$\\lambda_1 T_1 = \\lambda_2 T_2 \\implies \\frac{\\lambda_2}{\\lambda_1} = \\frac{T_1}{T_2}$$</div>",
-      "steps": "<ol><li>Suhu naik $2\\times$ lipat: $\\frac{T_1}{T_2} = \\frac{1}{2}$.</li><li>Maka panjang gelombang menjadi setengahnya: $\\lambda_2 = \\frac{1}{2} \\lambda_1 = \\frac{1}{2} \\times 800\\text{ nm} = 400\\text{ nm}$.</li></ol>",
-      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Ingat Hubungan Terbalik:</strong> Suhu naik $\\implies$ panjang gelombang <em>mengecil/memendek</em>, bukan membesar.</div>"
-    }
-  },
-  {
-    "id": "drill-pem-05",
-    "subject": "FISIKA",
-    "pillarId": "fisika",
-    "chapterId": "fis-ter",
-    "subTopicId": "fis-ter-2",
-    "category": "Perbandingan Emisi Radiasi Bintang",
-    "difficulty": "sedang",
-    "difficultyLabel": "Sedang",
-    "statement": "Dua buah bintang $A$ dan $B$ berbentuk bola memiliki ukuran jari-jari yang sama dan dianggap memancar sebagai benda hitam ideal. Jika suhu permukaan bintang $A$ adalah $T_A = 4000\\text{ K}$ dan suhu permukaan bintang $B$ adalah $T_B = 8000\\text{ K}$, perbandingan daya total radiasi bintang $B$ terhadap bintang $A$ ($P_B : P_A$) adalah ....",
-    "hasDiagram": false,
-    "diagramSvg": "",
-    "diagramCaption": "",
-    "options": [
-      "$16 : 1$",
-      "$2 : 1$",
-      "$4 : 1$",
-      "$8 : 1$",
-      "$32 : 1$"
-    ],
-    "correctIndex": 0,
-    "solution": {
-      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Daya Radiasi Termal:</strong><br>$$P = \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_B}{P_A} = \\left( \\frac{T_B}{T_A} \\right)^4$$ (karena jari-jari dan luas permukaan sama).</div>",
-      "steps": "<ol><li>Rasio suhu: $\\frac{T_B}{T_A} = \\frac{8000}{4000} = 2$.</li><li>Pangkat empatkan rasio suhu: $2^4 = 16$.</li><li>Maka perbandingan daya pancar: $P_B : P_A = 16 : 1$.</li></ol>",
-      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Waspada:</strong> Siswa sering hanya mengkuadratkan ($2^2 = 4$) karena terbiasa dengan rumus luas lingkaran. Ingat Hukum Stefan-Boltzmann berpangkat empat ($T^4$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-01",
@@ -224,7 +159,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Spektrum Gelombang Elektromagnetik:</strong><br>Frekuensi Tinggi (Panjang Gelombang Pendek) $\\to$ Frekuensi Rendah:<br>Sinar Gamma $\\to$ Sinar-X $\\to$ <strong>Ultraviolet</strong> $\\to$ <strong>Cahaya Tampak</strong> $\\to$ <strong>Inframerah</strong> $\\to$ Gelombang Mikro $\\to$ Gelombang Radio.</div>",
       "steps": "<ol><li>Ultraviolet memiliki energi/frekuensi paling tinggi di antara ketiganya ($f \\sim 10^{15}\\text{ Hz}$).</li><li>Cahaya tampak di tengah ($f \\sim 10^{14}\\text{ Hz}$).</li><li>Inframerah memiliki frekuensi paling rendah ($f \\sim 10^{12}-10^{13}\\text{ Hz}$) namun membawa efek termal (panas).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Mnemonic Urutan Spektrum:</strong> GRUTAMUXI: <strong>G</strong>amma, <strong>R</strong>ontgen (X), <strong>U</strong>ltraviolet, <strong>TAm</strong>pak, <strong>M</strong>erah (Infra), <strong>U</strong>HF/Mikro, <strong>R</strong>ad<strong>i</strong>o.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-02",
@@ -251,7 +190,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Karakteristik Hukum Stefan-Boltzmann:</strong><br>$$P \\propto T^4$$</div>",
       "steps": "<ol><li>Faktor kenaikan suhu: $3$.</li><li>Pangkat empatkan faktor kenaikan: $3^4 = 3 \\times 3 \\times 3 \\times 3 = 81$.</li><li>Daya radiasi menjadi $81 P$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jangan Memangkatkan 2 atau 3:</strong> $3^2 = 9$ (salah), $3^3 = 27$ (salah). Ingat rumus radiasi berpangkat EMPAT ($3^4 = 81$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-03",
@@ -278,7 +221,104 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Karakteristik Kimiawi CFC:</strong><br>1. Radikal klorin ($\\text{Cl}^\\bullet$) dari CFC mengkatalisis penguraian ozon ($O_3 \\to O_2$) di stratosfer.<br>2. Molekul CFC memiliki masa hidup sangat panjang di atmosfer dan menyerap radiasi inframerah termal (gas rumah kaca).</div>",
       "steps": "<ol><li>Di lapisan stratosfer: Mengikis lapisan pelindung ozon.</li><li>Di lapisan troposfer: Memerangkap radiasi panas bumi (efek rumah kaca).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Protokol Montreal:</strong> Protokol internasional yang berhasil melarang penggunaan gas CFC dan menggantikannya dengan senyawa HFC yang lebih aman bagi ozon.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
+  },
+  {
+    "id": "sedang-fis-13",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Radiasi Kalor Hukum Stefan-Boltzmann",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Sebuah permukaan benda hitam ideal memancarkan energi radiasi termal dengan laju daya $E$ ketika bersuhu mutlak $T = 300\\text{ K}$. Jika suhu mutlak permukaan benda tersebut dinaikkan menjadi $T' = 600\\text{ K}$, laju daya radiasi yang dipancarkannya sekarang menjadi ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2E$",
+      "$4E$",
+      "$8E$",
+      "$16E$",
+      "$32E$"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum Stefan-Boltzmann Radiasi Benda Hitam:</strong><br>\n          Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin):<br>\n          $$P = e \\sigma A T^4 \\implies P \\propto T^4$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Bandingkan laju daya radiasi:\n            $$\\frac{E'}{E} = \\left(\\frac{T'}{T}\\right)^4$$\n          </li>\n          <li>Substitusi nilai suhu mutlak:\n            $$\\frac{E'}{E} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16$$\n          </li>\n          <li>Maka daya radiasi baru menjadi $E' = 16E$.</li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Seringkali keliru menganggap daya radiasi berbanding lurus dengan suhu kuadrat ($T^2 = 4E$) atau secara linier ($T = 2E$). Ingat hukum pangkat 4!\n        </div>\n      "
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
+  },
+  {
+    "id": "drill-pem-02",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Pergeseran Puncak Emisi Benda Memanas",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Suatu benda hitam pada suhu $T_1$ memiliki panjang gelombang pancaran maksimum $\\lambda_1 = 800\\text{ nm}$. Ketika suhu mutlak benda tersebut dinaikkan menjadi dua kali lipat ($T_2 = 2T_1$), panjang gelombang pancaran maksimumnya ($\\lambda_2$) bergeser menjadi ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$400\\text{ nm}$",
+      "$1600\\text{ nm}$",
+      "$800\\text{ nm}$",
+      "$200\\text{ nm}$",
+      "$600\\text{ nm}$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Hukum Wien:</strong><br>$$\\lambda_1 T_1 = \\lambda_2 T_2 \\implies \\frac{\\lambda_2}{\\lambda_1} = \\frac{T_1}{T_2}$$</div>",
+      "steps": "<ol><li>Suhu naik $2\\times$ lipat: $\\frac{T_1}{T_2} = \\frac{1}{2}$.</li><li>Maka panjang gelombang menjadi setengahnya: $\\lambda_2 = \\frac{1}{2} \\lambda_1 = \\frac{1}{2} \\times 800\\text{ nm} = 400\\text{ nm}$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Ingat Hubungan Terbalik:</strong> Suhu naik $\\implies$ panjang gelombang <em>mengecil/memendek</em>, bukan membesar.</div>"
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
+  },
+  {
+    "id": "drill-pem-05",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-ter",
+    "subTopicId": "fis-ter-2",
+    "category": "Perbandingan Emisi Radiasi Bintang",
+    "difficulty": "sedang",
+    "difficultyLabel": "Sedang",
+    "statement": "Dua buah bintang $A$ dan $B$ berbentuk bola memiliki ukuran jari-jari yang sama dan dianggap memancar sebagai benda hitam ideal. Jika suhu permukaan bintang $A$ adalah $T_A = 4000\\text{ K}$ dan suhu permukaan bintang $B$ adalah $T_B = 8000\\text{ K}$, perbandingan daya total radiasi bintang $B$ terhadap bintang $A$ ($P_B : P_A$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$16 : 1$",
+      "$2 : 1$",
+      "$4 : 1$",
+      "$8 : 1$",
+      "$32 : 1$"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "<div class=\"callout-box callout-concept\"><strong>Perbandingan Daya Radiasi Termal:</strong><br>$$P = \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_B}{P_A} = \\left( \\frac{T_B}{T_A} \\right)^4$$ (karena jari-jari dan luas permukaan sama).</div>",
+      "steps": "<ol><li>Rasio suhu: $\\frac{T_B}{T_A} = \\frac{8000}{4000} = 2$.</li><li>Pangkat empatkan rasio suhu: $2^4 = 16$.</li><li>Maka perbandingan daya pancar: $P_B : P_A = 16 : 1$.</li></ol>",
+      "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Waspada:</strong> Siswa sering hanya mengkuadratkan ($2^2 = 4$) karena terbiasa dengan rumus luas lingkaran. Ingat Hukum Stefan-Boltzmann berpangkat empat ($T^4$).</div>"
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-04",
@@ -305,7 +345,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pergeseran Wien untuk Astrofisika:</strong><br>$$\\lambda_{\\max} \\cdot T = C \\implies T = \\frac{C}{\\lambda_{\\max}}$$</div>",
       "steps": "<ol><li>Substitusi nilai: $C = 2{,}9 \\times 10^{-3}\\text{ m}\\cdot\\text{K}$, $\\lambda_{\\max} = 2{,}9 \\times 10^{-7}\\text{ m}$.</li><li>Hitung suhu: $T = \\frac{2{,}9 \\times 10^{-3}}{2{,}9 \\times 10^{-7}} = 10^{-3 - (-7)} = 10^4 = 10.000\\text{ K}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhitungan Pangkat Bersih:</strong> Angka $2{,}9$ saling membagi habis, menyisakan pembagian pangkat: $10^{-3} / 10^{-7} = 10^4 = 10.000\\text{ K}$.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-05",
@@ -332,7 +376,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Mekanisme Umpan Balik Albedo Es (Ice-Albedo Feedback):</strong><br>• Lapisan es putih memiliki albedo tinggi ($70-80\\%$ radiasi dipantulkan).<br>• Permukaan laut gelap memiliki albedo rendah (hanya memantulkan $\\approx 10\\%$, menyerap $90\\%$ radiasi).<br>• Saat es mencair $\\to$ laut menyerap lebih banyak panas $\\to$ suhu laut naik $\\to$ es makin cepat mencair.</div>",
       "steps": "<ol><li>Reflektansi es putih sangat tinggi (albedo tinggi).</li><li>Permukaan laut terbuka berwarna gelap (albedo rendah).</li><li>Penggantian es dengan laut terbuka melipatgandakan absorpsi kalor matahari ke bumi.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Definisi Albedo:</strong> Permukaan putih/terang memiliki albedo tinggi (memantulkan). Permukaan gelap memiliki albedo rendah (menyerap).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-06",
@@ -359,7 +407,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Intensitas Radiasi Benda Hitam:</strong><br>$$I = \\frac{P}{A} = e \\cdot \\sigma \\cdot T^4$$</div>",
       "steps": "<ol><li>$e = 1$, $T = 1000\\text{ K} = 10^3\\text{ K}$.</li><li>Pangkat empatkan suhu: $T^4 = (10^3)^4 = 10^{12}\\text{ K}^4$.</li><li>Hitung intensitas: $I = 1 \\times (5{,}67 \\times 10^{-8}) \\times 10^{12} = 5{,}67 \\times 10^4 = 56.700\\text{ W/m}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perkalian Orde Pangkat:</strong> $10^{-8} \\times 10^{12} = 10^{-8 + 12} = 10^4$. Maka $5{,}67 \\times 10.000 = 56.700\\text{ W/m}^2$.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   }
 ];
 

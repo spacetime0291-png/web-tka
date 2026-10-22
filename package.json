@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build:data": "node scripts/build_full_modular_system.js",
-    "test": "node scripts/test_bank_soal_suite.js"
+    "test": "node scripts/test_bank_soal_suite.js && node scripts/test_interactive_features.js"
   },
   "keywords": [
     "tka",

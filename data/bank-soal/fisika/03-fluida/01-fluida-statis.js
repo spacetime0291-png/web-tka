@@ -1,7 +1,7 @@
 /**
  * Bank Soal TKA: Fisika (TKA) - Fluida
  * Sub-topik: Fluida Statis (fis-flu-1)
- * Indikator: Tekanan hidrostatis dan tekanan mutlak; Hukum Pascal pada sistem hidrolik; Hukum Archimedes dan kondisi terapung, melayang, tenggelam.
+ * Indikator: Tekanan hidrostatis & mutlak; Hukum Pascal sistem hidrolik; Hukum Archimedes (terapung, melayang, tenggelam).
  * 
  * Total Butir Soal: 4 Soal (Mudah: 2, Sedang: 2, HOTS: 0)
  * Arsitektur: Modul Mandiri (Browser & Node.js Compatible)
@@ -35,7 +35,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Tekanan Hidrostatis Murni:</strong><br>\n          $$P_h = \\rho g h$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$P_h = (1000\\text{ kg/m}^3)(10\\text{ m/s}^2)(8\\text{ m}) = 80.000\\text{ Pa} = 8\\times 10^4\\text{ Pa}$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Soal menanyakan <em>tekanan hidrostatis</em>, bukan tekanan mutlak ($P_{\\text{mutlak}} = P_0 + P_h$). Jadi tekanan atmosfer $P_0$ tidak dijumlahkan.\n        </div>\n      "
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Statis",
+    "subTopic": "Fluida Statis",
+    "chapterTitle": "Fluida"
   },
   {
     "id": "sup-fis-flu-01",
@@ -62,7 +66,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pascal:</strong><br>Tekanan yang diberikan pada zat cair dalam ruang tertutup diteruskan sama besar ke segala arah: $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\implies F_1 = \\frac{A_1}{A_2} F_2$.</div>",
       "steps": "<ol><li>Rasio penampang: $\\frac{A_1}{A_2} = \\frac{25}{500} = \\frac{1}{20}$.</li><li>Gaya input pada pengisap kecil: $F_1 = \\frac{1}{20} \\times 10.000 = 500\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Terbalik mengalikan rasio penampang sehingga menghasilkan nilai gaya yang tidak masuk akal ($200.000\\text{ N}$).</div>"
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Statis",
+    "subTopic": "Fluida Statis",
+    "chapterTitle": "Fluida"
   },
   {
     "id": "sedang-fis-03",
@@ -89,7 +97,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Keseimbangan Benda Terapung Multilapis:</strong><br>\n          Gaya berat total benda sama dengan jumlah seluruh gaya apung Archimedes dari fluida-fluida yang terdesak:<br>\n          $$W = F_{A1} + F_{A2} \\implies \\rho_b V_b g = \\rho_A V_{A} g + \\rho_B V_{B} g$$\n          $$\\rho_b = \\rho_A \\left(\\frac{V_A}{V_b}\\right) + \\rho_B \\left(\\frac{V_B}{V_b}\\right)$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Diketahui rasio volume tercelup:<br>\n            $\\frac{V_A}{V_b} = 40\\% = 0{,}40$ dan $\\frac{V_B}{V_b} = 35\\% = 0{,}35$.\n          </li>\n          <li>Substitusi ke persamaan keseimbangan apung:<br>\n            $$\\rho_b = (1200 \\times 0{,}40) + (800 \\times 0{,}35)$$\n          </li>\n          <li>Hitung masing-masing kontribusi:<br>\n            $$1200 \\times 0{,}40 = 480$$\n            $$800 \\times 0{,}35 = 280$$\n            $$\\rho_b = 480 + 280 = 760\\text{ kg/m}^3$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan bahwa volume balok di udara ($25\\%$) tidak memberikan gaya apung yang signifikan karena massa jenis udara sangat kecil dibanding cairan dan diabaikan.\n        </div>\n      "
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Statis",
+    "subTopic": "Fluida Statis",
+    "chapterTitle": "Fluida"
   },
   {
     "id": "sup-fis-flu-02",
@@ -116,7 +128,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Tekanan Mutlak (Total):</strong><br>Tekanan total pada kedalaman $h$ merupakan jumlahan dari tekanan atmosfer luar dan tekanan hidrostatis zat cair: $P_{\\text{mutlak}} = P_{\\text{atm}} + \\rho g h$.</div>",
       "steps": "<ol><li>Tekanan hidrostatis: $P_h = \\rho g h = 1000 \\times 10 \\times 20 = 200.000\\text{ Pa} = 2{,}00 \\times 10^5\\text{ Pa}$.</li><li>Tekanan atmosfer: $P_{\\text{atm}} = 1{,}01 \\times 10^5\\text{ Pa}$.</li><li>Tekanan mutlak: $P = P_{\\text{atm}} + P_h = 1{,}01 \\times 10^5 + 2{,}00 \\times 10^5 = 3{,}01 \\times 10^5\\text{ Pa}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Hanya menghitung tekanan hidrostatis murni ($2{,}00 \\times 10^5\\text{ Pa}$) dan mengabaikan tekanan atmosfer di permukaan danau.</div>"
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Statis",
+    "subTopic": "Fluida Statis",
+    "chapterTitle": "Fluida"
   }
 ];
 

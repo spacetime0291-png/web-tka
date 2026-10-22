@@ -25,7 +25,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Pembacaan Jangka Sorong & Ketidakpastian Mutlak:</strong><br>\n          • Hasil bacaan: $x = \\text{Skala Utama} + (\\text{Skala Nonius} \\times \\text{Ketelitian})$<br>\n          • Nilai ketidakpastian pengukuran tunggal: $\\Delta x = \\frac{1}{2} \\times \\text{skala terkecil}$<br>\n          • Format pelaporan baku: $x \\pm \\Delta x$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li><strong>Menghitung Nilai Bacaan $(x)$:</strong><br>\n            $$x = 3{,}1\\text{ cm} + (7 \\times 0{,}01\\text{ cm}) = 3{,}1\\text{ cm} + 0{,}07\\text{ cm} = 3{,}17\\text{ cm}$$\n          </li>\n          <li><strong>Menghitung Ketidakpastian Mutlak $(\\Delta x)$:</strong><br>\n            $$\\Delta x = \\frac{1}{2} \\times 0{,}01\\text{ cm} = 0{,}005\\text{ cm}$$\n          </li>\n          <li><strong>Pelaporan Hasil Pengukuran:</strong><br>\n            $$(x \\pm \\Delta x) = (3{,}17 \\pm 0{,}005)\\text{ cm}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          <strong>⚠️ Jebakan Pengukuran:</strong><br>\n          Jangan lupa membagi ketelitian alat dengan 2 untuk memperoleh ketidakpastian mutlak tunggal $\\Delta x$. Seringkali siswa langsung menuliskan $3{,}17 \\pm 0{,}01\\text{ cm}$ padahal ketidakpastiannya adalah setengah skala terkecil.\n        </div>\n      "
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Pengukuran",
+    "subTopic": "Pengukuran",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "sup-fis-kin-01",
@@ -52,7 +56,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Pembacaan Mikrometer Sekrup:</strong><br>• $x = \\text{Skala Utama} + (\\text{Skala Nonius} \\times 0{,}01\\text{ mm})$<br>• Nilai ketidakpastian mutlak pengukuran tunggal: $\\Delta x = \\frac{1}{2} \\times 0{,}01\\text{ mm} = 0{,}005\\text{ mm}$.</div>",
       "steps": "<ol><li>Skala utama terlihat: $4{,}5\\text{ mm}$.</li><li>Skala putar nonius: $38 \\times 0{,}01\\text{ mm} = 0{,}38\\text{ mm}$.</li><li>Hasil pengukuran: $x = 4{,}5 + 0{,}38 = 4{,}88\\text{ mm}$.</li><li>Format pelaporan baku: $(4{,}88 \\pm 0{,}005)\\text{ mm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Siswa sering lupa menambahkan garis setengah milimeter ($0{,}5\\text{ mm}$) pada skala utama bawah, sehingga keliru membaca $4{,}38\\text{ mm}$.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Pengukuran",
+    "subTopic": "Pengukuran",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "sup-fis-kin-02",
@@ -79,7 +87,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Prinsip Kerja Neraca Tiga Lengan Ohaus:</strong><br>Massa benda merupakan hasil penjumlahan langsung dari penunjukan ketiga lengan penyeimbang: $M = M_{\\text{ratusan}} + M_{\\text{puluhan}} + M_{\\text{satuan/desimal}}$.</div>",
       "steps": "<ol><li>Massa lengan belakang: $300\\text{ g}$.</li><li>Massa lengan tengah: $40\\text{ g}$.</li><li>Massa lengan depan: $5{,}6\\text{ g}$.</li><li>Massa total: $M = 300 + 40 + 5{,}6 = 345{,}6\\text{ gram}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Tertukar antara posisi skala puluhan dan ratusan, atau salah membaca nilai skala nonius pada lengan depan.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Pengukuran",
+    "subTopic": "Pengukuran",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "mudah-fis-02",
@@ -106,7 +118,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Rumus Kinematika GLBB Dipercepat:</strong><br>\n          $$s = v_0 t + \\frac{1}{2} a t^2$$\n          dengan $v_0$ kecepatan awal, $a$ percepatan, dan $t$ selang waktu.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li><strong>Identifikasi Variabel:</strong><br>\n            $v_0 = 10\\text{ m/s}$, $a = 2\\text{ m/s}^2$, $t = 5\\text{ s}$.\n          </li>\n          <li><strong>Substitusi ke Persamaan Jarak GLBB:</strong><br>\n            $$s = (10)(5) + \\frac{1}{2}(2)(5^2) = 50 + 25 = 75\\text{ meter}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          <strong>⚠️ Kesalahan Umum:</strong> Lupa memangkatkan waktu $t^2 = 25$ atau lupa mengalikan dengan $\\frac{1}{2}$.\n        </div>\n      "
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lurus",
+    "subTopic": "Gerak Lurus",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "sup-fis-kin-04",
@@ -133,7 +149,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Jarak (Skalar) vs Perpindahan (Vektor):</strong><br>• Jarak ($s$): total panjang lintasan yang ditempuh tanpa memperhatikan arah.<br>• Perpindahan ($\\Delta \\vec{r}$): perubahan posisi terpendek dari titik awal ke titik akhir (vektor).</div>",
       "steps": "<ol><li>Jarak total: $s = 80 + 60 = 140\\text{ meter}$.</li><li>Perpindahan (resultan vektor siku-siku): $|\\Delta \\vec{r}| = \\sqrt{80^2 + 60^2} = \\sqrt{6400 + 3600} = \\sqrt{10000} = 100\\text{ meter}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menyamakan nilai perpindahan dengan jarak total lintasan gerak.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lurus",
+    "subTopic": "Gerak Lurus",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "mudah-fis-12",
@@ -160,7 +180,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Waktu Mencapai Titik Tertinggi Gerak Parabola:</strong><br>\n          Pada titik puncak, komponen kecepatan vertikal bernilai nol ($v_y = 0$).<br>\n          $$t_h = \\frac{v_0 \\sin\\theta}{g}$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Identifikasi besaran: $v_0 = 40\\text{ m/s}$, $\\sin 30^\\circ = 0{,}5$, $g = 10\\text{ m/s}^2$.</li>\n          <li>Substitusi ke rumus waktu puncak:\n            $$t_h = \\frac{40 \\times 0{,}5}{10} = \\frac{20}{10} = 2{,}0\\text{ detik}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan tertukar dengan waktu total di udara ($t_{\\text{total}} = 2 t_h = 4{,}0\\text{ detik}$). Soal hanya menanyakan waktu menuju titik tertinggi.\n        </div>\n      "
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lengkung",
+    "subTopic": "Gerak Lengkung",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "fis-din-13",
@@ -187,7 +211,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Dinamika gerak melingkar vertikal di puncak bukit/jembatan cembung: $mg - N = \\frac{m v^2}{R}$.</div>",
       "steps": "<ol><li>Kondisi batas mobil tepat tidak terlempar/terangkat adalah gaya normal bernilai nol ($N = 0$).<br>$$mg = \\frac{m v_{\\max}^2}{R} \\Rightarrow v_{\\max} = \\sqrt{g R} = \\sqrt{10 \\times 40} = \\sqrt{400} = 20\\text{ m/s}$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering mengira massa mobil ($1200\\text{ kg}$) berpengaruh pada kecepatan lepas, padahal variabel massa tereliminasi dari persamaan.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lengkung",
+    "subTopic": "Gerak Lengkung",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "fis-din-14",
@@ -214,7 +242,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kelajuan kritis pada titik tertinggi gerak melingkar vertikal: $N + mg = \\frac{m v^2}{R}$ dengan syarat $N \\ge 0$.</div>",
       "steps": "<ol><li>Agar air tepat tidak lepas dari dasar ember di titik puncak, gaya desak normal dasar ember $N = 0$:<br>$$mg = \\frac{m v_{\\min}^2}{R} \\Rightarrow v_{\\min} = \\sqrt{g R} = \\sqrt{10 \\times 0{,}9} = \\sqrt{9} = 3\\text{ m/s}$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa menarik akar kuadrat dari hasil kali $g R = 9$ sehingga memilih opsi $9\\text{ m/s}$.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lengkung",
+    "subTopic": "Gerak Lengkung",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "fis-din-37",
@@ -241,7 +273,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Tikungan datar kasar: gaya gesek statis bertindak sebagai gaya sentripetal ($f_s \\le \\mu_s mg = \\frac{m v^2}{R}$).</div>",
       "steps": "<ol><li>$$v_{\\max} = \\sqrt{\\mu_s g R} = \\sqrt{0{,}40 \\times 10 \\times 25} = \\sqrt{100} = 10\\text{ m/s}$$. (Setara dengan $36\\text{ km/jam}$).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa menarik akar kuadrat sehingga menjawab $100\\text{ m/s}$ atau mengira kelajuan maksimum bergantung pada massa mobil.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lengkung",
+    "subTopic": "Gerak Lengkung",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "fis-din-38",
@@ -268,7 +304,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Dinamika gerak melingkar di titik terendah lembah cekung: $N - mg = \\frac{m v^2}{R}$.</div>",
       "steps": "<ol><li>1) Berat penumpang: $W = mg = 60(10) = 600\\text{ N}$.<br>2) Gaya sentripetal: $F_s = \\frac{m v^2}{R} = \\frac{60 \\times 20^2}{20} = 1200\\text{ N}$.<br>3) Gaya normal: $N = W + F_s = 600 + 1200 = 1800\\text{ N}$ (penumpang merasakan sensasi $3g$).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering mengurangkan gaya sentripetal dengan gaya berat ($N = 1200 - 600 = 600\\text{ N}$) karena tertukar dengan kasus bukit cembung.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lengkung",
+    "subTopic": "Gerak Lengkung",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "mudah-fis-03",
@@ -295,7 +335,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum II Newton:</strong><br>\n          $$\\Sigma F = m a \\implies a = \\frac{\\Sigma F}{m}$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Karena lantai licin sempurna ($f_k = 0$), gaya penggerak total $\\Sigma F = 20\\text{ N}$.</li>\n          <li>$$a = \\frac{20\\text{ N}}{4\\text{ kg}} = 5\\text{ m/s}^2$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan apakah ada koefisien gesekan atau lantai dinyatakan licin sempurna.\n        </div>\n      "
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-01",
@@ -322,7 +366,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton pada kerangka acuan vertikal: $\\Sigma F_y = m \\cdot a$.</div>",
       "steps": "<ol><li>Lift bergerak turun dengan perlambatan, yang berarti vektor percepatan sistem mengarah ke atas ($a = +2\\text{ m/s}^2$). Persamaan gaya normal pada siswa: $N - W = m \\cdot a \\Rightarrow N = m(g + a) = 50(10 + 2) = 600\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering terkecoh menganggap gerakan turun selalu menghasilkan $N = m(g - a) = 400\\text{ N}$, tanpa memperhatikan kata 'perlambatan' yang membalik arah vektor percepatan ke atas.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-02",
@@ -349,7 +397,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton sistem multi-benda kontak: $a = \\frac{\\Sigma F}{\\Sigma m}$ dan gaya aksi-reaksi kontak.</div>",
       "steps": "<ol><li>1) Percepatan bersama kedua balok: $a = \\frac{F}{m_A + m_B} = \\frac{30}{6 + 4} = 3\\text{ m/s}^2$.<br>2) Tinjau balok $B$ secara horizontal: satu-satunya gaya horizontal yang bekerja pada $B$ adalah gaya kontak dari $A$ ($N_{AB}$): $N_{AB} = m_B \\cdot a = 4\\text{ kg} \\times 3\\text{ m/s}^2 = 12\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Sebagian siswa mengira gaya kontak sama dengan gaya dorong luar $F = 30\\text{ N}$, atau menghitung gaya resultan yang tersisa pada balok $A$ ($F - N_{AB} = 18\\text{ N}$).</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-25",
@@ -376,7 +428,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kondisi jatuh bebas dan bobot semu: saat percepatan sistem $a = g$ ke bawah, berat semu bernilai nol (keadaan tanpa bobot / weightlessness).</div>",
       "steps": "<ol><li>Persamaan gaya pada neraca pegas: $mg - T = ma$. Karena lift jatuh bebas ($a = g$), maka: $T = m(g - a) = m(g - g) = 0\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering mengira pegas tetap menunjukkan berat sejati benda $mg = 100\\text{ N}$ karena mengabaikan percepatan kerangka acuan lift.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-26",
@@ -403,7 +459,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Percepatan bersama sistem gabungan $a = \\frac{F}{\\Sigma m}$ dan gaya desak aksi-reaksi kontak.</div>",
       "steps": "<ol><li>1) Percepatan ketiga balok: $a = \\frac{50}{2 + 3 + 5} = \\frac{50}{10} = 5\\text{ m/s}^2$.<br>2) Gaya kontak antara balok 2 dan 3 ($N_{23}$) adalah gaya yang bertanggung jawab mempercepat balok 3 saja: $N_{23} = m_3 \\cdot a = 5\\text{ kg} \\times 5\\text{ m/s}^2 = 25\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering keliru menghitung gaya kontak antara balok 1 dan balok 2 ($N_{12} = (m_2 + m_3)a = 40\\text{ N}$) atau menjawab gaya luar $50\\text{ N}$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-05",
@@ -430,7 +490,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Syarat benda tidak bertranslasi relatif: gaya inersia maksimum diimbangi oleh gaya gesek statis maksimum ($f_{s,\\max} = \\mu_s N$).</div>",
       "steps": "<ol><li>Pada bak mendatar, $N = mg$. Gaya perlambatan maksimum: $m \\cdot a_{\\max} = f_{s,\\max} = \\mu_s mg \\Rightarrow a_{\\max} = \\mu_s g = 0{,}35 \\times 10 = 3{,}5\\text{ m/s}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering keliru menggunakan koefisien gesek kinetis $\\mu_k$ sehingga menjawab $a = 2{,}5\\text{ m/s}^2$. Koefisien kinetis hanya berlaku jika peti sudah tergelincir.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-06",
@@ -457,7 +521,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kesetimbangan statis benda pada bidang vertikal: $\\Sigma F_y = 0$ dan $\\Sigma F_x = 0$ dengan $f_s \\le \\mu_s N$.</div>",
       "steps": "<ol><li>1) Sumbu vertikal: $f_s = W = mg = 0{,}6 \\times 10 = 6\\text{ N}$.<br>2) Sumbu horizontal: $N = F$.<br>3) Syarat tidak merosot: $f_s \\le \\mu_s N \\Rightarrow mg \\le \\mu_s F \\Rightarrow F \\ge \\frac{mg}{\\mu_s} = \\frac{6}{0{,}40} = 15\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Terkecoh mengalikan gaya berat dengan $\\mu_s$ bukannya membaginya, atau mengira gaya normal selalu bernilai $mg$ seperti pada bidang datar.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-29",
@@ -484,7 +552,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Sifat adaptif gaya gesek statis: selama gaya luar horizontal $F \\le f_{s,\\max}$, benda tetap diam dan besar gaya gesek statis tepat sama dengan gaya luar ($f_s = F$).</div>",
       "steps": "<ol><li>1) Gaya gesek statis maksimum: $f_{s,\\max} = \\mu_s mg = 0{,}40 \\times 80 = 32\\text{ N}$.<br>2) Bandingkan gaya tarik dengan $f_{s,\\max}$: $F = 24\\text{ N} < 32\\text{ N}$, artinya balok masih diam.<br>3) Karena balok diam, resultan gaya horizontal nol: $F - f_s = 0 \\Rightarrow f_s = F = 24\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Salah satu jebakan terpopuler UTBK: siswa langsung menghitung $\\mu_s N = 32\\text{ N}$ atau $\\mu_k N = 20\\text{ N}$ tanpa mengecek apakah gaya penarik melampaui ambang gesek statis maksimum.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-30",
@@ -511,7 +583,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Kondisi kelajuan konstan pada bidang miring ($a = 0$): $\\Sigma F = 0 \\Rightarrow mg \\sin\\theta = \\mu_k mg \\cos\\theta \\Rightarrow \\mu_k = \\tan\\theta$.</div>",
       "steps": "<ol><li>$$\\mu_k = \\tan 37^\\circ = \\frac{\\sin 37^\\circ}{\\cos 37^\\circ} = \\frac{0{,}6}{0{,}8} = 0{,}75$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering terkecoh langsung memilih nilai $\\sin 37^\\circ = 0{,}60$ atau $\\cos 37^\\circ = 0{,}80$ bukannya menghitung rasio tangen kemiringan.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-09",
@@ -538,7 +614,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton pada mesin Atwood vertikal: $a = \\frac{m_1 - m_2}{m_1 + m_2} g$.</div>",
       "steps": "<ol><li>Selisih gaya penggerak gravitasi dibagi massa total kedua benda:<br>$$a = \\frac{m_1 - m_2}{m_1 + m_2} g = \\frac{3 - 2}{3 + 2} \\times 10 = \\frac{1}{5} \\times 10 = 2\\text{ m/s}^2$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Seringkali siswa salah membagi dengan selisih massa atau hanya membagi dengan salah satu massa benda.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-10",
@@ -565,7 +645,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Sistem balok meja horizontal licin terhubung katrol: $a = \\frac{m_B g}{m_A + m_B}$ dan $T = m_A \\cdot a$.</div>",
       "steps": "<ol><li>1) Percepatan sistem: $a = \\frac{m_B g}{m_A + m_B} = \\frac{2 \\times 10}{3 + 2} = \\frac{20}{5} = 4\\text{ m/s}^2$.<br>2) Menghitung tegangan tali melalui balok $A$: $T = m_A \\cdot a = 3\\text{ kg} \\times 4\\text{ m/s}^2 = 12\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengira tegangan tali sama dengan gaya berat balok gantung ($T = m_B g = 20\\text{ N}$), padahal saat balok bergerak dipercepat ke bawah, $T < W_B$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-33",
@@ -592,7 +676,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton pada kabel derek vertikal: $T - Mg = M \\cdot a \\Rightarrow T = M(g + a)$.</div>",
       "steps": "<ol><li>$$T = 250(10 + 2) = 250 \\times 12 = 3000\\text{ N}$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Hanya menghitung berat sangkar $Mg = 2500\\text{ N}$ tanpa menambahkan gaya inersia pengangkatan.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-34",
@@ -619,7 +707,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Tegangan tali mesin Atwood vertikal: $T = \\frac{2 m_1 m_2}{m_1 + m_2} g$.</div>",
       "steps": "<ol><li>1) Percepatan sistem: $a = \\frac{4 - 1}{4 + 1} \\times 10 = \\frac{3}{5} \\times 10 = 6\\text{ m/s}^2$.<br>2) Tegangan tali (tinjau $m_2$ yang bergerak naik): $T - m_2 g = m_2 a \\Rightarrow T = 1(10 + 6) = 16\\text{ N}$.<br>(Alternatif rumus langsung: $T = \\frac{2(4)(1)}{4 + 1} \\times 10 = \\frac{80}{5} = 16\\text{ N}$).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Seringkali siswa menjawab rata-rata berat kedua benda $\\frac{40 + 10}{2} = 25\\text{ N}$ atau salah menjumlahkan.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-17",
@@ -646,7 +738,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum kuadrat terbalik kuat medan gravitasi: $g(r) = G \\frac{M}{r^2}$ dengan jarak diukur dari pusat massa bumi ($r = R + h$).</div>",
       "steps": "<ol><li>1) Jarak satelit dari pusat bumi: $r = R + h = R + R = 2R$.<br>2) Kuat medan gravitasi pada ketinggian tersebut:<br>$$g' = g \\left(\\frac{R}{r}\\right)^2 = 10 \\left(\\frac{R}{2R}\\right)^2 = 10 \\times \\frac{1}{4} = 2{,}5\\text{ m/s}^2$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Siswa sering lupa mengkuadratkan perbandingan jarak ($10 / 2 = 5{,}0\\text{ m/s}^2$) atau lupa bahwa jarak harus dihitung dari pusat bumi.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-18",
@@ -673,7 +769,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Perbandingan kuat medan gravitasi permukaan planet: $g = G \\frac{M}{R^2}$.</div>",
       "steps": "<ol><li>$$\\frac{g_P}{g_B} = \\left(\\frac{M_P}{M_B}\\right) \\left(\\frac{R_B}{R_P}\\right)^2 = (2) \\left(\\frac{1}{0{,}5}\\right)^2 = 2 \\times 4 = 8 \\Rightarrow g_P = 8g$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa mengkuadratkan jari-jari sehingga menghitung $\\frac{2}{0{,}5} = 4g$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-41",
@@ -700,7 +800,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum Gravitasi Universal Newton: $F = G \\frac{m_1 m_2}{r^2}$.</div>",
       "steps": "<ol><li>$$F = G \\frac{(4000)(9000)}{6^2} = G \\frac{36 \\times 10^6}{36} = 10^6 G\\text{ N}$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa mengkuadratkan jarak pemisah di penyebut ($r^2 = 36$ bukan $6$).</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-42",
@@ -727,7 +831,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Perbandingan gaya berat benda pada dua planet: $W \\propto \\frac{M}{R^2}$.</div>",
       "steps": "<ol><li>$$\\frac{W_P}{W_B} = \\left(\\frac{M_P}{M_B}\\right) \\left(\\frac{R_B}{R_P}\\right)^2 = (3) \\left(\\frac{1}{2}\\right)^2 = \\frac{3}{4} \\Rightarrow W_P = \\frac{3}{4} \\times 600 = 450\\text{ N}$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengabaikan pengkuadratan jari-jari sehingga menghitung $\\frac{3}{2} \\times 600 = 900\\text{ N}$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Hubungan Gaya dan Gerak",
+    "subTopic": "Hubungan Gaya dan Gerak",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "mudah-fis-06",
@@ -754,7 +862,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Definisi Momentum Linier:</strong><br>\n          $$p = m \\cdot v$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$p = (0{,}5\\text{ kg})(20\\text{ m/s}) = 10\\text{ kg}\\cdot\\text{m/s}$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pastikan satuan massa dalam kilogram (kg) dan kecepatan dalam meter per detik (m/s).\n        </div>\n      "
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Momentum dan Impuls",
+    "subTopic": "Momentum dan Impuls",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "sup-fis-din-01",
@@ -781,7 +893,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Teorema Impuls-Momentum (Vektor):</strong><br>Impuls gaya sama dengan perubahan momentum partikel: $\\vec{I} = \\vec{F} \\cdot \\Delta t = \\Delta \\vec{p} = m(\\vec{v}_2 - \\vec{v}_1)$. Perhatikan tanda positif dan negatif arah vektor kecepatan!</div>",
       "steps": "<ol><li>Tetapkan arah kanan sebagai positif ($+$) dan arah kiri sebagai negatif ($-$).</li><li>$v_1 = -10\\text{ m/s}$, $v_2 = +15\\text{ m/s}$.</li><li>Perubahan momentum: $\\Delta p = m(v_2 - v_1) = 0{,}2 \\cdot (15 - (-10)) = 0{,}2 \\cdot 25 = 5\\text{ N}\\cdot\\text{s}$.</li><li>Gaya rata-rata: $F = \\frac{\\Delta p}{\\Delta t} = \\frac{5}{0{,}02} = 250\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengurangkan kecepatan tanpa memperhatikan tanda arah: $15 - 10 = 5\\text{ m/s}$, sehingga menghasilkan $F = 50\\text{ N}$ yang salah fatal.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Momentum dan Impuls",
+    "subTopic": "Momentum dan Impuls",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-21",
@@ -808,7 +924,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Definisi torsi (momen gaya): $\\tau = F \\cdot r \\cdot \\sin\\theta$.</div>",
       "steps": "<ol><li>Lengan gaya $r = 0{,}4\\text{ m}$, $F = 50\\text{ N}$, dan sudut $\\theta = 30^\\circ$.<br>$$\\tau = F \\cdot r \\cdot \\sin 30^\\circ = 50 \\times 0{,}4 \\times 0{,}5 = 10\\text{ N}\\cdot\\text{m}$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Mengabaikan sudut kemiringan (menganggap tegak lurus $\\tau = 50 \\times 0{,}4 = 20\\text{ N}\\cdot\\text{m}$) atau keliru menggunakan fungsi $\\cos 30^\\circ$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-22",
@@ -835,7 +955,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Hukum II Newton untuk gerak rotasi: $\\Sigma \\tau = I \\cdot \\alpha$.</div>",
       "steps": "<ol><li>1) Torsi dari gaya tangensial: $\\tau = F \\cdot R = 30 \\times 0{,}2 = 6\\text{ N}\\cdot\\text{m}$.<br>2) Momen inersia silinder pejal: $I = \\frac{1}{2} M R^2 = \\frac{1}{2}(10)(0{,}2^2) = 5(0{,}04) = 0{,}2\\text{ kg}\\cdot\\text{m}^2$.<br>3) Percepatan sudut: $\\alpha = \\frac{\\tau}{I} = \\frac{6}{0{,}2} = 30\\text{ rad/s}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa menyertakan faktor $1/2$ pada momen inersia silinder pejal sehingga menghasilkan $\\alpha = 15\\text{ rad/s}^2$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-45",
@@ -862,7 +986,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Momen inersia sistem partikel titik diskrit: $I = \\Sigma m_i r_i^2 = m_1 r_1^2 + m_2 r_2^2$.</div>",
       "steps": "<ol><li>1) Jarak $m_1$: $r_1 = 0{,}4\\text{ m}$.<br>2) Jarak $m_2$: $r_2 = 1 - 0{,}4 = 0{,}6\\text{ m}$.<br>3) Momen inersia total: $I = 2(0{,}4)^2 + 3(0{,}6)^2 = 2(0{,}16) + 3(0{,}36) = 0{,}32 + 1{,}08 = 1{,}40\\text{ kg}\\cdot\\text{m}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Lupa mengkuadratkan jarak lengan ($r$), atau salah menentukan jarak bola kedua terhadap poros.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "fis-din-46",
@@ -889,7 +1017,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konsep:</strong><br>Energi kinetik gerak menggelinding murni: $EK_{\\text{rot}} = \\frac{1}{2} I \\omega^2$ dan $EK_{\\text{trans}} = \\frac{1}{2} M v^2$ dengan $v = \\omega R$.</div>",
       "steps": "<ol><li>$$EK_{\\text{rot}} = \\frac{1}{2}\\left(\\frac{2}{5} M R^2\\right)\\left(\\frac{v}{R}\\right)^2 = \\frac{1}{5} M v^2$$<br>$$\\frac{EK_{\\text{rot}}}{EK_{\\text{trans}}} = \\frac{\\frac{1}{5} M v^2}{\\frac{1}{2} M v^2} = \\frac{2}{5} = 0{,}40$$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan & Catatan:</strong><br>Sering tertukar membandingkan dengan energi kinetik total ($EK_{\\text{rot}} / EK_{\\text{tot}} = 2/7$).</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "drill-rot-01",
@@ -916,7 +1048,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Definisi Momen Gaya (Torsi):</strong><br>Momen gaya adalah hasil kali silang antara lengan gaya dan komponen gaya yang tegak lurus terhadap lengan:<br>$$\\tau = r \\cdot F \\sin \\theta$$</div>",
       "steps": "<ol><li>Identifikasi nilai: $r = 2\\text{ m}$, $F = 30\\text{ N}$, $\\theta = 30^\\circ$.</li><li>Komponen gaya tegak lurus: $F_{\\perp} = F \\sin 30^\\circ = 30 \\times 0{,}5 = 15\\text{ N}$.</li><li>Torsi: $\\tau = r \\times F_{\\perp} = 2 \\times 15 = 30\\text{ N}\\cdot\\text{m}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengabaikan faktor sudut $\\sin\\theta$ sehingga menghitung langsung $2 \\times 30 = 60\\text{ N}\\cdot\\text{m}$. Komponen gaya yang sejajar batang tidak menghasilkan torsi!</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "drill-rot-02",
@@ -943,7 +1079,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Konstanta Momen Inersia Benda Pejal Baku:</strong><br>• Silinder pejal homogen: $I_{\\text{silinder}} = \\frac{1}{2} M R^2 = 0{,}5 M R^2$<br>• Bola pejal homogen: $I_{\\text{bola}} = \\frac{2}{5} M R^2 = 0{,}4 M R^2$</div>",
       "steps": "<ol><li>Bandingkan koefisien bentuknya:<br>$$\\frac{I_{\\text{silinder}}}{I_{\\text{bola}}} = \\frac{\\frac{1}{2}}{\\frac{2}{5}} = \\frac{1}{2} \\times \\frac{5}{2} = \\frac{5}{4}$$</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Ingat fraksi bentuk benda berotasi:<br>• Cincin/Silinder Berongga: $k = 1$<br>• Silinder Pejal: $k = 1/2 = 0{,}5$<br>• Bola Berongga: $k = 2/3 \\approx 0{,}67$<br>• Bola Pejal: $k = 2/5 = 0{,}4$</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "drill2-rot-01",
@@ -970,7 +1110,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Momen Inersia Sistem Partikel Diskrit:</strong><br>$$I = \\sum m_i r_i^2 = m_1 r_1^2 + m_2 r_2^2 + m_3 r_3^2$$<br>dengan $r_i$ adalah jarak tegak lurus partikel ke sumbu putar.</div>",
       "steps": "<ol><li>Jarak ke sumbu $x=0$: $r_1 = 0\\text{ m}$, $r_2 = 1\\text{ m}$, $r_3 = 2\\text{ m}$.</li><li>Hitung kontribusi masing-masing partikel:<br>• $I_1 = 1 \\times (0)^2 = 0$<br>• $I_2 = 2 \\times (1)^2 = 2\\text{ kg}\\cdot\\text{m}^2$<br>• $I_3 = 3 \\times (2)^2 = 3 \\times 4 = 12\\text{ kg}\\cdot\\text{m}^2$</li><li>Jumlahkan: $I = 0 + 2 + 12 = 14\\text{ kg}\\cdot\\text{m}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Kuadratkan Jarak:</strong> Partikel yang tepat berada di sumbu putar ($r=0$) memiliki momen inersia nol. Jarak selalu dikuadratkan ($r^2$).</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "drill2-rot-02",
@@ -997,7 +1141,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Momen Inersia Kulit Bola Berongga:</strong><br>$$I = \\frac{2}{3} M R^2$$</div>",
       "steps": "<ol><li>Hitung $R^2$: $(0{,}2)^2 = 0{,}04\\text{ m}^2$.</li><li>Hitung $I$: $I = \\frac{2}{3} \\times 3\\text{ kg} \\times 0{,}04\\text{ m}^2 = 2 \\times 0{,}04 = 0{,}08\\text{ kg}\\cdot\\text{m}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Bedakan Bola Pejal vs Berongga:</strong><br>• Bola pejal: $I = \\frac{2}{5}MR^2 = 0{,}4MR^2$<br>• Bola berongga: $I = \\frac{2}{3}MR^2 \\approx 0{,}67MR^2$</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "drill2-rot-03",
@@ -1024,7 +1172,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Besaran Sudut dan Linier Rotasi:</strong><br>• Kecepatan linier tangensial: $v = \\omega \\cdot R$<br>• Percepatan linier tangensial: $a = \\alpha \\cdot R$</div>",
       "steps": "<ol><li>Identifikasi jari-jari: $R = \\frac{d}{2} = \\frac{80\\text{ cm}}{2} = 40\\text{ cm} = 0{,}4\\text{ m}$.</li><li>Hitung percepatan tangensial: $a = \\alpha \\times R = 5\\text{ rad/s}^2 \\times 0{,}4\\text{ m} = 2\\text{ m/s}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Diameter vs Jari-Jari:</strong> Selalu bagi diameter dengan 2 untuk mendapatkan jari-jari $R$.</div>"
-    }
+    },
+    "bab": "Dinamika",
+    "subBab": "Dinamika Rotasi",
+    "subTopic": "Dinamika Rotasi",
+    "chapterTitle": "Dinamika"
   },
   {
     "id": "mudah-fis-04",
@@ -1051,7 +1203,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Tekanan Hidrostatis Murni:</strong><br>\n          $$P_h = \\rho g h$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$P_h = (1000\\text{ kg/m}^3)(10\\text{ m/s}^2)(8\\text{ m}) = 80.000\\text{ Pa} = 8\\times 10^4\\text{ Pa}$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Soal menanyakan <em>tekanan hidrostatis</em>, bukan tekanan mutlak ($P_{\\text{mutlak}} = P_0 + P_h$). Jadi tekanan atmosfer $P_0$ tidak dijumlahkan.\n        </div>\n      "
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Statis",
+    "subTopic": "Fluida Statis",
+    "chapterTitle": "Fluida"
   },
   {
     "id": "sup-fis-flu-01",
@@ -1078,7 +1234,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pascal:</strong><br>Tekanan yang diberikan pada zat cair dalam ruang tertutup diteruskan sama besar ke segala arah: $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\implies F_1 = \\frac{A_1}{A_2} F_2$.</div>",
       "steps": "<ol><li>Rasio penampang: $\\frac{A_1}{A_2} = \\frac{25}{500} = \\frac{1}{20}$.</li><li>Gaya input pada pengisap kecil: $F_1 = \\frac{1}{20} \\times 10.000 = 500\\text{ N}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Terbalik mengalikan rasio penampang sehingga menghasilkan nilai gaya yang tidak masuk akal ($200.000\\text{ N}$).</div>"
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Statis",
+    "subTopic": "Fluida Statis",
+    "chapterTitle": "Fluida"
   },
   {
     "id": "mudah-fis-13",
@@ -1105,7 +1265,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Persamaan Kontinuitas Fluida Inkompresibel:</strong><br>\n          Debit aliran konstan di setiap penampang pipa:<br>\n          $$Q_1 = Q_2 \\implies A_1 v_1 = A_2 v_2$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Substitusi nilai penampang dan kelajuan:\n            $$20\\text{ cm}^2 \\times 2\\text{ m/s} = 5\\text{ cm}^2 \\times v_2$$\n          </li>\n          <li>Hitung nilai $v_2$:\n            $$40 = 5 v_2 \\implies v_2 = \\frac{40}{5} = 8\\text{ m/s}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Karena satuan penampang kedua sisi sama-sama $\\text{cm}^2$, tidak perlu mengonversi ke $\\text{m}^2$ asalkan satuannya konsisten.\n        </div>\n      "
-    }
+    },
+    "bab": "Fluida",
+    "subBab": "Fluida Dinamis",
+    "subTopic": "Fluida Dinamis",
+    "chapterTitle": "Fluida"
   },
   {
     "id": "mudah-fis-07",
@@ -1132,7 +1296,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Persamaan Dasar Cepat Rambat Gelombang:</strong><br>\n          $$v = \\lambda f \\implies \\lambda = \\frac{v}{f}$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$\\lambda = \\frac{340\\text{ m/s}}{680\\text{ Hz}} = 0{,}5\\text{ meter}$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan membalik pembagian menjadi $f/v = 2\\text{ m}$. Rumus yang benar adalah $v/f$.\n        </div>\n      "
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "sup-fis-gel-01",
@@ -1159,7 +1327,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Resonansi Pipa Organa Terbuka:</strong><br>Frekuensi nada ke-$n$ (dimulai dari $n=0$ nada dasar): $f_n = (n + 1) \\frac{v}{2L}$. Untuk nada atas pertama, $n = 1 \\implies f_1 = \\frac{v}{L}$.</div>",
       "steps": "<ol><li>Panjang pipa: $L = 60\\text{ cm} = 0{,}6\\text{ m}$.</li><li>Nada atas pertama ($n=1$): $f_1 = \\frac{v}{L} = \\frac{340}{0{,}6} \\approx 566{,}67\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Terkecoh menghitung nada dasar ($f_0 = \\frac{v}{2L} = 283{,}3\\text{ Hz}$) karena mengira nada atas pertama berindeks $n=0$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-bun-01",
@@ -1186,7 +1358,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Rumus Hukum Melde:</strong><br>Kelajuan rambat gelombang pada dawai berbanding lurus dengan akar gaya tegangan dan berbanding terbalik dengan akar massa persatuan panjang:<br>$$v = \\sqrt{\\frac{F}{\\mu}}$$</div>",
       "steps": "<ol><li>Identifikasi nilai yang diketahui: $F = 100\\text{ N}$, $\\mu = 0{,}04\\text{ kg/m}$.</li><li>Hitung pembagian dalam akar: $\\frac{F}{\\mu} = \\frac{100}{0{,}04} = 2500$.</li><li>Tarik akar kuadrat: $v = \\sqrt{2500} = 50\\text{ m/s}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Ingat kata kunci <em>\"Melde = Gaya per mu\"</em> ($v = \\sqrt{F/\\mu}$). Jangan mengalikan $F \\times \\mu$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-bun-02",
@@ -1213,7 +1389,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Kelajuan Bunyi pada Gas Ideal:</strong><br>$$v = \\sqrt{\\frac{\\gamma R T}{M_r}} \\implies v \\propto \\sqrt{T}$$<br>Kelajuan bunyi berbanding lurus dengan <strong>akar suhu mutlak</strong> (Kelvin).</div>",
       "steps": "<ol><li>Perbandingan suhu: $\\frac{T_2}{T_1} = \\frac{1200}{300} = 4$.</li><li>Perbandingan kelajuan: $\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{4} = 2$.</li><li>Kelajuan akhir: $v_2 = 2 \\times v_1 = 2 \\times 320 = 640\\text{ m/s}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menganggap hubungan linear $v \\propto T$ sehingga mengalikan 4 kali lipat ($1280\\text{ m/s}$). Yang benar adalah sebanding dengan akar kuadrat $\\sqrt{T}$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-bun-03",
@@ -1240,7 +1420,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Frekuensi Nada Dasar Dawai (Kedua Ujung Terikat):</strong><br>Pada nada dasar, panjang dawai membentuk setengah gelombang ($L = \\frac{1}{2}\\lambda \\implies \\lambda = 2L$):<br>$$f_0 = \\frac{v}{2L}$$</div>",
       "steps": "<ol><li>Konversi satuan panjang ke meter: $L = 80\\text{ cm} = 0{,}8\\text{ m}$.</li><li>Hitung pembagi: $2L = 2 \\times 0{,}8 = 1{,}6\\text{ m}$.</li><li>Frekuensi nada dasar: $f_0 = \\frac{400\\text{ m/s}}{1{,}6\\text{ m}} = 250\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Rumus nada dasar dawai sama persis dengan pipa organa terbuka: $f_0 = \\frac{v}{2L}$. Ingat ada faktor angka 2 di penyebut!</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-bun-04",
@@ -1267,7 +1451,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Pipa Organa Tertutup (Harmonik Ganjil):</strong><br>• Nada dasar ($n=0$): $f_0 = \\frac{v}{4L}$<br>• Perbandingan frekuensi hanya bilangan ganjil: $f_0 : f_1 : f_2 = 1 : 3 : 5$<br>• Nada atas pertama ($n=1$): $f_1 = 3 f_0 = \\frac{3v}{4L}$</div>",
       "steps": "<ol><li>Konversi panjang: $L = 50\\text{ cm} = 0{,}5\\text{ m}$.</li><li>Nada dasar: $f_0 = \\frac{v}{4L} = \\frac{340}{4 \\times 0{,}5} = \\frac{340}{2} = 170\\text{ Hz}$.</li><li>Nada atas pertama: $f_1 = 3 \\times f_0 = 3 \\times 170 = 510\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perbedaan Kunci:</strong> Pipa tertutup penyebutnya $4L$ dan bernada ganjil ($1 : 3 : 5$). Pipa terbuka penyebutnya $2L$ dan bernada bulat ($1 : 2 : 3$).</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-bun-06",
@@ -1294,7 +1482,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Frekuensi Pelayangan Bunyi (Beats):</strong><br>Frekuensi pelayangan adalah selisih mutlak dari dua frekuensi gelombang bunyi yang berinterferensi:<br>$$f_{\\text{layang}} = |f_A - f_B|$$</div>",
       "steps": "<ol><li>Diketahui $f_{\\text{layang}} = 4\\text{ Hz}$ dan $f_A = 440\\text{ Hz}$.</li><li>Kemungkinan 1: $f_B = f_A + f_{\\text{layang}} = 440 + 4 = 444\\text{ Hz}$.</li><li>Kemungkinan 2: $f_B = f_A - f_{\\text{layang}} = 440 - 4 = 436\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Pelayangan bunyi selalu berupa selisih sederhana ($|f_1 - f_2|$), bukan rata-rata atau rasio.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-bun-01",
@@ -1321,7 +1513,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Kelajuan Gelombang Bunyi pada Zat Padat:</strong><br>$$v = \\sqrt{\\frac{E}{\\rho}}$$</div>",
       "steps": "<ol><li>Hitung pembagian di bawah akar: $\\frac{E}{\\rho} = \\frac{2 \\times 10^{11}}{8 \\times 10^3} = \\frac{2}{8} \\times 10^8 = 0{,}25 \\times 10^8 = 25 \\times 10^6$.</li><li>Tarik akar kuadrat: $v = \\sqrt{25 \\times 10^6} = 5 \\times 10^3 = 5000\\text{ m/s}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Gelombang Mekanik:</strong> Bunyi merambat paling cepat pada zat padat ($v \\approx 5000\\text{ m/s}$), lebih lambat pada zat cair ($v \\approx 1500\\text{ m/s}$), dan paling lambat pada gas/udara ($v \\approx 340\\text{ m/s}$).</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-bun-02",
@@ -1348,7 +1544,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Deret Harmonik Pipa Organa Terbuka:</strong><br>Perbandingan frekuensi harmonik berurutan berupa bilangan bulat lengkap:<br>$$f_0 : f_1 : f_2 : f_3 = 1 : 2 : 3 : 4$$<br>• Nada dasar ($n=0$): $f_0$<br>• Nada atas ke-1 ($n=1$): $f_1 = 2f_0$<br>• Nada atas ke-2 ($n=2$): $f_2 = 3f_0$</div>",
       "steps": "<ol><li>Nada atas kedua memiliki indeks $n=2$, sehingga merupakan harmonik ke-3 ($3f_0$).</li><li>Hitung frekuensi: $f_2 = 3 \\times f_0 = 3 \\times 150\\text{ Hz} = 450\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Ingat Penamaan Nada:</strong> \"Nada atas ke-$n$\" setara dengan harmonik ke-$(n+1)$. Nada atas ke-2 $=$ harmonik ke-3 ($3f_0$).</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-bun-03",
@@ -1375,7 +1575,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Deret Harmonik Pipa Organa Tertutup (Hanya Ganjil):</strong><br>$$f_0 : f_1 : f_2 : f_3 = 1 : 3 : 5 : 7$$<br>• Nada dasar ($n=0$): $f_0 = 1 f_0$<br>• Nada atas ke-1 ($n=1$): $f_1 = 3 f_0$<br>• Nada atas ke-2 ($n=2$): $f_2 = 5 f_0$</div>",
       "steps": "<ol><li>Pipa tertutup hanya menghasilkan kelipatan bilangan ganjil.</li><li>Nada atas kedua bernilai $5 \\times$ nada dasar.</li><li>$f_2 = 5 \\times 100\\text{ Hz} = 500\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Bedakan Terbuka vs Tertutup:</strong><br>• Terbuka: $f_0 : f_1 : f_2 = 1 : 2 : 3$<br>• Tertutup: $f_0 : f_1 : f_2 = 1 : 3 : 5$</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-bun-06",
@@ -1402,7 +1606,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Intensitas Bunyi Permukaan Bola:</strong><br>Gelombang bunyi dari sumber titik menyebar membentuk bola dengan luas muka gelombang $A = 4\\pi r^2$:<br>$$I = \\frac{P}{A} = \\frac{P}{4\\pi r^2}$$</div>",
       "steps": "<ol><li>Luas bola pada $r = 10\\text{ m}$: $A = 4\\pi (10)^2 = 400\\pi\\text{ m}^2$.</li><li>Hitung intensitas: $I = \\frac{40\\pi\\text{ W}}{400\\pi\\text{ m}^2} = \\frac{1}{10} = 0{,}1\\text{ W/m}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Pembagi intensitas bola adalah $4\\pi r^2$ (luas kulit bola), bukan $\\pi r^2$ (luas lingkaran).</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "mudah-fis-08",
@@ -1429,7 +1637,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Persamaan Cermin Cekung (Fokus Positif):</strong><br>\n          $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'} \\implies \\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$\\frac{1}{s'} = \\frac{1}{10} - \\frac{1}{15} = \\frac{3 - 2}{30} = \\frac{1}{30}$$</li>\n          <li>$$s' = 30\\text{ cm}$$ (bayangan nyata di depan cermin).</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Ingat cermin cekung memiliki fokus positif ($+10\\text{ cm}$), sedangkan cermin cembung memiliki fokus negatif.\n        </div>\n      "
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "sup-fis-gel-03",
@@ -1456,7 +1668,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Snellius Pembiasan Cahaya:</strong><br>$n_1 \\sin i = n_2 \\sin r$, dengan $i$ sudut datang dan $r$ sudut bias terhadap garis normal.</div>",
       "steps": "<ol><li>$n_1 = 1$, $i = 30^\\circ \\implies \\sin 30^\\circ = 0{,}5 = \\frac{1}{2}$.</li><li>$n_2 = 1{,}5 = \\frac{3}{2}$.</li><li>Persamaan: $1 \\cdot \\frac{1}{2} = \\frac{3}{2} \\cdot \\sin r$.</li><li>$\\sin r = \\frac{1}{2} \\times \\frac{2}{3} = \\frac{1}{3}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Membalik indeks bias medium sehingga menghasilkan $\\sin r = \\frac{3}{4}$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-cah-01",
@@ -1483,7 +1699,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Gelombang Elektromagnetik:</strong><br>$$c = \\lambda \\cdot f \\implies f = \\frac{c}{\\lambda}$$</div>",
       "steps": "<ol><li>Konversi panjang gelombang ke meter: $\\lambda = 600 \\times 10^{-9}\\text{ m} = 6 \\times 10^{-7}\\text{ m}$.</li><li>Hitung frekuensi: $f = \\frac{3 \\times 10^8}{6 \\times 10^{-7}} = 0{,}5 \\times 10^{15} = 5 \\times 10^{14}\\text{ Hz}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhatikan Orde Pangkat:</strong> Hati-hati saat menaikkan pangkat dari penyebut: $10^8 / 10^{-7} = 10^{8 - (-7)} = 10^{15}$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-cah-02",
@@ -1510,7 +1730,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Definisi Indeks Bias Mutlak:</strong><br>Indeks bias medium menyatakan perbandingan kelajuan cahaya di ruang hampa terhadap kelajuan cahaya di medium tersebut:<br>$$n = \\frac{c}{v} \\implies v = \\frac{c}{n}$$</div>",
       "steps": "<ol><li>Substitusi nilai: $c = 3 \\times 10^8\\text{ m/s}$ dan $n = 1{,}5$.</li><li>$v = \\frac{3 \\times 10^8}{1{,}5} = 2{,}0 \\times 10^8\\text{ m/s}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konsep Kunci:</strong> Cahaya selalu merambat <em>lebih lambat</em> di dalam medium optik ($n > 1$) dibandingkan di ruang hampa. Nilai $v$ tidak mungkin melebihi $c$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-cah-04",
@@ -1537,7 +1761,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Aturan Tanda Cermin Cembung:</strong><br>• Jarak fokus cermin cembung <strong>selalu bernilai negatif</strong> ($f = -20\\text{ cm}$).<br>• Persamaan cermin: $\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'} \\implies \\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$.<br>• Bayangan cermin cembung selalu maya ($s' < 0$), tegak, dan diperkecil.</div>",
       "steps": "<ol><li>$f = -20\\text{ cm}$, $s = +20\\text{ cm}$.</li><li>$\\frac{1}{s'} = -\\frac{1}{20} - \\frac{1}{20} = -\\frac{2}{20} = -\\frac{1}{10}$.</li><li>$s' = -10\\text{ cm}$ (tanda minus menandakan bayangan maya di belakang cermin).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Wajib Diingat:</strong> Selalu beri tanda minus pada fokus cermin cembung dan lensa cekung ($f < 0$).</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-cah-05",
@@ -1564,7 +1792,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Rumus Kuat Lensa (Dioptri):</strong><br>$$P = \\frac{1}{f\\text{ (meter)}} = \\frac{100}{f\\text{ (cm)}}$$</div>",
       "steps": "<ol><li>Jarak fokus dalam cm: $f = 25\\text{ cm}$.</li><li>Hitung kuat lensa: $P = \\frac{100}{25} = +4\\text{ Dioptri}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Jika fokus dalam cm, langsung bagi dengan 100 ($P = 100/f$). Jika fokus dalam meter, $P = 1/f$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill-cah-07",
@@ -1591,7 +1823,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Perbesaran Sudut Lup (Kaca Pembesar):</strong><br>• Mata <strong>tanpa akomodasi</strong> (rileks): $M = \\frac{s_n}{f}$<br>• Mata <strong>berakomodasi maksimum</strong>: $M = \\frac{s_n}{f} + 1$</div>",
       "steps": "<ol><li>Kondisi mata: tanpa akomodasi.</li><li>Gunakan rumus tanpa akomodasi: $M = \\frac{s_n}{f} = \\frac{25\\text{ cm}}{5\\text{ cm}} = 5\\text{ kali}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menambahkan $+1$ saat mata rileks. Penambahan $+1$ hanya dilakukan jika ada keterangan \"akomodasi maksimum\".</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-cah-01",
@@ -1618,7 +1854,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Rumus Jumlah Bayangan Cermin Datar:</strong><br>$$n = \\frac{360^\\circ}{\\alpha} - 1$$</div>",
       "steps": "<ol><li>Sudut apit: $\\alpha = 60^\\circ$.</li><li>Bagi lingkaran penuh: $\\frac{360^\\circ}{60^\\circ} = 6$.</li><li>Kurangkan satu untuk benda asli: $n = 6 - 1 = 5\\text{ bayangan}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jangan Lupa $-1$:</strong> Nilai $360^\\circ / \\alpha$ harus selalu dikurangi 1 karena salah satu posisi ditempati oleh benda asli.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-cah-02",
@@ -1645,7 +1885,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Fokus dan Jari-Jari Cermin Cekung:</strong><br>• $f = \\frac{1}{2}R$ (cermin cekung bertanda positif $f > 0$)<br>• $s' = \\frac{s \\cdot f}{s - f}$<br>• Perbesaran: $M = \\left| \\frac{s'}{s} \\right|$</div>",
       "steps": "<ol><li>Jarak fokus: $f = \\frac{1}{2} \\times 40 = +20\\text{ cm}$.</li><li>Jarak bayangan: $s' = \\frac{30 \\times 20}{30 - 20} = \\frac{600}{10} = +60\\text{ cm}$ (nyata di depan cermin).</li><li>Perbesaran: $M = \\frac{60}{30} = 2\\text{ kali}$ diperbesar.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal Jari-Jari:</strong> Jari-jari $R$ selalu dua kali jarak fokus ($R = 2f$). Jangan gunakan nilai $R$ langsung sebagai $f$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-cah-03",
@@ -1672,7 +1916,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Sifat Mutlak Lensa Cekung:</strong><br>Lensa cekung bersifat menyebarkan cahaya (divergen) dengan fokus <strong>negatif</strong> ($f = -15\\text{ cm}$). Bayangannya selalu bersifat <strong>maya, tegak, dan diperkecil</strong> ($s' < 0$).</div>",
       "steps": "<ol><li>$f = -15\\text{ cm}$, $s = +30\\text{ cm}$.</li><li>$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s} = -\\frac{1}{15} - \\frac{1}{30} = -\\frac{2}{30} - \\frac{1}{30} = -\\frac{3}{30} = -\\frac{1}{10}$.</li><li>$s' = -10\\text{ cm}$ (maya di depan lensa).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Tetap Lensa Cekung:</strong> Lensa cekung tidak pernah bisa menghasilkan bayangan nyata pada posisi benda real apa pun. Nilai $s'$ selalu negatif.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "drill2-cah-04",
@@ -1699,7 +1947,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Kuat Lensa Sistem Gabungan Berimpit:</strong><br>Kuat lensa gabungan merupakan penjumlahan aljabar langsung dari kuat masing-masing lensa:<br>$$P_{\\text{gab}} = P_1 + P_2$$</div>",
       "steps": "<ol><li>$P_1 = +5\\text{ D}$ (cembung).</li><li>$P_2 = -2\\text{ D}$ (cekung).</li><li>$P_{\\text{gab}} = (+5) + (-2) = +3\\text{ Dioptri}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Sifat Akhir Gabungan:</strong> Karena $P_{\\text{gab}} > 0$ ($+3\\text{ D}$), sistem gabungan kedua lensa tersebut berperilaku seperti sebuah lensa cembung dengan jarak fokus $f = 100/3 \\approx 33{,}3\\text{ cm}$.</div>"
-    }
+    },
+    "bab": "Gelombang",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
+    "chapterTitle": "Gelombang"
   },
   {
     "id": "mudah-fis-09",
@@ -1726,7 +1978,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Rumus Kalor Perubahan Suhu:</strong><br>\n          $$Q = m c \\Delta T$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Hitung perubahan suhu: $\\Delta T = 70 - 20 = 50^\\circ\\text{C}$.</li>\n          <li>$$Q = (2\\text{ kg})(4200\\text{ J}/(\\text{kg}\\cdot^\\circ\\text{C}))(50^\\circ\\text{C}) = 420.000\\text{ J} = 420\\text{ kJ}$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan $\\Delta T$ adalah selisih suhu akhir dikurang suhu awal ($50$), bukan suhu akhir ($70$).\n        </div>\n      "
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "sup-fis-ter-01",
@@ -1753,7 +2009,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Pemuaian Panjang Benda Padat:</strong><br>Pertambahan panjang zat padat sebanding dengan panjang mula-mula, koefisien muai panjang, dan kenaikan suhu: $\\Delta L = L_0 \\alpha \\Delta T$.</div>",
       "steps": "<ol><li>Panjang mula-mula: $L_0 = 10\\text{ m}$.</li><li>Perubahan suhu: $\\Delta T = 50 - 20 = 30^\\circ\\text{C}$.</li><li>Pertambahan panjang: $\\Delta L = 10 \\times (1{,}2 \\times 10^{-5}) \\times 30 = 3{,}6 \\times 10^{-3}\\text{ m} = 3{,}6\\text{ mm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengalikan dengan suhu akhir $50^\\circ\\text{C}$ tanpa mengurangkan suhu awal $20^\\circ\\text{C}$.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-kal-01",
@@ -1780,7 +2040,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Kalor Sensibel:</strong><br>Kalor yang dibutuhkan untuk menaikkan suhu zat tanpa mengubah wujud:<br>$$Q = m \\cdot c \\cdot \\Delta T$$</div>",
       "steps": "<ol><li>Perubahan suhu: $\\Delta T = 75^\\circ\\text{C} - 25^\\circ\\text{C} = 50^\\circ\\text{C}$.</li><li>Hitung kalor: $Q = 3\\text{ kg} \\times 4200\\text{ J/kg}^\\circ\\text{C} \\times 50^\\circ\\text{C} = 630.000\\text{ J}$.</li><li>Konversi ke kilojoule: $Q = 630\\text{ kJ}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhatikan Satuan:</strong> Periksa apakah opsi meminta Joule atau kilojoule ($1\\text{ kJ} = 1000\\text{ J}$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-kal-02",
@@ -1807,7 +2071,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Kalor Laten Perubahan Wujud:</strong><br>Saat zat melebur atau membeku pada suhu tetap, kalor yang diserap/dilepas tidak menaikkan suhu:<br>$$Q = m \\cdot L_f$$</div>",
       "steps": "<ol><li>Konversi massa ke kg: $m = 500\\text{ g} = 0{,}5\\text{ kg}$.</li><li>Hitung kalor lebur: $Q = 0{,}5\\text{ kg} \\times 336.000\\text{ J/kg} = 168.000\\text{ J} = 168\\text{ kJ}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konsep Kunci:</strong> Pada peristiwa perubahan wujud zat, suhu zat selalu konstan (tidak ada $\\Delta T$). Jangan masukkan kalor jenis $c$ saat zat sedang melebur!</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-kal-03",
@@ -1834,7 +2102,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Koefisien Pemuaian:</strong><br>• Koefisien muai luas adalah dua kali koefisien muai panjang: $\\beta = 2\\alpha$<br>• Pertambahan luas: $\\Delta A = A_0 \\cdot \\beta \\cdot \\Delta T = A_0 \\cdot (2\\alpha) \\cdot \\Delta T$</div>",
       "steps": "<ol><li>Koefisien muai luas: $\\beta = 2 \\times (2 \\times 10^{-5}) = 4 \\times 10^{-5}/^\\circ\\text{C}$.</li><li>Kenaikan suhu: $\\Delta T = 70 - 20 = 50^\\circ\\text{C}$.</li><li>Pertambahan luas: $\\Delta A = 2 \\times (4 \\times 10^{-5}) \\times 50 = 400 \\times 10^{-5} = 4 \\times 10^{-3}\\text{ m}^2$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Hubungan 1-2-3 Dimensi:</strong><br>Panjang $\\implies \\alpha$<br>Luas $\\implies \\beta = 2\\alpha$<br>Volume $\\implies \\gamma = 3\\alpha$</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-kal-04",
@@ -1861,7 +2133,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Pemuaian Volume Zat Padat:</strong><br>$$\\gamma = 3\\alpha$$<br>$$\\Delta V = V_0 \\cdot \\gamma \\cdot \\Delta T$$</div>",
       "steps": "<ol><li>Hitung $\\gamma$: $\\gamma = 3 \\times 1{,}7 \\times 10^{-5} = 5{,}1 \\times 10^{-5}/^\\circ\\text{C}$.</li><li>Hitung $\\Delta V$: $\\Delta V = 1000 \\times (5{,}1 \\times 10^{-5}) \\times 100 = 5{,}1\\text{ cm}^3$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menggunakan nilai $\\alpha$ langsung untuk menghitung pemuaian ruang/volume tanpa mengalikan dengan 3.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-kal-08",
@@ -1888,7 +2164,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Kapasitas Kalor ($C$) dan Kalor ($Q$):</strong><br>Kapasitas kalor adalah kemampuan seluruh benda menyerap kalor per derajat kenaikan suhu ($C = m \\cdot c$):<br>$$Q = C \\cdot \\Delta T$$</div>",
       "steps": "<ol><li>Kenaikan suhu: $\\Delta T = 60^\\circ\\text{C} - 20^\\circ\\text{C} = 40^\\circ\\text{C}$.</li><li>Hitung kalor: $Q = C \\cdot \\Delta T = 250\\text{ J/}^circ\\text{C} \\times 40^\\circ\\text{C} = 10.000\\text{ Joule}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Bedakan $c$ dan $C$:</strong> Kalor jenis ($c$) memiliki satuan $\\text{J/kg}^\\circ\\text{C}$ (tergantung massa). Kapasitas kalor ($C$) bersatuan $\\text{J/}^circ\\text{C}$ (sudah mencakup massa benda).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-kal-01",
@@ -1915,7 +2195,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Kalor Laten Penguapan:</strong><br>$$Q = m \\cdot L_v$$</div>",
       "steps": "<ol><li>Konversi massa: $m = 200\\text{ g} = 0{,}2\\text{ kg}$.</li><li>Kalor: $Q = 0{,}2\\text{ kg} \\times (2{,}26 \\times 10^6\\text{ J/kg}) = 0{,}452 \\times 10^6\\text{ J} = 452.000\\text{ J}$.</li><li>Konversi ke kilojoule: $Q = 452\\text{ kJ}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Fakta Fisika Menarik:</strong> Kalor penguapan air ($2{,}26 \\times 10^6\\text{ J/kg}$) hampir 7 kali lebih besar daripada kalor leburnya ($3{,}36 \\times 10^5\\text{ J/kg}$) karena memutus ikatan antarmolekul cair sepenuhnya menjadi gas.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-kal-02",
@@ -1942,7 +2226,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Penyusutan Termal:</strong><br>$$\\Delta L = L_0 \\cdot \\alpha \\cdot |\\Delta T|$$</div>",
       "steps": "<ol><li>Penurunan suhu: $|\\Delta T| = 80 - 30 = 50^\\circ\\text{C}$.</li><li>Hitung penyusutan: $\\Delta L = 5 \\times (1{,}7 \\times 10^{-5}) \\times 50 = 425 \\times 10^{-5}\\text{ m} = 4{,}25 \\times 10^{-3}\\text{ m} = 4{,}25\\text{ mm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Simetri Pemuaian:</strong> Rumus pemuaian berlaku dua arah: bertambah panjang saat dipanaskan ($Delta T > 0$) dan menyusut sama besarnya saat didinginkan ($Delta T < 0$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-kal-03",
@@ -1969,7 +2257,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pendinginan Newton (Konveksi):</strong><br>$$H = \\frac{Q}{t} = h \\cdot A \\cdot \\Delta T$$</div>",
       "steps": "<ol><li>Identifikasi data: $h = 20\\text{ W/m}^2\\cdot\\text{K}$, $A = 0{,}5\\text{ m}^2$, $\\Delta T = 30\\text{ K}$.</li><li>Laju kalor: $H = 20 \\times 0{,}5 \\times 30 = 10 \\times 30 = 300\\text{ Watt}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Selisih Suhu:</strong> Nilai selisih suhu dalam Celcius sebanding tepat dengan selisih suhu dalam Kelvin ($Delta T\\text{ }^\\circ\\text{C} = \\Delta T\\text{ K}$). Jadi tidak perlu ditambah 273 saat menghitung selisih $Delta T$!</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Kalor dan Perpindahannya",
+    "subTopic": "Kalor dan Perpindahannya",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "mudah-fis-10",
@@ -1996,7 +2288,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Fisika Efek Rumah Kaca:</strong><br>\n          Permukaan bumi menyerap cahaya tampak dari matahari dan meradiasikannya kembali sebagai radiasi termal bergelombang panjang yaitu <em>radiasi inframerah</em>, yang kemudian diserap oleh molekul gas rumah kaca ($CO_2, CH_4, H_2O$) sehingga memerangkap panas di troposfer.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Radiasi matahari yang masuk didominasi cahaya tampak dan UV dekat.</li>\n          <li>Radiasi bumi yang dipancarkan kembali adalah radiasi inframerah termal.</li>\n          <li>Gas rumah kaca memiliki pita serapan getaran molekul pada spektrum inframerah.</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan tertukar dengan lapisan ozon di stratosfer yang menyerap radiasi ultraviolet (UV). Efek rumah kaca berkaitan dengan penyerapan radiasi inframerah.\n        </div>\n      "
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-pem-01",
@@ -2023,7 +2319,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Pergeseran Wien:</strong><br>Panjang gelombang intensitas maksimum berbanding terbalik dengan suhu mutlak benda:<br>$$\\lambda_{\\max} \\cdot T = C = 2{,}9 \\times 10^{-3}\\text{ m}\\cdot\\text{K} \\implies \\lambda_{\\max} = \\frac{C}{T}$$</div>",
       "steps": "<ol><li>Substitusi data: $\\lambda_{\\max} = \\frac{2{,}9 \\times 10^{-3}}{6000} = \\frac{2{,}9 \\times 10^{-3}}{6 \\times 10^3}$.</li><li>$\\lambda_{\\max} \\approx 0{,}4833 \\times 10^{-6}\\text{ m} = 483 \\times 10^{-9}\\text{ m} = 483\\text{ nm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Fisik:</strong> Makin panas suatu benda, warnanya bergeser dari merah $\\to$ kuning $\\to$ putih/biru (panjang gelombangnya semakin pendek!).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-pem-03",
@@ -2050,7 +2350,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Proses Fisik Efek Rumah Kaca:</strong><br>Radiasi matahari yang masuk sebagian besar berupa gelombang pendek (cahaya tampak) yang lolos melewati atmosfer. Permukaan bumi menyerap energi ini lalu memancarkannya kembali sebagai <strong>gelombang panjang (inframerah termal)</strong> yang diserap oleh gas rumah kaca sehingga terperangkap di atmosfer.</div>",
       "steps": "<ol><li>Gelombang masuk: Gelombang pendek / cahaya tampak (transparan bagi gas rumah kaca).</li><li>Gelombang terpancar dari bumi: Gelombang panjang / inframerah.</li><li>Peran gas rumah kaca: Mengabsorpsi radiasi inframerah dan memancarkannya kembali ke permukaan bumi.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Bedakan:</strong> Lapisan ozon ($O_3$) menyerap sinar Ultraviolet (UV). Gas rumah kaca ($CO_2, CH_4$) menyerap sinar Inframerah (panas).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-pem-04",
@@ -2077,7 +2381,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Global Warming Potential (GWP):</strong><br>Metana ($CH_4$) memiliki indeks GWP sekitar 25–28 kali lebih kuat daripada $CO_2$ dalam kurun waktu 100 tahun dalam hal efektivitas penyerapan radiasi inframerah.</div>",
       "steps": "<ol><li>Molekul $CH_4$ memiliki ikatan kimia yang mampu bergetar dan mengabsorpsi spektrum gelombang inframerah termal secara sangat efektif.</li><li>Oleh sebab itu, penurunan emisi gas metana dari sektor limbah dan peternakan menjadi salah satu prioritas mitigasi iklim terpenting.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Catatan Konseptual:</strong> $CO_2$ adalah kontributor terbesar berdasarkan total volume emisi, tetapi $CH_4$ jauh lebih efektif memerangkap kalor per satu satuan molekul.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-01",
@@ -2104,7 +2412,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Spektrum Gelombang Elektromagnetik:</strong><br>Frekuensi Tinggi (Panjang Gelombang Pendek) $\\to$ Frekuensi Rendah:<br>Sinar Gamma $\\to$ Sinar-X $\\to$ <strong>Ultraviolet</strong> $\\to$ <strong>Cahaya Tampak</strong> $\\to$ <strong>Inframerah</strong> $\\to$ Gelombang Mikro $\\to$ Gelombang Radio.</div>",
       "steps": "<ol><li>Ultraviolet memiliki energi/frekuensi paling tinggi di antara ketiganya ($f \\sim 10^{15}\\text{ Hz}$).</li><li>Cahaya tampak di tengah ($f \\sim 10^{14}\\text{ Hz}$).</li><li>Inframerah memiliki frekuensi paling rendah ($f \\sim 10^{12}-10^{13}\\text{ Hz}$) namun membawa efek termal (panas).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Mnemonic Urutan Spektrum:</strong> GRUTAMUXI: <strong>G</strong>amma, <strong>R</strong>ontgen (X), <strong>U</strong>ltraviolet, <strong>TAm</strong>pak, <strong>M</strong>erah (Infra), <strong>U</strong>HF/Mikro, <strong>R</strong>ad<strong>i</strong>o.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-02",
@@ -2131,7 +2443,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Karakteristik Hukum Stefan-Boltzmann:</strong><br>$$P \\propto T^4$$</div>",
       "steps": "<ol><li>Faktor kenaikan suhu: $3$.</li><li>Pangkat empatkan faktor kenaikan: $3^4 = 3 \\times 3 \\times 3 \\times 3 = 81$.</li><li>Daya radiasi menjadi $81 P$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jangan Memangkatkan 2 atau 3:</strong> $3^2 = 9$ (salah), $3^3 = 27$ (salah). Ingat rumus radiasi berpangkat EMPAT ($3^4 = 81$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-pem-03",
@@ -2158,7 +2474,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Karakteristik Kimiawi CFC:</strong><br>1. Radikal klorin ($\\text{Cl}^\\bullet$) dari CFC mengkatalisis penguraian ozon ($O_3 \\to O_2$) di stratosfer.<br>2. Molekul CFC memiliki masa hidup sangat panjang di atmosfer dan menyerap radiasi inframerah termal (gas rumah kaca).</div>",
       "steps": "<ol><li>Di lapisan stratosfer: Mengikis lapisan pelindung ozon.</li><li>Di lapisan troposfer: Memerangkap radiasi panas bumi (efek rumah kaca).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Protokol Montreal:</strong> Protokol internasional yang berhasil melarang penggunaan gas CFC dan menggantikannya dengan senyawa HFC yang lebih aman bagi ozon.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Pemanasan Global",
+    "subTopic": "Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "mudah-fis-11",
@@ -2185,7 +2505,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum Gay-Lussac (Proses Isokhorik/Volume Konstan):</strong><br>\n          $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\implies P_2 = P_1 \\left(\\frac{T_2}{T_1}\\right)$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Karena $V$ tetap, tekanan berbanding lurus dengan suhu mutlak ($P \\propto T$).</li>\n          <li>$$P_2 = P \\times \\frac{3T}{T} = 3P$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan hukum kesebandingan lurus vs terbalik. Pada proses isotermal $P_1 V_1 = P_2 V_2$ (berbanding terbalik), sedangkan pada isokhorik $P/T = \\text{konstan}$ (berbanding lurus).\n        </div>\n      "
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-gas-01",
@@ -2212,7 +2536,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Umum Gas Ideal:</strong><br>$$P \\cdot V = n \\cdot R \\cdot T \\implies V = \\frac{n R T}{P}$$</div>",
       "steps": "<ol><li>Substitusi data STP: $V = \\frac{1 \\times 8{,}314 \\times 273}{1{,}013 \\times 10^5} \\approx 0{,}0224\\text{ m}^3$.</li><li>Konversi ke liter ($1\\text{ m}^3 = 1000\\text{ liter}$): $V \\approx 22{,}4\\text{ liter}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Angka Standar Kimia & Fisika:</strong> Pada kondisi STP ($0^\\circ\\text{C}, 1\\text{ atm}$), volume 1 mol gas ideal selalu $22{,}4\\text{ L}$. Hafalkan angka ini!</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-gas-02",
@@ -2239,7 +2567,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Boyle (Suhu Konstan):</strong><br>Hasil kali tekanan dan volume gas dalam ruang tertutup bernilai konstan:<br>$$P_1 \\cdot V_1 = P_2 \\cdot V_2 \\implies P_2 = \\frac{P_1 V_1}{V_2}$$</div>",
       "steps": "<ol><li>Identifikasi data: $P_1 = 3\\text{ atm}$, $V_1 = 2\\text{ L}$, $V_2 = 0{,}5\\text{ L}$.</li><li>Hitung tekanan akhir: $P_2 = \\frac{3 \\times 2}{0{,}5} = \\frac{6}{0{,}5} = 12\\text{ atm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Volume mengecil $4\\times$ (dari $2\\text{ L} \\to 0{,}5\\text{ L}$) $implies$ tekanan otomatis melonjak naik $4\\times$ (dari $3\\text{ atm} \\to 12\\text{ atm}$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-gas-03",
@@ -2266,7 +2598,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Charles (Tekanan Konstan):</strong><br>Volume gas berbanding lurus dengan suhu mutlaknya (Kelvin):<br>$$\\frac{V_1}{T_1} = \\frac{V_2}{T_2} \\implies V_2 = V_1 \\left( \\frac{T_2}{T_1} \\right)$$</div>",
       "steps": "<ol><li>Konversi suhu Celsius ke Kelvin wajib:<br>• $T_1 = 27 + 273 = 300\\text{ K}$<br>• $T_2 = 127 + 273 = 400\\text{ K}$</li><li>Hitung volume baru: $V_2 = 3 \\times \\frac{400}{300} = 3 \\times \\frac{4}{3} = 4\\text{ liter}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Kesalahan Paling Fatal di Gas Ideal:</strong> Menggunakan suhu Celsius! $\\frac{127}{27} \\approx 4{,}7$ menghasilkan $14{,}1\\text{ L}$ yang salah total. Suhu gas WAJIB Kelvin ($+273$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-gas-04",
@@ -2293,7 +2629,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum Gay-Lussac (Volume Konstan):</strong><br>$$\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\implies P_2 = P_1 \\left( \\frac{T_2}{T_1} \\right)$$</div>",
       "steps": "<ol><li>Ubah ke Kelvin:<br>• $T_1 = 27 + 273 = 300\\text{ K}$<br>• $T_2 = 87 + 273 = 360\\text{ K}$</li><li>Hitung tekanan: $P_2 = 2 \\times \\frac{360}{300} = 2 \\times 1{,}2 = 2{,}4\\text{ atm}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal 3 Hukum Gas:</strong><br>• Boyle: $T$ tetap ($P \\cdot V = C$)<br>• Charles: $P$ tetap ($V / T = C$)<br>• Gay-Lussac: $V$ tetap ($P / T = C$)</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-gas-05",
@@ -2320,7 +2660,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Energi Kinetik Rata-rata Molekul:</strong><br>$$\\overline{E_k} = \\frac{3}{2} k_B T$$<br>Energi kinetik rata-rata molekul gas ideal monoatomik <strong>hanya bergantung pada suhu mutlak ($T$)</strong> dan sama sekali tidak bergantung pada jenis gas maupun massa molar ($M_r$).</div>",
       "steps": "<ol><li>Kedua gas berada pada suhu yang sama: $T_A = T_B = 300\\text{ K}$.</li><li>Karena $\\overline{E_k} = \\frac{3}{2} k_B T$, maka $\\overline{E_{kA}} = \\overline{E_{kB}}$.</li><li>Perbandingannya adalah tepat $1 : 1$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Klasik UTBK:</strong> Siswa sering memasukkan rasio $M_r$ ($4 : 20$). Massa molar hanya memengaruhi <em>kecepatan</em> molekul ($v_{\\text{rms}}$), BUKAN energi kinetik rata-ratanya!</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-gas-01",
@@ -2347,7 +2691,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Persamaan Gas Ideal Skala Mikroskopis:</strong><br>$$P \\cdot V = N \\cdot k_B \\cdot T \\implies N = \\frac{P V}{k_B T}$$</div>",
       "steps": "<ol><li>Pembilang: $P \\cdot V = (4{,}14 \\times 10^4) \\times 10^{-3} = 4{,}14 \\times 10^1 = 41{,}4\\text{ Joule}$.</li><li>Penyebut: $k_B \\cdot T = (1{,}38 \\times 10^{-23}) \\times 300 = 414 \\times 10^{-23} = 4{,}14 \\times 10^{-21}\\text{ Joule}$.</li><li>Jumlah molekul: $N = \\frac{41{,}4}{4{,}14 \\times 10^{-21}} = 10 \\times 10^{21} = 10^{22}$? Wait: $41{,}4 / 4{,}14 \\times 10^{-21} = 10 \\times 10^{21} = 10^{22}$! Let's check: $4{,}14 \\times 10^4 \\times 10^{-3} = 41{,}4$. $1{,}38 \\times 10^{-23} \\times 300 = 4{,}14 \\times 10^{-21}$. $41{,}4 / (4{,}14 \\times 10^{-21}) = 10 \\times 10^{21} = 10^{22}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Dua Bentuk Persamaan Gas:</strong><br>• Makroskopis (mol): $PV = nRT$<br>• Mikroskopis (partikel): $PV = N k_B T$</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-gas-02",
@@ -2374,7 +2722,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Tekanan dan Massa Jenis Gas Ideal:</strong><br>$$P V = \\frac{m}{M_r} R T \\implies P = \\left(\\frac{m}{V}\\right) \\frac{R T}{M_r} = \\rho \\frac{R T}{M_r} \\implies \\rho = \\frac{P M_r}{R T}$$</div>",
       "steps": "<ol><li>Pada suhu $T$ dan jenis gas $M_r$ konstan, massa jenis berbanding lurus linear dengan tekanan: $\\rho \\propto P$.</li><li>Jika tekanan naik $3\\times$, maka massa jenis gas otomatis ikut naik menjadi $3\\times$ semula.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Intuisi Fisik:</strong> Saat gas dikompresi ke tekanan lebih tinggi pada suhu tetap, molekul-molekulnya memadat dalam ruang yang lebih sempit sehingga kerapatan massanya bertambah.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-gas-03",
@@ -2401,7 +2753,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Tekanan Gas Berdasarkan Teori Kinetik:</strong><br>$$P = \\frac{2}{3} \\left(\\frac{N}{V}\\right) \\overline{E_k}$$<br>atau dapat ditulis: $P V = \\frac{2}{3} N \\overline{E_k}$.</div>",
       "steps": "<ol><li>Energi kinetik per molekul: $\\overline{E_k} = \\frac{3}{2} k_B T \\implies k_B T = \\frac{2}{3} \\overline{E_k}$.</li><li>Substitusi ke $PV = N k_B T$:<br>$$PV = N \\left(\\frac{2}{3} \\overline{E_k}\\right) = \\frac{2}{3} N \\overline{E_k} \\implies P = \\frac{2}{3} \\frac{N}{V} \\overline{E_k}$$</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Fraksi tekanan terhadap kerapatan energi adalah $\\frac{2}{3}$ (kebalikan dari fraksi energi $\\frac{3}{2}$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Gas Ideal",
+    "subTopic": "Gas Ideal",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "mudah-fis-14",
@@ -2428,7 +2784,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Usaha Luar Gas pada Proses Isobarik (Tekanan Tetap):</strong><br>\n          $$W = P \\cdot \\Delta V = P(V_2 - V_1)$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Hitung perubahan volume: $\\Delta V = 2{,}5\\text{ m}^3 - 1{,}5\\text{ m}^3 = 1{,}0\\text{ m}^3$.</li>\n          <li>Hitung usaha luar:\n            $$W = (2 \\times 10^5\\text{ N/m}^2)(1{,}0\\text{ m}^3) = 2 \\times 10^5\\text{ Joule} = 200\\text{ kJ}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan konversi satuan dari Joule ke kilojoule ($1\\text{ kJ} = 1000\\text{ J}$).\n        </div>\n      "
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-ter-01",
@@ -2455,7 +2815,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Usaha pada Proses Isobarik (Tekanan Tetap):</strong><br>$$W = P \\cdot \\Delta V = P(V_2 - V_1)$$</div>",
       "steps": "<ol><li>Perubahan volume: $\\Delta V = 3{,}0 - 1{,}5 = 1{,}5\\text{ m}^3$.</li><li>Hitung usaha: $W = (2 \\times 10^5\\text{ Pa}) \\times 1{,}5\\text{ m}^3 = 3 \\times 10^5\\text{ Joule} = 300\\text{ kJ}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Rumus usaha isobarik $W = P \\Delta V$ adalah dasar termodinamika paling sering keluar. Pastikan $P$ dalam $\\text{Pa}$ ($\text{N/m}^2$) dan $V$ dalam $\\text{m}^3$.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-ter-02",
@@ -2482,7 +2846,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Kaidah Proses Isokhorik (Volume Tetap):</strong><br>Karena volume tidak mengalami perubahan sama sekali ($\\Delta V = 0$):<br>$$W = \\int P \\, dV = 0\\text{ Joule}$$</div>",
       "steps": "<ol><li>Bejana kaku bervolume tetap $\\implies \\Delta V = 0$.</li><li>Usaha gas: $W = 0\\text{ Joule}$.</li><li>Seluruh kalor yang masuk hanya digunakan untuk menaikkan energi dalam gas: $Q = \\Delta U$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Rumus Cepat Mutlak:</strong> Pada proses ISOKHORIK (volume tetap), usaha selalu NOL ($W = 0$). Jangan pernah buang waktu menghitung perkalian $P \\times V$!</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-ter-03",
@@ -2509,7 +2877,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hukum I Termodinamika pada Proses Isotermal:</strong><br>Suhu konstan $\\implies \\Delta T = 0 \\implies \\Delta U = 0$.<br>Maka menurut Hukum I: $Q = W + \\Delta U \\implies W = Q$.</div>",
       "steps": "<ol><li>Proses isotermal memiliki $\\Delta U = 0$.</li><li>Seluruh kalor yang diserap diubah menjadi usaha luar: $W = Q = 650\\text{ Joule}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Kaidah Identitas 4 Proses:</strong><br>• Isokhorik: $W = 0 \\implies Q = \\Delta U$<br>• Isotermal: $\\Delta U = 0 \\implies Q = W$<br>• Adiabatik: $Q = 0 \\implies W = -\\Delta U$</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-ter-04",
@@ -2536,7 +2908,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Proses Adiabatik ($Q = 0$):</strong><br>$$\\Delta U = Q - W \\implies \\Delta U = -W$$<br>Jika gas berekspansi melakukan usaha ($W > 0$), maka energi dalamnya berkurang (suhu gas turun).</div>",
       "steps": "<ol><li>$Q = 0$, $W = +400\\text{ J}$.</li><li>$\\Delta U = -W = -400\\text{ Joule}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Fenomena Sehari-hari:</strong> Udara yang keluar dari tabung gas bertekanan tinggi saat disemprotkan terasa sangat dingin karena terjadi pemuaian adiabatik (usaha dilakukan dengan mengorbankan energi dalam gas).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill-ter-05",
@@ -2563,7 +2939,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Efisiensi Mesin Kalor Carnot:</strong><br>$$\\eta = \\left( 1 - \\frac{T_2}{T_1} \\right) \\times 100\\% = \\left( \\frac{T_1 - T_2}{T_1} \\right) \\times 100\\%$$<br>dengan $T_1$ reservoir suhu tinggi dan $T_2$ reservoir suhu rendah (wajib Kelvin!).</div>",
       "steps": "<ol><li>Hitung selisih suhu: $T_1 - T_2 = 500 - 300 = 200\\text{ K}$.</li><li>Hitung efisiensi: $\\eta = \\frac{200}{500} \\times 100\\% = \\frac{2}{5} \\times 100\\% = 40\\%$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Efisiensi Carnot adalah \"selisih dibagi suhu tinggi\": $\\eta = \\frac{T_{\\text{tinggi}} - T_{\\text{rendah}}}{T_{\\text{tinggi}}}$.</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-ter-01",
@@ -2590,7 +2970,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Perjanjian Tanda Baku Hukum I Termodinamika:</strong><br>$$\\Delta U = Q - W$$<br>• Sistem <strong>melepas kalor</strong>: $Q < 0$ ($Q = -300\\text{ J}$)<br>• Sistem <strong>menerima usaha</strong> (ditekan dari luar): $W < 0$ ($W = -200\\text{ J}$)</div>",
       "steps": "<ol><li>Masukkan tanda dengan tepat: $Q = -300\\text{ J}$, $W = -200\\text{ J}$.</li><li>Hitung $\\Delta U$: $\\Delta U = (-300) - (-200) = -300 + 200 = -100\\text{ Joule}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tabel Tanda:</strong><br>• Menyerap kalor $\\implies Q > 0$<br>• Melepas kalor $\\implies Q < 0$<br>• Melakukan kerja $\\implies W > 0$<br>• Menerima kerja $\\implies W < 0$</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-ter-02",
@@ -2617,7 +3001,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Usaha Bersih Siklus Tertutup:</strong><br>Usaha total yang dihasilkan mesin dalam satu siklus penuh sama dengan <strong>luas area daerah tertutup</strong> pada diagram $P-V$:<br>$$W_{\\text{siklus}} = \\text{Luas Persegi Panjang} = \\Delta P \\cdot \\Delta V$$</div>",
       "steps": "<ol><li>Perubahan tekanan: $\\Delta P = P_2 - P_1 = 4 \\times 10^5 - 1 \\times 10^5 = 3 \\times 10^5\\text{ Pa}$.</li><li>Perubahan volume: $\\Delta V = V_2 - V_1 = 5 - 2 = 3\\text{ m}^3$.</li><li>Usaha total: $W = \\Delta P \\times \\Delta V = (3 \\times 10^5) \\times 3 = 9 \\times 10^5\\text{ Joule} = 900\\text{ kJ}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Arah Siklus:</strong><br>• Searah jarum jam (CW) $\\implies$ Mesin Kalor ($W > 0$).<br>• Berlawanan jarum jam (CCW) $\\implies$ Mesin Pendingin ($W < 0$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "drill2-ter-03",
@@ -2644,7 +3032,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Sifat Fungsi Keadaan Energi Dalam ($U$):</strong><br>Energi dalam adalah fungsi keadaan yang hanya bergantung pada suhu saat itu. Dalam satu siklus tertutup, gas kembali ke suhu awal ($T_{\\text{akhir}} = T_{\\text{awal}}$), sehingga:<br>$$\\Delta U_{\\text{siklus}} = 0 \\implies Q_{\\text{total}} = W_{\\text{total}}$$</div>",
       "steps": "<ol><li>Karena keadaan akhir sama dengan keadaan awal: $T_f = T_i$.</li><li>$\\Delta U = \\frac{3}{2} n R (T_f - T_i) = 0$.</li><li>Kalor netto yang diserap seluruhnya diubah menjadi usaha netto: $Q_{\\text{net}} = W_{\\text{net}}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Prinsip Pokok Siklus:</strong> Dalam satu siklus tertutup PENUH, $\\Delta U$ selalu NOL. Usaha dan kalor tidak nol, tapi sama besar ($W_{\\text{net}} = Q_{\\text{net}}$).</div>"
-    }
+    },
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Termodinamika",
+    "subTopic": "Termodinamika",
+    "chapterTitle": "Kalor dan Termodinamika"
   },
   {
     "id": "mudah-fis-05",
@@ -2671,7 +3063,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hukum Coulomb:</strong><br>\n          $$F = k \\frac{|q_1 q_2|}{r^2}$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Konversi satuan ke SI: $q_1 = 2\\times 10^{-6}\\text{ C}$, $q_2 = 3\\times 10^{-6}\\text{ C}$, $r = 30\\text{ cm} = 0{,}3\\text{ m} = 3\\times 10^{-1}\\text{ m}$.</li>\n          <li>$$F = (9\\times 10^9) \\frac{(2\\times 10^{-6})(3\\times 10^{-6})}{(3\\times 10^{-1})^2} = (9\\times 10^9) \\frac{6\\times 10^{-12}}{9\\times 10^{-2}} = 0{,}6\\text{ N}$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa mengubah satuan $\\text{cm}$ ke $\\text{meter}$ atau $\\mu\\text{C}$ ke $\\text{Coulomb}$.\n        </div>\n      "
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Listrik Statis",
+    "subTopic": "Listrik Statis",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "sup-fis-lis-01",
@@ -2698,7 +3094,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Hubungan Usaha dan Beda Potensial Listrik:</strong><br>Usaha untuk memindahkan muatan $q$ dari potensial $V_A$ ke $V_B$ adalah $W = q \\Delta V = q (V_B - V_A)$.</div>",
       "steps": "<ol><li>Muatan: $q = 5 \\times 10^{-6}\\text{ C}$.</li><li>Beda potensial: $\\Delta V = 80 - 20 = 60\\text{ V}$.</li><li>Usaha: $W = (5 \\times 10^{-6}) \\times 60 = 300 \\times 10^{-6} = 3 \\times 10^{-4}\\text{ Joule}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengalikan muatan dengan nilai potensial akhir saja ($5\\,\\mu\\text{C} \\times 80\\text{ V}$).</div>"
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Listrik Statis",
+    "subTopic": "Listrik Statis",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "mudah-fis-15",
@@ -2725,7 +3125,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Hambatan Pengganti Seri & Paralel:</strong><br>\n          • Paralel dua resistor: $R_p = \\frac{R_1 R_2}{R_1 + R_2}$<br>\n          • Seri gabungan: $R_{\\text{total}} = R_p + R_3$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Hitung hambatan paralel $R_1$ dan $R_2$:\n            $$R_p = \\frac{6 \\times 12}{6 + 12} = \\frac{72}{18} = 4\\,\\Omega$$\n          </li>\n          <li>Jumlahkan secara seri dengan $R_3$:\n            $$R_{\\text{total}} = R_p + R_3 = 4\\,\\Omega + 4\\,\\Omega = 8\\,\\Omega$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan langsung menjumlahkan seluruh resistor ($6 + 12 + 4 = 22\\,\\Omega$), perhatikan hubungan paralel antara $R_1$ dan $R_2$.\n        </div>\n      "
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Rangkaian Arus Searah (DC)",
+    "subTopic": "Rangkaian Arus Searah (DC)",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "sup-fis-lis-02",
@@ -2752,7 +3156,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Daya Listrik Kuadratik Terhadap Tegangan:</strong><br>$P = \\frac{V^2}{R}$. Karena hambatan filamen lampu $R$ tetap, perbandingan daya listrik adalah kuadrat perbandingan tegangan: $\\frac{P_2}{P_1} = \\left(\\frac{V_2}{V_1}\\right)^2$.</div>",
       "steps": "<ol><li>Rasio tegangan: $\\frac{V_2}{V_1} = \\frac{110}{220} = \\frac{1}{2}$.</li><li>Rasio daya: $\\frac{P_2}{P_1} = \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4}$.</li><li>Daya lampu: $P_2 = \\frac{1}{4} \\times 100 = 25\\text{ Watt}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Siswa sering keliru menganggap hubungan linier $P \\propto V$ sehingga menjawab setengahnya ($50\\text{ W}$).</div>"
-    }
+    },
+    "bab": "Kelistrikan",
+    "subBab": "Rangkaian Arus Searah (DC)",
+    "subTopic": "Rangkaian Arus Searah (DC)",
+    "chapterTitle": "Kelistrikan"
   },
   {
     "id": "mudah-mtk-05",
@@ -2779,7 +3187,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Determinan Matriks Ordo 2x2:</strong><br>\n          $$\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$\\det(A) = (4)(5) - (-2)(3) = 20 - (-6) = 20 + 6 = 26$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Awas tanda minus ganda: $-(-6) = +6$. Sering terjadi kesalahan menghitung $20 - 6 = 14$.\n        </div>\n      "
-    }
+    },
+    "bab": "Aljabar",
+    "subBab": "Matriks",
+    "subTopic": "Matriks",
+    "chapterTitle": "Aljabar"
   },
   {
     "id": "sup-mtk-alj-01",
@@ -2806,7 +3218,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Invers Matriks Ordo $2\\times2$:</strong><br>Untuk $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, inversnya adalah $A^{-1} = \\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$ dengan $\\det(A) = ad - bc \\neq 0$.</div>",
       "steps": "<ol><li>Determinan: $\\det(A) = (3)(4) - (2)(1) = 12 - 2 = 10$.</li><li>Adjoin matriks: tukar elemen diagonal utama dan ubah tanda diagonal samping $\\to \\begin{pmatrix} 4 & -2 \\\\ -1 & 3 \\end{pmatrix}$.</li><li>$A^{-1} = \\frac{1}{10} \\begin{pmatrix} 4 & -2 \\\\ -1 & 3 \\end{pmatrix}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Lupa menukar posisi elemen diagonal utama saat membentuk matriks adjoin.</div>"
-    }
+    },
+    "bab": "Aljabar",
+    "subBab": "Matriks",
+    "subTopic": "Matriks",
+    "chapterTitle": "Aljabar"
   },
   {
     "id": "mudah-mtk-09",
@@ -2833,7 +3249,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Teorema Sisa Suku Banyak:</strong><br>\n          Jika polinomial $P(x)$ dibagi oleh $(x - c)$, maka sisa pembagiannya adalah $S = P(c)$.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Pembuat nol pembagi: $x - 2 = 0 \\implies x = 2$.</li>\n          <li>Substitusi $x = 2$ ke dalam $P(x)$:\n            $$S = P(2) = 2(2^3) - 5(2^2) + 4(2) - 6$$\n            $$S = 2(8) - 5(4) + 8 - 6 = 16 - 20 + 8 - 6 = -2$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering keliru tanda substitusi menjadi $P(-2)$. Pembagi $(x - c)$ menghasilkan nilai evaluasi $x = +c$.\n        </div>\n      "
-    }
+    },
+    "bab": "Aljabar",
+    "subBab": "Polinomial",
+    "subTopic": "Polinomial",
+    "chapterTitle": "Aljabar"
   },
   {
     "id": "sup-mtk-alj-03",
@@ -2860,7 +3280,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Teorema Faktor:</strong><br>Bentuk $(x - k)$ merupakan faktor dari suku banyak $P(x)$ jika dan hanya jika $P(k) = 0$.</div>",
       "steps": "<ol><li>Karena habis dibagi $(x - 2)$, maka $P(2) = 0$.</li><li>Substitusi $x = 2$: $(2)^3 - 3(2)^2 + a(2) - 4 = 0$.</li><li>$8 - 12 + 2a - 4 = 0 \\implies 2a - 8 = 0 \\implies 2a = 8 \\implies a = 4$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Keliru mensubstitusikan nilai $x = -2$ bukannya pembuat nol pembagi $x = 2$.</div>"
-    }
+    },
+    "bab": "Aljabar",
+    "subBab": "Polinomial",
+    "subTopic": "Polinomial",
+    "chapterTitle": "Aljabar"
   },
   {
     "id": "mudah-mtk-07",
@@ -2887,7 +3311,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Syarat Terdefinisi Bentuk Akar Real:</strong><br>\n          Fungsi $\\sqrt{g(x)}$ terdefinisi pada bilangan real jika dan hanya jika radikan tidak negatif:<br>\n          $$g(x) \\ge 0$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>$$2x - 8 \\ge 0$$</li>\n          <li>$$2x \\ge 8 \\implies x \\ge 4$$</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Karena akar berada di pembilang (bukan penyebut pecahan), nilai 0 diperbolehkan (sehingga menggunakan $\\ge 4$, bukan $> 4$).\n        </div>\n      "
-    }
+    },
+    "bab": "Aljabar",
+    "subBab": "Fungsi",
+    "subTopic": "Fungsi",
+    "chapterTitle": "Aljabar"
   },
   {
     "id": "sup-mtk-alj-04",
@@ -2914,7 +3342,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Domain Fungsi Pecahan Rasional:</strong><br>Pecahan aljabar $\\frac{P(x)}{Q(x)}$ terdefinisi pada bilangan real jika dan hanya jika penyebutnya tidak sama dengan nol: $Q(x) \\neq 0$.</div>",
       "steps": "<ol><li>Penyebut pecahan: $x - 3$.</li><li>Syarat terdefinisi: $x - 3 \\neq 0 \\implies x \\neq 3$.</li><li>Domain fungsi: $D_f = \\{x \\in \\mathbb{R} \\mid x \\neq 3\\}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Membingungkan antara syarat penyebut tidak nol dengan syarat pembilang tidak nol.</div>"
-    }
+    },
+    "bab": "Aljabar",
+    "subBab": "Fungsi",
+    "subTopic": "Fungsi",
+    "chapterTitle": "Aljabar"
   },
   {
     "id": "mudah-mtk-10",
@@ -2941,7 +3373,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Perkalian Skalar (Dot Product) Dua Vektor:</strong><br>\n          $$\\vec{u} \\cdot \\vec{v} = u_x v_x + u_y v_y$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Identifikasi komponen: $u_x = 3, u_y = -4$ dan $v_x = 2, v_y = 5$.</li>\n          <li>Hitung perkalian skalar:\n            $$\\vec{u} \\cdot \\vec{v} = (3)(2) + (-4)(5) = 6 - 20 = -14$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Hasil kali skalar (dot product) berupa bilangan skalar real, bukan vektor. Perhatikan tanda negatif pada komponen $u_y = -4$.\n        </div>\n      "
-    }
+    },
+    "bab": "Geometri dan Pengukuran",
+    "subBab": "Vektor",
+    "subTopic": "Vektor",
+    "chapterTitle": "Geometri dan Pengukuran"
   },
   {
     "id": "sup-mtk-geo-01",
@@ -2968,7 +3404,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Panjang (Norm) Vektor Dimensi Tiga:</strong><br>Untuk $\\vec{v} = v_x \\hat{i} + v_y \\hat{j} + v_z \\hat{k}$, panjang vektor didefinisikan sebagai $|\\vec{v}| = \\sqrt{v_x^2 + v_y^2 + v_z^2}$.</div>",
       "steps": "<ol><li>Komponen vektor: $v_x = 3$, $v_y = -4$, $v_z = 12$.</li><li>$|\\vec{v}| = \\sqrt{3^2 + (-4)^2 + 12^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Lupa mengkuadratkan tanda negatif sehingga keliru menghitung $9 - 16 + 144$.</div>"
-    }
+    },
+    "bab": "Geometri dan Pengukuran",
+    "subBab": "Vektor",
+    "subTopic": "Vektor",
+    "chapterTitle": "Geometri dan Pengukuran"
   },
   {
     "id": "mudah-mtk-11",
@@ -2995,7 +3435,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Jari-Jari Lingkaran Bentuk Umum $x^2 + y^2 + Ax + By + C = 0$:</strong><br>\n          Titik pusat $(a, b) = \\left(-\\frac{1}{2}A, -\\frac{1}{2}B\\right)$<br>\n          Jari-jari: $r = \\sqrt{a^2 + b^2 - C}$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Hitung koordinat pusat:\n            $$a = -\\frac{1}{2}(-6) = 3, \\quad b = -\\frac{1}{2}(8) = -4$$\n          </li>\n          <li>Substitusi ke rumus jari-jari ($C = -11$):\n            $$r = \\sqrt{3^2 + (-4)^2 - (-11)} = \\sqrt{9 + 16 + 11} = \\sqrt{36} = 6$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda negatif pada $C = -11$. Mengurangkan nilai negatif menghasilkan penjumlahan: $-(-11) = +11$.\n        </div>\n      "
-    }
+    },
+    "bab": "Geometri dan Pengukuran",
+    "subBab": "Lingkaran",
+    "subTopic": "Lingkaran",
+    "chapterTitle": "Geometri dan Pengukuran"
   },
   {
     "id": "sup-mtk-geo-02",
@@ -3022,7 +3466,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Garis Singgung Titik Singgung Lingkaran Pusat $(0,0)$:</strong><br>Persamaan garis singgung lingkaran $x^2 + y^2 = r^2$ pada titik singgung $(x_1, y_1)$ adalah $x_1 x + y_1 y = r^2$.</div>",
       "steps": "<ol><li>Uji titik: $3^2 + (-4)^2 = 9 + 16 = 25$ (titik $P$ tepat terletak pada lingkaran).</li><li>Substitusi ke rumus: $(3)x + (-4)y = 25 \\implies 3x - 4y = 25$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menggunakan jari-jari $r = 5$ bukannya $r^2 = 25$ pada ruas kanan persamaan garis singgung.</div>"
-    }
+    },
+    "bab": "Geometri dan Pengukuran",
+    "subBab": "Lingkaran",
+    "subTopic": "Lingkaran",
+    "chapterTitle": "Geometri dan Pengukuran"
   },
   {
     "id": "mudah-mtk-12",
@@ -3049,7 +3497,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Komposisi Translasi Titik:</strong><br>\n          $$\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = \\begin{pmatrix} x \\\\ y \\end{pmatrix} + T_1 + T_2$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Jumlahkan pergeseran absis ($x$):\n            $$x' = 5 + (-3) + 2 = 4$$\n          </li>\n          <li>Jumlahkan pergeseran ordinat ($y$):\n            $$y' = -2 + 4 + (-1) = 1$$\n          </li>\n          <li>Koordinat bayangan akhir adalah $(4, 1)$.</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Operasi translasi murni menggunakan penjumlahan aljabar vektor posisi, bukan perkalian matriks.\n        </div>\n      "
-    }
+    },
+    "bab": "Geometri dan Pengukuran",
+    "subBab": "Transformasi Geometri",
+    "subTopic": "Transformasi Geometri",
+    "chapterTitle": "Geometri dan Pengukuran"
   },
   {
     "id": "mudah-mtk-06",
@@ -3076,12 +3528,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Limit Aljabar Bentuk Tak Tentu $\\frac{0}{0}$:</strong><br>\n          Jika substitusi langsung menghasilkan $\\frac{0}{0}$, faktorkan pembilang dan coret faktor pembuat nol $(x - c)$.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Substitusi $x = 3 \\implies \\frac{3^2 - 9}{3 - 3} = \\frac{0}{0}$ (Bentuk tak tentu).</li>\n          <li>Faktorkan selisih kuadrat:\n            $$\\lim_{x \\to 3} \\frac{(x - 3)(x + 3)}{x - 3}$$\n          </li>\n          <li>Eliminasi faktor pembuat nol $(x - 3)$:\n            $$\\lim_{x \\to 3} (x + 3) = 3 + 3 = 6$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan langsung menyatakan limit bernilai 0 karena pembilang bernilai 0 saat substitusi awal.\n        </div>\n      "
-    }
+    },
+    "bab": "Trigonometri & Kalkulus Dasar",
+    "subBab": "Limit Fungsi",
+    "subTopic": "Limit Fungsi",
+    "chapterTitle": "Trigonometri & Kalkulus Dasar"
   },
   {
     "id": "mudah-mtk-01",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-1",
     "category": "Trigonometri Dasar (Fondasi)",
@@ -3103,12 +3559,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Rumus Sudut Rangkap Kosinus:</strong><br>\n          $$\\cos 2\\alpha = 1 - 2\\sin^2\\alpha = 2\\cos^2\\alpha - 1 = \\cos^2\\alpha - \\sin^2\\alpha$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Gunakan bentuk langsung dengan sinus:\n            $$\\cos 2\\alpha = 1 - 2\\sin^2\\alpha$$\n          </li>\n          <li>Substitusi $\\sin\\alpha = \\frac{3}{5}$:\n            $$\\cos 2\\alpha = 1 - 2\\left(\\frac{3}{5}\\right)^2 = 1 - 2\\left(\\frac{9}{25}\\right) = 1 - \\frac{18}{25} = \\frac{7}{25}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan tertukar antara rumus $\\cos 2\\alpha = 1 - 2\\sin^2\\alpha$ dengan $\\sin 2\\alpha = 2\\sin\\alpha\\cos\\alpha$. Pilihan A (24/25) adalah nilai $\\sin 2\\alpha$!\n        </div>\n      "
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Trigonometri Analitik Dasar",
+    "subTopic": "Trigonometri Analitik Dasar",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-01",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-1",
     "category": "Relasi Sudut Kuadran II, III, dan IV",
@@ -3130,12 +3590,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Relasi Sudut Antar Kuadran:</strong><br>• Kuadran II: $\\sin(180^\\circ - \\alpha) = +\\sin \\alpha$<br>• Kuadran III: $\\cos(180^\\circ + \\alpha) = -\\cos \\alpha$<br>• Kuadran IV: $\\tan(360^\\circ - \\alpha) = -\\tan \\alpha$</div>",
       "steps": "<ol><li>$\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = +\\frac{1}{2}$.</li><li>$\\cos 240^\\circ = \\cos(180^\\circ + 60^\\circ) = -\\cos 60^\\circ = -\\frac{1}{2}$.</li><li>$\\tan 315^\\circ = \\tan(360^\\circ - 45^\\circ) = -\\tan 45^\\circ = -1$.</li><li>Hasil akhir: $\\left(+\\frac{1}{2}\\right) + \\left(-\\frac{1}{2}\\right) - (-1) = 0 + 1 = 1$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Salah menentukan tanda aljabar trigonometri pada kuadran III dan IV.</div>"
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Trigonometri Analitik Dasar",
+    "subTopic": "Trigonometri Analitik Dasar",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-02",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-2",
     "category": "Pemfaktoran Kuadrat (Fondasi)",
@@ -3157,12 +3621,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Pemfaktoran Persamaan Kuadrat $ax^2 + bx + c = 0$:</strong><br>\n          Cari dua bilangan yang hasil kalinya $a \\times c = 2 \\times 3 = 6$ dan jumlahnya $b = -7$. Bilangan tersebut adalah $-6$ dan $-1$.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Uraikan suku tengah:\n            $$2x^2 - 6x - x + 3 = 0$$\n          </li>\n          <li>Faktorkan secara berpasangan:\n            $$2x(x - 3) - 1(x - 3) = 0 \\implies (2x - 1)(x - 3) = 0$$\n          </li>\n          <li>Maka akarnya:\n            $$2x - 1 = 0 \\implies x = \\frac{1}{2} \\quad \\text{atau} \\quad x - 3 = 0 \\implies x = 3$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda negatif saat pemfaktoran agar tidak terbalik menjadi negatif pada hasil akhir.\n        </div>\n      "
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Aljabar Elementer",
+    "subTopic": "Aljabar Elementer",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-02",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-2",
     "category": "Penyederhanaan Pecahan Aljabar",
@@ -3184,12 +3652,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Penyederhanaan Pecahan Bentuk Aljabar:</strong><br>Faktorkan pembilang dan penyebut ke bentuk perkalian faktor-faktor linearnya, lalu bagi dengan faktor persekutuan terbesarnya.</div>",
       "steps": "<ol><li>Faktorkan pembilang: $2x^2 - 8 = 2(x^2 - 4) = 2(x - 2)(x + 2)$.</li><li>Faktorkan penyebut: $x^2 + 3x + 2 = (x + 1)(x + 2)$.</li><li>Bagi faktor persekutuan $(x + 2)$: $\\frac{2(x - 2)(x + 2)}{(x + 1)(x + 2)} = \\frac{2(x - 2)}{x + 1}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mencoret suku $x^2$ secara langsung tanpa memfaktorkan bentuk penjumlahan aljabar terlebih dahulu.</div>"
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Aljabar Elementer",
+    "subTopic": "Aljabar Elementer",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-03",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-3",
     "category": "Garis Lurus & Gradien (Fondasi)",
@@ -3211,12 +3683,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Sifat Gradien Dua Garis Tegak Lurus:</strong><br>\n          $$m_1 \\cdot m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Ubah persamaan garis ke bentuk eksplisit $y = mx + c$:\n            $$3x - 6y + 12 = 0 \\implies 6y = 3x + 12 \\implies y = \\frac{1}{2}x + 2$$\n            Jadi, gradien garis pertama $m_1 = \\frac{1}{2}$.\n          </li>\n          <li>Garis yang tegak lurus memiliki gradien:\n            $$m_2 = -\\frac{1}{m_1} = -\\frac{1}{1/2} = -2$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pilihan C (1/2) adalah gradien garis yang <em>sejajar</em>, bukan tegak lurus.\n        </div>\n      "
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Geometri Analitik Bidang",
+    "subTopic": "Geometri Analitik Bidang",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-03",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-3",
     "category": "Jarak Antartitik Koordinat Kartesius",
@@ -3238,12 +3714,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Rumus Jarak Dua Titik Bidang Kartesius:</strong><br>$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.</div>",
       "steps": "<ol><li>$\\Delta x = 4 - (-2) = 6$.</li><li>$\\Delta y = -5 - 3 = -8$.</li><li>$d = \\sqrt{6^2 + (-8)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Salah dalam operasi tanda negatif: $4 - (-2) \\neq 2$.</div>"
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Geometri Analitik Bidang",
+    "subTopic": "Geometri Analitik Bidang",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-08",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-4",
     "category": "Pertidaksamaan Nilai Mutlak Satu Variabel",
@@ -3265,12 +3745,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Sifat Dasar Pertidaksamaan Nilai Mutlak:</strong><br>\n          $$|u| < k \\iff -k < u < k \\quad (k > 0)$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Terapkan sifat nilai mutlak:\n            $$-7 < 2x - 3 < 7$$\n          </li>\n          <li>Tambahkan 3 pada seluruh ruas:\n            $$-7 + 3 < 2x < 7 + 3 \\implies -4 < 2x < 10$$\n          </li>\n          <li>Bagi dengan 2:\n            $$-2 < x < 5$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Tanda pertidaksamaan pada soal adalah $<$ murni (tanpa sama dengan), sehingga batas penyelesaian juga tidak memuat tanda sama dengan.\n        </div>\n      "
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Pertidaksamaan dan Nilai Mutlak",
+    "subTopic": "Pertidaksamaan dan Nilai Mutlak",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-04",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-4",
     "category": "Syarat Pecahan Aljabar Terdefinisi",
@@ -3292,12 +3776,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Syarat Pecahan Terdefinisi:</strong><br>Penyebut dari suatu pecahan rasional tidak boleh sama dengan nol: $\\text{Penyebut} \\neq 0$.</div>",
       "steps": "<ol><li>Penyebut: $x^2 - 5x + 6 \\neq 0$.</li><li>Faktorkan: $(x - 2)(x - 3) \\neq 0$.</li><li>Maka $x \\neq 2$ dan $x \\neq 3$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menganggap pembilang tidak boleh nol sehingga menyertakan $x \\neq -4$.</div>"
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Pertidaksamaan dan Nilai Mutlak",
+    "subTopic": "Pertidaksamaan dan Nilai Mutlak",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-04",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-5",
     "category": "Sifat Dasar Logaritma (Fondasi)",
@@ -3319,12 +3807,16 @@ window.QUESTIONS_MUDAH = [
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Sifat Operasi Logaritma Basis Sama:</strong><br>\n          $$^a\\log b + ^a\\log c = ^a\\log(b \\cdot c)$$\n          $$^a\\log b - ^a\\log c = ^a\\log\\left(\\frac{b}{c}\\right)$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Gabungkan numerus dengan basis 2:\n            $$^2\\log\\left( \\frac{24 \\times 6}{9} \\right)$$\n          </li>\n          <li>Sederhanakan pecahan di dalam numerus:\n            $$\\frac{144}{9} = 16$$\n          </li>\n          <li>Hitung nilai logaritma:\n            $$^2\\log 16 = ^2\\log(2^4) = 4$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pastikan basis logaritma sama sebelum menggabungkan numerus.\n        </div>\n      "
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Eksponen dan Logaritma",
+    "subTopic": "Eksponen dan Logaritma",
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-05",
     "subject": "MATEMATIKA",
-    "pillarId": "matematika",
+    "pillarId": "fundamental",
     "chapterId": "mtk-fun",
     "subTopicId": "mtk-fun-5",
     "category": "Sifat Perubahan Basis Logaritma",
@@ -3346,7 +3838,11 @@ window.QUESTIONS_MUDAH = [
       "concept": "<div class=\"callout-box callout-concept\"><strong>Sifat Perubahan Basis Logaritma:</strong><br>$^c\\log d = \\frac{^p\\log d}{^p\\log c}$. Ubah ke basis referensi yang diketahui (basis 2).</div>",
       "steps": "<ol><li>Ubah basis 10 ke basis 2: $^{10}\\log 15 = \\frac{^2\\log 15}{^2\\log 10}$.</li><li>Faktorkan numerus prima: $^{10}\\log 15 = \\frac{^2\\log (3 \\times 5)}{^2\\log (2 \\times 5)}$.</li><li>Terapkan sifat perkalian: $\\frac{^2\\log 3 + ^2\\log 5}{^2\\log 2 + ^2\\log 5}$.</li><li>Substitusi: $\\frac{a + b}{1 + b}$ (karena $^2\\log 2 = 1$).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Salah menganggap $^2\\log 10 = 2 \\times ^2\\log 5$ bukannya $^2\\log 2 + ^2\\log 5 = 1 + b$.</div>"
-    }
+    },
+    "bab": "Bab Fundamental",
+    "subBab": "Eksponen dan Logaritma",
+    "subTopic": "Eksponen dan Logaritma",
+    "chapterTitle": "Bab Fundamental"
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_MUDAH;

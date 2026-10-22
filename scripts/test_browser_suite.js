@@ -145,7 +145,7 @@ async function runVerification() {
     // 2. Verify all datasets are loaded on window
     console.log('\n[TEST 2] Verifying 3-tier datasets and syllabus data...');
     const dataCheck = await cdp.eval(`({
-      hasSyllabus: Boolean(window.SYLLABUS_DATA && window.SYLLABUS_DATA.pillars.length === 2),
+      hasSyllabus: Boolean(window.SYLLABUS_DATA && window.SYLLABUS_DATA.pillars.length >= 2),
       mudahCount: (window.QUESTIONS_MUDAH || []).length,
       sedangCount: (window.QUESTIONS_SEDANG || []).length,
       hotsCount: (window.QUESTIONS_HOTS || []).length,

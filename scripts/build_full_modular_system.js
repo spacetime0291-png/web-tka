@@ -25,7 +25,7 @@ console.log(`Starting modular build. Input pool: Mudah=${rawMudah.length}, Sedan
 
 // Map subTopicId to directory & file
 const subTopicConfig = {
-  // FISIKA
+  // I. FISIKA (TKA)
   'fis-kin-1': {
     pillar: 'fisika',
     pillarName: 'Fisika (TKA)',
@@ -33,7 +33,7 @@ const subTopicConfig = {
     chapterName: 'Kinematika',
     subTopicId: 'fis-kin-1',
     title: 'Pengukuran',
-    indicators: 'Prinsip kerja dan pembacaan jangka sorong; mikrometer sekrup; neraca tiga lengan; kaidah pelaporan dan perhitungan angka penting.',
+    indicators: 'Prinsip kerja & pembacaan jangka sorong; mikrometer sekrup; neraca tiga lengan; kaidah pelaporan & perhitungan angka penting.',
     relPath: 'fisika/01-kinematika/01-pengukuran.js'
   },
   'fis-kin-2': {
@@ -43,7 +43,7 @@ const subTopicConfig = {
     chapterName: 'Kinematika',
     subTopicId: 'fis-kin-2',
     title: 'Gerak Lurus',
-    indicators: 'Konsep jarak dan perpindahan (skalar & vektor); kelajuan dan kecepatan; karakteristik dan grafik GLB; karakteristik, rumus, dan grafik GLBB.',
+    indicators: 'Jarak & perpindahan (skalar & vektor); kelajuan & kecepatan; karakteristik & grafik GLB; karakteristik, rumus, & grafik GLBB.',
     relPath: 'fisika/01-kinematika/02-gerak-lurus.js'
   },
   'fis-kin-3': {
@@ -53,7 +53,7 @@ const subTopicConfig = {
     chapterName: 'Kinematika',
     subTopicId: 'fis-kin-3',
     title: 'Gerak Lengkung',
-    indicators: 'Komponen kecepatan dan posisi gerak parabola pada bidang horizontal; titik tertinggi dan jarak tempuh maksimum gerak parabola; besaran sudut, kecepatan linier, dan percepatan sentripetal pada GMB.',
+    indicators: 'Komponen kecepatan & posisi gerak parabola horizontal; titik tertinggi & jarak tempuh maksimum gerak parabola; besaran sudut, kecepatan linier, & percepatan sentripetal GMB.',
     relPath: 'fisika/01-kinematika/03-gerak-lengkung.js'
   },
   'fis-din-1': {
@@ -63,7 +63,7 @@ const subTopicConfig = {
     chapterName: 'Dinamika',
     subTopicId: 'fis-din-1',
     title: 'Hubungan Gaya dan Gerak',
-    indicators: 'Hukum I Newton (kelembaman); Hukum II Newton; Hukum III Newton; penguraian diagram gaya (berat, normal, gesek statis/kinetis, tegangan tali).',
+    indicators: 'Hukum I Newton (kelembaman); Hukum II Newton (\\Sigma F = ma); Hukum III Newton (aksi-reaksi); diagram gaya (berat, normal, gesek statis/kinetis, tegangan tali).',
     relPath: 'fisika/02-dinamika/01-gaya-dan-gerak.js'
   },
   'fis-din-2': {
@@ -73,7 +73,7 @@ const subTopicConfig = {
     chapterName: 'Dinamika',
     subTopicId: 'fis-din-2',
     title: 'Momentum dan Impuls',
-    indicators: 'Konsep dan besaran momentum linier; impuls dan teorema impuls-momentum; Hukum Kekekalan Momentum pada tumbukan.',
+    indicators: 'Momentum linier; impuls & teorema impuls-momentum; Hukum Kekekalan Momentum pada tumbukan.',
     relPath: 'fisika/02-dinamika/02-momentum-dan-impuls.js'
   },
   'fis-din-3': {
@@ -83,7 +83,7 @@ const subTopicConfig = {
     chapterName: 'Dinamika',
     subTopicId: 'fis-din-3',
     title: 'Dinamika Rotasi',
-    indicators: 'Konsep dan perhitungan momen gaya (torsi); momen inersia berbagai benda tegar; Hukum Newton pada gerak rotasi.',
+    indicators: 'Momen gaya (torsi); momen inersia benda tegar; Hukum Newton gerak rotasi (\\Sigma \\tau = I\\alpha).',
     relPath: 'fisika/02-dinamika/03-dinamika-rotasi.js'
   },
   'fis-flu-1': {
@@ -93,7 +93,7 @@ const subTopicConfig = {
     chapterName: 'Fluida',
     subTopicId: 'fis-flu-1',
     title: 'Fluida Statis',
-    indicators: 'Tekanan hidrostatis dan tekanan mutlak; Hukum Pascal pada sistem hidrolik; Hukum Archimedes dan kondisi terapung, melayang, tenggelam.',
+    indicators: 'Tekanan hidrostatis & mutlak; Hukum Pascal sistem hidrolik; Hukum Archimedes (terapung, melayang, tenggelam).',
     relPath: 'fisika/03-fluida/01-fluida-statis.js'
   },
   'fis-flu-2': {
@@ -103,7 +103,7 @@ const subTopicConfig = {
     chapterName: 'Fluida',
     subTopicId: 'fis-flu-2',
     title: 'Fluida Dinamis',
-    indicators: 'Persamaan kontinuitas dan debit aliran; penerapan Persamaan Bernoulli dalam kehidupan dan teknologi.',
+    indicators: 'Persamaan kontinuitas & debit aliran; Persamaan Bernoulli.',
     relPath: 'fisika/03-fluida/02-fluida-dinamis.js'
   },
   'fis-gel-1': {
@@ -113,7 +113,7 @@ const subTopicConfig = {
     chapterName: 'Gelombang',
     subTopicId: 'fis-gel-1',
     title: 'Gelombang Bunyi',
-    indicators: 'Karakteristik rambatan gelombang mekanik bunyi; sumber bunyi (dawai dan pipa organa); intensitas dan taraf intensitas bunyi.',
+    indicators: 'Karakteristik rambatan gelombang mekanik bunyi; sumber bunyi (dawai & pipa organa); intensitas & taraf intensitas bunyi; efek Doppler.',
     relPath: 'fisika/04-gelombang/01-gelombang-bunyi.js'
   },
   'fis-gel-2': {
@@ -123,7 +123,7 @@ const subTopicConfig = {
     chapterName: 'Gelombang',
     subTopicId: 'fis-gel-2',
     title: 'Gelombang Cahaya',
-    indicators: 'Spektrum gelombang elektromagnetik; pemantulan dan pembiasan cahaya; cermin datar, cekung, cembung; lensa cekung dan cembung; prinsip kerja alat optik.',
+    indicators: 'Spektrum gelombang elektromagnetik; pemantulan & pembiasan cahaya; bayangan cermin (datar, cekung, cembung); bayangan lensa (cekung, cembung); alat optik (mata, kacamata, lup, mikroskop, teropong).',
     relPath: 'fisika/04-gelombang/02-gelombang-cahaya.js'
   },
   'fis-ter-1': {
@@ -133,7 +133,7 @@ const subTopicConfig = {
     chapterName: 'Kalor dan Termodinamika',
     subTopicId: 'fis-ter-1',
     title: 'Kalor dan Perpindahannya',
-    indicators: 'Pengaruh kalor terhadap suhu; perubahan wujud (kalor laten); pemuaian panjang, luas, volume; konduksi, konveksi, radiasi; Asas Black.',
+    indicators: 'Perubahan suhu zat; perubahan wujud zat (kalor laten); pemuaian (panjang, luas, volume); konduksi, konveksi, radiasi; Asas Black.',
     relPath: 'fisika/05-kalor-termodinamika/01-kalor-dan-perpindahannya.js'
   },
   'fis-ter-2': {
@@ -143,7 +143,7 @@ const subTopicConfig = {
     chapterName: 'Kalor dan Termodinamika',
     subTopicId: 'fis-ter-2',
     title: 'Pemanasan Global',
-    indicators: 'Proses fisik efek rumah kaca; faktor-faktor penyebab pemanasan global; solusi penanggulangan pemanasan global.',
+    indicators: 'Mekanisme efek rumah kaca; faktor penyebab; solusi penanggulangan.',
     relPath: 'fisika/05-kalor-termodinamika/02-pemanasan-global.js'
   },
   'fis-ter-3': {
@@ -153,7 +153,7 @@ const subTopicConfig = {
     chapterName: 'Kalor dan Termodinamika',
     subTopicId: 'fis-ter-3',
     title: 'Gas Ideal',
-    indicators: 'Hukum Boyle; Hukum Boyle-Gay Lussac; persamaan umum gas ideal PV = nRT; kelajuan efektif molekul.',
+    indicators: 'Hukum Boyle; Hukum Boyle-Gay Lussac; Persamaan umum gas ideal ($PV = nRT$).',
     relPath: 'fisika/05-kalor-termodinamika/03-gas-ideal.js'
   },
   'fis-ter-4': {
@@ -163,7 +163,7 @@ const subTopicConfig = {
     chapterName: 'Kalor dan Termodinamika',
     subTopicId: 'fis-ter-4',
     title: 'Termodinamika',
-    indicators: 'Empat proses termodinamika (isobarik, isokhorik, isotermal, adiabatik); usaha luar dan perubahan energi dalam; Hukum I & II Termodinamika; siklus Carnot.',
+    indicators: 'Proses isobarik, isokhorik, isotermal, adiabatik; usaha luar & energi dalam; Hukum I & II Termodinamika; siklus Carnot & efisiensi mesin kalor.',
     relPath: 'fisika/05-kalor-termodinamika/04-termodinamika.js'
   },
   'fis-lis-1': {
@@ -173,7 +173,7 @@ const subTopicConfig = {
     chapterName: 'Kelistrikan',
     subTopicId: 'fis-lis-1',
     title: 'Listrik Statis',
-    indicators: 'Muatan listrik dan interaksi elektrostatik; Hukum Coulomb; kuat medan listrik; potensial dan energi potensial listrik.',
+    indicators: 'Muatan & interaksi elektrostatik; Hukum Coulomb; kuat medan listrik; potensial & energi potensial listrik.',
     relPath: 'fisika/06-kelistrikan/01-listrik-statis.js'
   },
   'fis-lis-2': {
@@ -183,11 +183,11 @@ const subTopicConfig = {
     chapterName: 'Kelistrikan',
     subTopicId: 'fis-lis-2',
     title: 'Rangkaian Arus Searah (DC)',
-    indicators: 'Hukum Ohm; Hukum I Kirchhoff; Hukum II Kirchhoff loop tertutup; hambatan pengganti campuran; energi dan daya listrik.',
+    indicators: 'Hukum Ohm; Hukum I Kirchhoff; Hukum II Kirchhoff; hambatan pengganti seri-paralel; energi & daya listrik.',
     relPath: 'fisika/06-kelistrikan/02-rangkaian-arus-searah.js'
   },
 
-  // MATEMATIKA LANJUT
+  // II. MATEMATIKA LANJUT (TKA)
   'mtk-alj-1': {
     pillar: 'matematika',
     pillarName: 'Matematika Lanjut (TKA)',
@@ -195,7 +195,7 @@ const subTopicConfig = {
     chapterName: 'Aljabar',
     subTopicId: 'mtk-alj-1',
     title: 'Matriks',
-    indicators: 'Penjumlahan dan pengurangan matriks; perkalian skalar & antarmatriks; determinan 2x2 & 3x3; invers 2x2 & 3x3; SPL dan program linear dengan matriks.',
+    indicators: 'Penjumlahan & pengurangan; perkalian skalar; perkalian antarmatriks; determinan $2\\times2$ & $3\\times3$; invers $2\\times2$ & $3\\times3$; penyelesaian SPL & program linear dengan matriks.',
     relPath: 'matematika-lanjut/01-aljabar/01-matriks.js'
   },
   'mtk-alj-2': {
@@ -205,7 +205,7 @@ const subTopicConfig = {
     chapterName: 'Aljabar',
     subTopicId: 'mtk-alj-2',
     title: 'Polinomial',
-    indicators: 'Operasi polinomial orde <= 4; pembagian bersusun & skema Horner; pemfaktoran suku banyak hingga faktor linear; Teorema Sisa; Teorema Faktor.',
+    indicators: 'Penjumlahan, pengurangan, perkalian (\\text{orde} \\le 4); pembagian bersusun & skema Horner; pemfaktoran suku banyak; Teorema Sisa; Teorema Faktor.',
     relPath: 'matematika-lanjut/01-aljabar/02-polinomial.js'
   },
   'mtk-alj-3': {
@@ -215,7 +215,7 @@ const subTopicConfig = {
     chapterName: 'Aljabar',
     subTopicId: 'mtk-alj-3',
     title: 'Fungsi',
-    indicators: 'Domain, kodomain, range, grafik fungsi polinom, rasional, bentuk akar, eksponen, logaritma, nilai mutlak, dan trigonometri.',
+    indicators: 'Domain, kodomain, range, & grafik fungsi (polinom derajat $\\le 4$, rasional, bentuk akar, eksponensial, logaritma, nilai mutlak, trigonometri).',
     relPath: 'matematika-lanjut/01-aljabar/03-fungsi.js'
   },
   'mtk-geo-1': {
@@ -225,7 +225,7 @@ const subTopicConfig = {
     chapterName: 'Geometri dan Pengukuran',
     subTopicId: 'mtk-geo-1',
     title: 'Vektor',
-    indicators: 'Komponen vektor R2 & R3; besar/panjang vektor; penjumlahan & pengurangan; perkalian skalar dua vektor (dot product).',
+    indicators: 'Komponen vektor $\\mathbb{R}^2$ & $\\mathbb{R}^3$; panjang/besar vektor; penjumlahan & pengurangan vektor; perkalian skalar (dot product).',
     relPath: 'matematika-lanjut/02-geometri-pengukuran/01-vektor.js'
   },
   'mtk-geo-2': {
@@ -235,7 +235,7 @@ const subTopicConfig = {
     chapterName: 'Geometri dan Pengukuran',
     subTopicId: 'mtk-geo-2',
     title: 'Lingkaran',
-    indicators: 'Persamaan lingkaran (0,0) & (a,b); bentuk umum; garis singgung titik pada lingkaran, gradien tertentu, titik di luar; keliling, luas, busur, juring.',
+    indicators: 'Persamaan lingkaran pusat $(0,0)$, $(a,b)$, & bentuk umum; persamaan garis singgung (titik pada lingkaran, gradien tertentu, titik luar lingkaran); keliling, luas, panjang busur, luas juring, & tembereng.',
     relPath: 'matematika-lanjut/02-geometri-pengukuran/02-lingkaran.js'
   },
   'mtk-geo-3': {
@@ -245,69 +245,69 @@ const subTopicConfig = {
     chapterName: 'Geometri dan Pengukuran',
     subTopicId: 'mtk-geo-3',
     title: 'Transformasi Geometri',
-    indicators: 'Translasi, refleksi, rotasi, dilatasi pada titik, garis, bangun datar; komposisi transformasi; representasi perkalian matriks.',
+    indicators: 'Translasi, refleksi, rotasi, dilatasi (titik, garis, bangun datar); komposisi transformasi; representasi matriks transformasi.',
     relPath: 'matematika-lanjut/02-geometri-pengukuran/03-transformasi-geometri.js'
   },
   'mtk-tri-1': {
     pillar: 'matematika',
     pillarName: 'Matematika Lanjut (TKA)',
     chapterId: 'mtk-tri',
-    chapterName: 'Trigonometri',
+    chapterName: 'Trigonometri & Kalkulus Dasar',
     subTopicId: 'mtk-tri-1',
     title: 'Limit Fungsi',
-    indicators: 'Limit fungsi aljabar (substitusi, pemfaktoran, rasionalisasi akar tanpa L\'Hopital); limit fungsi trigonometri (teorema dasar & manipulasi identitas tanpa L\'Hopital).',
+    indicators: 'Limit fungsi aljabar (substitusi, pemfaktoran, rasionalisasi akar tanpa L\'Hôpital); limit fungsi trigonometri (teorema dasar & manipulasi identitas tanpa L\'Hôpital).',
     relPath: 'matematika-lanjut/03-trigonometri/01-limit-fungsi.js'
   },
 
-  // BAB FUNDAMENTAL (PRASYARAT)
+  // III. BAB FUNDAMENTAL (MATERI PRASYARAT)
   'mtk-fun-1': {
-    pillar: 'matematika',
+    pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
     chapterId: 'mtk-fun',
     chapterName: 'Bab Fundamental',
     subTopicId: 'mtk-fun-1',
     title: 'Trigonometri Analitik Dasar',
-    indicators: 'Definisi sin, cos, tan segitiga siku-siku; sudut istimewa kuadran I; relasi sudut kuadran II, III, IV; identitas Pythagoras; sudut rangkap; jumlah & selisih sudut.',
+    indicators: 'Perbandingan sisi (\\sin, \\cos, \\tan) segitiga siku-siku; sudut istimewa kuadran I; relasi sudut kuadran II, III, IV; identitas Pythagoras (\\sin^2 x + \\cos^2 x = 1); sudut rangkap (\\sin 2x, \\cos 2x); jumlah & selisih sudut sinus & kosinus.',
     relPath: 'fundamental/01-trigonometri-analitik-dasar.js'
   },
   'mtk-fun-2': {
-    pillar: 'matematika',
+    pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
     chapterId: 'mtk-fun',
     chapterName: 'Bab Fundamental',
     subTopicId: 'mtk-fun-2',
     title: 'Aljabar Elementer',
-    indicators: 'Bentuk aljabar, suku sejenis, pemfaktoran kuadrat; penyederhanaan pecahan aljabar; metode substitusi & eliminasi SPLDV dan SPLTV.',
+    indicators: 'Pengelompokan suku sejenis & pemfaktoran kuadrat; penyederhanaan pecahan aljabar; substitusi & eliminasi SPLDV & SPLTV.',
     relPath: 'fundamental/02-aljabar-elementer.js'
   },
   'mtk-fun-3': {
-    pillar: 'matematika',
+    pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
     chapterId: 'mtk-fun',
     chapterName: 'Bab Fundamental',
     subTopicId: 'mtk-fun-3',
     title: 'Geometri Analitik Bidang',
-    indicators: 'Titik koordinat Kartesius & jarak antartitik; persamaan garis lurus; gradien sejajar & tegak lurus; jarak titik ke garis lurus.',
+    indicators: 'Koordinat Kartesius & jarak antartitik; persamaan garis lurus ($y = mx + c$, $ax + by + c = 0$); gradien garis sejajar ($m_1 = m_2$) & tegak lurus ($m_1 \\cdot m_2 = -1$); jarak titik ke garis lurus.',
     relPath: 'fundamental/03-geometri-analitik-bidang.js'
   },
   'mtk-fun-4': {
-    pillar: 'matematika',
+    pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
     chapterId: 'mtk-fun',
     chapterName: 'Bab Fundamental',
     subTopicId: 'mtk-fun-4',
     title: 'Pertidaksamaan dan Nilai Mutlak',
-    indicators: 'Syarat pecahan terdefinisi; syarat bentuk akar terdefinisi; sifat dasar persamaan & pertidaksamaan nilai mutlak.',
+    indicators: 'Syarat pecahan terdefinisi; syarat bentuk akar terdefinisi; sifat persamaan & pertidaksamaan nilai mutlak.',
     relPath: 'fundamental/04-pertidaksamaan-dan-nilai-mutlak.js'
   },
   'mtk-fun-5': {
-    pillar: 'matematika',
+    pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
     chapterId: 'mtk-fun',
     chapterName: 'Bab Fundamental',
     subTopicId: 'mtk-fun-5',
     title: 'Eksponen dan Logaritma',
-    indicators: 'Aturan pangkat bulat & rasional; perpangkatan basis asli; sifat logaritma (kali, bagi, pangkat numerus); sifat perubahan basis logaritma.',
+    indicators: 'Aturan pangkat bulat & rasional; perpangkatan basis bilangan asli; sifat penjumlahan, pengurangan, perpangkatan numerus logaritma; perubahan basis logaritma.',
     relPath: 'fundamental/05-eksponen-dan-logaritma.js'
   }
 };
@@ -329,8 +329,19 @@ function addQuestion(q) {
     q.subTopicId = 'fis-kin-3';
   }
 
-  // Push to proper bucket
-  if (subtopicBuckets[q.subTopicId]) {
+  // Push to proper bucket and ensure standardized metadata
+  if (subTopicConfig[q.subTopicId]) {
+    const conf = subTopicConfig[q.subTopicId];
+    q.pillarId = conf.pillar;
+    q.chapterId = conf.chapterId;
+    q.bab = conf.chapterName;
+    q.subTopicId = conf.subTopicId;
+    q.subBab = conf.title;
+    q.subTopic = conf.title;
+    q.chapterTitle = conf.chapterName;
+    if (!q.subject) {
+      q.subject = conf.pillar === 'fisika' ? 'FISIKA' : 'MATEMATIKA';
+    }
     subtopicBuckets[q.subTopicId].push(q);
   } else {
     console.warn('Unknown subtopic for question:', q.id, q.subTopicId);

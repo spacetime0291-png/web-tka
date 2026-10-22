@@ -37,6 +37,7 @@ const state = {
     subject: 'all',
     chapterId: 'all',
     subTopicId: 'all',
+    selectedSubTopicIds: new Set(),
     scopeTitle: 'Semua Materi',
     difficulties: ['mudah', 'sedang', 'hots'],
     isProgressive: false,
@@ -123,9 +124,52 @@ function toggleChapterAccordion(chapterId) {
   saveAccordionState(list);
 }
 
+// Syllabus Lookup Helpers
+function getAllSubTopicIds() {
+  const ids = [];
+  if (typeof window !== 'undefined' && window.SYLLABUS_DATA && Array.isArray(window.SYLLABUS_DATA.pillars)) {
+    window.SYLLABUS_DATA.pillars.forEach(p => {
+      if (Array.isArray(p.chapters)) {
+        p.chapters.forEach(ch => {
+          if (Array.isArray(ch.subTopics)) {
+            ch.subTopics.forEach(sub => ids.push(sub.id));
+          }
+        });
+      }
+    });
+  }
+  return ids;
+}
+
+function findChapterById(chapterId) {
+  if (typeof window === 'undefined' || !window.SYLLABUS_DATA || !Array.isArray(window.SYLLABUS_DATA.pillars)) return null;
+  for (const p of window.SYLLABUS_DATA.pillars) {
+    if (Array.isArray(p.chapters)) {
+      const ch = p.chapters.find(c => c.id === chapterId);
+      if (ch) return ch;
+    }
+  }
+  return null;
+}
+
+function findSubTopicById(subTopicId) {
+  if (typeof window === 'undefined' || !window.SYLLABUS_DATA || !Array.isArray(window.SYLLABUS_DATA.pillars)) return null;
+  for (const p of window.SYLLABUS_DATA.pillars) {
+    if (Array.isArray(p.chapters)) {
+      for (const ch of p.chapters) {
+        if (Array.isArray(ch.subTopics)) {
+          const sub = ch.subTopics.find(s => s.id === subTopicId);
+          if (sub) return { sub, chapter: ch, pillar: p };
+        }
+      }
+    }
+  }
+  return null;
+}
+
 /**
- * Merges and filters questions dynamically by subject, chapterId, subTopicId, difficulty, and wrong history.
- * @param {Object} filter - { subject, chapterId, subTopicId, difficulty, progressive, wrongOnly }
+ * Merges and filters questions dynamically by subject, chapterId, subTopicId, subTopicIds, difficulty, and wrong history.
+ * @param {Object} filter - { subject, chapterId, subTopicId, subTopicIds, difficulty, difficulties, progressive, wrongOnly }
  * @returns {Array} Filtered and cloned question objects
  */
 function getFilteredQuestions(filter = {}) {
@@ -152,34 +196,44 @@ function getFilteredQuestions(filter = {}) {
   }
 
   // Filter by Wrong Questions history if wrongOnly is requested
-  const wrongOnly = filter.wrongOnly !== undefined ? filter.wrongOnly : state.setupForm.wrongOnly;
+  const wrongOnly = filter.wrongOnly !== undefined ? filter.wrongOnly : (state.setupForm ? state.setupForm.wrongOnly : false);
   if (wrongOnly) {
     const wrongList = getWrongQuestionsHistory();
     combined = combined.filter(q => wrongList.includes(q.id));
   }
 
-  // Filter by Scope: Subject/Pillar, Chapter, SubTopic
+  // Filter by Scope: Multi-select SubTopics or Single Subject/Chapter/SubTopic
   return combined.filter(q => {
-    // Subject filter
-    if (filter.subject && filter.subject !== 'all') {
-      const qSubject = (q.pillarId || q.subject || '').toLowerCase();
-      const targetSubject = filter.subject.toLowerCase();
-      if (qSubject !== targetSubject && !qSubject.includes(targetSubject)) {
+    // Multi-select subTopicIds filter (Set or Array)
+    if (filter.subTopicIds !== undefined && filter.subTopicIds !== null) {
+      const idSet = filter.subTopicIds instanceof Set ? filter.subTopicIds : new Set(filter.subTopicIds);
+      const matchesSub = idSet.has(q.subTopicId) || idSet.has(q.subBab) || idSet.has(q.subTopic);
+      if (!matchesSub) {
         return false;
       }
-    }
-
-    // Chapter filter
-    if (filter.chapterId && filter.chapterId !== 'all') {
-      if (q.chapterId !== filter.chapterId) {
-        return false;
+    } else {
+      // Fallback single filters if subTopicIds is not provided
+      // Subject filter
+      if (filter.subject && filter.subject !== 'all') {
+        const qSubject = (q.pillarId || q.subject || '').toLowerCase();
+        const targetSubject = filter.subject.toLowerCase();
+        if (qSubject !== targetSubject && !qSubject.includes(targetSubject)) {
+          return false;
+        }
       }
-    }
 
-    // SubTopic filter
-    if (filter.subTopicId && filter.subTopicId !== 'all') {
-      if (q.subTopicId !== filter.subTopicId) {
-        return false;
+      // Chapter filter
+      if (filter.chapterId && filter.chapterId !== 'all') {
+        if (q.chapterId !== filter.chapterId && q.bab !== filter.chapterId) {
+          return false;
+        }
+      }
+
+      // SubTopic filter
+      if (filter.subTopicId && filter.subTopicId !== 'all') {
+        if (q.subTopicId !== filter.subTopicId && q.subBab !== filter.subTopicId && q.subTopic !== filter.subTopicId) {
+          return false;
+        }
       }
     }
 
@@ -476,23 +530,33 @@ function switchPillarFilter(pillarId) {
   const tabAll = document.getElementById('tabFilterAll');
   const tabPhys = document.getElementById('tabFilterPhys');
   const tabMath = document.getElementById('tabFilterMath');
+  const tabFund = document.getElementById('tabFilterFund');
   const secPhys = document.getElementById('pillarFisikaSection');
   const secMath = document.getElementById('pillarMatematikaSection');
+  const secFund = document.getElementById('pillarFundamentalSection');
 
-  [tabAll, tabPhys, tabMath].forEach(t => t && t.classList.remove('active'));
+  [tabAll, tabPhys, tabMath, tabFund].forEach(t => t && t.classList.remove('active'));
 
   if (pillarId === 'all') {
     if (tabAll) tabAll.classList.add('active');
     if (secPhys) secPhys.classList.remove('hidden');
     if (secMath) secMath.classList.remove('hidden');
+    if (secFund) secFund.classList.remove('hidden');
   } else if (pillarId === 'fisika') {
     if (tabPhys) tabPhys.classList.add('active');
     if (secPhys) secPhys.classList.remove('hidden');
     if (secMath) secMath.classList.add('hidden');
+    if (secFund) secFund.classList.add('hidden');
   } else if (pillarId === 'matematika') {
     if (tabMath) tabMath.classList.add('active');
     if (secPhys) secPhys.classList.add('hidden');
     if (secMath) secMath.classList.remove('hidden');
+    if (secFund) secFund.classList.add('hidden');
+  } else if (pillarId === 'fundamental') {
+    if (tabFund) tabFund.classList.add('active');
+    if (secPhys) secPhys.classList.add('hidden');
+    if (secMath) secMath.classList.add('hidden');
+    if (secFund) secFund.classList.remove('hidden');
   }
 }
 
@@ -501,9 +565,11 @@ function renderSyllabusHub() {
 
   const fisikaPillar = window.SYLLABUS_DATA.pillars.find(p => p.id === 'fisika');
   const matematikaPillar = window.SYLLABUS_DATA.pillars.find(p => p.id === 'matematika');
+  const fundamentalPillar = window.SYLLABUS_DATA.pillars.find(p => p.id === 'fundamental');
 
   const containerPhys = document.getElementById('chaptersContainerFisika');
   const containerMath = document.getElementById('chaptersContainerMatematika');
+  const containerFund = document.getElementById('chaptersContainerFundamental');
 
   if (fisikaPillar && containerPhys) {
     containerPhys.innerHTML = fisikaPillar.chapters.map(ch => renderChapterCard(ch, 'fisika')).join('');
@@ -513,8 +579,62 @@ function renderSyllabusHub() {
     containerMath.innerHTML = matematikaPillar.chapters.map(ch => renderChapterCard(ch, 'matematika')).join('');
   }
 
+  if (fundamentalPillar && containerFund) {
+    containerFund.innerHTML = fundamentalPillar.chapters.map(ch => renderChapterCard(ch, 'fundamental')).join('');
+  }
+
+  // Update total chapters in statTotalChapters
+  const statChapters = document.getElementById('statTotalChapters');
+  if (statChapters) {
+    let totalCh = 0;
+    window.SYLLABUS_DATA.pillars.forEach(p => { totalCh += (p.chapters || []).length; });
+    statChapters.textContent = totalCh;
+  }
+
+  // Synchronize checkboxes on syllabus cards
+  syncSyllabusCardCheckboxes();
+
   // Trigger KaTeX for any mathematical indicator formulas in syllabus
   triggerMathTypeset();
+}
+
+function syncSyllabusCardCheckboxes() {
+  if (typeof window === 'undefined' || !window.SYLLABUS_DATA || !window.SYLLABUS_DATA.pillars) return;
+  const selected = state.setupForm.selectedSubTopicIds || new Set();
+
+  window.SYLLABUS_DATA.pillars.forEach(p => {
+    p.chapters.forEach(ch => {
+      let chCount = 0;
+      ch.subTopics.forEach(sub => {
+        const isChecked = selected.has(sub.id);
+        if (isChecked) chCount++;
+        const subChk = document.getElementById(`card-chk-sub-${sub.id}`);
+        if (subChk) subChk.checked = isChecked;
+      });
+
+      const chChk = document.getElementById(`card-chk-ch-${ch.id}`);
+      if (chChk) {
+        if (chCount === ch.subTopics.length) {
+          chChk.checked = true;
+          chChk.indeterminate = false;
+        } else if (chCount === 0) {
+          chChk.checked = false;
+          chChk.indeterminate = false;
+        } else {
+          chChk.checked = false;
+          chChk.indeterminate = true;
+        }
+      }
+    });
+  });
+}
+
+function toggleChapterCheckboxOnCard(chapterId, checked) {
+  toggleSetupChapter(chapterId, checked);
+}
+
+function toggleSubTopicCheckboxOnCard(subTopicId, checked) {
+  toggleSetupSubTopic(subTopicId, checked);
 }
 
 function renderChapterCard(chapter, pillarId) {
@@ -533,6 +653,9 @@ function renderChapterCard(chapter, pillarId) {
       <!-- Accordion Header (Minimal, No cognitive overload) -->
       <div id="accordion-header-${chapter.id}" class="chapter-accordion-header" onclick="toggleChapterAccordion('${chapter.id}')" role="button" aria-expanded="${isOpen}">
         <div class="accordion-header-left">
+          <input type="checkbox" id="card-chk-ch-${chapter.id}" class="tactile-checkbox mr-1" 
+                 onclick="event.stopPropagation(); toggleChapterCheckboxOnCard('${chapter.id}', this.checked)" 
+                 title="Pilih seluruh sub-bab di bab ${chapter.title} untuk drill" />
           <i class="fa-solid fa-chevron-right accordion-chevron"></i>
           <div class="accordion-title-wrap">
             ${isFoundation ? `
@@ -573,6 +696,9 @@ function renderChapterCard(chapter, pillarId) {
               return `
                 <div class="subtopic-compact-row">
                   <div class="subtopic-compact-left">
+                    <input type="checkbox" id="card-chk-sub-${sub.id}" class="tactile-checkbox mr-1" 
+                           onclick="event.stopPropagation(); toggleSubTopicCheckboxOnCard('${sub.id}', this.checked)" 
+                           title="Pilih sub-bab ${sub.title} untuk drill" />
                     <span class="status-dot ${isMastered ? 'dot-mastered' : 'dot-unmastered'}" 
                           title="${isMastered ? 'Materi Terkuasai (100%)' : 'Belum Dikerjakan / Belum Kuasai'}"></span>
                     <span class="subtopic-code">${sub.id}</span>
@@ -598,8 +724,173 @@ function renderChapterCard(chapter, pillarId) {
 }
 
 // ============================================================================
-// 5. DRILL SETUP MODAL / CONFIGURATOR LOGIC
+// 5. DRILL SETUP MODAL / CONFIGURATOR LOGIC (TOPIC SELECTOR & STEPPER)
 // ============================================================================
+
+/**
+ * Render the hierarchical accordion + checkbox topic selector inside modal
+ */
+function renderSetupTopicSelector() {
+  const container = document.getElementById('setupTopicAccordion');
+  if (!container || !window.SYLLABUS_DATA || !window.SYLLABUS_DATA.pillars) return;
+
+  let html = '';
+  window.SYLLABUS_DATA.pillars.forEach(p => {
+    p.chapters.forEach(ch => {
+      html += `
+        <div class="topic-accordion-box" id="setup-box-${ch.id}">
+          <div class="topic-accordion-box-header" onclick="toggleSetupAccordion('${ch.id}')">
+            <div class="topic-header-check-wrap" onclick="event.stopPropagation()">
+              <input type="checkbox" id="setup-chk-ch-${ch.id}" class="tactile-checkbox" onchange="toggleSetupChapter('${ch.id}', this.checked)" title="Pilih Semua Sub-Bab di ${ch.title}">
+              <label for="setup-chk-ch-${ch.id}" class="topic-header-label" onclick="event.stopPropagation()">
+                ${ch.title}
+              </label>
+            </div>
+            <div class="topic-header-meta">
+              <span id="setup-ch-count-${ch.id}" class="topic-count-pill">0 Soal</span>
+              <button type="button" class="topic-chevron-btn" onclick="event.stopPropagation(); toggleSetupAccordion('${ch.id}')" aria-label="Ekspansi Sub-Bab">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="topic-sub-list">
+            ${ch.subTopics.map(sub => `
+              <div class="topic-sub-row">
+                <div class="topic-sub-left">
+                  <input type="checkbox" id="setup-chk-sub-${sub.id}" class="tactile-checkbox" onchange="toggleSetupSubTopic('${sub.id}', this.checked)" title="Pilih ${sub.title}">
+                  <label for="setup-chk-sub-${sub.id}" class="topic-sub-title">
+                    <span class="subtopic-code mr-1">${sub.id}</span>
+                    <span>${sub.title}</span>
+                  </label>
+                </div>
+                <span id="setup-sub-count-${sub.id}" class="subtopic-count-pill">0 Soal</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    });
+  });
+
+  container.innerHTML = html;
+  syncSetupTopicSelectorUI();
+}
+
+/**
+ * Synchronize checkbox states, count pills, and total counter badge in setup modal
+ */
+function syncSetupTopicSelectorUI() {
+  if (!window.SYLLABUS_DATA || !window.SYLLABUS_DATA.pillars) return;
+
+  const selected = state.setupForm.selectedSubTopicIds || new Set();
+
+  window.SYLLABUS_DATA.pillars.forEach(p => {
+    p.chapters.forEach(ch => {
+      let chSelectedCount = 0;
+      let chTotalAvailable = 0;
+
+      ch.subTopics.forEach(sub => {
+        const isChecked = selected.has(sub.id);
+        if (isChecked) chSelectedCount++;
+
+        const subChk = document.getElementById(`setup-chk-sub-${sub.id}`);
+        if (subChk) subChk.checked = isChecked;
+
+        // Calculate available questions for this subtopic based on current difficulties
+        const subMatches = getFilteredQuestions({
+          subTopicId: sub.id,
+          difficulties: state.setupForm.difficulties,
+          progressive: state.setupForm.isProgressive,
+          wrongOnly: state.setupForm.wrongOnly
+        });
+        chTotalAvailable += subMatches.length;
+
+        const subCountEl = document.getElementById(`setup-sub-count-${sub.id}`);
+        if (subCountEl) subCountEl.textContent = `${subMatches.length} Soal`;
+      });
+
+      const chChk = document.getElementById(`setup-chk-ch-${ch.id}`);
+      if (chChk) {
+        if (chSelectedCount === ch.subTopics.length) {
+          chChk.checked = true;
+          chChk.indeterminate = false;
+        } else if (chSelectedCount === 0) {
+          chChk.checked = false;
+          chChk.indeterminate = false;
+        } else {
+          chChk.checked = false;
+          chChk.indeterminate = true;
+        }
+      }
+
+      const chCountEl = document.getElementById(`setup-ch-count-${ch.id}`);
+      if (chCountEl) chCountEl.textContent = `${chTotalAvailable} Soal`;
+    });
+  });
+
+  // Calculate total questions available across currently selected subtopics
+  const totalMatches = getFilteredQuestions({
+    subTopicIds: selected,
+    difficulties: state.setupForm.difficulties,
+    progressive: state.setupForm.isProgressive,
+    wrongOnly: state.setupForm.wrongOnly
+  });
+
+  const badge = document.getElementById('setupTopicCounterBadge');
+  if (badge) {
+    badge.textContent = `Ditemukan ${totalMatches.length} butir soal pada sub-bab terpilih`;
+  }
+}
+
+function selectAllSetupTopics() {
+  state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
+  syncSetupTopicSelectorUI();
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
+}
+
+function resetSetupTopics() {
+  state.setupForm.selectedSubTopicIds = new Set();
+  syncSetupTopicSelectorUI();
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
+}
+
+function toggleSetupChapter(chapterId, checked) {
+  const ch = findChapterById(chapterId);
+  if (!ch) return;
+  if (!state.setupForm.selectedSubTopicIds) state.setupForm.selectedSubTopicIds = new Set();
+  ch.subTopics.forEach(sub => {
+    if (checked) {
+      state.setupForm.selectedSubTopicIds.add(sub.id);
+    } else {
+      state.setupForm.selectedSubTopicIds.delete(sub.id);
+    }
+  });
+  syncSetupTopicSelectorUI();
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
+}
+
+function toggleSetupSubTopic(subTopicId, checked) {
+  if (!state.setupForm.selectedSubTopicIds) state.setupForm.selectedSubTopicIds = new Set();
+  if (checked) {
+    state.setupForm.selectedSubTopicIds.add(subTopicId);
+  } else {
+    state.setupForm.selectedSubTopicIds.delete(subTopicId);
+  }
+  syncSetupTopicSelectorUI();
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
+}
+
+function toggleSetupAccordion(chapterId) {
+  const box = document.getElementById(`setup-box-${chapterId}`);
+  if (box) {
+    box.classList.toggle('open');
+  }
+}
+
 function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'all', scopeTitle = 'Semua Materi') {
   state.setupForm.subject = subject;
   state.setupForm.chapterId = chapterId;
@@ -607,6 +898,28 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   state.setupForm.scopeTitle = scopeTitle;
   state.setupForm.isProgressive = false;
   state.setupForm.wrongOnly = false;
+
+  // Multi-select subTopic selection mapping
+  if (subTopicId !== 'all') {
+    state.setupForm.selectedSubTopicIds = new Set([subTopicId]);
+  } else if (chapterId !== 'all') {
+    const ch = findChapterById(chapterId);
+    state.setupForm.selectedSubTopicIds = ch ? new Set(ch.subTopics.map(s => s.id)) : new Set(getAllSubTopicIds());
+  } else if (subject !== 'all') {
+    const pillar = window.SYLLABUS_DATA.pillars.find(p => p.id === subject);
+    const pSubIds = [];
+    if (pillar && Array.isArray(pillar.chapters)) {
+      pillar.chapters.forEach(ch => {
+        if (Array.isArray(ch.subTopics)) ch.subTopics.forEach(s => pSubIds.push(s.id));
+      });
+    }
+    state.setupForm.selectedSubTopicIds = new Set(pSubIds);
+  } else {
+    // If not already populated, default to all subtopics
+    if (!state.setupForm.selectedSubTopicIds || state.setupForm.selectedSubTopicIds.size === 0) {
+      state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
+    }
+  }
 
   const modal = document.getElementById('drillSetupModal');
   const scopeSubtitle = document.getElementById('setupScopeSubtitle');
@@ -616,6 +929,21 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   const wrongCountBadge = document.getElementById('wrongCountBadge');
   if (wrongCountBadge) {
     wrongCountBadge.textContent = getWrongQuestionsHistory().length;
+  }
+
+  // Render and sync Topic Selector
+  renderSetupTopicSelector();
+
+  // If a specific chapter was targeted, open its accordion inside modal
+  if (chapterId !== 'all') {
+    const box = document.getElementById(`setup-box-${chapterId}`);
+    if (box) box.classList.add('open');
+  } else if (subTopicId !== 'all') {
+    const found = findSubTopicById(subTopicId);
+    if (found && found.chapter) {
+      const box = document.getElementById(`setup-box-${found.chapter.id}`);
+      if (box) box.classList.add('open');
+    }
   }
 
   // Refresh active pills styling
@@ -642,6 +970,7 @@ function toggleSetupDifficulty(diff) {
     arr.push(diff);
   }
   syncSetupPillStyles();
+  syncSetupTopicSelectorUI();
   updateSetupPreviewCount();
 }
 
@@ -649,6 +978,7 @@ function setSetupProgressiveDifficulty() {
   state.setupForm.isProgressive = true;
   state.setupForm.difficulties = ['mudah', 'sedang', 'hots'];
   syncSetupPillStyles();
+  syncSetupTopicSelectorUI();
   updateSetupPreviewCount();
 }
 
@@ -660,6 +990,7 @@ function toggleSetupWrongOnly() {
   }
   state.setupForm.wrongOnly = !state.setupForm.wrongOnly;
   syncSetupPillStyles();
+  syncSetupTopicSelectorUI();
   updateSetupPreviewCount();
 }
 
@@ -690,26 +1021,86 @@ function selectSetupTimerMode(mode) {
   state.setupForm.timerMode = mode;
   const optCountdown = document.getElementById('timerOptCountdown');
   const optStopwatch = document.getElementById('timerOptStopwatch');
-  const details = document.getElementById('setupTimerDetails');
 
   if (optCountdown) optCountdown.className = `config-pill ${mode === 'countdown' ? 'active' : ''}`;
   if (optStopwatch) optStopwatch.className = `config-pill ${mode === 'stopwatch' ? 'active' : ''}`;
 
-  if (details) {
-    if (mode === 'countdown') {
-      details.textContent = 'Batas waktu otomatis dihitung (2 menit × jumlah butir soal) dengan peringatan merah saat sisa < 20%.';
-    } else {
-      details.textContent = 'Stopwatch menghitung maju durasi pengerjaan Anda tanpa batas waktu pemblokiran.';
+  updateReactiveTimerEstimation();
+}
+
+function getSetupFilteredMatches() {
+  return getFilteredQuestions({
+    subTopicIds: state.setupForm.selectedSubTopicIds,
+    difficulties: state.setupForm.difficulties,
+    progressive: state.setupForm.isProgressive,
+    wrongOnly: state.setupForm.wrongOnly
+  });
+}
+
+function updateSetupPreviewCount() {
+  const matches = getSetupFilteredMatches();
+  const maxAvailable = matches.length;
+
+  const countEl = document.getElementById('setupAvailableCount');
+  if (countEl) {
+    countEl.textContent = `Ditemukan ${maxAvailable} butir soal yang sesuai dengan kombinasi filter ini.`;
+  }
+
+  const badge = document.getElementById('setupTopicCounterBadge');
+  if (badge) {
+    badge.textContent = `Ditemukan ${maxAvailable} butir soal pada sub-bab terpilih`;
+  }
+
+  // Update Stepper Max Badge
+  const stepperMaxBadge = document.getElementById('stepperMaxBadge');
+  if (stepperMaxBadge) {
+    stepperMaxBadge.textContent = `(Maks: ${maxAvailable})`;
+  }
+
+  // Clamp current questionCount if needed
+  let currentVal = state.setupForm.questionCount;
+  if (currentVal === 'all') {
+    syncStepperUI(maxAvailable, maxAvailable);
+  } else {
+    let num = typeof currentVal === 'number' ? currentVal : 10;
+    if (maxAvailable === 0) {
+      num = 0;
+    } else if (num > maxAvailable) {
+      num = maxAvailable;
+    } else if (num < 1) {
+      num = 1;
     }
+    state.setupForm.questionCount = num;
+    syncStepperUI(num, maxAvailable);
+  }
+
+  syncCountPillsUI();
+  updateReactiveTimerEstimation();
+}
+
+function syncStepperUI(val, maxAvailable) {
+  const input = document.getElementById('inputQuestionCount');
+  const btnMinus = document.getElementById('btnStepperMinus');
+  const btnPlus = document.getElementById('btnStepperPlus');
+
+  if (input) {
+    input.max = maxAvailable;
+    input.value = val;
+  }
+  if (btnMinus) {
+    btnMinus.disabled = val <= 1 || maxAvailable <= 0;
+  }
+  if (btnPlus) {
+    btnPlus.disabled = val >= maxAvailable || maxAvailable <= 0;
   }
 }
 
-function selectSetupQuestionCount(count) {
-  state.setupForm.questionCount = count;
+function syncCountPillsUI() {
   const buttons = document.querySelectorAll('.setup-count-pill');
+  const count = state.setupForm.questionCount;
   buttons.forEach(btn => {
-    const text = btn.textContent;
-    if (count === 'all' && text.includes('Semua')) {
+    const text = btn.textContent.trim();
+    if (count === 'all' && (text === 'Semua' || text.startsWith('Semua'))) {
       btn.classList.add('active');
     } else if (typeof count === 'number' && text.startsWith(`${count} `)) {
       btn.classList.add('active');
@@ -717,6 +1108,84 @@ function selectSetupQuestionCount(count) {
       btn.classList.remove('active');
     }
   });
+}
+
+function selectSetupQuestionCount(count) {
+  const matches = getSetupFilteredMatches();
+  const maxAvailable = matches.length;
+
+  if (count === 'all') {
+    state.setupForm.questionCount = 'all';
+    syncStepperUI(maxAvailable, maxAvailable);
+  } else {
+    let num = Number(count);
+    if (maxAvailable === 0) num = 0;
+    else if (num > maxAvailable) num = maxAvailable;
+    else if (num < 1) num = 1;
+
+    state.setupForm.questionCount = num;
+    syncStepperUI(num, maxAvailable);
+  }
+
+  syncCountPillsUI();
+  updateReactiveTimerEstimation();
+}
+
+function stepQuestionCount(delta) {
+  const matches = getSetupFilteredMatches();
+  const maxAvailable = matches.length;
+  if (maxAvailable === 0) return;
+
+  let currentVal = state.setupForm.questionCount;
+  let num = currentVal === 'all' ? maxAvailable : (Number(currentVal) || 10);
+  num += delta;
+
+  if (num < 1) num = 1;
+  if (num > maxAvailable) num = maxAvailable;
+
+  state.setupForm.questionCount = num;
+  syncStepperUI(num, maxAvailable);
+  syncCountPillsUI();
+  updateReactiveTimerEstimation();
+}
+
+function handleManualCountInput(val) {
+  const matches = getSetupFilteredMatches();
+  const maxAvailable = matches.length;
+
+  let num = parseInt(val, 10);
+  if (isNaN(num)) return;
+
+  if (maxAvailable === 0) {
+    num = 0;
+  } else if (num < 1) {
+    num = 1;
+  } else if (num > maxAvailable) {
+    num = maxAvailable;
+  }
+
+  state.setupForm.questionCount = num;
+  syncStepperUI(num, maxAvailable);
+  syncCountPillsUI();
+  updateReactiveTimerEstimation();
+}
+
+function updateReactiveTimerEstimation() {
+  const details = document.getElementById('setupTimerDetails');
+  if (!details) return;
+
+  const matches = getSetupFilteredMatches();
+  const maxAvailable = matches.length;
+
+  let activeCount = state.setupForm.questionCount === 'all' ? maxAvailable : Number(state.setupForm.questionCount) || 0;
+  if (activeCount > maxAvailable) activeCount = maxAvailable;
+
+  if (state.setupForm.timerMode === 'countdown') {
+    const mins = activeCount * 2;
+    details.innerHTML = `Batas waktu otomatis: <strong>${mins} menit</strong> (2 menit × ${activeCount} butir soal). Peringatan merah saat sisa waktu &lt; 20%.`;
+  } else {
+    details.innerHTML = `Stopwatch menghitung maju durasi pengerjaan Anda untuk <strong>${activeCount} butir soal</strong> tanpa batas waktu pemblokiran.`;
+  }
 }
 
 function toggleSetupCheckbox(id) {
@@ -728,32 +1197,9 @@ function toggleSetupCheckbox(id) {
   }
 }
 
-function updateSetupPreviewCount() {
-  const countEl = document.getElementById('setupAvailableCount');
-  if (!countEl) return;
-
-  const matches = getFilteredQuestions({
-    subject: state.setupForm.subject,
-    chapterId: state.setupForm.chapterId,
-    subTopicId: state.setupForm.subTopicId,
-    difficulties: state.setupForm.difficulties,
-    progressive: state.setupForm.isProgressive,
-    wrongOnly: state.setupForm.wrongOnly
-  });
-
-  countEl.textContent = `Ditemukan ${matches.length} butir soal yang sesuai dengan kombinasi filter ini.`;
-}
-
 // Start Session from Configurator
 function startConfiguredDrillSession() {
-  const matches = getFilteredQuestions({
-    subject: state.setupForm.subject,
-    chapterId: state.setupForm.chapterId,
-    subTopicId: state.setupForm.subTopicId,
-    difficulties: state.setupForm.difficulties,
-    progressive: state.setupForm.isProgressive,
-    wrongOnly: state.setupForm.wrongOnly
-  });
+  const matches = getSetupFilteredMatches();
 
   if (matches.length === 0) {
     alert('Tidak ada soal yang sesuai dengan kombinasi filter ini. Silakan pilih filter tingkat kesulitan atau cakupan materi lainnya.');
@@ -787,7 +1233,10 @@ function startConfiguredDrillSession() {
   // Setup state for active session
   state.questions = finalQuestions;
   state.currentIndex = 0;
-  state.sessionScope = { ...state.setupForm };
+  state.sessionScope = {
+    ...state.setupForm,
+    selectedSubTopicIds: Array.from(state.setupForm.selectedSubTopicIds || [])
+  };
   state.sessionMode = state.setupForm.mode;
   state.timerMode = state.setupForm.timerMode;
   state.isReviewMode = false;
@@ -924,13 +1373,13 @@ function renderCurrentQuestion(shouldScrollToTop = false) {
     let diffClass = 'badge-neutral';
     let diffLabel = q.difficultyLabel || 'Sedang';
     if (q.difficulty === 'mudah') {
-      diffClass = 'text-green-600 font-bold';
+      diffClass = 'text-green-600 font-medium';
       diffLabel = '🟢 MUDAH';
     } else if (q.difficulty === 'sedang') {
-      diffClass = 'text-amber-600 font-bold';
+      diffClass = 'text-amber-600 font-medium';
       diffLabel = '🟡 SEDANG';
     } else if (q.difficulty === 'hots') {
-      diffClass = 'text-red-600 font-bold';
+      diffClass = 'text-red-600 font-medium';
       diffLabel = '🔴 HOTS / UTBK';
     }
     difficultyBadge.innerHTML = diffLabel;
@@ -1613,10 +2062,38 @@ function bindGlobalEvents() {
 if (typeof window !== 'undefined') {
   window.getFilteredQuestions = getFilteredQuestions;
   window.state = state;
+  window.getAllSubTopicIds = getAllSubTopicIds;
+  window.findChapterById = findChapterById;
+  window.findSubTopicById = findSubTopicById;
+  window.renderSetupTopicSelector = renderSetupTopicSelector;
+  window.syncSetupTopicSelectorUI = syncSetupTopicSelectorUI;
+  window.selectAllSetupTopics = selectAllSetupTopics;
+  window.resetSetupTopics = resetSetupTopics;
+  window.toggleSetupChapter = toggleSetupChapter;
+  window.toggleSetupSubTopic = toggleSetupSubTopic;
+  window.stepQuestionCount = stepQuestionCount;
+  window.handleManualCountInput = handleManualCountInput;
+  window.selectSetupQuestionCount = selectSetupQuestionCount;
+  window.updateSetupPreviewCount = updateSetupPreviewCount;
+  window.openDrillSetupModal = openDrillSetupModal;
+  window.startConfiguredDrillSession = startConfiguredDrillSession;
 }
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     getFilteredQuestions,
-    state
+    state,
+    getAllSubTopicIds,
+    findChapterById,
+    findSubTopicById,
+    selectAllSetupTopics,
+    resetSetupTopics,
+    toggleSetupChapter,
+    toggleSetupSubTopic,
+    stepQuestionCount,
+    handleManualCountInput,
+    selectSetupQuestionCount,
+    updateSetupPreviewCount,
+    openDrillSetupModal,
+    startConfiguredDrillSession
   };
 }

@@ -96,7 +96,9 @@ runTest('Strict Schema & Payload Validation for all questions', () => {
     const context = `Question [${idx}] ID=${q.id} (${q.subTopicId})`;
     assert(typeof q.id === 'string' && q.id.length > 0, `${context}: id must be non-empty string`);
     assert(q.subject === 'FISIKA' || q.subject === 'MATEMATIKA', `${context}: subject must be FISIKA or MATEMATIKA, got ${q.subject}`);
-    assert(q.pillarId === 'fisika' || q.pillarId === 'matematika', `${context}: pillarId must be fisika or matematika`);
+    assert(q.pillarId === 'fisika' || q.pillarId === 'matematika' || q.pillarId === 'fundamental', `${context}: pillarId must be fisika, matematika, or fundamental`);
+    assert(typeof q.bab === 'string' && q.bab.length > 0, `${context}: bab must be non-empty string`);
+    assert(typeof q.subBab === 'string' && q.subBab.length > 0, `${context}: subBab must be non-empty string`);
     assert(expectedChapters.has(q.chapterId), `${context}: chapterId ${q.chapterId} is not in syllabus`);
     assert(expectedSubtopics.has(q.subTopicId), `${context}: subTopicId ${q.subTopicId} is not in syllabus`);
     assert(typeof q.category === 'string' && q.category.length > 0, `${context}: category must be non-empty string`);

@@ -1,7 +1,7 @@
 /**
  * Bank Soal TKA: Fisika (TKA) - Kinematika
  * Sub-topik: Gerak Lurus (fis-kin-2)
- * Indikator: Konsep jarak dan perpindahan (skalar & vektor); kelajuan dan kecepatan; karakteristik dan grafik GLB; karakteristik, rumus, dan grafik GLBB.
+ * Indikator: Jarak & perpindahan (skalar & vektor); kelajuan & kecepatan; karakteristik & grafik GLB; karakteristik, rumus, & grafik GLBB.
  * 
  * Total Butir Soal: 4 Soal (Mudah: 2, Sedang: 2, HOTS: 0)
  * Arsitektur: Modul Mandiri (Browser & Node.js Compatible)
@@ -35,7 +35,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Rumus Kinematika GLBB Dipercepat:</strong><br>\n          $$s = v_0 t + \\frac{1}{2} a t^2$$\n          dengan $v_0$ kecepatan awal, $a$ percepatan, dan $t$ selang waktu.\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li><strong>Identifikasi Variabel:</strong><br>\n            $v_0 = 10\\text{ m/s}$, $a = 2\\text{ m/s}^2$, $t = 5\\text{ s}$.\n          </li>\n          <li><strong>Substitusi ke Persamaan Jarak GLBB:</strong><br>\n            $$s = (10)(5) + \\frac{1}{2}(2)(5^2) = 50 + 25 = 75\\text{ meter}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          <strong>⚠️ Kesalahan Umum:</strong> Lupa memangkatkan waktu $t^2 = 25$ atau lupa mengalikan dengan $\\frac{1}{2}$.\n        </div>\n      "
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lurus",
+    "subTopic": "Gerak Lurus",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "sup-fis-kin-04",
@@ -62,7 +66,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Jarak (Skalar) vs Perpindahan (Vektor):</strong><br>• Jarak ($s$): total panjang lintasan yang ditempuh tanpa memperhatikan arah.<br>• Perpindahan ($\\Delta \\vec{r}$): perubahan posisi terpendek dari titik awal ke titik akhir (vektor).</div>",
       "steps": "<ol><li>Jarak total: $s = 80 + 60 = 140\\text{ meter}$.</li><li>Perpindahan (resultan vektor siku-siku): $|\\Delta \\vec{r}| = \\sqrt{80^2 + 60^2} = \\sqrt{6400 + 3600} = \\sqrt{10000} = 100\\text{ meter}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menyamakan nilai perpindahan dengan jarak total lintasan gerak.</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lurus",
+    "subTopic": "Gerak Lurus",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "sedang-fis-08",
@@ -89,7 +97,11 @@
       "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>Kondisi Pertemuan/Pengejaran Dua Benda:</strong><br>\n          Dua benda yang berangkat dari titik awal yang sama akan bertemu saat jarak tempuh keduanya sama:<br>\n          $$s_A(t) = s_B(t)$$\n        </div>\n      ",
       "steps": "\n        <ol>\n          <li>Persamaan jarak mobil $A$ (GLBB dari diam): $s_A = \\frac{1}{2} a t^2 = \\frac{1}{2}(2) t^2 = t^2$.</li>\n          <li>Persamaan jarak mobil $B$ (GLB): $s_B = v t = 10t$.</li>\n          <li>Samakan jarak tempuh keduanya:\n            $$t^2 = 10t \\implies t(t - 10) = 0$$\n          </li>\n          <li>Karena $t > 0$, maka mobil $A$ menyusul mobil $B$ pada saat $t = 10\\text{ detik}$.</li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Hati-hati: saat $t = 5\\text{ detik}$, kecepatan kedua mobil memang sama ($v_A = a t = 10\\text{ m/s}$), namun mobil $A$ belum menyusul mobil $B$ (jarak $A$ baru $25\\text{ m}$ sedangkan $B$ sudah $50\\text{ m}$).\n        </div>\n      "
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lurus",
+    "subTopic": "Gerak Lurus",
+    "chapterTitle": "Kinematika"
   },
   {
     "id": "sup-fis-kin-05",
@@ -116,7 +128,11 @@
       "concept": "<div class=\"callout-box callout-concept\"><strong>Geometri Luas Kurva Grafik $v-t$:</strong><br>Jarak tempuh total partikel pada gerak satu dimensi sama dengan luas daerah di bawah kurva grafik kecepatan terhadap waktu ($s = \\int v\\,dt = \\text{Luas Bidang}$).</div>",
       "steps": "<ol><li>Bangun di bawah kurva berbentuk trapesium dengan alas bawah $a = 12\\text{ s}$ (dari $t = 0$ hingga $t = 12\\text{ s}$).</li><li>Sisi sejajar atas: selang saat kecepatan konstan $b = 6\\text{ s}$ (dari $t = 4$ hingga $t = 10\\text{ s}$).</li><li>Tinggi trapesium: $h = v_{\\max} = 20\\text{ m/s}$.</li><li>Luas trapesium: $s = \\frac{a + b}{2} \\times h = \\frac{12 + 6}{2} \\times 20 = 9 \\times 20 = 180\\text{ meter}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menghitung sisi sejajar atas $10\\text{ s}$ bukannya durasi kecepatan konstan ($10 - 4 = 6\\text{ s}$).</div>"
-    }
+    },
+    "bab": "Kinematika",
+    "subBab": "Gerak Lurus",
+    "subTopic": "Gerak Lurus",
+    "chapterTitle": "Kinematika"
   }
 ];
 

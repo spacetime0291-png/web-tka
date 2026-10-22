@@ -133,7 +133,10 @@
           <i class="fa-solid fa-bolt-lightning mr-1.5"></i> Pilar 1: Fisika (TKA)
         </button>
         <button id="tabFilterMath" class="pillar-tab-btn tab-math" onclick="switchPillarFilter('matematika')">
-          <i class="fa-solid fa-calculator mr-1.5"></i> Pilar 2: Matematika & Fondasi
+          <i class="fa-solid fa-calculator mr-1.5"></i> Pilar 2: Matematika Lanjut
+        </button>
+        <button id="tabFilterFund" class="pillar-tab-btn tab-fund" onclick="switchPillarFilter('fundamental')">
+          <i class="fa-solid fa-shapes mr-1.5"></i> Pilar 3: Bab Fundamental
         </button>
       </div>
 
@@ -162,17 +165,37 @@
         <div class="pillar-header-banner pillar-math-banner">
           <div>
             <h2 class="font-heading" style="font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
-              <i class="fa-solid fa-calculator text-blue-600"></i> PILAR 2: MATEMATIKA (TKA & Fundamental)
+              <i class="fa-solid fa-calculator text-blue-600"></i> PILAR 2: MATEMATIKA LANJUT (TKA)
             </h2>
             <p style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 2px;">
-              Bab Fundamental (Prasyarat Wajib), Aljabar Lanjut, Geometri & Pengukuran, serta Trigonometri & Limit
+              Aljabar Lanjut, Geometri dan Pengukuran, serta Trigonometri & Kalkulus Dasar
             </p>
           </div>
-          <button class="tactile-btn" style="padding: 6px 14px; font-size: 0.82rem;" onclick="openDrillSetupModal('matematika', 'all', 'all', 'Semua Bab Matematika')">
+          <button class="tactile-btn" style="padding: 6px 14px; font-size: 0.82rem;" onclick="openDrillSetupModal('matematika', 'all', 'all', 'Semua Bab Matematika Lanjut')">
             <i class="fa-solid fa-play mr-1"></i> Drill Matematika
           </button>
         </div>
         <div id="chaptersContainerMatematika" class="chapters-grid">
+          <!-- Dynamically populated via JS from SYLLABUS_DATA -->
+        </div>
+      </section>
+
+      <!-- PILAR 3: BAB FUNDAMENTAL CONTAINER -->
+      <section id="pillarFundamentalSection" class="pillar-section">
+        <div class="pillar-header-banner pillar-fund-banner">
+          <div>
+            <h2 class="font-heading" style="font-size: 1.25rem; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-shapes text-emerald-600"></i> PILAR 3: BAB FUNDAMENTAL (Materi Prasyarat)
+            </h2>
+            <p style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 2px;">
+              Trigonometri Analitik Dasar, Aljabar Elementer, Geometri Bidang, Pertidaksamaan, dan Logaritma
+            </p>
+          </div>
+          <button class="tactile-btn" style="padding: 6px 14px; font-size: 0.82rem;" onclick="openDrillSetupModal('fundamental', 'all', 'all', 'Semua Bab Fundamental')">
+            <i class="fa-solid fa-play mr-1"></i> Drill Fundamental
+          </button>
+        </div>
+        <div id="chaptersContainerFundamental" class="chapters-grid">
           <!-- Dynamically populated via JS from SYLLABUS_DATA -->
         </div>
       </section>
@@ -341,19 +364,19 @@
             </div>
             <div class="shortcut-list">
               <div class="shortcut-row">
-                <span class="text-zinc-600 dark:text-zinc-300">Pilih Opsi</span>
+                <span class="text-slate-500 dark:text-slate-400">Pilih Opsi</span>
                 <div><span class="kbd-badge">A</span> ... <span class="kbd-badge">E</span></div>
               </div>
               <div class="shortcut-row">
-                <span class="text-zinc-600 dark:text-zinc-300">Cek / Pembahasan</span>
+                <span class="text-slate-500 dark:text-slate-400">Cek / Pembahasan</span>
                 <span class="kbd-badge">Enter</span>
               </div>
               <div class="shortcut-row">
-                <span class="text-zinc-600 dark:text-zinc-300">Ganti Soal</span>
+                <span class="text-slate-500 dark:text-slate-400">Ganti Soal</span>
                 <div><span class="kbd-badge">←</span> <span class="kbd-badge">→</span></div>
               </div>
               <div class="shortcut-row">
-                <span class="text-zinc-600 dark:text-zinc-300">Tandai Ragu</span>
+                <span class="text-slate-500 dark:text-slate-400">Tandai Ragu</span>
                 <span class="kbd-badge">R</span>
               </div>
             </div>
@@ -406,11 +429,37 @@
 
       <div class="modal-content-scroll">
         
-        <!-- 1. Filter Tingkat Kesulitan (Multi-Select Pills) -->
+        <!-- 1. Cakupan Bab & Sub-Bab (Hierarchical Multi-Select Accordion) -->
+        <div class="config-group">
+          <label class="config-label">
+            <i class="fa-solid fa-diagram-project text-blue-600"></i>
+            1. Cakupan Bab & Sub-Bab (Pilih Topik):
+          </label>
+          <div class="topic-selector-card">
+            <div class="topic-selector-toolbar">
+              <div class="topic-quick-actions">
+                <button type="button" class="tactile-btn tactile-btn-secondary topic-quick-btn" onclick="selectAllSetupTopics()">
+                  <i class="fa-solid fa-check-double mr-1"></i> Pilih Semua
+                </button>
+                <button type="button" class="tactile-btn tactile-btn-secondary topic-quick-btn" onclick="resetSetupTopics()">
+                  <i class="fa-solid fa-rotate-left mr-1"></i> Reset Pilihan
+                </button>
+              </div>
+              <span id="setupTopicCounterBadge" class="topic-counter-badge">
+                Ditemukan 0 butir soal pada sub-bab terpilih
+              </span>
+            </div>
+            <div id="setupTopicAccordion" class="topic-accordion-container">
+              <!-- Dynamically populated via renderSetupTopicSelector() -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Filter Tingkat Kesulitan (Multi-Select Pills) -->
         <div class="config-group">
           <label class="config-label">
             <i class="fa-solid fa-layer-group text-blue-600"></i>
-            1. Filter Tingkat Kesulitan:
+            2. Filter Tingkat Kesulitan:
           </label>
           <div class="pill-group">
             <button id="pillMudah" class="config-pill active pill-mudah" onclick="toggleSetupDifficulty('mudah')">
@@ -430,15 +479,15 @@
             </button>
           </div>
           <div id="setupAvailableCount" style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 6px;">
-            Ditemukan 38 butir soal pada cakupan ini.
+            Ditemukan 0 butir soal pada cakupan ini.
           </div>
         </div>
 
-        <!-- 2. Mode Pengerjaan -->
+        <!-- 3. Mode Pengerjaan -->
         <div class="config-group">
           <label class="config-label">
             <i class="fa-solid fa-graduation-cap text-orange-600"></i>
-            2. Mode Pengerjaan:
+            3. Mode Pengerjaan:
           </label>
           <div class="mode-card-grid">
             <div id="modeLatihanCard" class="mode-choice-card selected" onclick="selectSetupMode('latihan')">
@@ -460,11 +509,11 @@
           </div>
         </div>
 
-        <!-- 3. Pengaturan Waktu (Timer Mode) -->
+        <!-- 4. Pengaturan Waktu (Timer Mode) -->
         <div class="config-group">
           <label class="config-label">
             <i class="fa-regular fa-clock text-amber-600"></i>
-            3. Pengaturan Waktu:
+            4. Pengaturan Waktu:
           </label>
           <div class="pill-group">
             <button id="timerOptCountdown" class="config-pill active" onclick="selectSetupTimerMode('countdown')">
@@ -479,29 +528,42 @@
           </div>
         </div>
 
-        <!-- 4. Jumlah Soal & Urutan -->
+        <!-- 5. Jumlah Butir Soal & Kontrol Stepper (+1 / -1) -->
         <div class="config-group">
           <label class="config-label">
             <i class="fa-solid fa-list-ol text-purple-600"></i>
-            4. Jumlah Butir Soal:
+            5. Jumlah Butir Soal:
           </label>
-          <div class="pill-group" style="margin-bottom: 12px;">
+          <div class="pill-group" style="margin-bottom: 10px;">
             <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount(5)">5 Soal</button>
             <button class="config-pill setup-count-pill active" onclick="selectSetupQuestionCount(10)">10 Soal</button>
-            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount(15)">15 Soal</button>
-            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount('all')">Semua Tersedia</button>
+            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount(20)">20 Soal</button>
+            <button class="config-pill setup-count-pill" onclick="selectSetupQuestionCount('all')">Semua</button>
+          </div>
+
+          <!-- Stepper (+1 / -1 & Direct Input) -->
+          <div class="stepper-control-row">
+            <span class="stepper-label">Atur Presisi Butir Soal:</span>
+            <div class="tactile-stepper">
+              <button type="button" id="btnStepperMinus" class="stepper-btn" onclick="stepQuestionCount(-1)" title="Kurang 1 butir">-1</button>
+              <input type="number" id="inputQuestionCount" class="stepper-input" min="1" value="10" onchange="handleManualCountInput(this.value)" oninput="handleManualCountInput(this.value)" aria-label="Jumlah Soal Spesifik">
+              <button type="button" id="btnStepperPlus" class="stepper-btn" onclick="stepQuestionCount(1)" title="Tambah 1 butir">+1</button>
+            </div>
+            <span id="stepperMaxBadge" class="stepper-label text-xs">(Maks: 0)</span>
           </div>
 
           <!-- Toggles -->
-          <div class="toggle-row" onclick="toggleSetupCheckbox('chkShuffleQuestions')">
-            <span style="font-size: 0.88rem; font-weight: 600;">Acak Urutan Soal</span>
-            <input type="checkbox" id="chkShuffleQuestions" class="toggle-input hidden" checked>
-            <div class="toggle-switch"></div>
-          </div>
-          <div class="toggle-row" onclick="toggleSetupCheckbox('chkShuffleOptions')">
-            <span style="font-size: 0.88rem; font-weight: 600;">Acak Posisi Opsi (A - E)</span>
-            <input type="checkbox" id="chkShuffleOptions" class="toggle-input hidden" checked>
-            <div class="toggle-switch"></div>
+          <div style="margin-top: 14px;">
+            <div class="toggle-row" onclick="toggleSetupCheckbox('chkShuffleQuestions')">
+              <span style="font-size: 0.88rem; font-weight: 600;">Acak Urutan Soal</span>
+              <input type="checkbox" id="chkShuffleQuestions" class="toggle-input hidden" checked>
+              <div class="toggle-switch"></div>
+            </div>
+            <div class="toggle-row" onclick="toggleSetupCheckbox('chkShuffleOptions')">
+              <span style="font-size: 0.88rem; font-weight: 600;">Acak Posisi Opsi (A - E)</span>
+              <input type="checkbox" id="chkShuffleOptions" class="toggle-input hidden" checked>
+              <div class="toggle-switch"></div>
+            </div>
           </div>
         </div>
 
