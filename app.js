@@ -247,6 +247,7 @@ function getFilteredQuestions(filter = {}) {
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
     initTheme();
+    state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
     renderSyllabusHub();
     updateGlobalCounters();
     bindGlobalEvents();
@@ -506,10 +507,18 @@ function updateGlobalCounters() {
   const total = mudahCount + sedangCount + hotsCount;
 
   const statTotal = document.getElementById('statTotalBankQuestions');
+  const statChapters = document.getElementById('statTotalChapters');
   const statTier = document.getElementById('statTierBreakdown');
   const statMastery = document.getElementById('statOverallMastery');
 
   if (statTotal) statTotal.textContent = total;
+  if (statChapters && window.SYLLABUS_DATA && Array.isArray(window.SYLLABUS_DATA.pillars)) {
+    let totalChapters = 0;
+    window.SYLLABUS_DATA.pillars.forEach(p => {
+      totalChapters += (p.chapters || []).length;
+    });
+    statChapters.textContent = totalChapters;
+  }
   if (statTier) {
     statTier.innerHTML = `<span style="color: #16A34A;">${mudahCount} M</span> • <span style="color: #D97706;">${sedangCount} S</span> • <span style="color: #DC2626;">${hotsCount} H</span>`;
   }
@@ -694,7 +703,7 @@ function renderChapterCard(chapter, pillarId) {
               const subQuestions = getFilteredQuestions({ subTopicId: sub.id, wrongOnly: false });
               const isMastered = subQuestions.length > 0 && subQuestions.every(q => mastery[q.id] && mastery[q.id].correct > 0);
               return `
-                <div class="subtopic-compact-row">
+                <div class="subtopic-compact-row" onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.title}')" style="cursor: pointer;" title="Klik untuk latihan instan sub-bab ${sub.title}">
                   <div class="subtopic-compact-left">
                     <input type="checkbox" id="card-chk-sub-${sub.id}" class="tactile-checkbox mr-1" 
                            onclick="event.stopPropagation(); toggleSubTopicCheckboxOnCard('${sub.id}', this.checked)" 
@@ -707,7 +716,7 @@ function renderChapterCard(chapter, pillarId) {
                   <div class="subtopic-compact-right">
                     <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
                     <button class="tactile-btn tactile-btn-compact" 
-                            onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.id} - ${sub.title}')"
+                            onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.title}')"
                             title="Latih Sub-Topik Ini">
                       <i class="fa-solid fa-bullseye"></i>
                       <span>Latih</span>
@@ -758,7 +767,7 @@ function renderSetupTopicSelector() {
               <div class="topic-sub-row">
                 <div class="topic-sub-left">
                   <input type="checkbox" id="setup-chk-sub-${sub.id}" class="tactile-checkbox" onchange="toggleSetupSubTopic('${sub.id}', this.checked)" title="Pilih ${sub.title}">
-                  <label for="setup-chk-sub-${sub.id}" class="topic-sub-title">
+                  <label for="setup-chk-sub-${sub.id}" class="topic-sub-title" id="setup-label-sub-${sub.id}">
                     <span class="subtopic-code mr-1">${sub.id}</span>
                     <span>${sub.title}</span>
                   </label>
@@ -795,6 +804,11 @@ function syncSetupTopicSelectorUI() {
 
         const subChk = document.getElementById(`setup-chk-sub-${sub.id}`);
         if (subChk) subChk.checked = isChecked;
+
+        const subLabel = document.getElementById(`setup-label-sub-${sub.id}`);
+        if (subLabel) {
+          subLabel.style.fontWeight = isChecked ? '500' : '400';
+        }
 
         // Calculate available questions for this subtopic based on current difficulties
         const subMatches = getFilteredQuestions({
@@ -838,7 +852,7 @@ function syncSetupTopicSelectorUI() {
 
   const badge = document.getElementById('setupTopicCounterBadge');
   if (badge) {
-    badge.textContent = `Ditemukan ${totalMatches.length} butir soal pada sub-bab terpilih`;
+    badge.textContent = `Tersedia ${totalMatches.length} butir soal pada sub-bab terpilih`;
   }
 }
 
@@ -915,10 +929,8 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
     }
     state.setupForm.selectedSubTopicIds = new Set(pSubIds);
   } else {
-    // If not already populated, default to all subtopics
-    if (!state.setupForm.selectedSubTopicIds || state.setupForm.selectedSubTopicIds.size === 0) {
-      state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
-    }
+    // Default to all subtopics across all 14 chapters
+    state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
   }
 
   const modal = document.getElementById('drillSetupModal');
@@ -934,19 +946,20 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   // Render and sync Topic Selector
   renderSetupTopicSelector();
 
-  // If a specific chapter was targeted, open its accordion inside modal
-  if (chapterId !== 'all') {
-    const box = document.getElementById(`setup-box-${chapterId}`);
-    if (box) box.classList.add('open');
-  } else if (subTopicId !== 'all') {
+  // Close all accordion boxes in setup modal first, then expand targeted chapter
+  document.querySelectorAll('.topic-accordion-box').forEach(b => b.classList.remove('open'));
+  if (subTopicId !== 'all') {
     const found = findSubTopicById(subTopicId);
     if (found && found.chapter) {
       const box = document.getElementById(`setup-box-${found.chapter.id}`);
       if (box) box.classList.add('open');
     }
+  } else if (chapterId !== 'all') {
+    const box = document.getElementById(`setup-box-${chapterId}`);
+    if (box) box.classList.add('open');
   }
 
-  // Refresh active pills styling
+  // Refresh active pills styling and question count preview
   syncSetupPillStyles();
   updateSetupPreviewCount();
 
@@ -1040,15 +1053,20 @@ function getSetupFilteredMatches() {
 function updateSetupPreviewCount() {
   const matches = getSetupFilteredMatches();
   const maxAvailable = matches.length;
+  const selectedCount = state.setupForm.selectedSubTopicIds ? state.setupForm.selectedSubTopicIds.size : 0;
 
+  const countTextEl = document.getElementById('setupAvailableCountText');
   const countEl = document.getElementById('setupAvailableCount');
-  if (countEl) {
-    countEl.textContent = `Ditemukan ${maxAvailable} butir soal yang sesuai dengan kombinasi filter ini.`;
+  const formattedMsg = `Tersedia ${maxAvailable} butir soal (dari ${selectedCount} sub-bab & tingkat kesulitan terpilih)`;
+  if (countTextEl) {
+    countTextEl.textContent = formattedMsg;
+  } else if (countEl) {
+    countEl.textContent = formattedMsg;
   }
 
   const badge = document.getElementById('setupTopicCounterBadge');
   if (badge) {
-    badge.textContent = `Ditemukan ${maxAvailable} butir soal pada sub-bab terpilih`;
+    badge.textContent = `Tersedia ${maxAvailable} butir soal pada sub-bab terpilih`;
   }
 
   // Update Stepper Max Badge
@@ -1057,7 +1075,28 @@ function updateSetupPreviewCount() {
     stepperMaxBadge.textContent = `(Maks: ${maxAvailable})`;
   }
 
-  // Clamp current questionCount if needed
+  // Handle empty state: warning & disable start button
+  const warningEl = document.getElementById('setupEmptyWarning');
+  const btnStart = document.getElementById('btnStartDrillSession');
+  if (maxAvailable === 0) {
+    if (warningEl) warningEl.classList.remove('hidden');
+    if (btnStart) {
+      btnStart.disabled = true;
+      btnStart.style.opacity = '0.5';
+      btnStart.style.pointerEvents = 'none';
+      btnStart.title = 'Pilih minimal 1 sub-bab yang memiliki soal';
+    }
+  } else {
+    if (warningEl) warningEl.classList.add('hidden');
+    if (btnStart) {
+      btnStart.disabled = false;
+      btnStart.style.opacity = '1';
+      btnStart.style.pointerEvents = 'auto';
+      btnStart.title = '';
+    }
+  }
+
+  // Clamp / default current questionCount
   let currentVal = state.setupForm.questionCount;
   if (currentVal === 'all') {
     syncStepperUI(maxAvailable, maxAvailable);
@@ -1065,8 +1104,8 @@ function updateSetupPreviewCount() {
     let num = typeof currentVal === 'number' ? currentVal : 10;
     if (maxAvailable === 0) {
       num = 0;
-    } else if (num > maxAvailable) {
-      num = maxAvailable;
+    } else if (num > maxAvailable || num === 0) {
+      num = Math.min(10, maxAvailable);
     } else if (num < 1) {
       num = 1;
     }
@@ -1086,6 +1125,7 @@ function syncStepperUI(val, maxAvailable) {
   if (input) {
     input.max = maxAvailable;
     input.value = val;
+    input.disabled = maxAvailable <= 0;
   }
   if (btnMinus) {
     btnMinus.disabled = val <= 1 || maxAvailable <= 0;
@@ -1102,7 +1142,7 @@ function syncCountPillsUI() {
     const text = btn.textContent.trim();
     if (count === 'all' && (text === 'Semua' || text.startsWith('Semua'))) {
       btn.classList.add('active');
-    } else if (typeof count === 'number' && text.startsWith(`${count} `)) {
+    } else if (typeof count === 'number' && text === `${count} Soal`) {
       btn.classList.add('active');
     } else {
       btn.classList.remove('active');
@@ -2077,6 +2117,8 @@ if (typeof window !== 'undefined') {
   window.updateSetupPreviewCount = updateSetupPreviewCount;
   window.openDrillSetupModal = openDrillSetupModal;
   window.startConfiguredDrillSession = startConfiguredDrillSession;
+  window.syncCountPillsUI = syncCountPillsUI;
+  window.updateGlobalCounters = updateGlobalCounters;
 }
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
@@ -2094,6 +2136,8 @@ if (typeof module !== 'undefined' && module.exports) {
     selectSetupQuestionCount,
     updateSetupPreviewCount,
     openDrillSetupModal,
-    startConfiguredDrillSession
+    startConfiguredDrillSession,
+    syncCountPillsUI,
+    updateGlobalCounters
   };
 }

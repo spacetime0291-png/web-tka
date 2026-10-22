@@ -22,14 +22,28 @@ global.localStorage = {
 };
 
 // Mock minimal DOM for modal elements
+const mockPills = [
+  { textContent: '5 Soal', classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  { textContent: '10 Soal', classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  { textContent: '20 Soal', classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  { textContent: 'Semua', classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } }
+];
+
 const mockElements = {
   setupAvailableCount: { textContent: '' },
+  setupAvailableCountText: { textContent: '' },
   setupTopicCounterBadge: { textContent: '' },
   stepperMaxBadge: { textContent: '' },
-  inputQuestionCount: { value: '10', max: 0 },
+  inputQuestionCount: { value: '10', max: 0, disabled: false },
   btnStepperMinus: { disabled: false },
   btnStepperPlus: { disabled: false },
-  setupTimerDetails: { innerHTML: '', textContent: '' }
+  btnStartDrillSession: { disabled: false, style: {}, classList: { remove() {}, add() {} }, removeAttribute() {} },
+  setupEmptyWarning: { classList: { _classes: new Set(['hidden']), add(c) { this._classes.add(c); }, remove(c) { this._classes.delete(c); }, contains(c) { return this._classes.has(c); } } },
+  setupTimerDetails: { innerHTML: '', textContent: '' },
+  statTotalBankQuestions: { textContent: '' },
+  statTotalChapters: { textContent: '' },
+  statTierBreakdown: { innerHTML: '' },
+  statOverallMastery: { textContent: '' }
 };
 
 global.document = {
@@ -38,6 +52,7 @@ global.document = {
     return mockElements[id] || null;
   },
   querySelectorAll(selector) {
+    if (selector === '.setup-count-pill') return mockPills;
     return [];
   }
 };
@@ -80,14 +95,17 @@ const fund = pillars.find(p => p.id === 'fundamental');
 
 assert(fisika && fisika.chapters.length === 6, 'Fisika must have 6 chapters (Kinematika, Dinamika, Fluida, Gelombang, Kalor, Kelistrikan)');
 assert(mtk && mtk.chapters.length === 3, 'Matematika Lanjut must have 3 chapters (Aljabar, Geometri dan Pengukuran, Trigonometri & Kalkulus Dasar)');
-assert(fund && fund.chapters.length === 1 && fund.chapters[0].subTopics.length === 5, 'Bab Fundamental must have 5 sub-bab (Trigo Dasar, Aljabar Elem, Geo Bidang, Pertidaksamaan, Eksponen Logaritma)');
+assert(fund && fund.chapters.length === 5, 'Bab Fundamental must have 5 chapters (Trigo Dasar, Aljabar Elem, Geo Bidang, Pertidaksamaan, Eksponen Logaritma)');
 
-// Check Doppler, Taraf Intensitas, Pipa Organa in Gelombang Bunyi
+// Check Gelombang 6 sub-topics
 const gelombang = fisika.chapters.find(c => c.id === 'fis-gel');
-assert(gelombang, 'Gelombang chapter exists');
-const bunyiSub = gelombang.subTopics.find(s => s.id === 'fis-gel-1');
-assert(bunyiSub && bunyiSub.indicators.includes('efek Doppler') && bunyiSub.indicators.includes('taraf intensitas') && bunyiSub.indicators.includes('pipa organa'),
-  'Gelombang Bunyi indicators must explicitly cover dawai & pipa organa, intensitas & taraf intensitas, efek Doppler');
+assert(gelombang && gelombang.subTopics.length === 6, 'Gelombang chapter must have 6 subtopics');
+const dopplerSub = gelombang.subTopics.find(s => s.id === 'fis-gel-4');
+assert(dopplerSub && (dopplerSub.title.includes('Doppler') || dopplerSub.indicators.includes('Doppler')), 'fis-gel-4 covers Efek Doppler');
+const intensitasSub = gelombang.subTopics.find(s => s.id === 'fis-gel-3');
+assert(intensitasSub && (intensitasSub.title.includes('Intensitas') || intensitasSub.indicators.includes('Intensitas')), 'fis-gel-3 covers Intensitas Bunyi');
+const organaSub = gelombang.subTopics.find(s => s.id === 'fis-gel-2');
+assert(organaSub && (organaSub.title.includes('Pipa Organa') || organaSub.indicators.includes('pipa organa')), 'fis-gel-2 covers Dawai dan Pipa Organa');
 
 // ----------------------------------------------------
 // TEST 2: Question Bank Metadata Mapping
@@ -104,15 +122,15 @@ assert(missingMetadata.length === 0, `All 239 questions must have non-empty bab,
 // ----------------------------------------------------
 console.log('\n--- TEST GROUP 3: MULTI-SELECT SUB-BAB FILTERING ---');
 
-// Case A: Select specific cross-chapter subtopics: Efek Doppler/Bunyi (fis-gel-1), Cahaya (fis-gel-2), Limit (mtk-tri-1)
-const crossSelection = new Set(['fis-gel-1', 'fis-gel-2', 'mtk-tri-1']);
+// Case A: Select specific cross-chapter subtopics: Efek Doppler (fis-gel-4), Cahaya (fis-gel-5), Limit (mtk-tri-1)
+const crossSelection = new Set(['fis-gel-4', 'fis-gel-5', 'mtk-tri-1']);
 const crossFiltered = app.getFilteredQuestions({ subTopicIds: crossSelection });
 assert(crossFiltered.length > 0, `Cross-chapter multi-select returned ${crossFiltered.length} questions`);
 assert(crossFiltered.every(q => crossSelection.has(q.subTopicId)), 'All returned questions must strictly match the selected subTopicIds');
 
 // Case B: Select All Subtopics
 const allSubTopicIds = app.getAllSubTopicIds();
-assert(allSubTopicIds.length === 28, `Syllabus must have exactly 28 sub-topics (found: ${allSubTopicIds.length})`);
+assert(allSubTopicIds.length === 32, `Syllabus must have exactly 32 sub-topics (found: ${allSubTopicIds.length})`);
 
 const allFiltered = app.getFilteredQuestions({ subTopicIds: new Set(allSubTopicIds) });
 assert(allFiltered.length === 239, `Selecting all subtopics must return all 239 questions (found: ${allFiltered.length})`);
@@ -210,6 +228,53 @@ assert(!boldJsMatches, `app.js must have 0 occurrences of font-bold (found: ${bo
 // Check line-height 1.8 and letter-spacing -0.01em in styles.css
 assert(cssContent.includes('line-height: 1.8') && cssContent.includes('letter-spacing: -0.01em'),
   'styles.css must enforce line-height: 1.8 and letter-spacing: -0.01em for problem and solution text');
+
+// ----------------------------------------------------
+// TEST 7: Setup Modal Auto-Select & Zero-Count Handling
+// ----------------------------------------------------
+console.log('\n--- TEST GROUP 7: SETUP MODAL & ZERO-COUNT HANDLING ---');
+
+// Case A: Direct Subtopic Drill opens with only that subtopic
+app.openDrillSetupModal('fisika', 'fis-gel', 'fis-gel-4', 'Efek Doppler');
+assert(app.state.setupForm.selectedSubTopicIds.size === 1 && app.state.setupForm.selectedSubTopicIds.has('fis-gel-4'),
+  'Direct Subtopic Drill selects only that specific subtopic (fis-gel-4)');
+assert(app.state.setupForm.questionCount === 4, 'Direct drill on Efek Doppler defaults questionCount to available count (4)');
+
+// Case B: Chapter Drill selects all subtopics of that chapter
+app.openDrillSetupModal('fisika', 'fis-kin', 'all', 'Kinematika');
+assert(app.state.setupForm.selectedSubTopicIds.size === 3, 'Chapter drill on Kinematika selects all 3 subtopics of Kinematika');
+
+// Case C: Global Drill selects all 32 subtopics across all 14 chapters
+app.openDrillSetupModal('all', 'all', 'all', 'Semua Materi');
+assert(app.state.setupForm.selectedSubTopicIds.size === 32, 'Global drill auto-selects all 32 subtopics across 14 chapters');
+
+// Case D: Zero-Count State handling
+app.state.setupForm.selectedSubTopicIds = new Set();
+app.updateSetupPreviewCount();
+assert(mockElements.btnStartDrillSession.disabled === true, 'Mulai Sesi button is disabled when available questions == 0');
+assert(!mockElements.setupEmptyWarning.classList.contains('hidden'), 'Empty warning alert is visible when available questions == 0');
+
+// Case E: Preset highlights are unhighlighted on custom count
+app.state.setupForm.selectedSubTopicIds = new Set(allSubTopicIds);
+app.updateSetupPreviewCount();
+app.stepQuestionCount(1); // 11
+app.syncCountPillsUI();
+assert(!mockPills.some(p => p.classList.contains('active')), 'Preset pills are unhighlighted when count does not match 5, 10, 20, or Semua');
+
+app.selectSetupQuestionCount(10);
+assert(mockPills.find(p => p.textContent === '10 Soal').classList.contains('active'), 'Preset pill 10 Soal is active when count is 10');
+
+// Case F: Dynamic Homepage Counter Calculation
+app.updateGlobalCounters();
+assert(Number(mockElements.statTotalChapters.textContent) === 14, 'statTotalChapters dynamically computes exactly 14 chapters');
+assert(Number(mockElements.statTotalBankQuestions.textContent) === 239, 'statTotalBankQuestions dynamically computes exactly 239 questions');
+
+// Case G: No <strong> tags in Hero and Exam banner in index.html
+const indexHtmlContent = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf-8');
+const heroStrongMatch = indexHtmlContent.match(/syllabus-hero[\s\S]*?<\/p>/);
+assert(heroStrongMatch && !heroStrongMatch[0].includes('<strong>'), 'Hero description has 0 <strong> tags');
+const examStrongMatch = indexHtmlContent.match(/id="examLockedNotice"[\s\S]*?<\/div>/);
+assert(examStrongMatch && !examStrongMatch[0].includes('<strong>'), 'Exam locked notice has 0 <strong> tags');
 
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);

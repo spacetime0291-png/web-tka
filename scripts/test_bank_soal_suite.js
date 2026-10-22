@@ -52,9 +52,10 @@ console.log(`Identified ${expectedSubtopics.size} official subtopics across ${ex
 // Load modular master index
 const { subtopics, allQuestions, questionsMudah, questionsSedang, questionsHots } = require('../data/bank-soal/index.js');
 
-// Test 1: All 28 syllabus subtopics exist in the modular registry
-runTest('All 28 syllabus subtopics are registered in modular bank', () => {
-  assert.strictEqual(expectedSubtopics.size, 28, 'Should have exactly 28 official subtopics');
+// Test 1: All 32 syllabus subtopics exist in the modular registry
+runTest('All 32 syllabus subtopics are registered in modular bank', () => {
+  assert.strictEqual(expectedSubtopics.size, 32, 'Should have exactly 32 official subtopics');
+  assert.strictEqual(expectedChapters.size, 14, 'Should have exactly 14 official chapters');
   expectedSubtopics.forEach((info, subTopicId) => {
     assert(subtopics[subTopicId], `Subtopic ${subTopicId} (${info.title}) must exist in subtopics index`);
     assert(Array.isArray(subtopics[subTopicId]), `Subtopic ${subTopicId} must export an array of questions`);

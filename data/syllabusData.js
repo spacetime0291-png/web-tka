@@ -94,13 +94,33 @@ window.SYLLABUS_DATA = {
           subTopics: [
             {
               id: "fis-gel-1",
-              title: "Gelombang Bunyi",
-              indicators: "Karakteristik rambatan gelombang mekanik bunyi; sumber bunyi (dawai & pipa organa); intensitas & taraf intensitas bunyi; efek Doppler."
+              title: "Karakteristik Gelombang Bunyi",
+              indicators: "Karakteristik rambatan gelombang mekanik bunyi; cepat rambat bunyi pada berbagai medium; pelayangan bunyi; resonansi tabung kolom udara."
             },
             {
               id: "fis-gel-2",
-              title: "Gelombang Cahaya",
-              indicators: "Spektrum gelombang elektromagnetik; pemantulan & pembiasan cahaya; bayangan cermin (datar, cekung, cembung); bayangan lensa (cekung, cembung); alat optik (mata, kacamata, lup, mikroskop, teropong)."
+              title: "Dawai dan Pipa Organa",
+              indicators: "Sumber bunyi dawai & hukum Melde; pipa organa terbuka & tertutup; frekuensi nada dasar & nada atas."
+            },
+            {
+              id: "fis-gel-3",
+              title: "Intensitas dan Taraf Intensitas Bunyi",
+              indicators: "Intensitas bunyi sumber titik isotropis; taraf intensitas bunyi ($dB$); hubungan taraf intensitas dengan jarak dan pelipatan sumber bunyi."
+            },
+            {
+              id: "fis-gel-4",
+              title: "Efek Doppler",
+              indicators: "Efek Doppler: pergeseran frekuensi bunyi terdeteksi akibat gerak relatif sumber bunyi dan pendengar (saling mendekat & menjauh)."
+            },
+            {
+              id: "fis-gel-5",
+              title: "Pemantulan & Pembiasan Cahaya",
+              indicators: "Spektrum gelombang elektromagnetik; hukum Snellius; pembiasan & pemantulan total sempurna; interferensi & difraksi celah ganda."
+            },
+            {
+              id: "fis-gel-6",
+              title: "Alat Optik (Cermin & Lensa)",
+              indicators: "Bayangan cermin datar, cekung, cembung; lensa konvergen & divergen; kuat lensa (dioptri); alat optik kacamata, lup, mikroskop, teropong."
             }
           ]
         },
@@ -234,35 +254,75 @@ window.SYLLABUS_DATA = {
       description: "Fondasi aljabar, trigonometri, dan geometri analitik prasyarat mutlak untuk menyelesaikan seluruh materi TKA tingkat lanjut.",
       chapters: [
         {
-          id: "mtk-fun",
-          title: "Bab Fundamental",
+          id: "fun-tri",
+          title: "Trigonometri Analitik Dasar",
           order: 1,
           isFoundation: true,
           badge: "FONDASI",
-          description: "Fondasi aljabar, trigonometri, dan geometri analitik prasyarat mutlak untuk menyelesaikan seluruh materi TKA tingkat lanjut.",
+          description: "Perbandingan sisi segitiga siku-siku, sudut istimewa kuadran, identitas Pythagoras, sudut rangkap, serta jumlah dan selisih sudut.",
           subTopics: [
             {
-              id: "mtk-fun-1",
+              id: "fun-tri-1",
               title: "Trigonometri Analitik Dasar",
               indicators: "Perbandingan sisi ($\\sin, \\cos, \\tan$) segitiga siku-siku; sudut istimewa kuadran I; relasi sudut kuadran II, III, IV; identitas Pythagoras ($\\sin^2 x + \\cos^2 x = 1$); sudut rangkap ($\\sin 2x, \\cos 2x$); jumlah & selisih sudut sinus & kosinus."
-            },
+            }
+          ]
+        },
+        {
+          id: "fun-alj",
+          title: "Aljabar Elementer",
+          order: 2,
+          isFoundation: true,
+          badge: "FONDASI",
+          description: "Pengelompokan suku sejenis, pemfaktoran kuadrat, penyederhanaan pecahan aljabar, dan penyelesaian SPLDV & SPLTV.",
+          subTopics: [
             {
-              id: "mtk-fun-2",
+              id: "fun-alj-1",
               title: "Aljabar Elementer",
               indicators: "Pengelompokan suku sejenis & pemfaktoran kuadrat; penyederhanaan pecahan aljabar; substitusi & eliminasi SPLDV & SPLTV."
-            },
+            }
+          ]
+        },
+        {
+          id: "fun-geo",
+          title: "Geometri Analitik Bidang",
+          order: 3,
+          isFoundation: true,
+          badge: "FONDASI",
+          description: "Koordinat Kartesius, jarak antartitik, persamaan garis lurus, gradien sejajar dan tegak lurus, serta jarak titik ke garis.",
+          subTopics: [
             {
-              id: "mtk-fun-3",
+              id: "fun-geo-1",
               title: "Geometri Analitik Bidang",
               indicators: "Koordinat Kartesius & jarak antartitik; persamaan garis lurus ($y = mx + c$, $ax + by + c = 0$); gradien garis sejajar ($m_1 = m_2$) & tegak lurus ($m_1 \\cdot m_2 = -1$); jarak titik ke garis lurus."
-            },
+            }
+          ]
+        },
+        {
+          id: "fun-mut",
+          title: "Pertidaksamaan dan Nilai Mutlak",
+          order: 4,
+          isFoundation: true,
+          badge: "FONDASI",
+          description: "Syarat pecahan dan bentuk akar terdefinisi, serta sifat persamaan dan pertidaksamaan nilai mutlak.",
+          subTopics: [
             {
-              id: "mtk-fun-4",
+              id: "fun-mut-1",
               title: "Pertidaksamaan dan Nilai Mutlak",
               indicators: "Syarat pecahan terdefinisi; syarat bentuk akar terdefinisi; sifat persamaan & pertidaksamaan nilai mutlak."
-            },
+            }
+          ]
+        },
+        {
+          id: "fun-eks",
+          title: "Eksponen dan Logaritma",
+          order: 5,
+          isFoundation: true,
+          badge: "FONDASI",
+          description: "Aturan pangkat bulat & rasional, sifat perpangkatan, sifat operasi logaritma, dan perubahan basis logaritma.",
+          subTopics: [
             {
-              id: "mtk-fun-5",
+              id: "fun-eks-1",
               title: "Eksponen dan Logaritma",
               indicators: "Aturan pangkat bulat & rasional; perpangkatan basis bilangan asli; sifat penjumlahan, pengurangan, perpangkatan numerus logaritma; perubahan basis logaritma."
             }

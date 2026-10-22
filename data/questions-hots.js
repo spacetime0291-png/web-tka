@@ -159,8 +159,8 @@ window.QUESTIONS_HOTS = [
     "id": "hots-mtk-03",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "mtk-fun",
-    "subTopicId": "mtk-fun-1",
+    "chapterId": "fun-tri",
+    "subTopicId": "fun-tri-1",
     "category": "Sifat Simetri & Identitas Trigonometri Lanjut",
     "difficulty": "hots",
     "difficultyLabel": "HOTS / Setara UTBK-STEI",
@@ -181,10 +181,10 @@ window.QUESTIONS_HOTS = [
       "steps": "\n        <ol>\n          <li>Terapkan substitusi $x \\to \\pi - x$:\n            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)} \\, dx = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin x}{1 + \\cos^2 x} \\, dx$$\n          </li>\n          <li>Jumlahkan kedua bentuk $I$:\n            $$2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx \\implies I = \\frac{\\pi}{2} \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx$$\n          </li>\n          <li>Substitusi $u = \\cos x \\implies du = -\\sin x \\, dx$.<br>\n            Saat $x = 0 \\implies u = 1$; saat $x = \\pi \\implies u = -1$:\n            $$I = \\frac{\\pi}{2} \\int_{1}^{-1} \\frac{-du}{1 + u^2} = \\frac{\\pi}{2} \\int_{-1}^{1} \\frac{du}{1 + u^2}$$\n          </li>\n          <li>Anti-turunan baku $\\arctan(u)$:\n            $$I = \\frac{\\pi}{2} [\\arctan(1) - \\arctan(-1)] = \\frac{\\pi}{2} \\left[ \\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) \\right] = \\frac{\\pi}{2} \\left( \\frac{\\pi}{2} \\right) = \\frac{\\pi^2}{4}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa mengalikan $\\frac{\\pi}{2}$ dengan hasil integral $\\frac{\\pi}{2}$, sehingga mendapatkan $\\frac{\\pi}{2}$ atau salah tanda saat integrasi substitusi $u = \\cos x$.\n        </div>\n      "
     },
-    "bab": "Bab Fundamental",
+    "bab": "Trigonometri Analitik Dasar",
     "subBab": "Trigonometri Analitik Dasar",
     "subTopic": "Trigonometri Analitik Dasar",
-    "chapterTitle": "Bab Fundamental"
+    "chapterTitle": "Trigonometri Analitik Dasar"
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_HOTS;

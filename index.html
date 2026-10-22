@@ -93,7 +93,7 @@
             </div>
             <h1 class="font-heading" style="font-size: 1.65rem; margin-bottom: 6px;">Platform Drilling Fisika & Matematika</h1>
             <p class="text-zinc-600 dark:text-zinc-300" style="font-size: 0.92rem; max-width: 680px; line-height: 1.6;">
-              Arsitektur drilling modular 3-tier difficulty (<strong>Mudah</strong>, <strong>Sedang</strong>, <strong>HOTS</strong>) yang terstruktur berdasarkan silabus lengkap Fisika TKA dan Matematika (termasuk <strong>Bab Fundamental / Materi Prasyarat</strong>).
+              Arsitektur drilling modular 3-tier difficulty (<span class="font-medium text-emerald-600 dark:text-emerald-400">Mudah</span>, <span class="font-medium text-amber-600 dark:text-amber-400">Sedang</span>, <span class="font-medium text-rose-600 dark:text-rose-400">HOTS</span>) yang terstruktur berdasarkan silabus lengkap Fisika TKA dan Matematika (termasuk <span class="font-medium text-blue-600 dark:text-blue-400">Bab Fundamental / Materi Prasyarat</span>).
             </p>
           </div>
           <button class="tactile-btn tactile-btn-primary" onclick="openDrillSetupModal('all', 'all', 'all', 'Simulasi Campuran TKA (Fisika & Matematika)')">
@@ -244,7 +244,7 @@
             <!-- In Exam Mode: Locked Notice Banner -->
             <div id="examLockedNotice" class="exam-locked-banner hidden">
               <i class="fa-solid fa-lock text-lg"></i>
-              <span><strong>Mode Ujian (Simulasi TKA):</strong> Pembahasan dan verifikasi kunci jawaban dikunci hingga seluruh sesi selesai dan Anda menekan tombol "Selesai & Kumpulkan".</span>
+              <span><span class="font-medium text-red-700 dark:text-red-400">Mode Ujian (Simulasi TKA):</span> Pembahasan dan verifikasi kunci jawaban dikunci hingga seluruh sesi selesai dan Anda menekan tombol "Selesai & Kumpulkan".</span>
             </div>
 
             <!-- In Practice Mode: Accordion Step-by-Step Solution (Pembahasan) -->
@@ -445,9 +445,7 @@
                   <i class="fa-solid fa-rotate-left mr-1"></i> Reset Pilihan
                 </button>
               </div>
-              <span id="setupTopicCounterBadge" class="topic-counter-badge">
-                Ditemukan 0 butir soal pada sub-bab terpilih
-              </span>
+              <span id="setupTopicCounterBadge" class="topic-counter-badge hidden"></span>
             </div>
             <div id="setupTopicAccordion" class="topic-accordion-container">
               <!-- Dynamically populated via renderSetupTopicSelector() -->
@@ -478,8 +476,13 @@
               ❌ Soal Pernah Salah (<span id="wrongCountBadge">0</span>)
             </button>
           </div>
-          <div id="setupAvailableCount" style="font-size: 0.78rem; color: var(--ink-muted); margin-top: 6px;">
-            Ditemukan 0 butir soal pada cakupan ini.
+          <div id="setupAvailableCount" style="font-size: 0.85rem; font-weight: 500; color: var(--ink-muted); margin-top: 8px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-circle-info text-blue-600"></i>
+            <span id="setupAvailableCountText">Tersedia 0 butir soal (dari 0 sub-bab & tingkat kesulitan terpilih)</span>
+          </div>
+          <div id="setupEmptyWarning" class="alert-box alert-warning hidden" style="margin-top: 8px; font-size: 0.82rem; font-weight: 500; padding: 8px 12px; background: #FEF2F2; color: #DC2626; border: 1.5px solid #FECACA; border-radius: 6px; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-triangle-exclamation text-red-600"></i>
+            <span>Pilih minimal 1 sub-bab yang memiliki soal</span>
           </div>
         </div>
 
@@ -574,7 +577,7 @@
         <button class="tactile-btn tactile-btn-secondary" onclick="closeDrillSetupModal()">
           Batal
         </button>
-        <button class="tactile-btn tactile-btn-primary" onclick="startConfiguredDrillSession()">
+        <button id="btnStartDrillSession" class="tactile-btn tactile-btn-primary" onclick="startConfiguredDrillSession()">
           <i class="fa-solid fa-rocket mr-1.5"></i> Mulai Sesi Sekarang
         </button>
       </div>

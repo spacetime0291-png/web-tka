@@ -1,6 +1,6 @@
 /**
  * Master Index Aggregator for TKA Modular Bank Soal
- * Provides unified access to all 28 subtopics across 3 pillars.
+ * Provides unified access to all 32 subtopics across 14 chapters in 3 pillars.
  */
 
 const fs = require('fs');
@@ -15,8 +15,12 @@ const subtopics = {
   "fis-din-3": require('./fisika/02-dinamika/03-dinamika-rotasi.js'),
   "fis-flu-1": require('./fisika/03-fluida/01-fluida-statis.js'),
   "fis-flu-2": require('./fisika/03-fluida/02-fluida-dinamis.js'),
-  "fis-gel-1": require('./fisika/04-gelombang/01-gelombang-bunyi.js'),
-  "fis-gel-2": require('./fisika/04-gelombang/02-gelombang-cahaya.js'),
+  "fis-gel-1": require('./fisika/04-gelombang/01-karakteristik-bunyi.js'),
+  "fis-gel-2": require('./fisika/04-gelombang/02-dawai-pipa-organa.js'),
+  "fis-gel-3": require('./fisika/04-gelombang/03-intensitas-bunyi.js'),
+  "fis-gel-4": require('./fisika/04-gelombang/04-efek-doppler.js'),
+  "fis-gel-5": require('./fisika/04-gelombang/05-pemantulan-pembiasan.js'),
+  "fis-gel-6": require('./fisika/04-gelombang/06-alat-optik.js'),
   "fis-ter-1": require('./fisika/05-kalor-termodinamika/01-kalor-dan-perpindahannya.js'),
   "fis-ter-2": require('./fisika/05-kalor-termodinamika/02-pemanasan-global.js'),
   "fis-ter-3": require('./fisika/05-kalor-termodinamika/03-gas-ideal.js'),
@@ -30,11 +34,11 @@ const subtopics = {
   "mtk-geo-2": require('./matematika-lanjut/02-geometri-pengukuran/02-lingkaran.js'),
   "mtk-geo-3": require('./matematika-lanjut/02-geometri-pengukuran/03-transformasi-geometri.js'),
   "mtk-tri-1": require('./matematika-lanjut/03-trigonometri/01-limit-fungsi.js'),
-  "mtk-fun-1": require('./fundamental/01-trigonometri-analitik-dasar.js'),
-  "mtk-fun-2": require('./fundamental/02-aljabar-elementer.js'),
-  "mtk-fun-3": require('./fundamental/03-geometri-analitik-bidang.js'),
-  "mtk-fun-4": require('./fundamental/04-pertidaksamaan-dan-nilai-mutlak.js'),
-  "mtk-fun-5": require('./fundamental/05-eksponen-dan-logaritma.js')
+  "fun-tri-1": require('./fundamental/01-trigonometri-analitik-dasar.js'),
+  "fun-alj-1": require('./fundamental/02-aljabar-elementer.js'),
+  "fun-geo-1": require('./fundamental/03-geometri-analitik-bidang.js'),
+  "fun-mut-1": require('./fundamental/04-pertidaksamaan-dan-nilai-mutlak.js'),
+  "fun-eks-1": require('./fundamental/05-eksponen-dan-logaritma.js')
 };
 
 // Flattened pools

@@ -1,6 +1,6 @@
 # Bank Soal TKA: Fisika & Matematika Lanjut (Modular Architecture)
 
-Direktori ini memuat seluruh bank soal yang telah terstruktur secara modular dan komprehensif berdasarkan silabus resmi TKA Saintek (Fisika, Matematika Lanjut, dan Bab Fundamental Prasyarat).
+Direktori ini memuat seluruh bank soal yang telah terstruktur secara modular dan komprehensif berdasarkan silabus resmi TKA Saintek (14 Bab: Fisika, Matematika Lanjut, dan Bab Fundamental Prasyarat).
 
 Setiap sub-topik materi memiliki file tersendiri sehingga memudahkan pemeliharaan, penambahan soal baru, maupun penelaahan kurikulum tanpa perlu mengedit file monolitik yang besar.
 
@@ -23,8 +23,12 @@ data/bank-soal/
 │   │   ├── 01-fluida-statis.js         (fis-flu-1)
 │   │   └── 02-fluida-dinamis.js        (fis-flu-2)
 │   ├── 04-gelombang/
-│   │   ├── 01-gelombang-bunyi.js       (fis-gel-1)
-│   │   └── 02-gelombang-cahaya.js      (fis-gel-2)
+│   │   ├── 01-karakteristik-bunyi.js   (fis-gel-1)
+│   │   ├── 02-dawai-pipa-organa.js     (fis-gel-2)
+│   │   ├── 03-intensitas-bunyi.js      (fis-gel-3)
+│   │   ├── 04-efek-doppler.js          (fis-gel-4)
+│   │   ├── 05-pemantulan-pembiasan.js  (fis-gel-5)
+│   │   └── 06-alat-optik.js            (fis-gel-6)
 │   ├── 05-kalor-termodinamika/
 │   │   ├── 01-kalor-dan-perpindahannya.js (fis-ter-1)
 │   │   ├── 02-pemanasan-global.js         (fis-ter-2)
@@ -45,11 +49,11 @@ data/bank-soal/
 │   └── 03-trigonometri/
 │       └── 01-limit-fungsi.js          (mtk-tri-1)
 ├── fundamental/
-│   ├── 01-trigonometri-analitik-dasar.js (mtk-fun-1)
-│   ├── 02-aljabar-elementer.js           (mtk-fun-2)
-│   ├── 03-geometri-analitik-bidang.js    (mtk-fun-3)
-│   ├── 04-pertidaksamaan-dan-nilai-mutlak.js (mtk-fun-4)
-│   └── 05-eksponen-dan-logaritma.js      (mtk-fun-5)
+│   ├── 01-trigonometri-analitik-dasar.js (fun-tri-1)
+│   ├── 02-aljabar-elementer.js           (fun-alj-1)
+│   ├── 03-geometri-analitik-bidang.js    (fun-geo-1)
+│   ├── 04-pertidaksamaan-dan-nilai-mutlak.js (fun-mut-1)
+│   └── 05-eksponen-dan-logaritma.js      (fun-eks-1)
 ├── bank-soal-bundle.js                 (Browser bundle terkompilasi)
 ├── index.js                            (Node.js master aggregator)
 └── README.md                           (Dokumentasi panduan ini)
