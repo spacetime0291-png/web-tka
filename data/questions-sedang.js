@@ -798,5 +798,684 @@ maka nilai dari $x^2 + y^2$ adalah ....`,
         </div>
       `
     }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KINEMATIKA (fis-kin-1: Pengukuran & Aturan Angka Penting)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-07",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-kin",
+    subTopicId: "fis-kin-1",
+    category: "Perhitungan Luas dengan Angka Penting",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Seorang siswa mengukur dimensi panjang dan lebar selembar pelat logam tipis. Dari pengukuran diperoleh panjang pelat $12{,}45\\text{ cm}$ dan lebar pelat $4{,}2\\text{ cm}$. Berdasarkan kaidah baku angka penting hasil perkalian, luas permukaan pelat logam tersebut harus dilaporkan sebesar ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$52\\text{ cm}^2$",
+      "$52{,}3\\text{ cm}^2$",
+      "$52{,}29\\text{ cm}^2$",
+      "$52{,}30\\text{ cm}^2$",
+      "$50\\text{ cm}^2$"
+    ],
+    correctIndex: 0,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Aturan Angka Penting pada Operasi Perkalian/Pembagian:</strong><br>
+          Hasil operasi perkalian atau pembagian hanya boleh memiliki jumlah angka penting sebanyak faktor pengali yang memiliki angka penting <em>paling sedikit</em>.
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Hitung jumlah angka penting masing-masing faktor:
+            • Panjang = $12{,}45\\text{ cm}$ (memiliki 4 angka penting)<br>
+            • Lebar = $4{,}2\\text{ cm}$ (memiliki 2 angka penting)
+          </li>
+          <li>Hasil perkalian murni kalkulator:
+            $$L = 12{,}45 \\times 4{,}2 = 52{,}29\\text{ cm}^2$$
+          </li>
+          <li>Bulatkan ke faktor paling sedikit (2 angka penting):
+            $$L \\approx 52\\text{ cm}^2$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Seringkali siswa tergoda menuliskan seluruh angka di belakang koma ($52{,}29\\text{ cm}^2$) atau membulatkan ke 3 angka penting ($52{,}3\\text{ cm}^2$).
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KINEMATIKA (fis-kin-2: Gerak Lurus GLB & GLBB Pengejaran)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-08",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-kin",
+    subTopicId: "fis-kin-2",
+    category: "Kinematika Gerak Lurus Pengejaran",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Mobil patroli kepolisian $A$ yang semula diam mulai bergerak dengan percepatan konstan $a = 2\\text{ m/s}^2$ untuk mengejar mobil pelanggar $B$. Pada saat yang bersamaan, mobil $B$ melintas melewati mobil $A$ dengan kelajuan tetap $v = 10\\text{ m/s}$ pada lintasan lurus yang sama. Waktu yang diperlukan mobil $A$ untuk tepat menyusul mobil $B$ sejak awal gerak adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$5\\text{ detik}$",
+      "$8\\text{ detik}$",
+      "$10\\text{ detik}$",
+      "$12\\text{ detik}$",
+      "$15\\text{ detik}$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Kondisi Pertemuan/Pengejaran Dua Benda:</strong><br>
+          Dua benda yang berangkat dari titik awal yang sama akan bertemu saat jarak tempuh keduanya sama:<br>
+          $$s_A(t) = s_B(t)$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Persamaan jarak mobil $A$ (GLBB dari diam): $s_A = \\frac{1}{2} a t^2 = \\frac{1}{2}(2) t^2 = t^2$.</li>
+          <li>Persamaan jarak mobil $B$ (GLB): $s_B = v t = 10t$.</li>
+          <li>Samakan jarak tempuh keduanya:
+            $$t^2 = 10t \\implies t(t - 10) = 0$$
+          </li>
+          <li>Karena $t > 0$, maka mobil $A$ menyusul mobil $B$ pada saat $t = 10\\text{ detik}$.</li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Hati-hati: saat $t = 5\\text{ detik}$, kecepatan kedua mobil memang sama ($v_A = a t = 10\\text{ m/s}$), namun mobil $A$ belum menyusul mobil $B$ (jarak $A$ baru $25\\text{ m}$ sedangkan $B$ sudah $50\\text{ m}$).
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - DINAMIKA (fis-din-2: Momentum & Tumbukan Lenting Sempurna)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-09",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-din",
+    subTopicId: "fis-din-2",
+    category: "Momentum - Tumbukan Lenting Sempurna Dua Massa Sama",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Sebuah bola biliar $A$ bermassa $m_A = 0{,}2\\text{ kg}$ meluncur dengan kecepatan $v_A = 4\\text{ m/s}$ ke arah kanan dan menumbuk bola biliar $B$ bermassa sama $m_B = 0{,}2\\text{ kg}$ yang sedang diam di atas meja licin ($v_B = 0$). Jika tumbukan berlangsung lenting sempurna ($e = 1$), kecepatan bola $A$ ($v_A'$) dan bola $B$ ($v_B'$) sesaat setelah tumbukan adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$v_A' = 0\\text{ m/s}$ dan $v_B' = 4\\text{ m/s}$ ke kanan",
+      "$v_A' = 2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ ke kanan",
+      "$v_A' = -2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ ke kanan",
+      "$v_A' = -4\\text{ m/s}$ dan $v_B' = 0\\text{ m/s}$",
+      "$v_A' = 1\\text{ m/s}$ dan $v_B' = 3\\text{ m/s}$ ke kanan"
+    ],
+    correctIndex: 0,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Karakteristik Tumbukan Lenting Sempurna Dua Massa Identik ($m_1 = m_2, e = 1$):</strong><br>
+          Kedua benda akan saling bertukar kecepatan secara utuh:<br>
+          $$v_1' = v_2 \\quad \\text{dan} \\quad v_2' = v_1$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Hukum Kekekalan Momentum:
+            $$m(4) + m(0) = m v_A' + m v_B' \\implies v_A' + v_B' = 4$$
+          </li>
+          <li>Koefisien Restitusi ($e = 1$):
+            $$e = -\\frac{v_A' - v_B'}{v_A - v_B} = 1 \\implies -(v_A' - v_B') = 4 - 0 \\implies -v_A' + v_B' = 4$$
+          </li>
+          <li>Jumlahkan kedua persamaan:
+            $$2 v_B' = 8 \\implies v_B' = 4\\text{ m/s}$$
+            $$v_A' = 4 - 4 = 0\\text{ m/s}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Opsi $v_A' = 2\\text{ m/s}$ dan $v_B' = 2\\text{ m/s}$ terjadi pada kasus tumbukan tidak lenting sama sekali ($e = 0$), bukan lenting sempurna.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - FLUIDA (fis-flu-2: Fluida Dinamis & Teorema Torricelli)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-10",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-flu",
+    subTopicId: "fis-flu-2",
+    category: "Teorema Torricelli - Jarak Pancaran Air",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Sebuah tangki air silinder besar terbuka diletakkan di atas tanah mendatar. Pada dinding tangki terdapat sebuah lubang kecil pada kedalaman $h_1 = 1{,}8\\text{ meter}$ di bawah permukaan air. Jika lubang tersebut berada pada ketinggian $h_2 = 3{,}2\\text{ meter}$ di atas permukaan tanah ($g = 10\\text{ m/s}^2$), jarak jatuh pancaran air secara horizontal ($x$) di tanah diukur dari dasar dinding tangki adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$2{,}4\\text{ meter}$",
+      "$3{,}6\\text{ meter}$",
+      "$4{,}8\\text{ meter}$",
+      "$5{,}4\\text{ meter}$",
+      "$6{,}0\\text{ meter}$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Teorema Torricelli & Jarak Pancaran Maksimum:</strong><br>
+          • Kelajuan semburan mendatar: $v = \\sqrt{2 g h_1}$<br>
+          • Waktu jatuh bebas: $t = \\sqrt{\\frac{2 h_2}{g}}$<br>
+          • Jarak pancaran horizontal: $x = v \\cdot t = 2\\sqrt{h_1 \\cdot h_2}$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Substitusi nilai kedalaman $h_1 = 1{,}8\\text{ m}$ dan ketinggian $h_2 = 3{,}2\\text{ m}$:
+            $$x = 2\\sqrt{1{,}8 \\times 3{,}2}$$
+          </li>
+          <li>Hitung perkalian dalam akar:
+            $$1{,}8 \\times 3{,}2 = 5{,}76$$
+          </li>
+          <li>Tarik akar kuadrat:
+            $$\\sqrt{5{,}76} = 2{,}4$$
+            $$x = 2 \\times 2{,}4 = 4{,}8\\text{ meter}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Siswa sering lupa mengalikan dengan angka 2 pada rumus jarak $x = 2\\sqrt{h_1 h_2}$ sehingga terkecoh memilih $2{,}4\\text{ meter}$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - GELOMBANG (fis-gel-2: Gelombang Cahaya Interferensi Celah Ganda)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-11",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-gel",
+    subTopicId: "fis-gel-2",
+    category: "Interferensi Celah Ganda Young",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Pada eksperimen interferensi celah ganda Young, jarak antarcelah adalah $d = 0{,}2\\text{ mm}$ ($2 \\times 10^{-4}\\text{ m}$) dan layar dipasang sejajar pada jarak $L = 1\\text{ meter}$ di belakang celah. Jika cahaya monokromatik dengan panjang gelombang $\\lambda = 500\\text{ nm}$ ($5 \\times 10^{-7}\\text{ m}$) dilewatkan pada celah, jarak antara garis terang pusat dengan garis terang orde ke-2 pada layar adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$2{,}5\\text{ mm}$",
+      "$5{,}0\\text{ mm}$",
+      "$7{,}5\\text{ mm}$",
+      "$10{,}0\\text{ mm}$",
+      "$12{,}5\\text{ mm}$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Interferensi Maksimum (Garis Terang) Celah Ganda:</strong><br>
+          $$\\frac{d \\cdot y}{L} = n \\lambda \\implies y = \\frac{n \\lambda L}{d}$$
+          dengan $n$ adalah orde terang ($n = 1, 2, 3, \\dots$).
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Untuk garis terang ke-2, gunakan $n = 2$.</li>
+          <li>Substitusi besaran fisis ke persamaan:
+            $$y = \\frac{2 \\times (5 \\times 10^{-7}\\text{ m}) \\times (1\\text{ m})}{2 \\times 10^{-4}\\text{ m}}$$
+          </li>
+          <li>Sederhanakan pecahan:
+            $$y = \\frac{10 \\times 10^{-7}}{2 \\times 10^{-4}} = 5 \\times 10^{-3}\\text{ meter} = 5{,}0\\text{ mm}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Pastikan seluruh satuan dikonversi ke meter terlebih dahulu ($1\\text{ nm} = 10^{-9}\\text{ m}$ dan $1\\text{ mm} = 10^{-3}\\text{ m}$).
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-1: Asas Black Campuran Air & Es)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-12",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-ter",
+    subTopicId: "fis-ter-1",
+    category: "Termofisika - Asas Black Campuran Air dan Es",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Sebanyak $200\\text{ gram}$ air bersuhu $60^\\circ\\text{C}$ dicampurkan dengan $50\\text{ gram}$ es bersuhu $0^\\circ\\text{C}$ di dalam wadah kalorimeter ideal terisolasi sempurna. Diketahui kalor jenis air $c = 1\\text{ kal/g}^\\circ\\text{C}$ dan kalor lebur es $L = 80\\text{ kal/g}$. Suhu akhir campuran saat mencapai kesetimbangan termal adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$20^\\circ\\text{C}$",
+      "$24^\\circ\\text{C}$",
+      "$28^\\circ\\text{C}$",
+      "$32^\\circ\\text{C}$",
+      "$36^\\circ\\text{C}$"
+    ],
+    correctIndex: 3,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Asas Black ($Q_{\\text{lepas}} = Q_{\\text{terima}}$):</strong><br>
+          Kalor yang dilepas oleh air panas digunakan untuk meleburkan es menjadi air $0^\\circ\\text{C}$, kemudian menaikkan suhu air leburan es ke suhu campuran $T_c$.
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Kalor yang dibutuhkan untuk meleburkan seluruh es $0^\\circ\\text{C}$:
+            $$Q_{\\text{lebur}} = m_{\\text{es}} \\cdot L = 50 \\times 80 = 4000\\text{ kal}$$
+          </li>
+          <li>Kalor maksimum yang dapat dilepas air panas hingga $0^\\circ\\text{C}$:
+            $$Q_{\\max} = 200 \\times 1 \\times 60 = 12000\\text{ kal}$$
+            Karena $12000 > 4000$, seluruh es mencair dan suhu akhir $T_c > 0^\\circ\\text{C}$.
+          </li>
+          <li>Persamaan Asas Black:
+            $$m_{\\text{air}} c (60 - T_c) = Q_{\\text{lebur}} + m_{\\text{es}} c (T_c - 0)$$
+            $$200(1)(60 - T_c) = 4000 + 50(1)(T_c)$$
+            $$12000 - 200 T_c = 4000 + 50 T_c$$
+            $$8000 = 250 T_c \\implies T_c = \\frac{8000}{250} = 32^\\circ\\text{C}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Siswa sering lupa memperhitungkan kalor lebur es ($m_{\\text{es}} L$) dan hanya menghitung $m_1 c \\Delta T_1 = m_2 c \\Delta T_2$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-2: Pemanasan Global & Radiasi Benda Hitam)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-13",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-ter",
+    subTopicId: "fis-ter-2",
+    category: "Radiasi Kalor Hukum Stefan-Boltzmann",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Sebuah permukaan benda hitam ideal memancarkan energi radiasi termal dengan laju daya $E$ ketika bersuhu mutlak $T = 300\\text{ K}$. Jika suhu mutlak permukaan benda tersebut dinaikkan menjadi $T' = 600\\text{ K}$, laju daya radiasi yang dipancarkannya sekarang menjadi ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$2E$",
+      "$4E$",
+      "$8E$",
+      "$16E$",
+      "$32E$"
+    ],
+    correctIndex: 3,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Hukum Stefan-Boltzmann Radiasi Benda Hitam:</strong><br>
+          Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin):<br>
+          $$P = e \\sigma A T^4 \\implies P \\propto T^4$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Bandingkan laju daya radiasi:
+            $$\\frac{E'}{E} = \\left(\\frac{T'}{T}\\right)^4$$
+          </li>
+          <li>Substitusi nilai suhu mutlak:
+            $$\\frac{E'}{E} = \\left(\\frac{600}{300}\\right)^4 = 2^4 = 16$$
+          </li>
+          <li>Maka daya radiasi baru menjadi $E' = 16E$.</li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Seringkali keliru menganggap daya radiasi berbanding lurus dengan suhu kuadrat ($T^2 = 4E$) atau secara linier ($T = 2E$). Ingat hukum pangkat 4!
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-3: Teori Kinetik Gas Ideal Kelajuan RMS)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-14",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-ter",
+    subTopicId: "fis-ter-3",
+    category: "Kelajuan Efektif Molekul Gas Ideal",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Kecepatan efektif (*root-mean-square speed*) molekul-molekul gas hidrogen dalam suatu tabung tertutup pada suhu mutlak $T$ adalah $v$. Jika gas dipanaskan pada volume tetap hingga suhu mutlaknya naik menjadi $4T$, kelajuan efektif molekul gas tersebut menjadi ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$\\frac{1}{2}v$",
+      "$v$",
+      "$\\sqrt{2}v$",
+      "$2v$",
+      "$4v$"
+    ],
+    correctIndex: 3,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Kelajuan Efektif Gas Ideal ($v_{\\text{rms}}$):</strong><br>
+          $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T}$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Perbandingan kelajuan efektif pada dua suhu berbeda:
+            $$\\frac{v'}{v} = \\sqrt{\\frac{T'}{T}} = \\sqrt{\\frac{4T}{T}} = \\sqrt{4} = 2$$
+          </li>
+          <li>Sehingga kelajuan efektif molekul menjadi $v' = 2v$.</li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Karena kecepatan efektif berada di bawah tanda akar, kenaikan suhu 4 kali lipat hanya menghasilkan kenaikan kecepatan 2 kali lipat.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KELISTRIKAN (fis-lis-2: Rangkaian Arus Searah DC Hukum II Kirchhoff)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-fis-15",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-lis",
+    subTopicId: "fis-lis-2",
+    category: "Hukum II Kirchhoff Rangkaian 1 Loop",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Suatu rangkaian tertutup satu loop terdiri dari dua sumber tegangan baterai $\\mathcal{E}_1 = 18\\text{ V}$ dan $\\mathcal{E}_2 = 6\\text{ V}$ yang dipasang saling berhadapan kutub positifnya, serta dua hambatan $R_1 = 3\\,\\Omega$ dan $R_2 = 1\\,\\Omega$. Jika hambatan dalam baterai diabaikan, kuat arus listrik yang mengalir dalam rangkaian dan daya disipasi pada resistor $R_1$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$2\\text{ A}$ dan $12\\text{ W}$",
+      "$3\\text{ A}$ dan $18\\text{ W}$",
+      "$3\\text{ A}$ dan $27\\text{ W}$",
+      "$4\\text{ A}$ dan $36\\text{ W}$",
+      "$6\\text{ A}$ dan $54\\text{ W}$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Hukum II Kirchhoff Loop Tunggal:</strong><br>
+          $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0 \\implies I = \\frac{\\mathcal{E}_1 - \\mathcal{E}_2}{R_{\\text{total}}}$$<br>
+          Daya disipasi resistor: $P = I^2 R$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Karena kutub baterai saling berlawanan, GGL resultan adalah selisih keduanya:
+            $$\\mathcal{E}_{\\text{net}} = 18 - 6 = 12\\text{ V}$$
+          </li>
+          <li>Hambatan total: $R_{\\text{total}} = 3 + 1 = 4\\,\\Omega$.</li>
+          <li>Kuat arus listrik:
+            $$I = \\frac{12\\text{ V}}{4\\,\\Omega} = 3\\text{ Ampere}$$
+          </li>
+          <li>Daya pada resistor $R_1$:
+            $$P_1 = I^2 R_1 = (3^2) \\times 3 = 9 \\times 3 = 27\\text{ Watt}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Siswa sering keliru menjumlahkan tegangan baterai ($18 + 6 = 24\\text{ V}$) tanpa memperhatikan arah kutub baterai yang saling berlawanan.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-1: Trigonometri Sudut Ganda Kuadran III)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-mtk-09",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-fun",
+    subTopicId: "mtk-fun-1",
+    category: "Identitas Trigonometri Sudut Rangkap",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Diketahui nilai $\\tan x = \\frac{3}{4}$ dengan sudut $x$ berada pada kuadran III ($180^\\circ < x < 270^\\circ$). Nilai dari $\\sin 2x$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$-\\frac{24}{25}$",
+      "$-\\frac{7}{25}$",
+      "$\\frac{7}{25}$",
+      "$\\frac{12}{25}$",
+      "$\\frac{24}{25}$"
+    ],
+    correctIndex: 4,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Identitas Sinus Sudut Rangkap:</strong><br>
+          $$\\sin 2x = 2 \\sin x \\cos x$$<br>
+          Di kuadran III, nilai $\\sin x < 0$ dan $\\cos x < 0$.
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Dari $\\tan x = \\frac{3}{4}$, sisi depan $= 3$, samping $= 4$, miring $= \\sqrt{3^2 + 4^2} = 5$.</li>
+          <li>Karena $x$ di kuadran III:
+            $$\\sin x = -\\frac{3}{5}, \\quad \\cos x = -\\frac{4}{5}$$
+          </li>
+          <li>Substitusi ke rumus sudut rangkap:
+            $$\\sin 2x = 2 \\left(-\\frac{3}{5}\\right) \\left(-\\frac{4}{5}\\right) = 2 \\left(\\frac{12}{25}\\right) = \\frac{24}{25}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Perkalian dua bilangan negatif menghasilkan nilai positif: $(-)(-) = (+)$, sehingga $\\sin 2x$ bernilai positif $+\\frac{24}{25}$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-3: Geometri Analitik Jarak Titik ke Garis)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-mtk-10",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-fun",
+    subTopicId: "mtk-fun-3",
+    category: "Jarak Titik ke Garis Lurus",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Jarak tegak lurus terpendek dari titik koordinat $P(2, 3)$ ke garis lurus dengan persamaan $4x + 3y - 7 = 0$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$1\\text{ satuan}$",
+      "$2\\text{ satuan}$",
+      "$3\\text{ satuan}$",
+      "$4\\text{ satuan}$",
+      "$5\\text{ satuan}$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Jarak Titik $(x_1, y_1)$ ke Garis $Ax + By + C = 0$:</strong><br>
+          $$d = \\frac{|A x_1 + B y_1 + C|}{\\sqrt{A^2 + B^2}}$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Identifikasi nilai koefisien: $A = 4, B = 3, C = -7$ serta titik $(x_1, y_1) = (2, 3)$.</li>
+          <li>Substitusi ke rumus jarak:
+            $$d = \\frac{|4(2) + 3(3) - 7|}{\\sqrt{4^2 + 3^2}} = \\frac{|8 + 9 - 7|}{\\sqrt{16 + 9}}$$
+          </li>
+          <li>Sederhanakan pembilang dan penyebut:
+            $$d = \\frac{|10|}{\\sqrt{25}} = \\frac{10}{5} = 2\\text{ satuan panjang}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Perhatikan tanda mutlak di pembilang untuk memastikan nilai jarak selalu bernilai non-negatif.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - ALJABAR LANJUT (mtk-alj-1: Matriks Determinan & Sifat Invers)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-mtk-11",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-alj",
+    subTopicId: "mtk-alj-1",
+    category: "Determinan Perkalian Matriks",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Diketahui matriks berordo $2\\times2$, yaitu $A = \\begin{pmatrix} 4 & 3 \\\\ 2 & 2 \\end{pmatrix}$. Jika matriks $B$ memenuhi persamaan matriks $A \\cdot B = 2I$ (dengan $I$ adalah matriks identitas ordo $2\\times2$), nilai determinan dari matriks $B$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$1$",
+      "$2$",
+      "$4$",
+      "$8$",
+      "$16$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Sifat-Sifat Determinan Matriks:</strong><br>
+          • $\\det(A \\cdot B) = \\det(A) \\cdot \\det(B)$<br>
+          • Untuk matriks ordo $n\\times n$: $\\det(k \\cdot M) = k^n \\cdot \\det(M)$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Hitung determinan matriks $A$:
+            $$\\det(A) = (4)(2) - (3)(2) = 8 - 6 = 2$$
+          </li>
+          <li>Hitung determinan ruas kanan ($2I$ pada ordo $2\\times2$):
+            $$\\det(2I) = 2^2 \\cdot \\det(I) = 4 \\times 1 = 4$$
+          </li>
+          <li>Terapkan sifat determinan perkalian:
+            $$\\det(A \\cdot B) = \\det(2I)$$
+            $$\\det(A) \\cdot \\det(B) = 4$$
+            $$2 \\cdot \\det(B) = 4 \\implies \\det(B) = 2$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Sering keliru menghitung $\\det(2I) = 2$. Ingat sifat skala determinan: faktor pengali dipangkatkan dengan ordo matriks ($k^2$).
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-3: Transformasi Rotasi & Refleksi)
+  // --------------------------------------------------------------------------
+  {
+    id: "sedang-mtk-12",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-geo",
+    subTopicId: "mtk-geo-3",
+    category: "Komposisi Transformasi Rotasi dan Refleksi",
+    difficulty: "sedang",
+    difficultyLabel: "Sedang",
+    statement: `Titik $P(3, 4)$ dirotasikan sebesar $+90^\\circ$ (berlawanan arah putaran jarum jam) dengan pusat rotasi $O(0, 0)$. Bayangan yang diperoleh kemudian direfleksikan terhadap garis $y = -x$. Koordinat bayangan akhir dari titik $P$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$(-4, -3)$",
+      "$(-3, 4)$",
+      "$(4, -3)$",
+      "$(3, -4)$",
+      "$(4, 3)$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Rumus Transformasi Geometri Koordinat:</strong><br>
+          • Rotasi $+90^\\circ$ pusat $(0,0)$: $(x, y) \\to (-y, x)$<br>
+          • Refleksi garis $y = -x$: $(x', y') \\to (-y', -x')$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Transformasi 1 (Rotasi $+90^\\circ$ pada titik $P(3, 4)$):
+            $$P'(x', y') = (-4, 3)$$
+          </li>
+          <li>Transformasi 2 (Refleksi terhadap garis $y = -x$ pada titik $P'(-4, 3)$):
+            $$x'' = -y' = -(3) = -3$$
+            $$y'' = -x' = -(-4) = 4$$
+          </li>
+          <li>Koordinat akhir bayangan adalah $P''(-3, 4)$.</li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Perhatikan urutan komposisi: rotasi dilakukan terlebih dahulu, baru kemudian direfleksikan terhadap garis $y = -x$.
+        </div>
+      `
+    }
   }
 ];

@@ -854,5 +854,447 @@ window.QUESTIONS_MUDAH = [
         </div>
       `
     }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KINEMATIKA (fis-kin-3: Gerak Lengkung & Parabola)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-fis-12",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-kin",
+    subTopicId: "fis-kin-3",
+    category: "Gerak Parabola & Titik Tertinggi",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Sebuah bola ditendang dari permukaan tanah dengan kecepatan awal $v_0 = 40\\text{ m/s}$ dan sudut elevasi $\\theta = 30^\\circ$ terhadap bidang datar ($\\sin 30^\\circ = 0{,}5$). Jika percepatan gravitasi bumi $g = 10\\text{ m/s}^2$, waktu yang dibutuhkan bola untuk mencapai titik tertinggi lintasannya adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$1{,}0\\text{ detik}$",
+      "$2{,}0\\text{ detik}$",
+      "$3{,}0\\text{ detik}$",
+      "$4{,}0\\text{ detik}$",
+      "$5{,}0\\text{ detik}$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Waktu Mencapai Titik Tertinggi Gerak Parabola:</strong><br>
+          Pada titik puncak, komponen kecepatan vertikal bernilai nol ($v_y = 0$).<br>
+          $$t_h = \\frac{v_0 \\sin\\theta}{g}$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Identifikasi besaran: $v_0 = 40\\text{ m/s}$, $\\sin 30^\\circ = 0{,}5$, $g = 10\\text{ m/s}^2$.</li>
+          <li>Substitusi ke rumus waktu puncak:
+            $$t_h = \\frac{40 \\times 0{,}5}{10} = \\frac{20}{10} = 2{,}0\\text{ detik}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Jangan tertukar dengan waktu total di udara ($t_{\\text{total}} = 2 t_h = 4{,}0\\text{ detik}$). Soal hanya menanyakan waktu menuju titik tertinggi.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - FLUIDA (fis-flu-2: Fluida Dinamis & Persamaan Kontinuitas)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-fis-13",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-flu",
+    subTopicId: "fis-flu-2",
+    category: "Persamaan Kontinuitas & Debit Fluida",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Minyak mengalir melalui pipa mendatar yang memiliki luas penampang $A_1 = 20\\text{ cm}^2$ dengan kelajuan $v_1 = 2\\text{ m/s}$. Jika pipa tersebut menyempit hingga luas penampangnya menjadi $A_2 = 5\\text{ cm}^2$, kelajuan aliran minyak pada penampang sempit ($v_2$) adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$4\\text{ m/s}$",
+      "$6\\text{ m/s}$",
+      "$8\\text{ m/s}$",
+      "$10\\text{ m/s}$",
+      "$12\\text{ m/s}$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Persamaan Kontinuitas Fluida Inkompresibel:</strong><br>
+          Debit aliran konstan di setiap penampang pipa:<br>
+          $$Q_1 = Q_2 \\implies A_1 v_1 = A_2 v_2$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Substitusi nilai penampang dan kelajuan:
+            $$20\\text{ cm}^2 \\times 2\\text{ m/s} = 5\\text{ cm}^2 \\times v_2$$
+          </li>
+          <li>Hitung nilai $v_2$:
+            $$40 = 5 v_2 \\implies v_2 = \\frac{40}{5} = 8\\text{ m/s}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Karena satuan penampang kedua sisi sama-sama $\\text{cm}^2$, tidak perlu mengonversi ke $\\text{m}^2$ asalkan satuannya konsisten.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KALOR & TERMODINAMIKA (fis-ter-4: Usaha Luar Proses Isobarik)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-fis-14",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-ter",
+    subTopicId: "fis-ter-4",
+    category: "Termodinamika - Usaha Gas Isobarik",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Suatu gas ideal berada di dalam silinder berpenghisap pada tekanan tetap $P = 2 \\times 10^5\\text{ N/m}^2$. Gas tersebut memuai secara isobarik sehingga volumenya bertambah dari $V_1 = 1{,}5\\text{ m}^3$ menjadi $V_2 = 2{,}5\\text{ m}^3$. Besar usaha luar ($W$) yang dilakukan oleh gas tersebut adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$100\\text{ kJ}$",
+      "$150\\text{ kJ}$",
+      "$200\\text{ kJ}$",
+      "$250\\text{ kJ}$",
+      "$300\\text{ kJ}$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Usaha Luar Gas pada Proses Isobarik (Tekanan Tetap):</strong><br>
+          $$W = P \\cdot \\Delta V = P(V_2 - V_1)$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Hitung perubahan volume: $\\Delta V = 2{,}5\\text{ m}^3 - 1{,}5\\text{ m}^3 = 1{,}0\\text{ m}^3$.</li>
+          <li>Hitung usaha luar:
+            $$W = (2 \\times 10^5\\text{ N/m}^2)(1{,}0\\text{ m}^3) = 2 \\times 10^5\\text{ Joule} = 200\\text{ kJ}$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Perhatikan konversi satuan dari Joule ke kilojoule ($1\\text{ kJ} = 1000\\text{ J}$).
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // FISIKA - KELISTRIKAN (fis-lis-2: Rangkaian Arus Searah DC Campuran)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-fis-15",
+    subject: "FISIKA",
+    pillarId: "fisika",
+    chapterId: "fis-lis",
+    subTopicId: "fis-lis-2",
+    category: "Rangkaian Resistor Campuran Seri-Paralel",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Tiga buah resistor masing-masing bernilai $R_1 = 6\\,\\Omega$, $R_2 = 12\\,\\Omega$, dan $R_3 = 4\\,\\Omega$ dirangkai. Resistor $R_1$ dan $R_2$ dipasang secara paralel, kemudian kombinasi paralel tersebut dihubungkan seri dengan resistor $R_3$. Hambatan pengganti total rangkaian tersebut adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$4\\,\\Omega$",
+      "$6\\,\\Omega$",
+      "$8\\,\\Omega$",
+      "$10\\,\\Omega$",
+      "$22\\,\\Omega$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Hambatan Pengganti Seri & Paralel:</strong><br>
+          • Paralel dua resistor: $R_p = \\frac{R_1 R_2}{R_1 + R_2}$<br>
+          • Seri gabungan: $R_{\\text{total}} = R_p + R_3$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Hitung hambatan paralel $R_1$ dan $R_2$:
+            $$R_p = \\frac{6 \\times 12}{6 + 12} = \\frac{72}{18} = 4\\,\\Omega$$
+          </li>
+          <li>Jumlahkan secara seri dengan $R_3$:
+            $$R_{\\text{total}} = R_p + R_3 = 4\\,\\Omega + 4\\,\\Omega = 8\\,\\Omega$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Jangan langsung menjumlahkan seluruh resistor ($6 + 12 + 4 = 22\\,\\Omega$), perhatikan hubungan paralel antara $R_1$ dan $R_2$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - BAB FUNDAMENTAL (mtk-fun-4: Pertidaksamaan Nilai Mutlak)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-mtk-08",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-fun",
+    subTopicId: "mtk-fun-4",
+    category: "Pertidaksamaan Nilai Mutlak Satu Variabel",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Himpunan semua nilai real $x$ yang memenuhi pertidaksamaan nilai mutlak $|2x - 3| < 7$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$-2 < x < 5$",
+      "$-5 < x < 2$",
+      "$x < -2 \\text{ atau } x > 5$",
+      "$-2 \\le x \\le 5$",
+      "$-5 < x < 5$"
+    ],
+    correctIndex: 0,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Sifat Dasar Pertidaksamaan Nilai Mutlak:</strong><br>
+          $$|u| < k \\iff -k < u < k \\quad (k > 0)$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Terapkan sifat nilai mutlak:
+            $$-7 < 2x - 3 < 7$$
+          </li>
+          <li>Tambahkan 3 pada seluruh ruas:
+            $$-7 + 3 < 2x < 7 + 3 \\implies -4 < 2x < 10$$
+          </li>
+          <li>Bagi dengan 2:
+            $$-2 < x < 5$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Tanda pertidaksamaan pada soal adalah $<$ murni (tanpa sama dengan), sehingga batas penyelesaian juga tidak memuat tanda sama dengan.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - ALJABAR LANJUT (mtk-alj-2: Polinomial & Teorema Sisa)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-mtk-09",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-alj",
+    subTopicId: "mtk-alj-2",
+    category: "Polinomial - Teorema Sisa Pembagian",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Sisa pembagian suku banyak $P(x) = 2x^3 - 5x^2 + 4x - 6$ oleh pembagi linear $(x - 2)$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$-4$",
+      "$-2$",
+      "$0$",
+      "$2$",
+      "$4$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Teorema Sisa Suku Banyak:</strong><br>
+          Jika polinomial $P(x)$ dibagi oleh $(x - c)$, maka sisa pembagiannya adalah $S = P(c)$.
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Pembuat nol pembagi: $x - 2 = 0 \\implies x = 2$.</li>
+          <li>Substitusi $x = 2$ ke dalam $P(x)$:
+            $$S = P(2) = 2(2^3) - 5(2^2) + 4(2) - 6$$
+            $$S = 2(8) - 5(4) + 8 - 6 = 16 - 20 + 8 - 6 = -2$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Sering keliru tanda substitusi menjadi $P(-2)$. Pembagi $(x - c)$ menghasilkan nilai evaluasi $x = +c$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-1: Vektor & Perkalian Skalar)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-mtk-10",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-geo",
+    subTopicId: "mtk-geo-1",
+    category: "Perkalian Skalar Dua Vektor (Dot Product)",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Diketahui dua buah vektor pada bidang datar $\\vec{u} = 3\\hat{i} - 4\\hat{j}$ dan $\\vec{v} = 2\\hat{i} + 5\\hat{j}$. Nilai perkalian skalar $(\\vec{u} \\cdot \\vec{v})$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$-26$",
+      "$-14$",
+      "$-6$",
+      "$14$",
+      "$26$"
+    ],
+    correctIndex: 1,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Perkalian Skalar (Dot Product) Dua Vektor:</strong><br>
+          $$\\vec{u} \\cdot \\vec{v} = u_x v_x + u_y v_y$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Identifikasi komponen: $u_x = 3, u_y = -4$ dan $v_x = 2, v_y = 5$.</li>
+          <li>Hitung perkalian skalar:
+            $$\\vec{u} \\cdot \\vec{v} = (3)(2) + (-4)(5) = 6 - 20 = -14$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Hasil kali skalar (dot product) berupa bilangan skalar real, bukan vektor. Perhatikan tanda negatif pada komponen $u_y = -4$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-2: Persamaan Lingkaran Bentuk Umum)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-mtk-11",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-geo",
+    subTopicId: "mtk-geo-2",
+    category: "Jari-Jari Lingkaran Bentuk Umum",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Sebuah lingkaran memiliki persamaan bentuk umum $x^2 + y^2 - 6x + 8y - 11 = 0$. Panjang jari-jari ($r$) dari lingkaran tersebut adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$4$",
+      "$5$",
+      "$6$",
+      "$7$",
+      "$8$"
+    ],
+    correctIndex: 2,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Jari-Jari Lingkaran Bentuk Umum $x^2 + y^2 + Ax + By + C = 0$:</strong><br>
+          Titik pusat $(a, b) = \\left(-\\frac{1}{2}A, -\\frac{1}{2}B\\right)$<br>
+          Jari-jari: $r = \\sqrt{a^2 + b^2 - C}$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Hitung koordinat pusat:
+            $$a = -\\frac{1}{2}(-6) = 3, \\quad b = -\\frac{1}{2}(8) = -4$$
+          </li>
+          <li>Substitusi ke rumus jari-jari ($C = -11$):
+            $$r = \\sqrt{3^2 + (-4)^2 - (-11)} = \\sqrt{9 + 16 + 11} = \\sqrt{36} = 6$$
+          </li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Perhatikan tanda negatif pada $C = -11$. Mengurangkan nilai negatif menghasilkan penjumlahan: $-(-11) = +11$.
+        </div>
+      `
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // MATEMATIKA - GEOMETRI & PENGUKURAN (mtk-geo-3: Transformasi Geometri - Translasi)
+  // --------------------------------------------------------------------------
+  {
+    id: "mudah-mtk-12",
+    subject: "MATEMATIKA",
+    pillarId: "matematika",
+    chapterId: "mtk-geo",
+    subTopicId: "mtk-geo-3",
+    category: "Komposisi Translasi Titik Bidang",
+    difficulty: "mudah",
+    difficultyLabel: "Mudah",
+    statement: `Titik $A(5, -2)$ ditranslasikan oleh $T_1 = \\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$ kemudian dilanjutkan dengan translasi $T_2 = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$. Koordinat bayangan akhir dari titik $A$ adalah ....`,
+    hasDiagram: false,
+    diagramSvg: "",
+    diagramCaption: "",
+    options: [
+      "$(4, 1)$",
+      "$(4, -1)$",
+      "$(2, 3)$",
+      "$(0, 1)$",
+      "$(6, 1)$"
+    ],
+    correctIndex: 0,
+    solution: {
+      concept: `
+        <div class="callout-box callout-concept">
+          <strong>Komposisi Translasi Titik:</strong><br>
+          $$\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = \\begin{pmatrix} x \\\\ y \\end{pmatrix} + T_1 + T_2$$
+        </div>
+      `,
+      steps: `
+        <ol>
+          <li>Jumlahkan pergeseran absis ($x$):
+            $$x' = 5 + (-3) + 2 = 4$$
+          </li>
+          <li>Jumlahkan pergeseran ordinat ($y$):
+            $$y' = -2 + 4 + (-1) = 1$$
+          </li>
+          <li>Koordinat bayangan akhir adalah $(4, 1)$.</li>
+        </ol>
+      `,
+      pitfalls: `
+        <div class="callout-box callout-pitfall">
+          Operasi translasi murni menggunakan penjumlahan aljabar vektor posisi, bukan perkalian matriks.
+        </div>
+      `
+    }
   }
 ];
