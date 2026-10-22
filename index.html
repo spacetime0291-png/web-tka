@@ -45,6 +45,12 @@
           <span class="sm:inline">Drill Kilat</span>
         </button>
 
+        <!-- Exit Drill Button (Only visible during workspace drilling) -->
+        <button id="btnHeaderExitDrill" class="tactile-btn tactile-btn-exit hidden" onclick="promptExitDrillSession()" title="Keluar dan simpan progres latihan">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <span class="sm:inline">Keluar</span>
+        </button>
+
         <!-- Current Session Mode Badge (Only visible during workspace drilling) -->
         <span id="headerModeBadge" class="tactile-badge badge-neutral hidden" style="font-size: 0.75rem;">Latihan</span>
 
@@ -348,6 +354,9 @@
           <!-- Quick Navigation Actions -->
           <div class="tactile-card dashboard-card">
             <div style="display: flex; flex-direction: column; gap: 8px;">
+              <button class="tactile-btn tactile-btn-secondary w-full" onclick="promptExitDrillSession()" style="font-size: 0.85rem; color: #DC2626;">
+                <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i> Simpan & Keluar
+              </button>
               <button class="tactile-btn tactile-btn-secondary w-full" onclick="openCheatSheetModal()">
                 <i class="fa-solid fa-book mr-2"></i> Bank Rumus Kunci
               </button>
@@ -428,6 +437,8 @@
       </div>
 
       <div class="modal-content-scroll">
+        <!-- In-Progress Material Resume Prompt Banner -->
+        <div id="setupResumeCallout" class="setup-resume-callout hidden"></div>
         
         <!-- 1. Cakupan Materi (Sistem Navigasi 3 Tingkat: Mapel -> Bab -> Sub-Bab) -->
         <div class="config-group">
@@ -718,6 +729,43 @@
         </button>
         <button class="tactile-btn" onclick="showSyllabusView(); closeCompletionModal();">
           <i class="fa-solid fa-map mr-1.5"></i> Kembali ke Peta Silabus
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL 3: KONFIRMASI KELUAR DRILLING (STATE PERSISTENCE)
+       =================================================================== -->
+  <div id="exitConfirmModal" class="tactile-modal-overlay">
+    <div class="tactile-modal-card exit-confirm-card">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <i class="fa-solid fa-arrow-right-from-bracket mr-2 text-amber-500"></i>Konfirmasi Keluar Sesi
+        </h3>
+        <button class="icon-btn-header" onclick="closeExitConfirmModal()" aria-label="Tutup Konfirmasi">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div style="padding: 20px;">
+        <div style="display: flex; gap: 14px; align-items: flex-start;">
+          <div style="font-size: 1.8rem; line-height: 1; flex-shrink: 0;">💾</div>
+          <div>
+            <p id="exitConfirmText" style="font-size: 0.95rem; line-height: 1.5; color: var(--ink); margin-bottom: 8px; font-weight: 500;">
+              Keluar dari latihan? Jawaban yang sudah dikerjakan akan disimpan.
+            </p>
+            <p style="font-size: 0.82rem; line-height: 1.5; color: var(--ink-muted); margin: 0;">
+              Soal yang belum dikerjakan tidak akan dihitung salah atau dikenakan penalti. Anda dapat melanjutkan sisa soal kapan saja.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 14px 20px; border-top: 1.5px solid var(--ink); background: var(--bg); display: flex; justify-content: flex-end; gap: 8px;">
+        <button class="tactile-btn tactile-btn-secondary" onclick="closeExitConfirmModal()">
+          Batal
+        </button>
+        <button id="btnConfirmExitDrill" class="tactile-btn tactile-btn-primary" onclick="confirmSaveAndExitDrillSession()">
+          <i class="fa-solid fa-check mr-1.5"></i> Simpan & Keluar
         </button>
       </div>
     </div>

@@ -61,6 +61,7 @@ const STORAGE_KEY_MASTERY = 'TKA_MASTERY_PROGRESS_V3';
 const STORAGE_KEY_THEME = 'tka_theme_preference';
 const STORAGE_KEY_ACCORDION = 'tka_syllabus_accordion_state';
 const STORAGE_KEY_SESSION = 'tka_drilling_session_state';
+const STORAGE_KEY_PARTIAL_SESSION = 'tka_partial_drilling_session';
 const STORAGE_KEY_WRONG_QUESTIONS = 'tka_wrong_questions_history';
 
 if (typeof window !== 'undefined') {
@@ -68,6 +69,7 @@ if (typeof window !== 'undefined') {
   window.STORAGE_KEY_THEME = STORAGE_KEY_THEME;
   window.STORAGE_KEY_ACCORDION = STORAGE_KEY_ACCORDION;
   window.STORAGE_KEY_SESSION = STORAGE_KEY_SESSION;
+  window.STORAGE_KEY_PARTIAL_SESSION = STORAGE_KEY_PARTIAL_SESSION;
   window.STORAGE_KEY_WRONG_QUESTIONS = STORAGE_KEY_WRONG_QUESTIONS;
 }
 
@@ -297,6 +299,7 @@ function saveSessionState() {
   if (!state.questions || state.questions.length === 0) return;
   try {
     const payload = {
+      sessionId: state.sessionId || ('session_' + Date.now()),
       sessionScope: state.sessionScope,
       sessionMode: state.sessionMode,
       timerMode: state.timerMode,
@@ -318,8 +321,98 @@ function saveSessionState() {
 function clearSessionState() {
   try {
     localStorage.removeItem(STORAGE_KEY_SESSION);
+    localStorage.removeItem(STORAGE_KEY_PARTIAL_SESSION);
+    localStorage.removeItem('TKA_PARTIAL_SESSION_V1');
+    localStorage.removeItem('tka_drilling_partial_session');
   } catch (e) {}
   checkActiveSessionResume();
+}
+
+function promptExitDrillSession() {
+  const modal = document.getElementById('exitConfirmModal');
+  if (modal) {
+    modal.classList.add('open');
+  } else {
+    if (confirm('Keluar dari latihan? Jawaban yang sudah dikerjakan akan disimpan.')) {
+      confirmSaveAndExitDrillSession();
+    }
+  }
+}
+
+function closeExitConfirmModal() {
+  const modal = document.getElementById('exitConfirmModal');
+  if (modal) modal.classList.remove('open');
+}
+
+function confirmSaveAndExitDrillSession() {
+  closeExitConfirmModal();
+
+  // 1. Filter only answered questions (attemptedQuestions)
+  const completedQuestions = [];
+  if (Array.isArray(state.questions)) {
+    state.questions.forEach((q, idx) => {
+      const ans = state.userAnswers ? state.userAnswers[idx] : null;
+      if (ans !== null && ans !== undefined) {
+        const isCorrect = (ans === q.correctIndex);
+        completedQuestions.push({
+          questionId: String(q.id),
+          userAnswer: ans,
+          isCorrect: Boolean(isCorrect)
+        });
+        // Save mastery progress for answered questions only (no penalty for unattempted)
+        saveMasteryProgress(q.id, isCorrect);
+        if (!isCorrect) {
+          recordWrongQuestion(q.id);
+        }
+      }
+    });
+  }
+
+  // 2. Identify sessionId & materialId
+  const sessionId = state.sessionId || ('session_' + Date.now());
+  let materialId = 'all';
+  if (state.sessionScope) {
+    if (state.sessionScope.subTopicId && state.sessionScope.subTopicId !== 'all') {
+      materialId = state.sessionScope.subTopicId;
+    } else if (state.sessionScope.chapterId && state.sessionScope.chapterId !== 'all') {
+      materialId = state.sessionScope.chapterId;
+    } else if (state.sessionScope.pillarId && state.sessionScope.pillarId !== 'all') {
+      materialId = state.sessionScope.pillarId;
+    }
+  }
+
+  // 3. Construct partial session data with exact requested schema
+  const partialData = {
+    sessionId: String(sessionId),
+    materialId: String(materialId),
+    lastUpdated: Date.now(),
+    completedQuestions: completedQuestions
+  };
+
+  try {
+    localStorage.setItem(STORAGE_KEY_PARTIAL_SESSION, JSON.stringify(partialData));
+    localStorage.setItem('TKA_PARTIAL_SESSION_V1', JSON.stringify(partialData));
+    localStorage.setItem('tka_drilling_partial_session', JSON.stringify(partialData));
+  } catch (e) {}
+
+  // 4. Save state so remaining questions can be resumed
+  saveSessionState();
+
+  // 5. Pause/clear timer
+  if (state.timerInterval) clearInterval(state.timerInterval);
+  state.timerRunning = false;
+
+  // 6. Redirect to list materi (syllabus hub view)
+  showSyllabusView();
+}
+
+function escapeHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function checkActiveSessionResume() {
@@ -327,35 +420,62 @@ function checkActiveSessionResume() {
   if (!banner) return;
   try {
     const raw = localStorage.getItem(STORAGE_KEY_SESSION);
-    if (!raw) {
-      banner.classList.add('hidden');
-      banner.innerHTML = '';
-      return;
-    }
-    const data = JSON.parse(raw);
-    if (!data.questions || data.questions.length === 0) {
+    const rawPartial = localStorage.getItem(STORAGE_KEY_PARTIAL_SESSION);
+    if (!raw && !rawPartial) {
       banner.classList.add('hidden');
       banner.innerHTML = '';
       return;
     }
 
-    const answeredCount = (data.userAnswers || []).filter(a => a !== null).length;
+    const data = raw ? JSON.parse(raw) : null;
+    const partialData = rawPartial ? JSON.parse(rawPartial) : null;
+
+    if (!data || !data.questions || data.questions.length === 0) {
+      banner.classList.add('hidden');
+      banner.innerHTML = '';
+      return;
+    }
+
+    const answeredCount = (data.userAnswers || []).filter(a => a !== null && a !== undefined).length;
     const totalCount = data.questions.length;
+    const remainingCount = totalCount - answeredCount;
     const currentQ = (data.currentIndex || 0) + 1;
-    const scopeTitle = data.sessionScope && data.sessionScope.scopeTitle ? data.sessionScope.scopeTitle : 'Drilling TKA';
+    const scopeTitle = data.sessionScope && data.sessionScope.scopeTitle ? data.sessionScope.scopeTitle : (partialData ? partialData.materialId : 'Drilling TKA');
+
+    let correctCount = 0;
+    if (partialData && Array.isArray(partialData.completedQuestions)) {
+      correctCount = partialData.completedQuestions.filter(c => c.isCorrect).length;
+    } else {
+      (data.questions || []).forEach((q, idx) => {
+        if (data.userAnswers && data.userAnswers[idx] === q.correctIndex) {
+          correctCount++;
+        }
+      });
+    }
+
+    const partialAccuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
 
     banner.innerHTML = `
-      <div class="resume-banner-text">
-        <i class="fa-solid fa-clock-rotate-left mr-1.5 text-amber-600"></i>
-        <strong>Sesi Belajar Tersimpan (${scopeTitle}):</strong> ${answeredCount} dari ${totalCount} terjawab • Posisi Soal #${currentQ}.
-      </div>
-      <div class="resume-banner-actions">
-        <button class="tactile-btn tactile-btn-primary" style="padding: 5px 12px; font-size: 0.8rem;" onclick="resumeActiveDrillSession()">
-          <i class="fa-solid fa-play mr-1"></i> Lanjutkan Sesi
-        </button>
-        <button class="tactile-btn tactile-btn-secondary" style="padding: 5px 10px; font-size: 0.8rem;" onclick="discardActiveDrillSession()" title="Buang Sesi Ini">
-          <i class="fa-solid fa-trash"></i>
-        </button>
+      <div class="resume-banner-content">
+        <div class="resume-banner-left">
+          <div class="resume-badge-row">
+            <span class="resume-chip"><i class="fa-solid fa-clock-rotate-left mr-1 text-amber-600"></i> Sesi Belajar Tersimpan</span>
+            <span class="resume-chip-scope">${escapeHtml(scopeTitle)}</span>
+          </div>
+          <div class="resume-stats-row">
+            <span><strong>${answeredCount}</strong> dari <strong>${totalCount}</strong> terjawab (${remainingCount} tersisa)</span>
+            ${answeredCount > 0 ? `<span>• Akurasi Sementara: <strong>${partialAccuracy}%</strong> (${correctCount} benar)</span>` : ''}
+            <span>• Posisi Soal #${currentQ}</span>
+          </div>
+        </div>
+        <div class="resume-banner-actions">
+          <button class="tactile-btn tactile-btn-primary" style="padding: 6px 14px; font-size: 0.82rem;" onclick="resumeActiveDrillSession()" title="Lanjutkan sisa soal yang belum dikerjakan">
+            <i class="fa-solid fa-play mr-1"></i> Lanjutkan Sisa Soal
+          </button>
+          <button class="tactile-btn tactile-btn-secondary" style="padding: 6px 12px; font-size: 0.82rem;" onclick="discardActiveDrillSession()" title="Reset dan buang sesi ini">
+            <i class="fa-solid fa-rotate-left mr-1"></i> Reset Sesi Baru
+          </button>
+        </div>
       </div>
     `;
     banner.classList.remove('hidden');
@@ -371,6 +491,7 @@ function resumeActiveDrillSession() {
     const data = JSON.parse(raw);
     if (!data.questions || data.questions.length === 0) return;
 
+    state.sessionId = data.sessionId || ('session_' + Date.now());
     state.sessionScope = data.sessionScope;
     state.sessionMode = data.sessionMode || 'latihan';
     state.timerMode = data.timerMode || 'countdown';
@@ -391,13 +512,22 @@ function resumeActiveDrillSession() {
     renderMatrixGrid();
     updateStats();
   } catch (e) {
-    alert('Gagal memuat sesi tersimpan.');
+    if (typeof alert === 'function') alert('Gagal memuat sesi tersimpan.');
   }
 }
 
 function discardActiveDrillSession() {
-  if (confirm('Apakah Anda yakin ingin menghapus sesi belajar tersimpan ini? Progres jawaban sesi ini akan dibuang.')) {
+  if (typeof confirm !== 'function' || confirm('Apakah Anda yakin ingin menghapus sesi belajar tersimpan ini? Progres jawaban sesi ini akan dibuang.')) {
     clearSessionState();
+  }
+}
+
+function discardAndStartFreshInModal() {
+  clearSessionState();
+  const callout = document.getElementById('setupResumeCallout');
+  if (callout) {
+    callout.classList.add('hidden');
+    callout.innerHTML = '';
   }
 }
 
@@ -417,6 +547,7 @@ function showSyllabusView() {
   const stickyBottomBar = document.getElementById('stickyBottomBar');
   const timerPill = document.getElementById('timerPill');
   const headerModeBadge = document.getElementById('headerModeBadge');
+  const btnHeaderExitDrill = document.getElementById('btnHeaderExitDrill');
   const btnMobileDrawerTrigger = document.getElementById('btnMobileDrawerTrigger');
   const syllabusView = document.getElementById('syllabusView');
 
@@ -424,6 +555,7 @@ function showSyllabusView() {
   if (stickyBottomBar) stickyBottomBar.classList.add('hidden');
   if (timerPill) timerPill.classList.add('hidden');
   if (headerModeBadge) headerModeBadge.classList.add('hidden');
+  if (btnHeaderExitDrill) btnHeaderExitDrill.classList.add('hidden');
   if (btnMobileDrawerTrigger) btnMobileDrawerTrigger.classList.add('hidden');
   if (syllabusView) syllabusView.classList.remove('hidden');
 
@@ -446,7 +578,9 @@ function showSyllabusView() {
   // Re-render mastery stats
   renderSyllabusHub();
   updateGlobalCounters();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 function showWorkspaceView() {
@@ -457,12 +591,14 @@ function showWorkspaceView() {
   const stickyBottomBar = document.getElementById('stickyBottomBar');
   const timerPill = document.getElementById('timerPill');
   const headerModeBadge = document.getElementById('headerModeBadge');
+  const btnHeaderExitDrill = document.getElementById('btnHeaderExitDrill');
   const btnMobileDrawerTrigger = document.getElementById('btnMobileDrawerTrigger');
 
   if (syllabusView) syllabusView.classList.add('hidden');
   if (workspaceView) workspaceView.classList.remove('hidden');
   if (stickyBottomBar) stickyBottomBar.classList.remove('hidden');
   if (timerPill) timerPill.classList.remove('hidden');
+  if (btnHeaderExitDrill) btnHeaderExitDrill.classList.remove('hidden');
   if (headerModeBadge) {
     headerModeBadge.classList.remove('hidden');
     headerModeBadge.textContent = state.sessionMode === 'ujian' ? 'Mode Ujian (Simulasi)' : 'Mode Latihan (Belajar)';
@@ -688,12 +824,12 @@ function renderChapterCard(chapter, pillarId) {
               <span class="subtopic-code">${chapter.id.toUpperCase()}</span>
             `}
             <h3 class="accordion-title">${chapter.title}</h3>
+            <span class="chapter-tier-badge" title="Tersedia: ${countMudah} Mudah · ${countSedang} Sedang · ${countHots} HOTS">
+              <span class="tier-badge-mudah">M: ${countMudah}</span> · <span class="tier-badge-sedang">S: ${countSedang}</span> · <span class="tier-badge-hots">H: ${countHots}</span>
+            </span>
           </div>
         </div>
         <div class="accordion-header-right">
-          <span class="chapter-tier-badge" title="Tersedia: Mudah, Sedang, HOTS">
-            M: ${countMudah} | S: ${countSedang} | H: ${countHots}
-          </span>
           <button class="tactile-btn tactile-btn-drill-chapter ${isFoundation ? 'tactile-btn-primary' : ''}" 
                   onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')"
                   title="Drill Semua Soal di Bab Ini">
@@ -1094,6 +1230,57 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   syncSetupPillStyles();
   updateSetupPreviewCount();
 
+  // Check for in-progress session matching this material
+  const callout = document.getElementById('setupResumeCallout');
+  if (callout) {
+    try {
+      const savedRaw = localStorage.getItem(STORAGE_KEY_SESSION);
+      if (savedRaw) {
+        const saved = JSON.parse(savedRaw);
+        if (saved && saved.questions && saved.questions.length > 0) {
+          const savedScope = saved.sessionScope || {};
+          const isSameSubTopic = subTopicId !== 'all' && savedScope.subTopicId === subTopicId;
+          const isSameChapter = chapterId !== 'all' && savedScope.chapterId === chapterId;
+          const isSamePillar = subject !== 'all' && savedScope.pillarId === subject;
+          const isSameGlobal = subject === 'all' && chapterId === 'all' && subTopicId === 'all';
+          
+          if (isSameSubTopic || isSameChapter || isSamePillar || isSameGlobal) {
+            const answered = (saved.userAnswers || []).filter(a => a !== null).length;
+            const total = saved.questions.length;
+            callout.innerHTML = `
+              <div class="setup-resume-callout-inner">
+                <div class="setup-resume-callout-text">
+                  <i class="fa-solid fa-clock-rotate-left text-amber-500 mr-1.5"></i>
+                  <span>Ditemukan progres latihan tersimpan untuk materi ini (<strong>${answered}</strong> dari <strong>${total}</strong> terjawab).</span>
+                </div>
+                <div class="setup-resume-callout-buttons">
+                  <button type="button" class="tactile-btn tactile-btn-primary text-xs" onclick="closeDrillSetupModal(); resumeActiveDrillSession();" title="Lanjutkan sisa soal">
+                    <i class="fa-solid fa-play mr-1"></i> Lanjutkan Sisa Soal
+                  </button>
+                  <button type="button" class="tactile-btn tactile-btn-secondary text-xs" onclick="discardAndStartFreshInModal();" title="Reset sesi baru">
+                    <i class="fa-solid fa-rotate-left mr-1"></i> Reset Sesi Baru
+                  </button>
+                </div>
+              </div>
+            `;
+            callout.classList.remove('hidden');
+          } else {
+            callout.classList.add('hidden');
+            callout.innerHTML = '';
+          }
+        } else {
+          callout.classList.add('hidden');
+          callout.innerHTML = '';
+        }
+      } else {
+        callout.classList.add('hidden');
+        callout.innerHTML = '';
+      }
+    } catch (e) {
+      callout.classList.add('hidden');
+    }
+  }
+
   if (modal) modal.classList.add('open');
 }
 
@@ -1402,6 +1589,7 @@ function startConfiguredDrillSession() {
   }
 
   // Setup state for active session
+  state.sessionId = 'session_' + Date.now();
   state.questions = finalQuestions;
   state.currentIndex = 0;
   state.sessionScope = {
@@ -1467,7 +1655,7 @@ function startTimer() {
       if (state.timerSeconds <= 0) {
         clearInterval(state.timerInterval);
         state.timerRunning = false;
-        alert('⏱️ Waktu pengerjaan telah habis! Sistem akan mengumpulkan lembar jawaban Anda.');
+        if (typeof alert === 'function') alert('⏱️ Waktu pengerjaan telah habis! Sistem akan mengumpulkan lembar jawaban Anda.');
         finishDrillingSession();
       }
     } else {
@@ -1661,7 +1849,7 @@ function renderCurrentQuestion(shouldScrollToTop = false) {
   // Trigger KaTeX Formula Typesetting
   triggerMathTypeset();
 
-  if (shouldScrollToTop) {
+  if (shouldScrollToTop && typeof window !== 'undefined' && typeof window.scrollTo === 'function') {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
@@ -2256,6 +2444,15 @@ if (typeof window !== 'undefined') {
   window.renderModalLevel2Chapters = renderModalLevel2Chapters;
   window.renderModalLevel3SubTopics = renderModalLevel3SubTopics;
   window.selectCurrentChapterSubTopics = selectCurrentChapterSubTopics;
+  window.promptExitDrillSession = promptExitDrillSession;
+  window.closeExitConfirmModal = closeExitConfirmModal;
+  window.confirmSaveAndExitDrillSession = confirmSaveAndExitDrillSession;
+  window.resumeActiveDrillSession = resumeActiveDrillSession;
+  window.discardActiveDrillSession = discardActiveDrillSession;
+  window.clearSessionState = clearSessionState;
+  window.saveSessionState = saveSessionState;
+  window.checkActiveSessionResume = checkActiveSessionResume;
+  window.renderChapterCard = renderChapterCard;
 }
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
@@ -2281,6 +2478,16 @@ if (typeof module !== 'undefined' && module.exports) {
     openDrillSetupModal,
     startConfiguredDrillSession,
     syncCountPillsUI,
-    updateGlobalCounters
+    updateGlobalCounters,
+    promptExitDrillSession,
+    closeExitConfirmModal,
+    confirmSaveAndExitDrillSession,
+    resumeActiveDrillSession,
+    discardActiveDrillSession,
+    clearSessionState,
+    saveSessionState,
+    checkActiveSessionResume,
+    renderChapterCard,
+    STORAGE_KEY_PARTIAL_SESSION
   };
 }

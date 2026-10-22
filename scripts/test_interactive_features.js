@@ -54,7 +54,20 @@ const mockElements = {
   modalChapterSelectionSummary: { textContent: '' },
   drillSetupModal: { classList: { add() {}, remove() {} } },
   setupScopeSubtitle: { textContent: '' },
-  wrongCountBadge: { textContent: '' }
+  wrongCountBadge: { textContent: '' },
+  activeSessionBanner: { innerHTML: '', classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  setupResumeCallout: { innerHTML: '', classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  btnHeaderExitDrill: { classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  exitConfirmModal: { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  workspaceView: { classList: { add() {}, remove() {} } },
+  stickyBottomBar: { classList: { add() {}, remove() {} } },
+  timerPill: { classList: { add() {}, remove() {} } },
+  headerModeBadge: { classList: { add() {}, remove() {} }, textContent: '', className: '' },
+  btnMobileDrawerTrigger: { classList: { add() {}, remove() {} } },
+  syllabusView: { classList: { add() {}, remove() {} } },
+  headerTopic: { textContent: '' },
+  btnHeaderSyllabus: { innerHTML: '', title: '' },
+  headerProgressFill: { style: {} }
 };
 
 global.document = {
@@ -309,6 +322,102 @@ assert(!app.state.setupForm.selectedSubTopicIds.has('mtk-geo-1') && !app.state.s
 app.selectCurrentChapterSubTopics(true);
 assert(app.state.setupForm.selectedSubTopicIds.has('mtk-geo-1') && app.state.setupForm.selectedSubTopicIds.has('mtk-geo-2') && app.state.setupForm.selectedSubTopicIds.has('mtk-geo-3'),
   'selectCurrentChapterSubTopics(true) checks all subtopics in active chapter');
+
+// ============================================================================
+// TEST GROUP 8: REFACTOR LIST MATERI & DRILL EXIT PERSISTENCE
+// ============================================================================
+console.log('\n--- TEST GROUP 8: REFACTOR LIST MATERI & DRILL EXIT PERSISTENCE ---');
+
+// Case A: Verify typography in styles.css for accordion-title
+const freshCss = fs.readFileSync(path.join(__dirname, '../styles.css'), 'utf-8');
+const accordionTitleMatch = freshCss.match(/\.accordion-title\s*\{([^}]+)\}/);
+assert(accordionTitleMatch && accordionTitleMatch[1].includes('font-size: 1.1rem'),
+  'accordion-title font-size is 1.1rem (within 1.05rem - 1.15rem range)');
+assert(accordionTitleMatch && accordionTitleMatch[1].includes('font-weight: 600'),
+  'accordion-title font-weight is 600 (semi-bold)');
+
+// Case B: Verify chapter card renders compact inline M/S/H badge
+const sampleChapter = window.SYLLABUS_DATA.pillars[0].chapters[0]; // Kinematika
+const renderedCardHtml = app.renderChapterCard(sampleChapter, 'fisika');
+assert(renderedCardHtml.includes('class="chapter-tier-badge"'),
+  'renderChapterCard outputs chapter-tier-badge');
+assert(renderedCardHtml.includes('M:') && renderedCardHtml.includes('S:') && renderedCardHtml.includes('H:'),
+  'renderChapterCard contains compact M, S, H indicators');
+assert(renderedCardHtml.includes('tier-badge-mudah') && renderedCardHtml.includes('tier-badge-sedang') && renderedCardHtml.includes('tier-badge-hots'),
+  'renderChapterCard contains tier color accent spans');
+
+// Case C: Verify index.html contains exit buttons and modal confirmation message
+assert(indexHtmlContent.includes('id="btnHeaderExitDrill"'),
+  'index.html contains #btnHeaderExitDrill navigation button');
+assert(indexHtmlContent.includes('id="exitConfirmModal"'),
+  'index.html contains #exitConfirmModal modal container');
+assert(indexHtmlContent.includes('Keluar dari latihan? Jawaban yang sudah dikerjakan akan disimpan.'),
+  'exit confirmation modal contains exact message: "Keluar dari latihan? Jawaban yang sudah dikerjakan akan disimpan."');
+
+// Case D: Drill Exit Persistence & Partial State Schema
+// Setup a dummy active drill session with 5 questions
+const testQuestions = app.getFilteredQuestions({ chapterId: 'fis-kin' }).slice(0, 5);
+app.state.sessionId = 'test_session_123';
+app.state.questions = testQuestions;
+app.state.sessionScope = { chapterId: 'fis-kin', subTopicId: 'all', pillarId: 'fisika', scopeTitle: 'Kinematika' };
+app.state.userAnswers = [testQuestions[0].correctIndex, 999, null, null, null]; // Q1 correct, Q2 wrong, Q3-5 unattempted
+
+// Trigger exit
+app.confirmSaveAndExitDrillSession();
+
+// Verify partial session data was saved to localStorage
+const savedPartialRaw = global.localStorage.getItem(app.STORAGE_KEY_PARTIAL_SESSION);
+assert(Boolean(savedPartialRaw), 'Partial session was persisted to localStorage under STORAGE_KEY_PARTIAL_SESSION');
+
+const savedPartial = JSON.parse(savedPartialRaw);
+assert(typeof savedPartial.sessionId === 'string' && savedPartial.sessionId.length > 0,
+  'Partial session schema has valid string sessionId');
+assert(savedPartial.materialId === 'fis-kin',
+  'Partial session schema has materialId matching current scope (fis-kin)');
+assert(typeof savedPartial.lastUpdated === 'number' && savedPartial.lastUpdated > 0,
+  'Partial session schema has timestamp lastUpdated');
+assert(Array.isArray(savedPartial.completedQuestions) && savedPartial.completedQuestions.length === 2,
+  'Partial session completedQuestions array contains ONLY the 2 answered questions (attemptedQuestions)');
+assert(savedPartial.completedQuestions[0].questionId === testQuestions[0].id && savedPartial.completedQuestions[0].isCorrect === true,
+  'Completed question 1 is recorded with isCorrect = true');
+assert(savedPartial.completedQuestions[1].questionId === testQuestions[1].id && savedPartial.completedQuestions[1].isCorrect === false,
+  'Completed question 2 is recorded with isCorrect = false');
+
+// Verify unattempted questions did not get penalty
+assert(!savedPartial.completedQuestions.some(q => q.questionId === testQuestions[2].id),
+  'Unattempted question 3 is not penalized or recorded as completed');
+
+// Case E: checkActiveSessionResume UI rendering
+app.checkActiveSessionResume();
+assert(!mockElements.activeSessionBanner.classList.contains('hidden'),
+  'activeSessionBanner is visible when partial session is stored');
+assert(mockElements.activeSessionBanner.innerHTML.includes('2') && mockElements.activeSessionBanner.innerHTML.includes('5'),
+  'activeSessionBanner shows 2 dari 5 terjawab');
+assert(mockElements.activeSessionBanner.innerHTML.includes('Lanjutkan Sisa Soal'),
+  'activeSessionBanner contains "Lanjutkan Sisa Soal" button');
+assert(mockElements.activeSessionBanner.innerHTML.includes('Reset Sesi Baru'),
+  'activeSessionBanner contains "Reset Sesi Baru" button');
+
+// Case F: Resume Active Session
+app.state.questions = [];
+app.state.userAnswers = [];
+app.resumeActiveDrillSession();
+assert(app.state.questions.length === 5, 'resumeActiveDrillSession restored all 5 session questions');
+assert(app.state.userAnswers[0] === testQuestions[0].correctIndex, 'resumeActiveDrillSession restored Q1 answer');
+assert(app.state.userAnswers[1] === 999, 'resumeActiveDrillSession restored Q2 answer');
+assert(app.state.userAnswers[2] === null, 'resumeActiveDrillSession restored unattempted Q3 as null');
+
+// Clean up timer interval in test environment
+if (app.state.timerInterval) clearInterval(app.state.timerInterval);
+
+// Case G: Discard / Reset clears storage
+app.clearSessionState();
+assert(global.localStorage.getItem(app.STORAGE_KEY_PARTIAL_SESSION) === null,
+  'clearSessionState removes partial session storage');
+assert(global.localStorage.getItem(window.STORAGE_KEY_SESSION) === null,
+  'clearSessionState removes full session storage');
+assert(mockElements.activeSessionBanner.classList.contains('hidden'),
+  'activeSessionBanner is hidden after clearing session state');
 
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);
