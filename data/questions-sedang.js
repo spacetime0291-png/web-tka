@@ -1391,8 +1391,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Trik Cepat:</strong> Selisih dua resonansi berturutan $\\Delta L = \\frac{1}{2}\\lambda$, sehingga $\\lambda = 2\\Delta L$. Tidak perlu mengkhawatirkan koreksi ujung tabung.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Karakteristik Gelombang Bunyi",
-    "subTopic": "Karakteristik Gelombang Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1400,7 +1400,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-3",
+    "subTopicId": "fis-gel-1",
     "category": "Taraf Intensitas Bunyi Multi Sumber",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1422,8 +1422,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mengalikan langsung nilai dB ($70 \\times 100 = 7000\\text{ dB}$), padahal skala desibel merupakan skala logaritmik bukan linear.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Intensitas dan Taraf Intensitas Bunyi",
-    "subTopic": "Intensitas dan Taraf Intensitas Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1431,7 +1431,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-3",
+    "subTopicId": "fis-gel-1",
     "category": "Taraf Intensitas Bunyi terhadap Perubahan Jarak",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1453,8 +1453,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Rumus Sakti Jarak:</strong> Jarak naik $10\\times \\implies TI$ turun tepat $20\\text{ dB}$. Jarak naik $100\\times \\implies TI$ turun tepat $40\\text{ dB}$. Faktor pengalinya adalah 20, bukan 10!</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Intensitas dan Taraf Intensitas Bunyi",
-    "subTopic": "Intensitas dan Taraf Intensitas Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1462,7 +1462,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-3",
+    "subTopicId": "fis-gel-1",
     "category": "Kenaikan Taraf Intensitas 10 Kali Sumber",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1484,8 +1484,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Pola Logaritmik:</strong><br>• $10\\times$ sumber $\\implies +10\\text{ dB}$<br>• $100\\times$ sumber $\\implies +20\\text{ dB}$<br>• $1000\\times$ sumber $\\implies +30\\text{ dB}$</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Intensitas dan Taraf Intensitas Bunyi",
-    "subTopic": "Intensitas dan Taraf Intensitas Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1493,7 +1493,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-4",
+    "subTopicId": "fis-gel-1",
     "category": "Efek Doppler Gelombang Bunyi",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1515,8 +1515,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan aturan tanda: sumber mendekat selalu memperkecil penyebut ($v - v_s$), bukan memperbesar ($v + v_s$).\n        </div>\n      "
     },
     "bab": "Gelombang",
-    "subBab": "Efek Doppler",
-    "subTopic": "Efek Doppler",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1524,7 +1524,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-4",
+    "subTopicId": "fis-gel-1",
     "category": "Efek Doppler Sumber & Pendengar Saling Mendekat",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1546,8 +1546,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Mnemonic Tanda Doppler:</strong> \"Mendekat = Lebih Tinggi\" (pembilang ditambah, penyebut dikurang). \"Menjauh = Lebih Rendah\" (pembilang dikurang, penyebut ditambah).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Efek Doppler",
-    "subTopic": "Efek Doppler",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1555,7 +1555,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-4",
+    "subTopicId": "fis-gel-1",
     "category": "Efek Doppler Sumber Menjauhi Pendengar Diam",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1577,8 +1577,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Logika Akal Sehat:</strong> Sumber menjauh pasti menghasilkan nada yang lebih rendah dari frekuensi asli ($< 600\\text{ Hz}$). Opsi di atas $600\\text{ Hz}$ langsung gugur!</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Efek Doppler",
-    "subTopic": "Efek Doppler",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1586,7 +1586,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-4",
+    "subTopicId": "fis-gel-1",
     "category": "Efek Doppler Pendengar Bergerak Menjauhi Sumber Diam",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1608,8 +1608,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhatikan Posisi Variabel:</strong> Kecepatan pendengar ($v_p$) selalu berada di <strong>pembilang</strong>, sedangkan kecepatan sumber ($v_s$) selalu berada di <strong>penyebut</strong>.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Efek Doppler",
-    "subTopic": "Efek Doppler",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1617,7 +1617,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Interferensi Celah Ganda Young",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1639,8 +1639,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pastikan seluruh satuan dikonversi ke meter terlebih dahulu ($1\\text{ nm} = 10^{-9}\\text{ m}$ dan $1\\text{ mm} = 10^{-3}\\text{ m}$).\n        </div>\n      "
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1648,7 +1648,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Sudut Kritis dan Pemantulan Total Sempurna",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1670,8 +1670,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Cek Masuk Akal:</strong> Nilai sinus suatu sudut nyata tidak pernah boleh lebih dari 1. Jadi pembagian selalu medium kecil dibagi medium besar ($n_{\\text{kecil}} / n_{\\text{besar}}$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1679,7 +1679,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Interferensi Celah Ganda Young",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1701,8 +1701,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Selalu konversikan semua data ($\text{mm}$, $\text{nm}$, $\text{cm}$) ke meter terlebih dahulu sebelum melakukan pembagian ordo pangkat.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1710,7 +1710,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Kisi Difraksi Spektrum Cahaya",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1732,8 +1732,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konversi Celah Kisi:</strong> Jangan lupa mengonversi dari $\\text{mm}$ ke $\\text{meter}$ ($1\\text{ mm} = 10^{-3}\\text{ m}$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1741,7 +1741,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Pembentukan Bayangan Lensa Cembung",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1763,8 +1763,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menganggap bayangan pada cermin dan lensa memiliki aturan tanda sama untuk letak maya/nyata.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1772,7 +1772,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Kacamata Penderita Rabun Jauh (Miopi)",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1794,8 +1794,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Miopi selalu butuh lensa minus (cekung). Ingat rumus kilat: $P = -100/PR$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1803,7 +1803,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Kacamata Penderita Rabun Dekat (Hipermetropi)",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1825,8 +1825,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal Hipermetropi:</strong> Kacamata baca selalu berlensa plus (+). Rumus cepatnya: $P = 4 - \\frac{100}{PP}$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1834,7 +1834,7 @@ window.QUESTIONS_SEDANG = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Teropong Bintang Mata Tanpa Akomodasi",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -1856,8 +1856,8 @@ window.QUESTIONS_SEDANG = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konstruksi Teropong:</strong> Pada teropong bintang, fokus lensa objektif selalu jauh lebih panjang daripada fokus lensa okuler ($f_{\\text{ob}} > f_{\\text{ok}}$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -3228,8 +3228,8 @@ window.QUESTIONS_SEDANG = [
     "id": "sedang-mtk-09",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-tri",
-    "subTopicId": "fun-tri-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-1",
     "category": "Identitas Trigonometri Sudut Rangkap",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -3250,17 +3250,17 @@ window.QUESTIONS_SEDANG = [
       "steps": "\n        <ol>\n          <li>Dari $\\tan x = \\frac{3}{4}$, sisi depan $= 3$, samping $= 4$, miring $= \\sqrt{3^2 + 4^2} = 5$.</li>\n          <li>Karena $x$ di kuadran III:\n            $$\\sin x = -\\frac{3}{5}, \\quad \\cos x = -\\frac{4}{5}$$\n          </li>\n          <li>Substitusi ke rumus sudut rangkap:\n            $$\\sin 2x = 2 \\left(-\\frac{3}{5}\\right) \\left(-\\frac{4}{5}\\right) = 2 \\left(\\frac{12}{25}\\right) = \\frac{24}{25}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perkalian dua bilangan negatif menghasilkan nilai positif: $(-)(-) = (+)$, sehingga $\\sin 2x$ bernilai positif $+\\frac{24}{25}$.\n        </div>\n      "
     },
-    "bab": "Trigonometri Analitik Dasar",
+    "bab": "Bab Fundamental",
     "subBab": "Trigonometri Analitik Dasar",
     "subTopic": "Trigonometri Analitik Dasar",
-    "chapterTitle": "Trigonometri Analitik Dasar"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sedang-mtk-07",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-alj",
-    "subTopicId": "fun-alj-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-2",
     "category": "Sistem Persamaan Linear (Fondasi)",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -3281,17 +3281,17 @@ window.QUESTIONS_SEDANG = [
       "steps": "\n        <ol>\n          <li>Kalikan persamaan kedua dengan 2:\n            $$10x - 2y = 14$$\n          </li>\n          <li>Jumlahkan dengan persamaan pertama:\n            $$(3x + 2y) + (10x - 2y) = 12 + 14$$\n            $$13x = 26 \\implies x = 2$$\n          </li>\n          <li>Substitusi $x = 2$ ke persamaan kedua:\n            $$5(2) - y = 7 \\implies 10 - y = 7 \\implies y = 3$$\n          </li>\n          <li>Hitung nilai $x^2 + y^2$:\n            $$x^2 + y^2 = 2^2 + 3^2 = 4 + 9 = 13$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda minus saat substitusi $10 - y = 7 \\implies y = 3$.\n        </div>\n      "
     },
-    "bab": "Aljabar Elementer",
+    "bab": "Bab Fundamental",
     "subBab": "Aljabar Elementer",
     "subTopic": "Aljabar Elementer",
-    "chapterTitle": "Aljabar Elementer"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sedang-mtk-10",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-geo",
-    "subTopicId": "fun-geo-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-3",
     "category": "Jarak Titik ke Garis Lurus",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -3312,17 +3312,17 @@ window.QUESTIONS_SEDANG = [
       "steps": "\n        <ol>\n          <li>Identifikasi nilai koefisien: $A = 4, B = 3, C = -7$ serta titik $(x_1, y_1) = (2, 3)$.</li>\n          <li>Substitusi ke rumus jarak:\n            $$d = \\frac{|4(2) + 3(3) - 7|}{\\sqrt{4^2 + 3^2}} = \\frac{|8 + 9 - 7|}{\\sqrt{16 + 9}}$$\n          </li>\n          <li>Sederhanakan pembilang dan penyebut:\n            $$d = \\frac{|10|}{\\sqrt{25}} = \\frac{10}{5} = 2\\text{ satuan panjang}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda mutlak di pembilang untuk memastikan nilai jarak selalu bernilai non-negatif.\n        </div>\n      "
     },
-    "bab": "Geometri Analitik Bidang",
+    "bab": "Bab Fundamental",
     "subBab": "Geometri Analitik Bidang",
     "subTopic": "Geometri Analitik Bidang",
-    "chapterTitle": "Geometri Analitik Bidang"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sedang-mtk-01",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-mut",
-    "subTopicId": "fun-mut-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-4",
     "category": "Pertidaksamaan Nilai Mutlak (Fondasi)",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -3343,17 +3343,17 @@ window.QUESTIONS_SEDANG = [
       "steps": "\n        <ol>\n          <li>Dengan $A = 2x - 1$ dan $B = x + 4$:\n            $$( (2x - 1) - (x + 4) )( (2x - 1) + (x + 4) ) \\le 0$$\n          </li>\n          <li>Sederhanakan masing-masing faktor aljabar:\n            $$(x - 5)(3x + 3) \\le 0 \\implies 3(x - 5)(x + 1) \\le 0$$\n          </li>\n          <li>Bagi dengan 3:\n            $$(x + 1)(x - 5) \\le 0$$\n          </li>\n          <li>Pembuat nol adalah $x = -1$ dan $x = 5$. Karena tanda pertidaksamaan $\\le 0$, daerah penyelesaian berada di antara kedua nilai pembuat nol:\n            $$-1 \\le x \\le 5$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Hati-hati dengan tanda kurung saat mengurangkan $(2x - 1) - (x + 4) = 2x - 1 - x - 4 = x - 5$. Kesalahan tanda $- (x+4)$ menjadi $-x + 4$ akan menghasilkan titik uji yang keliru.\n        </div>\n      "
     },
-    "bab": "Pertidaksamaan dan Nilai Mutlak",
+    "bab": "Bab Fundamental",
     "subBab": "Pertidaksamaan dan Nilai Mutlak",
     "subTopic": "Pertidaksamaan dan Nilai Mutlak",
-    "chapterTitle": "Pertidaksamaan dan Nilai Mutlak"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sedang-mtk-02",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-eks",
-    "subTopicId": "fun-eks-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-5",
     "category": "Persamaan Eksponensial Kuadrat (Fondasi)",
     "difficulty": "sedang",
     "difficultyLabel": "Sedang",
@@ -3374,10 +3374,10 @@ window.QUESTIONS_SEDANG = [
       "steps": "\n        <ol>\n          <li>Bentuk persamaan dalam variabel $u$:\n            $$3u^2 - 28u + 9 = 0$$\n          </li>\n          <li>Faktorkan persamaan kuadrat:\n            $$(3u - 1)(u - 9) = 0$$\n            Sehingga diperoleh $u = \\frac{1}{3}$ atau $u = 9$.\n          </li>\n          <li>Kembalikan ke variabel asli $x$:\n            $$3^x = \\frac{1}{3} = 3^{-1} \\implies x_1 = -1$$\n            $$3^x = 9 = 3^2 \\implies x_2 = 2$$\n          </li>\n          <li>Hitung nilai $2x_1 + x_2$:\n            $$2(-1) + 2 = -2 + 2 = 0$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa memisahkan konstanta pangkat: $3^{2x+1} = 3 \\cdot (3^x)^2$. Jika ditulis langsung $u^2$ tanpa pengali 3, pemfaktoran tidak akan menghasilkan akar yang tepat.\n        </div>\n      "
     },
-    "bab": "Eksponen dan Logaritma",
+    "bab": "Bab Fundamental",
     "subBab": "Eksponen dan Logaritma",
     "subTopic": "Eksponen dan Logaritma",
-    "chapterTitle": "Eksponen dan Logaritma"
+    "chapterTitle": "Bab Fundamental"
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_SEDANG;

@@ -32,7 +32,7 @@ const mockPills = [
 const mockElements = {
   setupAvailableCount: { textContent: '' },
   setupAvailableCountText: { textContent: '' },
-  setupTopicCounterBadge: { textContent: '' },
+  setupTopicCounterBadge: { textContent: '', classList: { add() {}, remove() {} } },
   stepperMaxBadge: { textContent: '' },
   inputQuestionCount: { value: '10', max: 0, disabled: false },
   btnStepperMinus: { disabled: false },
@@ -43,13 +43,25 @@ const mockElements = {
   statTotalBankQuestions: { textContent: '' },
   statTotalChapters: { textContent: '' },
   statTierBreakdown: { innerHTML: '' },
-  statOverallMastery: { textContent: '' }
+  statOverallMastery: { textContent: '' },
+  'modalTabPillar-fisika': { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, setAttribute() {} },
+  'modalTabPillar-matematika': { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, setAttribute() {} },
+  'modalTabPillar-fundamental': { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, setAttribute() {} },
+  modalChapterGrid: { innerHTML: '' },
+  modalSubTopicScrollList: { innerHTML: '' },
+  modalActiveChapterTitle: { textContent: '' },
+  modalActiveChapterBadge: { textContent: '' },
+  modalChapterSelectionSummary: { textContent: '' },
+  drillSetupModal: { classList: { add() {}, remove() {} } },
+  setupScopeSubtitle: { textContent: '' },
+  wrongCountBadge: { textContent: '' }
 };
 
 global.document = {
   addEventListener(event, cb) {},
   getElementById(id) {
-    return mockElements[id] || null;
+    if (mockElements[id]) return mockElements[id];
+    return { textContent: '', innerHTML: '', style: {}, classList: { add() {}, remove() {}, contains() { return false; } }, setAttribute() {}, removeAttribute() {} };
   },
   querySelectorAll(selector) {
     if (selector === '.setup-count-pill') return mockPills;
@@ -95,17 +107,20 @@ const fund = pillars.find(p => p.id === 'fundamental');
 
 assert(fisika && fisika.chapters.length === 6, 'Fisika must have 6 chapters (Kinematika, Dinamika, Fluida, Gelombang, Kalor, Kelistrikan)');
 assert(mtk && mtk.chapters.length === 3, 'Matematika Lanjut must have 3 chapters (Aljabar, Geometri dan Pengukuran, Trigonometri & Kalkulus Dasar)');
-assert(fund && fund.chapters.length === 5, 'Bab Fundamental must have 5 chapters (Trigo Dasar, Aljabar Elem, Geo Bidang, Pertidaksamaan, Eksponen Logaritma)');
+assert(fund && fund.chapters.length === 1, 'Bab Fundamental must have 1 chapter (Bab Fundamental)');
 
-// Check Gelombang 6 sub-topics
+const fundChapter = fund.chapters[0];
+assert(fundChapter && fundChapter.subTopics.length === 5, 'Bab Fundamental chapter must have 5 subtopics');
+const triSub = fundChapter.subTopics.find(s => s.id === 'mtk-fun-1');
+assert(triSub && triSub.title.includes('Trigonometri Analitik Dasar'), 'mtk-fun-1 covers Trigonometri Analitik Dasar');
+
+// Check Gelombang 2 sub-topics (Gelombang Bunyi & Gelombang Cahaya)
 const gelombang = fisika.chapters.find(c => c.id === 'fis-gel');
-assert(gelombang && gelombang.subTopics.length === 6, 'Gelombang chapter must have 6 subtopics');
-const dopplerSub = gelombang.subTopics.find(s => s.id === 'fis-gel-4');
-assert(dopplerSub && (dopplerSub.title.includes('Doppler') || dopplerSub.indicators.includes('Doppler')), 'fis-gel-4 covers Efek Doppler');
-const intensitasSub = gelombang.subTopics.find(s => s.id === 'fis-gel-3');
-assert(intensitasSub && (intensitasSub.title.includes('Intensitas') || intensitasSub.indicators.includes('Intensitas')), 'fis-gel-3 covers Intensitas Bunyi');
-const organaSub = gelombang.subTopics.find(s => s.id === 'fis-gel-2');
-assert(organaSub && (organaSub.title.includes('Pipa Organa') || organaSub.indicators.includes('pipa organa')), 'fis-gel-2 covers Dawai dan Pipa Organa');
+assert(gelombang && gelombang.subTopics.length === 2, 'Gelombang chapter must have 2 subtopics (Gelombang Bunyi & Gelombang Cahaya)');
+const bunyiSub = gelombang.subTopics.find(s => s.id === 'fis-gel-1');
+assert(bunyiSub && bunyiSub.title.includes('Gelombang Bunyi'), 'fis-gel-1 covers Gelombang Bunyi');
+const cahayaSub = gelombang.subTopics.find(s => s.id === 'fis-gel-2');
+assert(cahayaSub && cahayaSub.title.includes('Gelombang Cahaya'), 'fis-gel-2 covers Gelombang Cahaya');
 
 // ----------------------------------------------------
 // TEST 2: Question Bank Metadata Mapping
@@ -122,15 +137,15 @@ assert(missingMetadata.length === 0, `All 239 questions must have non-empty bab,
 // ----------------------------------------------------
 console.log('\n--- TEST GROUP 3: MULTI-SELECT SUB-BAB FILTERING ---');
 
-// Case A: Select specific cross-chapter subtopics: Efek Doppler (fis-gel-4), Cahaya (fis-gel-5), Limit (mtk-tri-1)
-const crossSelection = new Set(['fis-gel-4', 'fis-gel-5', 'mtk-tri-1']);
+// Case A: Select specific cross-chapter subtopics: Bunyi (fis-gel-1), Cahaya (fis-gel-2), Limit (mtk-tri-1), Fundamental (mtk-fun-1)
+const crossSelection = new Set(['fis-gel-1', 'fis-gel-2', 'mtk-tri-1', 'mtk-fun-1']);
 const crossFiltered = app.getFilteredQuestions({ subTopicIds: crossSelection });
 assert(crossFiltered.length > 0, `Cross-chapter multi-select returned ${crossFiltered.length} questions`);
 assert(crossFiltered.every(q => crossSelection.has(q.subTopicId)), 'All returned questions must strictly match the selected subTopicIds');
 
 // Case B: Select All Subtopics
 const allSubTopicIds = app.getAllSubTopicIds();
-assert(allSubTopicIds.length === 32, `Syllabus must have exactly 32 sub-topics (found: ${allSubTopicIds.length})`);
+assert(allSubTopicIds.length === 28, `Syllabus must have exactly 28 sub-topics (found: ${allSubTopicIds.length})`);
 
 const allFiltered = app.getFilteredQuestions({ subTopicIds: new Set(allSubTopicIds) });
 assert(allFiltered.length === 239, `Selecting all subtopics must return all 239 questions (found: ${allFiltered.length})`);
@@ -235,18 +250,20 @@ assert(cssContent.includes('line-height: 1.8') && cssContent.includes('letter-sp
 console.log('\n--- TEST GROUP 7: SETUP MODAL & ZERO-COUNT HANDLING ---');
 
 // Case A: Direct Subtopic Drill opens with only that subtopic
-app.openDrillSetupModal('fisika', 'fis-gel', 'fis-gel-4', 'Efek Doppler');
-assert(app.state.setupForm.selectedSubTopicIds.size === 1 && app.state.setupForm.selectedSubTopicIds.has('fis-gel-4'),
-  'Direct Subtopic Drill selects only that specific subtopic (fis-gel-4)');
-assert(app.state.setupForm.questionCount === 4, 'Direct drill on Efek Doppler defaults questionCount to available count (4)');
+app.openDrillSetupModal('fisika', 'fis-gel', 'fis-gel-1', 'Gelombang Bunyi');
+assert(app.state.setupForm.selectedSubTopicIds.size === 1 && app.state.setupForm.selectedSubTopicIds.has('fis-gel-1'),
+  'Direct Subtopic Drill selects only that specific subtopic (fis-gel-1)');
+assert(app.state.setupForm.activeModalPillar === 'fisika', 'Direct drill sets activeModalPillar to fisika');
+assert(app.state.setupForm.activeModalChapter === 'fis-gel', 'Direct drill sets activeModalChapter to fis-gel');
 
 // Case B: Chapter Drill selects all subtopics of that chapter
 app.openDrillSetupModal('fisika', 'fis-kin', 'all', 'Kinematika');
 assert(app.state.setupForm.selectedSubTopicIds.size === 3, 'Chapter drill on Kinematika selects all 3 subtopics of Kinematika');
+assert(app.state.setupForm.activeModalChapter === 'fis-kin', 'Chapter drill sets activeModalChapter to fis-kin');
 
-// Case C: Global Drill selects all 32 subtopics across all 14 chapters
+// Case C: Global Drill selects all 28 subtopics across all 10 chapters
 app.openDrillSetupModal('all', 'all', 'all', 'Semua Materi');
-assert(app.state.setupForm.selectedSubTopicIds.size === 32, 'Global drill auto-selects all 32 subtopics across 14 chapters');
+assert(app.state.setupForm.selectedSubTopicIds.size === 28, 'Global drill auto-selects all 28 subtopics across 10 chapters');
 
 // Case D: Zero-Count State handling
 app.state.setupForm.selectedSubTopicIds = new Set();
@@ -266,7 +283,7 @@ assert(mockPills.find(p => p.textContent === '10 Soal').classList.contains('acti
 
 // Case F: Dynamic Homepage Counter Calculation
 app.updateGlobalCounters();
-assert(Number(mockElements.statTotalChapters.textContent) === 14, 'statTotalChapters dynamically computes exactly 14 chapters');
+assert(Number(mockElements.statTotalChapters.textContent) === 10, 'statTotalChapters dynamically computes exactly 10 chapters');
 assert(Number(mockElements.statTotalBankQuestions.textContent) === 239, 'statTotalBankQuestions dynamically computes exactly 239 questions');
 
 // Case G: No <strong> tags in Hero and Exam banner in index.html
@@ -275,6 +292,23 @@ const heroStrongMatch = indexHtmlContent.match(/syllabus-hero[\s\S]*?<\/p>/);
 assert(heroStrongMatch && !heroStrongMatch[0].includes('<strong>'), 'Hero description has 0 <strong> tags');
 const examStrongMatch = indexHtmlContent.match(/id="examLockedNotice"[\s\S]*?<\/div>/);
 assert(examStrongMatch && !examStrongMatch[0].includes('<strong>'), 'Exam locked notice has 0 <strong> tags');
+
+// Case H: 3-Level Navigation System (Tab Mapel -> Pilihan Bab -> Kartu Sub-Bab Bergulir)
+app.switchModalPillar('matematika');
+assert(app.state.setupForm.activeModalPillar === 'matematika', 'switchModalPillar updates activeModalPillar to matematika');
+assert(app.state.setupForm.activeModalChapter === 'mtk-alj', 'switchModalPillar defaults active chapter to mtk-alj');
+
+app.selectModalChapter('mtk-geo');
+assert(app.state.setupForm.activeModalChapter === 'mtk-geo', 'selectModalChapter updates active chapter to mtk-geo');
+
+// Test Level 3 Scoped Chapter Select/Reset
+app.selectCurrentChapterSubTopics(false);
+assert(!app.state.setupForm.selectedSubTopicIds.has('mtk-geo-1') && !app.state.setupForm.selectedSubTopicIds.has('mtk-geo-2'),
+  'selectCurrentChapterSubTopics(false) unchecks subtopics in active chapter');
+
+app.selectCurrentChapterSubTopics(true);
+assert(app.state.setupForm.selectedSubTopicIds.has('mtk-geo-1') && app.state.setupForm.selectedSubTopicIds.has('mtk-geo-2') && app.state.setupForm.selectedSubTopicIds.has('mtk-geo-3'),
+  'selectCurrentChapterSubTopics(true) checks all subtopics in active chapter');
 
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);

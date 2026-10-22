@@ -112,9 +112,9 @@ const subTopicConfig = {
     chapterId: 'fis-gel',
     chapterName: 'Gelombang',
     subTopicId: 'fis-gel-1',
-    title: 'Karakteristik Gelombang Bunyi',
-    indicators: 'Karakteristik rambatan gelombang mekanik bunyi; cepat rambat bunyi pada berbagai medium; pelayangan bunyi; resonansi tabung kolom udara.',
-    relPath: 'fisika/04-gelombang/01-karakteristik-bunyi.js'
+    title: 'Gelombang Bunyi',
+    indicators: 'Karakteristik rambatan gelombang mekanik bunyi; sumber bunyi (dawai & pipa organa); taraf intensitas bunyi ($dB$); efek Doppler.',
+    relPath: 'fisika/04-gelombang/01-gelombang-bunyi.js'
   },
   'fis-gel-2': {
     pillar: 'fisika',
@@ -122,49 +122,9 @@ const subTopicConfig = {
     chapterId: 'fis-gel',
     chapterName: 'Gelombang',
     subTopicId: 'fis-gel-2',
-    title: 'Dawai dan Pipa Organa',
-    indicators: 'Sumber bunyi dawai & hukum Melde; pipa organa terbuka & tertutup; frekuensi nada dasar & nada atas.',
-    relPath: 'fisika/04-gelombang/02-dawai-pipa-organa.js'
-  },
-  'fis-gel-3': {
-    pillar: 'fisika',
-    pillarName: 'Fisika (TKA)',
-    chapterId: 'fis-gel',
-    chapterName: 'Gelombang',
-    subTopicId: 'fis-gel-3',
-    title: 'Intensitas dan Taraf Intensitas Bunyi',
-    indicators: 'Intensitas bunyi sumber titik isotropis; taraf intensitas bunyi ($dB$); hubungan taraf intensitas dengan jarak dan pelipatan sumber bunyi.',
-    relPath: 'fisika/04-gelombang/03-intensitas-bunyi.js'
-  },
-  'fis-gel-4': {
-    pillar: 'fisika',
-    pillarName: 'Fisika (TKA)',
-    chapterId: 'fis-gel',
-    chapterName: 'Gelombang',
-    subTopicId: 'fis-gel-4',
-    title: 'Efek Doppler',
-    indicators: 'Efek Doppler: pergeseran frekuensi bunyi terdeteksi akibat gerak relatif sumber bunyi dan pendengar (saling mendekat & menjauh).',
-    relPath: 'fisika/04-gelombang/04-efek-doppler.js'
-  },
-  'fis-gel-5': {
-    pillar: 'fisika',
-    pillarName: 'Fisika (TKA)',
-    chapterId: 'fis-gel',
-    chapterName: 'Gelombang',
-    subTopicId: 'fis-gel-5',
-    title: 'Pemantulan & Pembiasan Cahaya',
-    indicators: 'Spektrum gelombang elektromagnetik; hukum Snellius; pembiasan & pemantulan total sempurna; interferensi & difraksi celah ganda.',
-    relPath: 'fisika/04-gelombang/05-pemantulan-pembiasan.js'
-  },
-  'fis-gel-6': {
-    pillar: 'fisika',
-    pillarName: 'Fisika (TKA)',
-    chapterId: 'fis-gel',
-    chapterName: 'Gelombang',
-    subTopicId: 'fis-gel-6',
-    title: 'Alat Optik (Cermin & Lensa)',
-    indicators: 'Bayangan cermin datar, cekung, cembung; lensa konvergen & divergen; kuat lensa (dioptri); alat optik kacamata, lup, mikroskop, teropong.',
-    relPath: 'fisika/04-gelombang/06-alat-optik.js'
+    title: 'Gelombang Cahaya',
+    indicators: 'Spektrum gelombang elektromagnetik; pemantulan & pembiasan cahaya (Snellius); bayangan cermin & lensa; alat optik (mata, kacamata, lup, mikroskop, teropong).',
+    relPath: 'fisika/04-gelombang/02-gelombang-cahaya.js'
   },
   'fis-ter-1': {
     pillar: 'fisika',
@@ -299,55 +259,55 @@ const subTopicConfig = {
     relPath: 'matematika-lanjut/03-trigonometri/01-limit-fungsi.js'
   },
 
-  // III. BAB FUNDAMENTAL (MATERI PRASYARAT) - 5 BAB MANDIRI
-  'fun-tri-1': {
+  // III. BAB FUNDAMENTAL (MATERI PRASYARAT) - 1 BAB DENGAN 5 SUB-BAB
+  'mtk-fun-1': {
     pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
-    chapterId: 'fun-tri',
-    chapterName: 'Trigonometri Analitik Dasar',
-    subTopicId: 'fun-tri-1',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-1',
     title: 'Trigonometri Analitik Dasar',
-    indicators: 'Perbandingan sisi (\\sin, \\cos, \\tan) segitiga siku-siku; sudut istimewa kuadran I; relasi sudut kuadran II, III, IV; identitas Pythagoras (\\sin^2 x + \\cos^2 x = 1); sudut rangkap (\\sin 2x, \\cos 2x); jumlah & selisih sudut sinus & kosinus.',
+    indicators: 'Perbandingan trigonometri; identitas dasar; sudut berelasi.',
     relPath: 'fundamental/01-trigonometri-analitik-dasar.js'
   },
-  'fun-alj-1': {
+  'mtk-fun-2': {
     pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
-    chapterId: 'fun-alj',
-    chapterName: 'Aljabar Elementer',
-    subTopicId: 'fun-alj-1',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-2',
     title: 'Aljabar Elementer',
-    indicators: 'Pengelompokan suku sejenis & pemfaktoran kuadrat; penyederhanaan pecahan aljabar; substitusi & eliminasi SPLDV & SPLTV.',
+    indicators: 'Operasi bentuk aljabar; pemfaktoran; SPLDV.',
     relPath: 'fundamental/02-aljabar-elementer.js'
   },
-  'fun-geo-1': {
+  'mtk-fun-3': {
     pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
-    chapterId: 'fun-geo',
-    chapterName: 'Geometri Analitik Bidang',
-    subTopicId: 'fun-geo-1',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-3',
     title: 'Geometri Analitik Bidang',
-    indicators: 'Koordinat Kartesius & jarak antartitik; persamaan garis lurus ($y = mx + c$, $ax + by + c = 0$); gradien garis sejajar ($m_1 = m_2$) & tegak lurus ($m_1 \\cdot m_2 = -1$); jarak titik ke garis lurus.',
+    indicators: 'Gradien; garis lurus; jarak titik ke garis.',
     relPath: 'fundamental/03-geometri-analitik-bidang.js'
   },
-  'fun-mut-1': {
+  'mtk-fun-4': {
     pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
-    chapterId: 'fun-mut',
-    chapterName: 'Pertidaksamaan dan Nilai Mutlak',
-    subTopicId: 'fun-mut-1',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-4',
     title: 'Pertidaksamaan dan Nilai Mutlak',
-    indicators: 'Syarat pecahan terdefinisi; syarat bentuk akar terdefinisi; sifat persamaan & pertidaksamaan nilai mutlak.',
+    indicators: 'Pertidaksamaan linier; kuadrat; pecahan; nilai mutlak.',
     relPath: 'fundamental/04-pertidaksamaan-dan-nilai-mutlak.js'
   },
-  'fun-eks-1': {
+  'mtk-fun-5': {
     pillar: 'fundamental',
     pillarName: 'Bab Fundamental (Materi Prasyarat)',
-    chapterId: 'fun-eks',
-    chapterName: 'Eksponen dan Logaritma',
-    subTopicId: 'fun-eks-1',
+    chapterId: 'mtk-fun',
+    chapterName: 'Bab Fundamental',
+    subTopicId: 'mtk-fun-5',
     title: 'Eksponen dan Logaritma',
-    indicators: 'Aturan pangkat bulat & rasional; perpangkatan basis bilangan asli; sifat penjumlahan, pengurangan, perpangkatan numerus logaritma; perubahan basis logaritma.',
+    indicators: 'Sifat eksponen; persamaan eksponen; sifat & persamaan logaritma.',
     relPath: 'fundamental/05-eksponen-dan-logaritma.js'
   }
 };
@@ -370,35 +330,25 @@ function addQuestion(q) {
   }
 
   // Remap Fundamental old IDs
-  if (q.subTopicId === 'mtk-fun-1') { q.chapterId = 'fun-tri'; q.subTopicId = 'fun-tri-1'; }
-  else if (q.subTopicId === 'mtk-fun-2') { q.chapterId = 'fun-alj'; q.subTopicId = 'fun-alj-1'; }
-  else if (q.subTopicId === 'mtk-fun-3') { q.chapterId = 'fun-geo'; q.subTopicId = 'fun-geo-1'; }
-  else if (q.subTopicId === 'mtk-fun-4') { q.chapterId = 'fun-mut'; q.subTopicId = 'fun-mut-1'; }
-  else if (q.subTopicId === 'mtk-fun-5') { q.chapterId = 'fun-eks'; q.subTopicId = 'fun-eks-1'; }
+  if (q.subTopicId === 'fun-tri-1' || q.subTopicId === 'mtk-fun-1') { q.chapterId = 'mtk-fun'; q.subTopicId = 'mtk-fun-1'; }
+  else if (q.subTopicId === 'fun-alj-1' || q.subTopicId === 'mtk-fun-2') { q.chapterId = 'mtk-fun'; q.subTopicId = 'mtk-fun-2'; }
+  else if (q.subTopicId === 'fun-geo-1' || q.subTopicId === 'mtk-fun-3') { q.chapterId = 'mtk-fun'; q.subTopicId = 'mtk-fun-3'; }
+  else if (q.subTopicId === 'fun-mut-1' || q.subTopicId === 'mtk-fun-4') { q.chapterId = 'mtk-fun'; q.subTopicId = 'mtk-fun-4'; }
+  else if (q.subTopicId === 'fun-eks-1' || q.subTopicId === 'mtk-fun-5') { q.chapterId = 'mtk-fun'; q.subTopicId = 'mtk-fun-5'; }
+  else if (q.chapterId === 'fundamental' || q.pillarId === 'fundamental' || q.chapterId === 'fun-tri' || q.chapterId === 'fun-alj' || q.chapterId === 'fun-geo' || q.chapterId === 'fun-mut' || q.chapterId === 'fun-eks') {
+    q.chapterId = 'mtk-fun';
+  }
 
-  // Remap Gelombang into 6 specific subtopics
+  // Remap Gelombang into 2 subtopics: fis-gel-1 (Gelombang Bunyi) and fis-gel-2 (Gelombang Cahaya)
   if (q.chapterId === 'fis-gel') {
     const cat = (q.category || '') + ' ' + (q.statement || '');
-    if (q.id === 'mudah-fis-07' || q.id === 'drill-bun-02' || q.id === 'drill-bun-05' || q.id === 'drill-bun-06' || q.id === 'drill2-bun-01') {
+    if (['fis-gel-1', 'fis-gel-2', 'fis-gel-3', 'fis-gel-4'].includes(q.subTopicId) ||
+        cat.includes('Doppler') || cat.includes('Intensitas') || cat.includes('Taraf') || 
+        cat.includes('Dawai') || cat.includes('Organa') || cat.includes('Melde') || 
+        cat.includes('Bunyi') || cat.includes('Garpu') || cat.includes('Resonansi')) {
       q.subTopicId = 'fis-gel-1';
-    } else if (q.id === 'sup-fis-gel-01' || q.id === 'drill-bun-01' || q.id === 'drill-bun-03' || q.id === 'drill-bun-04' || q.id === 'drill2-bun-02' || q.id === 'drill2-bun-03') {
-      q.subTopicId = 'fis-gel-2';
-    } else if (q.id === 'sup-fis-gel-02' || q.id === 'drill-bun-08' || q.id === 'drill2-bun-06' || q.id === 'drill2-bun-07') {
-      q.subTopicId = 'fis-gel-3';
-    } else if (q.id === 'sedang-fis-05' || q.id === 'drill-bun-07' || q.id === 'drill2-bun-04' || q.id === 'drill2-bun-05') {
-      q.subTopicId = 'fis-gel-4';
-    } else if (q.id === 'sup-fis-gel-03' || q.id === 'drill-cah-01' || q.id === 'drill-cah-02' || q.id === 'drill-cah-03' || q.id === 'drill-cah-08' || q.id === 'drill2-cah-07' || q.id === 'sedang-fis-11') {
-      q.subTopicId = 'fis-gel-5';
-    } else if (q.id === 'mudah-fis-08' || q.id === 'drill-cah-04' || q.id === 'drill-cah-05' || q.id === 'drill-cah-06' || q.id === 'drill-cah-07' || q.id === 'drill2-cah-01' || q.id === 'drill2-cah-02' || q.id === 'drill2-cah-03' || q.id === 'drill2-cah-04' || q.id === 'drill2-cah-05' || q.id === 'drill2-cah-06' || q.id === 'sup-fis-gel-04') {
-      q.subTopicId = 'fis-gel-6';
     } else {
-      // Fallback heuristics
-      if (cat.includes('Doppler')) q.subTopicId = 'fis-gel-4';
-      else if (cat.includes('Intensitas') || cat.includes('Taraf')) q.subTopicId = 'fis-gel-3';
-      else if (cat.includes('Dawai') || cat.includes('Organa') || cat.includes('Melde')) q.subTopicId = 'fis-gel-2';
-      else if (cat.includes('Bunyi') || cat.includes('Garpu') || cat.includes('Resonansi')) q.subTopicId = 'fis-gel-1';
-      else if (cat.includes('Cermin') || cat.includes('Lensa') || cat.includes('Lup') || cat.includes('Miopi') || cat.includes('Teropong')) q.subTopicId = 'fis-gel-6';
-      else q.subTopicId = 'fis-gel-5';
+      q.subTopicId = 'fis-gel-2';
     }
   }
 
@@ -435,6 +385,14 @@ console.log(`Ingested all questions. Grand total unique questions: ${seenIds.siz
 
 // Write individual subtopic files
 const baseDir = path.resolve(__dirname, '../data/bank-soal');
+
+// Clean up fisika/04-gelombang directory to remove obsolete files
+const gelombangDir = path.join(baseDir, 'fisika/04-gelombang');
+if (fs.existsSync(gelombangDir)) {
+  fs.readdirSync(gelombangDir).forEach(f => {
+    if (f.endsWith('.js')) fs.unlinkSync(path.join(gelombangDir, f));
+  });
+}
 
 Object.keys(subTopicConfig).forEach(subTopicId => {
   const conf = subTopicConfig[subTopicId];
@@ -483,7 +441,7 @@ Object.keys(subTopicConfig).forEach(subTopicId => {
 // 3. Generate index.js (Node.js aggregator)
 const indexFileContent = `/**
  * Master Index Aggregator for TKA Modular Bank Soal
- * Provides unified access to all 32 subtopics across 14 chapters in 3 pillars.
+ * Provides unified access to all 28 subtopics across 10 chapters in 3 pillars.
  */
 
 const fs = require('fs');
@@ -564,7 +522,7 @@ const bundleContent = `/**
       window.TKA_BANK_SOAL[q.subTopicId].push(q);
     });
 
-    console.info(\`[TKA Bank Soal] Modular bundle loaded successfully: \${ALL_QUESTIONS.length} questions across 32 subtopics and 14 chapters.\`);
+    console.info(\`[TKA Bank Soal] Modular bundle loaded successfully: \${ALL_QUESTIONS.length} questions across 28 subtopics and 10 chapters.\`);
   }
 
   if (typeof module !== "undefined" && module.exports) {

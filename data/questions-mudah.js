@@ -1298,8 +1298,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan membalik pembagian menjadi $f/v = 2\\text{ m}$. Rumus yang benar adalah $v/f$.\n        </div>\n      "
     },
     "bab": "Gelombang",
-    "subBab": "Karakteristik Gelombang Bunyi",
-    "subTopic": "Karakteristik Gelombang Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1329,8 +1329,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menganggap hubungan linear $v \\propto T$ sehingga mengalikan 4 kali lipat ($1280\\text{ m/s}$). Yang benar adalah sebanding dengan akar kuadrat $\\sqrt{T}$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Karakteristik Gelombang Bunyi",
-    "subTopic": "Karakteristik Gelombang Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1360,8 +1360,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Pelayangan bunyi selalu berupa selisih sederhana ($|f_1 - f_2|$), bukan rata-rata atau rasio.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Karakteristik Gelombang Bunyi",
-    "subTopic": "Karakteristik Gelombang Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1391,8 +1391,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Gelombang Mekanik:</strong> Bunyi merambat paling cepat pada zat padat ($v \\approx 5000\\text{ m/s}$), lebih lambat pada zat cair ($v \\approx 1500\\text{ m/s}$), dan paling lambat pada gas/udara ($v \\approx 340\\text{ m/s}$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Karakteristik Gelombang Bunyi",
-    "subTopic": "Karakteristik Gelombang Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1400,7 +1400,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-2",
+    "subTopicId": "fis-gel-1",
     "category": "Frekuensi Pipa Organa Terbuka",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1422,8 +1422,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Terkecoh menghitung nada dasar ($f_0 = \\frac{v}{2L} = 283{,}3\\text{ Hz}$) karena mengira nada atas pertama berindeks $n=0$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Dawai dan Pipa Organa",
-    "subTopic": "Dawai dan Pipa Organa",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1431,7 +1431,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-2",
+    "subTopicId": "fis-gel-1",
     "category": "Cepat Rambat Gelombang Dawai Hukum Melde",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1453,8 +1453,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Ingat kata kunci <em>\"Melde = Gaya per mu\"</em> ($v = \\sqrt{F/\\mu}$). Jangan mengalikan $F \\times \\mu$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Dawai dan Pipa Organa",
-    "subTopic": "Dawai dan Pipa Organa",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1462,7 +1462,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-2",
+    "subTopicId": "fis-gel-1",
     "category": "Frekuensi Nada Dasar Dawai Gitar",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1484,8 +1484,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Rumus nada dasar dawai sama persis dengan pipa organa terbuka: $f_0 = \\frac{v}{2L}$. Ingat ada faktor angka 2 di penyebut!</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Dawai dan Pipa Organa",
-    "subTopic": "Dawai dan Pipa Organa",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1493,7 +1493,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-2",
+    "subTopicId": "fis-gel-1",
     "category": "Frekuensi Pipa Organa Tertutup",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1515,8 +1515,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perbedaan Kunci:</strong> Pipa tertutup penyebutnya $4L$ dan bernada ganjil ($1 : 3 : 5$). Pipa terbuka penyebutnya $2L$ dan bernada bulat ($1 : 2 : 3$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Dawai dan Pipa Organa",
-    "subTopic": "Dawai dan Pipa Organa",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1524,7 +1524,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-2",
+    "subTopicId": "fis-gel-1",
     "category": "Nada Atas Kedua Pipa Organa Terbuka",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1546,8 +1546,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Ingat Penamaan Nada:</strong> \"Nada atas ke-$n$\" setara dengan harmonik ke-$(n+1)$. Nada atas ke-2 $=$ harmonik ke-3 ($3f_0$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Dawai dan Pipa Organa",
-    "subTopic": "Dawai dan Pipa Organa",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1555,7 +1555,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-2",
+    "subTopicId": "fis-gel-1",
     "category": "Nada Atas Kedua Pipa Organa Tertutup",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1577,8 +1577,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Bedakan Terbuka vs Tertutup:</strong><br>• Terbuka: $f_0 : f_1 : f_2 = 1 : 2 : 3$<br>• Tertutup: $f_0 : f_1 : f_2 = 1 : 3 : 5$</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Dawai dan Pipa Organa",
-    "subTopic": "Dawai dan Pipa Organa",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1586,7 +1586,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-3",
+    "subTopicId": "fis-gel-1",
     "category": "Intensitas Bunyi Sumber Titik Isotropis",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1608,8 +1608,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Pembagi intensitas bola adalah $4\\pi r^2$ (luas kulit bola), bukan $\\pi r^2$ (luas lingkaran).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Intensitas dan Taraf Intensitas Bunyi",
-    "subTopic": "Intensitas dan Taraf Intensitas Bunyi",
+    "subBab": "Gelombang Bunyi",
+    "subTopic": "Gelombang Bunyi",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1617,7 +1617,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Pembiasan Cahaya Hukum Snellius",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1639,8 +1639,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Membalik indeks bias medium sehingga menghasilkan $\\sin r = \\frac{3}{4}$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1648,7 +1648,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Hubungan Frekuensi dan Panjang Gelombang Cahaya",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1670,8 +1670,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Perhatikan Orde Pangkat:</strong> Hati-hati saat menaikkan pangkat dari penyebut: $10^8 / 10^{-7} = 10^{8 - (-7)} = 10^{15}$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1679,7 +1679,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-5",
+    "subTopicId": "fis-gel-2",
     "category": "Kelajuan Cahaya dalam Medium Pembias",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1701,8 +1701,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Konsep Kunci:</strong> Cahaya selalu merambat <em>lebih lambat</em> di dalam medium optik ($n > 1$) dibandingkan di ruang hampa. Nilai $v$ tidak mungkin melebihi $c$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Pemantulan & Pembiasan Cahaya",
-    "subTopic": "Pemantulan & Pembiasan Cahaya",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1710,7 +1710,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Cermin Cekung",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1732,8 +1732,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Ingat cermin cekung memiliki fokus positif ($+10\\text{ cm}$), sedangkan cermin cembung memiliki fokus negatif.\n        </div>\n      "
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1741,7 +1741,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Cermin Cembung Pembentukan Bayangan",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1763,8 +1763,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Wajib Diingat:</strong> Selalu beri tanda minus pada fokus cermin cembung dan lensa cekung ($f < 0$).</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1772,7 +1772,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Kuat Lensa (Daya Dioptri)",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1794,8 +1794,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal:</strong> Jika fokus dalam cm, langsung bagi dengan 100 ($P = 100/f$). Jika fokus dalam meter, $P = 1/f$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1803,7 +1803,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Perbesaran Lup Mata Tanpa Akomodasi",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1825,8 +1825,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menambahkan $+1$ saat mata rileks. Penambahan $+1$ hanya dilakukan jika ada keterangan \"akomodasi maksimum\".</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1834,7 +1834,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Jumlah Bayangan Dua Cermin Datar Bersudut",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1856,8 +1856,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jangan Lupa $-1$:</strong> Nilai $360^\\circ / \\alpha$ harus selalu dikurangi 1 karena salah satu posisi ditempati oleh benda asli.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1865,7 +1865,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Pembentukan Bayangan Cermin Cekung",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1887,8 +1887,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Tips Menghafal Jari-Jari:</strong> Jari-jari $R$ selalu dua kali jarak fokus ($R = 2f$). Jangan gunakan nilai $R$ langsung sebagai $f$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1896,7 +1896,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Lensa Cekung (Divergen)",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1918,8 +1918,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Karakteristik Tetap Lensa Cekung:</strong> Lensa cekung tidak pernah bisa menghasilkan bayangan nyata pada posisi benda real apa pun. Nilai $s'$ selalu negatif.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -1927,7 +1927,7 @@ window.QUESTIONS_MUDAH = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-gel",
-    "subTopicId": "fis-gel-6",
+    "subTopicId": "fis-gel-2",
     "category": "Kuat Lensa Gabungan Bersentuhan",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -1949,8 +1949,8 @@ window.QUESTIONS_MUDAH = [
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Sifat Akhir Gabungan:</strong> Karena $P_{\\text{gab}} > 0$ ($+3\\text{ D}$), sistem gabungan kedua lensa tersebut berperilaku seperti sebuah lensa cembung dengan jarak fokus $f = 100/3 \\approx 33{,}3\\text{ cm}$.</div>"
     },
     "bab": "Gelombang",
-    "subBab": "Alat Optik (Cermin & Lensa)",
-    "subTopic": "Alat Optik (Cermin & Lensa)",
+    "subBab": "Gelombang Cahaya",
+    "subTopic": "Gelombang Cahaya",
     "chapterTitle": "Gelombang"
   },
   {
@@ -3538,8 +3538,8 @@ window.QUESTIONS_MUDAH = [
     "id": "mudah-mtk-01",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-tri",
-    "subTopicId": "fun-tri-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-1",
     "category": "Trigonometri Dasar (Fondasi)",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3560,17 +3560,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "\n        <ol>\n          <li>Gunakan bentuk langsung dengan sinus:\n            $$\\cos 2\\alpha = 1 - 2\\sin^2\\alpha$$\n          </li>\n          <li>Substitusi $\\sin\\alpha = \\frac{3}{5}$:\n            $$\\cos 2\\alpha = 1 - 2\\left(\\frac{3}{5}\\right)^2 = 1 - 2\\left(\\frac{9}{25}\\right) = 1 - \\frac{18}{25} = \\frac{7}{25}$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Jangan tertukar antara rumus $\\cos 2\\alpha = 1 - 2\\sin^2\\alpha$ dengan $\\sin 2\\alpha = 2\\sin\\alpha\\cos\\alpha$. Pilihan A (24/25) adalah nilai $\\sin 2\\alpha$!\n        </div>\n      "
     },
-    "bab": "Trigonometri Analitik Dasar",
+    "bab": "Bab Fundamental",
     "subBab": "Trigonometri Analitik Dasar",
     "subTopic": "Trigonometri Analitik Dasar",
-    "chapterTitle": "Trigonometri Analitik Dasar"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-01",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-tri",
-    "subTopicId": "fun-tri-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-1",
     "category": "Relasi Sudut Kuadran II, III, dan IV",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3591,17 +3591,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "<ol><li>$\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = +\\frac{1}{2}$.</li><li>$\\cos 240^\\circ = \\cos(180^\\circ + 60^\\circ) = -\\cos 60^\\circ = -\\frac{1}{2}$.</li><li>$\\tan 315^\\circ = \\tan(360^\\circ - 45^\\circ) = -\\tan 45^\\circ = -1$.</li><li>Hasil akhir: $\\left(+\\frac{1}{2}\\right) + \\left(-\\frac{1}{2}\\right) - (-1) = 0 + 1 = 1$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Salah menentukan tanda aljabar trigonometri pada kuadran III dan IV.</div>"
     },
-    "bab": "Trigonometri Analitik Dasar",
+    "bab": "Bab Fundamental",
     "subBab": "Trigonometri Analitik Dasar",
     "subTopic": "Trigonometri Analitik Dasar",
-    "chapterTitle": "Trigonometri Analitik Dasar"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-02",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-alj",
-    "subTopicId": "fun-alj-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-2",
     "category": "Pemfaktoran Kuadrat (Fondasi)",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3622,17 +3622,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "\n        <ol>\n          <li>Uraikan suku tengah:\n            $$2x^2 - 6x - x + 3 = 0$$\n          </li>\n          <li>Faktorkan secara berpasangan:\n            $$2x(x - 3) - 1(x - 3) = 0 \\implies (2x - 1)(x - 3) = 0$$\n          </li>\n          <li>Maka akarnya:\n            $$2x - 1 = 0 \\implies x = \\frac{1}{2} \\quad \\text{atau} \\quad x - 3 = 0 \\implies x = 3$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan tanda negatif saat pemfaktoran agar tidak terbalik menjadi negatif pada hasil akhir.\n        </div>\n      "
     },
-    "bab": "Aljabar Elementer",
+    "bab": "Bab Fundamental",
     "subBab": "Aljabar Elementer",
     "subTopic": "Aljabar Elementer",
-    "chapterTitle": "Aljabar Elementer"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-02",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-alj",
-    "subTopicId": "fun-alj-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-2",
     "category": "Penyederhanaan Pecahan Aljabar",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3653,17 +3653,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "<ol><li>Faktorkan pembilang: $2x^2 - 8 = 2(x^2 - 4) = 2(x - 2)(x + 2)$.</li><li>Faktorkan penyebut: $x^2 + 3x + 2 = (x + 1)(x + 2)$.</li><li>Bagi faktor persekutuan $(x + 2)$: $\\frac{2(x - 2)(x + 2)}{(x + 1)(x + 2)} = \\frac{2(x - 2)}{x + 1}$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Mencoret suku $x^2$ secara langsung tanpa memfaktorkan bentuk penjumlahan aljabar terlebih dahulu.</div>"
     },
-    "bab": "Aljabar Elementer",
+    "bab": "Bab Fundamental",
     "subBab": "Aljabar Elementer",
     "subTopic": "Aljabar Elementer",
-    "chapterTitle": "Aljabar Elementer"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-03",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-geo",
-    "subTopicId": "fun-geo-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-3",
     "category": "Garis Lurus & Gradien (Fondasi)",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3684,17 +3684,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "\n        <ol>\n          <li>Ubah persamaan garis ke bentuk eksplisit $y = mx + c$:\n            $$3x - 6y + 12 = 0 \\implies 6y = 3x + 12 \\implies y = \\frac{1}{2}x + 2$$\n            Jadi, gradien garis pertama $m_1 = \\frac{1}{2}$.\n          </li>\n          <li>Garis yang tegak lurus memiliki gradien:\n            $$m_2 = -\\frac{1}{m_1} = -\\frac{1}{1/2} = -2$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pilihan C (1/2) adalah gradien garis yang <em>sejajar</em>, bukan tegak lurus.\n        </div>\n      "
     },
-    "bab": "Geometri Analitik Bidang",
+    "bab": "Bab Fundamental",
     "subBab": "Geometri Analitik Bidang",
     "subTopic": "Geometri Analitik Bidang",
-    "chapterTitle": "Geometri Analitik Bidang"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-03",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-geo",
-    "subTopicId": "fun-geo-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-3",
     "category": "Jarak Antartitik Koordinat Kartesius",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3715,17 +3715,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "<ol><li>$\\Delta x = 4 - (-2) = 6$.</li><li>$\\Delta y = -5 - 3 = -8$.</li><li>$d = \\sqrt{6^2 + (-8)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Salah dalam operasi tanda negatif: $4 - (-2) \\neq 2$.</div>"
     },
-    "bab": "Geometri Analitik Bidang",
+    "bab": "Bab Fundamental",
     "subBab": "Geometri Analitik Bidang",
     "subTopic": "Geometri Analitik Bidang",
-    "chapterTitle": "Geometri Analitik Bidang"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-08",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-mut",
-    "subTopicId": "fun-mut-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-4",
     "category": "Pertidaksamaan Nilai Mutlak Satu Variabel",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3746,17 +3746,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "\n        <ol>\n          <li>Terapkan sifat nilai mutlak:\n            $$-7 < 2x - 3 < 7$$\n          </li>\n          <li>Tambahkan 3 pada seluruh ruas:\n            $$-7 + 3 < 2x < 7 + 3 \\implies -4 < 2x < 10$$\n          </li>\n          <li>Bagi dengan 2:\n            $$-2 < x < 5$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Tanda pertidaksamaan pada soal adalah $<$ murni (tanpa sama dengan), sehingga batas penyelesaian juga tidak memuat tanda sama dengan.\n        </div>\n      "
     },
-    "bab": "Pertidaksamaan dan Nilai Mutlak",
+    "bab": "Bab Fundamental",
     "subBab": "Pertidaksamaan dan Nilai Mutlak",
     "subTopic": "Pertidaksamaan dan Nilai Mutlak",
-    "chapterTitle": "Pertidaksamaan dan Nilai Mutlak"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-04",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-mut",
-    "subTopicId": "fun-mut-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-4",
     "category": "Syarat Pecahan Aljabar Terdefinisi",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3777,17 +3777,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "<ol><li>Penyebut: $x^2 - 5x + 6 \\neq 0$.</li><li>Faktorkan: $(x - 2)(x - 3) \\neq 0$.</li><li>Maka $x \\neq 2$ dan $x \\neq 3$.</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Menganggap pembilang tidak boleh nol sehingga menyertakan $x \\neq -4$.</div>"
     },
-    "bab": "Pertidaksamaan dan Nilai Mutlak",
+    "bab": "Bab Fundamental",
     "subBab": "Pertidaksamaan dan Nilai Mutlak",
     "subTopic": "Pertidaksamaan dan Nilai Mutlak",
-    "chapterTitle": "Pertidaksamaan dan Nilai Mutlak"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "mudah-mtk-04",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-eks",
-    "subTopicId": "fun-eks-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-5",
     "category": "Sifat Dasar Logaritma (Fondasi)",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3808,17 +3808,17 @@ window.QUESTIONS_MUDAH = [
       "steps": "\n        <ol>\n          <li>Gabungkan numerus dengan basis 2:\n            $$^2\\log\\left( \\frac{24 \\times 6}{9} \\right)$$\n          </li>\n          <li>Sederhanakan pecahan di dalam numerus:\n            $$\\frac{144}{9} = 16$$\n          </li>\n          <li>Hitung nilai logaritma:\n            $$^2\\log 16 = ^2\\log(2^4) = 4$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Pastikan basis logaritma sama sebelum menggabungkan numerus.\n        </div>\n      "
     },
-    "bab": "Eksponen dan Logaritma",
+    "bab": "Bab Fundamental",
     "subBab": "Eksponen dan Logaritma",
     "subTopic": "Eksponen dan Logaritma",
-    "chapterTitle": "Eksponen dan Logaritma"
+    "chapterTitle": "Bab Fundamental"
   },
   {
     "id": "sup-mtk-fun-05",
     "subject": "MATEMATIKA",
     "pillarId": "fundamental",
-    "chapterId": "fun-eks",
-    "subTopicId": "fun-eks-1",
+    "chapterId": "mtk-fun",
+    "subTopicId": "mtk-fun-5",
     "category": "Sifat Perubahan Basis Logaritma",
     "difficulty": "mudah",
     "difficultyLabel": "Mudah",
@@ -3839,10 +3839,10 @@ window.QUESTIONS_MUDAH = [
       "steps": "<ol><li>Ubah basis 10 ke basis 2: $^{10}\\log 15 = \\frac{^2\\log 15}{^2\\log 10}$.</li><li>Faktorkan numerus prima: $^{10}\\log 15 = \\frac{^2\\log (3 \\times 5)}{^2\\log (2 \\times 5)}$.</li><li>Terapkan sifat perkalian: $\\frac{^2\\log 3 + ^2\\log 5}{^2\\log 2 + ^2\\log 5}$.</li><li>Substitusi: $\\frac{a + b}{1 + b}$ (karena $^2\\log 2 = 1$).</li></ol>",
       "pitfalls": "<div class=\"callout-box callout-pitfall\"><strong>⚠️ Jebakan Umum:</strong> Salah menganggap $^2\\log 10 = 2 \\times ^2\\log 5$ bukannya $^2\\log 2 + ^2\\log 5 = 1 + b$.</div>"
     },
-    "bab": "Eksponen dan Logaritma",
+    "bab": "Bab Fundamental",
     "subBab": "Eksponen dan Logaritma",
     "subTopic": "Eksponen dan Logaritma",
-    "chapterTitle": "Eksponen dan Logaritma"
+    "chapterTitle": "Bab Fundamental"
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_MUDAH;

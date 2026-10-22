@@ -429,26 +429,68 @@
 
       <div class="modal-content-scroll">
         
-        <!-- 1. Cakupan Bab & Sub-Bab (Hierarchical Multi-Select Accordion) -->
+        <!-- 1. Cakupan Materi (Sistem Navigasi 3 Tingkat: Mapel -> Bab -> Sub-Bab) -->
         <div class="config-group">
-          <label class="config-label">
-            <i class="fa-solid fa-diagram-project text-blue-600"></i>
-            1. Cakupan Bab & Sub-Bab (Pilih Topik):
-          </label>
-          <div class="topic-selector-card">
-            <div class="topic-selector-toolbar">
-              <div class="topic-quick-actions">
-                <button type="button" class="tactile-btn tactile-btn-secondary topic-quick-btn" onclick="selectAllSetupTopics()">
-                  <i class="fa-solid fa-check-double mr-1"></i> Pilih Semua
+          <div class="topic-section-header">
+            <label class="config-label" style="margin-bottom: 0;">
+              <i class="fa-solid fa-diagram-project text-blue-600"></i>
+              1. Cakupan Materi:
+            </label>
+            <div class="topic-global-actions">
+              <button type="button" class="tactile-btn tactile-btn-secondary topic-quick-btn" onclick="selectAllSetupTopics()">
+                <i class="fa-solid fa-check-double mr-1"></i> Pilih Semua Materi
+              </button>
+              <button type="button" class="tactile-btn tactile-btn-secondary topic-quick-btn" onclick="resetSetupTopics()">
+                <i class="fa-solid fa-rotate-left mr-1"></i> Reset
+              </button>
+            </div>
+          </div>
+          <span id="setupTopicCounterBadge" class="hidden"></span>
+
+          <!-- LEVEL 1: Segmented Tabs (Mata Pelajaran) -->
+          <div id="modalPillarTabs" class="modal-pillar-tabs" role="tablist" aria-label="Pilih Mata Pelajaran">
+            <button type="button" id="modalTabPillar-fisika" class="modal-pillar-tab active" onclick="switchModalPillar('fisika')" role="tab" aria-selected="true">
+              <i class="fa-solid fa-bolt-lightning mr-1.5 text-orange-500"></i> Fisika (TKA)
+            </button>
+            <button type="button" id="modalTabPillar-matematika" class="modal-pillar-tab" onclick="switchModalPillar('matematika')" role="tab" aria-selected="false">
+              <i class="fa-solid fa-calculator mr-1.5 text-blue-600"></i> Matematika Lanjut (TKA)
+            </button>
+            <button type="button" id="modalTabPillar-fundamental" class="modal-pillar-tab" onclick="switchModalPillar('fundamental')" role="tab" aria-selected="false">
+              <i class="fa-solid fa-shapes mr-1.5 text-emerald-600"></i> Bab Fundamental (Prasyarat)
+            </button>
+          </div>
+
+          <!-- LEVEL 2: Pilihan Bab (Grid Tombol Kartu Kompak / Pills) -->
+          <div class="modal-level-label">
+            <span>Pilih Bab Utama:</span>
+            <span id="modalChapterSelectionSummary" class="text-xs text-slate-500 font-normal"></span>
+          </div>
+          <div id="modalChapterGrid" class="modal-chapter-grid" role="group" aria-label="Pilihan Bab">
+            <!-- Dynamically populated via renderModalLevel2Chapters() -->
+          </div>
+
+          <!-- LEVEL 3: Kartu Sub-Bab Bergulir / Scrollable Card (Hemat Ruang max-h-52 / 210px) -->
+          <div id="modalSubTopicCard" class="modal-subtopic-card">
+            <!-- Header Kartu: Nama Bab aktif & Aksi Scoped -->
+            <div class="modal-subtopic-card-header">
+              <div class="modal-subtopic-header-title">
+                <i class="fa-solid fa-folder-open text-blue-600 mr-1.5"></i>
+                <span id="modalActiveChapterTitle">Kinematika</span>
+                <span id="modalActiveChapterBadge" class="modal-ch-badge">0 Sub-Bab Terpilih</span>
+              </div>
+              <div class="modal-subtopic-header-actions">
+                <button type="button" class="tactile-btn tactile-btn-secondary modal-mini-btn" onclick="selectCurrentChapterSubTopics(true)">
+                  <i class="fa-solid fa-check mr-1"></i> Pilih Semua Sub-Bab
                 </button>
-                <button type="button" class="tactile-btn tactile-btn-secondary topic-quick-btn" onclick="resetSetupTopics()">
-                  <i class="fa-solid fa-rotate-left mr-1"></i> Reset Pilihan
+                <button type="button" class="tactile-btn tactile-btn-secondary modal-mini-btn" onclick="selectCurrentChapterSubTopics(false)">
+                  <i class="fa-solid fa-xmark mr-1"></i> Reset
                 </button>
               </div>
-              <span id="setupTopicCounterBadge" class="topic-counter-badge hidden"></span>
             </div>
-            <div id="setupTopicAccordion" class="topic-accordion-container">
-              <!-- Dynamically populated via renderSetupTopicSelector() -->
+
+            <!-- Kontainer Scrollable Sub-Bab: max-h-52 (210px), overflow-y-auto -->
+            <div id="modalSubTopicScrollList" class="modal-subtopic-scroll-list">
+              <!-- Dynamically populated via renderModalLevel3SubTopics() -->
             </div>
           </div>
         </div>
