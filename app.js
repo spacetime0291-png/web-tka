@@ -39,6 +39,7 @@ const state = {
     subTopicId: 'all',
     activeModalPillar: 'fisika',
     activeModalChapter: 'fis-kin',
+    activeModalSubChapter: 'fis-kin-ukur',
     activeModalSubChapterId: 'fis-kin-ukur',
     selectedSubTopicIds: new Set(),
     scopeTitle: 'Semua Materi',
@@ -1093,45 +1094,50 @@ function switchModalPillar(pillarId) {
     : null;
   if (pillar && Array.isArray(pillar.chapters) && pillar.chapters.length > 0) {
     state.setupForm.activeModalChapter = pillar.chapters[0].id;
-    if (Array.isArray(pillar.chapters[0].subChapters) && pillar.chapters[0].subChapters.length > 0) {
-      state.setupForm.activeModalSubChapterId = pillar.chapters[0].subChapters[0].id;
-    } else {
-      state.setupForm.activeModalSubChapterId = pillar.chapters[0].id;
-    }
+    const firstSc = (Array.isArray(pillar.chapters[0].subChapters) && pillar.chapters[0].subChapters.length > 0)
+      ? pillar.chapters[0].subChapters[0].id
+      : pillar.chapters[0].id;
+    state.setupForm.activeModalSubChapter = firstSc;
+    state.setupForm.activeModalSubChapterId = firstSc;
   }
   renderModalLevel1Tabs();
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
 }
 
 /**
- * Select active chapter (Pilihan Bab - Level 2)
+ * Select active chapter (Pilihan Bab Utama - Level 2)
  */
 function selectModalChapter(chapterId) {
   state.setupForm.activeModalChapter = chapterId;
   const ch = findChapterById(chapterId);
-  if (ch && Array.isArray(ch.subChapters) && ch.subChapters.length > 0) {
-    state.setupForm.activeModalSubChapterId = ch.subChapters[0].id;
-  } else if (ch) {
-    state.setupForm.activeModalSubChapterId = ch.id;
-  }
+  const firstSc = (ch && Array.isArray(ch.subChapters) && ch.subChapters.length > 0) 
+    ? ch.subChapters[0].id 
+    : (ch ? ch.id : '');
+  state.setupForm.activeModalSubChapter = firstSc;
+  state.setupForm.activeModalSubChapterId = firstSc;
+
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
 }
 
 /**
- * Select active sub-chapter in modal left window (Bab Kecil - Level 3)
+ * Select active sub-chapter pill (Pilihan Bab Kecil - Level 3)
  */
 function selectModalSubChapter(subChapterId) {
+  state.setupForm.activeModalSubChapter = subChapterId;
   state.setupForm.activeModalSubChapterId = subChapterId;
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
 }
 
 /**
- * Scoped check / uncheck for subtopics inside active Bab Kecil
+ * Scoped check / uncheck for subtopics inside active Bab Kecil (Window Tingkat 4)
  */
-function selectCurrentSubChapterSubTopics(selectAll) {
-  const activeScId = state.setupForm.activeModalSubChapterId;
+function selectCurrentSubChapterTopics(selectAll) {
+  const activeScId = state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId;
   const scInfo = findSubChapterById(activeScId);
   if (!scInfo) return;
   if (!state.setupForm.selectedSubTopicIds) {
@@ -1146,10 +1152,13 @@ function selectCurrentSubChapterSubTopics(selectAll) {
     }
   });
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
+
+const selectCurrentSubChapterSubTopics = selectCurrentSubChapterTopics;
 
 /**
  * Render Level 1: Segmented Tabs (Mata Pelajaran)
@@ -1171,7 +1180,7 @@ function renderModalLevel1Tabs() {
 }
 
 /**
- * Render Level 2: Compact Chapter Grid / Pills
+ * Render Level 2: Compact Chapter Grid / Pills (Bab Utama)
  */
 function renderModalLevel2Chapters() {
   const container = document.getElementById('modalChapterGrid');
@@ -1214,7 +1223,7 @@ function renderModalLevel2Chapters() {
     return `
       <button type="button" class="modal-chapter-btn ${isActive ? 'active' : ''}" 
               onclick="selectModalChapter('${ch.id}')" 
-              title="Pilih Bab ${ch.title} untuk melihat sub-bab">
+              title="Pilih Bab Utama ${ch.title}">
         <span class="modal-chapter-btn-title">${ch.title}</span>
         <div class="modal-chapter-btn-meta">
           <span class="modal-chapter-status-pill ${statusClass}">${statusText}</span>
@@ -1233,207 +1242,156 @@ function renderModalLevel2Chapters() {
 }
 
 /**
- * Render Level 3 & 4: 2-Window Split Master-Detail Container (Bab Kecil & Sub-Bab)
+ * Render Level 3: Baris Kartu / Pills Pilihan Bab Kecil (DI LUAR WINDOW)
  */
-function renderModalLevel3SubTopics() {
-  const listContainer = document.getElementById('modalSubTopicScrollList');
-  const subChapterListEl = document.getElementById('modalSubChapterList');
-  const titleEl = document.getElementById('modalActiveChapterTitle');
-  const badgeEl = document.getElementById('modalActiveChapterBadge');
-  const activeScTitleEl = document.getElementById('modalActiveSubChapterTitle');
-  const activeScBadgeEl = document.getElementById('modalActiveSubChapterBadge');
-
-  if (!listContainer || !window.SYLLABUS_DATA) return;
+function renderModalLevel3SubChapters() {
+  const container = document.getElementById('modalSubChapterList');
+  const activeChapterTitleEl = document.getElementById('modalActiveChapterTitle');
+  if (!container || !window.SYLLABUS_DATA) return;
 
   const activeChId = state.setupForm.activeModalChapter;
   const ch = findChapterById(activeChId);
   if (!ch) {
-    listContainer.innerHTML = '<div style="padding: 12px; font-size: 0.85rem; color: var(--ink-muted);">Pilih bab terlebih dahulu</div>';
-    if (subChapterListEl) subChapterListEl.innerHTML = '';
-    if (titleEl) titleEl.textContent = 'Pilih Bab';
-    if (badgeEl) badgeEl.textContent = '0 Terpilih';
+    container.innerHTML = '<div style="padding: 8px; font-size: 0.82rem; color: var(--ink-muted);">Pilih bab terlebih dahulu</div>';
+    if (activeChapterTitleEl) activeChapterTitleEl.textContent = '';
     return;
   }
 
-  if (titleEl) titleEl.textContent = ch.title;
+  if (activeChapterTitleEl) {
+    activeChapterTitleEl.textContent = `(Bab ${ch.title})`;
+  }
 
   const selected = state.setupForm.selectedSubTopicIds || new Set();
   const subChapters = Array.isArray(ch.subChapters) && ch.subChapters.length > 0 
     ? ch.subChapters 
     : [{ id: ch.id, title: ch.title, subTopics: ch.subTopics || [] }];
 
-  // Ensure activeModalSubChapterId belongs to active chapter
-  if (!state.setupForm.activeModalSubChapterId || !subChapters.some(sc => sc.id === state.setupForm.activeModalSubChapterId)) {
+  const currentActiveScId = state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId;
+  if (!currentActiveScId || !subChapters.some(sc => sc.id === currentActiveScId)) {
+    state.setupForm.activeModalSubChapter = subChapters[0].id;
     state.setupForm.activeModalSubChapterId = subChapters[0].id;
   }
 
-  let selectedCountInCh = 0;
-  const totalSubTopicsInCh = (ch.subTopics || []).length;
-  (ch.subTopics || []).forEach(sub => {
-    if (selected.has(sub.id) || selected.has(sub.slug)) selectedCountInCh++;
+  const html = subChapters.map(sc => {
+    const scSubs = sc.subTopics || [];
+    let scSelectedCount = 0;
+    scSubs.forEach(sub => {
+      if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
+    });
+
+    const isActive = sc.id === (state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId);
+    let counterClass = '';
+    if (scSelectedCount === scSubs.length && scSubs.length > 0) {
+      counterClass = 'all-selected';
+    } else if (scSelectedCount > 0) {
+      counterClass = 'has-selected';
+    }
+
+    return `
+      <button type="button" class="modal-subchapter-pill-btn ${isActive ? 'active' : ''}" 
+              id="modal-sc-btn-${sc.id}"
+              onclick="selectModalSubChapter('${sc.id}')"
+              role="tab"
+              aria-selected="${isActive ? 'true' : 'false'}"
+              title="Pilih Bab Kecil ${sc.title}">
+        <span class="modal-sc-pill-title">${sc.title}</span>
+        <span class="modal-sc-pill-counter ${counterClass}">${scSelectedCount}/${scSubs.length}</span>
+      </button>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
+}
+
+/**
+ * Render Level 4: Window Kontainer Sub-Bab (HANYA BERISI SUB-BAB)
+ */
+function renderModalLevel4SubTopics() {
+  const listContainer = document.getElementById('modalSubTopicScrollList');
+  const activeScTitleEl = document.getElementById('modalActiveSubChapterTitle');
+  const activeScBadgeEl = document.getElementById('modalActiveSubChapterBadge');
+  const activeChapterBadgeEl = document.getElementById('modalActiveChapterBadge');
+
+  if (!listContainer || !window.SYLLABUS_DATA) return;
+
+  const activeChId = state.setupForm.activeModalChapter;
+  const ch = findChapterById(activeChId);
+  if (!ch) {
+    listContainer.innerHTML = '<div style="padding: 16px; font-size: 0.85rem; color: var(--ink-muted); text-align: center;">Pilih bab terlebih dahulu</div>';
+    if (activeScTitleEl) activeScTitleEl.textContent = 'Pilih Bab';
+    if (activeScBadgeEl) activeScBadgeEl.textContent = '0/0 Terpilih';
+    return;
+  }
+
+  const selected = state.setupForm.selectedSubTopicIds || new Set();
+  const subChapters = Array.isArray(ch.subChapters) && ch.subChapters.length > 0 
+    ? ch.subChapters 
+    : [{ id: ch.id, title: ch.title, subTopics: ch.subTopics || [] }];
+
+  const currentActiveScId = state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId;
+  const activeSc = subChapters.find(sc => sc.id === currentActiveScId) || subChapters[0];
+
+  const activeSubs = activeSc.subTopics || [];
+  let activeSelectedCount = 0;
+  activeSubs.forEach(sub => {
+    if (selected.has(sub.id) || selected.has(sub.slug)) activeSelectedCount++;
   });
 
-  if (badgeEl) {
-    badgeEl.textContent = `${selectedCountInCh} dari ${totalSubTopicsInCh} Terpilih`;
+  if (activeScTitleEl) {
+    activeScTitleEl.textContent = activeSc.title;
+  }
+  if (activeScBadgeEl) {
+    activeScBadgeEl.textContent = `${activeSelectedCount}/${activeSubs.length} Terpilih`;
   }
 
-  // If 2-Window Split-Selector is present in DOM
-  if (subChapterListEl) {
-    // 1. Render Window Kiri: Daftar Bab Kecil
-    const scListHtml = subChapters.map(sc => {
-      const scSubs = sc.subTopics || [];
-      let scSelectedCount = 0;
-      scSubs.forEach(sub => {
-        if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
-      });
-      const isAllScChecked = scSubs.length > 0 && scSelectedCount === scSubs.length;
-      const isActive = sc.id === state.setupForm.activeModalSubChapterId;
-
-      return `
-        <div class="modal-subchapter-item ${isActive ? 'active' : ''}" 
-             id="modal-sc-item-${sc.id}"
-             onclick="selectModalSubChapter('${sc.id}')"
-             role="tab"
-             aria-selected="${isActive ? 'true' : 'false'}"
-             tabindex="0"
-             title="${sc.title}">
-          <div class="modal-subchapter-item-left">
-            <input type="checkbox" id="modal-sc-chk-${sc.id}" class="tactile-checkbox" 
-                   ${isAllScChecked ? 'checked' : ''} 
-                   onclick="event.stopPropagation(); toggleSetupSubChapter('${sc.id}', this.checked)"
-                   title="Pilih seluruh sub-bab di ${sc.title}" />
-            <span class="modal-subchapter-item-name">${sc.title}</span>
-          </div>
-          <span class="mini-counter-badge ${scSelectedCount > 0 ? 'badge-has-selected' : ''}">${scSelectedCount}/${scSubs.length}</span>
-        </div>
-      `;
-    }).join('');
-
-    subChapterListEl.innerHTML = scListHtml;
-
-    // Apply indeterminate state to Bab Kecil checkboxes
-    subChapters.forEach(sc => {
-      const scSubs = sc.subTopics || [];
-      let scSelectedCount = 0;
-      scSubs.forEach(sub => {
-        if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
-      });
-      const isPartiallyChecked = scSelectedCount > 0 && scSelectedCount < scSubs.length;
-      const chk = document.getElementById(`modal-sc-chk-${sc.id}`);
-      if (chk) {
-        chk.indeterminate = isPartiallyChecked;
-      }
-    });
-
-    // 2. Render Window Kanan: Daftar Sub-Bab Spesifik untuk Bab Kecil yang Aktif
-    const activeSc = subChapters.find(sc => sc.id === state.setupForm.activeModalSubChapterId) || subChapters[0];
-    const activeSubs = activeSc.subTopics || [];
-    let activeSelectedCount = 0;
-    activeSubs.forEach(sub => {
-      if (selected.has(sub.id) || selected.has(sub.slug)) activeSelectedCount++;
-    });
-
-    if (activeScTitleEl) {
-      activeScTitleEl.innerHTML = `<i class="fa-solid fa-layer-group mr-1"></i> ${activeSc.title}`;
-    }
-    if (activeScBadgeEl) {
-      activeScBadgeEl.textContent = `${activeSelectedCount}/${activeSubs.length} Terpilih`;
-      if (activeSelectedCount > 0 && activeScBadgeEl.classList) {
-        activeScBadgeEl.classList.add('badge-has-selected');
-      } else if (activeScBadgeEl.classList) {
-        activeScBadgeEl.classList.remove('badge-has-selected');
-      }
-    }
-
-    const subHtml = activeSubs.map(sub => {
-      const isChecked = selected.has(sub.id) || selected.has(sub.slug);
-      const subQuestions = getFilteredQuestions({
-        subTopicId: sub.id,
-        difficulties: state.setupForm.difficulties,
-        progressive: state.setupForm.isProgressive,
-        wrongOnly: state.setupForm.wrongOnly
-      });
-
-      return `
-        <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
-          <div class="modal-subtopic-left">
-            <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
-                   ${isChecked ? 'checked' : ''} 
-                   onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
-                   onclick="event.stopPropagation()"
-                   title="Pilih sub-bab ${sub.title}">
-            <div class="modal-subtopic-name-wrap">
-              <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
-              <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
-            </div>
-          </div>
-          <div class="modal-subtopic-right">
-            <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
-          </div>
-        </div>
-      `;
-    }).join('');
-
-    listContainer.innerHTML = subHtml || '<div style="padding: 16px; font-size: 0.85rem; color: var(--ink-muted); text-align: center;">Tidak ada sub-bab</div>';
-  } else {
-    // Fallback: Grouped list with sticky sub-headers
-    const html = subChapters.map(sc => {
-      const scSubs = sc.subTopics || [];
-      let scSelectedCount = 0;
-      scSubs.forEach(sub => {
-        if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
-      });
-      const isAllScChecked = scSubs.length > 0 && scSelectedCount === scSubs.length;
-
-      return `
-        <div class="modal-subchapter-group">
-          <div class="modal-subchapter-sticky-header" onclick="toggleModalSubChapterGroup('${sc.id}', event)">
-            <div class="modal-subchapter-header-left">
-              <input type="checkbox" id="modal-sc-chk-${sc.id}" class="tactile-checkbox" 
-                     ${isAllScChecked ? 'checked' : ''} 
-                     onclick="event.stopPropagation(); toggleSetupSubChapter('${sc.id}', this.checked)"
-                     title="Pilih seluruh sub-bab di ${sc.title}" />
-              <span class="modal-subchapter-title">${sc.title}</span>
-            </div>
-            <span class="modal-subchapter-badge">${scSelectedCount}/${scSubs.length} Terpilih</span>
-          </div>
-
-          <div class="modal-subchapter-items">
-            ${scSubs.map(sub => {
-              const isChecked = selected.has(sub.id) || selected.has(sub.slug);
-              const subQuestions = getFilteredQuestions({
-                subTopicId: sub.id,
-                difficulties: state.setupForm.difficulties,
-                progressive: state.setupForm.isProgressive,
-                wrongOnly: state.setupForm.wrongOnly
-              });
-
-              return `
-                <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
-                  <div class="modal-subtopic-left">
-                    <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
-                           ${isChecked ? 'checked' : ''} 
-                           onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
-                           onclick="event.stopPropagation()"
-                           title="Pilih sub-bab ${sub.title}">
-                    <div class="modal-subtopic-name-wrap">
-                      <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
-                      <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
-                    </div>
-                  </div>
-                  <div class="modal-subtopic-right">
-                    <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
-                  </div>
-                </div>
-              `;
-            }).join('')}
-          </div>
-        </div>
-      `;
-    }).join('');
-
-    listContainer.innerHTML = html;
+  // Chapter total badge sync if element exists
+  let chSelectedCount = 0;
+  const chSubs = ch.subTopics || [];
+  chSubs.forEach(sub => {
+    if (selected.has(sub.id) || selected.has(sub.slug)) chSelectedCount++;
+  });
+  if (activeChapterBadgeEl) {
+    activeChapterBadgeEl.textContent = `${chSelectedCount}/${chSubs.length} Terpilih`;
   }
+
+  const subHtml = activeSubs.map(sub => {
+    const isChecked = selected.has(sub.id) || selected.has(sub.slug);
+    const subQuestions = getFilteredQuestions({
+      subTopicId: sub.id,
+      difficulties: state.setupForm.difficulties,
+      progressive: state.setupForm.isProgressive,
+      wrongOnly: state.setupForm.wrongOnly
+    });
+
+    return `
+      <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
+        <div class="modal-subtopic-left">
+          <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
+                 ${isChecked ? 'checked' : ''} 
+                 onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
+                 onclick="event.stopPropagation()"
+                 title="Pilih sub-bab ${sub.title}">
+          <div class="modal-subtopic-name-wrap">
+            <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
+            <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
+          </div>
+        </div>
+        <div class="modal-subtopic-right">
+          <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  listContainer.innerHTML = subHtml || '<div style="padding: 16px; font-size: 0.85rem; color: var(--ink-muted); text-align: center;">Tidak ada sub-bab</div>';
+}
+
+/**
+ * Backward compatibility wrapper
+ */
+function renderModalLevel3SubTopics() {
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
 }
 
 /**
@@ -1644,6 +1602,7 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
     state.setupForm.activeModalChapter = 'fis-kin';
     state.setupForm.activeModalSubChapterId = 'fis-kin-ukur';
   }
+  state.setupForm.activeModalSubChapter = state.setupForm.activeModalSubChapterId;
 
   const modal = document.getElementById('drillSetupModal');
   const scopeSubtitle = document.getElementById('setupScopeSubtitle');
@@ -1655,10 +1614,11 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
     wrongCountBadge.textContent = getWrongQuestionsHistory().length;
   }
 
-  // Render 3-Level Navigation
+  // Render 4-Level Navigation
   renderModalLevel1Tabs();
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
 
   // Refresh active pills styling and question count preview
   syncSetupPillStyles();
@@ -2903,9 +2863,12 @@ if (typeof window !== 'undefined') {
   window.switchModalPillar = switchModalPillar;
   window.selectModalChapter = selectModalChapter;
   window.selectModalSubChapter = selectModalSubChapter;
+  window.selectCurrentSubChapterTopics = selectCurrentSubChapterTopics;
   window.selectCurrentSubChapterSubTopics = selectCurrentSubChapterSubTopics;
   window.renderModalLevel1Tabs = renderModalLevel1Tabs;
   window.renderModalLevel2Chapters = renderModalLevel2Chapters;
+  window.renderModalLevel3SubChapters = renderModalLevel3SubChapters;
+  window.renderModalLevel4SubTopics = renderModalLevel4SubTopics;
   window.renderModalLevel3SubTopics = renderModalLevel3SubTopics;
   window.selectCurrentChapterSubTopics = selectCurrentChapterSubTopics;
   window.expandAllChapterAccordions = expandAllChapterAccordions;
@@ -2945,9 +2908,12 @@ if (typeof module !== 'undefined' && module.exports) {
     switchModalPillar,
     selectModalChapter,
     selectModalSubChapter,
+    selectCurrentSubChapterTopics,
     selectCurrentSubChapterSubTopics,
     renderModalLevel1Tabs,
     renderModalLevel2Chapters,
+    renderModalLevel3SubChapters,
+    renderModalLevel4SubTopics,
     renderModalLevel3SubTopics,
     selectCurrentChapterSubTopics,
     getAccordionState,

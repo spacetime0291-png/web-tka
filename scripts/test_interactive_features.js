@@ -431,41 +431,51 @@ assert(mockElements.activeSessionBanner.classList.contains('hidden'),
   'activeSessionBanner is hidden after clearing session state');
 
 // ============================================================================
-// TEST GROUP 9: SPLIT-WINDOW MASTER-DETAIL, ACCORDIONS & CENTERED WORKSPACE
+// TEST GROUP 9: 4-LEVEL LINEAR SETUP MODAL, ACCORDIONS & CENTERED WORKSPACE
 // ============================================================================
-console.log('\n--- TEST GROUP 9: SPLIT-WINDOW, ACCORDIONS & CENTERED WORKSPACE ---');
+console.log('\n--- TEST GROUP 9: 4-LEVEL LINEAR SETUP MODAL, ACCORDIONS & CENTERED WORKSPACE ---');
 
-// Case A: Split-Window in Drill Modal
+// Case A: 4-Level Linear Hierarchy in Drill Modal (Pilar -> Bab Utama -> Bab Kecil [Outside] -> Sub-Bab [Window])
 app.openDrillSetupModal('matematika', 'mat-alj', 'all', 'Aljabar');
 assert(app.state.setupForm.activeModalChapter === 'mat-alj', 'Active chapter is mat-alj');
+assert(app.state.setupForm.activeModalSubChapter === 'mat-alj-matriks',
+  'activeModalSubChapter defaults to first sub-chapter (mat-alj-matriks)');
 assert(app.state.setupForm.activeModalSubChapterId === 'mat-alj-matriks',
-  'activeModalSubChapterId defaults to first sub-chapter (mat-alj-matriks)');
+  'activeModalSubChapterId is in sync with activeModalSubChapter');
 assert(mockElements.modalSubChapterList.innerHTML.includes('Matriks') && mockElements.modalSubChapterList.innerHTML.includes('Polinomial'),
-  'modalSubChapterList left window renders Bab Kecil list');
+  'modalSubChapterList renders outside Bab Kecil pills/cards');
 assert(mockElements.modalSubTopicScrollList.innerHTML.includes('Ordo, Kesamaan, dan Transpose'),
-  'modalSubTopicScrollList right window renders active subChapter subtopics');
+  'modalSubTopicScrollList renders active subChapter subtopics inside window');
 
-// Switch active sub-chapter in modal left window
+// Switch active sub-chapter in Bab Kecil pills
 app.selectModalSubChapter('mat-alj-polinom');
+assert(app.state.setupForm.activeModalSubChapter === 'mat-alj-polinom',
+  'selectModalSubChapter updates activeModalSubChapter to mat-alj-polinom');
 assert(app.state.setupForm.activeModalSubChapterId === 'mat-alj-polinom',
   'selectModalSubChapter updates activeModalSubChapterId to mat-alj-polinom');
 assert(mockElements.modalSubTopicScrollList.innerHTML.includes('Skema Horner') && mockElements.modalSubTopicScrollList.innerHTML.includes('Teorema Sisa'),
   'modalSubTopicScrollList updates right window with Polinomial subtopics');
 
-// Scoped SubChapter Select / Reset
+// Scoped SubChapter Select / Reset via selectCurrentSubChapterTopics
 const polinomSubs = window.SYLLABUS_DATA.pillars[1].chapters[0].subChapters[1].subTopics.map(s => s.id);
-app.selectCurrentSubChapterSubTopics(false);
+app.selectCurrentSubChapterTopics(false);
 assert(polinomSubs.every(id => !app.state.setupForm.selectedSubTopicIds.has(id)),
-  'selectCurrentSubChapterSubTopics(false) unchecks all subtopics in active Bab Kecil');
+  'selectCurrentSubChapterTopics(false) unchecks all subtopics in active Bab Kecil');
 
-app.selectCurrentSubChapterSubTopics(true);
+app.selectCurrentSubChapterTopics(true);
 assert(polinomSubs.every(id => app.state.setupForm.selectedSubTopicIds.has(id)),
-  'selectCurrentSubChapterSubTopics(true) checks all subtopics in active Bab Kecil');
+  'selectCurrentSubChapterTopics(true) checks all subtopics in active Bab Kecil');
 
 // Direct Sub-Chapter Drill open
 app.openDrillSetupModal('fisika', 'fis-gel', 'subchapter:fis-gel-optik', 'Gelombang Cahaya & Optik');
-assert(app.state.setupForm.activeModalSubChapterId === 'fis-gel-optik',
+assert(app.state.setupForm.activeModalSubChapter === 'fis-gel-optik',
   'openDrillSetupModal with subchapter:<id> activates that specific subChapter in modal');
+
+// Check 4-Level Linear HTML & CSS selectors
+assert(indexHtmlContent.includes('modal-subchapter-pills-row') && cssContent.includes('.modal-subchapter-pills-row'),
+  'modal-subchapter-pills-row exists in index.html and styles.css (Bab Kecil outside window)');
+assert(indexHtmlContent.includes('modal-subtopic-single-window') && cssContent.includes('.modal-subtopic-single-window'),
+  'modal-subtopic-single-window exists in index.html and styles.css (single window container for sub-bab)');
 
 // Case B: Global Accordion Controls (Buka Semua / Tutup Semua)
 app.expandAllChapterAccordions();

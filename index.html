@@ -488,67 +488,47 @@
             </button>
           </div>
 
-          <!-- LEVEL 2: Pilihan Bab (Grid Tombol Kartu Kompak / Pills) -->
+          <!-- LEVEL 2: Pilihan Bab Utama (Bab Besar) -->
           <div class="modal-level-label">
             <span>Pilih Bab Utama:</span>
             <span id="modalChapterSelectionSummary" class="text-xs text-slate-500 font-normal"></span>
           </div>
-          <div id="modalChapterGrid" class="modal-chapter-grid" role="group" aria-label="Pilihan Bab">
+          <div id="modalChapterGrid" class="modal-chapter-grid" role="group" aria-label="Pilihan Bab Utama">
             <!-- Dynamically populated via renderModalLevel2Chapters() -->
           </div>
 
-          <!-- LEVEL 3: Split-Window Master-Detail (Window Kiri: Bab Kecil, Window Kanan: Sub-Bab) -->
-          <div id="modalSubTopicCard" class="modal-subtopic-card">
-            <!-- Header Kartu: Nama Bab aktif & Aksi Scoped Seluruh Bab -->
-            <div class="modal-subtopic-card-header">
-              <div class="modal-subtopic-header-title">
-                <i class="fa-solid fa-folder-open text-blue-600 mr-1.5"></i>
-                <span id="modalActiveChapterTitle">Kinematika</span>
-                <span id="modalActiveChapterBadge" class="modal-ch-badge">0 Sub-Bab Terpilih</span>
+          <!-- LEVEL 3: Pilihan Bab Kecil (DI LUAR WINDOW) -->
+          <div class="modal-level-label" style="margin-top: 14px;">
+            <span>Pilih Bab Kecil:</span>
+            <span id="modalActiveChapterTitle" class="text-xs text-slate-500 font-normal"></span>
+          </div>
+          <div id="modalSubChapterList" class="modal-subchapter-pills-row" role="tablist" aria-label="Pilihan Bab Kecil">
+            <!-- Dynamically populated via renderModalLevel3SubChapters() -->
+          </div>
+
+          <!-- LEVEL 4: Window Kontainer Sub-Bab (HANYA BERISI SUB-BAB) -->
+          <div id="modalSubTopicCard" class="modal-subtopic-single-window" style="margin-top: 14px;">
+            <!-- Header Window: Judul Bab Kecil aktif + badge counter total terpilih + Tombol aksi cepat -->
+            <div class="modal-subtopic-window-header">
+              <div class="modal-subtopic-window-title-wrap">
+                <i class="fa-solid fa-layer-group text-blue-600 mr-1.5"></i>
+                <span id="modalActiveSubChapterTitle" class="modal-window-title">Pengukuran</span>
+                <span id="modalActiveSubChapterBadge" class="modal-window-badge">0/0 Terpilih</span>
+                <span id="modalActiveChapterBadge" class="hidden"></span>
               </div>
-              <div class="modal-subtopic-header-actions">
-                <button type="button" class="tactile-btn tactile-btn-secondary modal-mini-btn" onclick="selectCurrentChapterSubTopics(true)">
-                  <i class="fa-solid fa-check mr-1"></i> Pilih Semua di Bab Ini
+              <div class="modal-window-header-actions">
+                <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentSubChapterTopics(true)" title="Pilih semua sub-bab di bab kecil ini">
+                  <i class="fa-solid fa-check mr-1"></i> Pilih Semua Sub-Bab
                 </button>
-                <button type="button" class="tactile-btn tactile-btn-secondary modal-mini-btn" onclick="selectCurrentChapterSubTopics(false)">
+                <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentSubChapterTopics(false)" title="Reset sub-bab di bab kecil ini">
                   <i class="fa-solid fa-xmark mr-1"></i> Reset
                 </button>
               </div>
             </div>
 
-            <!-- 2-Window Split-Pane Selector -->
-            <div class="modal-split-selector">
-              <!-- Window Kiri: Daftar Bab Kecil (Master) -->
-              <div class="modal-split-left">
-                <div class="modal-split-pane-header">
-                  <span class="modal-split-pane-title"><i class="fa-solid fa-layer-group mr-1.5 text-blue-600"></i> Bab Kecil</span>
-                </div>
-                <div id="modalSubChapterList" class="modal-subchapter-list">
-                  <!-- Dynamically populated via renderModalLevel3SubTopics() -->
-                </div>
-              </div>
-
-              <!-- Window Kanan: Daftar Sub-Bab Spesifik (Detail) -->
-              <div class="modal-split-right">
-                <div class="modal-split-pane-header modal-split-right-header">
-                  <div class="modal-split-right-title-wrap">
-                    <span id="modalActiveSubChapterTitle" class="modal-split-active-title">Pengukuran</span>
-                    <span id="modalActiveSubChapterBadge" class="modal-sc-badge">0/0</span>
-                  </div>
-                  <div class="modal-split-pane-actions">
-                    <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentSubChapterSubTopics(true)" title="Pilih semua sub-bab di bab kecil ini">
-                      Pilih Semua
-                    </button>
-                    <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentSubChapterSubTopics(false)" title="Reset sub-bab di bab kecil ini">
-                      Reset
-                    </button>
-                  </div>
-                </div>
-                <!-- Kontainer Scrollable Sub-Bab -->
-                <div id="modalSubTopicScrollList" class="modal-subtopic-scroll-list">
-                  <!-- Dynamically populated via renderModalLevel3SubTopics() -->
-                </div>
-              </div>
+            <!-- Area Scroll Sub-Bab -->
+            <div id="modalSubTopicScrollList" class="modal-subtopic-scroll-list" role="region" aria-label="Daftar Sub-Bab">
+              <!-- Dynamically populated via renderModalLevel4SubTopics() -->
             </div>
           </div>
         </div>

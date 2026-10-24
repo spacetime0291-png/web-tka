@@ -2774,99 +2774,123 @@ h4, h5, h6 {
   font-weight: 500 !important;
 }
 
-/* Split-Window Master-Detail in Drill Setup Modal */
-.modal-split-selector {
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  gap: 0;
-  border-top: 1px solid var(--border-color, #CBD5E1);
-  background: var(--card-bg);
-  overflow: hidden;
-  min-height: 280px;
-}
-
-@media (max-width: 640px) {
-  .modal-split-selector {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-}
-
-.modal-split-left {
-  background: var(--bg);
-  border-right: 1.5px solid var(--ink);
+/* Level 3: Pilihan Bab Kecil (DI LUAR WINDOW) */
+.modal-subchapter-pills-row {
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
-@media (max-width: 640px) {
-  .modal-split-left {
-    border-right: none;
-    border-bottom: 1.5px solid var(--ink);
-    max-height: 160px;
-  }
-}
-
-.modal-split-right {
-  background: var(--card-bg);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  min-width: 0;
-}
-
-.modal-split-pane-header {
-  padding: 8px 12px;
-  background: var(--card-bg);
-  border-bottom: 1px solid var(--border-color, #CBD5E1);
-  display: flex;
+.modal-subchapter-pill-btn {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 0.8rem;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1.5px solid var(--border-color, #CBD5E1);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--ink);
+  transition: all 0.12s ease;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.modal-subchapter-pill-btn:hover {
+  border-color: var(--ink);
+  background: var(--card-bg);
+}
+
+.modal-subchapter-pill-btn.active {
+  background: var(--card-bg);
+  border: 2px solid var(--ink);
+  box-shadow: 2px 2px 0px 0px var(--shadow-color);
   font-weight: 600;
+}
+
+.modal-sc-pill-title {
+  white-space: nowrap;
+}
+
+.modal-sc-pill-counter {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--bg);
+  border: 1px solid var(--border-color, #CBD5E1);
+  color: var(--ink-muted);
+}
+
+.modal-subchapter-pill-btn.active .modal-sc-pill-counter {
+  border-color: var(--ink);
   color: var(--ink);
 }
 
-.modal-split-pane-title {
+.modal-sc-pill-counter.all-selected {
+  background: #DCFCE7;
+  color: #15803D;
+  border-color: #86EFAC;
+}
+
+.modal-sc-pill-counter.has-selected {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border-color: #BFDBFE;
+}
+
+/* Level 4: Window Kontainer Sub-Bab (HANYA BERISI SUB-BAB) */
+.modal-subtopic-single-window {
+  background: var(--card-bg);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px 0px var(--shadow-color);
+  overflow: hidden;
+}
+
+.modal-subtopic-window-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 6px;
-}
-
-.modal-split-right-header {
+  padding: 10px 14px;
   background: var(--bg);
+  border-bottom: 1.5px solid var(--ink);
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-.modal-split-right-title-wrap {
+.modal-subtopic-window-title-wrap {
   display: flex;
   align-items: center;
   gap: 8px;
   min-width: 0;
 }
 
-.modal-split-active-title {
-  font-size: 0.85rem;
+.modal-window-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--ink);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-.modal-sc-badge {
+.modal-window-badge {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 9999px;
   background: var(--card-bg);
   border: 1px solid var(--ink);
-  border-radius: 9999px;
-  padding: 1px 7px;
   color: var(--ink);
   white-space: nowrap;
 }
 
-.modal-split-pane-actions {
+.modal-window-header-actions {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -2874,95 +2898,55 @@ h4, h5, h6 {
 }
 
 .mini-pill-btn {
-  padding: 2px 7px !important;
-  font-size: 0.72rem !important;
+  padding: 4px 9px !important;
+  font-size: 0.74rem !important;
   line-height: 1.2 !important;
-  border-radius: 4px !important;
+  border-radius: 5px !important;
 }
 
-/* Master list of Bab Kecil */
-.modal-subchapter-list {
+.modal-subtopic-single-window .modal-subtopic-scroll-list {
+  max-height: 250px;
   overflow-y: auto;
-  max-height: 260px;
-  display: flex;
-  flex-direction: column;
-  padding: 6px;
-  gap: 3px;
-}
-
-.modal-subchapter-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.12s ease;
-  border: 1.2px solid transparent;
-  user-select: none;
-}
-
-.modal-subchapter-item:hover {
-  background: var(--card-bg);
-}
-
-.modal-subchapter-item.active {
-  background: var(--card-bg);
-  border-color: var(--ink);
-  box-shadow: 1.5px 1.5px 0px 0px var(--shadow-color);
-}
-
-.modal-subchapter-item-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  min-width: 0;
-  flex: 1;
-}
-
-.modal-subchapter-item-title {
-  font-size: 0.84rem;
-  font-weight: 500;
-  color: var(--ink);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.modal-subchapter-item.active .modal-subchapter-item-title {
-  font-weight: 600;
-  color: var(--accent-math, #2563EB);
-}
-
-.modal-subchapter-item-badge {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
-  font-weight: 500;
-  padding: 1px 6px;
-  background: var(--bg);
-  border: 1px solid var(--border-color, #CBD5E1);
-  border-radius: 4px;
-  color: var(--ink-muted);
-  flex-shrink: 0;
-}
-
-.modal-subchapter-item.active .modal-subchapter-item-badge {
-  border-color: var(--ink);
-  color: var(--ink);
-}
-
-/* Detail list of Sub-Bab in Right Pane */
-.modal-split-right .modal-subtopic-scroll-list {
-  max-height: 260px;
-  overflow-y: auto;
-  padding: 8px 10px;
-  scrollbar-width: thin;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   gap: 6px;
   background: var(--card-bg);
   box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 640px) {
+  .modal-chapter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .modal-subchapter-pills-row {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-subchapter-pill-btn {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .modal-subtopic-single-window .modal-subtopic-scroll-list {
+    max-height: 210px;
+    padding: 8px;
+  }
+
+  .modal-subtopic-row {
+    min-height: 42px;
+    padding: 8px 10px;
+  }
 }
 
 .modal-subtopic-row {
