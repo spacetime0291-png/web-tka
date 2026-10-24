@@ -39,6 +39,7 @@ const state = {
     subTopicId: 'all',
     activeModalPillar: 'fisika',
     activeModalChapter: 'fis-kin',
+    activeModalSubChapterId: 'fis-kin-ukur',
     selectedSubTopicIds: new Set(),
     scopeTitle: 'Semua Materi',
     difficulties: ['mudah', 'sedang', 'hots'],
@@ -128,14 +129,75 @@ function toggleChapterAccordion(chapterId) {
   saveAccordionState(list);
 }
 
-// Syllabus Lookup Helpers
+function expandAllChapterAccordions() {
+  const allChapterIds = [];
+  if (typeof window !== 'undefined' && window.SYLLABUS_DATA && Array.isArray(window.SYLLABUS_DATA.pillars)) {
+    window.SYLLABUS_DATA.pillars.forEach(p => {
+      (p.chapters || []).forEach(ch => {
+        allChapterIds.push(ch.id);
+        const el = document.getElementById(`accordion-${ch.id}`);
+        const header = document.getElementById(`accordion-header-${ch.id}`);
+        if (el) el.classList.add('open');
+        if (header) header.setAttribute('aria-expanded', 'true');
+      });
+    });
+  } else if (typeof document !== 'undefined') {
+    const accordions = document.querySelectorAll('.chapter-accordion');
+    accordions.forEach(el => {
+      el.classList.add('open');
+      const id = el.id ? el.id.replace('accordion-', '') : '';
+      if (id) allChapterIds.push(id);
+      const header = document.getElementById(`accordion-header-${id}`);
+      if (header) header.setAttribute('aria-expanded', 'true');
+    });
+  }
+  saveAccordionState(allChapterIds);
+}
+
+function collapseAllChapterAccordions() {
+  if (typeof window !== 'undefined' && window.SYLLABUS_DATA && Array.isArray(window.SYLLABUS_DATA.pillars)) {
+    window.SYLLABUS_DATA.pillars.forEach(p => {
+      (p.chapters || []).forEach(ch => {
+        const el = document.getElementById(`accordion-${ch.id}`);
+        const header = document.getElementById(`accordion-header-${ch.id}`);
+        if (el) el.classList.remove('open');
+        if (header) header.setAttribute('aria-expanded', 'false');
+      });
+    });
+  } else if (typeof document !== 'undefined') {
+    const accordions = document.querySelectorAll('.chapter-accordion');
+    accordions.forEach(el => {
+      el.classList.remove('open');
+      const id = el.id ? el.id.replace('accordion-', '') : '';
+      const header = document.getElementById(`accordion-header-${id}`);
+      if (header) header.setAttribute('aria-expanded', 'false');
+    });
+  }
+  saveAccordionState([]);
+}
+
+// Syllabus Lookup Helpers & Chapter Aliases Map
+const CHAPTER_ALIASES = {
+  'fis-ter': 'fis-termo',
+  'mtk-alj': 'mat-alj',
+  'mtk-geo': 'mat-geo',
+  'mtk-tri': 'mat-lim',
+  'mtk-fun': 'fun-trig'
+};
+
 function getAllSubTopicIds() {
   const ids = [];
   if (typeof window !== 'undefined' && window.SYLLABUS_DATA && Array.isArray(window.SYLLABUS_DATA.pillars)) {
     window.SYLLABUS_DATA.pillars.forEach(p => {
       if (Array.isArray(p.chapters)) {
         p.chapters.forEach(ch => {
-          if (Array.isArray(ch.subTopics)) {
+          if (Array.isArray(ch.subChapters)) {
+            ch.subChapters.forEach(sc => {
+              if (Array.isArray(sc.subTopics)) {
+                sc.subTopics.forEach(sub => ids.push(sub.id));
+              }
+            });
+          } else if (Array.isArray(ch.subTopics)) {
             ch.subTopics.forEach(sub => ids.push(sub.id));
           }
         });
@@ -147,10 +209,26 @@ function getAllSubTopicIds() {
 
 function findChapterById(chapterId) {
   if (typeof window === 'undefined' || !window.SYLLABUS_DATA || !Array.isArray(window.SYLLABUS_DATA.pillars)) return null;
+  const targetId = CHAPTER_ALIASES[chapterId] || chapterId;
   for (const p of window.SYLLABUS_DATA.pillars) {
     if (Array.isArray(p.chapters)) {
-      const ch = p.chapters.find(c => c.id === chapterId);
+      const ch = p.chapters.find(c => c.id === targetId || c.id === chapterId);
       if (ch) return ch;
+    }
+  }
+  return null;
+}
+
+function findSubChapterById(subChapterId) {
+  if (typeof window === 'undefined' || !window.SYLLABUS_DATA || !Array.isArray(window.SYLLABUS_DATA.pillars)) return null;
+  for (const p of window.SYLLABUS_DATA.pillars) {
+    if (Array.isArray(p.chapters)) {
+      for (const ch of p.chapters) {
+        if (Array.isArray(ch.subChapters)) {
+          const sc = ch.subChapters.find(s => s.id === subChapterId || s.slug === subChapterId);
+          if (sc) return { subChapter: sc, chapter: ch, pillar: p };
+        }
+      }
     }
   }
   return null;
@@ -158,9 +236,10 @@ function findChapterById(chapterId) {
 
 function findChapterWithPillar(chapterId) {
   if (typeof window === 'undefined' || !window.SYLLABUS_DATA || !Array.isArray(window.SYLLABUS_DATA.pillars)) return null;
+  const targetId = CHAPTER_ALIASES[chapterId] || chapterId;
   for (const p of window.SYLLABUS_DATA.pillars) {
     if (Array.isArray(p.chapters)) {
-      const ch = p.chapters.find(c => c.id === chapterId);
+      const ch = p.chapters.find(c => c.id === targetId || c.id === chapterId);
       if (ch) return { chapter: ch, pillar: p };
     }
   }
@@ -172,8 +251,16 @@ function findSubTopicById(subTopicId) {
   for (const p of window.SYLLABUS_DATA.pillars) {
     if (Array.isArray(p.chapters)) {
       for (const ch of p.chapters) {
+        if (Array.isArray(ch.subChapters)) {
+          for (const sc of ch.subChapters) {
+            if (Array.isArray(sc.subTopics)) {
+              const sub = sc.subTopics.find(s => s.id === subTopicId || s.slug === subTopicId || s.code === subTopicId);
+              if (sub) return { sub, subChapter: sc, chapter: ch, pillar: p };
+            }
+          }
+        }
         if (Array.isArray(ch.subTopics)) {
-          const sub = ch.subTopics.find(s => s.id === subTopicId);
+          const sub = ch.subTopics.find(s => s.id === subTopicId || s.slug === subTopicId || s.code === subTopicId);
           if (sub) return { sub, chapter: ch, pillar: p };
         }
       }
@@ -222,7 +309,11 @@ function getFilteredQuestions(filter = {}) {
     // Multi-select subTopicIds filter (Set or Array)
     if (filter.subTopicIds !== undefined && filter.subTopicIds !== null) {
       const idSet = filter.subTopicIds instanceof Set ? filter.subTopicIds : new Set(filter.subTopicIds);
-      const matchesSub = idSet.has(q.subTopicId) || idSet.has(q.subBab) || idSet.has(q.subTopic);
+      const matchesSub = idSet.has(q.subTopicId) || 
+                         (q.subTopicSlug && idSet.has(q.subTopicSlug)) || 
+                         (q.subBab && idSet.has(q.subBab)) || 
+                         (q.subTopic && idSet.has(q.subTopic)) ||
+                         (q.subChapterId && idSet.has(q.subChapterId));
       if (!matchesSub) {
         return false;
       }
@@ -239,14 +330,27 @@ function getFilteredQuestions(filter = {}) {
 
       // Chapter filter
       if (filter.chapterId && filter.chapterId !== 'all') {
-        if (q.chapterId !== filter.chapterId && q.bab !== filter.chapterId) {
+        const targetCh = CHAPTER_ALIASES[filter.chapterId] || filter.chapterId;
+        const qCh = CHAPTER_ALIASES[q.chapterId] || q.chapterId;
+        if (qCh !== targetCh && q.chapterId !== filter.chapterId && q.bab !== filter.chapterId) {
+          return false;
+        }
+      }
+
+      // SubChapter filter
+      if (filter.subChapterId && filter.subChapterId !== 'all') {
+        if (q.subChapterId !== filter.subChapterId) {
           return false;
         }
       }
 
       // SubTopic filter
       if (filter.subTopicId && filter.subTopicId !== 'all') {
-        if (q.subTopicId !== filter.subTopicId && q.subBab !== filter.subTopicId && q.subTopic !== filter.subTopicId) {
+        if (q.subTopicId !== filter.subTopicId && 
+            q.subTopicSlug !== filter.subTopicId && 
+            q.subBab !== filter.subTopicId && 
+            q.subTopic !== filter.subTopicId &&
+            q.subChapterId !== filter.subTopicId) {
           return false;
         }
       }
@@ -763,16 +867,41 @@ function syncSyllabusCardCheckboxes() {
   window.SYLLABUS_DATA.pillars.forEach(p => {
     p.chapters.forEach(ch => {
       let chCount = 0;
-      ch.subTopics.forEach(sub => {
-        const isChecked = selected.has(sub.id);
-        if (isChecked) chCount++;
-        const subChk = document.getElementById(`card-chk-sub-${sub.id}`);
-        if (subChk) subChk.checked = isChecked;
+      const chSubs = ch.subTopics || [];
+      const totalInCh = chSubs.length;
+
+      (ch.subChapters || []).forEach(sc => {
+        let scCount = 0;
+        const scSubs = sc.subTopics || [];
+        const totalInSc = scSubs.length;
+        scSubs.forEach(sub => {
+          const isChecked = selected.has(sub.id) || selected.has(sub.slug);
+          if (isChecked) {
+            scCount++;
+            chCount++;
+          }
+          const subChk = document.getElementById(`card-chk-sub-${sub.id}`);
+          if (subChk) subChk.checked = isChecked;
+        });
+
+        const scChk = document.getElementById(`card-chk-sc-${sc.id}`);
+        if (scChk) {
+          if (scCount === totalInSc && totalInSc > 0) {
+            scChk.checked = true;
+            scChk.indeterminate = false;
+          } else if (scCount === 0) {
+            scChk.checked = false;
+            scChk.indeterminate = false;
+          } else {
+            scChk.checked = false;
+            scChk.indeterminate = true;
+          }
+        }
       });
 
       const chChk = document.getElementById(`card-chk-ch-${ch.id}`);
       if (chChk) {
-        if (chCount === ch.subTopics.length) {
+        if (chCount === totalInCh && totalInCh > 0) {
           chChk.checked = true;
           chChk.indeterminate = false;
         } else if (chCount === 0) {
@@ -788,11 +917,46 @@ function syncSyllabusCardCheckboxes() {
 }
 
 function toggleChapterCheckboxOnCard(chapterId, checked) {
-  toggleSetupChapter(chapterId, checked);
+  const ch = findChapterById(chapterId);
+  if (!ch) return;
+  if (!state.setupForm.selectedSubTopicIds) state.setupForm.selectedSubTopicIds = new Set();
+  (ch.subTopics || []).forEach(sub => {
+    if (checked) {
+      state.setupForm.selectedSubTopicIds.add(sub.id);
+    } else {
+      state.setupForm.selectedSubTopicIds.delete(sub.id);
+      state.setupForm.selectedSubTopicIds.delete(sub.slug);
+    }
+  });
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
+}
+
+function toggleSubChapterCheckboxOnCard(subChapterId, checked) {
+  const scInfo = findSubChapterById(subChapterId);
+  if (!scInfo) return;
+  if (!state.setupForm.selectedSubTopicIds) state.setupForm.selectedSubTopicIds = new Set();
+  (scInfo.subChapter.subTopics || []).forEach(sub => {
+    if (checked) {
+      state.setupForm.selectedSubTopicIds.add(sub.id);
+    } else {
+      state.setupForm.selectedSubTopicIds.delete(sub.id);
+      state.setupForm.selectedSubTopicIds.delete(sub.slug);
+    }
+  });
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
 }
 
 function toggleSubTopicCheckboxOnCard(subTopicId, checked) {
-  toggleSetupSubTopic(subTopicId, checked);
+  if (!state.setupForm.selectedSubTopicIds) state.setupForm.selectedSubTopicIds = new Set();
+  if (checked) {
+    state.setupForm.selectedSubTopicIds.add(subTopicId);
+  } else {
+    state.setupForm.selectedSubTopicIds.delete(subTopicId);
+  }
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
 }
 
 function renderChapterCard(chapter, pillarId) {
@@ -806,9 +970,13 @@ function renderChapterCard(chapter, pillarId) {
   const isOpen = openList.includes(chapter.id);
   const mastery = getMasteryData();
 
+  const subChapters = Array.isArray(chapter.subChapters) && chapter.subChapters.length > 0 
+    ? chapter.subChapters 
+    : [{ id: chapter.id, title: chapter.title, subTopics: chapter.subTopics || [] }];
+
   return `
     <article class="chapter-accordion ${isOpen ? 'open' : ''} ${isFoundation ? 'foundation-accordion' : ''}" id="accordion-${chapter.id}">
-      <!-- Accordion Header (Minimal, No cognitive overload) -->
+      <!-- Accordion Header (Level 2: Bab Besar) -->
       <div id="accordion-header-${chapter.id}" class="chapter-accordion-header" onclick="toggleChapterAccordion('${chapter.id}')" role="button" aria-expanded="${isOpen}">
         <div class="accordion-header-left">
           <input type="checkbox" id="card-chk-ch-${chapter.id}" class="tactile-checkbox mr-1" 
@@ -830,7 +998,7 @@ function renderChapterCard(chapter, pillarId) {
           </div>
         </div>
         <div class="accordion-header-right">
-          <button class="tactile-btn tactile-btn-drill-chapter ${isFoundation ? 'tactile-btn-primary' : ''}" 
+          <button type="button" class="tactile-btn tactile-btn-drill-chapter ${isFoundation ? 'tactile-btn-primary' : ''}" 
                   onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', 'all', '${chapter.title}')"
                   title="Drill Semua Soal di Bab Ini">
             <i class="fa-solid fa-play"></i>
@@ -844,32 +1012,59 @@ function renderChapterCard(chapter, pillarId) {
         <div class="chapter-progress-fill" style="width: ${masteryPercent}%;"></div>
       </div>
 
-      <!-- Collapsible Content via CSS Grid transition -->
+      <!-- Collapsible Content (Level 3: Bab Kecil & Level 4: 2-Column Compact Grid Sub-Bab) -->
       <div class="chapter-accordion-content">
         <div class="chapter-accordion-inner">
           <div class="subtopic-compact-list">
-            ${chapter.subTopics.map(sub => {
-              const subQuestions = getFilteredQuestions({ subTopicId: sub.id, wrongOnly: false });
-              const isMastered = subQuestions.length > 0 && subQuestions.every(q => mastery[q.id] && mastery[q.id].correct > 0);
+            ${subChapters.map(sc => {
+              const scQuestions = getFilteredQuestions({ subChapterId: sc.id, wrongOnly: false });
               return `
-                <div class="subtopic-compact-row" onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.title}')" style="cursor: pointer;" title="Klik untuk latihan instan sub-bab ${sub.title}">
-                  <div class="subtopic-compact-left">
-                    <input type="checkbox" id="card-chk-sub-${sub.id}" class="tactile-checkbox mr-1" 
-                           onclick="event.stopPropagation(); toggleSubTopicCheckboxOnCard('${sub.id}', this.checked)" 
-                           title="Pilih sub-bab ${sub.title} untuk drill" />
-                    <span class="status-dot ${isMastered ? 'dot-mastered' : 'dot-unmastered'}" 
-                          title="${isMastered ? 'Materi Terkuasai (100%)' : 'Belum Dikerjakan / Belum Kuasai'}"></span>
-                    <span class="subtopic-code">${sub.id}</span>
-                    <span class="subtopic-name">${sub.title}</span>
+                <div class="subchapter-group" id="subchapter-group-${sc.id}">
+                  <!-- Header Bab Kecil (Level 3) -->
+                  <div class="subchapter-header">
+                    <div class="subchapter-header-left">
+                      <input type="checkbox" id="card-chk-sc-${sc.id}" class="tactile-checkbox mr-1" 
+                             onclick="event.stopPropagation(); toggleSubChapterCheckboxOnCard('${sc.id}', this.checked)" 
+                             title="Pilih seluruh sub-bab di ${sc.title}" />
+                      <span class="subchapter-title">${sc.title}</span>
+                      <span class="subchapter-badge">${scQuestions.length} Soal</span>
+                    </div>
+                    <div class="subchapter-header-right">
+                      <button type="button" class="tactile-btn tactile-btn-compact tactile-btn-secondary" 
+                              onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', 'subchapter:${sc.id}', '${sc.title}')"
+                              title="Drill Bab Kecil ${sc.title}">
+                        <i class="fa-solid fa-play mr-1"></i>
+                        <span>Drill Bab Kecil</span>
+                      </button>
+                    </div>
                   </div>
-                  <div class="subtopic-compact-right">
-                    <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
-                    <button class="tactile-btn tactile-btn-compact" 
-                            onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.title}')"
-                            title="Latih Sub-Topik Ini">
-                      <i class="fa-solid fa-bullseye"></i>
-                      <span>Latih</span>
-                    </button>
+
+                  <!-- Isi Sub-Bab (Level 4): 2-Column Compact Grid -->
+                  <div class="subtopic-compact-grid">
+                    ${(sc.subTopics || []).map(sub => {
+                      const subQuestions = getFilteredQuestions({ subTopicId: sub.id, wrongOnly: false });
+                      const isMastered = subQuestions.length > 0 && subQuestions.every(q => mastery[q.id] && mastery[q.id].correct > 0);
+                      return `
+                        <div class="subtopic-compact-row" onclick="openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.title}')" style="cursor: pointer;" title="Latih ${sub.title}">
+                          <div class="subtopic-compact-left">
+                            <input type="checkbox" id="card-chk-sub-${sub.id}" class="tactile-checkbox mr-1" 
+                                   onclick="event.stopPropagation(); toggleSubTopicCheckboxOnCard('${sub.id}', this.checked)" 
+                                   title="Pilih sub-bab ${sub.title}" />
+                            <span class="status-dot ${isMastered ? 'dot-mastered' : 'dot-unmastered'}" 
+                                  title="${isMastered ? 'Materi Terkuasai' : 'Belum Terkuasai'}"></span>
+                            <span class="subtopic-name" title="${sub.title}">${sub.title}</span>
+                          </div>
+                          <div class="subtopic-compact-right">
+                            <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
+                            <button type="button" class="tactile-btn tactile-btn-compact tactile-btn-icon-only" 
+                                    onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', '${sub.id}', '${sub.title}')"
+                                    title="Latih ${sub.title}">
+                              <i class="fa-solid fa-bullseye"></i>
+                            </button>
+                          </div>
+                        </div>
+                      `;
+                    }).join('')}
                   </div>
                 </div>
               `;
@@ -898,6 +1093,11 @@ function switchModalPillar(pillarId) {
     : null;
   if (pillar && Array.isArray(pillar.chapters) && pillar.chapters.length > 0) {
     state.setupForm.activeModalChapter = pillar.chapters[0].id;
+    if (Array.isArray(pillar.chapters[0].subChapters) && pillar.chapters[0].subChapters.length > 0) {
+      state.setupForm.activeModalSubChapterId = pillar.chapters[0].subChapters[0].id;
+    } else {
+      state.setupForm.activeModalSubChapterId = pillar.chapters[0].id;
+    }
   }
   renderModalLevel1Tabs();
   renderModalLevel2Chapters();
@@ -909,8 +1109,46 @@ function switchModalPillar(pillarId) {
  */
 function selectModalChapter(chapterId) {
   state.setupForm.activeModalChapter = chapterId;
+  const ch = findChapterById(chapterId);
+  if (ch && Array.isArray(ch.subChapters) && ch.subChapters.length > 0) {
+    state.setupForm.activeModalSubChapterId = ch.subChapters[0].id;
+  } else if (ch) {
+    state.setupForm.activeModalSubChapterId = ch.id;
+  }
   renderModalLevel2Chapters();
   renderModalLevel3SubTopics();
+}
+
+/**
+ * Select active sub-chapter in modal left window (Bab Kecil - Level 3)
+ */
+function selectModalSubChapter(subChapterId) {
+  state.setupForm.activeModalSubChapterId = subChapterId;
+  renderModalLevel3SubTopics();
+}
+
+/**
+ * Scoped check / uncheck for subtopics inside active Bab Kecil
+ */
+function selectCurrentSubChapterSubTopics(selectAll) {
+  const activeScId = state.setupForm.activeModalSubChapterId;
+  const scInfo = findSubChapterById(activeScId);
+  if (!scInfo) return;
+  if (!state.setupForm.selectedSubTopicIds) {
+    state.setupForm.selectedSubTopicIds = new Set();
+  }
+  (scInfo.subChapter.subTopics || []).forEach(sub => {
+    if (selectAll) {
+      state.setupForm.selectedSubTopicIds.add(sub.id);
+    } else {
+      state.setupForm.selectedSubTopicIds.delete(sub.id);
+      state.setupForm.selectedSubTopicIds.delete(sub.slug);
+    }
+  });
+  renderModalLevel2Chapters();
+  renderModalLevel3SubTopics();
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
 }
 
 /**
@@ -995,12 +1233,15 @@ function renderModalLevel2Chapters() {
 }
 
 /**
- * Render Level 3: Bounded Scrollable Sub-Chapter Card (max-h-52 / 210px)
+ * Render Level 3 & 4: 2-Window Split Master-Detail Container (Bab Kecil & Sub-Bab)
  */
 function renderModalLevel3SubTopics() {
   const listContainer = document.getElementById('modalSubTopicScrollList');
+  const subChapterListEl = document.getElementById('modalSubChapterList');
   const titleEl = document.getElementById('modalActiveChapterTitle');
   const badgeEl = document.getElementById('modalActiveChapterBadge');
+  const activeScTitleEl = document.getElementById('modalActiveSubChapterTitle');
+  const activeScBadgeEl = document.getElementById('modalActiveSubChapterBadge');
 
   if (!listContainer || !window.SYLLABUS_DATA) return;
 
@@ -1008,6 +1249,7 @@ function renderModalLevel3SubTopics() {
   const ch = findChapterById(activeChId);
   if (!ch) {
     listContainer.innerHTML = '<div style="padding: 12px; font-size: 0.85rem; color: var(--ink-muted);">Pilih bab terlebih dahulu</div>';
+    if (subChapterListEl) subChapterListEl.innerHTML = '';
     if (titleEl) titleEl.textContent = 'Pilih Bab';
     if (badgeEl) badgeEl.textContent = '0 Terpilih';
     return;
@@ -1016,44 +1258,181 @@ function renderModalLevel3SubTopics() {
   if (titleEl) titleEl.textContent = ch.title;
 
   const selected = state.setupForm.selectedSubTopicIds || new Set();
-  const subTopics = ch.subTopics || [];
+  const subChapters = Array.isArray(ch.subChapters) && ch.subChapters.length > 0 
+    ? ch.subChapters 
+    : [{ id: ch.id, title: ch.title, subTopics: ch.subTopics || [] }];
+
+  // Ensure activeModalSubChapterId belongs to active chapter
+  if (!state.setupForm.activeModalSubChapterId || !subChapters.some(sc => sc.id === state.setupForm.activeModalSubChapterId)) {
+    state.setupForm.activeModalSubChapterId = subChapters[0].id;
+  }
+
   let selectedCountInCh = 0;
-
-  const html = subTopics.map(sub => {
-    const isChecked = selected.has(sub.id);
-    if (isChecked) selectedCountInCh++;
-
-    const subQuestions = getFilteredQuestions({
-      subTopicId: sub.id,
-      difficulties: state.setupForm.difficulties,
-      progressive: state.setupForm.isProgressive,
-      wrongOnly: state.setupForm.wrongOnly
-    });
-
-    return `
-      <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
-        <div class="modal-subtopic-left">
-          <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
-                 ${isChecked ? 'checked' : ''} 
-                 onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
-                 onclick="event.stopPropagation()"
-                 title="Pilih sub-bab ${sub.title}">
-          <div class="modal-subtopic-name-wrap">
-            <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
-            <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
-          </div>
-        </div>
-        <div class="modal-subtopic-right">
-          <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
-        </div>
-      </div>
-    `;
-  }).join('');
-
-  listContainer.innerHTML = html;
+  const totalSubTopicsInCh = (ch.subTopics || []).length;
+  (ch.subTopics || []).forEach(sub => {
+    if (selected.has(sub.id) || selected.has(sub.slug)) selectedCountInCh++;
+  });
 
   if (badgeEl) {
-    badgeEl.textContent = `${selectedCountInCh} dari ${subTopics.length} Terpilih`;
+    badgeEl.textContent = `${selectedCountInCh} dari ${totalSubTopicsInCh} Terpilih`;
+  }
+
+  // If 2-Window Split-Selector is present in DOM
+  if (subChapterListEl) {
+    // 1. Render Window Kiri: Daftar Bab Kecil
+    const scListHtml = subChapters.map(sc => {
+      const scSubs = sc.subTopics || [];
+      let scSelectedCount = 0;
+      scSubs.forEach(sub => {
+        if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
+      });
+      const isAllScChecked = scSubs.length > 0 && scSelectedCount === scSubs.length;
+      const isActive = sc.id === state.setupForm.activeModalSubChapterId;
+
+      return `
+        <div class="modal-subchapter-item ${isActive ? 'active' : ''}" 
+             id="modal-sc-item-${sc.id}"
+             onclick="selectModalSubChapter('${sc.id}')"
+             role="tab"
+             aria-selected="${isActive ? 'true' : 'false'}"
+             tabindex="0"
+             title="${sc.title}">
+          <div class="modal-subchapter-item-left">
+            <input type="checkbox" id="modal-sc-chk-${sc.id}" class="tactile-checkbox" 
+                   ${isAllScChecked ? 'checked' : ''} 
+                   onclick="event.stopPropagation(); toggleSetupSubChapter('${sc.id}', this.checked)"
+                   title="Pilih seluruh sub-bab di ${sc.title}" />
+            <span class="modal-subchapter-item-name">${sc.title}</span>
+          </div>
+          <span class="mini-counter-badge ${scSelectedCount > 0 ? 'badge-has-selected' : ''}">${scSelectedCount}/${scSubs.length}</span>
+        </div>
+      `;
+    }).join('');
+
+    subChapterListEl.innerHTML = scListHtml;
+
+    // Apply indeterminate state to Bab Kecil checkboxes
+    subChapters.forEach(sc => {
+      const scSubs = sc.subTopics || [];
+      let scSelectedCount = 0;
+      scSubs.forEach(sub => {
+        if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
+      });
+      const isPartiallyChecked = scSelectedCount > 0 && scSelectedCount < scSubs.length;
+      const chk = document.getElementById(`modal-sc-chk-${sc.id}`);
+      if (chk) {
+        chk.indeterminate = isPartiallyChecked;
+      }
+    });
+
+    // 2. Render Window Kanan: Daftar Sub-Bab Spesifik untuk Bab Kecil yang Aktif
+    const activeSc = subChapters.find(sc => sc.id === state.setupForm.activeModalSubChapterId) || subChapters[0];
+    const activeSubs = activeSc.subTopics || [];
+    let activeSelectedCount = 0;
+    activeSubs.forEach(sub => {
+      if (selected.has(sub.id) || selected.has(sub.slug)) activeSelectedCount++;
+    });
+
+    if (activeScTitleEl) {
+      activeScTitleEl.innerHTML = `<i class="fa-solid fa-layer-group mr-1"></i> ${activeSc.title}`;
+    }
+    if (activeScBadgeEl) {
+      activeScBadgeEl.textContent = `${activeSelectedCount}/${activeSubs.length} Terpilih`;
+      if (activeSelectedCount > 0 && activeScBadgeEl.classList) {
+        activeScBadgeEl.classList.add('badge-has-selected');
+      } else if (activeScBadgeEl.classList) {
+        activeScBadgeEl.classList.remove('badge-has-selected');
+      }
+    }
+
+    const subHtml = activeSubs.map(sub => {
+      const isChecked = selected.has(sub.id) || selected.has(sub.slug);
+      const subQuestions = getFilteredQuestions({
+        subTopicId: sub.id,
+        difficulties: state.setupForm.difficulties,
+        progressive: state.setupForm.isProgressive,
+        wrongOnly: state.setupForm.wrongOnly
+      });
+
+      return `
+        <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
+          <div class="modal-subtopic-left">
+            <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
+                   ${isChecked ? 'checked' : ''} 
+                   onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
+                   onclick="event.stopPropagation()"
+                   title="Pilih sub-bab ${sub.title}">
+            <div class="modal-subtopic-name-wrap">
+              <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
+              <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
+            </div>
+          </div>
+          <div class="modal-subtopic-right">
+            <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    listContainer.innerHTML = subHtml || '<div style="padding: 16px; font-size: 0.85rem; color: var(--ink-muted); text-align: center;">Tidak ada sub-bab</div>';
+  } else {
+    // Fallback: Grouped list with sticky sub-headers
+    const html = subChapters.map(sc => {
+      const scSubs = sc.subTopics || [];
+      let scSelectedCount = 0;
+      scSubs.forEach(sub => {
+        if (selected.has(sub.id) || selected.has(sub.slug)) scSelectedCount++;
+      });
+      const isAllScChecked = scSubs.length > 0 && scSelectedCount === scSubs.length;
+
+      return `
+        <div class="modal-subchapter-group">
+          <div class="modal-subchapter-sticky-header" onclick="toggleModalSubChapterGroup('${sc.id}', event)">
+            <div class="modal-subchapter-header-left">
+              <input type="checkbox" id="modal-sc-chk-${sc.id}" class="tactile-checkbox" 
+                     ${isAllScChecked ? 'checked' : ''} 
+                     onclick="event.stopPropagation(); toggleSetupSubChapter('${sc.id}', this.checked)"
+                     title="Pilih seluruh sub-bab di ${sc.title}" />
+              <span class="modal-subchapter-title">${sc.title}</span>
+            </div>
+            <span class="modal-subchapter-badge">${scSelectedCount}/${scSubs.length} Terpilih</span>
+          </div>
+
+          <div class="modal-subchapter-items">
+            ${scSubs.map(sub => {
+              const isChecked = selected.has(sub.id) || selected.has(sub.slug);
+              const subQuestions = getFilteredQuestions({
+                subTopicId: sub.id,
+                difficulties: state.setupForm.difficulties,
+                progressive: state.setupForm.isProgressive,
+                wrongOnly: state.setupForm.wrongOnly
+              });
+
+              return `
+                <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
+                  <div class="modal-subtopic-left">
+                    <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
+                           ${isChecked ? 'checked' : ''} 
+                           onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
+                           onclick="event.stopPropagation()"
+                           title="Pilih sub-bab ${sub.title}">
+                    <div class="modal-subtopic-name-wrap">
+                      <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
+                      <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
+                    </div>
+                  </div>
+                  <div class="modal-subtopic-right">
+                    <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    listContainer.innerHTML = html;
   }
 }
 
@@ -1083,6 +1462,7 @@ function selectCurrentChapterSubTopics(selectAll) {
       state.setupForm.selectedSubTopicIds.add(sub.id);
     } else {
       state.setupForm.selectedSubTopicIds.delete(sub.id);
+      state.setupForm.selectedSubTopicIds.delete(sub.slug);
     }
   });
 
@@ -1126,12 +1506,47 @@ function toggleSetupChapter(chapterId, checked) {
       state.setupForm.selectedSubTopicIds.add(sub.id);
     } else {
       state.setupForm.selectedSubTopicIds.delete(sub.id);
+      state.setupForm.selectedSubTopicIds.delete(sub.slug);
     }
   });
   renderModalLevel2Chapters();
   renderModalLevel3SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
+}
+
+/**
+ * Toggle all subtopics under a specific subChapter
+ */
+function toggleSetupSubChapter(subChapterId, checked) {
+  const scInfo = findSubChapterById(subChapterId);
+  if (!scInfo) return;
+  if (!state.setupForm.selectedSubTopicIds) state.setupForm.selectedSubTopicIds = new Set();
+  (scInfo.subChapter.subTopics || []).forEach(sub => {
+    if (checked) {
+      state.setupForm.selectedSubTopicIds.add(sub.id);
+    } else {
+      state.setupForm.selectedSubTopicIds.delete(sub.id);
+      state.setupForm.selectedSubTopicIds.delete(sub.slug);
+    }
+  });
+  renderModalLevel2Chapters();
+  renderModalLevel3SubTopics();
+  syncSyllabusCardCheckboxes();
+  updateSetupPreviewCount();
+}
+
+/**
+ * Click handler for modal subChapter sticky header
+ */
+function toggleModalSubChapterGroup(subChapterId, event) {
+  if (event.target && event.target.tagName === 'INPUT') return;
+  const scInfo = findSubChapterById(subChapterId);
+  if (!scInfo) return;
+  const selected = state.setupForm.selectedSubTopicIds || new Set();
+  const scSubs = scInfo.subChapter.subTopics || [];
+  const anyUnchecked = scSubs.some(s => !selected.has(s.id) && !selected.has(s.slug));
+  toggleSetupSubChapter(subChapterId, anyUnchecked);
 }
 
 /**
@@ -1175,13 +1590,25 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   state.setupForm.isProgressive = false;
   state.setupForm.wrongOnly = false;
 
-  // Multi-select subTopic selection mapping & 3-level navigation synchronization
-  if (subTopicId !== 'all') {
-    state.setupForm.selectedSubTopicIds = new Set([subTopicId]);
+  // Multi-select subTopic selection mapping & 4-level navigation synchronization
+  if (typeof subTopicId === 'string' && subTopicId.startsWith('subchapter:')) {
+    const scId = subTopicId.replace('subchapter:', '');
+    const foundSc = findSubChapterById(scId);
+    if (foundSc) {
+      state.setupForm.selectedSubTopicIds = new Set(foundSc.subChapter.subTopics.map(s => s.id));
+      state.setupForm.activeModalPillar = foundSc.pillar.id;
+      state.setupForm.activeModalChapter = foundSc.chapter.id;
+      state.setupForm.activeModalSubChapterId = foundSc.subChapter.id;
+    }
+  } else if (subTopicId !== 'all') {
     const found = findSubTopicById(subTopicId);
     if (found) {
+      state.setupForm.selectedSubTopicIds = new Set([found.sub.id]);
       state.setupForm.activeModalPillar = found.pillar.id;
       state.setupForm.activeModalChapter = found.chapter.id;
+      state.setupForm.activeModalSubChapterId = found.subChapter ? found.subChapter.id : found.chapter.id;
+    } else {
+      state.setupForm.selectedSubTopicIds = new Set([subTopicId]);
     }
   } else if (chapterId !== 'all') {
     const ch = findChapterById(chapterId);
@@ -1189,26 +1616,33 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
     const found = findChapterWithPillar(chapterId);
     if (found) {
       state.setupForm.activeModalPillar = found.pillar.id;
-      state.setupForm.activeModalChapter = ch.id;
+      state.setupForm.activeModalChapter = found.chapter.id;
+      if (found.chapter.subChapters && found.chapter.subChapters.length > 0) {
+        state.setupForm.activeModalSubChapterId = found.chapter.subChapters[0].id;
+      }
     }
   } else if (subject !== 'all') {
     const pillar = window.SYLLABUS_DATA.pillars.find(p => p.id === subject);
     const pSubIds = [];
     if (pillar && Array.isArray(pillar.chapters)) {
       pillar.chapters.forEach(ch => {
-        if (Array.isArray(ch.subTopics)) ch.subTopics.forEach(s => pSubIds.push(s.id));
+        (ch.subTopics || []).forEach(s => pSubIds.push(s.id));
       });
     }
     state.setupForm.selectedSubTopicIds = new Set(pSubIds);
     state.setupForm.activeModalPillar = subject;
     if (pillar && pillar.chapters.length > 0) {
       state.setupForm.activeModalChapter = pillar.chapters[0].id;
+      if (pillar.chapters[0].subChapters && pillar.chapters[0].subChapters.length > 0) {
+        state.setupForm.activeModalSubChapterId = pillar.chapters[0].subChapters[0].id;
+      }
     }
   } else {
-    // Default to all subtopics across all 10 chapters
+    // Default to all subtopics across all chapters
     state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
     state.setupForm.activeModalPillar = 'fisika';
     state.setupForm.activeModalChapter = 'fis-kin';
+    state.setupForm.activeModalSubChapterId = 'fis-kin-ukur';
   }
 
   const modal = document.getElementById('drillSetupModal');
@@ -1836,13 +2270,22 @@ function renderCurrentQuestion(shouldScrollToTop = false) {
   // Action Bar Button Labels
   updateBottomActionBar();
 
-  // Desktop Finish Exam Action Visibility
+  // Desktop & Drawer Finish Exam Action Visibility
   const examFinishBox = document.getElementById('examFinishBox');
   if (examFinishBox) {
     if (state.sessionMode === 'ujian' && !state.isReviewMode) {
       examFinishBox.classList.remove('hidden');
     } else {
       examFinishBox.classList.add('hidden');
+    }
+  }
+
+  const examFinishBoxDrawer = document.getElementById('examFinishBoxDrawer');
+  if (examFinishBoxDrawer) {
+    if (state.sessionMode === 'ujian' && !state.isReviewMode) {
+      examFinishBoxDrawer.classList.remove('hidden');
+    } else {
+      examFinishBoxDrawer.classList.add('hidden');
     }
   }
 
@@ -2146,6 +2589,17 @@ function updateStats() {
   if (statCorrect) statCorrect.textContent = `${correctCount}`;
   if (statAccuracy) statAccuracy.textContent = `${accuracy}%`;
   if (statRemaining) statRemaining.textContent = `${total - answeredCount}`;
+
+  // Drawer stats (Mobile & Desktop Slide-over Drawer)
+  const statAnsweredDrawer = document.getElementById('statAnsweredDrawer');
+  const statCorrectDrawer = document.getElementById('statCorrectDrawer');
+  const statAccuracyDrawer = document.getElementById('statAccuracyDrawer');
+  const statRemainingDrawer = document.getElementById('statRemainingDrawer');
+
+  if (statAnsweredDrawer) statAnsweredDrawer.textContent = `${answeredCount}/${total}`;
+  if (statCorrectDrawer) statCorrectDrawer.textContent = `${correctCount}`;
+  if (statAccuracyDrawer) statAccuracyDrawer.textContent = `${accuracy}%`;
+  if (statRemainingDrawer) statRemainingDrawer.textContent = `${total - answeredCount}`;
 }
 
 // ============================================================================
@@ -2423,13 +2877,21 @@ if (typeof window !== 'undefined') {
   window.state = state;
   window.getAllSubTopicIds = getAllSubTopicIds;
   window.findChapterById = findChapterById;
+  window.findSubChapterById = findSubChapterById;
+  window.findChapterWithPillar = findChapterWithPillar;
   window.findSubTopicById = findSubTopicById;
   window.renderSetupTopicSelector = renderSetupTopicSelector;
   window.syncSetupTopicSelectorUI = syncSetupTopicSelectorUI;
   window.selectAllSetupTopics = selectAllSetupTopics;
   window.resetSetupTopics = resetSetupTopics;
   window.toggleSetupChapter = toggleSetupChapter;
+  window.toggleSetupSubChapter = toggleSetupSubChapter;
   window.toggleSetupSubTopic = toggleSetupSubTopic;
+  window.toggleChapterCheckboxOnCard = toggleChapterCheckboxOnCard;
+  window.toggleSubChapterCheckboxOnCard = toggleSubChapterCheckboxOnCard;
+  window.toggleSubTopicCheckboxOnCard = toggleSubTopicCheckboxOnCard;
+  window.toggleModalSubChapterGroup = toggleModalSubChapterGroup;
+  window.syncSyllabusCardCheckboxes = syncSyllabusCardCheckboxes;
   window.stepQuestionCount = stepQuestionCount;
   window.handleManualCountInput = handleManualCountInput;
   window.selectSetupQuestionCount = selectSetupQuestionCount;
@@ -2440,10 +2902,14 @@ if (typeof window !== 'undefined') {
   window.updateGlobalCounters = updateGlobalCounters;
   window.switchModalPillar = switchModalPillar;
   window.selectModalChapter = selectModalChapter;
+  window.selectModalSubChapter = selectModalSubChapter;
+  window.selectCurrentSubChapterSubTopics = selectCurrentSubChapterSubTopics;
   window.renderModalLevel1Tabs = renderModalLevel1Tabs;
   window.renderModalLevel2Chapters = renderModalLevel2Chapters;
   window.renderModalLevel3SubTopics = renderModalLevel3SubTopics;
   window.selectCurrentChapterSubTopics = selectCurrentChapterSubTopics;
+  window.expandAllChapterAccordions = expandAllChapterAccordions;
+  window.collapseAllChapterAccordions = collapseAllChapterAccordions;
   window.promptExitDrillSession = promptExitDrillSession;
   window.closeExitConfirmModal = closeExitConfirmModal;
   window.confirmSaveAndExitDrillSession = confirmSaveAndExitDrillSession;
@@ -2451,6 +2917,9 @@ if (typeof window !== 'undefined') {
   window.discardActiveDrillSession = discardActiveDrillSession;
   window.clearSessionState = clearSessionState;
   window.saveSessionState = saveSessionState;
+  window.getAccordionState = getAccordionState;
+  window.saveAccordionState = saveAccordionState;
+  window.toggleChapterAccordion = toggleChapterAccordion;
   window.checkActiveSessionResume = checkActiveSessionResume;
   window.renderChapterCard = renderChapterCard;
 }
@@ -2460,17 +2929,32 @@ if (typeof module !== 'undefined' && module.exports) {
     state,
     getAllSubTopicIds,
     findChapterById,
+    findSubChapterById,
+    findChapterWithPillar,
     findSubTopicById,
     selectAllSetupTopics,
     resetSetupTopics,
     toggleSetupChapter,
+    toggleSetupSubChapter,
     toggleSetupSubTopic,
+    toggleChapterCheckboxOnCard,
+    toggleSubChapterCheckboxOnCard,
+    toggleSubTopicCheckboxOnCard,
+    toggleModalSubChapterGroup,
+    syncSyllabusCardCheckboxes,
     switchModalPillar,
     selectModalChapter,
+    selectModalSubChapter,
+    selectCurrentSubChapterSubTopics,
     renderModalLevel1Tabs,
     renderModalLevel2Chapters,
     renderModalLevel3SubTopics,
     selectCurrentChapterSubTopics,
+    getAccordionState,
+    saveAccordionState,
+    toggleChapterAccordion,
+    expandAllChapterAccordions,
+    collapseAllChapterAccordions,
     stepQuestionCount,
     handleManualCountInput,
     selectSetupQuestionCount,

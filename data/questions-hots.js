@@ -5,7 +5,7 @@ window.QUESTIONS_HOTS = [
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-din",
-    "subTopicId": "fis-din-3",
+    "subTopicId": "fis-din-rot-torsi",
     "category": "Dinamika Rotasi & Torsi",
     "difficulty": "hots",
     "difficultyLabel": "HOTS / Setara UTBK-STEI",
@@ -27,16 +27,18 @@ window.QUESTIONS_HOTS = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          <strong>⚠️ Jebakan Katrol Ideal:</strong> Pada sistem di mana katrol memiliki massa, tegangan tali pada kedua sisi katrol TIDAK sama ($T_1 \\neq T_2$). Anggapan katrol tanpa massa akan membuat torsi nol dan katrol tidak berakselerasi.\n        </div>\n      "
     },
     "bab": "Dinamika",
-    "subBab": "Dinamika Rotasi",
-    "subTopic": "Dinamika Rotasi",
-    "chapterTitle": "Dinamika"
+    "subBab": "Momen Gaya (Torsi)",
+    "subTopic": "Momen Gaya (Torsi)",
+    "chapterTitle": "Dinamika",
+    "subChapterId": "fis-din-rot",
+    "subTopicSlug": "momen-gaya-torsi"
   },
   {
     "id": "hots-fis-03",
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-flu",
-    "subTopicId": "fis-flu-2",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
     "category": "Fluida Dinamis & Teorema Torricelli",
     "difficulty": "hots",
     "difficultyLabel": "HOTS / Setara UTBK-STEI",
@@ -58,16 +60,18 @@ window.QUESTIONS_HOTS = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Perhatikan bahwa kedalaman $h$ diukur dari <em>permukaan air</em> ke lubang ($3{,}2\\text{ m}$), bukan tinggi lubang dari dasar tangki ($5 - 3{,}2 = 1{,}8\\text{ m}$).\n        </div>\n      "
     },
     "bab": "Fluida",
-    "subBab": "Fluida Dinamis",
-    "subTopic": "Fluida Dinamis",
-    "chapterTitle": "Fluida"
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicSlug": "debit-persamaan-kontinuitas"
   },
   {
     "id": "hots-fis-02",
     "subject": "FISIKA",
     "pillarId": "fisika",
     "chapterId": "fis-lis",
-    "subTopicId": "fis-lis-2",
+    "subTopicId": "fis-lis-dc-kirchhoff",
     "category": "Rangkaian Arus Searah & Kirchhoff",
     "difficulty": "hots",
     "difficultyLabel": "HOTS / Setara UTBK-STEI",
@@ -89,16 +93,51 @@ window.QUESTIONS_HOTS = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering terjadi kekeliruan polaritas baterai: pelat panjang bernilai positif ($+24\\text{ V}$ dan $+12\\text{ V}$). Pastikan arah arus konsisten keluar atau masuk simpul.\n        </div>\n      "
     },
     "bab": "Kelistrikan",
-    "subBab": "Rangkaian Arus Searah (DC)",
-    "subTopic": "Rangkaian Arus Searah (DC)",
-    "chapterTitle": "Kelistrikan"
+    "subBab": "Hukum I dan II Kirchhoff",
+    "subTopic": "Hukum I dan II Kirchhoff",
+    "chapterTitle": "Kelistrikan",
+    "subChapterId": "fis-lis-dc",
+    "subTopicSlug": "hukum-1-dan-2-kirchhoff"
+  },
+  {
+    "id": "hots-mtk-03",
+    "subject": "MATEMATIKA",
+    "pillarId": "fundamental",
+    "chapterId": "fun-trig",
+    "subTopicId": "fun-trig-dasar-pythagoras",
+    "category": "Sifat Simetri & Identitas Trigonometri Lanjut",
+    "difficulty": "hots",
+    "difficultyLabel": "HOTS / Setara UTBK-STEI",
+    "statement": "Jika nilai dari ekspresi berikut dihitung pada interval $[0, \\pi]$:\n$$I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx$$\nmaka nilai pasti dari integral tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$\\frac{\\pi^2}{8}$",
+      "$\\frac{\\pi^2}{4}$",
+      "$\\frac{\\pi^2}{2}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\pi$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>King's Property Sifat Simetri Integral:</strong><br>\n          $$\\int_{a}^{b} f(x)\\,dx = \\int_{a}^{b} f(a+b-x)\\,dx$$\n          Khusus untuk batas $[0, \\pi]$ dengan $x \\cdot g(\\sin x)$:\n          $$\\int_{0}^{\\pi} x g(\\sin x)\\,dx = \\frac{\\pi}{2} \\int_{0}^{\\pi} g(\\sin x)\\,dx$$\n        </div>\n      ",
+      "steps": "\n        <ol>\n          <li>Terapkan substitusi $x \\to \\pi - x$:\n            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)} \\, dx = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin x}{1 + \\cos^2 x} \\, dx$$\n          </li>\n          <li>Jumlahkan kedua bentuk $I$:\n            $$2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx \\implies I = \\frac{\\pi}{2} \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx$$\n          </li>\n          <li>Substitusi $u = \\cos x \\implies du = -\\sin x \\, dx$.<br>\n            Saat $x = 0 \\implies u = 1$; saat $x = \\pi \\implies u = -1$:\n            $$I = \\frac{\\pi}{2} \\int_{1}^{-1} \\frac{-du}{1 + u^2} = \\frac{\\pi}{2} \\int_{-1}^{1} \\frac{du}{1 + u^2}$$\n          </li>\n          <li>Anti-turunan baku $\\arctan(u)$:\n            $$I = \\frac{\\pi}{2} [\\arctan(1) - \\arctan(-1)] = \\frac{\\pi}{2} \\left[ \\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) \\right] = \\frac{\\pi}{2} \\left( \\frac{\\pi}{2} \\right) = \\frac{\\pi^2}{4}$$\n          </li>\n        </ol>\n      ",
+      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa mengalikan $\\frac{\\pi}{2}$ dengan hasil integral $\\frac{\\pi}{2}$, sehingga mendapatkan $\\frac{\\pi}{2}$ atau salah tanda saat integrasi substitusi $u = \\cos x$.\n        </div>\n      "
+    },
+    "bab": "Trigonometri Dasar",
+    "subBab": "Identitas Pythagoras",
+    "subTopic": "Identitas Pythagoras",
+    "chapterTitle": "Trigonometri Dasar",
+    "subChapterId": "fun-trig-dasar",
+    "subTopicSlug": "identitas-pythagoras"
   },
   {
     "id": "hots-mtk-01",
     "subject": "MATEMATIKA",
     "pillarId": "matematika",
-    "chapterId": "mtk-geo",
-    "subTopicId": "mtk-geo-3",
+    "chapterId": "mat-geo",
+    "subTopicId": "mat-geo-trans-komposisi",
     "category": "Komposisi Transformasi & Matriks Geometri",
     "difficulty": "hots",
     "difficultyLabel": "HOTS / Setara UTBK-STEI",
@@ -120,16 +159,18 @@ window.QUESTIONS_HOTS = [
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Ingat bahwa komposisi transformasi $T_2$ setelah $T_1$ dituliskan sebagai perkalian matriks $M_2 \\cdot M_1$, BUKAN $M_1 \\cdot M_2$.\n        </div>\n      "
     },
     "bab": "Geometri dan Pengukuran",
-    "subBab": "Transformasi Geometri",
-    "subTopic": "Transformasi Geometri",
-    "chapterTitle": "Geometri dan Pengukuran"
+    "subBab": "Komposisi Transformasi",
+    "subTopic": "Komposisi Transformasi",
+    "chapterTitle": "Geometri dan Pengukuran",
+    "subChapterId": "mat-geo-trans",
+    "subTopicSlug": "komposisi-transformasi"
   },
   {
     "id": "hots-mtk-02",
     "subject": "MATEMATIKA",
     "pillarId": "matematika",
-    "chapterId": "mtk-tri",
-    "subTopicId": "mtk-tri-1",
+    "chapterId": "mat-lim",
+    "subTopicId": "mat-lim-fungsi-trigono",
     "category": "Limit Fungsi Trigonometri Non-L'Hôpital",
     "difficulty": "hots",
     "difficultyLabel": "HOTS / Setara UTBK-STEI",
@@ -150,41 +191,12 @@ window.QUESTIONS_HOTS = [
       "steps": "\n        <ol>\n          <li>Dengan $A = 5x$ dan $B = 3x$:\n            $$\\frac{A+B}{2} = 4x \\quad \\text{dan} \\quad \\frac{A-B}{2} = x$$\n            $$\\cos 5x - \\cos 3x = -2\\sin(4x)\\sin(x)$$\n          </li>\n          <li>Substitusikan ke dalam ekspresi limit:\n            $$\\lim_{x \\to 0} \\frac{-2\\sin(4x)\\sin(x)}{x \\tan(2x)}$$\n          </li>\n          <li>Pisahkan menjadi perkalian limit dasar trigonometri:\n            $$-2 \\times \\left( \\lim_{x \\to 0} \\frac{\\sin(4x)}{\\tan(2x)} \\right) \\times \\left( \\lim_{x \\to 0} \\frac{\\sin(x)}{x} \\right)$$\n          </li>\n          <li>Hitung nilai masing-masing suku:\n            $$-2 \\times \\left(\\frac{4}{2}\\right) \\times (1) = -2 \\times 2 \\times 1 = -4$$\n          </li>\n        </ol>\n      ",
       "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Tanda minus pada rumus selisih kosinus $-2\\sin\\sin$ sangat vital. Lupa tanda minus akan membuat hasil menjadi $+4$, yang merupakan jebakan umum.\n        </div>\n      "
     },
-    "bab": "Trigonometri & Kalkulus Dasar",
-    "subBab": "Limit Fungsi",
-    "subTopic": "Limit Fungsi",
-    "chapterTitle": "Trigonometri & Kalkulus Dasar"
-  },
-  {
-    "id": "hots-mtk-03",
-    "subject": "MATEMATIKA",
-    "pillarId": "fundamental",
-    "chapterId": "mtk-fun",
-    "subTopicId": "mtk-fun-1",
-    "category": "Sifat Simetri & Identitas Trigonometri Lanjut",
-    "difficulty": "hots",
-    "difficultyLabel": "HOTS / Setara UTBK-STEI",
-    "statement": "Jika nilai dari ekspresi berikut dihitung pada interval $[0, \\pi]$:\n$$I = \\int_{0}^{\\pi} \\frac{x \\sin x}{1 + \\cos^2 x} \\, dx$$\nmaka nilai pasti dari integral tersebut adalah ....",
-    "hasDiagram": false,
-    "diagramSvg": "",
-    "diagramCaption": "",
-    "options": [
-      "$\\frac{\\pi^2}{8}$",
-      "$\\frac{\\pi^2}{4}$",
-      "$\\frac{\\pi^2}{2}$",
-      "$\\frac{\\pi}{4}$",
-      "$\\pi$"
-    ],
-    "correctIndex": 1,
-    "solution": {
-      "concept": "\n        <div class=\"callout-box callout-concept\">\n          <strong>King's Property Sifat Simetri Integral:</strong><br>\n          $$\\int_{a}^{b} f(x)\\,dx = \\int_{a}^{b} f(a+b-x)\\,dx$$\n          Khusus untuk batas $[0, \\pi]$ dengan $x \\cdot g(\\sin x)$:\n          $$\\int_{0}^{\\pi} x g(\\sin x)\\,dx = \\frac{\\pi}{2} \\int_{0}^{\\pi} g(\\sin x)\\,dx$$\n        </div>\n      ",
-      "steps": "\n        <ol>\n          <li>Terapkan substitusi $x \\to \\pi - x$:\n            $$I = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin(\\pi - x)}{1 + \\cos^2(\\pi - x)} \\, dx = \\int_{0}^{\\pi} \\frac{(\\pi - x)\\sin x}{1 + \\cos^2 x} \\, dx$$\n          </li>\n          <li>Jumlahkan kedua bentuk $I$:\n            $$2I = \\pi \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx \\implies I = \\frac{\\pi}{2} \\int_{0}^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x} \\, dx$$\n          </li>\n          <li>Substitusi $u = \\cos x \\implies du = -\\sin x \\, dx$.<br>\n            Saat $x = 0 \\implies u = 1$; saat $x = \\pi \\implies u = -1$:\n            $$I = \\frac{\\pi}{2} \\int_{1}^{-1} \\frac{-du}{1 + u^2} = \\frac{\\pi}{2} \\int_{-1}^{1} \\frac{du}{1 + u^2}$$\n          </li>\n          <li>Anti-turunan baku $\\arctan(u)$:\n            $$I = \\frac{\\pi}{2} [\\arctan(1) - \\arctan(-1)] = \\frac{\\pi}{2} \\left[ \\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) \\right] = \\frac{\\pi}{2} \\left( \\frac{\\pi}{2} \\right) = \\frac{\\pi^2}{4}$$\n          </li>\n        </ol>\n      ",
-      "pitfalls": "\n        <div class=\"callout-box callout-pitfall\">\n          Sering lupa mengalikan $\\frac{\\pi}{2}$ dengan hasil integral $\\frac{\\pi}{2}$, sehingga mendapatkan $\\frac{\\pi}{2}$ atau salah tanda saat integrasi substitusi $u = \\cos x$.\n        </div>\n      "
-    },
-    "bab": "Bab Fundamental",
-    "subBab": "Trigonometri Analitik Dasar",
-    "subTopic": "Trigonometri Analitik Dasar",
-    "chapterTitle": "Bab Fundamental"
+    "bab": "Kalkulus Limit",
+    "subBab": "Limit Fungsi Trigonometri",
+    "subTopic": "Limit Fungsi Trigonometri",
+    "chapterTitle": "Kalkulus Limit",
+    "subChapterId": "mat-lim-fungsi",
+    "subTopicSlug": "limit-fungsi-trigonometri"
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_HOTS;

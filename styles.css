@@ -396,26 +396,19 @@ h4, h5, h6 {
 }
 
 .workspace-layout {
+  display: block;
   width: 100%;
-  max-width: 100%;
-  min-width: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 16px;
   box-sizing: border-box;
 }
 
 .problem-column {
+  margin: 0 auto;
   width: 100%;
-  max-width: 100%;
-  min-width: 0;
+  max-width: 860px;
   box-sizing: border-box;
-}
-
-@media (min-width: 1024px) {
-  .workspace-layout {
-    display: grid;
-    grid-template-columns: 1fr 380px;
-    gap: 24px;
-    align-items: start;
-  }
 }
 
 /* ==========================================================================
@@ -891,20 +884,10 @@ h4, h5, h6 {
 
 
 /* ==========================================================================
-   Desktop Right Column: Sticky Dashboard
+   Desktop Right Column: Sticky Dashboard (Hidden in Centered Focused Mode)
    ========================================================================== */
 .desktop-dashboard {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  .desktop-dashboard {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: sticky;
-    top: calc(var(--header-height) + 16px);
-  }
+  display: none !important;
 }
 
 .dashboard-card {
@@ -1235,7 +1218,7 @@ h4, h5, h6 {
   bottom: 0;
   left: 0;
   right: 0;
-  max-height: 80vh;
+  max-height: 85vh;
   background: var(--card-bg);
   border-top: 2px solid var(--ink);
   border-radius: 16px 16px 0 0;
@@ -1245,11 +1228,32 @@ h4, h5, h6 {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
 }
 
 .mobile-drawer-sheet.open {
   transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .mobile-drawer-sheet {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 390px;
+    max-height: 100vh;
+    border-top: none;
+    border-left: 2px solid var(--ink);
+    border-radius: 0;
+    transform: translateX(100%);
+    box-shadow: -4px 0 0 0 var(--shadow-color);
+  }
+  .mobile-drawer-sheet.open {
+    transform: translateX(0);
+  }
+  .drawer-drag-handle {
+    display: none;
+  }
 }
 
 .drawer-drag-handle {
@@ -1686,9 +1690,74 @@ h4, h5, h6 {
   padding: 10px 14px 14px 14px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
   background: var(--card-bg);
   border-top: 1px dashed var(--dot-color);
+}
+
+/* 4-Tier Syllabus Hub Sub-Chapter Grouping */
+.subchapter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subchapter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 2px;
+  border-bottom: 1px dashed var(--border-color, #E2E8F0);
+}
+
+.subchapter-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.subchapter-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.subchapter-badge {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: var(--bg);
+  border: 1px solid var(--border-color, #CBD5E1);
+  border-radius: 9999px;
+  padding: 1px 7px;
+  white-space: nowrap;
+}
+
+.subchapter-header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* 2-Column Compact Grid for Level 4 Sub-Bab */
+.subtopic-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .subtopic-compact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tactile-btn-icon-only {
+  padding: 4px 8px !important;
+  font-size: 0.8rem !important;
 }
 
 /* Compact 1-line Sub-topic Item */
@@ -2705,15 +2774,193 @@ h4, h5, h6 {
   font-weight: 500 !important;
 }
 
-/* The critical space-saving bounded container: max-h-52 (approx 210px), thin scrollbar */
-.modal-subtopic-scroll-list {
-  max-height: 210px;
+/* Split-Window Master-Detail in Drill Setup Modal */
+.modal-split-selector {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 0;
+  border-top: 1px solid var(--border-color, #CBD5E1);
+  background: var(--card-bg);
+  overflow: hidden;
+  min-height: 280px;
+}
+
+@media (max-width: 640px) {
+  .modal-split-selector {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+
+.modal-split-left {
+  background: var(--bg);
+  border-right: 1.5px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .modal-split-left {
+    border-right: none;
+    border-bottom: 1.5px solid var(--ink);
+    max-height: 160px;
+  }
+}
+
+.modal-split-right {
+  background: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.modal-split-pane-header {
+  padding: 8px 12px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color, #CBD5E1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.modal-split-pane-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal-split-right-header {
+  background: var(--bg);
+}
+
+.modal-split-right-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.modal-split-active-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-sc-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background: var(--card-bg);
+  border: 1px solid var(--ink);
+  border-radius: 9999px;
+  padding: 1px 7px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.modal-split-pane-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.mini-pill-btn {
+  padding: 2px 7px !important;
+  font-size: 0.72rem !important;
+  line-height: 1.2 !important;
+  border-radius: 4px !important;
+}
+
+/* Master list of Bab Kecil */
+.modal-subchapter-list {
   overflow-y: auto;
-  padding: 6px 10px;
+  max-height: 260px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  gap: 3px;
+}
+
+.modal-subchapter-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  border: 1.2px solid transparent;
+  user-select: none;
+}
+
+.modal-subchapter-item:hover {
+  background: var(--card-bg);
+}
+
+.modal-subchapter-item.active {
+  background: var(--card-bg);
+  border-color: var(--ink);
+  box-shadow: 1.5px 1.5px 0px 0px var(--shadow-color);
+}
+
+.modal-subchapter-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.modal-subchapter-item-title {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-subchapter-item.active .modal-subchapter-item-title {
+  font-weight: 600;
+  color: var(--accent-math, #2563EB);
+}
+
+.modal-subchapter-item-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 1px 6px;
+  background: var(--bg);
+  border: 1px solid var(--border-color, #CBD5E1);
+  border-radius: 4px;
+  color: var(--ink-muted);
+  flex-shrink: 0;
+}
+
+.modal-subchapter-item.active .modal-subchapter-item-badge {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+/* Detail list of Sub-Bab in Right Pane */
+.modal-split-right .modal-subtopic-scroll-list {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 8px 10px;
   scrollbar-width: thin;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   background: var(--card-bg);
   box-sizing: border-box;
 }
@@ -2722,27 +2969,35 @@ h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 8px;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1.2px solid var(--ink);
   border-radius: 6px;
-  border: 1px solid transparent;
   cursor: pointer;
-  transition: background-color 0.1s ease, border-color 0.1s ease;
+  transition: all 0.12s ease;
   user-select: none;
+  box-sizing: border-box;
 }
 
 .modal-subtopic-row:hover {
-  background: var(--bg);
+  background: var(--card-bg);
 }
 
 .modal-subtopic-row.selected {
-  background: rgba(37, 99, 235, 0.05);
-  border-color: rgba(37, 99, 235, 0.2);
+  background: rgba(37, 99, 235, 0.08);
+  border-color: #2563EB;
+}
+
+[data-theme="dark"] .modal-subtopic-row.selected {
+  background: rgba(96, 165, 250, 0.12);
+  border-color: #60A5FA;
 }
 
 .modal-subtopic-left {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   min-width: 0;
   flex: 1;
 }
@@ -2750,23 +3005,23 @@ h4, h5, h6 {
 .modal-subtopic-name-wrap {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   min-width: 0;
 }
 
 .modal-subtopic-name {
-  font-size: 0.84rem;
-  font-weight: 400;
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--ink);
-  line-height: 1.3;
+  line-height: 1.35;
+  word-break: break-word;
 }
 
 .modal-subtopic-desc {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--ink-muted);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 320px;
+  line-height: 1.35;
+  word-break: break-word;
 }
 
 .modal-subtopic-right {
@@ -2774,6 +3029,35 @@ h4, h5, h6 {
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
+}
+
+/* Syllabus Hub Global Accordion Controls */
+.syllabus-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 18px 0;
+  padding: 8px 14px;
+  background: var(--card-bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.syllabus-controls-info {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  display: flex;
+  align-items: center;
+}
+
+.syllabus-accordion-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Mobile Responsiveness for 3-Level Modal */
@@ -2794,10 +3078,6 @@ h4, h5, h6 {
     font-size: 0.8rem;
   }
 
-  .modal-subtopic-desc {
-    max-width: 170px;
-  }
-
   .modal-subtopic-card-header {
     flex-direction: column;
     align-items: flex-start;
@@ -2807,10 +3087,6 @@ h4, h5, h6 {
   .modal-subtopic-header-actions {
     width: 100%;
     justify-content: flex-end;
-  }
-
-  .modal-subtopic-scroll-list {
-    max-height: 210px; /* Never exceeds 210px on mobile */
   }
 }
 

@@ -65,9 +65,10 @@
           <i id="themeIcon" class="fa-solid fa-moon"></i>
         </button>
 
-        <!-- Mobile Drawer Trigger Button (Only active during drilling) -->
-        <button id="btnMobileDrawerTrigger" class="icon-btn-header lg:hidden hidden" onclick="openMobileDrawer()" title="Buka Daftar Soal" aria-label="Buka Daftar Soal">
-          <i class="fa-solid fa-table-cells"></i>
+        <!-- Question List & Matrix Navigation Drawer Trigger (Active on all screen sizes during drilling) -->
+        <button id="btnMobileDrawerTrigger" class="tactile-btn tactile-btn-secondary hidden" style="padding: 6px 12px; font-size: 0.82rem;" onclick="openMobileDrawer()" title="Buka Daftar Soal & Navigasi" aria-label="Buka Daftar Soal">
+          <i class="fa-solid fa-table-cells mr-1.5"></i>
+          <span>Daftar Soal</span>
         </button>
       </div>
     </div>
@@ -108,18 +109,18 @@
         </div>
 
         <!-- Global Question Bank Counters & Mastery -->
-        <div class="hero-stats-row">
+        <div class="hero-stat-row">
           <div class="hero-stat-box">
-            <div id="statTotalBankQuestions" class="hero-stat-value">38</div>
+            <div id="statTotalBankQuestions" class="hero-stat-value">239</div>
             <div class="hero-stat-label">Total Soal di Bank</div>
           </div>
           <div class="hero-stat-box">
-            <div id="statTotalChapters" class="hero-stat-value">10</div>
+            <div id="statTotalChapters" class="hero-stat-value">14</div>
             <div class="hero-stat-label">Bab Terpetakan</div>
           </div>
           <div class="hero-stat-box">
             <div id="statTierBreakdown" class="hero-stat-value" style="font-size: 0.95rem; line-height: 1.8;">
-              <span style="color: #16A34A;">18 M</span> • <span style="color: #D97706;">14 S</span> • <span style="color: #DC2626;">6 H</span>
+              <span style="color: #16A34A;">124 M</span> • <span style="color: #D97706;">109 S</span> • <span style="color: #DC2626;">6 H</span>
             </div>
             <div class="hero-stat-label">Mudah • Sedang • HOTS</div>
           </div>
@@ -144,6 +145,22 @@
         <button id="tabFilterFund" class="pillar-tab-btn tab-fund" onclick="switchPillarFilter('fundamental')">
           <i class="fa-solid fa-shapes mr-1.5"></i> Pilar 3: Bab Fundamental
         </button>
+      </div>
+
+      <!-- Syllabus Global Accordion Controls -->
+      <div class="syllabus-controls-bar">
+        <div class="syllabus-controls-info">
+          <i class="fa-solid fa-list-check text-blue-600 mr-1.5"></i>
+          <span>Peta Bab & Silabus Materi</span>
+        </div>
+        <div class="syllabus-accordion-buttons">
+          <button type="button" class="tactile-btn tactile-btn-secondary" style="padding: 5px 12px; font-size: 0.8rem;" onclick="expandAllChapterAccordions()" title="Buka seluruh bab">
+            <i class="fa-solid fa-angles-down mr-1"></i> Buka Semua Bab
+          </button>
+          <button type="button" class="tactile-btn tactile-btn-secondary" style="padding: 5px 12px; font-size: 0.8rem;" onclick="collapseAllChapterAccordions()" title="Tutup seluruh bab">
+            <i class="fa-solid fa-angles-up mr-1"></i> Tutup Semua Bab
+          </button>
+        </div>
       </div>
 
       <!-- PILAR 1: FISIKA CONTAINER -->
@@ -425,7 +442,7 @@
        MODAL 1: ATUR SESI DRILLING (SETUP & CONFIGURATOR)
        =================================================================== -->
   <div id="drillSetupModal" class="tactile-modal-overlay">
-    <div class="tactile-modal-card" style="max-width: 580px;">
+    <div class="tactile-modal-card modal-card-configurator" style="max-width: 700px;">
       <div class="modal-header">
         <div>
           <h3 class="modal-title"><i class="fa-solid fa-sliders mr-2"></i>Atur Sesi Drilling</h3>
@@ -480,9 +497,9 @@
             <!-- Dynamically populated via renderModalLevel2Chapters() -->
           </div>
 
-          <!-- LEVEL 3: Kartu Sub-Bab Bergulir / Scrollable Card (Hemat Ruang max-h-52 / 210px) -->
+          <!-- LEVEL 3: Split-Window Master-Detail (Window Kiri: Bab Kecil, Window Kanan: Sub-Bab) -->
           <div id="modalSubTopicCard" class="modal-subtopic-card">
-            <!-- Header Kartu: Nama Bab aktif & Aksi Scoped -->
+            <!-- Header Kartu: Nama Bab aktif & Aksi Scoped Seluruh Bab -->
             <div class="modal-subtopic-card-header">
               <div class="modal-subtopic-header-title">
                 <i class="fa-solid fa-folder-open text-blue-600 mr-1.5"></i>
@@ -491,7 +508,7 @@
               </div>
               <div class="modal-subtopic-header-actions">
                 <button type="button" class="tactile-btn tactile-btn-secondary modal-mini-btn" onclick="selectCurrentChapterSubTopics(true)">
-                  <i class="fa-solid fa-check mr-1"></i> Pilih Semua Sub-Bab
+                  <i class="fa-solid fa-check mr-1"></i> Pilih Semua di Bab Ini
                 </button>
                 <button type="button" class="tactile-btn tactile-btn-secondary modal-mini-btn" onclick="selectCurrentChapterSubTopics(false)">
                   <i class="fa-solid fa-xmark mr-1"></i> Reset
@@ -499,9 +516,39 @@
               </div>
             </div>
 
-            <!-- Kontainer Scrollable Sub-Bab: max-h-52 (210px), overflow-y-auto -->
-            <div id="modalSubTopicScrollList" class="modal-subtopic-scroll-list">
-              <!-- Dynamically populated via renderModalLevel3SubTopics() -->
+            <!-- 2-Window Split-Pane Selector -->
+            <div class="modal-split-selector">
+              <!-- Window Kiri: Daftar Bab Kecil (Master) -->
+              <div class="modal-split-left">
+                <div class="modal-split-pane-header">
+                  <span class="modal-split-pane-title"><i class="fa-solid fa-layer-group mr-1.5 text-blue-600"></i> Bab Kecil</span>
+                </div>
+                <div id="modalSubChapterList" class="modal-subchapter-list">
+                  <!-- Dynamically populated via renderModalLevel3SubTopics() -->
+                </div>
+              </div>
+
+              <!-- Window Kanan: Daftar Sub-Bab Spesifik (Detail) -->
+              <div class="modal-split-right">
+                <div class="modal-split-pane-header modal-split-right-header">
+                  <div class="modal-split-right-title-wrap">
+                    <span id="modalActiveSubChapterTitle" class="modal-split-active-title">Pengukuran</span>
+                    <span id="modalActiveSubChapterBadge" class="modal-sc-badge">0/0</span>
+                  </div>
+                  <div class="modal-split-pane-actions">
+                    <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentSubChapterSubTopics(true)" title="Pilih semua sub-bab di bab kecil ini">
+                      Pilih Semua
+                    </button>
+                    <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentSubChapterSubTopics(false)" title="Reset sub-bab di bab kecil ini">
+                      Reset
+                    </button>
+                  </div>
+                </div>
+                <!-- Kontainer Scrollable Sub-Bab -->
+                <div id="modalSubTopicScrollList" class="modal-subtopic-scroll-list">
+                  <!-- Dynamically populated via renderModalLevel3SubTopics() -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -824,32 +871,76 @@
   </aside>
 
   <!-- ===================================================================
-       MOBILE QUESTION SHEET DRAWER
+       QUESTION SHEET & MATRIX NAVIGATION DRAWER (Slide-Over Side Sheet)
        =================================================================== -->
-  <div id="mobileDrawerOverlay" class="mobile-drawer-overlay"></div>
-  <div id="mobileDrawerSheet" class="mobile-drawer-sheet">
+  <div id="mobileDrawerOverlay" class="mobile-drawer-overlay" onclick="closeMobileDrawer()"></div>
+  <aside id="mobileDrawerSheet" class="mobile-drawer-sheet" aria-label="Daftar Soal & Navigasi">
     <div class="drawer-drag-handle"></div>
-    <div style="padding: 10px 20px 14px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--ink);">
-      <h3 class="font-heading text-base"><i class="fa-solid fa-table-cells mr-2"></i>Daftar Soal & Navigasi</h3>
+    <div style="padding: 12px 20px 14px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1.5px solid var(--ink);">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <i class="fa-solid fa-table-cells text-blue-600"></i>
+        <h3 class="font-heading text-base" style="margin: 0;">Daftar Soal & Navigasi</h3>
+        <span id="matrixCountBadgeDrawer" class="font-mono text-xs text-zinc-500"></span>
+      </div>
       <button class="icon-btn-header" onclick="closeMobileDrawer()" aria-label="Tutup Drawer">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-    <div style="padding: 20px; overflow-y: auto;">
+    <div style="padding: 18px 20px; overflow-y: auto;">
+      <!-- Session Accuracy Stats in Drawer -->
+      <div class="stats-grid mb-4">
+        <div class="stat-box">
+          <div id="statAnsweredDrawer" class="stat-value">0/0</div>
+          <div class="stat-label">Terjawab</div>
+        </div>
+        <div class="stat-box">
+          <div id="statCorrectDrawer" class="stat-value text-green-600">0</div>
+          <div class="stat-label">Benar</div>
+        </div>
+        <div class="stat-box">
+          <div id="statAccuracyDrawer" class="stat-value">0%</div>
+          <div class="stat-label">Akurasi</div>
+        </div>
+        <div class="stat-box">
+          <div id="statRemainingDrawer" class="stat-value text-amber-600">0</div>
+          <div class="stat-label">Sisa</div>
+        </div>
+      </div>
+
+      <!-- Exam Mode Submit Action Button -->
+      <div id="examFinishBoxDrawer" class="mb-4 hidden">
+        <button class="tactile-btn tactile-btn-primary w-full" onclick="closeMobileDrawer(); confirmFinishExamSession();">
+          <i class="fa-solid fa-paper-plane mr-2"></i> Selesai & Kumpulkan Sesi
+        </button>
+      </div>
+
+      <!-- Question Number Matrix Grid (1..N) -->
+      <div style="font-size: 0.8rem; font-weight: 600; color: var(--ink-muted); margin-bottom: 8px;">
+        PILIH NOMOR SOAL:
+      </div>
       <div id="matrixGridMobile" class="matrix-grid mb-4">
         <!-- Populated via JS -->
       </div>
+
+      <!-- Status Legend -->
       <div class="matrix-legend mb-4">
         <div class="legend-item"><span class="legend-dot" style="background: var(--card-bg);"></span> Belum</div>
         <div class="legend-item"><span class="legend-dot" style="background: var(--ragu);"></span> Ragu</div>
         <div class="legend-item"><span class="legend-dot" style="background: var(--correct);"></span> Benar</div>
         <div class="legend-item"><span class="legend-dot" style="background: var(--wrong);"></span> Salah</div>
       </div>
-      <button class="tactile-btn tactile-btn-secondary w-full" onclick="closeMobileDrawer(); openCheatSheetModal();">
-        <i class="fa-solid fa-book mr-2"></i> Buka Bank Rumus Kunci
-      </button>
+
+      <!-- Quick Action Buttons inside Drawer -->
+      <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px;">
+        <button class="tactile-btn tactile-btn-secondary w-full" onclick="closeMobileDrawer(); openCheatSheetModal();">
+          <i class="fa-solid fa-book mr-2"></i> Bank Rumus Kunci
+        </button>
+        <button class="tactile-btn tactile-btn-secondary w-full" onclick="closeMobileDrawer(); promptExitDrillSession();" style="color: #DC2626;">
+          <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i> Simpan & Keluar
+        </button>
+      </div>
     </div>
-  </div>
+  </aside>
 
   <!-- Application Scripts: Syllabus Hierarchy, Modular Bank Soal Architecture, Controller -->
   <script src="data/syllabusData.js"></script>

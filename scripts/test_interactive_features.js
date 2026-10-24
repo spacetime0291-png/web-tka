@@ -48,13 +48,21 @@ const mockElements = {
   'modalTabPillar-matematika': { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, setAttribute() {} },
   'modalTabPillar-fundamental': { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, setAttribute() {} },
   modalChapterGrid: { innerHTML: '' },
+  modalSubChapterList: { innerHTML: '' },
   modalSubTopicScrollList: { innerHTML: '' },
   modalActiveChapterTitle: { textContent: '' },
   modalActiveChapterBadge: { textContent: '' },
+  modalActiveSubChapterTitle: { textContent: '', innerHTML: '' },
+  modalActiveSubChapterBadge: { textContent: '', classList: { add() {}, remove() {} } },
   modalChapterSelectionSummary: { textContent: '' },
   drillSetupModal: { classList: { add() {}, remove() {} } },
   setupScopeSubtitle: { textContent: '' },
   wrongCountBadge: { textContent: '' },
+  statAnsweredDrawer: { textContent: '' },
+  statCorrectDrawer: { textContent: '' },
+  statAccuracyDrawer: { textContent: '' },
+  statRemainingDrawer: { textContent: '' },
+  examFinishBoxDrawer: { classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
   activeSessionBanner: { innerHTML: '', classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
   setupResumeCallout: { innerHTML: '', classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
   btnHeaderExitDrill: { classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
@@ -119,21 +127,22 @@ const mtk = pillars.find(p => p.id === 'matematika');
 const fund = pillars.find(p => p.id === 'fundamental');
 
 assert(fisika && fisika.chapters.length === 6, 'Fisika must have 6 chapters (Kinematika, Dinamika, Fluida, Gelombang, Kalor, Kelistrikan)');
-assert(mtk && mtk.chapters.length === 3, 'Matematika Lanjut must have 3 chapters (Aljabar, Geometri dan Pengukuran, Trigonometri & Kalkulus Dasar)');
-assert(fund && fund.chapters.length === 1, 'Bab Fundamental must have 1 chapter (Bab Fundamental)');
+assert(mtk && mtk.chapters.length === 3, 'Matematika Lanjut must have 3 chapters (Aljabar, Geometri dan Pengukuran, Limit)');
+assert(fund && fund.chapters.length === 5, 'Bab Fundamental must have 5 chapters (Trigonometri, Aljabar, Geometri, Pertidaksamaan, Eksponen)');
 
-const fundChapter = fund.chapters[0];
-assert(fundChapter && fundChapter.subTopics.length === 5, 'Bab Fundamental chapter must have 5 subtopics');
-const triSub = fundChapter.subTopics.find(s => s.id === 'mtk-fun-1');
-assert(triSub && triSub.title.includes('Trigonometri Analitik Dasar'), 'mtk-fun-1 covers Trigonometri Analitik Dasar');
+const fundTrigChapter = fund.chapters.find(c => c.id === 'fun-trig');
+assert(fundTrigChapter && fundTrigChapter.subTopics.length === 5, 'Trigonometri Dasar chapter must have 5 subtopics');
+const triSub = fundTrigChapter.subTopics.find(s => s.id === 'fun-trig-dasar-perbandingan');
+assert(triSub && triSub.title.includes('Perbandingan Trigonometri Siku-Siku'), 'fun-trig-dasar-perbandingan covers Perbandingan Trigonometri Siku-Siku');
 
-// Check Gelombang 2 sub-topics (Gelombang Bunyi & Gelombang Cahaya)
+// Check Gelombang 2 sub-chapters (Gelombang Bunyi & Gelombang Cahaya & Optik)
 const gelombang = fisika.chapters.find(c => c.id === 'fis-gel');
-assert(gelombang && gelombang.subTopics.length === 2, 'Gelombang chapter must have 2 subtopics (Gelombang Bunyi & Gelombang Cahaya)');
-const bunyiSub = gelombang.subTopics.find(s => s.id === 'fis-gel-1');
-assert(bunyiSub && bunyiSub.title.includes('Gelombang Bunyi'), 'fis-gel-1 covers Gelombang Bunyi');
-const cahayaSub = gelombang.subTopics.find(s => s.id === 'fis-gel-2');
-assert(cahayaSub && cahayaSub.title.includes('Gelombang Cahaya'), 'fis-gel-2 covers Gelombang Cahaya');
+assert(gelombang && gelombang.subChapters.length === 2, 'Gelombang chapter must have 2 subchapters (Gelombang Bunyi & Gelombang Cahaya & Optik)');
+assert(gelombang.subTopics.length === 13, 'Gelombang chapter must have 13 subtopics in total across subchapters');
+const bunyiSub = gelombang.subTopics.find(s => s.id === 'fis-gel-bunyi-doppler');
+assert(bunyiSub && bunyiSub.title.includes('Efek Doppler'), 'fis-gel-bunyi-doppler covers Efek Doppler');
+const cahayaSub = gelombang.subTopics.find(s => s.id === 'fis-gel-optik-lensa');
+assert(cahayaSub && cahayaSub.title.includes('Lensa Cekung dan Cembung'), 'fis-gel-optik-lensa covers Lensa Cekung dan Cembung');
 
 // ----------------------------------------------------
 // TEST 2: Question Bank Metadata Mapping
@@ -150,15 +159,15 @@ assert(missingMetadata.length === 0, `All 239 questions must have non-empty bab,
 // ----------------------------------------------------
 console.log('\n--- TEST GROUP 3: MULTI-SELECT SUB-BAB FILTERING ---');
 
-// Case A: Select specific cross-chapter subtopics: Bunyi (fis-gel-1), Cahaya (fis-gel-2), Limit (mtk-tri-1), Fundamental (mtk-fun-1)
-const crossSelection = new Set(['fis-gel-1', 'fis-gel-2', 'mtk-tri-1', 'mtk-fun-1']);
+// Case A: Select specific cross-chapter subtopics: Bunyi Doppler, Optik Lensa, Limit Aljabar, Trig Perbandingan
+const crossSelection = new Set(['fis-gel-bunyi-doppler', 'fis-gel-optik-lensa', 'mat-lim-fungsi-aljabar', 'fun-trig-dasar-perbandingan']);
 const crossFiltered = app.getFilteredQuestions({ subTopicIds: crossSelection });
 assert(crossFiltered.length > 0, `Cross-chapter multi-select returned ${crossFiltered.length} questions`);
 assert(crossFiltered.every(q => crossSelection.has(q.subTopicId)), 'All returned questions must strictly match the selected subTopicIds');
 
 // Case B: Select All Subtopics
 const allSubTopicIds = app.getAllSubTopicIds();
-assert(allSubTopicIds.length === 28, `Syllabus must have exactly 28 sub-topics (found: ${allSubTopicIds.length})`);
+assert(allSubTopicIds.length === 137, `Syllabus must have exactly 137 sub-topics (found: ${allSubTopicIds.length})`);
 
 const allFiltered = app.getFilteredQuestions({ subTopicIds: new Set(allSubTopicIds) });
 assert(allFiltered.length === 239, `Selecting all subtopics must return all 239 questions (found: ${allFiltered.length})`);
@@ -168,24 +177,25 @@ const emptyFiltered = app.getFilteredQuestions({ subTopicIds: new Set() });
 assert(emptyFiltered.length === 0, `Reset selection (0 subtopics) must return 0 questions (found: ${emptyFiltered.length})`);
 
 // Case D: Filter by subBab string
-const subBabFiltered = app.getFilteredQuestions({ subTopicIds: new Set(['Pengukuran']) });
-assert(subBabFiltered.length > 0 && subBabFiltered.every(q => q.subBab === 'Pengukuran'), 'Filtering by subBab string works seamlessly');
+const subBabFiltered = app.getFilteredQuestions({ subTopicIds: new Set(['Jangka Sorong']) });
+assert(subBabFiltered.length > 0 && subBabFiltered.every(q => q.subBab === 'Jangka Sorong'), 'Filtering by subBab string works seamlessly');
 
 // ----------------------------------------------------
 // TEST 4: Stepper (+1 / -1) & Manual Input Clamping
 // ----------------------------------------------------
 console.log('\n--- TEST GROUP 4: STEPPER (+1 / -1) & QUESTION COUNT ---');
 
-// Set active selection to only 'fis-kin-1' (Pengukuran: 8 questions)
-app.state.setupForm.selectedSubTopicIds = new Set(['fis-kin-1']);
+// Set active selection to subtopics under Pengukuran (6 questions)
+const kinUkurSubs = window.SYLLABUS_DATA.pillars[0].chapters[0].subChapters[0].subTopics.map(s => s.id);
+app.state.setupForm.selectedSubTopicIds = new Set(kinUkurSubs);
 app.state.setupForm.difficulties = ['mudah', 'sedang', 'hots'];
 app.state.setupForm.isProgressive = false;
 app.state.setupForm.wrongOnly = false;
 app.updateSetupPreviewCount();
 
-const kin1Questions = app.getFilteredQuestions({ subTopicIds: new Set(['fis-kin-1']) });
-const maxKin1 = kin1Questions.length; // 5
-assert(maxKin1 === 5, `fis-kin-1 must have exactly 5 questions (found: ${maxKin1})`);
+const kinUkurQuestions = app.getFilteredQuestions({ subTopicIds: new Set(kinUkurSubs) });
+const maxKinUkur = kinUkurQuestions.length; // 6
+assert(maxKinUkur === 6, `fis-kin-ukur subtopics must have exactly 6 questions (found: ${maxKinUkur})`);
 
 // Test presets
 app.selectSetupQuestionCount(3);
@@ -202,9 +212,9 @@ assert(app.state.setupForm.questionCount === 5, 'Stepper +1 from 4 yields 5');
 app.stepQuestionCount(-1);
 assert(app.state.setupForm.questionCount === 4, 'Stepper -1 from 5 yields 4');
 
-// Test Upper Clamping: +1 past max (8)
+// Test Upper Clamping: +1 past max (6)
 app.stepQuestionCount(10);
-assert(app.state.setupForm.questionCount === maxKin1, `Stepper clamps to maximum available (${maxKin1})`);
+assert(app.state.setupForm.questionCount === maxKinUkur, `Stepper clamps to maximum available (${maxKinUkur})`);
 
 // Test Lower Clamping: -1 past 1
 app.stepQuestionCount(-20);
@@ -214,9 +224,9 @@ assert(app.state.setupForm.questionCount === 1, 'Stepper clamps to minimum 1');
 app.handleManualCountInput('4');
 assert(app.state.setupForm.questionCount === 4, 'Manual input "4" sets questionCount to 4');
 
-// Test Manual Input Clamping: 99 -> maxKin1
+// Test Manual Input Clamping: 99 -> maxKinUkur
 app.handleManualCountInput('99');
-assert(app.state.setupForm.questionCount === maxKin1, `Manual input 99 clamps to max available (${maxKin1})`);
+assert(app.state.setupForm.questionCount === maxKinUkur, `Manual input 99 clamps to max available (${maxKinUkur})`);
 
 // Test Preset 'all'
 app.selectSetupQuestionCount('all');
@@ -263,20 +273,20 @@ assert(cssContent.includes('line-height: 1.8') && cssContent.includes('letter-sp
 console.log('\n--- TEST GROUP 7: SETUP MODAL & ZERO-COUNT HANDLING ---');
 
 // Case A: Direct Subtopic Drill opens with only that subtopic
-app.openDrillSetupModal('fisika', 'fis-gel', 'fis-gel-1', 'Gelombang Bunyi');
-assert(app.state.setupForm.selectedSubTopicIds.size === 1 && app.state.setupForm.selectedSubTopicIds.has('fis-gel-1'),
-  'Direct Subtopic Drill selects only that specific subtopic (fis-gel-1)');
+app.openDrillSetupModal('fisika', 'fis-gel', 'fis-gel-bunyi-doppler', 'Efek Doppler');
+assert(app.state.setupForm.selectedSubTopicIds.size === 1 && app.state.setupForm.selectedSubTopicIds.has('fis-gel-bunyi-doppler'),
+  'Direct Subtopic Drill selects only that specific subtopic (fis-gel-bunyi-doppler)');
 assert(app.state.setupForm.activeModalPillar === 'fisika', 'Direct drill sets activeModalPillar to fisika');
 assert(app.state.setupForm.activeModalChapter === 'fis-gel', 'Direct drill sets activeModalChapter to fis-gel');
 
 // Case B: Chapter Drill selects all subtopics of that chapter
 app.openDrillSetupModal('fisika', 'fis-kin', 'all', 'Kinematika');
-assert(app.state.setupForm.selectedSubTopicIds.size === 3, 'Chapter drill on Kinematika selects all 3 subtopics of Kinematika');
+assert(app.state.setupForm.selectedSubTopicIds.size === 16, 'Chapter drill on Kinematika selects all 16 subtopics of Kinematika');
 assert(app.state.setupForm.activeModalChapter === 'fis-kin', 'Chapter drill sets activeModalChapter to fis-kin');
 
-// Case C: Global Drill selects all 28 subtopics across all 10 chapters
+// Case C: Global Drill selects all 137 subtopics across all 14 chapters
 app.openDrillSetupModal('all', 'all', 'all', 'Semua Materi');
-assert(app.state.setupForm.selectedSubTopicIds.size === 28, 'Global drill auto-selects all 28 subtopics across 10 chapters');
+assert(app.state.setupForm.selectedSubTopicIds.size === 137, 'Global drill auto-selects all 137 subtopics across 14 chapters');
 
 // Case D: Zero-Count State handling
 app.state.setupForm.selectedSubTopicIds = new Set();
@@ -296,7 +306,7 @@ assert(mockPills.find(p => p.textContent === '10 Soal').classList.contains('acti
 
 // Case F: Dynamic Homepage Counter Calculation
 app.updateGlobalCounters();
-assert(Number(mockElements.statTotalChapters.textContent) === 10, 'statTotalChapters dynamically computes exactly 10 chapters');
+assert(Number(mockElements.statTotalChapters.textContent) === 14, 'statTotalChapters dynamically computes exactly 14 chapters');
 assert(Number(mockElements.statTotalBankQuestions.textContent) === 239, 'statTotalBankQuestions dynamically computes exactly 239 questions');
 
 // Case G: No <strong> tags in Hero and Exam banner in index.html
@@ -306,21 +316,22 @@ assert(heroStrongMatch && !heroStrongMatch[0].includes('<strong>'), 'Hero descri
 const examStrongMatch = indexHtmlContent.match(/id="examLockedNotice"[\s\S]*?<\/div>/);
 assert(examStrongMatch && !examStrongMatch[0].includes('<strong>'), 'Exam locked notice has 0 <strong> tags');
 
-// Case H: 3-Level Navigation System (Tab Mapel -> Pilihan Bab -> Kartu Sub-Bab Bergulir)
+// Case H: 4-Level Navigation System (Tab Mapel -> Pilihan Bab -> Kartu Sub-Bab Bergulir)
 app.switchModalPillar('matematika');
 assert(app.state.setupForm.activeModalPillar === 'matematika', 'switchModalPillar updates activeModalPillar to matematika');
-assert(app.state.setupForm.activeModalChapter === 'mtk-alj', 'switchModalPillar defaults active chapter to mtk-alj');
+assert(app.state.setupForm.activeModalChapter === 'mat-alj', 'switchModalPillar defaults active chapter to mat-alj');
 
-app.selectModalChapter('mtk-geo');
-assert(app.state.setupForm.activeModalChapter === 'mtk-geo', 'selectModalChapter updates active chapter to mtk-geo');
+app.selectModalChapter('mat-geo');
+assert(app.state.setupForm.activeModalChapter === 'mat-geo', 'selectModalChapter updates active chapter to mat-geo');
 
 // Test Level 3 Scoped Chapter Select/Reset
+const geoSubs = window.SYLLABUS_DATA.pillars[1].chapters[1].subTopics.map(s => s.id);
 app.selectCurrentChapterSubTopics(false);
-assert(!app.state.setupForm.selectedSubTopicIds.has('mtk-geo-1') && !app.state.setupForm.selectedSubTopicIds.has('mtk-geo-2'),
+assert(geoSubs.every(id => !app.state.setupForm.selectedSubTopicIds.has(id)),
   'selectCurrentChapterSubTopics(false) unchecks subtopics in active chapter');
 
 app.selectCurrentChapterSubTopics(true);
-assert(app.state.setupForm.selectedSubTopicIds.has('mtk-geo-1') && app.state.setupForm.selectedSubTopicIds.has('mtk-geo-2') && app.state.setupForm.selectedSubTopicIds.has('mtk-geo-3'),
+assert(geoSubs.every(id => app.state.setupForm.selectedSubTopicIds.has(id)),
   'selectCurrentChapterSubTopics(true) checks all subtopics in active chapter');
 
 // ============================================================================
@@ -418,6 +429,78 @@ assert(global.localStorage.getItem(window.STORAGE_KEY_SESSION) === null,
   'clearSessionState removes full session storage');
 assert(mockElements.activeSessionBanner.classList.contains('hidden'),
   'activeSessionBanner is hidden after clearing session state');
+
+// ============================================================================
+// TEST GROUP 9: SPLIT-WINDOW MASTER-DETAIL, ACCORDIONS & CENTERED WORKSPACE
+// ============================================================================
+console.log('\n--- TEST GROUP 9: SPLIT-WINDOW, ACCORDIONS & CENTERED WORKSPACE ---');
+
+// Case A: Split-Window in Drill Modal
+app.openDrillSetupModal('matematika', 'mat-alj', 'all', 'Aljabar');
+assert(app.state.setupForm.activeModalChapter === 'mat-alj', 'Active chapter is mat-alj');
+assert(app.state.setupForm.activeModalSubChapterId === 'mat-alj-matriks',
+  'activeModalSubChapterId defaults to first sub-chapter (mat-alj-matriks)');
+assert(mockElements.modalSubChapterList.innerHTML.includes('Matriks') && mockElements.modalSubChapterList.innerHTML.includes('Polinomial'),
+  'modalSubChapterList left window renders Bab Kecil list');
+assert(mockElements.modalSubTopicScrollList.innerHTML.includes('Ordo, Kesamaan, dan Transpose'),
+  'modalSubTopicScrollList right window renders active subChapter subtopics');
+
+// Switch active sub-chapter in modal left window
+app.selectModalSubChapter('mat-alj-polinom');
+assert(app.state.setupForm.activeModalSubChapterId === 'mat-alj-polinom',
+  'selectModalSubChapter updates activeModalSubChapterId to mat-alj-polinom');
+assert(mockElements.modalSubTopicScrollList.innerHTML.includes('Skema Horner') && mockElements.modalSubTopicScrollList.innerHTML.includes('Teorema Sisa'),
+  'modalSubTopicScrollList updates right window with Polinomial subtopics');
+
+// Scoped SubChapter Select / Reset
+const polinomSubs = window.SYLLABUS_DATA.pillars[1].chapters[0].subChapters[1].subTopics.map(s => s.id);
+app.selectCurrentSubChapterSubTopics(false);
+assert(polinomSubs.every(id => !app.state.setupForm.selectedSubTopicIds.has(id)),
+  'selectCurrentSubChapterSubTopics(false) unchecks all subtopics in active Bab Kecil');
+
+app.selectCurrentSubChapterSubTopics(true);
+assert(polinomSubs.every(id => app.state.setupForm.selectedSubTopicIds.has(id)),
+  'selectCurrentSubChapterSubTopics(true) checks all subtopics in active Bab Kecil');
+
+// Direct Sub-Chapter Drill open
+app.openDrillSetupModal('fisika', 'fis-gel', 'subchapter:fis-gel-optik', 'Gelombang Cahaya & Optik');
+assert(app.state.setupForm.activeModalSubChapterId === 'fis-gel-optik',
+  'openDrillSetupModal with subchapter:<id> activates that specific subChapter in modal');
+
+// Case B: Global Accordion Controls (Buka Semua / Tutup Semua)
+app.expandAllChapterAccordions();
+const expandedState = app.getAccordionState();
+assert(expandedState.length === 14,
+  `expandAllChapterAccordions() opens all 14 chapters (found: ${expandedState.length})`);
+
+app.collapseAllChapterAccordions();
+const collapsedState = app.getAccordionState();
+assert(collapsedState.length === 0,
+  `collapseAllChapterAccordions() closes all chapters (found: ${collapsedState.length})`);
+
+// Case C: Desktop Centered Workspace & Daftar Soal Slide-Over Drawer
+assert(cssContent.includes('.workspace-layout') && cssContent.includes('max-width: 900px') && cssContent.includes('margin: 0 auto'),
+  'styles.css centers .workspace-layout with max-width: 900px and margin: 0 auto');
+assert(cssContent.includes('.problem-column') && cssContent.includes('max-width: 860px') && cssContent.includes('margin: 0 auto'),
+  'styles.css centers .problem-column with max-width: 860px and margin: 0 auto');
+assert(cssContent.includes('.desktop-dashboard') && cssContent.includes('display: none !important'),
+  'styles.css hides .desktop-dashboard with display: none !important');
+
+// Top navbar Daftar Soal trigger button in index.html
+const drawerTriggerMatch = indexHtmlContent.match(/id="btnMobileDrawerTrigger"[^>]*>([\s\S]*?)<\/button>/);
+assert(drawerTriggerMatch, 'index.html contains #btnMobileDrawerTrigger');
+assert(!drawerTriggerMatch[0].includes('lg:hidden'),
+  '#btnMobileDrawerTrigger does not have lg:hidden (enabled on desktop and mobile)');
+assert(drawerTriggerMatch[1].includes('Daftar Soal'),
+  '#btnMobileDrawerTrigger displays clear tactile label "Daftar Soal"');
+
+// Drawer Sheet contains matrix, session accuracy stats, and exam finish box
+assert(indexHtmlContent.includes('id="mobileDrawerSheet"'),
+  'index.html contains #mobileDrawerSheet slide-over drawer');
+assert(indexHtmlContent.includes('id="statAnsweredDrawer"') && indexHtmlContent.includes('id="statAccuracyDrawer"'),
+  '#mobileDrawerSheet contains session accuracy statistics');
+assert(indexHtmlContent.includes('id="examFinishBoxDrawer"'),
+  '#mobileDrawerSheet contains #examFinishBoxDrawer submit action');
 
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);

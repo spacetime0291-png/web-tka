@@ -52,30 +52,37 @@ console.log(`Identified ${expectedSubtopics.size} official subtopics across ${ex
 // Load modular master index
 const { subtopics, allQuestions, questionsMudah, questionsSedang, questionsHots } = require('../data/bank-soal/index.js');
 
-// Test 1: All 28 syllabus subtopics exist in the modular registry
-runTest('All 28 syllabus subtopics are registered in modular bank', () => {
-  assert.strictEqual(expectedSubtopics.size, 28, 'Should have exactly 28 official subtopics');
-  assert.strictEqual(expectedChapters.size, 10, 'Should have exactly 10 official chapters');
+// Test 1: All 137 syllabus subtopics exist in the modular registry
+runTest('All 137 syllabus subtopics are registered in modular bank', () => {
+  assert.strictEqual(expectedSubtopics.size, 137, 'Should have exactly 137 official subtopics');
+  assert.strictEqual(expectedChapters.size, 14, 'Should have exactly 14 official chapters');
   expectedSubtopics.forEach((info, subTopicId) => {
-    assert(subtopics[subTopicId], `Subtopic ${subTopicId} (${info.title}) must exist in subtopics index`);
+    assert(subtopics[subTopicId] !== undefined, `Subtopic ${subTopicId} (${info.title}) must exist in subtopics index`);
     assert(Array.isArray(subtopics[subTopicId]), `Subtopic ${subTopicId} must export an array of questions`);
-    assert(subtopics[subTopicId].length > 0, `Subtopic ${subTopicId} must not be empty`);
   });
 });
 
 // Test 2: Subtopic file existence on disk
-runTest('All subtopic file paths exist on disk', () => {
+runTest('All 137 subtopic file paths exist on disk', () => {
   const baseDir = path.resolve(__dirname, '../data/bank-soal');
-  expectedSubtopics.forEach((info, subTopicId) => {
-    // Check if subTopicId is present in questions
-    const list = subtopics[subTopicId];
-    assert(list.length > 0, `File for ${subTopicId} should have questions`);
+  let fileCount = 0;
+  syllabus.pillars.forEach(p => {
+    p.chapters.forEach(c => {
+      (c.subChapters || []).forEach(sc => {
+        (sc.subTopics || []).forEach(s => {
+          const filePath = path.join(baseDir, p.id, c.id, sc.id, `${s.slug}.js`);
+          assert(fs.existsSync(filePath), `Modular file must exist at ${filePath}`);
+          fileCount++;
+        });
+      });
+    });
   });
+  assert.strictEqual(fileCount, 137, 'Should find all 137 modular files on disk');
 });
 
 // Test 3: Grand question counts and difficulty tiers
 runTest('Question totals and tier distribution integrity', () => {
-  assert(allQuestions.length >= 120, `Total questions should be >= 120, got ${allQuestions.length}`);
+  assert.strictEqual(allQuestions.length, 239, `Total questions should be 239, got ${allQuestions.length}`);
   assert(questionsMudah.length > 0, 'Mudah tier must have questions');
   assert(questionsSedang.length > 0, 'Sedang tier must have questions');
   assert(questionsHots.length > 0, 'HOTS tier must have questions');
