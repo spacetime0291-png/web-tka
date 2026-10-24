@@ -491,7 +491,15 @@
           <!-- LEVEL 2: Pilihan Bab Utama (Bab Besar) -->
           <div class="modal-level-label">
             <span>Pilih Bab Utama:</span>
-            <span id="modalChapterSelectionSummary" class="text-xs text-slate-500 font-normal"></span>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span id="modalChapterSelectionSummary" class="text-xs text-slate-500 font-normal"></span>
+              <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentChapterSubTopics(true)" title="Pilih semua sub-bab di Bab Utama ini" style="padding: 2px 8px; font-size: 0.72rem;">
+                <i class="fa-solid fa-check mr-1"></i> Pilih Bab Ini
+              </button>
+              <button type="button" class="tactile-btn tactile-btn-secondary mini-pill-btn" onclick="selectCurrentChapterSubTopics(false)" title="Reset sub-bab di Bab Utama ini" style="padding: 2px 8px; font-size: 0.72rem;">
+                <i class="fa-solid fa-xmark mr-1"></i> Reset Bab Ini
+              </button>
+            </div>
           </div>
           <div id="modalChapterGrid" class="modal-chapter-grid" role="group" aria-label="Pilihan Bab Utama">
             <!-- Dynamically populated via renderModalLevel2Chapters() -->
@@ -502,7 +510,7 @@
             <span>Pilih Bab Kecil:</span>
             <span id="modalActiveChapterTitle" class="text-xs text-slate-500 font-normal"></span>
           </div>
-          <div id="modalSubChapterList" class="modal-subchapter-pills-row" role="tablist" aria-label="Pilihan Bab Kecil">
+          <div id="modalSubChapterList" class="modal-subchapter-grid modal-subchapter-pills-row" role="tablist" aria-label="Pilihan Bab Kecil">
             <!-- Dynamically populated via renderModalLevel3SubChapters() -->
           </div>
 

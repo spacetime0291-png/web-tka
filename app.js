@@ -62,6 +62,7 @@ if (typeof window !== 'undefined') {
 const STORAGE_KEY_MASTERY = 'TKA_MASTERY_PROGRESS_V3';
 const STORAGE_KEY_THEME = 'tka_theme_preference';
 const STORAGE_KEY_ACCORDION = 'tka_syllabus_accordion_state';
+const STORAGE_KEY_SUBCHAPTER_ACCORDION = 'tka_subchapter_accordion_state';
 const STORAGE_KEY_SESSION = 'tka_drilling_session_state';
 const STORAGE_KEY_PARTIAL_SESSION = 'tka_partial_drilling_session';
 const STORAGE_KEY_WRONG_QUESTIONS = 'tka_wrong_questions_history';
@@ -70,6 +71,7 @@ if (typeof window !== 'undefined') {
   window.STORAGE_KEY_MASTERY = STORAGE_KEY_MASTERY;
   window.STORAGE_KEY_THEME = STORAGE_KEY_THEME;
   window.STORAGE_KEY_ACCORDION = STORAGE_KEY_ACCORDION;
+  window.STORAGE_KEY_SUBCHAPTER_ACCORDION = STORAGE_KEY_SUBCHAPTER_ACCORDION;
   window.STORAGE_KEY_SESSION = STORAGE_KEY_SESSION;
   window.STORAGE_KEY_PARTIAL_SESSION = STORAGE_KEY_PARTIAL_SESSION;
   window.STORAGE_KEY_WRONG_QUESTIONS = STORAGE_KEY_WRONG_QUESTIONS;
@@ -112,6 +114,21 @@ function saveAccordionState(stateList) {
   } catch (e) {}
 }
 
+function getSubChapterAccordionState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_SUBCHAPTER_ACCORDION);
+    if (raw) return JSON.parse(raw);
+  } catch (e) {}
+  // Default state: Only the first subChapter ('fis-kin-ukur') is open
+  return ['fis-kin-ukur'];
+}
+
+function saveSubChapterAccordionState(stateList) {
+  try {
+    localStorage.setItem(STORAGE_KEY_SUBCHAPTER_ACCORDION, JSON.stringify(stateList));
+  } catch (e) {}
+}
+
 function toggleChapterAccordion(chapterId) {
   let list = getAccordionState();
   const index = list.indexOf(chapterId);
@@ -130,8 +147,27 @@ function toggleChapterAccordion(chapterId) {
   saveAccordionState(list);
 }
 
+function toggleSubChapterAccordion(subChapterId) {
+  let list = getSubChapterAccordionState();
+  const index = list.indexOf(subChapterId);
+  const group = document.getElementById(`subchapter-group-${subChapterId}`);
+  const header = document.getElementById(`subchapter-header-${subChapterId}`);
+
+  if (index > -1) {
+    list.splice(index, 1);
+    if (group) group.classList.remove('open');
+    if (header) header.setAttribute('aria-expanded', 'false');
+  } else {
+    list.push(subChapterId);
+    if (group) group.classList.add('open');
+    if (header) header.setAttribute('aria-expanded', 'true');
+  }
+  saveSubChapterAccordionState(list);
+}
+
 function expandAllChapterAccordions() {
   const allChapterIds = [];
+  const allSubChapterIds = [];
   if (typeof window !== 'undefined' && window.SYLLABUS_DATA && Array.isArray(window.SYLLABUS_DATA.pillars)) {
     window.SYLLABUS_DATA.pillars.forEach(p => {
       (p.chapters || []).forEach(ch => {
@@ -140,6 +176,13 @@ function expandAllChapterAccordions() {
         const header = document.getElementById(`accordion-header-${ch.id}`);
         if (el) el.classList.add('open');
         if (header) header.setAttribute('aria-expanded', 'true');
+        (ch.subChapters || []).forEach(sc => {
+          allSubChapterIds.push(sc.id);
+          const scGroup = document.getElementById(`subchapter-group-${sc.id}`);
+          const scHeader = document.getElementById(`subchapter-header-${sc.id}`);
+          if (scGroup) scGroup.classList.add('open');
+          if (scHeader) scHeader.setAttribute('aria-expanded', 'true');
+        });
       });
     });
   } else if (typeof document !== 'undefined') {
@@ -151,8 +194,17 @@ function expandAllChapterAccordions() {
       const header = document.getElementById(`accordion-header-${id}`);
       if (header) header.setAttribute('aria-expanded', 'true');
     });
+    const scGroups = document.querySelectorAll('.subchapter-group');
+    scGroups.forEach(el => {
+      el.classList.add('open');
+      const id = el.id ? el.id.replace('subchapter-group-', '') : '';
+      if (id) allSubChapterIds.push(id);
+      const header = document.getElementById(`subchapter-header-${id}`);
+      if (header) header.setAttribute('aria-expanded', 'true');
+    });
   }
   saveAccordionState(allChapterIds);
+  saveSubChapterAccordionState(allSubChapterIds);
 }
 
 function collapseAllChapterAccordions() {
@@ -163,6 +215,12 @@ function collapseAllChapterAccordions() {
         const header = document.getElementById(`accordion-header-${ch.id}`);
         if (el) el.classList.remove('open');
         if (header) header.setAttribute('aria-expanded', 'false');
+        (ch.subChapters || []).forEach(sc => {
+          const scGroup = document.getElementById(`subchapter-group-${sc.id}`);
+          const scHeader = document.getElementById(`subchapter-header-${sc.id}`);
+          if (scGroup) scGroup.classList.remove('open');
+          if (scHeader) scHeader.setAttribute('aria-expanded', 'false');
+        });
       });
     });
   } else if (typeof document !== 'undefined') {
@@ -173,8 +231,16 @@ function collapseAllChapterAccordions() {
       const header = document.getElementById(`accordion-header-${id}`);
       if (header) header.setAttribute('aria-expanded', 'false');
     });
+    const scGroups = document.querySelectorAll('.subchapter-group');
+    scGroups.forEach(el => {
+      el.classList.remove('open');
+      const id = el.id ? el.id.replace('subchapter-group-', '') : '';
+      const header = document.getElementById(`subchapter-header-${id}`);
+      if (header) header.setAttribute('aria-expanded', 'false');
+    });
   }
   saveAccordionState([]);
+  saveSubChapterAccordionState([]);
 }
 
 // Syllabus Lookup Helpers & Chapter Aliases Map
@@ -228,6 +294,13 @@ function findSubChapterById(subChapterId) {
         if (Array.isArray(ch.subChapters)) {
           const sc = ch.subChapters.find(s => s.id === subChapterId || s.slug === subChapterId);
           if (sc) return { subChapter: sc, chapter: ch, pillar: p };
+        }
+        if (ch.id === subChapterId) {
+          return {
+            subChapter: { id: ch.id, title: ch.title, subTopics: ch.subTopics || [] },
+            chapter: ch,
+            pillar: p
+          };
         }
       }
     }
@@ -969,6 +1042,7 @@ function renderChapterCard(chapter, pillarId) {
   const masteryPercent = calculateChapterMastery(chapter.id);
   const openList = getAccordionState();
   const isOpen = openList.includes(chapter.id);
+  const openSubChapters = getSubChapterAccordionState();
   const mastery = getMasteryData();
 
   const subChapters = Array.isArray(chapter.subChapters) && chapter.subChapters.length > 0 
@@ -1019,14 +1093,16 @@ function renderChapterCard(chapter, pillarId) {
           <div class="subtopic-compact-list">
             ${subChapters.map(sc => {
               const scQuestions = getFilteredQuestions({ subChapterId: sc.id, wrongOnly: false });
+              const isScOpen = openSubChapters.includes(sc.id);
               return `
-                <div class="subchapter-group" id="subchapter-group-${sc.id}">
+                <div class="subchapter-group ${isScOpen ? 'open' : ''}" id="subchapter-group-${sc.id}">
                   <!-- Header Bab Kecil (Level 3) -->
-                  <div class="subchapter-header">
+                  <div class="subchapter-header" id="subchapter-header-${sc.id}" onclick="toggleSubChapterAccordion('${sc.id}')" role="button" aria-expanded="${isScOpen}">
                     <div class="subchapter-header-left">
                       <input type="checkbox" id="card-chk-sc-${sc.id}" class="tactile-checkbox mr-1" 
                              onclick="event.stopPropagation(); toggleSubChapterCheckboxOnCard('${sc.id}', this.checked)" 
                              title="Pilih seluruh sub-bab di ${sc.title}" />
+                      <i class="fa-solid fa-chevron-right subchapter-chevron"></i>
                       <span class="subchapter-title">${sc.title}</span>
                       <span class="subchapter-badge">${scQuestions.length} Soal</span>
                     </div>
@@ -1137,13 +1213,34 @@ function selectModalSubChapter(subChapterId) {
  * Scoped check / uncheck for subtopics inside active Bab Kecil (Window Tingkat 4)
  */
 function selectCurrentSubChapterTopics(selectAll) {
-  const activeScId = state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId;
-  const scInfo = findSubChapterById(activeScId);
-  if (!scInfo) return;
+  const activeChId = state.setupForm.activeModalChapter;
+  const ch = findChapterById(activeChId);
+  const currentActiveScId = state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId;
+  
+  let targetSubTopics = [];
+
+  // Try finding by subChapter ID
+  const scInfo = findSubChapterById(currentActiveScId);
+  if (scInfo && scInfo.subChapter && Array.isArray(scInfo.subChapter.subTopics)) {
+    targetSubTopics = scInfo.subChapter.subTopics;
+  } else if (ch) {
+    const subChapters = Array.isArray(ch.subChapters) && ch.subChapters.length > 0 
+      ? ch.subChapters 
+      : [{ id: ch.id, title: ch.title, subTopics: ch.subTopics || [] }];
+    const matchSc = subChapters.find(sc => sc.id === currentActiveScId) || subChapters[0];
+    if (matchSc && Array.isArray(matchSc.subTopics)) {
+      targetSubTopics = matchSc.subTopics;
+    }
+    if (targetSubTopics.length === 0 && Array.isArray(ch.subTopics)) {
+      targetSubTopics = ch.subTopics;
+    }
+  }
+
   if (!state.setupForm.selectedSubTopicIds) {
     state.setupForm.selectedSubTopicIds = new Set();
   }
-  (scInfo.subChapter.subTopics || []).forEach(sub => {
+
+  targetSubTopics.forEach(sub => {
     if (selectAll) {
       state.setupForm.selectedSubTopicIds.add(sub.id);
     } else {
@@ -1151,6 +1248,7 @@ function selectCurrentSubChapterTopics(selectAll) {
       state.setupForm.selectedSubTopicIds.delete(sub.slug);
     }
   });
+
   renderModalLevel2Chapters();
   renderModalLevel3SubChapters();
   renderModalLevel4SubTopics();
@@ -1242,7 +1340,7 @@ function renderModalLevel2Chapters() {
 }
 
 /**
- * Render Level 3: Baris Kartu / Pills Pilihan Bab Kecil (DI LUAR WINDOW)
+ * Render Level 3: Baris Kartu Pilihan Bab Kecil (DI LUAR WINDOW - CARD GRID)
  */
 function renderModalLevel3SubChapters() {
   const container = document.getElementById('modalSubChapterList');
@@ -1280,22 +1378,35 @@ function renderModalLevel3SubChapters() {
     });
 
     const isActive = sc.id === (state.setupForm.activeModalSubChapter || state.setupForm.activeModalSubChapterId);
-    let counterClass = '';
+    let statusClass = 'none-selected';
+    let statusText = `0/${scSubs.length}`;
     if (scSelectedCount === scSubs.length && scSubs.length > 0) {
-      counterClass = 'all-selected';
+      statusClass = 'all-selected';
+      statusText = `✓ ${scSubs.length}/${scSubs.length}`;
     } else if (scSelectedCount > 0) {
-      counterClass = 'has-selected';
+      statusClass = 'partial-selected';
+      statusText = `${scSelectedCount}/${scSubs.length}`;
     }
 
+    const scQuestions = getFilteredQuestions({
+      subChapterId: sc.id,
+      difficulties: state.setupForm.difficulties,
+      progressive: state.setupForm.isProgressive,
+      wrongOnly: state.setupForm.wrongOnly
+    });
+
     return `
-      <button type="button" class="modal-subchapter-pill-btn ${isActive ? 'active' : ''}" 
+      <button type="button" class="modal-subchapter-card modal-subchapter-pill-btn ${isActive ? 'active' : ''}" 
               id="modal-sc-btn-${sc.id}"
               onclick="selectModalSubChapter('${sc.id}')"
               role="tab"
               aria-selected="${isActive ? 'true' : 'false'}"
               title="Pilih Bab Kecil ${sc.title}">
-        <span class="modal-sc-pill-title">${sc.title}</span>
-        <span class="modal-sc-pill-counter ${counterClass}">${scSelectedCount}/${scSubs.length}</span>
+        <span class="modal-subchapter-card-title modal-sc-pill-title">${sc.title}</span>
+        <div class="modal-subchapter-card-meta">
+          <span class="modal-chapter-status-pill ${statusClass}">${statusText}</span>
+          <span>${scQuestions.length} Soal</span>
+        </div>
       </button>
     `;
   }).join('');
@@ -1425,7 +1536,8 @@ function selectCurrentChapterSubTopics(selectAll) {
   });
 
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
@@ -1436,7 +1548,8 @@ function selectCurrentChapterSubTopics(selectAll) {
 function selectAllSetupTopics() {
   state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
@@ -1447,7 +1560,8 @@ function selectAllSetupTopics() {
 function resetSetupTopics() {
   state.setupForm.selectedSubTopicIds = new Set();
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
@@ -1468,7 +1582,8 @@ function toggleSetupChapter(chapterId, checked) {
     }
   });
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
@@ -1489,7 +1604,8 @@ function toggleSetupSubChapter(subChapterId, checked) {
     }
   });
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
@@ -1518,7 +1634,8 @@ function toggleSetupSubTopic(subTopicId, checked) {
     state.setupForm.selectedSubTopicIds.delete(subTopicId);
   }
   renderModalLevel2Chapters();
-  renderModalLevel3SubTopics();
+  renderModalLevel3SubChapters();
+  renderModalLevel4SubTopics();
   syncSyllabusCardCheckboxes();
   updateSetupPreviewCount();
 }
@@ -2883,6 +3000,9 @@ if (typeof window !== 'undefined') {
   window.getAccordionState = getAccordionState;
   window.saveAccordionState = saveAccordionState;
   window.toggleChapterAccordion = toggleChapterAccordion;
+  window.getSubChapterAccordionState = getSubChapterAccordionState;
+  window.saveSubChapterAccordionState = saveSubChapterAccordionState;
+  window.toggleSubChapterAccordion = toggleSubChapterAccordion;
   window.checkActiveSessionResume = checkActiveSessionResume;
   window.renderChapterCard = renderChapterCard;
 }
@@ -2919,6 +3039,9 @@ if (typeof module !== 'undefined' && module.exports) {
     getAccordionState,
     saveAccordionState,
     toggleChapterAccordion,
+    getSubChapterAccordionState,
+    saveSubChapterAccordionState,
+    toggleSubChapterAccordion,
     expandAllChapterAccordions,
     collapseAllChapterAccordions,
     stepQuestionCount,

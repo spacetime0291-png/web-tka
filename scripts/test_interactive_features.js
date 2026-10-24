@@ -447,7 +447,7 @@ assert(mockElements.modalSubChapterList.innerHTML.includes('Matriks') && mockEle
 assert(mockElements.modalSubTopicScrollList.innerHTML.includes('Ordo, Kesamaan, dan Transpose'),
   'modalSubTopicScrollList renders active subChapter subtopics inside window');
 
-// Switch active sub-chapter in Bab Kecil pills
+// Switch active sub-chapter in Bab Kecil pills/cards
 app.selectModalSubChapter('mat-alj-polinom');
 assert(app.state.setupForm.activeModalSubChapter === 'mat-alj-polinom',
   'selectModalSubChapter updates activeModalSubChapter to mat-alj-polinom');
@@ -455,6 +455,8 @@ assert(app.state.setupForm.activeModalSubChapterId === 'mat-alj-polinom',
   'selectModalSubChapter updates activeModalSubChapterId to mat-alj-polinom');
 assert(mockElements.modalSubTopicScrollList.innerHTML.includes('Skema Horner') && mockElements.modalSubTopicScrollList.innerHTML.includes('Teorema Sisa'),
   'modalSubTopicScrollList updates right window with Polinomial subtopics');
+assert(mockElements.modalSubChapterList.innerHTML.includes('modal-subchapter-card'),
+  'modalSubChapterList renders Bab Kecil as modal-subchapter-card (card grid layout)');
 
 // Scoped SubChapter Select / Reset via selectCurrentSubChapterTopics
 const polinomSubs = window.SYLLABUS_DATA.pillars[1].chapters[0].subChapters[1].subTopics.map(s => s.id);
@@ -466,18 +468,54 @@ app.selectCurrentSubChapterTopics(true);
 assert(polinomSubs.every(id => app.state.setupForm.selectedSubTopicIds.has(id)),
   'selectCurrentSubChapterTopics(true) checks all subtopics in active Bab Kecil');
 
+// Scoped Chapter Select / Reset via selectCurrentChapterSubTopics
+const matAljSubs = window.SYLLABUS_DATA.pillars[1].chapters[0].subTopics.map(s => s.id);
+app.selectCurrentChapterSubTopics(false);
+assert(matAljSubs.every(id => !app.state.setupForm.selectedSubTopicIds.has(id)),
+  'selectCurrentChapterSubTopics(false) unchecks all subtopics in active Chapter');
+
+app.selectCurrentChapterSubTopics(true);
+assert(matAljSubs.every(id => app.state.setupForm.selectedSubTopicIds.has(id)),
+  'selectCurrentChapterSubTopics(true) checks all subtopics in active Chapter');
+
+// Global Select All / Reset across all topics
+app.resetSetupTopics();
+assert(app.state.setupForm.selectedSubTopicIds.size === 0,
+  'resetSetupTopics() empties all selected subtopics');
+
+app.selectAllSetupTopics();
+assert(app.state.setupForm.selectedSubTopicIds.size === 137,
+  'selectAllSetupTopics() selects all 137 subtopics across all pillars and chapters');
+
 // Direct Sub-Chapter Drill open
 app.openDrillSetupModal('fisika', 'fis-gel', 'subchapter:fis-gel-optik', 'Gelombang Cahaya & Optik');
 assert(app.state.setupForm.activeModalSubChapter === 'fis-gel-optik',
   'openDrillSetupModal with subchapter:<id> activates that specific subChapter in modal');
 
 // Check 4-Level Linear HTML & CSS selectors
-assert(indexHtmlContent.includes('modal-subchapter-pills-row') && cssContent.includes('.modal-subchapter-pills-row'),
-  'modal-subchapter-pills-row exists in index.html and styles.css (Bab Kecil outside window)');
+assert(indexHtmlContent.includes('modal-subchapter-grid') && cssContent.includes('.modal-subchapter-grid'),
+  'modal-subchapter-grid exists in index.html and styles.css (Bab Kecil card grid)');
 assert(indexHtmlContent.includes('modal-subtopic-single-window') && cssContent.includes('.modal-subtopic-single-window'),
   'modal-subtopic-single-window exists in index.html and styles.css (single window container for sub-bab)');
 
-// Case B: Global Accordion Controls (Buka Semua / Tutup Semua)
+// Case B: Global Accordion & Bab Kecil Accordion Controls
+// Test Bab Kecil Accordion Toggle on Homepage (e.g. Kinematika -> Gerak Lengkung)
+assert(typeof app.toggleSubChapterAccordion === 'function',
+  'app.toggleSubChapterAccordion is defined');
+const initialScState = app.getSubChapterAccordionState();
+assert(!initialScState.includes('fis-kin-lengkung'),
+  'fis-kin-lengkung (Gerak Lengkung) is closed initially by default');
+
+app.toggleSubChapterAccordion('fis-kin-lengkung');
+const openedScState = app.getSubChapterAccordionState();
+assert(openedScState.includes('fis-kin-lengkung'),
+  'toggleSubChapterAccordion opens fis-kin-lengkung (Gerak Lengkung)');
+
+app.toggleSubChapterAccordion('fis-kin-lengkung');
+const closedAgainScState = app.getSubChapterAccordionState();
+assert(!closedAgainScState.includes('fis-kin-lengkung'),
+  'toggleSubChapterAccordion closes fis-kin-lengkung (Gerak Lengkung) when clicked again');
+
 app.expandAllChapterAccordions();
 const expandedState = app.getAccordionState();
 assert(expandedState.length === 14,
