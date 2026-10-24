@@ -75,6 +75,13 @@ console.log(`Loaded ${allSubTopicsList.length} subtopics from 4-level syllabus.`
 
 // Helper function to map question to specific subtopic slug
 function mapQuestionToSubTopic(q) {
+  if (q.subTopicSlug && subTopicBySlugOrId.has(q.subTopicSlug)) {
+    return q.subTopicSlug;
+  }
+  if (q.subTopicId && subTopicBySlugOrId.has(q.subTopicId)) {
+    return subTopicBySlugOrId.get(q.subTopicId).slug;
+  }
+
   const text = ((q.category || '') + ' ' + (q.statement || '') + ' ' + (q.subBab || '')).toLowerCase();
   const ch = q.chapterId;
   const oldSub = q.subTopicId || '';
@@ -424,7 +431,7 @@ function scanRecursive(dir) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       results = results.concat(scanRecursive(full));
-    } else if (entry.isFile() && entry.name.endsWith('.js') && entry.name !== 'index.js' && entry.name !== 'bank-soal-bundle.js') {
+    } else if (entry.isFile() && (entry.name.endsWith('.js') || entry.name.endsWith('.json')) && entry.name !== 'index.js' && entry.name !== 'bank-soal-bundle.js') {
       results.push(full);
     }
   }
@@ -439,26 +446,26 @@ const bundleMudah = [];
 const bundleSedang = [];
 const bundleHots = [];
 const tkaBankMap = {};
+const seenGrandIds = new Set();
 
 scannedFiles.forEach(file => {
-  const rel = path.relative(baseDir, file).replace(/\\\\/g, '/');
+  const rel = path.relative(baseDir, file).replace(/\\/g, '/');
   const parts = rel.split('/');
   // Expected parts: [pillarId, chapterId, subChapterId, subTopicSlug.js]
   let pId = parts[0];
   let chId = parts[1];
   let scId = parts[2];
-  let fileSlug = path.basename(parts[3] || '', '.js');
+  let fileSlug = path.basename(parts[3] || '', path.extname(parts[3] || ''));
 
   // Support 3-level folder legacy paths if any
   if (parts.length === 3) {
     pId = parts[0];
     chId = parts[1];
     scId = parts[1];
-    fileSlug = path.basename(parts[2], '.js');
+    fileSlug = path.basename(parts[2], path.extname(parts[2]));
   }
 
-  const stInfo = subTopicBySlugOrId.get(fileSlug);
-
+  delete require.cache[require.resolve(file)];
   let exported = require(file);
   let qList = [];
   if (Array.isArray(exported)) {
@@ -475,13 +482,25 @@ scannedFiles.forEach(file => {
     }
   }
 
+  const sampleQ = qList[0] || {};
+  const fileStInfo = subTopicBySlugOrId.get(fileSlug) ||
+                     (sampleQ.subTopicId && subTopicBySlugOrId.get(sampleQ.subTopicId)) ||
+                     (sampleQ.subTopicSlug && subTopicBySlugOrId.get(sampleQ.subTopicSlug));
+
   qList.forEach(q => {
+    if (!q.id || seenGrandIds.has(q.id)) return;
+    seenGrandIds.add(q.id);
+
+    const stInfo = (q.subTopicId && subTopicBySlugOrId.get(q.subTopicId)) ||
+                   (q.subTopicSlug && subTopicBySlugOrId.get(q.subTopicSlug)) ||
+                   fileStInfo;
+
     // Inherit from folder structure if not written manually
-    q.pillarId = q.pillarId || pId;
-    q.chapterId = q.chapterId || chId;
-    q.subChapterId = q.subChapterId || scId;
+    q.pillarId = q.pillarId || (stInfo ? stInfo.pillarId : pId);
+    q.chapterId = q.chapterId || (stInfo ? stInfo.chapterId : chId);
+    q.subChapterId = q.subChapterId || (stInfo ? stInfo.subChapterId : scId);
     q.subTopicId = q.subTopicId || (stInfo ? stInfo.subTopicId : fileSlug);
-    q.subTopicSlug = q.subTopicSlug || fileSlug;
+    q.subTopicSlug = q.subTopicSlug || (stInfo ? stInfo.slug : fileSlug);
     if (stInfo) {
       q.bab = q.bab || stInfo.chapterName;
       q.subBab = q.subBab || stInfo.title;
@@ -489,6 +508,8 @@ scannedFiles.forEach(file => {
       q.chapterTitle = q.chapterTitle || stInfo.chapterName;
     }
     q.subject = q.subject || (q.pillarId === 'fisika' ? 'FISIKA' : 'MATEMATIKA');
+    q.difficultyLabel = q.difficultyLabel || (q.difficulty === 'mudah' ? 'Mudah' : q.difficulty === 'sedang' ? 'Sedang' : 'HOTS');
+    q.category = q.category || (stInfo ? stInfo.title : (q.subBab || 'Umum'));
 
     grandCompiledQuestions.push(q);
     if (q.difficulty === 'mudah') bundleMudah.push(q);

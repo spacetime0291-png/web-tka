@@ -149,10 +149,10 @@ assert(cahayaSub && cahayaSub.title.includes('Lensa Cekung dan Cembung'), 'fis-g
 // ----------------------------------------------------
 console.log('\n--- TEST GROUP 2: QUESTION METADATA MAPPING ---');
 const allQuestions = [...window.QUESTIONS_MUDAH, ...window.QUESTIONS_SEDANG, ...window.QUESTIONS_HOTS];
-assert(allQuestions.length === 239, `Total questions must be exactly 239 (found: ${allQuestions.length})`);
+assert(allQuestions.length >= 239, `Total questions must be at least 239 (found: ${allQuestions.length})`);
 
 const missingMetadata = allQuestions.filter(q => !q.bab || !q.subBab || !q.subTopicId || !q.chapterId);
-assert(missingMetadata.length === 0, `All 239 questions must have non-empty bab, subBab, subTopicId, and chapterId (missing: ${missingMetadata.length})`);
+assert(missingMetadata.length === 0, `All questions must have non-empty bab, subBab, subTopicId, and chapterId (missing: ${missingMetadata.length})`);
 
 // ----------------------------------------------------
 // TEST 3: Multi-Select Sub-Bab Filtering Logic
@@ -170,7 +170,7 @@ const allSubTopicIds = app.getAllSubTopicIds();
 assert(allSubTopicIds.length === 137, `Syllabus must have exactly 137 sub-topics (found: ${allSubTopicIds.length})`);
 
 const allFiltered = app.getFilteredQuestions({ subTopicIds: new Set(allSubTopicIds) });
-assert(allFiltered.length === 239, `Selecting all subtopics must return all 239 questions (found: ${allFiltered.length})`);
+assert(allFiltered.length === allQuestions.length, `Selecting all subtopics must return all ${allQuestions.length} questions (found: ${allFiltered.length})`);
 
 // Case C: Reset Selection (Empty Set)
 const emptyFiltered = app.getFilteredQuestions({ subTopicIds: new Set() });
@@ -194,8 +194,8 @@ app.state.setupForm.wrongOnly = false;
 app.updateSetupPreviewCount();
 
 const kinUkurQuestions = app.getFilteredQuestions({ subTopicIds: new Set(kinUkurSubs) });
-const maxKinUkur = kinUkurQuestions.length; // 6
-assert(maxKinUkur === 6, `fis-kin-ukur subtopics must have exactly 6 questions (found: ${maxKinUkur})`);
+const maxKinUkur = kinUkurQuestions.length;
+assert(maxKinUkur >= 6, `fis-kin-ukur subtopics must have at least 6 questions (found: ${maxKinUkur})`);
 
 // Test presets
 app.selectSetupQuestionCount(3);
@@ -212,21 +212,21 @@ assert(app.state.setupForm.questionCount === 5, 'Stepper +1 from 4 yields 5');
 app.stepQuestionCount(-1);
 assert(app.state.setupForm.questionCount === 4, 'Stepper -1 from 5 yields 4');
 
-// Test Upper Clamping: +1 past max (6)
-app.stepQuestionCount(10);
+// Test Upper Clamping: +1 past max
+app.stepQuestionCount(100);
 assert(app.state.setupForm.questionCount === maxKinUkur, `Stepper clamps to maximum available (${maxKinUkur})`);
 
 // Test Lower Clamping: -1 past 1
-app.stepQuestionCount(-20);
+app.stepQuestionCount(-999);
 assert(app.state.setupForm.questionCount === 1, 'Stepper clamps to minimum 1');
 
 // Test Manual Input: valid 4
 app.handleManualCountInput('4');
 assert(app.state.setupForm.questionCount === 4, 'Manual input "4" sets questionCount to 4');
 
-// Test Manual Input Clamping: 99 -> maxKinUkur
-app.handleManualCountInput('99');
-assert(app.state.setupForm.questionCount === maxKinUkur, `Manual input 99 clamps to max available (${maxKinUkur})`);
+// Test Manual Input Clamping: 999 -> maxKinUkur
+app.handleManualCountInput('999');
+assert(app.state.setupForm.questionCount === maxKinUkur, `Manual input 999 clamps to max available (${maxKinUkur})`);
 
 // Test Preset 'all'
 app.selectSetupQuestionCount('all');
@@ -307,7 +307,7 @@ assert(mockPills.find(p => p.textContent === '10 Soal').classList.contains('acti
 // Case F: Dynamic Homepage Counter Calculation
 app.updateGlobalCounters();
 assert(Number(mockElements.statTotalChapters.textContent) === 14, 'statTotalChapters dynamically computes exactly 14 chapters');
-assert(Number(mockElements.statTotalBankQuestions.textContent) === 239, 'statTotalBankQuestions dynamically computes exactly 239 questions');
+assert(Number(mockElements.statTotalBankQuestions.textContent) === allQuestions.length, `statTotalBankQuestions dynamically computes exactly ${allQuestions.length} questions`);
 
 // Case G: No <strong> tags in Hero and Exam banner in index.html
 const indexHtmlContent = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf-8');

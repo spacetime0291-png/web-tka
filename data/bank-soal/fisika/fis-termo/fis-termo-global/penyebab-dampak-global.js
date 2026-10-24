@@ -5,7 +5,7 @@
  * Slug: penyebab-dampak-global
  * Indikator: Kenaikan suhu bumi, pencairan es kutub, kenaikan muka air laut, dan anomali iklim ekstrem.
  * 
- * Total Butir Soal: 10 (Mudah: 4, Sedang: 6, HOTS: 0)
+ * Total Butir Soal: 20 (Mudah: 9, Sedang: 11, HOTS: 0)
  * Arsitektur: 4-Level Modular (Browser & Node.js Compatible)
  */
 
@@ -13,6 +13,336 @@
   const subTopicId = "fis-termo-global-dampak";
   const subTopicSlug = "penyebab-dampak-global";
   const questions = [
+  {
+    "id": "fis-termo-global-dampak-001",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Penyebab Utama Peningkatan Gas Rumah Kaca",
+    "difficulty": "mudah",
+    "statement": "Sejak masa revolusi industri pada abad ke-18 hingga era modern, konsentrasi gas karbon dioksida ($\\text{CO}_2$) di atmosfer bumi melonjak dari sekitar $280\\text{ ppm}$ menjadi lebih dari $420\\text{ ppm}$. Faktor pendorong antropogenik paling dominan yang menyebabkan lonjakan drastis konsentrasi $\\text{CO}_2$ tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Penggunaan pupuk kimia buatan pada tanaman pangan",
+      "Pembakaran bahan bakar fosil (batu bara, minyak bumi, dan gas alam) untuk energi dan transportasi",
+      "Peningkatan populasi hewan laut pemakan plankton",
+      "Uji coba peluncuran satelit luar angkasa",
+      "Pelepasan gas klorin dari instalasi pemurnian air minum"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Penyebab utama kenaikan konsentrasi gas rumah kaca global:<br>- Pembakaran bahan bakar fosil hidrokarbon (batu bara, minyak bumi, gas alam) menyumbang lebih dari $75\\%$ dari total emisi gas rumah kaca global dan hampir $90\\%$ dari seluruh emisi $\\text{CO}_2$.<br>- Reaksi kimia pembakaran hidrokarbon secara umum: $$\\text{C}_x\\text{H}_y + \\left(x + \\frac{y}{4}\\right)\\text{O}_2 \\to x\\,\\text{CO}_2 + \\frac{y}{2}\\,\\text{H}_2\\text{O} + \\text{Energi}$$",
+      "steps": "1. Analisis sumber emisi $\\text{CO}_2$ global berdasarkan data sains iklim IPCC.<br>2. Sektor pembangkit listrik tenaga uap batu bara, industri manufaktur, dan kendaraan bermotor berbahan bakar bensin/solar merupakan konsumen bahan bakar fosil terbesar.<br>3. Pembakaran karbon purba yang tersimpan jutaan tahun di kerak bumi melepaskan miliaran ton $\\text{CO}_2$ setiap tahun ke siklus atmosfer.<br>4. Jadi, pembakaran bahan bakar fosil adalah penyebab dominan.<br>5. Jawaban yang tepat adalah pilihan B.",
+      "pitfalls": "Penggunaan pupuk buatan (opsi A) memang melepaskan gas rumah kaca, namun gas yang dilepaskan dominan berupa dinitrogen oksida ($\\text{N}_2\\text{O}$), bukan penyumbang utama volume masif $\\text{CO}_2$."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-termo-global-dampak-002",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Mekanisme Fisik Kenaikan Muka Air Laut",
+    "difficulty": "mudah",
+    "statement": "Pemanasan global memicu kenaikan rata-rata permukaan air laut (sea level rise) secara global yang mengancam wilayah pesisir dan pulau-pulau kecil. Dua mekanisme fisik primer yang secara langsung bertanggung jawab atas fenomena kenaikan muka air laut tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Penurunan penguapan air samudra dan penurunan salinitas air laut",
+      "Pemuaian termal air laut dan penambahan massa air dari pencairan es/gletser di daratan",
+      "Pencairan es laut terapung di kutub utara dan peningkatan curah hujan di daratan",
+      "Peningkatan pasang surut gravitasi bulan dan penurunan massa jenis atmosfer",
+      "Pengendapan sedimen sungai ke muara dan penurunan aktivitas gempa bawah laut"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Kenaikan permukaan air laut global disebabkan oleh dua proses fisis utama:<br>1. Pemuaian termal air laut (thermal expansion): ketika suhu lapisan atas samudra naik, volume air laut memuai ($\\Delta V = V_0 \\gamma \\Delta T$). Proses ini menyumbang sekitar sepertiga hingga setengah dari total kenaikan muka air laut.<br>2. Pencairan es daratan: mencairnya gletser pegunungan dan lembaran es daratan (Greenland dan Antartika) menambah volume massa air baru ke cekungan samudra.",
+      "steps": "1. Tinjau faktor-faktor penambah volume air samudra.<br>2. Berdasarkan prinsip fisika pemuaian zat cair, air hangat memiliki volume jenis lebih besar daripada air dingin.<br>3. Es yang berada di atas daratan (gletser dan ice sheet) jika mencair akan mengalir masuk ke laut sehingga menambah volume air total.<br>4. Sebaliknya, es laut yang sudah terapung (seperti es kutub Arktik) tidak menambah ketinggian muka air laut saat mencair karena sudah menggantikan volumenya sendiri berdasarkan Hukum Archimedes.<br>5. Jadi, dua mekanisme primer adalah pemuaian termal dan pencairan es daratan.<br>6. Jawaban yang tepat adalah pilihan B.",
+      "pitfalls": "Jebakan konseptual umum adalah mengira pencairan es laut terapung di Kutub Utara (Arktik) menaikkan muka air laut. Sesuai Hukum Archimedes, es terapung tidak menaikkan ketinggian permukaan air ketika melebur."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-termo-global-dampak-003",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Pengasaman Laut (Ocean Acidification)",
+    "difficulty": "mudah",
+    "statement": "Selain menghangatkan atmosfer, peningkatan konsentrasi gas $\\text{CO}_2$ di udara diserap dalam jumlah besar oleh lautan dunia (sekitar $25\\% - 30\\%$ dari total emisi). Penyerapan gas $\\text{CO}_2$ yang berlebih oleh air laut memicu fenomena pengasaman laut (ocean acidification), yang secara fisikawi dan kimiawi ditandai dengan ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Kenaikan nilai pH air laut di atas 9 sehingga air laut menjadi basa kuat",
+      "Penurunan nilai pH air laut akibat pembentukan asam karbonat yang melepaskan ion hidrogen ($H^+$)",
+      "Pengendapan garam dapur ($\\text{NaCl}$) secara mendadak di dasar palung laut",
+      "Penurunan titik didih normal air laut menjadi di bawah $90^\\circ\\text{C}$",
+      "Peningkatan konsentrasi gas oksigen terlarut secara drastis di permukaan laut"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Reaksi kimia penyerapan $\\text{CO}_2$ oleh air laut:<br>$$\\text{CO}_2 + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_2\\text{CO}_3 \\rightleftharpoons \\text{H}^+ + \\text{HCO}_3^-$$<br>Peningkatan ion hidrogen ($\\text{H}^+$) menyebabkan penurunan pH air laut (air laut menjadi lebih asam), serta menurunkan ketersediaan ion karbonat ($\\text{CO}_3^{2-}$), yang menghambat pembentukan cangkang kalsium karbonat ($\\text{CaCO}_3$) pada terumbu karang dan moluska.",
+      "steps": "1. Analisis interaksi $\\text{CO}_2$ atmosfer dengan permukaan hidrosfer.<br>2. Reaksi pembentukan asam karbonat menghasilkan ion $\\text{H}^+$.<br>3. Semakin banyak ion $\\text{H}^+$, nilai pH air laut semakin turun (sejak masa pra-industri, pH rata-rata laut turun dari $8{,}2$ menjadi sekitar $8{,}1$, yang setara dengan kenaikan keasaman sekitar $30\\%$ karena skala pH adalah logaritmik).<br>4. Jawaban yang tepat adalah pilihan B.",
+      "pitfalls": "Pengasaman laut berarti nilai pH-nya TURUN (bukan naik, opsi A). Jangan terkecoh dengan istilah basa/asam: air laut saat ini masih bersifat sedikit basa ($8{,}1$), namun proses penurunan pH menuju nilai yang lebih rendah disebut pengasaman (acidification)."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-termo-global-dampak-004",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Anomali Cuaca dan Iklim Ekstrem",
+    "difficulty": "mudah",
+    "statement": "Pemanasan global tidak hanya menyebabkan kenaikan temperatur rata-rata tahunan permukaan bumi, tetapi juga meningkatkan intensitas dan frekuensi fenomena cuaca ekstrem. Contoh dampak anomali iklim ekstrem yang secara langsung teramati di berbagai belahan dunia adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Pola pergantian musim tanam yang semakin stabil dan dapat diprediksi secara tepat",
+      "Penurunan kekuatan angin badai tropis di seluruh samudra khatulistiwa",
+      "Gelombang panas ekstrem (heatwaves), kekeringan berkepanjangan, dan badai presipitasi lebat penyebab banjir bandang",
+      "Pembentukan lapisan es permanen baru di wilayah gurun subtropis",
+      "Penurunan laju penguapan air di seluruh waduk dan danau daratan"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Kenaikan energi termal dalam sistem atmosfer-laut bumi meningkatkan ketidakstabilan dinamika fluida atmosfer:<br>- Udara yang lebih hangat menampung lebih banyak uap air (energi potensial laten tinggi).<br>- Akibatnya, saat terjadi pelepasan energi, badai presipitasi menjadi jauh lebih hebat dan berpotensi memicu banjir bandang ekstrem.<br>- Sebaliknya, wilayah yang mengalami subsiden udara kering mengalami penguapan intensif yang memicu kekeringan parah dan gelombang panas ekstrem.",
+      "steps": "1. Tinjau konsekuensi peningkatan suhu atmosfer global.<br>2. Dinamika iklim menjadi semakin tidak menentu dan volatil.<br>3. Opsi A dan B bertentangan dengan kenyataan fisis pemanasan global.<br>4. Gejala gelombang panas, musim kemarau ekstrem, dan banjir bandang mendadak adalah ciri khas anomali cuaca akibat pemanasan global.<br>5. Jawaban yang tepat adalah pilihan C.",
+      "pitfalls": "Pemanasan global bukan berarti bumi di setiap saat dan di setiap titik selalu terasa panas; pergeseran arus atmosfer kutub (jet stream) bahkan kadang memicu semburan udara dingin Arktik sesaat (polar vortex), namun dalam skala global cuaca ekstrem meningkat secara menyeluruh."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-termo-global-dampak-005",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Konsep Jejak Karbon (Carbon Footprint)",
+    "difficulty": "mudah",
+    "statement": "Dalam kajian mitigasi lingkungan hidup, istilah jejak karbon (carbon footprint) didefinisikan sebagai ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Bekas endapan jelaga hitam karbon yang tertinggal pada pipa cerobong asap pabrik",
+      "Total jumlah emisi gas rumah kaca yang dihasilkan secara langsung maupun tidak langsung oleh aktivitas individu, organisasi, atau produk, dinyatakan dalam satuan ekuivalen karbon dioksida",
+      "Lapisan sedimen batu bara yang terbentuk dari pembusukan hutan purba zaman karbon",
+      "Konsentrasi unsur karbon murni yang terdapat dalam struktur sel organisme hidup",
+      "Banyaknya serbuk arang aktif yang digunakan untuk menyaring limbah cair industri"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Jejak karbon (carbon footprint) adalah ukuran total emisi gas rumah kaca (GRK)—termasuk $\\text{CO}_2$, $\\text{CH}_4$, $\\text{N}_2\\text{O}$—yang dihasilkan oleh aktivitas manusia (seperti konsumsi listrik, transportasi, konsumsi makanan, dan rantai pasok industri) yang diekspresikan dalam satuan ekuivalen $\\text{CO}_2$ ($\\text{kg CO}_2\\text{e}$ atau $\\text{ton CO}_2\\text{e}$).",
+      "steps": "1. Pahami terminologi jejak karbon dalam ilmu keberlanjutan dan fisika lingkungan.<br>2. Jejak karbon mencakup emisi langsung (seperti pembakaran bensin pada mobil) dan emisi tidak langsung (seperti emisi dari pembangkit listrik yang menyuplai energi rumah).<br>3. Satuan standarnya dinyatakan dalam massa ekuivalen $\\text{CO}_2$.<br>4. Jadi, definisi yang tepat adalah pilihan B.<br>5. Jawaban yang tepat adalah pilihan B.",
+      "pitfalls": "Jejak karbon bukanlah endapan jelaga atau zat padat hitam karbon secara harfiah (opsi A), melainkan metrik perhitungan kuantitatif emisi gas rumah kaca ke atmosfer."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-termo-global-dampak-006",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Perhitungan Pemuaian Termal Kolom Air Laut",
+    "difficulty": "sedang",
+    "statement": "Sebuah model oseanografi sederhana meninjau lapisan campuran atas samudra dunia dengan kedalaman rata-rata $h_0 = 500\\text{ meter}$. Koefisien muai volume rata-rata air laut pada lapisan tersebut adalah $\\gamma = 2{,}1 \\times 10^{-4}/^\\circ\\text{C}$. Jika lapisan air laut tersebut mengalami kenaikan suhu rata-rata sebesar $\\Delta T = 0{,}8^\\circ\\text{C}$ dan luas permukaan samudra dianggap tetap, pertambahan tinggi muka air laut ($\\Delta h$) murni akibat pemuaian termal kolom air tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$4{,}2\\text{ cm}$",
+      "$6{,}4\\text{ cm}$",
+      "$8{,}4\\text{ cm}$",
+      "$10{,}5\\text{ cm}$",
+      "$16{,}8\\text{ cm}$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Pemuaian volume zat cair dirumuskan: $\\Delta V = V_0 \\times \\gamma \\times \\Delta T$.<br>Karena cekungan samudra dibatasi oleh daratan benua sehingga luas permukaan samudra ($A$) praktis konstan, maka pertambahan volume air terwujud sebagai kenaikan tinggi kolom permukaan laut secara vertikal (pemuaian linear vertikal zat cair yang terkekang horizontal):<br>$$\\Delta V = A \\times \\Delta h \\implies \\frac{\\Delta h}{h_0} = \\gamma \\times \\Delta T \\implies \\Delta h = h_0 \\times \\gamma \\times \\Delta T$$",
+      "steps": "1. Identifikasi parameter:<br>$h_0 = 500\\text{ m}$<br>$\\gamma = 2{,}1 \\times 10^{-4}/^\\circ\\text{C}$<br>$\\Delta T = 0{,}8^\\circ\\text{C}$<br>2. Hitung kenaikan tinggi permukaan laut $\\Delta h$:<br>$$\\Delta h = 500\\text{ m} \\times (2{,}1 \\times 10^{-4}/^\\circ\\text{C}) \\times 0{,}8^\\circ\\text{C}$$<br>$$\\Delta h = 500 \\times 1{,}68 \\times 10^{-4} = 0{,}084\\text{ meter}$$<br>3. Konversi satuan ke sentimeter:<br>$$\\Delta h = 0{,}084 \\times 100 = 8{,}4\\text{ cm}$$<br>4. Jawaban yang tepat adalah pilihan C.",
+      "pitfalls": "Jangan membagi koefisien muai volume dengan 3. Pada zat cair dalam wadah berpenampang tetap, zat cair tidak memuai secara bebas ke samping melainkan seluruh pemuaian volume diarahkan ke arah vertikal bebas (atas), sehingga pengalinya tetap $\\gamma$, bukan $\\gamma/3$."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-termo-global-dampak-007",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Umpan Balik Albedo Es Kutub (Ice-Albedo Feedback)",
+    "difficulty": "sedang",
+    "statement": "Lapisan es laut kutub memiliki nilai albedo $\\alpha_{\\text{es}} = 0{,}85$, sedangkan air laut terbuka memiliki albedo $\\alpha_{\\text{laut}} = 0{,}05$. Jika fluks radiasi matahari yang jatuh di permukaan kutub pada puncak musim panas adalah $I_0 = 300\\text{ W/m}^2$, pertambahan fluks daya kalor yang diserap oleh setiap meter persegi permukaan kutub ketika lapisan es mencair seluruhnya menjadi perairan laut terbuka adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$60\\text{ W/m}^2$",
+      "$150\\text{ W/m}^2$",
+      "$240\\text{ W/m}^2$",
+      "$255\\text{ W/m}^2$",
+      "$285\\text{ W/m}^2$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Fluks radiasi yang diserap suatu permukaan dihitung dari fraksi serapan $(1 - \\alpha)$ dikalikan fluks datang $I_0$:<br>$$I_{\\text{serap}} = I_0 (1 - \\alpha)$$<br>Pertambahan fluks serapan saat terjadi pergantian tutupan permukaan dari es ke laut terbuka adalah:<br>$$\\Delta I_{\\text{serap}} = I_0 \\left[(1 - \\alpha_{\\text{laut}}) - (1 - \\alpha_{\\text{es}})\\right] = I_0 (\\alpha_{\\text{es}} - \\alpha_{\\text{laut}})$$",
+      "steps": "1. Hitung selisih albedo:<br>$$\\Delta \\alpha = \\alpha_{\\text{es}} - \\alpha_{\\text{laut}} = 0{,}85 - 0{,}05 = 0{,}80$$<br>2. Hitung daya kalor serap saat masih tertutup es:<br>$$I_{\\text{es}} = 300 \\times (1 - 0{,}85) = 300 \\times 0{,}15 = 45\\text{ W/m}^2$$<br>3. Hitung daya kalor serap setelah es mencair menjadi laut terbuka:<br>$$I_{\\text{laut}} = 300 \\times (1 - 0{,}05) = 300 \\times 0{,}95 = 285\\text{ W/m}^2$$<br>4. Hitung pertambahan daya serap $\\Delta I$:<br>$$\\Delta I_{\\text{serap}} = 285\\text{ W/m}^2 - 45\\text{ W/m}^2 = 240\\text{ W/m}^2$$<br>(Atau langsung $\\Delta I = 300 \\times 0{,}80 = 240\\text{ W/m}^2$).<br>5. Jawaban yang tepat adalah pilihan C.",
+      "pitfalls": "Hati-hati: opsi E ($285\\text{ W/m}^2$) adalah daya serap total setelah menjadi air laut, bukan pertambahannya. Pertanyaan meminta pertambahan (selisih) daya kalor yang diserap."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-termo-global-dampak-008",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Laju Kenaikan Muka Laut dari Pencairan Es Daratan",
+    "difficulty": "sedang",
+    "statement": "Sebuah lembaran es daratan di wilayah kutub diperkirakan kehilangan volume es sebesar $240\\text{ km}^3$ per tahun akibat peleburan es yang mengalir masuk ke samudra. Jika massa jenis es adalah $\\rho_{\\text{es}} = 900\\text{ kg/m}^3$, massa jenis air laut adalah $\\rho_{\\text{air}} = 1000\\text{ kg/m}^3$, dan luas total permukaan samudra di bumi adalah $360 \\times 10^6\\text{ km}^2$, kontribusi tahunan pencairan es daratan ini terhadap kenaikan tinggi rata-rata muka air laut dunia adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$0{,}30\\text{ mm}$",
+      "$0{,}60\\text{ mm}$",
+      "$0{,}90\\text{ mm}$",
+      "$1{,}20\\text{ mm}$",
+      "$1{,}50\\text{ mm}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Kekekalan massa berlaku saat es melebur menjadi air:<br>$$m = \\rho_{\\text{es}} \\times V_{\\text{es}} = \\rho_{\\text{air}} \\times V_{\\text{air}} \\implies V_{\\text{air}} = V_{\\text{es}} \\times \\frac{\\rho_{\\text{es}}}{\\rho_{\\text{air}}}$$<br>Kenaikan tinggi rata-rata muka air laut ($\\Delta h$) diperoleh dengan membagi volume air cair tambahan dengan luas permukaan samudra dunia ($A_{\\text{samudra}}$):<br>$$\\Delta h = \\frac{V_{\\text{air}}}{A_{\\text{samudra}}}$$",
+      "steps": "1. Hitung volume air cair yang dihasilkan dari peleburan es:<br>$$V_{\\text{air}} = 240\\text{ km}^3 \\times \\frac{900}{1000} = 216\\text{ km}^3$$<br>2. Hitung kenaikan tinggi air laut dalam satuan kilometer:<br>$$\\Delta h = \\frac{216\\text{ km}^3}{360 \\times 10^6\\text{ km}^2} = 0{,}60 \\times 10^{-6}\\text{ km}$$<br>3. Konversikan kilometer ke milimeter ($1\\text{ km} = 10^6\\text{ mm}$):<br>$$\\Delta h = 0{,}60 \\times 10^{-6} \\times 10^6\\text{ mm} = 0{,}60\\text{ mm}$$<br>4. Jawaban yang tepat adalah pilihan B.",
+      "pitfalls": "Lupa mengoreksi massa jenis es (menganggap volume air leburan sama dengan volume es $240\\text{ km}^3$) akan menghasilkan $\\Delta h = 240 / 360 = 0{,}67\\text{ mm}$. Es memiliki kerapatan lebih rendah daripada air sehingga saat mencair volumenya menyusut sebesar $10\\%$."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-termo-global-dampak-009",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Pencairan Permafrost dan Titik Kritis Iklim",
+    "difficulty": "sedang",
+    "statement": "Di wilayah sirkumpolar kutub utara, terdapat tanah beku abadi (permafrost) yang telah membeku selama ribuan tahun dan menyimpan ribuan gigaton karbon organik. Para ilmuwan iklim mengkategorikan pencairan permafrost secara masif sebagai potensi tipping point (titik kritis) yang berbahaya bagi kestabilan iklim bumi karena ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Menyebabkan pergeseran sumbu rotasi bumi sebesar lebih dari 15 derajat",
+      "Memicu peluruhan radioaktif alami pada batuan dasar granit di wilayah kutub",
+      "Melepaskan gas metana dan karbon dioksida secara swasembada (self-sustaining) akibat penguraian mikrob anaerob, yang mempercepat pemanasan tanpa bergantung pada emisi antropogenik",
+      "Mengurangi gravitasi bumi di daerah kutub sehingga atmosfer bumi terlepas ke angkasa luar",
+      "Menghentikan proses fotosintesis seluruh vegetasi di kawasan hutan boreal taiga"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Tipping point dalam dinamika iklim adalah ambang batas kritis di mana perubahan kecil dapat memicu perubahan sistemik skala besar yang tidak dapat dipulihkan (irreversible).<br>Ketika permafrost mencair, mikroorganisme tanah menjadi aktif dan mendekomposisi bahan organik yang sebelumnya terawetkan dalam kondisi beku, melepaskan miliaran ton gas metana ($\\text{CH}_4$) dan $\\text{CO}_2$. Gas rumah kaca ini semakin meningkatkan suhu atmosfer, yang memicu pencairan permafrost lebih luas lagi secara swasembada (siklus umpan balik positif tak terkendali).",
+      "steps": "1. Tinjau kandungan dan karakteristik termal permafrost arktik.<br>2. Permafrost mengandung biomassa tanaman mati purba yang terperangkap dalam es beku.<br>3. Pencairan permafrost mengubah lingkungan beku menjadi rawa termokarst anoksik yang ideal bagi bakteri penghasil gas metana.<br>4. Pelepasan gas rumah kaca ini terjadi secara alami dan mandiri di luar kendali mitigasi manusia.<br>5. Jawaban yang tepat adalah pilihan C.",
+      "pitfalls": "Pencairan es tidak mengubah sumbu rotasi bumi secara dramatis (opsi A) dan tidak berkaitan dengan peristiwa nuklir radioaktif batuan (opsi B)."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-termo-global-dampak-010",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-termo",
+    "subChapterId": "fis-termo-global",
+    "subTopicId": "fis-termo-global-dampak",
+    "category": "Pelemahan Sirkulasi Termohalin Samudra (AMOC)",
+    "difficulty": "sedang",
+    "statement": "Sirkulasi Balik Meridional Atlantik (Atlantic Meridional Overturning Circulation / AMOC) adalah sistem arus laut global yang digerakkan oleh perbedaan suhu (termo) dan kadar garam / salinitas (halin). Air laut Atlantik Utara yang dingin dan sangat asin memiliki massa jenis tinggi sehingga tenggelam ke kedalaman samudra. Jika lapisan es gletser Greenland mencair secara masif dan cepat, dampak fisis langsung terhadap kelangsungan arus laut AMOC adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Arus AMOC mengalir semakin cepat karena penambahan volume air memperbesar tekanan hidrostatis dasar laut",
+      "Aliran air tawar bersalinitas nol dalam jumlah masif menurunkan massa jenis air permukaan kutub utara, sehingga air kutub sulit tenggelam dan melemahkan atau melumpuhkan sirkulasi AMOC",
+      "Kadar garam air laut Atlantik Utara melonjak tajam sehingga air permukaan membeku seketika",
+      "Arus teluk (Gulf Stream) membalikkan arah alirannya menuju ke khatulistiwa pada lapisan permukaan",
+      "Viskositas air laut menurun drastis sehingga seluruh arus samudra berubah menjadi aliran laminar statis"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Prinsip Sirkulasi Termohalin (AMOC):<br>- Penggerak utama (engine) sirkulasi laut dalam adalah pembentukan air padat (dense water) di Atlantik Utara: pendinginan udara kutub (termo) dan pembentukan es laut menyisakan garam di air cair sehingga meningkatkan salinitas (halin). Air dengan kerapatan tinggi ini tenggelam (deep water formation).<br>- Air leburan gletser Greenland adalah air tawar murni (salinitas $0\\text{ PSU}$). Masuknya volume masif air tawar mengencerkan air laut, menurunkan massa jenisnya secara drastis ($\\rho_{\\text{tawar}} < \\rho_{\\text{asin}}$), sehingga air permukaan tetap mengapung dan tidak dapat tenggelam ke dasar laut.",
+      "steps": "1. Analisis densitas air laut sebagai fungsi suhu dan salinitas (persamaan keadaan air laut).<br>2. Injeksi air tawar dari Greenland menurunkan salinitas lapisan atas samudra Atlantik Utara.<br>3. Penurunan salinitas mencegah tenggelamnya massa air permukaan yang menjadi motor penarik Arus Teluk dari tropis.<br>4. Akibatnya, sirkulasi AMOC melambat atau terancam kolaps, memicu destabilisasi iklim dramatis di belahan bumi utara.<br>5. Jawaban yang tepat adalah pilihan B.",
+      "pitfalls": "Air leburan es gletser daratan adalah AIR TAWAR, bukan air asin. Jangan berasumsi pencairan es menambah kadar garam (opsi C)."
+    },
+    "subTopicSlug": "penyebab-dampak-global",
+    "bab": "Kalor dan Termodinamika",
+    "subBab": "Penyebab & Dampak Pemanasan Global",
+    "subTopic": "Penyebab & Dampak Pemanasan Global",
+    "chapterTitle": "Kalor dan Termodinamika",
+    "difficultyLabel": "Sedang"
+  },
   {
     "id": "drill-pem-01",
     "subject": "FISIKA",

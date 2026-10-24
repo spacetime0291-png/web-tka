@@ -5,7 +5,7 @@
  * Slug: gaya-gesek
  * Indikator: Gaya gesek statis maksimum (f_s = mu_s * N), gesek kinetis (f_k = mu_k * N), dan penentuan kondisi gerak.
  * 
- * Total Butir Soal: 13 (Mudah: 7, Sedang: 6, HOTS: 0)
+ * Total Butir Soal: 23 (Mudah: 12, Sedang: 11, HOTS: 0)
  * Arsitektur: 4-Level Modular (Browser & Node.js Compatible)
  */
 
@@ -13,6 +13,336 @@
   const subTopicId = "fis-din-gaya-gesek";
   const subTopicSlug = "gaya-gesek";
   const questions = [
+  {
+    "id": "fis-din-gaya-gesek-001",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "mudah",
+    "statement": "Sebuah balok bermassa $m = 5\\text{ kg}$ diletakkan pada permukaan lantai datar kasar dengan koefisien gesekan statis $\\mu_s = 0,4$ dan koefisien gesekan kinetis $\\mu_k = 0,2$. Balok ditarik dengan gaya horizontal $F = 15\\text{ N}$. Jika percepatan gravitasi $g = 10\\text{ m/s}^2$, besar gaya gesekan yang bekerja pada balok adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$10\\text{ N}$",
+      "$15\\text{ N}$",
+      "$20\\text{ N}$",
+      "$35\\text{ N}$",
+      "$50\\text{ N}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Gaya gesek statis ($f_s$) bersifat responsif terhadap gaya luar yang berusaha menggerakkan benda, dengan nilai maksimum $f_{s,\\text{maks}} = \\mu_s N$. Jika gaya penarik $F \\le f_{s,\\text{maks}}$, maka benda tetap diam dan besar gaya gesek statis tepat sama dengan gaya penarik ($f_s = F$).",
+      "steps": "1. Hitung gaya normal balok di lantai datar horizontal:\\n$$N = m g = 5 \\times 10 = 50\\text{ N}$$\\n2. Hitung gaya gesek statis maksimum:\\n$$f_{s,\\text{maks}} = \\mu_s N = 0,4 \\times 50 = 20\\text{ N}$$\\n3. Bandingkan gaya penarik $F = 15\\text{ N}$ dengan $f_{s,\\text{maks}}$:\\nKarena $F = 15\\text{ N} < f_{s,\\text{maks}} = 20\\text{ N}$, balok belum bergerak (tetap diam).\\n4. Berdasarkan Hukum I Newton pada sumbu horizontal:\\n$$\\sum F_x = 0 \\implies F - f_s = 0 \\implies f_s = F = 15\\text{ N}$$\\nJadi, gaya gesek yang bekerja bernilai $15\\text{ N}$.",
+      "pitfalls": "Banyak siswa langsung mengalikan $\\mu_s N = 20\\text{ N}$ atau $\\mu_k N = 10\\text{ N}$. Rumus $\\mu_s N$ hanya menghasilkan nilai AMBANG BATAS maksimum, bukan gaya gesek aktual saat benda diam."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-din-gaya-gesek-002",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "mudah",
+    "statement": "Balok bermassa $m = 4\\text{ kg}$ berada di atas lantai mendatar kasar dengan koefisien gesekan kinetis $\\mu_k = 0,25$. Balok ditarik dengan gaya mendatar konstan $F = 22\\text{ N}$ sehingga balok bergerak meluncur di atas lantai. Jika $g = 10\\text{ m/s}^2$, besar gaya gesekan kinetis yang menghambat gerak balok adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$5\\text{ N}$",
+      "$10\\text{ N}$",
+      "$12\\text{ N}$",
+      "$22\\text{ N}$",
+      "$40\\text{ N}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Saat benda meluncur relatif terhadap permukaan bidang, gaya hambat yang bekerja adalah gaya gesekan kinetis dengan besar konstan: $f_k = \\mu_k N$, di mana $N$ adalah gaya normal tegak lurus bidang.",
+      "steps": "1. Hitung gaya normal balok di lantai mendatar:\\n$$N = m g = 4 \\times 10 = 40\\text{ N}$$\\n2. Hitung gaya gesekan kinetis:\\n$$f_k = \\mu_k N = 0,25 \\times 40 = 10\\text{ N}$$\\nJadi, gaya gesekan kinetis penghambat adalah $10\\text{ N}$.",
+      "pitfalls": "Jangan mengurangkan gaya penarik dengan gaya gesek untuk mencari $f_k$. Selisih $F - f_k$ adalah resultan gaya penyumbang percepatan ($F_{\\text{net}} = 12\\text{ N}$), sedangkan gaya geseknya sendiri tepat bernilai $10\\text{ N}$."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-din-gaya-gesek-003",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "mudah",
+    "statement": "Perhatikan pernyataan-pernyataan mengenai gaya gesekan berikut:\\n1. Arah gaya gesekan selalu berlawanan dengan kecenderungan arah gerak relatif benda.\\n2. Koefisien gesekan statis umumnya lebih besar atau sama dengan koefisien gesekan kinetis ($\\mu_s \\ge \\mu_k$).\\n3. Gaya gesekan kinetis nilainya bergantung linier terhadap luas permukaan sentuh benda.\\nPernyataan yang BENAR adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "1 dan 2 saja",
+      "1 dan 3 saja",
+      "2 dan 3 saja",
+      "1 saja",
+      "1, 2, dan 3"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "Hukum Amontons tentang gesekan menyatakan bahwa gaya gesekan berbanding lurus dengan gaya normal dan pada pendekatan makroskopis standar tidak bergantung pada luas bidang sentuh semu benda.",
+      "steps": "1. Analisis pernyataan 1: Benar, gaya gesekan selalu melawan kecenderungan pergeseran relatif antara dua permukaan yang bersentuhan.\\n2. Analisis pernyataan 2: Benar, diperlukan gaya yang lebih besar untuk memulai pergerakan daripada mempertahankannya (ikatan mikroskopis adhesi saat diam lebih kuat), sehingga $\\mu_s \\ge \\mu_k$.\\n3. Analisis pernyataan 3: Salah, pada model gesekan Coulomb/Amontons, gaya gesek tidak bergantung pada luas permukaan bidang sentuh selama gaya normalnya tetap konstan.\\nSehingga pernyataan yang benar adalah 1 dan 2.",
+      "pitfalls": "Kerap dianggap bahwa semakin lebar penampang balok, semakin besar gaya geseknya. Secara mikroskopis, luas kontak riil per satuan tekanan akan terdistribusi sebanding sehingga total gaya gesek tidak dipengaruhi luas semu permukaan."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-din-gaya-gesek-004",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "mudah",
+    "statement": "Sebuah balok bermassa $m = 2\\text{ kg}$ diluncurkan di atas lantai kasar dengan kecepatan awal $v_0 = 8\\text{ m/s}$. Balok tersebut mengalami perlambatan akibat gesekan lantai hingga akhirnya berhenti setelah menempuh jarak $s = 16\\text{ m}$. Jika percepatan gravitasi $g = 10\\text{ m/s}^2$, koefisien gesekan kinetis $\\mu_k$ antara balok dan lantai adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$0,10$",
+      "$0,20$",
+      "$0,25$",
+      "$0,40$",
+      "$0,50$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Perpaduan kinematika gerak lurus berubah beraturan (GLBB diperlambat) dan dinamika Hukum II Newton: $v_t^2 = v_0^2 - 2 a s$ dan $\\sum F = f_k = m a$, dengan $f_k = \\mu_k m g$.",
+      "steps": "1. Tentukan besar perlambatan $a$ dari persamaan GLBB:\\n$$v_t^2 = v_0^2 - 2 a s$$\\n$$0 = 8^2 - 2 a (16)$$\\n$$32 a = 64 \\implies a = 2\\text{ m/s}^2$$\\n2. Hubungkan perlambatan dengan gaya gesek kinetis:\\n$$\\sum F_x = f_k = m a$$\\n$$\\mu_k m g = m a \\implies \\mu_k = \\frac{a}{g}$$\\n3. Substitusi nilai percepatan:\\n$$\\mu_k = \\frac{2}{10} = 0,20$$\\nJadi, koefisien gesekan kinetis adalah $0,20$.",
+      "pitfalls": "Perhatikan bahwa koefisien gesekan merupakan besaran tak berdimensi yang tidak bergantung pada massa benda yang meluncur."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-din-gaya-gesek-005",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "mudah",
+    "statement": "Sebuah balok bermassa $m = 10\\text{ kg}$ diletakkan pada bidang miring kasar yang membentuk sudut kemiringan $\\theta = 37^\\circ$ terhadap horizontal (diketahui $\\sin 37^\\circ = 0,6$ dan $\\cos 37^\\circ = 0,8$). Koefisien gesekan statis antara balok dan bidang miring adalah $\\mu_s = 0,5$. Jika $g = 10\\text{ m/s}^2$, besar gaya gesekan statis maksimum yang mampu dikerjakan oleh bidang miring pada balok adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$30\\text{ N}$",
+      "$40\\text{ N}$",
+      "$50\\text{ N}$",
+      "$60\\text{ N}$",
+      "$80\\text{ N}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Gaya gesek statis maksimum pada bidang miring ditentukan oleh gaya normal tegak lurus bidang: $f_{s,\\text{maks}} = \\mu_s N = \\mu_s m g \\cos\\theta$.",
+      "steps": "1. Hitung gaya normal tegak lurus bidang miring:\\n$$N = m g \\cos 37^\\circ = 10 \\times 10 \\times 0,8 = 80\\text{ N}$$\\n2. Hitung gaya gesek statis maksimum:\\n$$f_{s,\\text{maks}} = \\mu_s N = 0,5 \\times 80 = 40\\text{ N}$$\\nJadi, gaya gesek statis maksimum adalah $40\\text{ N}$.",
+      "pitfalls": "Jangan keliru menggunakan $m g \\sin\\theta$ untuk mencari gaya normal. Komponen yang tegak lurus bidang miring adalah $m g \\cos\\theta$, sedangkan $m g \\sin\\theta$ adalah komponen gaya luncur sejajar bidang."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-din-gaya-gesek-006",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "sedang",
+    "statement": "Sebuah balok bermassa $m = 10\\text{ kg}$ ditarik oleh gaya konstan $F = 50\\text{ N}$ yang membentuk sudut elevasi $\\theta = 37^\\circ$ terhadap bidang horizontal (diketahui $\\sin 37^\\circ = 0,6$ dan $\\cos 37^\\circ = 0,8$). Balok bergerak di atas lantai datar dengan koefisien gesekan kinetis $\\mu_k = 0,20$. Jika percepatan gravitasi $g = 10\\text{ m/s}^2$, percepatan gerak balok tersebut adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2,0\\text{ m/s}^2$",
+      "$2,6\\text{ m/s}^2$",
+      "$3,0\\text{ m/s}^2$",
+      "$3,4\\text{ m/s}^2$",
+      "$4,0\\text{ m/s}^2$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Gaya tarik miring ke atas memiliki dua komponen: komponen horizontal $F_x = F \\cos\\theta$ yang mempercepat balok dan komponen vertikal $F_y = F \\sin\\theta$ yang mengurangi gaya normal lantai: $N = m g - F \\sin\\theta$. Gaya gesekan kinetis yang menghambat adalah $f_k = \\mu_k N$.",
+      "steps": "1. Uraikan gaya pada sumbu vertikal ($y$) untuk mencari gaya normal $N$:\\n$$\\sum F_y = 0 \\implies N + F \\sin 37^\\circ - m g = 0$$\\n$$N = m g - F \\sin 37^\\circ = (10)(10) - 50(0,6) = 100 - 30 = 70\\text{ N}$$\\n2. Hitung gaya gesekan kinetis penghambat:\\n$$f_k = \\mu_k N = 0,20 \\times 70 = 14\\text{ N}$$\\n3. Terapkan Hukum II Newton pada sumbu horizontal ($x$):\\n$$\\sum F_x = F \\cos 37^\\circ - f_k = m a$$\\n$$(50)(0,8) - 14 = 10 a$$\\n$$40 - 14 = 10 a \\implies 26 = 10 a \\implies a = 2,6\\text{ m/s}^2$$\\nJadi, percepatan balok adalah $2,6\\text{ m/s}^2$.",
+      "pitfalls": "Kerap lupa memperhitungkan komponen vertikal gaya tarik $F \\sin\\theta$, sehingga keliru menganggap gaya normal tetap $N = m g = 100\\text{ N}$ yang menghasilkan $f_k = 20\\text{ N}$ dan $a = 2,0\\text{ m/s}^2$."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-din-gaya-gesek-007",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "sedang",
+    "statement": "Dua balok bertumpuk di atas lantai horizontal licin (tanpa gesekan). Balok atas $A$ bermassa $m_A = 2\\text{ kg}$ diletakkan di atas balok bawah $B$ bermassa $m_B = 3\\text{ kg}$. Antara permukaan balok $A$ dan balok $B$ terdapat gesekan dengan koefisien gesekan statis $\\mu_s = 0,4$. Sebuah gaya horizontal $F$ menarik balok bawah $B$. Nilai maksimum gaya tarik $F$ agar balok $A$ tidak tergelincir (bergerak bersama-sama dengan balok $B$) adalah... ($g = 10\\text{ m/s}^2$)",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$8\\text{ N}$",
+      "$12\\text{ N}$",
+      "$16\\text{ N}$",
+      "$20\\text{ N}$",
+      "$25\\text{ N}$"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "Balok $A$ ikut bergerak dipercepat semata-mata karena gaya gesek statis yang dikerjakan oleh permukaan atas balok $B$. Nilai batas percepatan bersama dicapai saat gaya gesek mencapai nilai statis maksimum: $f_{s,\\text{maks}} = \\mu_s m_A g$.",
+      "steps": "1. Tinjau balok atas $A$:\\nGaya horizontal satu-satunya pada balok $A$ adalah gaya gesek statis $f_s$ dari balok $B$:\\n$$f_{s,\\text{maks}} = m_A a_{\\text{maks}}$$\\n$$\\mu_s m_A g = m_A a_{\\text{maks}} \\implies a_{\\text{maks}} = \\mu_s g = 0,4 \\times 10 = 4\\text{ m/s}^2$$\\n2. Tinjau sistem gabungan $(A + B)$:\\nKarena lantai licin, total gaya luar horizontal penggerak kedua balok adalah $F$:\\n$$F_{\\text{maks}} = (m_A + m_B) a_{\\text{maks}}$$\\n$$F_{\\text{maks}} = (2 + 3) \\times 4 = 5 \\times 4 = 20\\text{ N}$$\\nJadi, gaya penarik maksimum agar tidak selip adalah $20\\text{ N}$.",
+      "pitfalls": "Jangan menggunakan massa total untuk menghitung gaya gesek statis antara $A$ dan $B$. Gaya normal antara $A$ dan $B$ hanya bersumber dari berat balok $A$ ($N_{AB} = m_A g$)."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-din-gaya-gesek-008",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "sedang",
+    "statement": "Sebuah balok meluncur menuruni bidang miring kasar yang bersudut $\\theta_1 = 37^\\circ$ terhadap horizontal dengan kelajuan konstan. Jika kemiringan bidang miring tersebut diperbesar menjadi $\\theta_2 = 53^\\circ$, percepatan meluncur balok menuruni bidang menjadi... (Gunakan $\\sin 37^\\circ = \\cos 53^\\circ = 0,6$; $\\cos 37^\\circ = \\sin 53^\\circ = 0,8$; dan $g = 10\\text{ m/s}^2$)",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$2,5\\text{ m/s}^2$",
+      "$3,0\\text{ m/s}^2$",
+      "$3,5\\text{ m/s}^2$",
+      "$4,0\\text{ m/s}^2$",
+      "$4,5\\text{ m/s}^2$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Pada kelajuan konstan ($a = 0$), komponen gaya luncur gravitasi tepat diimbangi oleh gaya gesekan kinetis: $m g \\sin\\theta_1 = \\mu_k m g \\cos\\theta_1 \\implies \\mu_k = \\tan\\theta_1$. Koefisien gesekan bernilai tetap saat sudut diubah.",
+      "steps": "1. Cari koefisien gesekan kinetis $\\mu_k$ dari kondisi awal laju tetap:\\n$$\\mu_k = \\tan 37^\\circ = \\frac{\\sin 37^\\circ}{\\cos 37^\\circ} = \\frac{0,6}{0,8} = 0,75$$\\n2. Tentukan persamaan percepatan pada sudut baru $\\theta_2 = 53^\\circ$:\\n$$\\sum F_\\parallel = m g \\sin 53^\\circ - f_k = m a$$\\n$$m g \\sin 53^\\circ - \\mu_k m g \\cos 53^\\circ = m a$$\\n$$a = g (\\sin 53^\\circ - \\mu_k \\cos 53^\\circ)$$\\n3. Hitung nilainya:\\n$$a = 10 [0,8 - (0,75 \\times 0,6)] = 10 [0,8 - 0,45] = 10 \\times 0,35 = 3,5\\text{ m/s}^2$$\\nJadi, percepatan balok adalah $3,5\\text{ m/s}^2$.",
+      "pitfalls": "Kerap keliru menganggap koefisien gesekan berubah seiring perubahan sudut. Sifat material permukaan tetap sama, yang berubah hanyalah gaya normal dan komponen gaya sejajar bidang miring."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-din-gaya-gesek-009",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "sedang",
+    "statement": "Sebuah balok bermassa $m = 5\\text{ kg}$ ditekan secara mendatar pada dinding vertikal kasar. Koefisien gesekan statis antara balok dan dinding adalah $\\mu_s = 0,50$ dan percepatan gravitasi $g = 10\\text{ m/s}^2$. Besar gaya tekan mendatar minimum $F$ yang harus diberikan pada balok agar balok tidak melorot jatuh ke bawah adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$25\\text{ N}$",
+      "$50\\text{ N}$",
+      "$75\\text{ N}$",
+      "$100\\text{ N}$",
+      "$125\\text{ N}$"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "Gaya tekan mendatar $F$ membangkitkan gaya normal kontak dari dinding: $N = F$. Gaya penahan gerak jatuh ke bawah adalah gaya gesek statis vertikal ke atas: $f_s \\le \\mu_s N = \\mu_s F$. Kondisi tepat akan melorot mensyaratkan $f_{s,\\text{maks}} = W$.",
+      "steps": "1. Tuliskan syarat kesetimbangan gaya vertikal agar balok diam:\\n$$\\sum F_y = 0 \\implies f_s - W = 0 \\implies f_s = m g = 5 \\times 10 = 50\\text{ N}$$\\n2. Hubungkan dengan batas gaya gesek statis maksimum:\\n$$f_s \\le f_{s,\\text{maks}} = \\mu_s N$$\\nKarena pada sumbu horizontal $N = F$, maka:\\n$$50 \\le \\mu_s F$$\\n$$F \\ge \\frac{50}{\\mu_s} = \\frac{50}{0,50} = 100\\text{ N}$$\\nJadi, gaya tekan mendatar minimum adalah $100\\text{ N}$.",
+      "pitfalls": "Jangan keliru mengalikan berat dengan koefisien gesek ($50 \\times 0,5 = 25\\text{ N}$). Gaya gesek statis dibangkitkan oleh gaya normal horizontal, bukan oleh berat vertikal."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-din-gaya-gesek-010",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-din",
+    "subChapterId": "fis-din-gaya",
+    "subTopicId": "fis-din-gaya-gesek",
+    "category": "Mekanika",
+    "difficulty": "sedang",
+    "statement": "Sebuah balok bermassa $m = 2\\text{ kg}$ dilontarkan dengan kecepatan awal $v_0 = 15\\text{ m/s}$ ke atas menaiki bidang miring kasar bersudut $\\theta = 30^\\circ$ terhadap horizontal. Koefisien gesekan kinetis antara balok dan bidang miring adalah $\\mu_k = \\frac{\\sqrt{3}}{6}$. Jika percepatan gravitasi $g = 10\\text{ m/s}^2$, jarak maksimum yang ditempuh balok sepanjang bidang miring sebelum berhenti sesaat adalah...",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$10\\text{ m}$",
+      "$12\\text{ m}$",
+      "$15\\text{ m}$",
+      "$18\\text{ m}$",
+      "$20\\text{ m}$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Ketika benda bergerak menaiki bidang miring, gaya gesekan kinetis berarah menuruni bidang miring (searah dengan komponen gaya gravitasi sejajar bidang). Keduanya bersama-sama menghasilkan perlambatan: $a_{\\text{naik}} = g(\\sin\\theta + \\mu_k \\cos\\theta)$.",
+      "steps": "1. Tentukan perlambatan gerak saat menaiki bidang miring:\\n$$a_{\\text{naik}} = g (\\sin 30^\\circ + \\mu_k \\cos 30^\\circ)$$\\n$$a_{\\text{naik}} = 10 \\left(\\frac{1}{2} + \\frac{\\sqrt{3}}{6} \\times \\frac{\\sqrt{3}}{2}\\right) = 10 \\left(\\frac{1}{2} + \\frac{3}{12}\\right) = 10 \\left(\\frac{1}{2} + \\frac{1}{4}\\right) = 10 \\left(\\frac{3}{4}\\right) = 7,5\\text{ m/s}^2$$\\n2. Gunakan persamaan GLBB untuk mencari jarak henti ($v_t = 0$):\\n$$v_t^2 = v_0^2 - 2 a_{\\text{naik}} s$$\\n$$0 = 15^2 - 2 (7,5) s$$\\n$$0 = 225 - 15 s \\implies 15 s = 225 \\implies s = 15\\text{ m}$$\\nJadi, jarak maksimum yang ditempuh balok adalah $15\\text{ m}$.",
+      "pitfalls": "Kekeliruan fatal yang sering terjadi adalah mengurangkan gaya gesek dari komponen berat ($g(\\sin\\theta - \\mu_k\\cos\\theta)$). Pengurangan hanya berlaku saat benda meluncur turun. Saat benda bergerak naik, gesekan menahan laju ke arah bawah sehingga perlambatannya bertambah besar."
+    },
+    "subTopicSlug": "gaya-gesek",
+    "bab": "Dinamika",
+    "subBab": "Gaya Gesek Statis dan Kinetis",
+    "subTopic": "Gaya Gesek Statis dan Kinetis",
+    "chapterTitle": "Dinamika",
+    "difficultyLabel": "Sedang"
+  },
   {
     "id": "mudah-fis-03",
     "subject": "FISIKA",

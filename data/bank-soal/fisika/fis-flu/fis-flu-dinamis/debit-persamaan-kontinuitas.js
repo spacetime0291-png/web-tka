@@ -5,7 +5,7 @@
  * Slug: debit-persamaan-kontinuitas
  * Indikator: Laju aliran debit (Q = A * v) dan kekekalan massa fluida inkompresibel (A_1 * v_1 = A_2 * v_2).
  * 
- * Total Butir Soal: 3 (Mudah: 1, Sedang: 1, HOTS: 1)
+ * Total Butir Soal: 13 (Mudah: 6, Sedang: 6, HOTS: 1)
  * Arsitektur: 4-Level Modular (Browser & Node.js Compatible)
  */
 
@@ -13,6 +13,336 @@
   const subTopicId = "fis-flu-dinamis-kontinuitas";
   const subTopicSlug = "debit-persamaan-kontinuitas";
   const questions = [
+  {
+    "id": "fis-flu-dinamis-kontinuitas-001",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "mudah",
+    "statement": "Sebuah selang air digunakan untuk mengisi bak mandi bervolume $V = 120\\text{ liter}$ hingga penuh dalam selang waktu $t = 2\\text{ menit}$. Besar debit aliran air dari selang tersebut dalam satuan standar internasional ($\\text{m}^3\\text{/s}$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1 \\times 10^{-4}\\text{ m}^3\\text{/s}$",
+      "$5 \\times 10^{-4}\\text{ m}^3\\text{/s}$",
+      "$1 \\times 10^{-3}\\text{ m}^3\\text{/s}$",
+      "$2 \\times 10^{-3}\\text{ m}^3\\text{/s}$",
+      "$6 \\times 10^{-2}\\text{ m}^3\\text{/s}$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Debit aliran ($Q$) didefinisikan sebagai laju volume fluida yang mengalir melalui suatu penampang per satuan waktu:<br>$$Q = \\frac{V}{t}$$Satuan SI untuk volume adalah meter kubik ($1\\text{ liter} = 10^{-3}\\text{ m}^3$) dan waktu adalah sekon ($1\\text{ menit} = 60\\text{ s}$).",
+      "steps": "1. Konversikan besaran ke satuan SI:<br>• Volume: $V = 120\\text{ liter} = 120 \\times 10^{-3}\\text{ m}^3 = 0{,}12\\text{ m}^3$<br>• Waktu: $t = 2\\text{ menit} = 120\\text{ sekon}$<br>2. Hitung debit aliran:<br>$$Q = \\frac{0{,}12\\text{ m}^3}{120\\text{ s}} = 10^{-3}\\text{ m}^3\\text{/s}$$",
+      "pitfalls": "Lupa mengonversi menit ke sekon sehingga membagi $120$ liter langsung dengan 2 menit yang menghasilkan $60\\text{ liter/menit}$ tanpa penyesuaian ke $\\text{m}^3\\text{/s}$."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-002",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "mudah",
+    "statement": "Air mengalir melalui pipa berpenampang lingkaran dengan luas $A = 5\\text{ cm}^2$. Jika kelajuan rata-rata aliran air di dalam pipa tersebut adalah $v = 4\\text{ m/s}$, debit aliran air dalam satuan $\\text{liter/sekon}$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1{,}0\\text{ liter/s}$",
+      "$2{,}0\\text{ liter/s}$",
+      "$4{,}0\\text{ liter/s}$",
+      "$10\\text{ liter/s}$",
+      "$20\\text{ liter/s}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Debit aliran fluida juga dapat dirumuskan dari perkalian antara luas penampang saluran ($A$) dengan kelajuan linier aliran ($v$):<br>$$Q = A \\cdot v$$",
+      "steps": "1. Konversikan luas penampang ke meter persegi:<br>$$A = 5\\text{ cm}^2 = 5 \\times 10^{-4}\\text{ m}^2$$<br>2. Hitung debit dalam satuan $\\text{m}^3\\text{/s}$:<br>$$Q = A \\cdot v = (5 \\times 10^{-4}\\text{ m}^2) \\times 4\\text{ m/s} = 20 \\times 10^{-4}\\text{ m}^3\\text{/s} = 2 \\times 10^{-3}\\text{ m}^3\\text{/s}$$<br>3. Konversikan ke satuan liter/sekon ($1\\text{ m}^3 = 1000\\text{ liter}$):<br>$$Q = 2 \\times 10^{-3} \\times 1000\\text{ liter/s} = 2{,}0\\text{ liter/s}$$",
+      "pitfalls": "Kesalahan konversi $5\\text{ cm}^2$ menjadi $5 \\times 10^{-2}\\text{ m}^2$ (lupa menguadratkan faktor konversi centimeter ke meter)."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-003",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "mudah",
+    "statement": "Minyak mengalir secara kontinu melalui pipa mendatar yang luas penampangnya mengecil. Di penampang besar dengan luas $A_1 = 20\\text{ cm}^2$, minyak mengalir dengan kelajuan $v_1 = 3\\text{ m/s}$. Kelajuan aliran minyak pada bagian penampang pipa sempit yang luasnya $A_2 = 5\\text{ cm}^2$ adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$0{,}75\\text{ m/s}$",
+      "$6{,}0\\text{ m/s}$",
+      "$9{,}0\\text{ m/s}$",
+      "$12\\text{ m/s}$",
+      "$15\\text{ m/s}$"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "Persamaan Kontinuitas untuk fluida inkompresibel menyatakan kekekalan debit aliran pada setiap titik sepanjang pipa alir:<br>$$Q_1 = Q_2 \\iff A_1 \\cdot v_1 = A_2 \\cdot v_2$$Sehingga kelajuan fluida berbanding terbalik dengan luas penampang:<br>$$v_2 = v_1 \\cdot \\frac{A_1}{A_2}$$",
+      "steps": "1. Masukkan nilai yang diketahui:<br>• $A_1 = 20\\text{ cm}^2$<br>• $v_1 = 3\\text{ m/s}$<br>• $A_2 = 5\\text{ cm}^2$<br>2. Hitung kelajuan $v_2$:<br>$$v_2 = 3\\text{ m/s} \\times \\frac{20\\text{ cm}^2}{5\\text{ cm}^2} = 3 \\times 4 = 12\\text{ m/s}$$",
+      "pitfalls": "Terkecoh membalik rasio penampang menjadi $3 \\times \\frac{5}{20} = 0{,}75\\text{ m/s}$ (opsi A). Ingat prinsip fisis: di bagian pipa yang lebih sempit, kelajuan aliran fluida selalu bertambah cepat."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-004",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "mudah",
+    "statement": "Air mengalir di dalam sebuah pipa horizontal berdiameter penampang $d_1 = 6\\text{ cm}$ dengan kelajuan $v_1 = 1{,}5\\text{ m/s}$. Pipa tersebut kemudian menyempit menjadi pipa berdiameter $d_2 = 2\\text{ cm}$. Kelajuan aliran air pada pipa yang menyempit tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$4{,}5\\text{ m/s}$",
+      "$9{,}0\\text{ m/s}$",
+      "$13{,}5\\text{ m/s}$",
+      "$18{,}0\\text{ m/s}$",
+      "$27{,}0\\text{ m/s}$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Karena luas penampang pipa lingkaran sebanding dengan kuadrat diameternya ($A \\propto d^2$), maka persamaan kontinuitas dapat dinyatakan dalam perbandingan diameter:<br>$$d_1^2 \\cdot v_1 = d_2^2 \\cdot v_2 \\iff v_2 = v_1 \\cdot \\left(\\frac{d_1}{d_2}\\right)^2$$",
+      "steps": "1. Hitung rasio diameter:<br>$$\\frac{d_1}{d_2} = \\frac{6\\text{ cm}}{2\\text{ cm}} = 3$$<br>2. Kuadratkan rasio diameter:<br>$$\\left(\\frac{d_1}{d_2}\\right)^2 = 3^2 = 9$$<br>3. Hitung kelajuan $v_2$:<br>$$v_2 = 1{,}5\\text{ m/s} \\times 9 = 13{,}5\\text{ m/s}$$",
+      "pitfalls": "Siswa sering lupa menguadratkan rasio diameter dan hanya mengalikan secara linier ($1{,}5 \\times 3 = 4{,}5\\text{ m/s}$, opsi A)."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-005",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "mudah",
+    "statement": "Fluida dinamis dalam pembahasan fisika dasar ideal diasumsikan memenuhi empat karakteristik utama. Pasangan karakteristik berikut yang secara tepat mendeskripsikan sifat fluida ideal adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "Inkompresibel (tak termampatkan) dan non-viskos (tidak kental)",
+      "Kompresibel (mudah termampatkan) dan memiliki viskositas tinggi",
+      "Aliran turbulen tak beraturan dan mengalami pusaran (rotasional)",
+      "Kelajuan di setiap titik selalu berubah-ubah terhadap waktu (tidak tunak)",
+      "Massa jenisnya selalu berubah drastis sepanjang garis alir"
+    ],
+    "correctIndex": 0,
+    "solution": {
+      "concept": "Empat sifat utama fluida ideal adalah:<br>1) Inkompresibel: massa jenis fluida konstan dan tidak berubah ketika ditekan.<br>2) Non-viskos: tidak memiliki gesekan internal atau kekentalan saat mengalir.<br>3) Aliran tunak (steady): kecepatan partikel pada titik tertentu selalu konstan terhadap waktu.<br>4) Tak berputar (irrotasional): partikel tidak memiliki momentum sudut terhadap porosnya.",
+      "steps": "1. Analisis opsi A: Inkompresibel dan non-viskos adalah dua karakteristik mutlak fluida ideal.<br>2. Opsi B, C, D, E merupakan karakteristik fluida nyata atau non-ideal.",
+      "pitfalls": "Jangan tertukar antara aliran tunak (steady) dan aliran laminer dengan aliran turbulen atau pusaran berolak."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Mudah"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-006",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "sedang",
+    "statement": "Sebuah pembuluh darah utama (aorta) berdiameter rata-rata $D = 1{,}2\\text{ cm}$ mengalirkan darah dengan kelajuan rata-rata $v_1 = 40\\text{ cm/s}$. Pembuluh darah aorta ini kemudian bercabang-cabang menjadi $N = 3 \\times 10^7$ pembuluh darah kapiler halus yang tersusun secara paralel, masing-masing dengan diameter rata-rata $d = 8 \\times 10^{-4}\\text{ cm}$. Kelajuan rata-rata aliran darah di dalam setiap pembuluh darah kapiler tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$0{,}5\\text{ cm/s}$",
+      "$1{,}0\\text{ cm/s}$",
+      "$2{,}0\\text{ cm/s}$",
+      "$3{,}0\\text{ cm/s}$",
+      "$6{,}0\\text{ cm/s}$"
+    ],
+    "correctIndex": 3,
+    "solution": {
+      "concept": "Berdasarkan prinsip kontinuitas, debit aliran pada pembuluh utama sama dengan jumlah debit total pada seluruh cabang kapiler:<br>$$Q_{\\text{aorta}} = N \\cdot Q_{\\text{kapiler}} \\iff A_{\\text{aorta}} \\cdot v_1 = N \\cdot A_{\\text{kapiler}} \\cdot v_2$$Dengan mensubstitusikan luas penampang lingkaran $A = \\frac{1}{4}\\pi d^2$:<br>$$D^2 \\cdot v_1 = N \\cdot d^2 \\cdot v_2 \\implies v_2 = \\frac{D^2 \\cdot v_1}{N \\cdot d^2}$$",
+      "steps": "1. Hitung pembilang ($D^2 \\cdot v_1$):<br>$$D^2 \\cdot v_1 = (1{,}2\\text{ cm})^2 \\times 40\\text{ cm/s} = 1{,}44 \\times 40 = 57{,}6\\text{ cm}^3\\text{/s}$$<br>2. Hitung penyebut ($N \\cdot d^2$):<br>$$N \\cdot d^2 = (3 \\times 10^7) \\times (8 \\times 10^{-4}\\text{ cm})^2 = 3 \\times 10^7 \\times 64 \\times 10^{-8} = 19{,}2\\text{ cm}^2$$<br>3. Hitung kelajuan rata-rata di kapiler ($v_2$):<br>$$v_2 = \\frac{57{,}6}{19{,}2} = 3{,}0\\text{ cm/s}$$",
+      "pitfalls": "Siswa sering lupa memperhitungkan jumlah total cabang $N$, sehingga menghitung kelajuan yang luar biasa besar karena hanya membandingkan satu aorta dengan satu kapiler tunggal."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-007",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "sedang",
+    "statement": "Sebuah tandon penampung air berkapasitas volume $V = 1800\\text{ liter}$ diisi secara bersamaan oleh dua pipa pengisi, yaitu pipa A dengan debit $Q_A = 2{,}5\\text{ liter/s}$ dan pipa B dengan debit $Q_B = 1{,}5\\text{ liter/s}$. Namun pada saat yang sama, lubang pembuangan di dasar tandon terbuka dan mengalirkan air keluar dengan kelajuan $v = 2\\text{ m/s}$ melalui penampang lubang $A_{\\text{bocor}} = 5\\text{ cm}^2$. Waktu yang diperlukan untuk mengisi tandon tersebut dari keadaan kosong hingga terisi penuh adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$5\\text{ menit}$",
+      "$7{,}5\\text{ menit}$",
+      "$10\\text{ menit}$",
+      "$12{,}5\\text{ menit}$",
+      "$15\\text{ menit}$"
+    ],
+    "correctIndex": 2,
+    "solution": {
+      "concept": "Laju pengisian netto tandon adalah selisih antara debit total air masuk dan debit air keluar:<br>$$Q_{\\text{netto}} = Q_{\\text{masuk}} - Q_{\\text{keluar}} = (Q_A + Q_B) - (A_{\\text{bocor}} \\cdot v)$$Waktu pengisian dihitung dengan:<br>$$t = \\frac{V}{Q_{\\text{netto}}}$$",
+      "steps": "1. Hitung total debit air masuk:<br>$$Q_{\\text{masuk}} = 2{,}5\\text{ liter/s} + 1{,}5\\text{ liter/s} = 4{,}0\\text{ liter/s}$$<br>2. Hitung debit air yang bocor keluar:<br>$$Q_{\\text{keluar}} = A_{\\text{bocor}} \\cdot v = (5 \\times 10^{-4}\\text{ m}^2) \\times 2\\text{ m/s} = 10^{-3}\\text{ m}^3\\text{/s} = 1{,}0\\text{ liter/s}$$<br>3. Hitung debit netto pengisian:<br>$$Q_{\\text{netto}} = 4{,}0\\text{ liter/s} - 1{,}0\\text{ liter/s} = 3{,}0\\text{ liter/s}$$<br>4. Hitung waktu pengisian total:<br>$$t = \\frac{1800\\text{ liter}}{3{,}0\\text{ liter/s}} = 600\\text{ sekon} = 10\\text{ menit}$$",
+      "pitfalls": "Lupa mengonversi satuan luas bocor dari $\\text{cm}^2$ ke $\\text{m}^2$ atau lupa memperhitungkan kebocoran keluar sehingga membagi $1800$ dengan $4{,}0$ yang menghasilkan $7{,}5\\text{ menit}$ (opsi B)."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-008",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "sedang",
+    "statement": "Sebuah selang penyiram tanaman dialiri air dengan debit tetap $Q = 0{,}4\\text{ liter/s}$. Di ujung selang dipasang nozzle kepala semprotan yang memiliki $n = 25$ lubang sembur kecil yang identik. Luas penampang masing-masing lubang kecil tersebut adalah $a = 2\\text{ mm}^2$. Besar kelajuan semburan air yang keluar dari setiap lubang nozzle adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$4\\text{ m/s}$",
+      "$8\\text{ m/s}$",
+      "$10\\text{ m/s}$",
+      "$16\\text{ m/s}$",
+      "$20\\text{ m/s}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Debit total fluida terbagi rata melalui $n$ lubang kecil yang identik:<br>$$Q = n \\cdot a \\cdot v \\implies v = \\frac{Q}{n \\cdot a}$$Di mana $n \\cdot a$ adalah luas penampang total seluruh lubang sembur.",
+      "steps": "1. Konversikan besaran ke satuan SI:<br>• Debit: $Q = 0{,}4\\text{ liter/s} = 0{,}4 \\times 10^{-3}\\text{ m}^3\\text{/s} = 4 \\times 10^{-4}\\text{ m}^3\\text{/s}$<br>• Luas total lubang: $A_{\\text{total}} = 25 \\times (2\\text{ mm}^2) = 50\\text{ mm}^2 = 50 \\times 10^{-6}\\text{ m}^2 = 5 \\times 10^{-5}\\text{ m}^2$<br>2. Hitung kelajuan semburan air ($v$):<br>$$v = \\frac{4 \\times 10^{-4}\\text{ m}^3\\text{/s}}{5 \\times 10^{-5}\\text{ m}^2} = \\frac{40}{5} = 8\\text{ m/s}$$",
+      "pitfalls": "Siswa sering lupa mengalikan luas 1 lubang dengan jumlah total lubang ($n = 25$) sehingga memperoleh hasil kelajuan yang keliru sebesar $200\\text{ m/s}$."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-009",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "sedang",
+    "statement": "Sebuah tangki silinder besar dengan luas penampang $A_1 = 1{,}5\\text{ m}^2$ diisi air hingga ketinggian tertentu. Pada dinding dekat dasar tangki terdapat keran pembuangan mendatar dengan luas penampang $A_2 = 3\\text{ cm}^2$. Ketika keran dibuka penuh, air mengalir keluar dari mulut keran dengan kelajuan rata-rata $v_2 = 5\\text{ m/s}$. Laju penurunan permukaan air di dalam tangki silinder tersebut ($v_1$) adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$0{,}5\\text{ mm/s}$",
+      "$1{,}0\\text{ mm/s}$",
+      "$2{,}0\\text{ mm/s}$",
+      "$5{,}0\\text{ mm/s}$",
+      "$10\\text{ mm/s}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Berdasarkan persamaan kontinuitas fluida inkompresibel, debit penurunan air di dalam tangki sama dengan debit air yang keluar melalui keran:<br>$$A_1 \\cdot v_1 = A_2 \\cdot v_2 \\implies v_1 = v_2 \\cdot \\frac{A_2}{A_1}$$",
+      "steps": "1. Konversikan luas penampang keran ke meter persegi:<br>$$A_2 = 3\\text{ cm}^2 = 3 \\times 10^{-4}\\text{ m}^2$$<br>2. Hitung laju penurunan permukaan air ($v_1$):<br>$$v_1 = 5\\text{ m/s} \\times \\frac{3 \\times 10^{-4}\\text{ m}^2}{1{,}5\\text{ m}^2} = 5 \\times (2 \\times 10^{-4}) = 10^{-3}\\text{ m/s} = 1{,}0\\text{ mm/s}$$",
+      "pitfalls": "Kesalahan konversi satuan kecepatan dari $\\text{m/s}$ ke $\\text{mm/s}$ atau kesalahan konversi satuan luas penampang dari $\\text{cm}^2$ ke $\\text{m}^2$."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Sedang"
+  },
+  {
+    "id": "fis-flu-dinamis-kontinuitas-010",
+    "subject": "FISIKA",
+    "pillarId": "fisika",
+    "chapterId": "fis-flu",
+    "subChapterId": "fis-flu-dinamis",
+    "subTopicId": "fis-flu-dinamis-kontinuitas",
+    "category": "Debit & Persamaan Kontinuitas",
+    "difficulty": "sedang",
+    "statement": "Sebuah pipa saluran air konis horizontal memiliki penampang yang menyempit secara bertahap dari diameter inlet $d_1 = 12\\text{ cm}$ menjadi diameter outlet $d_2 = 4\\text{ cm}$. Jika massa jenis air adalah $\\rho = 1000\\text{ kg/m}^3$ dan kelajuan air saat keluar dari outlet adalah $v_2 = 9\\text{ m/s}$, besar debit massa aliran (laju aliran massa fluida per detik) yang melintasi pipa tersebut adalah ....",
+    "hasDiagram": false,
+    "diagramSvg": "",
+    "diagramCaption": "",
+    "options": [
+      "$1{,}8\\pi\\text{ kg/s}$",
+      "$3{,}6\\pi\\text{ kg/s}$",
+      "$7{,}2\\pi\\text{ kg/s}$",
+      "$14{,}4\\pi\\text{ kg/s}$",
+      "$36\\pi\\text{ kg/s}$"
+    ],
+    "correctIndex": 1,
+    "solution": {
+      "concept": "Debit massa (laju aliran massa, $\\dot{m}$) adalah massa fluida yang melewati penampang pipa per satuan waktu:<br>$$\\dot{m} = \\rho \\cdot Q = \\rho \\cdot A_2 \\cdot v_2 = \\rho \\cdot \\left(\\frac{1}{4}\\pi d_2^2\\right) \\cdot v_2$$Prinsip kekekalan massa menjamin bahwa nilai debit massa konstan di setiap penampang pipa.",
+      "steps": "1. Konversikan diameter outlet ke meter:<br>$$d_2 = 4\\text{ cm} = 0{,}04\\text{ m}$$<br>2. Hitung luas penampang outlet ($A_2$):<br>$$A_2 = \\frac{1}{4}\\pi (0{,}04\\text{ m})^2 = \\frac{1}{4}\\pi (16 \\times 10^{-4}\\text{ m}^2) = 4\\pi \\times 10^{-4}\\text{ m}^2$$<br>3. Hitung debit volume ($Q$):<br>$$Q = A_2 \\cdot v_2 = (4\\pi \\times 10^{-4}\\text{ m}^2) \\times 9\\text{ m/s} = 36\\pi \\times 10^{-4}\\text{ m}^3\\text{/s} = 3{,}6\\pi \\times 10^{-3}\\text{ m}^3\\text{/s}$$<br>4. Hitung debit massa ($\\dot{m}$):<br>$$\\dot{m} = \\rho \\cdot Q = 1000\\text{ kg/m}^3 \\times (3{,}6\\pi \\times 10^{-3}\\text{ m}^3\\text{/s}) = 3{,}6\\pi\\text{ kg/s}$$",
+      "pitfalls": "Siswa sering mengira debit massa sama dengan debit volume tanpa mengalikan dengan massa jenis $\\rho$, atau salah menghitung luas lingkaran dari diameter."
+    },
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "bab": "Fluida",
+    "subBab": "Debit & Persamaan Kontinuitas",
+    "subTopic": "Debit & Persamaan Kontinuitas",
+    "chapterTitle": "Fluida",
+    "difficultyLabel": "Sedang"
+  },
   {
     "id": "mudah-fis-13",
     "subject": "FISIKA",

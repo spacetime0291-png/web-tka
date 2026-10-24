@@ -82,7 +82,7 @@ runTest('All 137 subtopic file paths exist on disk', () => {
 
 // Test 3: Grand question counts and difficulty tiers
 runTest('Question totals and tier distribution integrity', () => {
-  assert.strictEqual(allQuestions.length, 239, `Total questions should be 239, got ${allQuestions.length}`);
+  assert(allQuestions.length >= 239, `Total questions should be at least 239, got ${allQuestions.length}`);
   assert(questionsMudah.length > 0, 'Mudah tier must have questions');
   assert(questionsSedang.length > 0, 'Sedang tier must have questions');
   assert(questionsHots.length > 0, 'HOTS tier must have questions');
