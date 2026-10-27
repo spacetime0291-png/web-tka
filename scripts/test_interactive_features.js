@@ -550,6 +550,43 @@ assert(indexHtmlContent.includes('id="statAnsweredDrawer"') && indexHtmlContent.
 assert(indexHtmlContent.includes('id="examFinishBoxDrawer"'),
   '#mobileDrawerSheet contains #examFinishBoxDrawer submit action');
 
+console.log('\n--- TEST GROUP 10: BAB KECIL GRID & SUB-BAB INFO ACCORDION TOGGLE ---');
+
+// 1. Bab Kecil Grid responsiveness in HTML & CSS (3 columns desktop, 2 columns mobile)
+assert(indexHtmlContent.includes('id="modalSubChapterList" class="modal-subchapter-grid"'),
+  'index.html: #modalSubChapterList uses clean modal-subchapter-grid (no flex-wrap overflow)');
+assert(cssContent.includes('.modal-subchapter-grid') && cssContent.includes('grid-template-columns: repeat(3, 1fr)'),
+  'styles.css: .modal-subchapter-grid specifies 3-column layout on wider screens');
+assert(cssContent.includes('@media (max-width: 640px)') && cssContent.includes('repeat(2, 1fr)'),
+  'styles.css: Mobile media query specifies 2-column layout for Bab Kecil and Bab Utama');
+
+// 2. Sub-Bab rendering: Title only in main row, info button for explanation, drawer hidden by default
+app.openDrillSetupModal('fisika', 'fis-din', 'all', 'Dinamika');
+assert(mockElements.modalSubTopicScrollList.innerHTML.includes('subtopic-info-btn'),
+  'modalSubTopicScrollList renders subtopic-info-btn for subtopics with indicators');
+assert(mockElements.modalSubTopicScrollList.innerHTML.includes('modal-subtopic-info-drawer'),
+  'modalSubTopicScrollList puts indicators inside collapsible modal-subtopic-info-drawer');
+
+// Verify title wrap does not include the long description directly in row
+assert(!mockElements.modalSubTopicScrollList.innerHTML.includes('modal-subtopic-desc'),
+  'modal-subtopic-desc removed from default view (only title and info button visible)');
+
+// 3. Test toggleSubTopicInfo function
+assert(typeof app.toggleSubTopicInfo === 'function',
+  'app.toggleSubTopicInfo is defined and exported');
+
+const sampleSubId = 'fis-din-hukum1';
+assert(!app.state.setupForm.expandedInfoSubTopicIds.has(sampleSubId),
+  'sampleSubId info drawer is closed by default');
+
+app.toggleSubTopicInfo(sampleSubId);
+assert(app.state.setupForm.expandedInfoSubTopicIds.has(sampleSubId),
+  'toggleSubTopicInfo(sampleSubId) marks info drawer as expanded');
+
+app.toggleSubTopicInfo(sampleSubId);
+assert(!app.state.setupForm.expandedInfoSubTopicIds.has(sampleSubId),
+  'toggleSubTopicInfo(sampleSubId) closes info drawer when toggled again');
+
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);
 console.log('----------------------------------------------------');

@@ -42,6 +42,7 @@ const state = {
     activeModalSubChapter: 'fis-kin-ukur',
     activeModalSubChapterId: 'fis-kin-ukur',
     selectedSubTopicIds: new Set(),
+    expandedInfoSubTopicIds: new Set(),
     scopeTitle: 'Semua Materi',
     difficulties: ['mudah', 'sedang', 'hots'],
     isProgressive: false,
@@ -1473,23 +1474,43 @@ function renderModalLevel4SubTopics() {
       progressive: state.setupForm.isProgressive,
       wrongOnly: state.setupForm.wrongOnly
     });
+    const hasIndicators = Boolean(sub.indicators && sub.indicators.trim());
+    const isInfoExpanded = Boolean(state.setupForm.expandedInfoSubTopicIds && state.setupForm.expandedInfoSubTopicIds.has(sub.id));
 
     return `
-      <div class="modal-subtopic-row ${isChecked ? 'selected' : ''}" onclick="toggleModalSubTopicRow('${sub.id}', event)">
-        <div class="modal-subtopic-left">
-          <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
-                 ${isChecked ? 'checked' : ''} 
-                 onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
-                 onclick="event.stopPropagation()"
-                 title="Pilih sub-bab ${sub.title}">
-          <div class="modal-subtopic-name-wrap">
-            <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '500' : '400'};">${sub.title}</span>
-            <span class="modal-subtopic-desc" title="${sub.indicators || ''}">${sub.indicators || ''}</span>
+      <div class="modal-subtopic-item ${isChecked ? 'selected' : ''} ${isInfoExpanded ? 'info-open' : ''}" id="modal-subitem-${sub.id}">
+        <div class="modal-subtopic-row" onclick="toggleModalSubTopicRow('${sub.id}', event)">
+          <div class="modal-subtopic-left">
+            <input type="checkbox" id="modal-subchk-${sub.id}" class="tactile-checkbox" 
+                   ${isChecked ? 'checked' : ''} 
+                   onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
+                   onclick="event.stopPropagation()"
+                   title="Pilih sub-bab ${escapeHtml(sub.title)}">
+            <div class="modal-subtopic-name-wrap">
+              <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '600' : '500'};">${escapeHtml(sub.title)}</span>
+              ${hasIndicators ? `
+                <button type="button" class="subtopic-info-btn ${isInfoExpanded ? 'active' : ''}" 
+                        id="modal-infobtn-${sub.id}"
+                        onclick="toggleSubTopicInfo('${sub.id}', event)" 
+                        aria-expanded="${isInfoExpanded ? 'true' : 'false'}"
+                        title="${isInfoExpanded ? 'Sembunyikan penjelasan' : 'Lihat penjelasan sub-bab'}">
+                  <i class="fa-solid fa-circle-info"></i>
+                </button>
+              ` : ''}
+            </div>
+          </div>
+          <div class="modal-subtopic-right">
+            <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
           </div>
         </div>
-        <div class="modal-subtopic-right">
-          <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
-        </div>
+        ${hasIndicators ? `
+          <div class="modal-subtopic-info-drawer ${isInfoExpanded ? 'show' : ''}" id="modal-subinfo-${sub.id}" onclick="event.stopPropagation()">
+            <div class="subtopic-info-content">
+              <i class="fa-solid fa-circle-info subtopic-info-icon"></i>
+              <div class="subtopic-info-text">${escapeHtml(sub.indicators)}</div>
+            </div>
+          </div>
+        ` : ''}
       </div>
     `;
   }).join('');
@@ -1509,10 +1530,58 @@ function renderModalLevel3SubTopics() {
  * Handle clicking anywhere on a subtopic row to toggle its checkbox
  */
 function toggleModalSubTopicRow(subTopicId, event) {
-  if (event.target && event.target.tagName === 'INPUT') return;
+  if (event && event.target && (
+    event.target.tagName === 'INPUT' || 
+    event.target.closest('.subtopic-info-btn') || 
+    event.target.closest('.modal-subtopic-info-drawer')
+  )) {
+    return;
+  }
   const selected = state.setupForm.selectedSubTopicIds || new Set();
   const willCheck = !selected.has(subTopicId);
   toggleSetupSubTopic(subTopicId, willCheck);
+}
+
+/**
+ * Toggle visibility of explanation (indicators) for a subtopic in modal
+ */
+function toggleSubTopicInfo(subTopicId, event) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+  if (!state.setupForm.expandedInfoSubTopicIds) {
+    state.setupForm.expandedInfoSubTopicIds = new Set();
+  }
+  const expanded = state.setupForm.expandedInfoSubTopicIds;
+  const isNowExpanded = !expanded.has(subTopicId);
+  if (isNowExpanded) {
+    expanded.add(subTopicId);
+  } else {
+    expanded.delete(subTopicId);
+  }
+
+  const itemEl = document.getElementById(`modal-subitem-${subTopicId}`);
+  const drawerEl = document.getElementById(`modal-subinfo-${subTopicId}`);
+  const btnEl = document.getElementById(`modal-infobtn-${subTopicId}`);
+  
+  if (drawerEl && btnEl) {
+    if (isNowExpanded) {
+      drawerEl.classList.add('show');
+      btnEl.classList.add('active');
+      btnEl.setAttribute('aria-expanded', 'true');
+      btnEl.setAttribute('title', 'Sembunyikan penjelasan');
+      if (itemEl) itemEl.classList.add('info-open');
+    } else {
+      drawerEl.classList.remove('show');
+      btnEl.classList.remove('active');
+      btnEl.setAttribute('aria-expanded', 'false');
+      btnEl.setAttribute('title', 'Lihat penjelasan sub-bab');
+      if (itemEl) itemEl.classList.remove('info-open');
+    }
+  } else {
+    renderModalLevel4SubTopics();
+  }
 }
 
 /**
@@ -3005,9 +3074,11 @@ if (typeof window !== 'undefined') {
   window.toggleSubChapterAccordion = toggleSubChapterAccordion;
   window.checkActiveSessionResume = checkActiveSessionResume;
   window.renderChapterCard = renderChapterCard;
+  window.toggleSubTopicInfo = toggleSubTopicInfo;
 }
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
+    toggleSubTopicInfo,
     getFilteredQuestions,
     state,
     getAllSubTopicIds,
