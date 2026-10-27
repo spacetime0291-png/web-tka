@@ -1925,7 +1925,7 @@
   },
   {
     "task_id": "TASK_fis-lis-dc-kirchhoff_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fisika/fis-lis/fis-lis-dc/batch_TASK_fis-lis-dc-kirchhoff_EASY.js",
     "pilar": "fisika",
     "subject": "FISIKA",
@@ -1938,7 +1938,7 @@
   },
   {
     "task_id": "TASK_fis-lis-dc-kirchhoff_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fisika/fis-lis/fis-lis-dc/batch_TASK_fis-lis-dc-kirchhoff_MEDIUM.js",
     "pilar": "fisika",
     "subject": "FISIKA",
@@ -1951,7 +1951,7 @@
   },
   {
     "task_id": "TASK_fis-lis-dc-daya_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fisika/fis-lis/fis-lis-dc/batch_TASK_fis-lis-dc-daya_EASY.js",
     "pilar": "fisika",
     "subject": "FISIKA",
@@ -1964,7 +1964,7 @@
   },
   {
     "task_id": "TASK_fis-lis-dc-daya_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fisika/fis-lis/fis-lis-dc/batch_TASK_fis-lis-dc-daya_MEDIUM.js",
     "pilar": "fisika",
     "subject": "FISIKA",
@@ -1977,7 +1977,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-ordo_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-ordo_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -1990,7 +1990,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-ordo_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-ordo_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2003,7 +2003,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-operasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-operasi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2016,7 +2016,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-operasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-operasi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2029,7 +2029,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-kali_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-kali_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2042,7 +2042,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-kali_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-kali_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2055,7 +2055,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-det_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-det_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2068,7 +2068,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-det_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-det_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2081,7 +2081,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-invers_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-invers_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2094,7 +2094,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-invers_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-invers_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2107,7 +2107,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-persamaan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-persamaan_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2120,7 +2120,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-persamaan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-persamaan_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2133,7 +2133,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-spl_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-spl_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2146,7 +2146,7 @@
   },
   {
     "task_id": "TASK_mat-alj-matriks-spl_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-matriks/batch_TASK_mat-alj-matriks-spl_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2159,7 +2159,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-operasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-operasi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2172,7 +2172,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-operasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-operasi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2185,7 +2185,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-susun_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-susun_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2198,7 +2198,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-susun_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-susun_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2211,7 +2211,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-horner_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-horner_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2224,7 +2224,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-horner_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-horner_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2237,7 +2237,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-sisa_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-sisa_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2250,7 +2250,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-sisa_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-sisa_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2263,7 +2263,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-faktor_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-faktor_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2276,7 +2276,7 @@
   },
   {
     "task_id": "TASK_mat-alj-polinom-faktor_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-polinom/batch_TASK_mat-alj-polinom-faktor_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2289,7 +2289,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-domain_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-domain_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2302,7 +2302,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-domain_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-domain_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2315,7 +2315,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-polinom_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-polinom_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2328,7 +2328,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-polinom_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-polinom_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2341,7 +2341,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-rasional_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-rasional_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2354,7 +2354,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-rasional_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-rasional_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2367,7 +2367,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-akar_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-akar_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2380,7 +2380,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-akar_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-akar_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2393,7 +2393,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-eksponen_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-eksponen_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2406,7 +2406,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-eksponen_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-eksponen_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2419,7 +2419,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-logaritma_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-logaritma_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2432,7 +2432,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-logaritma_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-logaritma_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2445,7 +2445,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-mutlak_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-mutlak_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2458,7 +2458,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-mutlak_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-mutlak_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2471,7 +2471,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-trigono_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-trigono_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2484,7 +2484,7 @@
   },
   {
     "task_id": "TASK_mat-alj-fungsi-trigono_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-alj/mat-alj-fungsi/batch_TASK_mat-alj-fungsi-trigono_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2497,7 +2497,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-komponen_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-komponen_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2510,7 +2510,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-komponen_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-komponen_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2523,7 +2523,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-panjang_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-panjang_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2536,7 +2536,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-panjang_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-panjang_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2549,7 +2549,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-operasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-operasi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2562,7 +2562,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-operasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-operasi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2575,7 +2575,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-perbandingan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-perbandingan_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2588,7 +2588,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-perbandingan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-perbandingan_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2601,7 +2601,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-dot_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-dot_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2614,7 +2614,7 @@
   },
   {
     "task_id": "TASK_mat-geo-vektor-dot_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-vektor/batch_TASK_mat-geo-vektor-dot_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2627,7 +2627,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-persamaan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-persamaan_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2640,7 +2640,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-persamaan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-persamaan_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2653,7 +2653,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-kedudukan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-kedudukan_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2666,7 +2666,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-kedudukan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-kedudukan_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2679,7 +2679,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-singgung_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-singgung_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2692,7 +2692,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-singgung_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-singgung_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2705,7 +2705,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-luas_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-luas_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2718,7 +2718,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-luas_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-luas_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2731,7 +2731,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-busur_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-busur_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2744,7 +2744,7 @@
   },
   {
     "task_id": "TASK_mat-geo-lingkaran-busur_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-lingkaran/batch_TASK_mat-geo-lingkaran-busur_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2757,7 +2757,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-translasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-translasi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2770,7 +2770,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-translasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-translasi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2783,7 +2783,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-refleksi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-refleksi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2796,7 +2796,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-refleksi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-refleksi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2809,7 +2809,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-rotasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-rotasi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2822,7 +2822,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-rotasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-rotasi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2835,7 +2835,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-dilatasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-dilatasi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2848,7 +2848,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-dilatasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-dilatasi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2861,7 +2861,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-matriks_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-matriks_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2874,7 +2874,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-matriks_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-matriks_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2887,7 +2887,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-komposisi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-komposisi_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2900,7 +2900,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-komposisi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-komposisi_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2913,7 +2913,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-luas_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-luas_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2926,7 +2926,7 @@
   },
   {
     "task_id": "TASK_mat-geo-trans-luas_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-geo/mat-geo-trans/batch_TASK_mat-geo-trans-luas_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2939,7 +2939,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-aljabar_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-aljabar_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2952,7 +2952,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-aljabar_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-aljabar_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2965,7 +2965,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-piecewise_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-piecewise_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2978,7 +2978,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-piecewise_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-piecewise_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -2991,7 +2991,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-takhingga_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-takhingga_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -3004,7 +3004,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-takhingga_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-takhingga_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -3017,7 +3017,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-trigono_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-trigono_EASY.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -3030,7 +3030,7 @@
   },
   {
     "task_id": "TASK_mat-lim-fungsi-trigono_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/matematika/mat-lim/mat-lim-fungsi/batch_TASK_mat-lim-fungsi-trigono_MEDIUM.js",
     "pilar": "matematika",
     "subject": "MATEMATIKA",
@@ -3043,7 +3043,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-perbandingan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-perbandingan_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3056,7 +3056,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-perbandingan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-perbandingan_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3069,7 +3069,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-kuadran_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-kuadran_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3082,7 +3082,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-kuadran_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-kuadran_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3095,7 +3095,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-pythagoras_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-pythagoras_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3108,7 +3108,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-pythagoras_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-pythagoras_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3121,7 +3121,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-jumlah_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-jumlah_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3134,7 +3134,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-jumlah_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-jumlah_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3147,7 +3147,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-rangkap_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-rangkap_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3160,7 +3160,7 @@
   },
   {
     "task_id": "TASK_fun-trig-dasar-rangkap_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-trig/fun-trig-dasar/batch_TASK_fun-trig-dasar-rangkap_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3173,7 +3173,7 @@
   },
   {
     "task_id": "TASK_fun-alj-dasar-operasi_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-alj/fun-alj-dasar/batch_TASK_fun-alj-dasar-operasi_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3186,7 +3186,7 @@
   },
   {
     "task_id": "TASK_fun-alj-dasar-operasi_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-alj/fun-alj-dasar/batch_TASK_fun-alj-dasar-operasi_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3199,7 +3199,7 @@
   },
   {
     "task_id": "TASK_fun-alj-dasar-pecahan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-alj/fun-alj-dasar/batch_TASK_fun-alj-dasar-pecahan_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3212,7 +3212,7 @@
   },
   {
     "task_id": "TASK_fun-alj-dasar-pecahan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-alj/fun-alj-dasar/batch_TASK_fun-alj-dasar-pecahan_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3225,7 +3225,7 @@
   },
   {
     "task_id": "TASK_fun-alj-dasar-spldv_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-alj/fun-alj-dasar/batch_TASK_fun-alj-dasar-spldv_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3238,7 +3238,7 @@
   },
   {
     "task_id": "TASK_fun-alj-dasar-spldv_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-alj/fun-alj-dasar/batch_TASK_fun-alj-dasar-spldv_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3251,7 +3251,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-koordinat_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-koordinat_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3264,7 +3264,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-koordinat_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-koordinat_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3277,7 +3277,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-garis_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-garis_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3290,7 +3290,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-garis_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-garis_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3303,7 +3303,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-gradien_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-gradien_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3316,7 +3316,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-gradien_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-gradien_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3329,7 +3329,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-jarak_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-jarak_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3342,7 +3342,7 @@
   },
   {
     "task_id": "TASK_fun-geo-dasar-jarak_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-geo/fun-geo-dasar/batch_TASK_fun-geo-dasar-jarak_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3355,7 +3355,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-rasional_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-rasional_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3368,7 +3368,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-rasional_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-rasional_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3381,7 +3381,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-akar_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-akar_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3394,7 +3394,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-akar_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-akar_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3407,7 +3407,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-persamaan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-persamaan_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3420,7 +3420,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-persamaan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-persamaan_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3433,7 +3433,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-pertidaksamaan_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-pertidaksamaan_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3446,7 +3446,7 @@
   },
   {
     "task_id": "TASK_fun-mutlak-dasar-pertidaksamaan_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-mutlak/fun-mutlak-dasar/batch_TASK_fun-mutlak-dasar-pertidaksamaan_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3459,7 +3459,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-eksponen_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-eksponen_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3472,7 +3472,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-eksponen_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-eksponen_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3485,7 +3485,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-akar_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-akar_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3498,7 +3498,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-akar_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-akar_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3511,7 +3511,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-logaritma_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-logaritma_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3524,7 +3524,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-logaritma_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-logaritma_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3537,7 +3537,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-basis_EASY",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-basis_EASY.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",
@@ -3550,7 +3550,7 @@
   },
   {
     "task_id": "TASK_fun-eks-dasar-basis_MEDIUM",
-    "status": "pending",
+    "status": "completed",
     "target_file": "data/bank-soal/fundamental/fun-eks/fun-eks-dasar/batch_TASK_fun-eks-dasar-basis_MEDIUM.js",
     "pilar": "fundamental",
     "subject": "MATEMATIKA",

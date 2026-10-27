@@ -11,4 +11,4 @@ Contoh:
 - `data/bank-soal/matematika/mat-alj/mat-alj-matriks/invers-matriks.js`
 
 Total Sub-Bab Tersedia: 137 Sub-Bab.
-Total Soal Terkompilasi: 979 Soal.
+Total Soal Terkompilasi: 1609 Soal.
