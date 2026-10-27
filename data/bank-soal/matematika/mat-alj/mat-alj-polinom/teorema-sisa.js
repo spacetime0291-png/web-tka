@@ -44,7 +44,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Teorema Sisa menyatakan bahwa sisa pembagian suku banyak $P(x)$ oleh pembagi linear berbentuk $(x - k)$ adalah nilai fungsi polinomial tersebut saat dievaluasi pada pembuat nol pembagi, yaitu $S = P(k)$. **Tips:** Sering salah memilih $P(-k)$ karena tertukar tanda negatif pada $(x - k)$."
   },
   {
     "id": "mat-alj-polinom-sisa-002",
@@ -77,7 +78,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk pembagi $(x + 1)$, pembuat nol adalah $x + 1 = 0 \\implies x = -1$. Sisa pembagiannya bernilai $S = P(-1)$. **Tips:** Salah menghitung pangkat ganjil bilangan negatif: $(-1)^3 = -1$, bukan $+1$."
   },
   {
     "id": "mat-alj-polinom-sisa-003",
@@ -110,7 +112,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pembagian polinomial oleh pembagi $(ax - b)$ memiliki sisa yang sama dengan nilai suku banyak pada pembuat nolnya: $S = P\\left(\\frac{b}{a}\\right)$."
   },
   {
     "id": "mat-alj-polinom-sisa-004",
@@ -143,7 +146,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Teorema Sisa, jika sisa pembagian oleh $(x - 3)$ adalah 4, maka berlaku kesamaan nilai fungsi $P(3) = 4$. **Tips:** Salah hitung pada $27 - 45 - 8 = -26$ atau salah memindahkan ruas."
   },
   {
     "id": "mat-alj-polinom-sisa-005",
@@ -176,7 +180,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pembagian oleh pembagi berderajat 2 menghasilkan sisa berderajat maksimum 1 ($S(x) = ax + b$). Nilai $a$ dan $b$ ditentukan dari nilai $P(x)$ pada pembuat nol faktor-faktor pembaginya."
   },
   {
     "id": "mat-alj-polinom-sisa-006",
@@ -209,7 +214,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suku banyak dibagi oleh pembagi kuadrat yang dapat difaktorkan $(x - x_1)(x - x_2)$, sisa pembagiannya berbentuk linear $S(x) = ax + b$ dengan nilai $S(x_1) = f(x_1)$ dan $S(x_2) = f(x_2)$."
   },
   {
     "id": "mat-alj-polinom-sisa-007",
@@ -242,7 +248,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Menurut Teorema Sisa, sisa pembagian fungsi polinomial komposit $R(x)$ oleh $(x - c)$ sama dengan nilai $R(c)$, yang dapat dihitung langsung dari nilai $P(c)$ dan $Q(c)$. **Tips:** Salah tanda pada perkalian $-2(-3) = +6$ menjadi $-6$ sehingga menghasilkan 23."
   },
   {
     "id": "mat-alj-polinom-sisa-008",
@@ -275,7 +282,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk pembagi $(x^2 - 1) = (x - 1)(x + 1)$ dan sisa $S(x)$, berlaku hubungan Teorema Sisa: $P(1) = S(1)$ dan $P(-1) = S(-1)$."
   },
   {
     "id": "mat-alj-polinom-sisa-009",
@@ -308,7 +316,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Teorema Sisa, sisa pembagian $F(x)$ oleh $(x - c)$ adalah $F(c)$. Untuk fungsi komposisi $F(x) = P(g(x))$, nilainya adalah $P(g(c))$. **Tips:** Membagi sisa dengan 2 atau mengalikan dengan 2 karena ada koefisien $2x$ di dalam argumen fungsi."
   },
   {
     "id": "mat-alj-polinom-sisa-010",
@@ -341,7 +350,8 @@
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembagian oleh pembagi berderajat 3 menghasilkan sisa berderajat maksimum 2. Dengan memisalkan sisa $S(x) = A(x^2 - 1) + (2x + 3)$, syarat sisa pada $(x^2 - 1)$ otomatis terpenuhi. **Tips:** Menggunakan pemisalan standar $ax^2 + bx + c$ yang membutuhkan eliminasi 3 variabel yang panjang dan rawan salah hitung."
   },
   {
     "id": "mudah-mtk-09",
@@ -374,7 +384,8 @@
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-polinom",
-    "subTopicSlug": "teorema-sisa"
+    "subTopicSlug": "teorema-sisa",
+    "hint": "Teorema Sisa Suku Banyak: Jika polinomial $P(x)$ dibagi oleh $(x - c)$, maka sisa pembagiannya adalah $S = P(c)$. **Tips:** Sering keliru tanda substitusi menjadi $P(-2)$."
   },
   {
     "id": "sedang-mtk-03",
@@ -407,7 +418,8 @@
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-polinom",
-    "subTopicSlug": "teorema-sisa"
+    "subTopicSlug": "teorema-sisa",
+    "hint": "Teorema Sisa Polinomial Berderajat 2: Jika pembagi berderajat 2 yaitu $D(x) = (x - x_1)(x - x_2)$, maka sisa pembagian adalah linear: $S(x) = ax + b$. Berdasarkan Teorema Sisa: $$P(x_1) = S(x_1) = a x_1 + b$$ $$P(x_2) = S(x_2) = a x_2 + b$$. **Tips:** Perhatikan tanda negatif saat substitusi $P(-1)$: $-a + b = -1$."
   }
 ];
 

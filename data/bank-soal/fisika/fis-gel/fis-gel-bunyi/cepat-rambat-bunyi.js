@@ -44,7 +44,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cepat rambat gelombang bunyi ($v$) berkaitan langsung dengan panjang gelombang ($\\lambda$) dan frekuensi gelombang ($f$) melalui hubungan dasar: $$v = \\lambda \\cdot f$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-002",
@@ -77,7 +78,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cepat rambat gelombang longitudinal pada zat padat (batang logam) ditentukan oleh elastisitas Young ($E$) dan massa jenis bahannya ($\\rho$): $$v = \\sqrt{\\frac{E}{\\rho}}$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-003",
@@ -110,7 +112,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada zat cair, hambatan terhadap kompresi diukur oleh modulus Bulk ($B$). Cepat rambat gelombang bunyi pada zat cair dirumuskan: $$v = \\sqrt{\\frac{B}{\\rho}}$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-004",
@@ -143,7 +146,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan rumus Laplace untuk gas ideal, cepat rambat bunyi berbanding lurus dengan akar suhu mutlak Kelvin ($T$): $$v = \\sqrt{\\frac{\\gamma \\cdot R \\cdot T}{M}} \\implies v \\propto \\sqrt{T}$$Sehingga perbandingan kelajuan pada dua suhu mutlak adalah: $$\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}}$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-005",
@@ -176,7 +180,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cepat rambat bunyi bergantung pada gaya ikat antarmolekul (modulus elastisitas) dan kerapatan medium. Pada zat padat, partikel tersusun sangat rapat dan memiliki gaya ikat sangat kuat (modulus elastisitas sangat tinggi), sehingga transfer getaran mekanik berlangsung paling cepat ($v_{\\text{padat}} \\approx 5000\\text{ m/s}$). Pada zat cair kerapatan dan elastisitasnya sedang ($v_{\\text{cair}} \\approx 1500\\text{ m/s}$), sedangkan pada gas ikatan antarmolekul sangat renggang ($v_{\\text{gas}} \\approx 340\\text{ m/s}$)."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-006",
@@ -209,7 +214,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Menurut persamaan Laplace untuk gas ideal, cepat rambat bunyi dirumuskan: $$v = \\sqrt{\\frac{\\gamma \\cdot R \\cdot T}{M}}$$Pada suhu ($T$) dan tetapan Laplace ($\\gamma$) yang sama, cepat rambat bunyi berbanding terbalik dengan akar massa molar gas: $$\\frac{v_1}{v_2} = \\sqrt{\\frac{M_2}{M_1}}$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-007",
@@ -242,7 +248,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Cepat rambat gelombang bunyi pada fluida cair dihitung dari modulus Bulk: $$v = \\sqrt{\\frac{B}{\\rho}}$$ 2) Jarak kedalaman palung laut dari pantulan gema (sonar): $$d = \\frac{v \\cdot \\Delta t}{2}$$Faktor pembagi 2 mencerminkan perjalanan bolak-balik pulsa bunyi dari permukaan ke dasar lalu kembali ke permukaan. **Tips:** Lupa membagi dengan faktor 2 sehingga menghasilkan jarak bolak-balik $3.600\\text{ meter}$ ()."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-008",
@@ -275,7 +282,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gelombang bunyi merambat pada jarak yang sama $L$ melalui dua medium berbeda. Karena $v_b > v_u$, waktu tempuh melalui baja lebih singkat daripada melalui udara. Selisih waktu kedatangan kedua bunyi adalah: $$\\Delta t = t_u - t_b = \\frac{L}{v_u} - \\frac{L}{v_b} = L \\left(\\frac{1}{v_u} - \\frac{1}{v_b}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-009",
@@ -308,7 +316,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Cepat rambat bunyi pada gas ideal berbanding lurus dengan akar kuadrat suhu mutlak Kelvin: $$v \\propto \\sqrt{T} \\implies \\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} \\iff T_2 = T_1 \\cdot \\left(\\frac{v_2}{v_1}\\right)^2$$Perhitungan termodinamika mutlak wajib menggunakan satuan Kelvin ($T = T_C + 273$)."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-010",
@@ -341,7 +350,8 @@
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Batang logam yang dijepit di tengah berosilasi pada nada dasar dengan simpul di tengah dan perut di kedua ujungnya, sehingga panjang batang adalah setengah panjang gelombang: $$L = \\frac{1}{2}\\lambda_{\\text{batang}} \\implies \\lambda_{\\text{batang}} = 2L$$ 2) Di dalam tabung gas, jarak antara dua simpul serbuk gabus berurutan adalah setengah panjang gelombang udara: $$\\Delta x = \\frac{1}{2}\\lambda_{\\text{udara}} \\implies \\lambda_{\\text{udara}} = 2\\Delta x$$ 3) Karena frekuensi gelombang pada batang dan gas sama ($f_{\\text{batang}} = f_{\\text{udara}}$): $$\\frac{v_{\\text{batang}}}{\\lambda_{\\text{batang}}} = \\frac{v_{\\text{udara}}}{\\lambda_{\\text{udara}}} \\implies v_{\\text{batang}} = v_{\\text{udara}} \\cdot \\frac{L}{\\Delta x}$$. **Tips:** Siswa sering mengira $\\lambda_{\\text{batang}} = L$ sehingga menghasilkan nilai setengahnya ($2.000\\text{ m/s}$, )."
   },
   {
     "id": "mudah-fis-07",
@@ -374,7 +384,8 @@
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "cepat-rambat-bunyi"
+    "subTopicSlug": "cepat-rambat-bunyi",
+    "hint": "Persamaan Dasar Cepat Rambat Gelombang: $$v = \\lambda f \\implies \\lambda = \\frac{v}{f}$$."
   },
   {
     "id": "drill2-bun-01",
@@ -407,7 +418,8 @@
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "cepat-rambat-bunyi"
+    "subTopicSlug": "cepat-rambat-bunyi",
+    "hint": "Kelajuan Gelombang Bunyi pada Zat Padat: $$v = \\sqrt{\\frac{E}{\\rho}}$$."
   }
 ];
 

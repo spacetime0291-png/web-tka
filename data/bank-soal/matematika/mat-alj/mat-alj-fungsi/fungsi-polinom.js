@@ -44,7 +44,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik puncak parabola $f(x) = ax^2 + bx + c$ berada pada koordinat $(x_p, y_p)$ dengan $x_p = -\\frac{b}{2a}$ dan $y_p = f(x_p) = -\\frac{D}{4a}$. **Tips:** Salah tanda pada rumus sumbu simetri sehingga menghitung $x_p = -3$ yang menghasilkan ordinat keliru."
   },
   {
     "id": "mat-alj-fungsi-polinom-002",
@@ -77,7 +78,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik dengan sumbu-$X$ diperoleh saat nilai fungsi sama dengan nol ($f(x) = 0$), yang menghasilkan persamaan kuadrat untuk mencari akar-akarnya. **Tips:** Tertukar tanda saat menentukan akar pemfaktoran sehingga memilih $-\\frac{1}{2}$ dan $3$."
   },
   {
     "id": "mat-alj-fungsi-polinom-003",
@@ -110,7 +112,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Keterbukaan kurva parabola ditentukan oleh tanda koefisien $a$ ($a > 0$ terbuka ke atas, $a < 0$ terbuka ke bawah). Banyaknya titik potong dengan sumbu-$X$ ditentukan oleh diskriminan $D = b^2 - 4ac$ ($D > 0$ dua titik potong, $D = 0$ menyinggung, $D < 0$ tidak memotong)."
   },
   {
     "id": "mat-alj-fungsi-polinom-004",
@@ -143,7 +146,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik fungsi apa pun dengan sumbu-$Y$ diperoleh saat nilai absis sama dengan nol ($x = 0$). **Tips:** Tertukar antara koordinat absis dan ordinat, yaitu memilih $(-8, 0)$ alih-alih $(0, -8)$."
   },
   {
     "id": "mat-alj-fungsi-polinom-005",
@@ -176,7 +180,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis sumbu simetri parabola adalah garis vertikal yang membagi parabola menjadi dua bagian yang simetris, dengan persamaan $x = -\\frac{b}{2a}$."
   },
   {
     "id": "mat-alj-fungsi-polinom-006",
@@ -209,7 +214,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik stasioner suatu fungsi kontinu $f(x)$ terjadi pada saat gradien garis singgungnya bernilai nol, yaitu memenuhi syarat turunan pertama $f'(x) = 0$."
   },
   {
     "id": "mat-alj-fungsi-polinom-007",
@@ -242,7 +248,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Parabola menyinggung garis lurus jika dan hanya jika persamaan kuadrat sekutu hasil substitusi kedua persamaan memiliki nilai diskriminan sama dengan nol ($D = 0$). **Tips:** Lupa mengubah tanda konstanta $-1$ menjadi $+1$ saat memindahkan ke ruas kiri."
   },
   {
     "id": "mat-alj-fungsi-polinom-008",
@@ -275,7 +282,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi kuadrat yang diketahui titik baliknya $(x_p, y_p)$ dapat dirumuskan sebagai $f(x) = a(x - x_p)^2 + y_p$. Nilai parameter $a$ dicari melalui substitusi titik lain yang dilalui grafik."
   },
   {
     "id": "mat-alj-fungsi-polinom-009",
@@ -308,7 +316,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi kuadrat definit positif (selalu bernilai positif untuk semua $x \\in \\mathbb{R}$) harus memenuhi dua syarat mutlak: koefisien utama positif ($a > 0$) dan nilai diskriminan negatif ($D < 0$). **Tips:** Lupa mengiriskan dengan syarat $a > 0$ sehingga keliru memilih $m < -3$ atau $m > 2$."
   },
   {
     "id": "mat-alj-fungsi-polinom-010",
@@ -341,7 +350,8 @@
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi fungsi $y = f(x)$ sejauh $h$ satuan ke kanan dan $k$ satuan ke atas menghasilkan fungsi baru $y = f(x - h) + k$. **Tips:** Tertukar tanda pergeseran horizontal, yaitu menggunakan $(x + 3)$ padahal pergeseran ke kanan menggunakan $(x - 3)$."
   }
 ];
 

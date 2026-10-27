@@ -44,7 +44,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus jumlah sudut untuk sinus adalah $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$. Sudut $75^\\circ$ dapat dinyatakan sebagai penjumlahan sudut istimewa $45^\\circ + 30^\\circ$. **Tips:** Menjumlahkan langsung nilai trigonometrinya $\\sin 45^\\circ + \\sin 30^\\circ$ padahal $\\sin(A + B) \\neq \\sin A + \\sin B$."
   },
   {
     "id": "fun-trig-dasar-jumlah-002",
@@ -77,7 +78,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus jumlah sudut untuk cosinus adalah $\\cos(A + B) = \\cos A \\cos B - \\sin A \\sin B$."
   },
   {
     "id": "fun-trig-dasar-jumlah-003",
@@ -110,7 +112,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus selisih dua sudut untuk cosinus adalah $\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B$. **Tips:** Menulis tanda minus pada ekspansi $\\cos(A - B)$ sehingga tertukar dengan nilai $\\sin 15^\\circ$ atau $\\cos 75^\\circ$."
   },
   {
     "id": "fun-trig-dasar-jumlah-004",
@@ -143,7 +146,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus selisih dua sudut untuk fungsi sinus dirumuskan sebagai $\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B$. **Tips:** Tertukar urutan suku atau tanda penghubung sehingga menghasilkan $-\\frac{1}{4}(\\sqrt{6} - \\sqrt{2})$ atau bentuk lainnya."
   },
   {
     "id": "fun-trig-dasar-jumlah-005",
@@ -176,7 +180,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk $\\cos A \\cos B - \\sin A \\sin B$ merupakan ekspansi dari rumus cosinus jumlah sudut: $\\cos(A + B)$."
   },
   {
     "id": "fun-trig-dasar-jumlah-006",
@@ -209,7 +214,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas Pythagoras untuk mencari nilai trigonometri pasangan ($\\cos A$ dan $\\sin B$), lalu terapkan rumus $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$. **Tips:** Lupa mencari nilai $\\cos A$ dan $\\sin B$ terlebih dahulu dan langsung mengalikan nilai yang ada di soal."
   },
   {
     "id": "fun-trig-dasar-jumlah-007",
@@ -242,7 +248,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rumus selisih sudut untuk cosinus adalah $\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B$."
   },
   {
     "id": "fun-trig-dasar-jumlah-008",
@@ -275,7 +282,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rumus tangen penjumlahan dua sudut adalah $\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$. **Tips:** Lupa mengurangkan hasil kali tangen dari 1 pada penyebut sehingga salah dalam operasi pecahan kompleks."
   },
   {
     "id": "fun-trig-dasar-jumlah-009",
@@ -308,7 +316,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam segitiga berlaku $A + B + C = 180^\\circ \\implies C = 180^\\circ - (A + B)$, sehingga $\\cos C = \\cos(180^\\circ - (A + B)) = -\\cos(A + B)$."
   },
   {
     "id": "fun-trig-dasar-jumlah-010",
@@ -341,7 +350,8 @@
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus selisih sudut sinus: $\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B$. **Tips:** Menjumlahkan $\\frac{2}{3} + \\frac{1}{2} = \\frac{7}{6}$ karena keliru dalam aljabar perpindahan ruas persamaan."
   }
 ];
 

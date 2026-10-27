@@ -44,7 +44,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Derajat hasil perkalian dua polinomial $P(x)$ dan $Q(x)$ adalah jumlah dari derajat masing-masing polinomial faktor: $\\deg(P \\cdot Q) = \\deg(P) + \\deg(Q)$. Koefisien utama adalah hasil kali koefisien dari suku-suku berderajat tertinggi kedua faktor."
   },
   {
     "id": "mat-alj-polinom-operasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Operasi aljabar suku banyak dilakukan dengan mengelompokkan suku-suku yang memiliki variabel dengan pangkat sama (suku sejenis) setelah menerapkan sifat distributif perkalian tanda dan skalar. **Tips:** Lupa mengubah tanda pada suku $-x$ saat dikalikan dengan $-2$, sehingga menghasilkan $-2(-x) = -2x$ padahal seharusnya $+2x$."
   },
   {
     "id": "mat-alj-polinom-operasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Nilai suku banyak $F(x)$ untuk $x = k$ diperoleh dengan mensubstitusikan nilai $k$ secara langsung ke setiap variabel $x$ pada suku banyak tersebut."
   },
   {
     "id": "mat-alj-polinom-operasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua bentuk pecahan aljabar dikatakan identik jika pembilangnya bernilai sama untuk semua nilai variabel $x$. Dengan menyamakan penyebut ruas kanan, kesamaan pembilang dapat langsung dianalisis. **Tips:** Menghabiskan waktu menghitung nilai $A$ dan $B$ secara terpisah padahal soal langsung menanyakan jumlah koefisien $(A + B)$."
   },
   {
     "id": "mat-alj-polinom-operasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Koefisien dari suku berpangkat tertentu (misalnya $x^3$) pada perkalian dua polinomial dapat diperoleh cukup dengan menjumlahkan hasil kali suku-suku yang jumlah pangkatnya sama dengan 3, tanpa perlu menjabarkan seluruh suku."
   },
   {
     "id": "mat-alj-polinom-operasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua suku banyak bernilai identik ($equiv$) jika dan hanya jika koefisien suku-suku yang bersesuaian pada kedua ruas bernilai sama untuk setiap derajat variabel $x$. **Tips:** Salah tanda pada saat menyamakan koefisien $c - (-1) = c + 1$ atau salah memindahkan ruas."
   },
   {
     "id": "mat-alj-polinom-operasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jumlah seluruh koefisien dari suatu polinomial $P(x)$ dapat ditentukan secara langsung dengan mengevaluasi nilai fungsi polinomial tersebut pada $x = 1$, yaitu menghitung $P(1)$. **Tips:** Mencoba menjabarkan ekspansi binomial berpangkat 2024 yang mustahil dilakukan secara manual."
   },
   {
     "id": "mat-alj-polinom-operasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan teorema binomial Newton $(1 + y)^n = 1 + n y + \\frac{n(n-1)}{2} y^2 + \\dots$ untuk mengekspansi $(1 - 2x)^4$, kemudian kalikan dengan faktor linear $(1 + ax)$."
   },
   {
     "id": "mat-alj-polinom-operasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Polinomial berderajat 2 ditentukan secara tunggal oleh 3 titik berbeda. Pola nilai fungsi atau metode beda hingga (*finite differences*) dapat digunakan untuk mengidentifikasi rumus eksplisit $f(x)$. **Tips:** Menghitung secara eliminasi manual 3 variabel yang rawan salah hitung tanda aljabar."
   },
   {
     "id": "mat-alj-polinom-operasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dekomposisi pecahan parsial dengan faktor kuadrat definit $x^2 + 2$ memiliki pembilang berbentuk linear $(Bx + C)$. Kesamaan pembilang diselesaikan dengan substitusi nilai strategis atau menyamakan koefisien."
   }
 ];
 

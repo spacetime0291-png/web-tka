@@ -44,7 +44,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan hubungan matematis dasar: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$."
   },
   {
     "id": "fun-geo-dasar-koordinat-002",
@@ -77,7 +78,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik tengah $M$ dari dua titik $(x_1, y_1)$ dan $(x_2, y_2)$ adalah rata-rata aritmetika dari koordinatnya: $M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$. **Tips:** Melakukan pengurangan absis/ordinat alih-alih penjumlahan saat menghitung titik tengah."
   },
   {
     "id": "fun-geo-dasar-koordinat-003",
@@ -110,7 +112,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak suatu titik $(x, y)$ terhadap titik asal $(0, 0)$ dihitung dengan rumus $d = \\sqrt{x^2 + y^2}$. **Tips:** Lupa bahwa kuadrat bilangan negatif bernilai positif $((-3)^2 = +9)$, bukan $-9$."
   },
   {
     "id": "fun-geo-dasar-koordinat-004",
@@ -143,7 +146,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan hubungan titik tengah: $x_B = 2x_M - x_A$ dan $y_B = 2y_M - y_A$. **Tips:** Membagi dua selisih koordinat $M$ dan $A$ sehingga malah menghasilkan titik tengah antara $M$ dan $A$."
   },
   {
     "id": "fun-geo-dasar-koordinat-005",
@@ -176,7 +180,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perhatikan tanda negatif saat menghitung selisih koordinat: $\\Delta x = x_2 - x_1 = 6 - (-2) = 8$."
   },
   {
     "id": "fun-geo-dasar-koordinat-006",
@@ -209,7 +214,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus kuadrat jarak dua titik $d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$ untuk membentuk persamaan kuadrat variabel $p$. **Tips:** Memilih nilai negatif $p = -2$ tanpa memperhatikan batasan $p > 0$ yang diberikan pada soal."
   },
   {
     "id": "fun-geo-dasar-koordinat-007",
@@ -242,7 +248,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi jarak sama $PA = PB \\iff PA^2 = PB^2$ menghasilkan persamaan garis bagi tegak lurus (garis sumbu) dari ruas garis $AB$. **Tips:** Lupa menjabarkan suku tengah bentuk kuadrat binomial sehingga suku berderajat satu hilang."
   },
   {
     "id": "fun-geo-dasar-koordinat-008",
@@ -275,7 +282,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koordinat titik pembagi berbobot $m : n$ dirumuskan sebagai $x_C = \\frac{m \\cdot x_B + n \\cdot x_A}{m + n}$ dan $y_C = \\frac{m \\cdot y_B + n \\cdot y_A}{m + n}$. **Tips:** Tertukar bobot perbandingan dengan mengalikan $m$ ke titik $A$ dan $n$ ke titik $B$ sehingga menghasilkan $(3, 4)$."
   },
   {
     "id": "fun-geo-dasar-koordinat-009",
@@ -308,7 +316,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keliling segitiga adalah jumlahan panjang ketiga sisinya: $K = AB + BC + CA$."
   },
   {
     "id": "fun-geo-dasar-koordinat-010",
@@ -341,7 +350,8 @@
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat (centroid) segitiga dengan titik-titik sudut $(x_1, y_1)$, $(x_2, y_2)$, dan $(x_3, y_3)$ dirumuskan sebagai $G = \\left(\\frac{x_1 + x_2 + x_3}{3}, \\frac{y_1 + y_2 + y_3}{3}\\right)$. **Tips:** Membagi jumlah koordinat dengan 2 (seperti rumus titik tengah) bukannya membagi dengan 3."
   },
   {
     "id": "sup-mtk-fun-03",
@@ -374,7 +384,8 @@
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
     "subChapterId": "fun-geo-dasar",
-    "subTopicSlug": "koordinat-jarak-dua-titik"
+    "subTopicSlug": "koordinat-jarak-dua-titik",
+    "hint": "Gunakan hubungan matematis dasar: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. **Tips:** Salah dalam operasi tanda negatif: $4 - (-2) \\neq 2$."
   }
 ];
 

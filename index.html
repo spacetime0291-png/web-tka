@@ -242,10 +242,16 @@
                 <span id="subjectBadge" class="tactile-badge badge-physics">FISIKA</span>
                 <span id="difficultyBadge" class="problem-difficulty-tag">HOTS</span>
               </div>
-              <!-- Bookmark / Doubt Button -->
-              <button id="btnRagu" class="tactile-btn tactile-btn-ragu" onclick="toggleRagu()" style="padding: 6px 12px; font-size: 0.82rem;">
-                <i class="fa-regular fa-bookmark mr-1"></i> Tandai Ragu-ragu
-              </button>
+              <div class="meta-tags-right" style="display: flex; gap: 8px;">
+                <!-- Hint Button -->
+                <button id="btnHint" class="tactile-btn tactile-btn-hint" onclick="toggleHintAccordion()" style="padding: 6px 12px; font-size: 0.82rem;">
+                  <i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i> Petunjuk (Hint)
+                </button>
+                <!-- Bookmark / Doubt Button -->
+                <button id="btnRagu" class="tactile-btn tactile-btn-ragu" onclick="toggleRagu()" style="padding: 6px 12px; font-size: 0.82rem;">
+                  <i class="fa-regular fa-bookmark mr-1"></i> Tandai Ragu-ragu
+                </button>
+              </div>
             </div>
 
             <!-- Problem Statement Body -->
@@ -262,6 +268,22 @@
             <!-- Tactile Option Cards (A, B, C, D, E) -->
             <div id="optionsList" class="options-list">
               <!-- Populated via JS -->
+            </div>
+
+            <!-- In Practice Mode: Accordion Hint (Petunjuk Pengerjaan) -->
+            <div id="hintAccordion" class="hint-accordion hidden">
+              <button class="hint-header-btn" onclick="toggleHintAccordion()">
+                <div class="hint-header-title">
+                  <i class="fa-solid fa-lightbulb text-amber-500"></i>
+                  <span>Petunjuk Pengerjaan (Hint)</span>
+                </div>
+                <i class="fa-solid fa-chevron-down hint-chevron"></i>
+              </button>
+              <div class="hint-body">
+                <div class="hint-section-block">
+                  <div id="hintContent" class="hint-block-content"></div>
+                </div>
+              </div>
             </div>
 
             <!-- In Exam Mode: Locked Notice Banner -->
@@ -392,6 +414,10 @@
               <div class="shortcut-row">
                 <span class="text-slate-500 dark:text-slate-400">Pilih Opsi</span>
                 <div><span class="kbd-badge">A</span> ... <span class="kbd-badge">E</span></div>
+              </div>
+              <div class="shortcut-row">
+                <span class="text-slate-500 dark:text-slate-400">Buka Hint</span>
+                <span class="kbd-badge">H</span>
               </div>
               <div class="shortcut-row">
                 <span class="text-slate-500 dark:text-slate-400">Cek / Pembahasan</span>

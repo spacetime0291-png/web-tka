@@ -44,7 +44,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak fokus cermin sferis ($f$) merupakan setengah dari panjang jari-jari kelengkungannya ($R$): $$f = \\frac{R}{2}$$ Untuk cermin cekung, jarak fokus bernilai positif ($f > 0$). **Tips:** Jangan mengalikan jari-jari dengan 2 yang menghasilkan 80 cm."
   },
   {
     "id": "fis-gel-optik-cermin-002",
@@ -77,7 +78,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perbesaran linier bayangan ($M$) pada cermin lengkung didefinisikan sebagai perbandingan nilai mutlak jarak bayangan ($s'$) terhadap jarak benda ($s$): $$M = \\left|\\frac{s'}{s}\\right|$$. **Tips:** Pastikan pembilang adalah jarak bayangan ($s'$) dan penyebut adalah jarak benda ($s$)."
   },
   {
     "id": "fis-gel-optik-cermin-003",
@@ -110,7 +112,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tiga sinar istimewa pada cermin cekung: 1. Sinar datang sejajar sumbu utama dipantulkan melalui titik fokus ($F$) . 2. Sinar datang melalui titik fokus dipantulkan sejajar sumbu utama. 3. Sinar datang melalui titik pusat kelengkungan ($M$) dipantulkan kembali melalui jalur yang sama. **Tips:** adalah karakteristik sinar istimewa pada cermin cembung (menyebarkan sinar seolah berasal dari fokus di belakang cermin)."
   },
   {
     "id": "fis-gel-optik-cermin-004",
@@ -143,7 +146,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan jarak benda ($s$), jarak bayangan ($s'$), dan jarak fokus cermin ($f$) memenuhi persamaan Gauss: $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'} \\implies \\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$. **Tips:** Hati-hati saat menyamakan penyebut pecahan."
   },
   {
     "id": "fis-gel-optik-cermin-005",
@@ -176,7 +180,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cermin cembung memiliki titik fokus di belakang permukaan pemantul (bersifat maya/divergen). Oleh karena itu, jarak fokusnya selalu bernilai negatif: $$f = -\\frac{R}{2}$$."
   },
   {
     "id": "fis-gel-optik-cermin-006",
@@ -209,7 +214,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan nyata pada cermin cekung berada di depan cermin ($s' > 0$) dan bersifat terbalik. Hubungan perbesaran bayangan nyata: $$M = \\frac{s'}{s} = 3 \\implies s' = 3s$$ Persamaan cermin: $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$$."
   },
   {
     "id": "fis-gel-optik-cermin-007",
@@ -242,7 +248,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada cermin cembung, fokus bernilai negatif ($f = -R/2$) dan bayangan dari benda nyata selalu bersifat maya ($s' < 0$): $$f = -\\frac{40}{2} = -20\\text{ cm}, \\quad s' = -\\frac{1}{4}s$$."
   },
   {
     "id": "fis-gel-optik-cermin-008",
@@ -275,7 +282,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan tegak pada cermin cekung selalu merupakan bayangan maya yang terletak di belakang cermin ($s' < 0$): $$M = -\\frac{s'}{s} = 2 \\implies s' = -2s, \\quad f = +\\frac{R}{2} = +30\\text{ cm}$$."
   },
   {
     "id": "fis-gel-optik-cermin-009",
@@ -308,7 +316,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pergeseran posisi bayangan diperoleh dengan menghitung posisi bayangan mula-mula ($s_1'$) dan posisi bayangan akhir ($s_2'$) setelah pergeseran: $$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$."
   },
   {
     "id": "fis-gel-optik-cermin-010",
@@ -341,7 +350,8 @@
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Aturan Dalil Esbach pada cermin cekung: 1. Jumlah nomor ruang benda dan ruang bayangan sama dengan 5: $$R_{\\text{benda}} + R_{\\text{bayangan}} = 5$$ 2. Jika $R_{\\text{bayangan}} > R_{\\text{benda}}$, bayangan diperbesar. 3. Bayangan di depan cermin (ruang I, II, III) bersifat nyata dan terbalik; bayangan di belakang cermin (ruang IV) bersifat maya dan tegak."
   },
   {
     "id": "mudah-fis-08",
@@ -374,7 +384,8 @@
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "cermin-datar-cekung-cembung"
+    "subTopicSlug": "cermin-datar-cekung-cembung",
+    "hint": "Persamaan Cermin Cekung (Fokus Positif): $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'} \\implies \\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$. **Tips:** Ingat cermin cekung memiliki fokus positif ($+10\\text{ cm}$), sedangkan cermin cembung memiliki fokus negatif."
   },
   {
     "id": "drill-cah-04",
@@ -407,7 +418,8 @@
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "cermin-datar-cekung-cembung"
+    "subTopicSlug": "cermin-datar-cekung-cembung",
+    "hint": "Aturan Tanda Cermin Cembung: • Jarak fokus cermin cembung selalu bernilai negatif ($f = -20\\text{ cm}$). • Persamaan cermin: $\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'} \\implies \\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$. • Bayangan cermin cembung selalu maya ($s' < 0$), tegak, dan diperkecil. **Tips:** ⚠️ Wajib Diingat: Selalu beri tanda minus pada fokus cermin cembung dan lensa cekung ($f < 0$)."
   },
   {
     "id": "drill2-cah-01",
@@ -440,7 +452,8 @@
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "cermin-datar-cekung-cembung"
+    "subTopicSlug": "cermin-datar-cekung-cembung",
+    "hint": "Gunakan perumusan konsep fisis: $$n = \\frac{360^\\circ}{\\alpha} - 1$$. **Tips:** ⚠️ Jangan Lupa $-1$: Nilai $360^\\circ / \\alpha$ harus selalu dikurangi 1 karena salah satu posisi ditempati oleh benda asli."
   },
   {
     "id": "drill2-cah-02",
@@ -473,7 +486,8 @@
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "cermin-datar-cekung-cembung"
+    "subTopicSlug": "cermin-datar-cekung-cembung",
+    "hint": "Hubungan Fokus dan Jari-Jari Cermin Cekung: • $f = \\frac{1}{2}R$ (cermin cekung bertanda positif $f > 0$) • $s' = \\frac{s \\cdot f}{s - f}$ • Perbesaran: $M = \\left| \\frac{s'}{s} \\right|$."
   }
 ];
 

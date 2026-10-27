@@ -44,7 +44,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Laju aliran kalor konduksi menurut hukum Fourier dirumuskan sebagai: $$H = \\frac{Q}{t} = \\frac{k \\times A \\times \\Delta T}{L}$$ dengan $k$ adalah konduktivitas termal, $A$ luas penampang, $\\Delta T$ beda suhu, dan $L$ panjang batang. **Tips:** Perhatikan bahwa panjang batang berada di posisi penyebut ($L$ membagi hasil kali $k A \\Delta T$)."
   },
   {
     "id": "fis-termo-kalor-perpindahan-002",
@@ -77,7 +78,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tiga mekanisme perpindahan kalor memiliki karakteristik media perantara yang berbeda: 1. Konduksi: perpindahan kalor melalui partikel zat tanpa disertai perpindahan massa zat perantara (butuh medium padat/kontak). 2. Konveksi: perpindahan kalor yang disertai aliran materi perantara (butuh medium fluida cair/gas). 3. Radiasi: perpindahan kalor dalam bentuk gelombang elektromagnetik (foton) yang tidak memerlukan medium perantara dan dapat merambat dalam ruang hampa."
   },
   {
     "id": "fis-termo-kalor-perpindahan-003",
@@ -110,7 +112,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Laju perpindahan kalor secara konveksi memenuhi hukum pendinginan Newton: $$H = h \\times A \\times \\Delta T$$ dengan $h$ koefisien konveksi, $A$ luas permukaan yang bersentuhan dengan fluida, dan $\\Delta T = T_{\\text{permukaan}} - T_{\\text{fluida}}$."
   },
   {
     "id": "fis-termo-kalor-perpindahan-004",
@@ -143,7 +146,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$P = e \\times \\sigma \\times A \\times T^4$$. **Tips:** Perhatikan pangkat suhu."
   },
   {
     "id": "fis-termo-kalor-perpindahan-005",
@@ -176,7 +180,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Stefan-Boltzmann, daya radiasi berbanding lurus dengan pangkat empat suhu termodinamika ($P \\propto T^4$): $$\\frac{P_2}{P_1} = \\left(\\frac{T_2}{T_1}\\right)^4$$."
   },
   {
     "id": "fis-termo-kalor-perpindahan-006",
@@ -209,7 +214,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kondisi tunak (steady state) tanpa kebocoran kalor melalui selimut batang, laju konduksi kalor yang mengalir melalui batang P harus sama dengan laju konduksi kalor yang melalui batang Q: $$H_P = H_Q \\implies \\frac{k_P \\times A_P \\times (T_P - T_s)}{L_P} = \\frac{k_Q \\times A_Q \\times (T_s - T_Q)}{L_Q}$$."
   },
   {
     "id": "fis-termo-kalor-perpindahan-007",
@@ -242,7 +248,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Laju bersih perpindahan kalor secara radiasi antara benda pada suhu $T$ dan lingkungan pada suhu $T_0$ dihitung dengan rumus radiasi netto Stefan-Boltzmann: $$P_{\\text{neto}} = e \\times \\sigma \\times A \\times (T^4 - T_0^4)$$ dengan suhu wajib dikonversikan ke skala mutlak Kelvin ($K = ^\\circ\\text{C} + 273$)."
   },
   {
     "id": "fis-termo-kalor-perpindahan-008",
@@ -275,7 +282,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada susunan dinding berlapis seri, laju aliran kalor konduksi per satuan luas ($H/A$) sama di setiap lapisan: $$\\frac{H}{A} = \\frac{T_1 - T_b}{R_A} = \\frac{T_b - T_2}{R_B}$$ dengan resistansi termal konduksi per satuan luas $R = \\frac{d}{k}$."
   },
   {
     "id": "fis-termo-kalor-perpindahan-009",
@@ -308,7 +316,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\lambda_{\\text{maks}} \\times T = C \\implies T \\propto \\frac{1}{\\lambda_{\\text{maks}}}$$ Sedangkan Hukum Stefan-Boltzmann menyatakan intensitas radiasi berbanding lurus dengan pangkat empat suhu: $$I = \\sigma T^4 \\implies I \\propto \\left(\\frac{1}{\\lambda_{\\text{maks}}}\\right)^4$$. **Tips:** Perhatikan bahwa panjang gelombang berbanding TERBALIK dengan suhu."
   },
   {
     "id": "fis-termo-kalor-perpindahan-010",
@@ -341,7 +350,8 @@
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kalor yang dihantarkan secara konduksi sepanjang batang dalam selang waktu $t$ digunakan sepenuhnya untuk meleburkan es: $$Q = H \\times t = \\frac{k \\times A \\times \\Delta T}{L_{\\text{batang}}} \\times t$$ Massa es yang melebur dihitung dari kalor laten peleburan: $Q = m_{\\text{es}} \\times L_{\\text{lebur}}$."
   },
   {
     "id": "drill2-kal-03",
@@ -374,7 +384,8 @@
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Gunakan perumusan konsep fisis: $$H = \\frac{Q}{t} = h \\cdot A \\cdot \\Delta T$$."
   },
   {
     "id": "sup-fis-ter-02",
@@ -407,7 +418,8 @@
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Laju Konduksi Kalor Keadaan Stasioner: Pada sambungan batang, laju aliran kalor melalui batang $P$ sama dengan laju aliran kalor melalui batang $Q$: $H_P = H_Q \\implies k_P A \\frac{\\Delta T_P}{L} = k_Q A \\frac{\\Delta T_Q}{L}$."
   },
   {
     "id": "drill-kal-06",
@@ -440,7 +452,8 @@
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Laju Konduksi Termal Fourier: Laju rambatan kalor per detik berbanding lurus dengan konduktivitas termal, luas penampang, dan gradien suhu: $$H = \\frac{Q}{t} = \\frac{k \\cdot A \\cdot \\Delta T}{L}$$."
   },
   {
     "id": "drill-kal-07",
@@ -473,7 +486,8 @@
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Daya radiasi kalor sebanding dengan pangkat empat dari suhu mutlaknya: $$P = e \\cdot \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_2}{P_1} = \\left( \\frac{T_2}{T_1} \\right)^4$$."
   },
   {
     "id": "drill2-kal-05",
@@ -506,7 +520,8 @@
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Ketergantungan Radiasi terhadap Luas: $$P = e \\sigma A T^4 \\implies P \\propto A$$ Pada suhu tetap, daya radiasi berbanding lurus linear dengan luas permukaan pemancar."
   }
 ];
 

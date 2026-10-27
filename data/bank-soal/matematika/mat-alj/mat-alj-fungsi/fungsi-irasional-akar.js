@@ -44,7 +44,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi irasional $f(x) = \\sqrt{g(x)}$ bernilai real jika dan hanya jika bentuk di dalam tanda akar (radikan) bernilai non-negatif, yaitu $g(x) \\geq 0$. **Tips:** Lupa menyertakan tanda sama dengan ($geq$ menjadi $>$) atau salah operasi pembagian aljabar."
   },
   {
     "id": "mat-alj-fungsi-akar-002",
@@ -77,7 +78,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Nilai dari akar pangkat dua utama $\\sqrt{u}$ selalu bernilai lebih besar atau sama dengan nol ($\\sqrt{u} \\geq 0$), dengan nilai minimum sama dengan 0 yang tercapai saat $u = 0$."
   },
   {
     "id": "mat-alj-fungsi-akar-003",
@@ -110,7 +112,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong sumbu-$X$ diperoleh saat $f(x) = 0$, sedangkan titik potong sumbu-$Y$ diperoleh saat $x = 0$. **Tips:** Menyederhanakan $\\sqrt{8}$ menjadi $4$ alih-alih $2\\sqrt{2}$."
   },
   {
     "id": "mat-alj-fungsi-akar-004",
@@ -143,7 +146,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi $f(x) = \\sqrt{x - c}$ memiliki turunan pertama $f'(x) = \\frac{1}{2\\sqrt{x - c}} > 0$ untuk seluruh $x > c$, sehingga grafiknya selalu naik secara monoton (*strictly increasing*). **Tips:** Mengira fungsi akar memiliki titik puncak maksimum."
   },
   {
     "id": "mat-alj-fungsi-akar-005",
@@ -176,7 +180,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat fungsi akar real adalah radikan non-negatif. Perhatikan bahwa membagi atau mengalikan pertidaksamaan dengan bilangan negatif akan membalik arah tanda pertidaksamaan. **Tips:** Lupa membalik tanda pertidaksamaan saat membagi dengan $-3$ sehingga keliru memilih $x \\geq 3$."
   },
   {
     "id": "mat-alj-fungsi-akar-006",
@@ -209,7 +214,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah asal fungsi pecahan yang memuat bentuk akar di pembilangnya harus memenuhi dua syarat serentak: ekspresi di dalam akar non-negatif ($x^2 - 4 \\geq 0$) dan penyebut tidak sama dengan nol ($x - 3 \\neq 0$)."
   },
   {
     "id": "mat-alj-fungsi-akar-007",
@@ -242,7 +248,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk akar utama selalu bernilai $\\sqrt{u} \\geq 0$. Pengali negatif pada suku akar membalik ketidaksamaan menjadi $-\\sqrt{u} \\leq 0$, sehingga fungsi memiliki nilai maksimum lokal pada titik pembuat nol radikan. **Tips:** Mengabaikan tanda minus di depan akar sehingga keliru menyimpulkan $y \\geq 4$."
   },
   {
     "id": "mat-alj-fungsi-akar-008",
@@ -275,7 +282,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat menyelesaikan persamaan irasional $\\sqrt{f(x)} = g(x)$, ruas kanan harus non-negatif ($g(x) \\geq 0$) sebelum kedua ruas dikuadratkan untuk menghindari akar semu (*extraneous solutions*)."
   },
   {
     "id": "mat-alj-fungsi-akar-009",
@@ -308,7 +316,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk fungsi akar bersarang $f(x) = \\sqrt{g(\\sqrt{x})}$, syarat numerus harus dipenuhi pada setiap tingkatan akar: akar bagian dalam harus terdefinisi, dan radikan akar bagian luar harus non-negatif. **Tips:** Lupa menguadratkan angka 4 sehingga menyimpulkan $x \\leq 4$, atau lupa syarat akar dalam $x \\geq 0$."
   },
   {
     "id": "mat-alj-fungsi-akar-010",
@@ -341,7 +350,8 @@
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi invers $f^{-1}(x)$ diperoleh dengan mengisolasi variabel $x$ sebagai fungsi dari $y$. Daerah asal dari fungsi invers ($D_{f^{-1}}$) sama dengan daerah hasil dari fungsi asalnya ($R_f$). **Tips:** Lupa mencantumkan pembatasan domain $x \\geq 3$ pada fungsi kuadrat hasil invers atau menggunakan batas domain $x geq 5/2$."
   },
   {
     "id": "mudah-mtk-07",
@@ -374,7 +384,8 @@
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-fungsi",
-    "subTopicSlug": "fungsi-irasional-akar"
+    "subTopicSlug": "fungsi-irasional-akar",
+    "hint": "Syarat Terdefinisi Bentuk Akar Real: Fungsi $\\sqrt{g(x)}$ terdefinisi pada bilangan real jika dan hanya jika radikan tidak negatif: $$g(x) \\ge 0$$. **Tips:** Karena akar berada di pembilang (bukan penyebut pecahan), nilai 0 diperbolehkan (sehingga menggunakan $\\ge 4$, bukan $> 4$)."
   }
 ];
 

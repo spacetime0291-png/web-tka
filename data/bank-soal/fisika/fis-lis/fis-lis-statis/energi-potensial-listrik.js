@@ -44,7 +44,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Potensial listrik ($V$) didefinisikan sebagai energi potensial listrik per satuan muatan ($V = \\frac{E_p}{q}$). Potensial listrik merupakan besaran skalar (tidak memiliki arah) dengan satuan Volt (Joule per Coulomb). Rumusnya adalah $V = k \\frac{q}{r}$, di mana tanda positif atau negatif muatan wajib disertakan dalam perhitungan aljabar."
   },
   {
     "id": "fis-lis-statis-potensial-002",
@@ -77,7 +78,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Potensial listrik pada jarak $r$ dari muatan titik $q$ dirumuskan sebagai: $$V = k \\frac{q}{r}$$ dengan $q$ dihitung beserta tanda aljabarnya."
   },
   {
     "id": "fis-lis-statis-potensial-003",
@@ -110,7 +112,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Usaha luar ($W$) yang diperlukan untuk memindahkan muatan uji $q$ dari titik $A$ ke titik $B$ sama dengan perubahan energi potensial listriknya: $$W_{A \\to B} = q \\Delta V = q (V_B - V_A)$$."
   },
   {
     "id": "fis-lis-statis-potensial-004",
@@ -143,7 +146,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Energi potensial elektrostatik ($E_p$) dari sistem dua muatan titik $q_1$ dan $q_2$ yang berjarak $r$ dirumuskan sebagai: $$E_p = k \\frac{q_1 q_2}{r}$$. **Tips:** Tertukar dengan rumus gaya Coulomb $k \\frac{q_1 q_2}{r^2}$ yang membagi dengan kuadrat jarak $r^2$."
   },
   {
     "id": "fis-lis-statis-potensial-005",
@@ -176,7 +180,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Di seluruh bagian dalam bola konduktor elektrostatik, kuat medan listrik bernilai nol ($E = 0$). Karena $E = -\\frac{dV}{dr} = 0$, maka potensial listrik $V$ bernilai konstan di seluruh bagian dalam dan sama persis dengan potensial di permukaan kulit bola: $$V_{\\text{dalam}} = V_{\\text{permukaan}} = V_0 = k\\frac{Q}{R}$$. **Tips:** Siswa sering mengacaukan potensial listrik dengan kuat medan listrik."
   },
   {
     "id": "fis-lis-statis-potensial-006",
@@ -209,7 +214,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Potensial listrik adalah besaran skalar, sehingga potensial total di titik $P$ merupakan penjumlahan aljabar biasa dari potensial yang dihasilkan oleh masing-masing muatan: $$V_P = V_A + V_B = k \\frac{q_A}{r_A} + k \\frac{q_B}{r_B} = 0$$."
   },
   {
     "id": "fis-lis-statis-potensial-007",
@@ -242,7 +248,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan hukum kekekalan energi mekanik, energi potensial listrik yang hilang diubah seluruhnya menjadi energi kinetik partikel: $$q \\Delta V = \\Delta E_k = \\frac{1}{2} m v^2 \\implies v = \\sqrt{\\frac{2 q \\Delta V}{m}}$$."
   },
   {
     "id": "fis-lis-statis-potensial-008",
@@ -275,7 +282,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan antara kuat medan listrik homogen $E$ dan beda potensial antar pelat $\\Delta V$ adalah $E = \\frac{\\Delta V}{d}$. Usaha oleh gaya medan listrik adalah $W = \\vec{F} \\cdot \\Delta \\vec{s} = q \\vec{E} \\cdot \\Delta \\vec{s}$. **Tips:** Lupa memperhatikan tanda aljabar muatan elektron."
   },
   {
     "id": "fis-lis-statis-potensial-009",
@@ -308,7 +316,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi potensial elektrostatik total dari sistem多-muatan dihitung dari jumlahan energi potensial setiap pasangan muatan yang unik: $$E_{p,\\text{total}} = k \\left(\\frac{q_1 q_2}{r_{12}} + \\frac{q_1 q_3}{r_{13}} + \\frac{q_2 q_3}{r_{23}}\\right)$$. **Tips:** Hanya menghitung dua pasang interaksi dan melupakan pasangan ketiga, atau mengabaikan tanda minus pada muatan $q_3$."
   },
   {
     "id": "fis-lis-statis-potensial-010",
@@ -341,7 +350,8 @@
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Potensial di setiap titik merupakan superposisi dari kontribusi kedua kulit bola bermuatan. Untuk kulit bermuatan $q$ dan jari-jari $R$, potensial di titik berjarak $r \\le R$ adalah $k\\frac{q}{R}$, sedangkan untuk $r \\ge R$ adalah $k\\frac{q}{r}$."
   },
   {
     "id": "sup-fis-lis-01",
@@ -374,7 +384,8 @@
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-statis",
-    "subTopicSlug": "energi-potensial-listrik"
+    "subTopicSlug": "energi-potensial-listrik",
+    "hint": "Hubungan Usaha dan Beda Potensial Listrik: Usaha untuk memindahkan muatan $q$ dari potensial $V_A$ ke $V_B$ adalah $W = q \\Delta V = q (V_B - V_A)$. **Tips:** Mengalikan muatan dengan nilai potensial akhir saja ($5\\,\\mu\\text{C} \\times 80\\text{ V}$)."
   }
 ];
 

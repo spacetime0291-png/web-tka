@@ -44,7 +44,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Transformasi linear titik $P(x, y)$ oleh matriks $M = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ dirumuskan dengan perkalian matriks kolom: $\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}$, sehingga $x' = ax + by$ dan $y' = cx + dy$. **Tips:** Salah aturan perkalian baris kali kolom atau keliru pada tanda negatif $-1(3) + 3(-2)$."
   },
   {
     "id": "mat-geo-trans-matriks-002",
@@ -77,7 +78,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pencerminan terhadap sumbu-$Y$ memetakan koordinat menurut aturan $x' = -x = -1(x) + 0(y)$ dan $y' = y = 0(x) + 1(y)$. Dengan demikian, matriks representasinya adalah $\\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}$. **Tips:** Tertukar dengan matriks pencerminan terhadap sumbu-$X$, yaitu $\\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-trans-matriks-003",
@@ -110,7 +112,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dari hubungan $\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = \\begin{pmatrix} a & 0 \\\\ 0 & d \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\end{pmatrix}$, diperoleh $x' = ax \\implies x = \\frac{x'}{a}$ dan $y' = dy \\implies y = \\frac{y'}{d}$. **Tips:** Mengalikan kembali titik bayangan dengan matriks $M$ alih-alih mengalikannya dengan matriks invers $M^{-1}$."
   },
   {
     "id": "mat-geo-trans-matriks-004",
@@ -143,7 +146,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Matriks shear horizontal $M = \\begin{pmatrix} 1 & k \\\\ 0 & 1 \\end{pmatrix}$ menggeser absis sebanding dengan nilai ordinatnya: $x' = x + ky$ sementara ordinat tetap: $y' = y$. **Tips:** Mengabaikan penambahan $3(5)$ pada absis atau salah menempatkan koordinat bayangan."
   },
   {
     "id": "mat-geo-trans-matriks-005",
@@ -176,7 +180,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk umum matriks rotasi berpusat di $O(0, 0)$ dengan sudut $\\theta$ adalah $R_\\theta = \\begin{pmatrix} \\cos \\theta & -\\sin \\theta \\\\ \\sin \\theta & \\cos \\theta \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-trans-matriks-006",
@@ -209,7 +214,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk mencari bayangan kurva oleh transformasi matriks $\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = M\\begin{pmatrix} x \\\\ y \\end{pmatrix}$, kita gunakan matriks invers $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = M^{-1}\\begin{pmatrix} x' \\\\ y' \\end{pmatrix}$ untuk mensubstitusikan variabel $x$ dan $y$ ke persamaan asal kurva. **Tips:** Langsung mensubstitusikan $x' = x + 2y$ dan $y' = x + 3y$ ke persamaan asal tanpa mencari invers matriksnya terlebih dahulu."
   },
   {
     "id": "mat-geo-trans-matriks-007",
@@ -242,7 +248,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks transformasi linear berukuran $2 \\times 2$ memiliki kolom-kolom yang tepat sama dengan vektor bayangan dari vektor basis standar $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ dan $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$. **Tips:** Menyusun vektor bayangan sebagai baris bukannya kolom pada matriks $M$."
   },
   {
     "id": "mat-geo-trans-matriks-008",
@@ -275,7 +282,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika transformasi $T_1$ dilanjutkan dengan transformasi $T_2$, maka matriks transformasi gabungannya diperoleh dari perkalian matriks secara terbalik: $M = M_2 \\times M_1$. **Tips:** Membalik urutan perkalian menjadi $M_1 \\times M_2$ yang menghasilkan matriks $\\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-trans-matriks-009",
@@ -308,7 +316,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks peregangan horizontal $M = \\begin{pmatrix} 2 & 0 \\\\ 0 & 1 \\end{pmatrix}$ menghasilkan $x' = 2x \\implies x = \\frac{x'}{2}$ dan $y' = y$. Masukkan hubungan ini ke fungsi kuadrat asal."
   },
   {
     "id": "mat-geo-trans-matriks-010",
@@ -341,7 +350,8 @@
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan transformasi $\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = M\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ menghasilkan sistem persamaan linear untuk menentukan nilai parameter matriks."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kapasitas kapasitor keping sejajar ditentukan oleh parameter geometri dan medium pengisi celah antarkeping: $$C = \\frac{\\varepsilon_r \\varepsilon_0 A}{d}$$ di mana $\\varepsilon_r$ adalah konstanta dielektrik relatif medium, $A$ adalah luas penampang keping, dan $d$ adalah jarak pemisah antarkeping. **Tips:** Siswa sering mengira mengubah tegangan sumber $V$ dapat mengubah kapasitas kapasitor karena rumus $C = Q/V$."
   },
   {
     "id": "fis-lis-statis-keping-002",
@@ -77,7 +78,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan mendasar antara kapasitas kapasitor ($C$), beda potensial listrik ($V$), dan muatan listrik yang tersimpan ($Q$) dirumuskan sebagai: $$Q = C V$$. **Tips:** Kesalahan membagi alih-alih mengalikan ($50 / 12$), atau salah mengalikan nilai angka."
   },
   {
     "id": "fis-lis-statis-keping-003",
@@ -110,7 +112,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penyisipan bahan dielektrik dengan konstanta dielektrik relatif $K$ (atau $\\varepsilon_r$) melipatgandakan nilai kapasitas kapasitor menurut hubungan: $$C = K \\cdot C_0$$."
   },
   {
     "id": "fis-lis-statis-keping-004",
@@ -143,7 +146,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Aturan penggabungan kapasitor berkebalikan dengan resistor: - Rangkaian paralel: $C_p = C_1 + C_2$ - Rangkaian seri: $\\frac{1}{C_s} = \\frac{1}{C_1} + \\frac{1}{C_2} \\implies C_s = \\frac{C_1 C_2}{C_1 + C_2}$. **Tips:** Tertukar dengan rumus resistor, di mana seri dijumlahkan dan paralel dihitung kebalikannya."
   },
   {
     "id": "fis-lis-statis-keping-005",
@@ -176,7 +180,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Energi elektrostatik yang tersimpan dalam medan listrik kapasitor dirumuskan sebagai: $$W = \\frac{1}{2} C V^2$$."
   },
   {
     "id": "fis-lis-statis-keping-006",
@@ -209,7 +214,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat kapasitor dilepas dari baterai, muatan listrik pada keping terisolasi sehingga nilainya kekal konstan ($Q = Q_0$). Penyisipan bahan dielektrik dengan konstanta $K$ mengubah kapasitas menjadi $C = K C_0$, beda potensial menjadi $V = \\frac{Q}{C} = \\frac{V_0}{K}$, dan energi menjadi $W = \\frac{Q^2}{2C} = \\frac{W_0}{K}$. **Tips:** Sering tertukar antara kasus baterai dilepas ($Q$ konstan) dengan kasus baterai tetap terhubung ($V$ konstan)."
   },
   {
     "id": "fis-lis-statis-keping-007",
@@ -242,7 +248,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada rangkaian kombinasi seri-paralel, tentukan terlebih dahulu kapasitas pengganti total untuk memperoleh muatan total yang dialirkan sumber. Muatan pada komponen yang tersusun seri sama dengan muatan total."
   },
   {
     "id": "fis-lis-statis-keping-008",
@@ -275,7 +282,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Medan listrik total $E$ di antara dua keping kapasitor merupakan resultan superposisi dari medan yang dihasilkan oleh keping positif ($E_1$) dan keping negatif ($E_2$), di mana $E = E_1 + E_2 = 2E_1 \\implies E_1 = \\frac{1}{2}E$. Gaya pada salah satu keping diakibatkan oleh medan keping lainnya saja, bukan oleh medan total."
   },
   {
     "id": "fis-lis-statis-keping-009",
@@ -308,7 +316,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kapasitor yang diisi sebagian dielektrik secara paralel terhadap permukaan keping dapat dimodelkan sebagai dua buah kapasitor yang tersusun secara seri dengan ketebalan celah masing-masing: $$\\frac{1}{C_{\\text{eff}}} = \\frac{1}{C_1} + \\frac{1}{C_2}$$."
   },
   {
     "id": "fis-lis-statis-keping-010",
@@ -341,7 +350,8 @@
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada penggabungan dua kapasitor, muatan total kekal ($Q_{\\text{awal}} = Q_{\\text{akhir}}$), namun sebagian energi elektrostatik selalu terdisipasi menjadi panas pada kawat penghubung dan radiasi elektromagnetik: $$\\Delta W = W_{\\text{awal}} - W_{\\text{akhir}}$$."
   }
 ];
 

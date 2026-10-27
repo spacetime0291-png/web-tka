@@ -44,7 +44,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sudut $150^\\circ$ terletak di Kuadran II. Pada Kuadran II, nilai fungsi sinus bernilai positif dengan rumus relasi sudut: $\\sin(180^\\circ - \\alpha) = \\sin \\alpha$. **Tips:** Memberikan tanda negatif $-\\frac{1}{2}$ karena mengira seluruh fungsi trigonometri selain sudut lancip bernilai negatif."
   },
   {
     "id": "fun-trig-dasar-kuadran-002",
@@ -77,7 +78,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sudut $120^\\circ$ berada di Kuadran II. Di Kuadran II, nilai cosinus bertanda negatif dengan relasi $\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$. **Tips:** Lupa menyematkan tanda minus untuk nilai cosinus di Kuadran II sehingga memilih $+\\frac{1}{2}$."
   },
   {
     "id": "fun-trig-dasar-kuadran-003",
@@ -110,7 +112,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sudut $225^\\circ$ terletak di Kuadran III ($180^\\circ < \\theta < 270^\\circ$). Pada Kuadran III, fungsi tangen bernilai positif dengan relasi $\\tan(180^\\circ + \\alpha) = \\tan \\alpha$. **Tips:** Memberikan nilai negatif $-1$ karena menyangka semua sudut di kuadran III bernilai negatif."
   },
   {
     "id": "fun-trig-dasar-kuadran-004",
@@ -143,7 +146,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "All, Sin, Tan, Cos): - Kuadran I ($0^\\circ - 90^\\circ$): Semua positif - Kuadran II ($90^\\circ - 180^\\circ$): Sinus dan Cosecan positif - Kuadran III ($180^\\circ - 270^\\circ$): Tangen dan Cotangen positif - Kuadran IV ($270^\\circ - 360^\\circ$): Cosinus dan Secan positif. **Tips:** Tertukar antara tanda kuadran III (tangen positif) dan kuadran IV (cosinus positif)."
   },
   {
     "id": "fun-trig-dasar-kuadran-005",
@@ -176,7 +180,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi sinus merupakan fungsi ganjil, yaitu fungsi yang memenuhi sifat simetri rotasi terhadap titik asal: $\\sin(-\\alpha) = -\\sin \\alpha$. **Tips:** Menyamakan dengan fungsi cosinus yang merupakan fungsi genap di mana $\\cos(-\\alpha) = \\cos \\alpha$."
   },
   {
     "id": "fun-trig-dasar-kuadran-006",
@@ -209,7 +214,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut tumpul berada di Kuadran II, sehingga nilai cosinus dan tangen keduanya bertanda negatif: $\\cos A < 0$ dan $\\tan A < 0$. **Tips:** Lupa bahwa $\\cos A$ dan $\\tan A$ bertanda negatif di Kuadran II, sehingga keliru menghitung nilai tanda operasi."
   },
   {
     "id": "fun-trig-dasar-kuadran-007",
@@ -242,7 +248,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi sinus dan cosinus memiliki periode sebesar $360^\\circ$ ($2\\pi$), sehingga berlaku sifat $\\cos(k \\cdot 360^\\circ + \\alpha) = \\cos \\alpha$ dan $\\sin(k \\cdot 360^\\circ + \\alpha) = \\sin \\alpha$ untuk setiap bilangan bulat $k$. **Tips:** Keliru saat membagi sudut dengan $360^\\circ$ sehingga menghasilkan sisa sudut yang salah."
   },
   {
     "id": "fun-trig-dasar-kuadran-008",
@@ -275,7 +282,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan kaidah sudut berelasi dan kofungsi: - $\\sin(90^\\circ + \\alpha) = \\cos \\alpha$ (Kuadran II, sinus positif dan kofungsi berubah). - $\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$ (Kuadran II, cosinus negatif). - $\\tan(270^\\circ - \\alpha) = \\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$ (Kuadran III, tangen positif dan kofungsi berubah). **Tips:** Lupa mengubah fungsi trigonometri menjadi kofungsinya saat berelasi dengan sudut ganjil $90^\\circ$ atau $270^\\circ$."
   },
   {
     "id": "fun-trig-dasar-kuadran-009",
@@ -308,7 +316,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi tangen bernilai negatif pada Kuadran II dan Kuadran IV. Dalam rentang $180^\\circ \\le x \\le 360^\\circ$, daerah yang memenuhi adalah Kuadran IV ($270^\\circ < x < 360^\\circ$). **Tips:** Memilih sudut Kuadran II ($120^\\circ$) yang berada di luar batas interval soal atau keliru memilih sudut acuan $30^\\circ$."
   },
   {
     "id": "fun-trig-dasar-kuadran-010",
@@ -341,7 +350,8 @@
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut $\\theta$ dengan interval $180^\\circ < \\theta < 270^\\circ$ berada di Kuadran III. Di Kuadran III, nilai sinus dan cosinus keduanya bertanda negatif: $\\sin \\theta < 0$ dan $\\cos \\theta < 0$. **Tips:** Lupa memberi tanda negatif pada sinus dan cosinus di Kuadran III sehingga mendapatkan jawaban positif $+10$."
   },
   {
     "id": "mudah-mtk-01",
@@ -374,7 +384,8 @@
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
     "subChapterId": "fun-trig-dasar",
-    "subTopicSlug": "sudut-istimewa-relasi-kuadran"
+    "subTopicSlug": "sudut-istimewa-relasi-kuadran",
+    "hint": "Gunakan hubungan matematis dasar: $$\\cos 2\\alpha = 1 - 2\\sin^2\\alpha = 2\\cos^2\\alpha - 1 = \\cos^2\\alpha - \\sin^2\\alpha$$."
   },
   {
     "id": "sup-mtk-fun-01",
@@ -407,7 +418,8 @@
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
     "subChapterId": "fun-trig-dasar",
-    "subTopicSlug": "sudut-istimewa-relasi-kuadran"
+    "subTopicSlug": "sudut-istimewa-relasi-kuadran",
+    "hint": "Relasi Sudut Antar Kuadran: • Kuadran II: $\\sin(180^\\circ - \\alpha) = +\\sin \\alpha$ • Kuadran III: $\\cos(180^\\circ + \\alpha) = -\\cos \\alpha$ • Kuadran IV: $\\tan(360^\\circ - \\alpha) = -\\tan \\alpha$. **Tips:** Salah menentukan tanda aljabar trigonometri pada kuadran III dan IV."
   }
 ];
 

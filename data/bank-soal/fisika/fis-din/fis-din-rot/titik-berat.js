@@ -44,7 +44,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk bangun datar dua dimensi berbentuk segitiga homogen dengan tinggi $t$, titik berat terletak pada perpotongan garis-garis berat pada jarak: $y_0 = \\frac{1}{3} t$ dari garis alas segitiga."
   },
   {
     "id": "fis-din-rot-titikberat-002",
@@ -77,7 +78,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Koordinat pusat massa dari sistem partikel diskret satu dimensi dihitung menggunakan rata-rata tertimbang massa: $x_{\\text{pm}} = \\frac{\\sum m_i x_i}{\\sum m_i}$."
   },
   {
     "id": "fis-din-rot-titikberat-003",
@@ -110,7 +112,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pusat massa adalah titik rata-rata distribusi massa (sifat intrinsik materi benda), sedangkan titik berat adalah titik tangkap resultan gaya gravitasi yang bekerja pada benda. Keduanya tepat berhimpit jika percepatan gravitasi $g$ bernilai konstan (medan gravitasi homogen) di setiap elemen massa benda: $x_{\\text{tb}} = \\frac{\\sum m_i g x_i}{\\sum m_i g} = \\frac{\\sum m_i x_i}{\\sum m_i} = x_{\\text{pm}}$."
   },
   {
     "id": "fis-din-rot-titikberat-004",
@@ -143,7 +146,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk benda pejal tiga dimensi berbentuk kerucut homogen dengan tinggi $t$, letak titik beratnya berada pada sumbu simetri pada jarak: $y_0 = \\frac{1}{4} t$ dari bidang alas."
   },
   {
     "id": "fis-din-rot-titikberat-005",
@@ -176,7 +180,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik berat sistem kawat satu dimensi ditentukan oleh panjang masing-masing kawat sebagai bobot penimbang: $x_0 = \\frac{\\sum L_i x_i}{\\sum L_i}$ dan $y_0 = \\frac{\\sum L_i y_i}{\\sum L_i}$. **Tips:** Kerap langsung mengambil titik tengah masing-masing batang tanpa pembobotan panjang ($(3, 2)$)."
   },
   {
     "id": "fis-din-rot-titikberat-006",
@@ -209,7 +214,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada benda berlubang (bagian yang dipotong atau dibuang), luas lubang diperlakukan sebagai pembobot negatif: $x_0 = \\frac{A_1 x_1 - A_2 x_2}{A_1 - A_2}$ dan $y_0 = \\frac{A_1 y_1 - A_2 y_2}{A_1 - A_2}$."
   },
   {
     "id": "fis-din-rot-titikberat-007",
@@ -242,7 +248,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat benda gabungan tiga dimensi pejal dihitung menggunakan volume masing-masing komponen: $y_0 = \\frac{\\sum V_i y_i}{\\sum V_i}$. Titik berat silinder berada di $\\frac{1}{2} t_s$, dan titik berat kerucut berada di $\\frac{1}{4} t_k$ dari alas kerucut."
   },
   {
     "id": "fis-din-rot-titikberat-008",
@@ -275,7 +282,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena bangun simetris terhadap sumbu-$y$, maka $x_0 = 0$. Koordinat vertikal titik berat komposit dihitung berdasarkan pembobotan luas masing-masing bidang: $y_0 = \\frac{A_1 y_1 + A_2 y_2}{A_1 + A_2}$."
   },
   {
     "id": "fis-din-rot-titikberat-009",
@@ -308,7 +316,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Letak titik berat plat tipis homogen berbentuk setengah lingkaran pejal dari garis diameternya diperoleh melalui hasil integrasi kalkulus: $y_0 = \\frac{4R}{3\\pi}$."
   },
   {
     "id": "fis-din-rot-titikberat-010",
@@ -341,7 +350,8 @@
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Benda tegar tepat akan terguling ketika garis kerja gaya berat yang berpusat di titik berat benda tepat berimpit dengan titik sudut tumpuan terluar alasnya. Kondisi batas terguling pada balok berdimensi alas $b$ dan tinggi $h$ memenuhi persamaan trigonometri: $\\tan\\theta = \\frac{b}{h}$. **Tips:** Kerap terbalik menghitung $\\tan\\theta = \\frac{h}{b} = \\frac{4}{3} \\implies 53^\\circ$."
   }
 ];
 

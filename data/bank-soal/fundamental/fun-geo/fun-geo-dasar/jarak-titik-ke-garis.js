@@ -44,7 +44,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak dari titik $(x_0, y_0)$ ke garis $Ax + By + C = 0$ dirumuskan sebagai $d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$. **Tips:** Lupa menghitung nilai mutlak sehingga menghasilkan nilai jarak bertanda negatif $-3$."
   },
   {
     "id": "fun-geo-dasar-jarak-002",
@@ -77,7 +78,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak dari sembarang titik $(x_0, y_0)$ ke garis horizontal $y = k$ adalah selisih mutlak ordinatnya: $d = |y_0 - k|$."
   },
   {
     "id": "fun-geo-dasar-jarak-003",
@@ -110,7 +112,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak dari sembarang titik $(x_0, y_0)$ ke garis vertikal $x = h$ adalah selisih mutlak absisnya: $d = |x_0 - h|$."
   },
   {
     "id": "fun-geo-dasar-jarak-004",
@@ -143,7 +146,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan rumus standar jarak titik $(x_0, y_0)$ ke garis $Ax + By + C = 0$: $d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$. **Tips:** Keliru dalam menghitung tanda $(-3)^2$ menjadi $-9$ sehingga penyebut menjadi $\\sqrt{7}$."
   },
   {
     "id": "fun-geo-dasar-jarak-005",
@@ -176,7 +180,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak titik asal $(0, 0)$ ke garis $Ax + By + C = 0$ dirumuskan secara langsung sebagai $d = \\frac{|C|}{\\sqrt{A^2 + B^2}}$. **Tips:** Membagi langsung konstanta 26 dengan salah satu koefisien tanpa memperhitungkan panjang resultan normal $\\sqrt{A^2 + B^2}$."
   },
   {
     "id": "fun-geo-dasar-jarak-006",
@@ -209,7 +214,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sebelum menerapkan rumus jarak titik ke garis, ubah terlebih dahulu persamaan garis bentuk eksplisit $y = mx + c$ menjadi bentuk umum implisit $Ax + By + C = 0$. **Tips:** Lupa merasionalkan penyebut pecahan $\\frac{3}{\\sqrt{5}}$ atau salah mengubah tanda saat memindahkan suku $y$."
   },
   {
     "id": "fun-geo-dasar-jarak-007",
@@ -242,7 +248,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak antara dua garis sejajar $Ax + By + C_1 = 0$ dan $Ax + By + C_2 = 0$ dirumuskan sebagai $d = \\frac{|C_2 - C_1|}{\\sqrt{A^2 + B^2}}$."
   },
   {
     "id": "fun-geo-dasar-jarak-008",
@@ -275,7 +282,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan jarak memuat nilai mutlak $|Ax_0 + By_0 + C| = d \\sqrt{A^2 + B^2}$ yang menghasilkan dua kemungkinan nilai variabel. **Tips:** Mengabaikan persamaan nilai mutlak negatif sehingga tidak menyadari adanya dua kemungkinan solusi matematis."
   },
   {
     "id": "fun-geo-dasar-jarak-009",
@@ -308,7 +316,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis singgung lingkaran selalu tegak lurus terhadap jari-jari yang ditarik ke titik singgung, sehingga jari-jari lingkaran sama dengan jarak titik pusat ke garis singgung tersebut. **Tips:** Salah menghitung nilai di dalam tanda mutlak akibat tanda minus pada $-1$ dan $-12$."
   },
   {
     "id": "fun-geo-dasar-jarak-010",
@@ -341,7 +350,8 @@
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang garis tinggi dari suatu titik sudut ke sisi alas adalah jarak tegak lurus dari titik sudut tersebut ke garis yang memuat sisi alas. **Tips:** Menghitung panjang sisi miring segitiga $AC = \\sqrt{2^2 + 3^2} = \\sqrt{13}$ alih-alih panjang garis tingginya."
   },
   {
     "id": "sedang-mtk-10",
@@ -374,7 +384,8 @@
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
     "subChapterId": "fun-geo-dasar",
-    "subTopicSlug": "jarak-titik-ke-garis"
+    "subTopicSlug": "jarak-titik-ke-garis",
+    "hint": "Jarak Titik $(x_1, y_1)$ ke Garis $Ax + By + C = 0$: $$d = \\frac{|A x_1 + B y_1 + C|}{\\sqrt{A^2 + B^2}}$$. **Tips:** Perhatikan tanda mutlak di pembilang untuk memastikan nilai jarak selalu bernilai non-negatif."
   }
 ];
 

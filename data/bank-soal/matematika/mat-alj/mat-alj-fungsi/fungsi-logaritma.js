@@ -44,7 +44,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi logaritma $f(x) = {}^a\\log(x)$ terdefinisi untuk $x > 0$. Saat nilai $x$ mendekati nol dari arah kanan ($x \\to 0^+$), nilai fungsi menuju $-\\infty$, sehingga garis vertikal $x = 0$ (sumbu-$Y$) merupakan asimtot tegak kurva."
   },
   {
     "id": "mat-alj-fungsi-logaritma-002",
@@ -77,7 +78,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong kurva dengan sumbu-$X$ terjadi saat nilai fungsi $y = f(x) = 0$. Berdasarkan definisi logaritma, ${}^a\\log(1) = 0$ untuk setiap basis $a > 0$ dan $a \\ne 1$. **Tips:** Tertukar dengan titik potong kurva fungsi eksponensial dasar dengan sumbu-$Y$ yang berada di titik $(0, 1)$."
   },
   {
     "id": "mat-alj-fungsi-logaritma-003",
@@ -110,7 +112,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat numerus dari fungsi logaritma ${}^a\\log(g(x))$ mensyaratkan bahwa argumen numerus harus bernilai positif tegas, yaitu $g(x) > 0$."
   },
   {
     "id": "mat-alj-fungsi-logaritma-004",
@@ -143,7 +146,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Evaluasi nilai fungsi logaritma dilakukan dengan menyubstitusikan nilai variabel $x$ ke dalam fungsi kemudian menyederhanakannya menggunakan sifat ${}^a\\log(a^n) = n$."
   },
   {
     "id": "mat-alj-fungsi-logaritma-005",
@@ -176,7 +180,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kemonotonan grafik fungsi logaritma $f(x) = {}^a\\log(x)$ ditentukan oleh basis $a$: jika $a > 1$ kurva bersifat monoton naik, sedangkan jika $0 < a < 1$ kurva bersifat monoton turun di seluruh domainnya."
   },
   {
     "id": "mat-alj-fungsi-logaritma-006",
@@ -209,7 +214,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Asimtot tegak kurva fungsi logaritma $f(x) = {}^a\\log(x - h) + k$ terjadi pada garis pembuat nol numerus, yaitu $x = h$. Titik potong kurva dengan garis horizontal $y = c$ diperoleh dengan menyelesaikan persamaan $f(x) = c$."
   },
   {
     "id": "mat-alj-fungsi-logaritma-007",
@@ -242,7 +248,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Invers dari suatu fungsi logaritma merupakan fungsi eksponensial. Prosedur pencarian invers dilakukan dengan menyatakan variabel $x$ dalam bentuk variabel $y$, lalu menukar kembali kedua variabel tersebut."
   },
   {
     "id": "mat-alj-fungsi-logaritma-008",
@@ -275,7 +282,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Parameter fungsi ditentukan dengan membentuk sistem persamaan nonlinier dari titik-titik yang dilalui oleh kurva, lalu menggunakan sifat perbandingan logaritma."
   },
   {
     "id": "mat-alj-fungsi-logaritma-009",
@@ -308,7 +316,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong dua grafik logaritma dengan basis yang sama ditentukan dengan menyamakan kedua fungsi $f(x) = g(x)$ serta memastikan solusi memenuhi irisan syarat numerus kedua fungsi. **Tips:** Lupa memeriksa apakah nilai absis yang diperoleh memenuhi syarat numerus positif untuk kedua kurva logaritma."
   },
   {
     "id": "mat-alj-fungsi-logaritma-010",
@@ -341,7 +350,8 @@
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perpotongan kurva dengan sumbu-$X$ dicari dengan menetapkan $y = 0$, sedangkan perpotongan kurva dengan sumbu-$Y$ dicari dengan menetapkan $x = 0$."
   }
 ];
 

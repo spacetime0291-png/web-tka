@@ -44,7 +44,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Usaha luar pada proses isobarik dirumuskan: $$W = P \\times \\Delta V = P \\times (V_2 - V_1)$$ Ketika volume gas menyusut ($V_2 < V_1$), gas melakukan usaha negatif terhadap lingkungan, yang berarti lingkungan melakukan usaha positif sebesar $|W|$ pada gas. **Tips:** Perhatikan arah usaha: jika gas memuai, gas melakukan usaha pada lingkungan ($W > 0$)."
   },
   {
     "id": "fis-termo-hukum-usaha-002",
@@ -77,7 +78,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perubahan energi dalam ($\\Delta U$) dari $n$ mol gas ideal monoatomik hanya bergantung pada perubahan suhu mutlaknya ($\\Delta T$): $$\\Delta U = \\frac{3}{2} n R \\Delta T$$."
   },
   {
     "id": "fis-termo-hukum-usaha-003",
@@ -110,7 +112,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi keadaan (state function) adalah besaran termodinamika yang nilainya ditentukan sepenuhnya oleh variabel keadaan sistem saat itu (seperti temperatur $T$, tekanan $P$, dan volume $V$), bukan oleh bagaimana sistem mencapai keadaan tersebut. Oleh karena itu, perubahan energi dalam $\\Delta U = U_2 - U_1$ hanya bergantung pada kondisi awal dan akhir. Berbeda halnya dengan kalor ($Q$) dan usaha ($W$) yang merupakan fungsi lintasan (path functions). **Tips:** Jangan menyamakan energi dalam ($U$) dengan usaha ($W$) atau kalor ($Q$)."
   },
   {
     "id": "fis-termo-hukum-usaha-004",
@@ -143,7 +146,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada proses isobarik, usaha luar dihitung dengan rumus: $$W = P \\times (V_2 - V_1)$$."
   },
   {
     "id": "fis-termo-hukum-usaha-005",
@@ -176,7 +180,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada satu siklus termodinamika tertutup lengkap: - Keadaan akhir sistem identik dengan keadaan awalnya, sehingga $T_{\\text{akhir}} = T_{\\text{awal}}$. - Karena energi dalam gas ideal murni merupakan fungsi keadaan suhu mutlak ($U = U(T)$), maka perubahan energi dalam pada satu siklus penuh pasti bernilai nol: $$\\Delta U_{\\text{siklus}} = U_{\\text{akhir}} - U_{\\text{awal}} = 0$$ - Berdasarkan Hukum I Termodinamika, usaha netto siklus sama persis dengan kalor netto yang diserap: $W_{\\text{siklus}} = Q_{\\text{siklus}}$."
   },
   {
     "id": "fis-termo-hukum-usaha-006",
@@ -209,7 +214,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha luar ($W$) pada diagram $P-V$ untuk lintasan garis lurus miring setara dengan luas daerah bangun trapesium yang dibatasi oleh kurva, sumbu volume, serta garis tegak $V = V_A$ dan $V = V_B$: $$W = \\frac{P_A + P_B}{2} \\times (V_B - V_A)$$."
   },
   {
     "id": "fis-termo-hukum-usaha-007",
@@ -242,7 +248,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karakteristik besaran termodinamika: 1. Energi dalam ($U$) adalah fungsi keadaan, sehingga perubahannya $\\Delta U = U_2 - U_1$ hanya bergantung pada keadaan awal 1 dan akhir 2, artinya $\\Delta U_{\\text{I}} = \\Delta U_{\\text{II}} = \\Delta U_{\\text{III}}$. 2. Usaha ($W = \\int P\\,dV$) adalah fungsi lintasan yang nilainya sama dengan luas area di bawah grafik $P-V$. Luas di bawah Lintasan I paling besar, diikuti Lintasan III (trapesium), dan Lintasan II memiliki luas paling kecil. **Tips:** Jangan menyimpulkan bahwa jika keadaan awal dan akhir sama maka usahanya juga sama."
   },
   {
     "id": "fis-termo-hukum-usaha-008",
@@ -275,7 +282,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha luar yang dilakukan oleh gas pada proses isotermal dirumuskan: $$W_{\\text{gas}} = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)$$ Karena $V_2 < V_1$, $W_{\\text{gas}}$ bernilai negatif. Usaha yang dilakukan oleh lingkungan PADA gas bernilai positif: $W_{\\text{lingkungan}} = -W_{\\text{gas}} = n R T \\ln\\left(\\frac{V_1}{V_2}\\right)$."
   },
   {
     "id": "fis-termo-hukum-usaha-009",
@@ -308,7 +316,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi dalam total sistem campuran gas ideal adalah penjumlahan aljabar dari energi dalam masing-masing komponen gasnya: $$U_{\\text{total}} = U_{\\text{He}} + U_{\\text{N}_2} = \\left(\\frac{f_1}{2} n_1 R T\\right) + \\left(\\frac{f_2}{2} n_2 R T\\right)$$."
   },
   {
     "id": "fis-termo-hukum-usaha-010",
@@ -341,7 +350,8 @@
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha pada proses politropik $P V^n = C$ (untuk $n \\ne 1$) dihitung dari integrasi kalkulus: $$W = \\int_{V_1}^{V_2} P\\,dV = \\int_{V_1}^{V_2} C V^{-n}\\,dV = \\frac{C}{1 - n} \\left[V_2^{1 - n} - V_1^{1 - n}\\right] = \\frac{P_1 V_1 - P_2 V_2}{n - 1}$$. **Tips:** Perhatikan penyebut pada rumus politropik adalah $n - 1$."
   },
   {
     "id": "drill2-ter-02",
@@ -374,7 +384,8 @@
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "usaha-energi-dalam"
+    "subTopicSlug": "usaha-energi-dalam",
+    "hint": "Usaha Bersih Siklus Tertutup: Usaha total yang dihasilkan mesin dalam satu siklus penuh sama dengan luas area daerah tertutup pada diagram $P-V$: $$W_{\\text{siklus}} = \\text{Luas Persegi Panjang} = \\Delta P \\cdot \\Delta V$$. **Tips:** ⚠️ Arah Siklus: • Searah jarum jam (CW) $\\implies$ Mesin Kalor ($W > 0$)."
   },
   {
     "id": "drill2-ter-03",
@@ -407,7 +418,8 @@
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "usaha-energi-dalam"
+    "subTopicSlug": "usaha-energi-dalam",
+    "hint": "Sifat Fungsi Keadaan Energi Dalam ($U$): Energi dalam adalah fungsi keadaan yang hanya bergantung pada suhu saat itu. Dalam satu siklus tertutup, gas kembali ke suhu awal ($T_{\\text{akhir}} = T_{\\text{awal}}$), sehingga: $$\\Delta U_{\\text{siklus}} = 0 \\implies Q_{\\text{total}} = W_{\\text{total}}$$. **Tips:** ⚠️ Prinsip Pokok Siklus: Dalam satu siklus tertutup PENUH, $\\Delta U$ selalu NOL."
   }
 ];
 

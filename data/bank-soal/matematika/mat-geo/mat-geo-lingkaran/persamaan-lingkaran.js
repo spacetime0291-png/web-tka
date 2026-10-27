@@ -44,7 +44,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk baku persamaan lingkaran yang berpusat di titik asal $O(0, 0)$ dengan jari-jari $r$ adalah $x^2 + y^2 = r^2$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-002",
@@ -77,7 +78,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan lingkaran dengan pusat $(a, b)$ dan jari-jari $r$ dirumuskan dalam bentuk baku $(x - a)^2 + (y - b)^2 = r^2$. **Tips:** Kekeliruan tanda pada suku ordinat $(y - (-2))$ yang sering salah ditulis menjadi $(y - 2)$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-003",
@@ -110,7 +112,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk umum lingkaran $x^2 + y^2 + Ax + By + C = 0$ memiliki pusat pada titik $\\left(-\\frac{A}{2}, -\\frac{B}{2}\\right)$ dan jari-jari $r = \\sqrt{\\left(-\\frac{A}{2}\\right)^2 + \\left(-\\frac{B}{2}\\right)^2 - C}$. **Tips:** Lupa membagi dua koefisien linier saat menentukan pusat atau keliru tanda minus pada $-C$, yaitu $-(-11) = +11$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-004",
@@ -143,7 +146,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jari-jari lingkaran berpusat di $O(0, 0)$ yang melalui titik $(x_1, y_1)$ sama dengan jarak titik tersebut ke titik asal, dengan $r^2 = x_1^2 + y_1^2$. **Tips:** Menuliskan persamaan dengan pusat di titik $P$ alih-alih di titik asal $O(0,0)$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-005",
@@ -176,7 +180,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sebuah lingkaran dengan pusat $(a, b)$ yang menyinggung sumbu-$X$ memiliki panjang jari-jari yang sama dengan nilai mutlak dari ordinat pusatnya: $r = |b|$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-006",
@@ -209,7 +214,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik pusat lingkaran yang memiliki diameter dengan ujung $A(x_1, y_1)$ dan $B(x_2, y_2)$ adalah titik tengah segmen garis $AB$, dan jari-jarinya adalah setengah dari panjang segmen garis $AB$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-007",
@@ -242,7 +248,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jari-jari lingkaran yang menyinggung garis $Ax + By + C = 0$ sama dengan jarak tegak lurus dari titik pusat $(x_0, y_0)$ ke garis tersebut: $r = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-008",
@@ -275,7 +282,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua lingkaran konsentris memiliki koordinat titik pusat yang identik. Karena luas lingkaran sebanding dengan kuadrat jari-jarinya ($L = \\pi r^2$), maka luas yang berlipat ganda berarti kuadrat jari-jari barunya menjadi dua kali kuadrat jari-jari awal."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-009",
@@ -308,7 +316,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Segitiga $OAB$ merupakan segitiga siku-siku di titik $O(0, 0)$. Berdasarkan teorema Thales, hipotenusa $AB$ bertindak sebagai diameter dari lingkaran luar segitiga tersebut."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-010",
@@ -341,7 +350,8 @@
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Lingkaran di kuadran IV yang menyinggung kedua sumbu koordinat memiliki titik pusat $(r, -r)$ dengan panjang jari-jari $r > 0$, sehingga persamaannya adalah $(x - r)^2 + (y + r)^2 = r^2$."
   },
   {
     "id": "mudah-mtk-11",
@@ -374,7 +384,8 @@
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-lingkaran",
-    "subTopicSlug": "persamaan-lingkaran"
+    "subTopicSlug": "persamaan-lingkaran",
+    "hint": "Jari-Jari Lingkaran Bentuk Umum $x^2 + y^2 + Ax + By + C = 0$: Titik pusat $(a, b) = \\left(-\\frac{1}{2}A, -\\frac{1}{2}B\\right)$ Jari-jari: $r = \\sqrt{a^2 + b^2 - C}$. **Tips:** Perhatikan tanda negatif pada $C = -11$."
   }
 ];
 

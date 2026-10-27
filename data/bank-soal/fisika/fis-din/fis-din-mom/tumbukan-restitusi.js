@@ -44,7 +44,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Koefisien restitusi didefinisikan sebagai rasio negatif selisih kecepatan relatif setelah tumbukan terhadap sebelum tumbukan: $e = -\\frac{v_2' - v_1'}{v_2 - v_1}$. Pada tumbukan tidak lenting sama sekali, kedua benda menempel dan bergerak bersama dengan kecepatan yang sama ($v_1' = v_2'$), sehingga selisih kecepatan akhirnya nol dan $e = 0$."
   },
   {
     "id": "fis-din-mom-tumbukan-002",
@@ -77,7 +78,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada tumbukan tidak lenting sama sekali, berlaku hukum kekekalan momentum linier dengan massa gabungan setelah tumbukan: $m_A v_A + m_B v_B = (m_A + m_B) v'$."
   },
   {
     "id": "fis-din-mom-tumbukan-003",
@@ -110,7 +112,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada bola yang dijatuhkan dan memantul di permukaan lantai masif yang diam, koefisien restitusi dihubungkan secara langsung dengan rasio akar ketinggian: $e = \\sqrt{\\frac{h_2}{h_1}}$."
   },
   {
     "id": "fis-din-mom-tumbukan-004",
@@ -143,7 +146,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tumbukan lenting sempurna ditandai oleh dua prinsip fundamental kekekalan: (1) Kekekalan momentum linier: $\\sum p_{\\text{awal}} = \\sum p_{\\text{akhir}}$, dan (2) Kekekalan energi kinetik: $\\sum E_{k,\\text{awal}} = \\sum E_{k,\\text{akhir}}$. Karakteristik elastisitasnya dinyatakan oleh $e = 1$. **Tips:** Miskonsepsi umum adalah mengira semua tumbukan mempertahankan energi kinetik."
   },
   {
     "id": "fis-din-mom-tumbukan-005",
@@ -176,7 +180,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada tumbukan lenting sempurna satu dimensi antara dua benda yang bermassa identik ($m_1 = m_2$), terjadi pertukaran kecepatan secara sempurna di antara kedua benda: $v_1' = v_2$ dan $v_2' = v_1$."
   },
   {
     "id": "fis-din-mom-tumbukan-006",
@@ -209,7 +214,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Selesaikan sistem persamaan yang melibatkan dua hukum: (1) Hukum Kekekalan Momentum Linier: $m_A v_A + m_B v_B = m_A v_A' + m_B v_B'$, dan (2) Persamaan Koefisien Restitusi: $e = -\\frac{v_B' - v_A'}{v_B - v_A}$."
   },
   {
     "id": "fis-din-mom-tumbukan-007",
@@ -242,7 +248,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persoalan ayunan balistik dipecahkan dalam dua tahap: (1) Ayunan naik memenuhi Kekekalan Energi Mekanik: $V = \\sqrt{2 g h}$, dan (2) Tumbukan peluru dan balok memenuhi Kekekalan Momentum Linier: $m v_0 = (m + M) V$."
   },
   {
     "id": "fis-din-mom-tumbukan-008",
@@ -275,7 +282,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi yang hilang adalah selisih energi kinetik sebelum dan sesudah tumbukan: $\\Delta E_k = E_{k,\\text{awal}} - E_{k,\\text{akhir}}$. Kecepatan akhir gabungan dicari melalui Hukum Kekekalan Momentum Linier. **Tips:** Jangan keliru menganggap energi kinetik akhir adalah energi yang hilang."
   },
   {
     "id": "fis-din-mom-tumbukan-009",
@@ -308,7 +316,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinggi pantulan ke-$n$ pada tumbukan bola berulang dengan lantai mengikuti deret geometri: $h_n = e^{2n} h_0$, di mana rasio ketinggian setiap pantulan berurutan adalah $\\frac{h_k}{h_{k-1}} = e^2$."
   },
   {
     "id": "fis-din-mom-tumbukan-010",
@@ -341,7 +350,8 @@
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tumbukan lenting sempurna dua dimensi antara dua partikel bermassa identik di mana salah satu partikel awalnya diam, kedua vektor kecepatan akhir selalu saling tegak lurus: $\\theta_1 + \\theta_2 = 90^\\circ$. Hubungan komponen trigonometrinya adalah $v_1' = v_0 \\cos\\theta_1$ dan $v_2' = v_0 \\sin\\theta_1$."
   },
   {
     "id": "sedang-fis-09",
@@ -374,7 +384,8 @@
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "tumbukan-restitusi"
+    "subTopicSlug": "tumbukan-restitusi",
+    "hint": "Karakteristik Tumbukan Lenting Sempurna Dua Massa Identik ($m_1 = m_2, e = 1$): Kedua benda akan saling bertukar kecepatan secara utuh: $$v_1' = v_2 \\quad \\text{dan} \\quad v_2' = v_1$$."
   },
   {
     "id": "sup-fis-din-02",
@@ -407,7 +418,8 @@
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "tumbukan-restitusi"
+    "subTopicSlug": "tumbukan-restitusi",
+    "hint": "Pada tumbukan tidak lenting sama sekali ($e = 0$), kedua benda bergabung menjadi satu massa dengan kecepatan akhir bersama ($v'$): $m_1 v_1 + m_2 v_2 = (m_1 + m_2) v'$. **Tips:** Lupa mengonversi satuan gram ke kilogram atau salah menjumlahkan massa total peluru dan balok."
   }
 ];
 

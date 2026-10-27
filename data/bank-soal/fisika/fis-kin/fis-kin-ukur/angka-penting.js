@@ -44,7 +44,8 @@
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "angka-penting"
+    "subTopicSlug": "angka-penting",
+    "hint": "Aturan Angka Penting pada Operasi Perkalian/Pembagian: Hasil operasi perkalian atau pembagian hanya boleh memiliki jumlah angka penting sebanyak faktor pengali yang memiliki angka penting paling sedikit ."
   },
   {
     "id": "sup-fis-kin-03",
@@ -77,7 +78,8 @@
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "angka-penting"
+    "subTopicSlug": "angka-penting",
+    "hint": "Hasil penjumlahan atau pengurangan hanya boleh mengandung satu angka taksiran , yang ditentukan oleh suku dengan angka di belakang koma paling sedikit (paling tidak teliti). **Tips:** Menggunakan aturan perkalian (jumlah AP paling sedikit) bukannya aturan penjumlahan (angka di belakang koma paling sedikit)."
   },
   {
     "id": "fis-kin-ukur-angka-001",
@@ -110,7 +112,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "1) Angka bukan nol adalah angka penting. 2) Angka nol di sebelah kiri angka bukan nol pertama bukan angka penting. 3) Angka nol di antara angka bukan nol adalah angka penting. 4) Angka nol di sebelah kanan tanda desimal yang mengikuti angka bukan nol adalah angka penting."
   },
   {
     "id": "fis-kin-ukur-angka-002",
@@ -143,7 +146,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Aturan perkalian dan pembagian angka penting: hasil operasi perkalian atau pembagian hanya boleh memiliki jumlah angka penting sebanyak angka penting yang paling sedikit dari komponen besaran yang dikalikan."
   },
   {
     "id": "fis-kin-ukur-angka-003",
@@ -176,7 +180,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Aturan penjumlahan dan pengurangan angka penting: hasil operasi penjumlahan atau pengurangan hanya boleh memiliki satu angka taksiran (posisi desimal paling tidak teliti di antara bilangan yang dijumlahkan)."
   },
   {
     "id": "fis-kin-ukur-angka-004",
@@ -209,7 +214,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian antara bilangan hasil pengukuran dengan bilangan eksak (bilangan bulat cacah hasil membilang) menghasilkan jumlah angka penting yang sama dengan jumlah angka penting pada bilangan hasil pengukuran."
   },
   {
     "id": "fis-kin-ukur-angka-005",
@@ -242,7 +248,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Operasi pembagian angka penting $\\rho = \\frac{m}{V}$ mengikuti jumlah angka penting paling sedikit di antara besaran pembagi dan yang dibagi."
   },
   {
     "id": "fis-kin-ukur-angka-006",
@@ -275,7 +282,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Aturan penarikan akar dan pemangkatan pada angka penting: hasil penarikan akar kuadrat memiliki jumlah angka penting yang sama persis dengan jumlah angka penting dari bilangan yang ditarik akarnya."
   },
   {
     "id": "fis-kin-ukur-angka-007",
@@ -308,7 +316,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada operasi gabungan, aturan penjumlahan (angka taksiran paling tidak teliti) diterapkan terlebih dahulu pada jarak total, kemudian aturan pembagian (jumlah angka penting tersedikit) diterapkan pada perhitungan kelajuan rata-rata $v = \\frac{s_{\\text{total}}}{t}$."
   },
   {
     "id": "fis-kin-ukur-angka-008",
@@ -341,7 +350,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada operasi kuadrat, angka penting awal menentukan presisi hasil pemangkatan. Pada operasi pengurangan, hasil akhir ditentukan oleh posisi desimal taksiran paling tidak teliti."
   },
   {
     "id": "fis-kin-ukur-angka-009",
@@ -374,7 +384,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perhitungan persentase melibatkan operasi pembagian dan perkalian dengan faktor 100% (bilangan eksak). Jumlah angka penting hasil akhir ditentukan oleh komponen pengukuran dengan angka penting paling sedikit."
   },
   {
     "id": "fis-kin-ukur-angka-010",
@@ -407,7 +418,8 @@
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Aturan pembulatan genap (round-to-even / Gaussian rounding): jika angka yang dibuang tepat sama dengan 5 (atau 5 diikuti nol), maka jika angka sebelumnya ganjil dibulatkan ke atas menjadi genap, dan jika angka sebelumnya genap dibiarkan tetap (tidak berubah). **Tips:** Aturan pembulatan sekolah dasar tradisional selalu menaikkan angka 5 ke atas ($24{,}4$ dan $24{,}7$, )."
   }
 ];
 

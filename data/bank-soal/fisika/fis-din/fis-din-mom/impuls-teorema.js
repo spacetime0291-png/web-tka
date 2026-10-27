@@ -44,7 +44,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Impuls ($I$) didefinisikan sebagai hasil kali antara gaya konstan $F$ dan selang waktu kerjanya $\\Delta t$: $I = F \\Delta t$. Satuan SI untuk impuls adalah newton-sekon ($\\text{N}\\cdot\\text{s}$)."
   },
   {
     "id": "fis-din-mom-impuls-002",
@@ -77,7 +78,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Teorema impuls-momentum menyatakan bahwa impuls yang bekerja pada suatu benda sama dengan perubahan momentum benda tersebut: $I = \\bar{F} \\Delta t = \\Delta p = m(v_t - v_0)$."
   },
   {
     "id": "fis-din-mom-impuls-003",
@@ -110,7 +112,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Secara integral matematis, impuls didefinisikan sebagai integral gaya terhadap waktu: $I = \\int_{t_1}^{t_2} F(t) dt$. Nilai integral tentu ini tepat sama dengan luas daerah di bawah kurva $F - t$. **Tips:** Kerap tertukar dengan kurva grafik $F - s$ (gaya terhadap posisi)."
   },
   {
     "id": "fis-din-mom-impuls-004",
@@ -143,7 +146,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Impuls sama dengan perubahan momentum: $I = \\Delta p = m(v_2 - v_1)$. Ingat bahwa kecepatan merupakan besaran vektor sehingga arah bolak-balik harus dihitung dengan tanda positif dan negatif."
   },
   {
     "id": "fis-din-mom-impuls-005",
@@ -176,7 +180,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan impuls dan gaya rata-rata: $\\bar{F} = \\frac{\\Delta p}{\\Delta t}$. Ketika mobil berhenti dari kelajuan tertentu, perubahan momentum penumpang ($Delta p$) bernilai tetap. Dengan memperpanjang durasi tumbukan ($Delta t$), gaya rata-rata impulsif ($\bar{F}$) yang dialami penumpang dapat diperkecil secara drastis. **Tips:** Airbag tidak mengurangi perubahan momentum total (pengemudi tetap harus melambat dari kelajuan semula sampai nol)."
   },
   {
     "id": "fis-din-mom-impuls-006",
@@ -209,7 +214,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Impuls gaya sama dengan luas daerah di bawah grafik gaya terhadap waktu ($F - t$). Menurut teorema impuls-momentum, impuls total menghasilkan perubahan momentum linier benda: $I = \\text{Luas} = m(v_t - v_0)$."
   },
   {
     "id": "fis-din-mom-impuls-007",
@@ -242,7 +248,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perubahan kecepatan adalah besaran vektor dua dimensi ortogonal (tegak lurus): $|\\Delta \\vec{v}| = \\sqrt{v_x^2 + v_y^2}$. Gaya rata-rata impulsif dihitung melalui: $\\bar{F} = \\frac{m |\\Delta \\vec{v}|}{\\Delta t}$."
   },
   {
     "id": "fis-din-mom-impuls-008",
@@ -275,7 +282,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya pada aliran fluida kontinu yang momentumnya diserap dinding diturunkan dari Hukum II Newton bentuk massa laju alir: $F = \\frac{\\Delta p}{\\Delta t} = \\frac{\\Delta m}{\\Delta t} \\Delta v$. **Tips:** Jangan membagi dengan faktor 2 seolah-olah menghitung energi kinetik."
   },
   {
     "id": "fis-din-mom-impuls-009",
@@ -308,7 +316,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan sesaat sebelum dan sesudah tumbukan diperoleh dari prinsip kekekalan energi mekanik/GLBB jatuh bebas: $v_1 = \\sqrt{2 g h_1}$ dan $v_2 = \\sqrt{2 g h_2}$. Gaya netto rata-rata dihitung melalui perubahan momentum: $\\bar{F}_{\\text{net}} = \\frac{m \\Delta v}{\\Delta t}$."
   },
   {
     "id": "fis-din-mom-impuls-010",
@@ -341,7 +350,8 @@
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena $F(t) \\ge 0$ untuk rentang $0 \\le t \\le 4$, arah gaya selalu searah dengan gerak benda sehingga benda mengalami percepatan positif sepanjang selang waktu tersebut. Kecepatan maksimum terjadi saat gaya berakhir ($t = 4\\text{ s}$). Impuls total diperoleh dari integral tentu: $I = \\int_0^4 F(t) dt$."
   },
   {
     "id": "mudah-fis-06",
@@ -374,7 +384,8 @@
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "impuls-teorema"
+    "subTopicSlug": "impuls-teorema",
+    "hint": "Gunakan perumusan konsep fisis: $$p = m \\cdot v$$. **Tips:** Pastikan satuan massa dalam kilogram (kg) dan kecepatan dalam meter per detik (m/s)."
   },
   {
     "id": "sup-fis-din-01",
@@ -407,7 +418,8 @@
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "impuls-teorema"
+    "subTopicSlug": "impuls-teorema",
+    "hint": "Teorema Impuls-Momentum (Vektor): Impuls gaya sama dengan perubahan momentum partikel: $\\vec{I} = \\vec{F} \\cdot \\Delta t = \\Delta \\vec{p} = m(\\vec{v}_2 - \\vec{v}_1)$. Perhatikan tanda positif dan negatif arah vektor kecepatan!"
   }
 ];
 

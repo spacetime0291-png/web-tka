@@ -188,6 +188,35 @@ h4, h5, h6 {
   border-color: #18181B;
 }
 
+.tactile-btn-hint {
+  background: var(--card-bg);
+  color: var(--ink);
+  font-weight: 500;
+  border: 1.5px solid var(--ink);
+}
+
+.tactile-btn-hint:hover {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.dark .tactile-btn-hint:hover {
+  background: #78350F;
+  color: #FDE68A;
+}
+
+.tactile-btn-hint.active {
+  background: #FDE68A;
+  color: #78350F;
+  border-color: #78350F;
+}
+
+.dark .tactile-btn-hint.active {
+  background: #92400E;
+  color: #FEF3C7;
+  border-color: #FDE68A;
+}
+
 .tactile-btn-exit {
   background: var(--card-bg);
   color: #DC2626;
@@ -680,6 +709,88 @@ h4, h5, h6 {
 /* Option disabled after verification */
 .option-card.disabled-verified {
   cursor: default;
+}
+
+/* ==========================================================================
+   Accordion Hint (Petunjuk Pengerjaan)
+   ========================================================================== */
+.hint-accordion {
+  margin-top: 20px;
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  background: var(--card-bg);
+  box-shadow: 3px 3px 0px 0px var(--shadow-color);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.hint-header-btn {
+  width: 100%;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 1.5px solid transparent;
+  transition: background-color 0.12s ease;
+}
+
+.hint-header-btn:hover {
+  background: var(--bg);
+}
+
+.hint-header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.hint-chevron {
+  font-size: 1rem;
+  color: var(--ink);
+  transition: transform 0.2s ease;
+}
+
+.hint-accordion.open .hint-chevron {
+  transform: rotate(180deg);
+}
+
+.hint-accordion.open .hint-header-btn {
+  border-bottom-color: var(--ink);
+}
+
+.hint-body {
+  display: none;
+  padding: 16px 20px;
+  background: #FFFBEB;
+  color: #78350F;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  border-left: 4px solid #F59E0B;
+}
+
+.dark .hint-body {
+  background: #2D2415;
+  color: #FDE68A;
+  border-left-color: #D97706;
+}
+
+.hint-accordion.open .hint-body {
+  display: block;
+}
+
+.hint-block-content {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
 }
 
 /* ==========================================================================

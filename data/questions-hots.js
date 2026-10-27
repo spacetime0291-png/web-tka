@@ -31,7 +31,8 @@ window.QUESTIONS_HOTS = [
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-gaya-torsi"
+    "subTopicSlug": "momen-gaya-torsi",
+    "hint": "Prinsip Dinamika Sistem Translasi & Rotasi Terkopel: 1. Hukum II Newton Translasi: $\\Sigma F = m a$ 2. Hukum II Newton Rotasi: $\\Sigma \\tau = I \\alpha$ 3. Syarat Tali Tidak Selip (No-slip): $a = \\alpha R \\iff \\alpha = \\frac{a}{R}$ 4. Momen Inersia Silinder Pejal Homogen: $I = \\frac{1}{2} M R^2$. **Tips:** Pada sistem di mana katrol memiliki massa, tegangan tali pada kedua sisi katrol TIDAK sama ($T_1 \\neq T_2$)."
   },
   {
     "id": "hots-fis-03",
@@ -64,7 +65,8 @@ window.QUESTIONS_HOTS = [
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-dinamis",
-    "subTopicSlug": "debit-persamaan-kontinuitas"
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "hint": "Teorema Torricelli & Gaya Reaksi Aliran Fluida: 1. Kecepatan pancaran Torricelli: $v = \\sqrt{2gh}$ (dengan $h$ kedalaman dari permukaan air) 2. Debit aliran massa: $\\dot{m} = \\rho Q = \\rho A v$ 3. Gaya reaksi dorong impuls fluida (Hukum III Newton): $F_{\\text{reaksi}} = \\dot{m} v = \\rho A v^2$."
   },
   {
     "id": "hots-fis-02",
@@ -97,7 +99,8 @@ window.QUESTIONS_HOTS = [
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-dc",
-    "subTopicSlug": "hukum-1-dan-2-kirchhoff"
+    "subTopicSlug": "hukum-1-dan-2-kirchhoff",
+    "hint": "Analisis Tegangan Nodal (Node Voltage Method): Tetapkan simpul referensi tanah (ground) pada simpul bawah $B$ dengan $V_B = 0\\text{ V}$. Maka beda potensial $V_{AB} = V_A - 0 = V_A$. $$\\Sigma I_{\\text{keluar dari node } A} = 0 \\implies \\sum \\frac{V_A - V_k}{R_k} = 0$$. **Tips:** Sering terjadi kekeliruan polaritas baterai: pelat panjang bernilai positif ($+24\\text{ V}$ dan $+12\\text{ V}$)."
   },
   {
     "id": "hots-mtk-03",
@@ -130,7 +133,8 @@ window.QUESTIONS_HOTS = [
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
     "subChapterId": "fun-trig-dasar",
-    "subTopicSlug": "identitas-pythagoras"
+    "subTopicSlug": "identitas-pythagoras",
+    "hint": "King's Property Sifat Simetri Integral: $$\\int_{a}^{b} f(x)\\,dx = \\int_{a}^{b} f(a+b-x)\\,dx$$ Khusus untuk batas $[0, \\pi]$ dengan $x \\cdot g(\\sin x)$: $$\\int_{0}^{\\pi} x g(\\sin x)\\,dx = \\frac{\\pi}{2} \\int_{0}^{\\pi} g(\\sin x)\\,dx$$."
   },
   {
     "id": "hots-mtk-01",
@@ -163,7 +167,8 @@ window.QUESTIONS_HOTS = [
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-trans",
-    "subTopicSlug": "komposisi-transformasi"
+    "subTopicSlug": "komposisi-transformasi",
+    "hint": "Perkalian Matriks Komposisi Transformasi: • Refleksi garis $y = -x$: $M_1 = \\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$ • Rotasi $+90^\\circ$: $M_2 = \\begin{pmatrix} \\cos 90^\\circ & -\\sin 90^\\circ \\\\ \\sin 90^\\circ & \\cos 90^\\circ \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$ • Matriks komposisi $T = M_2 \\cdot M_1$ (dikalikan dari kanan ke kiri)."
   },
   {
     "id": "hots-mtk-02",
@@ -196,7 +201,8 @@ window.QUESTIONS_HOTS = [
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-trigonometri"
+    "subTopicSlug": "limit-fungsi-trigonometri",
+    "hint": "• $\\cos A - \\cos B = -2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$ • $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$ dan $\\lim_{x \\to 0} \\frac{cx}{\\tan dx} = \\frac{c}{d}$. **Tips:** Tanda minus pada rumus selisih kosinus $-2\\sin\\sin$ sangat vital."
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_HOTS;

@@ -44,7 +44,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tinggi maksimum ($h_{\\max}$) gerak parabola tercapai ketika komponen kecepatan vertikal nol ($v_y = 0$): $$h_{\\max} = \\frac{v_0^2 \\sin^2\\theta}{2g}$$. **Tips:** Lupa membagi dengan faktor 2 pada penyebut ($2g$) sehingga menghasilkan $40\\text{ m}$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-002",
@@ -77,7 +78,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Di titik puncak gerak parabola, kecepatan vertikal bernilai nol ($v_y = 0$). Namun, kecepatan horizontal tetap tidak nol dan konstan sepanjang lintasan ($v_x = v_{0x} = v_0 \\cos\\theta$). Maka kelajuan total di puncak sama dengan kelajuan horizontalnya."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-003",
@@ -110,7 +112,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jangkauan horizontal terjauh ($X_{\\max}$) pada tanah datar dirumuskan dengan: $$X_{\\max} = \\frac{v_0^2 \\sin(2\\theta)}{g}$$. **Tips:** Lupa bahwa rumus jangkauan terjauh memuat sudut rangkap $\\sin(2\\theta)$, bukan $\\sin\\theta$ biasa."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-004",
@@ -143,7 +146,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jangkauan mendatar dirumuskan oleh $X = \\frac{v_0^2 \\sin(2\\theta)}{g}$. Jangkauan akan bernilai maksimum ketika fungsi trigonometri $\\sin(2\\theta)$ bernilai maksimum, yaitu sama dengan 1."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-005",
@@ -176,7 +180,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada lintasan simetris di atas tanah datar tanpa hambatan udara, waktu naik menuju puncak ($t_p$) sama persis dengan waktu turun dari puncak ke tanah ($t_t$). Maka waktu total di udara adalah: $$t_{\\text{total}} = 2 t_p$$. **Tips:** Menganggap waktu total di udara sama dengan waktu mencapai titik tertinggi ($3\\text{ sekon}$)."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-006",
@@ -209,7 +214,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan umum antara tinggi maksimum dan jarak mendatar terjauh pada tanah datar memenuhi: $$\\frac{h_{\\max}}{X_{\\max}} = \\frac{1}{4} \\tan\\theta$$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-007",
@@ -242,7 +248,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Di titik puncak, komponen kecepatan vertikal nol ($v_y = 0$). Kelajuan partikel hanya tersisa komponen horizontal konstan ($v_x = v_0 \\cos\\theta$). Maka energi kinetik di puncak adalah $E_{k,\\text{puncak}} = E_k \\cos^2\\theta$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-008",
@@ -275,7 +282,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kelajuan di puncak menyatakan komponen horizontal konstan ($v_x = 20\\text{ m/s}$). Waktu naik menuju puncak dapat dihitung dari ketinggian maksimum ($h_{\\max} = \\frac{1}{2} g t_p^2$). Jarak mendatar adalah hasil kali kelajuan horizontal dengan waktu total di udara ($t_{\\text{total}} = 2 t_p$)."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-009",
@@ -308,7 +316,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketinggian maksimum total diukur dari permukaan tanah ($H_{\\text{total}}$) adalah jumlahan ketinggian awal gedung ($H$) dengan pertambahan ketinggian maksimum gerak parabola ($\\Delta h_{\\max}$): $$H_{\\text{total}} = H + \\frac{v_0^2 \\sin^2\\theta}{2g}$$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-010",
@@ -341,7 +350,8 @@
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinggi maksimum berbanding lurus dengan kuadrat sinus sudut elevasinya: $$h_{\\max} \\propto \\sin^2\\theta$$."
   },
   {
     "id": "mudah-fis-12",
@@ -374,7 +384,8 @@
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-lengkung",
-    "subTopicSlug": "titik-ekstrem-parabola"
+    "subTopicSlug": "titik-ekstrem-parabola",
+    "hint": "Waktu Mencapai Titik Tertinggi Gerak Parabola: Pada titik puncak, komponen kecepatan vertikal bernilai nol ($v_y = 0$). $$t_h = \\frac{v_0 \\sin\\theta}{g}$$."
   }
 ];
 

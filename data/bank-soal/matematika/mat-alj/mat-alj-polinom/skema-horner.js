@@ -44,7 +44,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Skema sintetik bagan Horner menggunakan nilai pembuat nol dari pembagi linear. Untuk pembagi $(x - c)$, nilai pembuat nol diperoleh dari $x - c = 0 \\implies x = c$. **Tips:** Sering salah tanda dengan langsung mengambil angka pembagi tanpa mencari pembuat nolnya, yaitu memilih $-3$."
   },
   {
     "id": "mat-alj-polinom-horner-002",
@@ -77,7 +78,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bagan Horner untuk pembagi $(x - 2)$ menggunakan pengali $k = 2$. Koefisien baris bawah memberikan koefisien hasil bagi dan angka paling akhir adalah sisa pembagian. **Tips:** Mengurangkan baris pada bagan Horner alih-alih menjumlahkannya (Horner menggunakan operasi penjumlahan)."
   },
   {
     "id": "mat-alj-polinom-horner-003",
@@ -110,7 +112,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Teorema Sisa dan algoritma sintetik Horner, nilai $P(k)$ sama persis dengan sisa pembagian $P(x)$ oleh $(x - k)$ pada kolom terakhir bagan Horner. **Tips:** Salah hitung aritmetika saat menjumlahkan $-7 + 18$."
   },
   {
     "id": "mat-alj-polinom-horner-004",
@@ -143,7 +146,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika polinomial $P(x)$ dibagi oleh $(ax - b)$ menggunakan bagan Horner dengan pengali $k = \\frac{b}{a}$, maka koefisien hasil bagi pada bagan harus dibagi lagi dengan koefisien $a$: $H(x) = \\frac{H^*(x)}{a}$."
   },
   {
     "id": "mat-alj-polinom-horner-005",
@@ -176,7 +180,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada bagan Horner, semua derajat variabel mulai dari derajat tertinggi hingga konstanta derajat nol ($x^0$) harus disertakan. Jika suatu suku tidak tertulis dalam polinomial, koefisien suku tersebut bernilai 0. **Tips:** Melewatkan suku-suku yang tidak tertulis sehingga bagan Horner bergeser dan menghasilkan jawaban yang salah total."
   },
   {
     "id": "mat-alj-polinom-horner-006",
@@ -209,7 +214,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada metode Horner Kino untuk pembagi berderajat dua $Q(x) = x^2 - c_1 x - c_0$, persamaan pembuat nol diubah menjadi $x^2 = c_1 x + c_0$. Nilai pengali pada bagan Horner Kino adalah $k_1 = -(-c_0) = c_0$ (pengali konstanta) dan $k_2 = -(-c_1) = c_1$ (pengali koefisien linear). **Tips:** Lupa mengubah tanda negatif dari koefisien pembagi sehingga memilih $-2$ dan $-1$."
   },
   {
     "id": "mat-alj-polinom-horner-007",
@@ -242,7 +248,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koefisien $A, B, C, D$ dari ekspansi Taylor polinomial dalam pangkat $(x - c)$ dapat ditentukan melalui sisa-sisa pembagian bertingkat menggunakan bagan Horner berulang pada $x = c$. **Tips:** Urutan penamaan koefisien terbalik dari $A$ ke $D$ atau salah mengalikan pada baris kedua."
   },
   {
     "id": "mat-alj-polinom-horner-008",
@@ -275,7 +282,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sisa pembagian pada bagan Horner merupakan elemen terakhir yang diperoleh dari akumulasi operasi kali dan tambah berturut-turut. **Tips:** Lupa mengalikan 2 pada suku $(4a + 15)$ sebelum menambahkan ke konstanta $-6$."
   },
   {
     "id": "mat-alj-polinom-horner-009",
@@ -308,7 +316,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suku banyak dibagi bertingkat oleh $(x - c)$ dua kali menghasilkan sisa pertama $S_1$ dan sisa kedua $S_2$, maka rumus sisa pembagian total oleh $(x - c)^2$ adalah $S(x) = S_2(x - c) + S_1$."
   },
   {
     "id": "mat-alj-polinom-horner-010",
@@ -341,7 +350,8 @@
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk pembagi $(ax + b)$, nilai pembuat nol pada bagan adalah $k = -\\frac{b}{a}$. Hasil bagi sebenarnya diperoleh dengan membagi koefisien baris bawah dengan $a$, sedangkan nilai sisa pada kolom terakhir tidak dibagi dengan $a$. **Tips:** Ikut membagi sisa pembagian dengan 3 sehingga menjawab sisa 2, atau lupa membagi hasil bagi dengan 3."
   }
 ];
 

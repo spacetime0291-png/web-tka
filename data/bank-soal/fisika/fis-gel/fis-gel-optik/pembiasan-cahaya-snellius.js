@@ -44,7 +44,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)$$."
   },
   {
     "id": "fis-gel-optik-bias-002",
@@ -77,7 +78,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Indeks bias mutlak suatu medium ($n$) didefinisikan sebagai perbandingan cepat rambat cahaya di ruang hampa ($c$) terhadap cepat rambat cahaya di dalam medium tersebut ($v$): $$n = \\frac{c}{v} \\implies v = \\frac{c}{n}$$."
   },
   {
     "id": "fis-gel-optik-bias-003",
@@ -110,7 +112,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat terjadinya pemantulan internal total (pemantulan sempurna): 1. Sinar merambat dari medium optik lebih rapat menuju medium optik kurang rapat ($n_1 > n_2$). 2. Sudut datang sinar ($i$) lebih besar daripada sudut kritis ($i > \\theta_k$). Pada kondisi ini, tidak ada sinar yang dibiaskan keluar melainkan seluruhnya dipantulkan kembali ke medium asal."
   },
   {
     "id": "fis-gel-optik-bias-004",
@@ -143,7 +146,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sudut kritis ($\\theta_k$) adalah sudut datang yang menghasilkan sudut bias tepat $\\theta_2 = 90^\\circ$. Berdasarkan hukum Snellius: $$n_1 \\sin(\\theta_k) = n_2 \\sin(90^\\circ) \\implies \\sin(\\theta_k) = \\frac{n_2}{n_1}$$. **Tips:** Pastikan pembilang adalah indeks bias medium tujuan ($n_2$) dan penyebut adalah indeks bias medium asal ($n_1$)."
   },
   {
     "id": "fis-gel-optik-bias-005",
@@ -176,7 +180,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kedalaman semu ($h'$) saat suatu benda di dalam zat cair dilihat secara tegak lurus dari medium pengamat dirumuskan: $$h' = h \\times \\frac{n_{\\text{mata}}}{n_{\\text{benda}}}$$."
   },
   {
     "id": "fis-gel-optik-bias-006",
@@ -209,7 +214,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut deviasi minimum ($\\delta_m$) pada prisma dengan sudut pembias besar memenuhi persamaan Snellius prisma: $$\\sin\\left(\\frac{\\delta_m + \\beta}{2}\\right) = \\frac{n_{\\text{prisma}}}{n_{\\text{medium}}} \\sin\\left(\\frac{\\beta}{2}\\right)$$."
   },
   {
     "id": "fis-gel-optik-bias-007",
@@ -242,7 +248,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sinar yang melewati kaca plan paralel mengalami pergeseran lateral ($t$) sejajar sinar datang yang dirumuskan: $$t = d \\times \\frac{\\sin(i - r)}{\\cos(r)}$$ dengan sudut bias $r$ ditentukan melalui hukum Snellius: $n_1 \\sin(i) = n_2 \\sin(r)$. **Tips:** Pastikan penyebutnya adalah $\\cos(r)$, bukan $\\cos(i)$."
   },
   {
     "id": "fis-gel-optik-bias-008",
@@ -275,7 +282,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi transmisi serat optik bergantung pada pemantulan internal total di dinding batas antara inti ($n_1$) dan selubung ($n_2$). Nilai sinus sudut kritis pada antarmuka inti-selubung dirumuskan: $$\\sin(\\theta_k) = \\frac{n_2}{n_1}$$. **Tips:** Syarat serat optik selalu menuntut $n_{\\text{inti}} > n_{\\text{selubung}}$ agar pemantulan total dapat terjadi."
   },
   {
     "id": "fis-gel-optik-bias-009",
@@ -308,7 +316,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan pembiasan pada permukaan lengkung tunggal (permukaan sferis): $$\\frac{n_1}{s} + \\frac{n_2}{s'} = \\frac{n_2 - n_1}{R}$$. **Tips:** Perhatikan koefisien indeks bias di atas pembilang: $n_1$ untuk jarak benda ($s$) dan $n_2$ untuk jarak bayangan ($s'$)."
   },
   {
     "id": "fis-gel-optik-bias-010",
@@ -341,7 +350,8 @@
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kedalaman semu total ($h'$) untuk sistem multi-lapisan zat cair dilihat tegak lurus dari udara ($n_u = 1$) adalah penjumlahan kedalaman semu masing-masing lapisan: $$h' = \\sum \\frac{h_i}{n_i} = \\frac{h_B}{n_B} + \\frac{h_A}{n_A}$$."
   },
   {
     "id": "sup-fis-gel-03",
@@ -374,7 +384,8 @@
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "pembiasan-cahaya-snellius"
+    "subTopicSlug": "pembiasan-cahaya-snellius",
+    "hint": "Gunakan perumusan konsep fisis: $n_1 \\sin i = n_2 \\sin r$, dengan $i$ sudut datang dan $r$ sudut bias terhadap garis normal. **Tips:** Membalik indeks bias medium sehingga menghasilkan $\\sin r = \\frac{3}{4}$."
   },
   {
     "id": "drill-cah-02",
@@ -407,7 +418,8 @@
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "pembiasan-cahaya-snellius"
+    "subTopicSlug": "pembiasan-cahaya-snellius",
+    "hint": "Indeks bias medium menyatakan perbandingan kelajuan cahaya di ruang hampa terhadap kelajuan cahaya di medium tersebut: $$n = \\frac{c}{v} \\implies v = \\frac{c}{n}$$. **Tips:** ⚠️ Konsep Kunci: Cahaya selalu merambat lebih lambat di dalam medium optik ($n > 1$) dibandingkan di ruang hampa."
   },
   {
     "id": "drill-cah-03",
@@ -440,7 +452,8 @@
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "pembiasan-cahaya-snellius"
+    "subTopicSlug": "pembiasan-cahaya-snellius",
+    "hint": "Syarat Pemantulan Total Sempurna & Sudut Kritis: 1. Cahaya harus merambat dari medium lebih rapat ke medium kurang rapat ($n_1 > n_2$). 2. Pada sudut kritis, sudut bias $r = 90^\\circ$ ($\\sin 90^\\circ = 1$): $$\\sin \\theta_k = \\frac{n_2}{n_1}$$. **Tips:** ⚠️ Cek Masuk Akal: Nilai sinus suatu sudut nyata tidak pernah boleh lebih dari 1."
   }
 ];
 

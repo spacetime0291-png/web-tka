@@ -44,7 +44,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Vektor perpindahan dari titik pangkal $A(x_1, y_1)$ menuju titik ujung $B(x_2, y_2)$ ditentukan dengan mengurangkan koordinat titik ujung terhadap titik pangkal: $\\vec{AB} = (x_2 - x_1)\\hat{i} + (y_2 - y_1)\\hat{j}$. **Tips:** Kesalahan tanda minus saat mengurangkan bilangan negatif $1 - (-3)$ yang sering keliru dihitung menjadi $1 - 3 = -2$."
   },
   {
     "id": "mat-geo-vektor-komponen-002",
@@ -77,7 +78,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada ruang dimensi tiga ($\\mathbb{R}^3$), komponen vektor kolom $\\vec{PQ}$ diperoleh dari selisih koordinat titik ujung $Q$ dengan koordinat titik pangkal $P$: $\\vec{PQ} = \\begin{pmatrix} x_Q - x_P \\\\ y_Q - y_P \\\\ z_Q - z_P \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-vektor-komponen-003",
@@ -110,7 +112,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Proyeksi komponen vektor terhadap sumbu koordinat dengan sudut arah $\\theta$ terhadap sumbu-$X$ positif dihitung menggunakan perbandingan trigonometri: $v_x = |\\vec{v}|\\cos(\\theta)$ dan $v_y = |\\vec{v}|\\sin(\\theta)$."
   },
   {
     "id": "mat-geo-vektor-komponen-004",
@@ -143,7 +146,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Vektor negatif atau invers aditif $-\\vec{u}$ memiliki besar yang sama persis namun arah yang berlawanan, diperoleh dengan mengalikan setiap komponen skalar dengan bilangan $-1$. **Tips:** Hanya mengubah tanda komponen pertama dan melupakan pengubahan tanda pada komponen kedua atau ketiga."
   },
   {
     "id": "mat-geo-vektor-komponen-005",
@@ -176,7 +180,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua vektor dikatakan sama jika dan hanya jika komponen-komponen skalar yang seletak dan sejajar dengan vektor basis yang bersesuaian bernilai sama besar."
   },
   {
     "id": "mat-geo-vektor-komponen-006",
@@ -209,7 +214,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor posisi titik pembagi ruas garis $P$ yang membagi $AB$ dengan rasio $m : n$ dirumuskan sebagai $\\vec{p} = \\frac{m\\vec{b} + n\\vec{a}}{m + n}$. **Tips:** Tertukar dalam memasangkan rasio pengali, yaitu mengalikan rasio $m$ dengan titik $A$ dan rasio $n$ dengan titik $B$."
   },
   {
     "id": "mat-geo-vektor-komponen-007",
@@ -242,7 +248,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tiga titik $A$, $B$, dan $C$ kolinier jika vektor $\\vec{AC}$ merupakan kelipatan skalar dari vektor $\\vec{AB}$, yaitu $\\vec{AC} = k \\cdot \\vec{AB}$."
   },
   {
     "id": "mat-geo-vektor-komponen-008",
@@ -275,7 +282,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor satuan yang searah dengan sembarang vektor $\\vec{v}$ diperoleh dengan membagi vektor tersebut dengan panjang (norma) mutlaknya: $\\hat{u} = \\frac{\\vec{v}}{|\\vec{v}|}$."
   },
   {
     "id": "mat-geo-vektor-komponen-009",
@@ -308,7 +316,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat suatu segitiga $ABC$ memiliki vektor posisi yang merupakan rata-rata aritmetika dari ketiga vektor posisi titik sudutnya: $\\vec{z} = \\frac{\\vec{a} + \\vec{b} + \\vec{c}}{3}$. **Tips:** Lupa membagi dengan 3 setelah menjumlahkan ketiga koordinat titik sudut segitiga."
   },
   {
     "id": "mat-geo-vektor-komponen-010",
@@ -341,7 +350,8 @@
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kombinasi linier $\\vec{w} = p\\vec{u} + q\\vec{v}$ diselesaikan dengan membentuk sistem persamaan linier dua variabel (SPLDV) dari kesamaan komponen vektor seletak. **Tips:** Kesalahan saat melakukan substitusi aljabar tanda minus $3(-8) = -24$ yang sering keliru menjadi tanda positif."
   }
 ];
 

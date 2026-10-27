@@ -44,7 +44,8 @@
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "analisis-grafik"
+    "subTopicSlug": "analisis-grafik",
+    "hint": "Geometri Luas Kurva Grafik $v-t$: Jarak tempuh total partikel pada gerak satu dimensi sama dengan luas daerah di bawah kurva grafik kecepatan terhadap waktu ($s = \\int v\\,dt = \\text{Luas Bidang}$)."
   },
   {
     "id": "fis-kin-gl-grafik-001",
@@ -77,7 +78,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Operasi kalkulus grafik gerak: • Gradien grafik posisi-waktu ($s-t$) adalah laju perubahan posisi terhadap waktu: $m = \\frac{\\Delta s}{\\Delta t} = v$ (kecepatan). • Luas daerah di bawah grafik kecepatan-waktu ($v-t$) adalah integral kecepatan terhadap waktu: $L = \\int v\\,dt = \\Delta s$ (perpindahan). **Tips:** Terkecoh antara gradien grafik $v-t$ (yang menyatakan percepatan) dengan gradien grafik $s-t$ (yang menyatakan kecepatan)."
   },
   {
     "id": "fis-kin-gl-grafik-002",
@@ -110,7 +112,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak tempuh pada grafik $v-t$ dihitung secara langsung dari luas bangun geometri di bawah kurva terhadap sumbu waktu ($t$). Kurva dari $(0,0)$ ke $(5,20)$ membentuk bangun segitiga siku-siku."
   },
   {
     "id": "fis-kin-gl-grafik-003",
@@ -143,7 +146,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis mendatar pada grafik $v-t$ menunjukkan bahwa nilai kecepatan konstan ($v(t) = C$). Karena kecepatannya tidak mengalami perubahan, maka percepatannya $a = \\frac{dv}{dt} = 0$, yang merupakan definisi dari GLB. **Tips:** Jangan tertukar dengan garis horizontal pada grafik $s-t$ (posisi-waktu)."
   },
   {
     "id": "fis-kin-gl-grafik-004",
@@ -176,7 +180,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta v = v_t - v_0 = \\int_{t_0}^t a(t)\\,dt$$ Integral tentu ini secara geometris diwakili oleh luas area di bawah kurva grafik $a-t$. **Tips:** Menyebutkan sebagai perpindahan (perpindahan adalah luas grafik $v-t$, bukan $a-t$)."
   },
   {
     "id": "fis-kin-gl-grafik-005",
@@ -209,7 +214,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak total dari grafik $v-t$ gabungan dihitung dari luas total bangun trapesium atau jumlahan luas segitiga (fase percepatan) dan persegi panjang (fase konstan)."
   },
   {
     "id": "fis-kin-gl-grafik-006",
@@ -242,7 +248,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada grafik $v-t$: • Perpindahan ($\\Delta x$) dihitung dari selisih luas area di atas sumbu-$t$ (positif) dikurangi luas area di bawah sumbu-$t$ (negatif): $\\Delta x = L_{\\text{atas}} - L_{\\text{bawah}}$. • Jarak total ($s$) dihitung dari jumlahan mutlak seluruh luas area: $s = L_{\\text{atas}} + L_{\\text{bawah}}$. **Tips:** Menyamakan nilai jarak dengan perpindahan atau tidak mengurangkan area di bawah sumbu waktu saat menghitung perpindahan."
   },
   {
     "id": "fis-kin-gl-grafik-007",
@@ -275,7 +282,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada grafik $v-t$: • Kelajuan sama terjadi pada titik potong kurva ($v_A(t) = v_B(t)$). • Posisi menyusul terjadi saat luas di bawah kurva kedua grafik bernilai sama ($s_A(t) = s_B(t)$)."
   },
   {
     "id": "fis-kin-gl-grafik-008",
@@ -308,7 +316,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan akhir partikel adalah jumlahan kecepatan awal dengan integral luas kurva grafik $a-t$: $$v_t = v_0 + \\Delta v = v_0 + \\text{Luas daerah bawah kurva } a-t$$."
   },
   {
     "id": "fis-kin-gl-grafik-009",
@@ -341,7 +350,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kemiringan garis singgung grafik posisi-waktu ($s-t$) menunjukkan kecepatan sesaat ($v = \\frac{ds}{dt}$): • Parabola membuka ke atas: kemiringan terus bertambah besar $\\implies$ kecepatan bertambah $\\implies$ GLBB dipercepat ($a > 0$). • Garis lurus miring dengan kemiringan tetap: kemiringan konstan $\\implies$ kecepatan tetap $\\implies$ GLB ($a = 0$). **Tips:** Terkecoh dengan grafik $v-t$."
   },
   {
     "id": "fis-kin-gl-grafik-010",
@@ -374,7 +384,8 @@
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketinggian total dihitung dari luas total grafik trapesium $v-t$. Waktu fase perlambatan dihitung dari perbandingan kecepatan puncak terhadap besar perlambatannya."
   }
 ];
 

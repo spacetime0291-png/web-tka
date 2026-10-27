@@ -44,7 +44,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan prinsip Bernoulli: 1) Bentuk aerofoil memaksa udara yang melintasi permukaan atas sayap mengalir lebih cepat dibanding permukaan bawah ($v_{\\text{atas}} > v_{\\text{bawah}}$). 2) Berdasarkan Persamaan Bernoulli ($P + \\frac{1}{2}\\rho v^2 = \\text{konstan}$), di mana kelajuan fluida lebih besar, tekanan statisnya akan lebih kecil ($P_{\\text{atas}} < P_{\\text{bawah}}$). 3) Perbedaan tekanan ini menghasilkan gaya angkat neto ke atas: $$F_A = (P_{\\text{bawah}} - P_{\\text{atas}}) \\cdot A > 0$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-002",
@@ -77,7 +78,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya angkat sayap pesawat dirumuskan langsung dari selisih tekanan Bernoulli: $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-003",
@@ -110,7 +112,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada penerbangan mendatar dengan ketinggian konstan (tidak naik dan tidak turun), percepatan vertikal pesawat bernilai nol ($a_y = 0$). Sesuai Hukum I Newton: $$\\Sigma F_y = 0 \\implies F_A - W = 0 \\iff F_A = W = m \\cdot g$$Di mana $F_A$ adalah gaya angkat aerodinamis sayap dan $W$ adalah gaya berat total pesawat beserta muatannya. **Tips:** Siswa sering mengira pesawat yang sedang terbang tinggi harus selalu memiliki $F_A > W$."
   },
   {
     "id": "fis-flu-dinamis-sayap-004",
@@ -143,7 +146,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya angkat pesawat sebanding dengan luas sayap ($A$) dan koefisien gaya angkat yang bergantung pada kelengkungan profil sayap: $$F_A = \\frac{1}{2} C_L \\cdot \\rho \\cdot v^2 \\cdot A$$Saat lepas landas dan mendarat, kelajuan pesawat ($v$) relatif rendah. Pembentangan flaps memperbesar luas sayap ($A$) dan memperbesar kelengkungan (camber) sayap, sehingga nilai $C_L$ dan $A$ melonjak untuk mempertahankan gaya angkat yang cukup menopang bobot pesawat."
   },
   {
     "id": "fis-flu-dinamis-sayap-005",
@@ -176,7 +180,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya angkat aerodinamis sayap adalah hasil kali selisih tekanan statis antara sisi bawah dan sisi atas sayap dengan luas penampang sayap: $$F_A = \\Delta P \\cdot A \\implies \\Delta P = \\frac{F_A}{A}$$. **Tips:** Kesalahan perhitungan pembagian atau lupa bahwa $\\Delta P = P_{\\text{bawah}} - P_{\\text{atas}}$, bukan tekanan mutlak atmosfer."
   },
   {
     "id": "fis-flu-dinamis-sayap-006",
@@ -209,7 +214,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat pesawat terbang mendatar pada ketinggian konstan, gaya angkat aerodinamis sayap sama besar dengan berat total pesawat: $$F_A = W = M \\cdot g$$Menurut Persamaan Bernoulli: $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A \\implies v_{\\text{atas}} = \\sqrt{v_{\\text{bawah}}^2 + \\frac{2 \\cdot M \\cdot g}{\\rho \\cdot A}}$$. **Tips:** Siswa sering lupa mengalikan massa pesawat dengan percepatan gravitasi bumi $g$ sehingga gaya angkat menjadi 10 kali lebih kecil."
   },
   {
     "id": "fis-flu-dinamis-sayap-007",
@@ -242,7 +248,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya angkat sayap yang dibutuhkan untuk lepas landas harus sama dengan berat pesawat ($F_A = W = \\text{konstan}$). Karena bentuk aerofoil dan luas sayap tetap, gaya angkat berbanding lurus dengan $\\rho \\cdot v^2$: $$\\rho_1 \\cdot v_1^2 = \\rho_2 \\cdot v_2^2 \\implies v_2 = v_1 \\cdot \\sqrt{\\frac{\\rho_1}{\\rho_2}}$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-008",
@@ -275,7 +282,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Menurut Hukum II Newton pada arah vertikal pesawat yang dipercepat ke atas: $$\\Sigma F_y = M \\cdot a \\implies F_A - M \\cdot g = M \\cdot a \\iff F_A = M(g + a)$$Gaya angkat ini dihubungkan dengan prinsip Bernoulli sayap: $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-009",
@@ -308,7 +316,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya angkat pada terbang mendatar sama dengan berat pesawat ($F_A = W$): $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A$$Dengan mensubstitusikan $v_{\\text{atas}} = 1{,}20 v_{\\text{bawah}}$: $$v_{\\text{atas}}^2 - v_{\\text{bawah}}^2 = (1{,}20 v_{\\text{bawah}})^2 - v_{\\text{bawah}}^2 = (1{,}44 - 1) v_{\\text{bawah}}^2 = 0{,}44 v_{\\text{bawah}}^2$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-010",
@@ -341,7 +350,8 @@
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat pesawat berbelok dengan sayap miring bersudut $\\theta$ terhadap horizontal: • Komponen vertikal gaya angkat menahan bobot pesawat: $F_A \\cos \\theta = M \\cdot g$ • Komponen horizontal gaya angkat berfungsi sebagai gaya sentripetal belokan: $F_A \\sin \\theta = \\frac{M v^2}{R}$ Sehingga gaya angkat total yang harus dihasilkan sayap adalah: $$F_A = \\frac{M \\cdot g}{\\cos \\theta}$$."
   }
 ];
 

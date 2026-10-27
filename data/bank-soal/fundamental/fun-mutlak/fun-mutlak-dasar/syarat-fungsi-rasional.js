@@ -44,7 +44,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi rasional $\\frac{P(x)}{Q(x)}$ terdefinisi pada bilangan real jika dan hanya jika penyebutnya tidak bernilai nol ($Q(x) \\neq 0$)."
   },
   {
     "id": "fun-mutlak-dasar-rasional-002",
@@ -77,7 +78,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Domain fungsi rasional mencakup seluruh bilangan real kecuali pembuat nol dari penyebut."
   },
   {
     "id": "fun-mutlak-dasar-rasional-003",
@@ -110,7 +112,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi pecahan tidak terdefinisi apabila pembagian dilakukan dengan angka nol (penyebut bernilai nol)."
   },
   {
     "id": "fun-mutlak-dasar-rasional-004",
@@ -143,7 +146,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk selisih kuadrat pada penyebut $x^2 - a^2$ memiliki dua pembuat nol yaitu $x = a$ dan $x = -a$, keduanya harus dikeluarkan dari domain. **Tips:** Hanya mengambil akar positif $x \\neq 3$ dan melupakan akar negatif $x \\neq -3$."
   },
   {
     "id": "fun-mutlak-dasar-rasional-005",
@@ -176,7 +180,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pecahan aljabar bernilai riil jika penyebutnya bukan nol. **Tips:** Kesalahan tanda aljabar saat memindahkan ruas sehingga menyimpulkan $x \\neq -4$."
   },
   {
     "id": "fun-mutlak-dasar-rasional-006",
@@ -209,7 +214,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi rasional mensyaratkan penyebut tidak sama dengan nol. Nilai pembuat nol pembilang tidak memengaruhi daerah asal alami kecuali fungsi tidak terdefinisi."
   },
   {
     "id": "fun-mutlak-dasar-rasional-007",
@@ -242,7 +248,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk kuadrat murni yang ditambah konstanta positif ($x^2 + c$, $c > 0$) bersifat definit positif dan tidak pernah bernilai nol untuk setiap $x \\in \\mathbb{R}$. **Tips:** Menganggap $x^2 + 4$ dapat difaktorkan menjadi $(x - 2)(x + 2)$ di himpunan bilangan real sehingga memilih $x \\neq \\pm 2$."
   },
   {
     "id": "fun-mutlak-dasar-rasional-008",
@@ -275,7 +282,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pecahan bersusun, syarat penyebut tidak sama dengan nol harus diterapkan pada setiap penyebut yang muncul di semua tingkatan pecahan."
   },
   {
     "id": "fun-mutlak-dasar-rasional-009",
@@ -308,7 +316,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyebut kuadrat $ax^2 + bx + c$ tidak memiliki pembuat nol real jika diskriminannya bernilai negatif tegas ($D < 0$)."
   },
   {
     "id": "fun-mutlak-dasar-rasional-010",
@@ -341,7 +350,8 @@
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyelesaian pertidaksamaan rasional menggunakan pembuat nol pembilang dan penyebut, dengan catatan pembuat nol penyebut tidak pernah boleh masuk ke dalam himpunan penyelesaian ($Q(x) \\neq 0$)."
   }
 ];
 

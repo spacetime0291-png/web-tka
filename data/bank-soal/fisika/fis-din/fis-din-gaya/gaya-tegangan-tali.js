@@ -44,7 +44,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada benda yang berada dalam keadaan diam (kesetimbangan statis), resultan gaya yang bekerja adalah nol: $\\sum F_y = 0$. Gaya tegangan kawat ke atas mengimbangi gaya gravitasi (berat) lampu ke bawah. **Tips:** Tegangan kawat bukan dua kali lipat gaya berat."
   },
   {
     "id": "fis-din-gaya-tegangan-002",
@@ -77,7 +78,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Terapkan Hukum II Newton pada sistem keseluruhan untuk menentukan percepatan bersama: $a = \\frac{F}{m_A + m_B}$. Kemudian tinjau diagram benda bebas balok $A$ di mana tegangan tali $T$ menjadi satu-satunya gaya penggerak balok $A$: $T = m_A a$."
   },
   {
     "id": "fis-din-gaya-tegangan-003",
@@ -110,7 +112,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum II Newton pada sumbu vertikal, tegangan tali harus melawan gaya berat sekaligus memberikan resultan gaya untuk percepatan ke atas: $\\sum F_y = T - m g = m a \\implies T = m(g + a)$."
   },
   {
     "id": "fis-din-gaya-tegangan-004",
@@ -143,7 +146,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pesawat Atwood dengan katrol licin tak bermassa, selisih gaya berat beban bekerja sebagai gaya penggerak netto untuk menggerakkan total massa kedua benda: $a = \\frac{m_1 - m_2}{m_1 + m_2} g$. **Tips:** Kerap salah membagi selisih gaya penggerak dengan hanya salah satu massa beban, bukan total massa sistem ($m_1 + m_2$)."
   },
   {
     "id": "fis-din-gaya-tegangan-005",
@@ -176,7 +180,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Model tali ideal memiliki karakteristik: tak bermassa ($m = 0$), tidak elastis/tidak melar (panjang konstan), selalu mentransmisikan gaya tarikan (tidak bisa mendorong), dan besarnya tegangan sama di semua titik. **Tips:** Tali tidak pernah dapat memberikan gaya tekan (mendorong)."
   },
   {
     "id": "fis-din-gaya-tegangan-006",
@@ -209,7 +214,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pesawat Atwood, tegangan tali selama bergerak bernilai: $T = \\frac{2 m_1 m_2}{m_1 + m_2} g$. Nilai tegangan ini berada di antara berat beban ringan ($m_2 g = 20\\text{ N}$) dan beban berat ($m_1 g = 30\\text{ N}$)."
   },
   {
     "id": "fis-din-gaya-tegangan-007",
@@ -242,7 +248,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya penggerak sistem berasal dari berat balok gantung $B$ ($W_B = m_B g$), sedangkan gaya hambat berasal dari gesekan kinetis pada balok $A$ ($f_k = \\mu_k m_A g$). Percepatan: $a = \\frac{W_B - f_k}{m_A + m_B}$. **Tips:** Kekeliruan terjadi jika menganggap tegangan tali tepat sama dengan berat beban gantung ($20\\text{ N}$)."
   },
   {
     "id": "fis-din-gaya-tegangan-008",
@@ -275,7 +282,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan statis partikel pada simpul tali: $\\sum F_x = 0$ dan $\\sum F_y = 0$. Uraikan tegangan tali miring $T_2$ ke dalam komponen horizontal ($T_2 \\cos 53^\\circ$) dan vertikal ($T_2 \\sin 53^\\circ$)."
   },
   {
     "id": "fis-din-gaya-tegangan-009",
@@ -308,7 +316,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada sistem rangkaian balok mendatar, percepatan seluruh benda bernilai sama ($a$). Setiap tali hanya bertanggung jawab menarik massa total balok yang berada di belakangnya: $T_k = m_{\\text{belakang}} \\times a$."
   },
   {
     "id": "fis-din-gaya-tegangan-010",
@@ -341,7 +350,8 @@
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya penggerak netto berasal dari selisih antara gaya berat balok gantung ($W_B = m_B g$) dan komponen gaya berat balok $A$ yang sejajar bidang miring ($W_{A,\\parallel} = m_A g \\sin\\theta$). Percepatan sistem: $a = \\frac{m_B g - m_A g \\sin\\theta}{m_A + m_B}$."
   },
   {
     "id": "fis-din-09",
@@ -374,7 +384,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Hukum II Newton pada mesin Atwood vertikal: $a = \\frac{m_1 - m_2}{m_1 + m_2} g$. **Tips:** Seringkali siswa salah membagi dengan selisih massa atau hanya membagi dengan salah satu massa benda."
   },
   {
     "id": "fis-din-10",
@@ -407,7 +418,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Sistem balok meja horizontal licin terhubung katrol: $a = \\frac{m_B g}{m_A + m_B}$ dan $T = m_A \\cdot a$."
   },
   {
     "id": "fis-din-33",
@@ -440,7 +452,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Hukum II Newton pada kabel derek vertikal: $T - Mg = M \\cdot a \\Rightarrow T = M(g + a)$."
   },
   {
     "id": "fis-din-34",
@@ -473,7 +486,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Tegangan tali mesin Atwood vertikal: $T = \\frac{2 m_1 m_2}{m_1 + m_2} g$."
   },
   {
     "id": "fis-din-03",
@@ -506,7 +520,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Penggabungan Hukum II Newton sistem gabungan (lift + muatan) dan analisis gaya kontak internal."
   },
   {
     "id": "fis-din-04",
@@ -539,7 +554,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Kesetimbangan gaya vertikal multi-benda dengan gaya eksternal bersudut: $\\Sigma F_y = 0$."
   },
   {
     "id": "fis-din-11",
@@ -572,7 +588,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Penggabungan gaya gesek kinetis permukaan horizontal dengan dinamika sistem katrol dua benda terhubung."
   },
   {
     "id": "fis-din-12",
@@ -605,7 +622,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Dinamika sistem katrol bidang miring licin terhubung beban vertikal: $a = \\frac{m_B g - m_A g \\sin\\theta}{m_A + m_B}$."
   },
   {
     "id": "fis-din-35",
@@ -638,7 +656,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Sistem katrol bidang miring ganda: $a = \\frac{m_A g \\sin\\theta_A - m_B g \\sin\\theta_B}{m_A + m_B}$."
   },
   {
     "id": "fis-din-36",
@@ -671,7 +690,8 @@
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Hukum II Newton pada sistem katrol dengan gaya tarik eksternal berlawanan arah gerak beban gantung. **Tips:** Salah menentukan arah gaya gesek kinetis (mengira gaya gesek mengarah ke kiri bersama $F$)."
   }
 ];
 

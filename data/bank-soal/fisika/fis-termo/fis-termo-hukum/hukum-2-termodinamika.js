@@ -44,7 +44,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "formulasi Kelvin-Planck untuk mesin kalor dan formulasi Clausius untuk mesin pendingin/aliran kalor."
   },
   {
     "id": "fis-termo-hukum-hukum2-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perubahan entropi ($\\Delta S$) suatu sistem pada suhu mutlak konstan didefinisikan sebagai: $$\\Delta S = \\frac{Q}{T}$$ dengan $Q$ adalah kalor yang diserap/dilepas dan $T$ adalah suhu mutlak sistem dalam satuan Kelvin."
   },
   {
     "id": "fis-termo-hukum-hukum2-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Prinsip peningkatan entropi semesta menyatakan bahwa dalam setiap sistem terisolasi sempurna (seperti alam semesta), entropi total cenderung bertambah menuju nilai maksimum seiring terjadinya proses spontan (ireversibel): $$\\Delta S_{\\text{semesta}} = \\Delta S_{\\text{sistem}} + \\Delta S_{\\text{lingkungan}} > 0$$. **Tips:** Terkadang siswa mengacaukan entropi total semesta dengan entropi sistem lokal."
   },
   {
     "id": "fis-termo-hukum-hukum2-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perubahan wujud zat pada titik lebur terjadi secara isotermal (suhu tetap). Perubahan entropi zat dihitung menggunakan rumus: $$\\Delta S = \\frac{Q}{T}$$ dengan $T$ merupakan suhu mutlak dalam skala Kelvin ($T = T_C + 273$)."
   },
   {
     "id": "fis-termo-hukum-hukum2-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Proses reversibel adalah proses ideal yang berlangsung secara kuasistatis (sangat lambat melalui rangkaian keadaan seimbang tanpa disipasi friksi/viskositas), sehingga sistem dan lingkungan dapat kembali secara tepat ke keadaan semula tanpa perubahan netto pada semesta. **Tips:** Sering mengira proses alami dapat bersifat reversibel."
   },
   {
     "id": "fis-termo-hukum-hukum2-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Entropi total semesta pada perpindahan kalor konduksi tak-reversibel di antara dua reservoir bersuhu tetap dirumuskan sebagai penjumlahan perubahan entropi reservoir panas dan reservoir dingin: $$\\Delta S_{\\text{semesta}} = \\Delta S_H + \\Delta S_C = -\\frac{Q}{T_H} + \\frac{Q}{T_C}$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada proses isotermal reversibel gas ideal, perubahan energi dalam $\\Delta U = 0$ sehingga $Q = W = nRT \\ln\\left(\\frac{V_2}{V_1}\\right)$. Maka perubahan entropi gas dirumuskan sebagai: $$\\Delta S = \\frac{Q}{T} = n R \\ln\\left(\\frac{V_2}{V_1}\\right)$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suhu sistem berubah secara kontinu dari $T_1$ ke $T_2$, perubahan entropi dihitung melalui integrasi: $$\\Delta S = \\int_{T_1}^{T_2} \\frac{dQ}{T} = \\int_{T_1}^{T_2} \\frac{m c\\, dT}{T} = m c \\ln\\left(\\frac{T_2}{T_1}\\right)$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema Carnot menyatakan bahwa tidak ada mesin kalor riil maupun reversibel yang dapat memiliki efisiensi lebih tinggi daripada efisiensi mesin Carnot ideal yang bekerja di antara dua batas reservoir suhu mutlak yang sama: $$\\eta_{\\text{maks}} = \\eta_{\\text{Carnot}} = 1 - \\frac{T_C}{T_H}$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pencampuran tak-reversibel di dalam bejana adiabatik terisolasi, kalor diserap oleh fluida dingin dan dilepaskan oleh fluida panas ($Q_{\\text{lepas}} = Q_{\\text{terima}}$). Total perubahan entropi semesta adalah $\\Delta S_{\\text{semesta}} = \\Delta S_1 + \\Delta S_2$. **Tips:** Terkadang mengira sistem tertutup terisolasi tidak mengalami perubahan entropi total."
   }
 ];
 

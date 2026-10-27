@@ -44,7 +44,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$V = I R$$ di mana $R$ adalah tetapan resistansi (hambatan listrik)."
   },
   {
     "id": "fis-lis-dc-ohm-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hambatan listrik suatu kawat silinder homogen dirumuskan berdasarkan dimensinya: $$R = \\rho \\frac{L}{A}$$ dengan $\\rho$ adalah hambatan jenis bahan, $L$ adalah panjang kawat, dan $A$ adalah luas penampang kawat. **Tips:** Lupa mengonversi satuan luas $1\\text{ mm}^2$ ke $\\text{m}^2$ ($10^{-6}\\text{ m}^2$), atau salah mengalikan pangkat sepuluh."
   },
   {
     "id": "fis-lis-dc-ohm-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kuat arus listrik didefinisikan sebagai laju aliran muatan neto: $I = \\frac{Q}{t} \\implies Q = I t$. Jumlah elektron pembawa muatan dihitung melalui kuantisasi muatan $Q = n e \\implies n = \\frac{Q}{e}$."
   },
   {
     "id": "fis-lis-dc-ohm-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Saat kawat ditarik, volumenya kekal ($V = A L = \\text{konstan}$). Jika panjang bertambah $n$ kali lipat ($L' = n L$), luas penampang mengecil menjadi $\\frac{1}{n}$ kali semula ($A' = \\frac{A}{n}$). Maka hambatannya meningkat menjadi $n^2$ kali lipat."
   },
   {
     "id": "fis-lis-dc-ohm-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hambatan listrik kawat logam meningkat seiring kenaikan suhu menurut hubungan pendekatan linier: $$R = R_0 (1 + \\alpha \\Delta T)$$ dengan $\\Delta T = T - T_0$ adalah kenaikan suhu."
   },
   {
     "id": "fis-lis-dc-ohm-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan mikroskopis kuat arus listrik ($I$) dengan kecepatan hanyut elektron pembawa muatan ($v_d$) dirumuskan sebagai: $$I = n e A v_d \\implies v_d = \\frac{I}{n e A}$$ di mana $A = \\pi r^2$ adalah luas penampang kawat. **Tips:** Siswa sering mengira elektron mengalir dengan kecepatan mendekati kecepatan cahaya."
   },
   {
     "id": "fis-lis-dc-ohm-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan aksial silinder berongga dihitung dengan rumus hambatan kawat $R = \\rho \\frac{L}{A}$, dengan luas penampang konduktor berbentuk cincin melingkar: $$A = \\pi (r_2^2 - r_1^2)$$."
   },
   {
     "id": "fis-lis-dc-ohm-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan filamen lampu adalah konstan: $R = \\frac{V_0^2}{P_0}$. Daya yang diserap pada tegangan baru $V$ dirumuskan sebagai: $$P = \\frac{V^2}{R} = \\left(\\frac{V}{V_0}\\right)^2 P_0$$."
   },
   {
     "id": "fis-lis-dc-ohm-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan saat filamen membara panas dihitung dari Hukum Ohm $R = \\frac{V}{I}$. Kenaikan suhu $\\Delta T$ diperoleh dari hubungan termal hambatan: $R = R_0(1 + \\alpha \\Delta T)$. Suhu akhir adalah $T = T_0 + \\Delta T$."
   },
   {
     "id": "fis-lis-dc-ohm-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Arus transmisi ditentukan oleh daya dan tegangan saluran: $I = \\frac{P}{V}$. Daya yang hilang akibat disipasi kalor Joule pada kawat saluran adalah: $$P_{\\text{rugi}} = I^2 R = \\left(\\frac{P}{V}\\right)^2 R = \\frac{P^2 R}{V^2}$$ Daya rugi berbanding terbalik dengan kuadrat tegangan transmisi ($P_{\\text{rugi}} \\propto \\frac{1}{V^2}$)."
   }
 ];
 

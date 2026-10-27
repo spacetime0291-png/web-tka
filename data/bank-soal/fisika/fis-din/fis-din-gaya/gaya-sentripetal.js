@@ -44,7 +44,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya sentripetal adalah resultan gaya radial yang menjaga benda tetap bergerak pada lintasan melingkar: $F_s = m \\frac{v^2}{R}$. Pada bidang horizontal licin, gaya sentripetal disediakan sepenuhnya oleh gaya tegangan tali."
   },
   {
     "id": "fis-din-gaya-sentripetal-002",
@@ -77,7 +78,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya sentripetal bukanlah jenis gaya fundamental tersendiri, melainkan penamaan untuk resultan gaya riil yang berarah radial ke pusat lingkaran. Karena selalu tegak lurus vektor kecepatan sesaat ($F_s \\perp v$), usaha oleh gaya sentripetal bernilai nol ($W = 0$) dan laju benda tetap konstan."
   },
   {
     "id": "fis-din-gaya-sentripetal-003",
@@ -110,7 +112,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada tikungan jalan datar tanpa kemiringan (flat curve), tidak ada komponen gaya normal maupun gravitasi pada arah radial horizontal. Satu-satunya gaya horizontal yang mengarah ke pusat lingkaran tikungan adalah gaya gesek statis samping antarmuka ban dan aspal: $F_s = f_s = m \\frac{v^2}{R}$. **Tips:** Banyak yang mengira gaya gesek kinetis yang bekerja saat mobil berbelok normal."
   },
   {
     "id": "fis-din-gaya-sentripetal-004",
@@ -143,7 +146,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan gaya sentripetal dinyatakan dalam kecepatan sudut adalah: $F_s = m \\omega^2 r$. Gaya sentripetal berbanding lurus secara linier dengan jari-jari $r$ bila kecepatan sudut $\\omega$ konstan. **Tips:** Kerap tertukar menggunakan rumus $F_s = m \\frac{v^2}{r}$ dan menyimpulkan $F_s$ berbanding terbalik dengan $r$."
   },
   {
     "id": "fis-din-gaya-sentripetal-005",
@@ -176,7 +180,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya sentripetal dihitung melalui rumus: $F_s = m \\omega^2 R$."
   },
   {
     "id": "fis-din-gaya-sentripetal-006",
@@ -209,7 +214,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya sentripetal penahan belokan pada jalan mendatar disediakan oleh gaya gesek statis: $F_s = f_s \\le f_{s,\\text{maks}} = \\mu_s N$. Pada batas kritis selip, $m \\frac{v_{\\text{maks}}^2}{R} = \\mu_s m g \\implies v_{\\text{maks}} = \\sqrt{\\mu_s g R}$. **Tips:** Kerap salah membagi atau lupa mengakar kuadratkan hasil kali $\\mu_s g R$."
   },
   {
     "id": "fis-din-gaya-sentripetal-007",
@@ -242,7 +248,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada titik terendah gerak melingkar vertikal, resultan gaya radial mengarah ke atas menuju pusat lingkaran: $\\sum F_r = T - m g = m \\frac{v^2}{R}$. Sehingga tegangan tali merupakan penjumlahan gaya berat dan gaya sentripetal: $T = m g + m \\frac{v^2}{R}$."
   },
   {
     "id": "fis-din-gaya-sentripetal-008",
@@ -275,7 +282,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tikungan miring tanpa gesekan (banked curve), komponen horizontal dari gaya normal menyediakan gaya sentripetal: $N \\sin\\theta = m \\frac{v^2}{R}$, sedangkan komponen vertikalnya menahan berat kendaraan: $N \\cos\\theta = m g$. Rasio keduanya menghasilkan: $\\tan\\theta = \\frac{v^2}{g R}$."
   },
   {
     "id": "fis-din-gaya-sentripetal-009",
@@ -308,7 +316,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada ayunan konis, bola bergerak melingkar pada bidang horizontal. Komponen vertikal tegangan tali mengimbangi berat bola: $T \\cos\\theta = m g$. Komponen horizontal tegangan tali berperan sebagai gaya sentripetal: $F_s = T \\sin\\theta$."
   },
   {
     "id": "fis-din-gaya-sentripetal-010",
@@ -341,7 +350,8 @@
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Di titik tertinggi lintasan vertikal, baik gaya tegangan tali $T$ maupun gaya gravitasi $m g$ keduanya mengarah ke bawah menuju pusat lingkaran: $\\sum F_r = T + m g = m \\frac{v^2}{R}$. Batas kritis agar tali tidak kendur (air tidak tumpah) dicapai saat tegangan tali mendekati nol ($T \\ge 0$). **Tips:** Kerap menyamakan kelajuan di titik tertinggi dengan kelajuan di titik terendah."
   }
 ];
 

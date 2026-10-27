@@ -44,7 +44,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan umum gas ideal dalam satuan SI menghubungkan tekanan ($P$), volume ($V$), jumlah mol ($n$), tetapan gas ($R$), dan suhu mutlak ($T$): $$P \\times V = n \\times R \\times T \\implies P = \\frac{n \\times R \\times T}{V}$$."
   },
   {
     "id": "fis-termo-gas-ideal-002",
@@ -77,7 +78,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan gas ideal dapat dinyatakan dalam jumlah partikel ($N$) dan tetapan Boltzmann ($k_B$): $$P \\times V = N \\times k_B \\times T \\implies N = \\frac{P \\times V}{k_B \\times T}$$."
   },
   {
     "id": "fis-termo-gas-ideal-003",
@@ -110,7 +112,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan teorema ekipartisi energi, molekul gas monoatomik memiliki 3 derajat kebebasan translasi ($f = 3$), sehingga energi kinetik rata-rata tiap molekul adalah: $$\\bar{E}_k = \\frac{3}{2} k_B T$$."
   },
   {
     "id": "fis-termo-gas-ideal-004",
@@ -143,7 +146,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kelajuan efektif akar kuadrat rata-rata ($v_{\\text{rms}}$) molekul gas ideal sebanding dengan akar kuadrat dari suhu mutlaknya: $$v_{\\text{rms}} = \\sqrt{\\frac{3 k_B T}{m_0}} = \\sqrt{\\frac{3 R T}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T}$$. **Tips:** Jebakan linearitas: kelajuan efektif berbanding lurus dengan AKAR suhu ($\\sqrt{T}$), bukan suhu langsung ($T$)."
   },
   {
     "id": "fis-termo-gas-ideal-005",
@@ -176,7 +180,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Energi dalam ($U$) dari $n$ mol gas ideal monoatomik adalah jumlah energi kinetik seluruh molekul gas: $$U = N \\times \\bar{E}_k = n \\times N_A \\times \\left(\\frac{3}{2} k_B T\\right) = \\frac{3}{2} n R T$$. **Tips:** Perhatikan koefisien derajat kebebasan: untuk gas monoatomik faktornya adalah $3/2$."
   },
   {
     "id": "fis-termo-gas-ideal-006",
@@ -209,7 +214,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kelajuan efektif akar kuadrat rata-rata ($v_{\\text{rms}}$) molekul gas ideal dirumuskan oleh: $$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}}$$ Agar dua jenis gas berbeda memiliki kelajuan efektif yang sama ($v_{\\text{rms}, 1} = v_{\\text{rms}, 2}$), maka rasio suhu mutlak terhadap massa molarnya harus sama: $$\\frac{T_1}{M_{r1}} = \\frac{T_2}{M_{r2}} \\implies T_2 = T_1 \\times \\frac{M_{r2}}{M_{r1}}$$. **Tips:** Lupa bahwa $v_{\\text{rms}}$ berbanding terbalik dengan akar massa molar."
   },
   {
     "id": "fis-termo-gas-ideal-007",
@@ -242,7 +248,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan teori kinetik gas, tekanan gas ideal ($P$) berhubungan langsung dengan kerapatan energi kinetik translasi total ($E_{k,\\text{tot}}$) per satuan volume ($V$): $$P = \\frac{2}{3} \\frac{E_{k,\\text{tot}}}{V}$$. **Tips:** Faktor pengali adalah $2/3$, bukan $3/2$ atau $1/2$."
   },
   {
     "id": "fis-termo-gas-ideal-008",
@@ -275,7 +282,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema ekipartisi energi untuk gas diatomik memiliki derajat kebebasan ($f$) yang bergantung pada rentang suhu: - Suhu rendah ($\\approx 100\\text{ K}$): 3 translasi ($f = 3$). - Suhu kamar/sedang ($\\approx 300\\text{ K}$): 3 translasi + 2 rotasi ($f = 5$). - Suhu tinggi ($T \\ge 1000\\text{ K}$): 3 translasi + 2 rotasi + 2 vibrasi ($f = 7$). Energi dalam total dirumuskan sebagai: $U = \\frac{f}{2} n R T$."
   },
   {
     "id": "fis-termo-gas-ideal-009",
@@ -308,7 +316,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada suhu mutlak yang sama ($T_A = T_B$), kelajuan efektif molekul gas ideal berbanding terbalik dengan akar kuadrat massa molar gas tersebut: $$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}} \\implies \\frac{v_{\\text{rms}, A}}{v_{\\text{rms}, B}} = \\sqrt{\\frac{M_{rB}}{M_{rA}}}$$."
   },
   {
     "id": "fis-termo-gas-ideal-010",
@@ -341,7 +350,8 @@
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perubahan energi dalam ($\\Delta U$) gas ideal hanya bergantung pada perubahan suhu mutlaknya (fungsi keadaan suhu): $$\\Delta U = \\frac{3}{2} n R \\Delta T$$ dengan $\\Delta T = T_2 - T_1$ dalam skala Kelvin atau Celsius (karena rentang satu derajat Celsius sama dengan satu Kelvin)."
   },
   {
     "id": "mudah-fis-11",
@@ -374,7 +384,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\implies P_2 = P_1 \\left(\\frac{T_2}{T_1}\\right)$$. **Tips:** Perhatikan hukum kesebandingan lurus vs terbalik."
   },
   {
     "id": "drill-gas-01",
@@ -407,7 +418,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Persamaan Umum Gas Ideal: $$P \\cdot V = n \\cdot R \\cdot T \\implies V = \\frac{n R T}{P}$$."
   },
   {
     "id": "drill-gas-03",
@@ -440,7 +452,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Volume gas berbanding lurus dengan suhu mutlaknya (Kelvin): $$\\frac{V_1}{T_1} = \\frac{V_2}{T_2} \\implies V_2 = V_1 \\left( \\frac{T_2}{T_1} \\right)$$. **Tips:** ⚠️ Kesalahan Paling Fatal di Gas Ideal: Menggunakan suhu Celsius."
   },
   {
     "id": "drill-gas-04",
@@ -473,7 +486,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\implies P_2 = P_1 \\left( \\frac{T_2}{T_1} \\right)$$. **Tips:** • Boyle: $T$ tetap ($P \\cdot V = C$) • Charles: $P$ tetap ($V / T = C$) • Gay-Lussac: $V$ tetap ($P / T = C$)."
   },
   {
     "id": "drill-gas-05",
@@ -506,7 +520,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Energi Kinetik Rata-rata Molekul: $$\\overline{E_k} = \\frac{3}{2} k_B T$$ Energi kinetik rata-rata molekul gas ideal monoatomik hanya bergantung pada suhu mutlak ($T$) dan sama sekali tidak bergantung pada jenis gas maupun massa molar ($M_r$). **Tips:** Siswa sering memasukkan rasio $M_r$ ($4 : 20$)."
   },
   {
     "id": "drill2-gas-01",
@@ -539,7 +554,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Persamaan Gas Ideal Skala Mikroskopis: $$P \\cdot V = N \\cdot k_B \\cdot T \\implies N = \\frac{P V}{k_B T}$$. **Tips:** ⚠️ Dua Bentuk Persamaan Gas: • Makroskopis (mol): $PV = nRT$ • Mikroskopis (partikel): $PV = N k_B T$."
   },
   {
     "id": "drill2-gas-02",
@@ -572,7 +588,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Hubungan Tekanan dan Massa Jenis Gas Ideal: $$P V = \\frac{m}{M_r} R T \\implies P = \\left(\\frac{m}{V}\\right) \\frac{R T}{M_r} = \\rho \\frac{R T}{M_r} \\implies \\rho = \\frac{P M_r}{R T}$$."
   },
   {
     "id": "drill2-gas-03",
@@ -605,7 +622,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Tekanan Gas Berdasarkan Teori Kinetik: $$P = \\frac{2}{3} \\left(\\frac{N}{V}\\right) \\overline{E_k}$$ atau dapat ditulis: $P V = \\frac{2}{3} N \\overline{E_k}$. **Tips:** Fraksi tekanan terhadap kerapatan energi adalah $\\frac{2}{3}$ (kebalikan dari fraksi energi $\\frac{3}{2}$)."
   },
   {
     "id": "sedang-fis-14",
@@ -638,7 +656,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Kelajuan Efektif Gas Ideal ($v_{\\text{rms}}$): $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T}$$."
   },
   {
     "id": "drill-gas-06",
@@ -671,7 +690,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Energi Dalam Gas Ideal Monoatomik: $$U = \\frac{3}{2} n R T$$ Faktor derajat kebebasan untuk gas monoatomik (seperti He, Ne, Ar) adalah 3 derajat kebebasan translasi ($f = 3$). **Tips:** Ingat faktor $\\frac{3}{2}$ untuk energi dalam monoatomik ($U = \\frac{3}{2} n R T = \\frac{3}{2} P V$)."
   },
   {
     "id": "drill-gas-07",
@@ -704,7 +724,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Kelajuan Efektif Molekul Gas Ideal: $$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T} \\implies T \\propto v_{\\text{rms}}^2$$."
   },
   {
     "id": "drill-gas-08",
@@ -737,7 +758,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Hubungan Kelajuan Efektif terhadap Massa Molar: Pada suhu yang sama, kelajuan efektif molekul berbanding terbalik dengan akar massa molarnya: $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies \\frac{v_1}{v_2} = \\sqrt{\\frac{M_{r2}}{M_{r1}}}$$."
   },
   {
     "id": "drill2-gas-04",
@@ -770,7 +792,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\implies P_2 = P_1 \\left( \\frac{V_1}{V_2} \\right) \\left( \\frac{T_2}{T_1} \\right)$$. **Tips:** ⚠️ Efek Berganda: Suhu naik $2\\times \\implies$ tekanan naik $2\\times$."
   },
   {
     "id": "drill2-gas-05",
@@ -803,7 +826,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Energi Dalam Gas Ideal Monoatomik: $$U = \\frac{3}{2} n R T$$."
   },
   {
     "id": "drill2-gas-06",
@@ -836,7 +860,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Perbandingan Kelajuan Efektif $v_{\\text{rms}}$: $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies \\frac{v_{He}}{v_{O_2}} = \\sqrt{\\frac{M_{r, O_2}}{M_{r, He}}}$$. **Tips:** ⚠️ Jangan Lupa Bentuk Akar: Nilai perbandingannya adalah $\\sqrt{8}$, bukan $8$."
   },
   {
     "id": "drill2-gas-07",
@@ -869,7 +894,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Ketergantungan Energi Kinetik terhadap Suhu Kelvin: $$\\overline{E_k} \\propto T \\implies \\frac{\\overline{E_{k2}}}{\\overline{E_{k1}}} = \\frac{T_2}{T_1}$$ Wajib menggunakan satuan mutlak Kelvin! **Tips:** Menggunakan Celsius langsung: $\\frac{327}{27} \\approx 12{,}1$ (SALAH!)."
   },
   {
     "id": "mudah-fis-14",
@@ -902,7 +928,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Usaha Luar Gas pada Proses Isobarik (Tekanan Tetap): $$W = P \\cdot \\Delta V = P(V_2 - V_1)$$."
   },
   {
     "id": "drill-ter-01",
@@ -935,7 +962,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Usaha pada Proses Isobarik (Tekanan Tetap): $$W = P \\cdot \\Delta V = P(V_2 - V_1)$$. **Tips:** Rumus usaha isobarik $W = P \\Delta V$ adalah dasar termodinamika paling sering keluar."
   },
   {
     "id": "drill-ter-02",
@@ -968,7 +996,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Karena volume tidak mengalami perubahan sama sekali ($\\Delta V = 0$): $$W = \\int P \\, dV = 0\\text{ Joule}$$."
   },
   {
     "id": "drill-ter-03",
@@ -1001,7 +1030,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Suhu konstan $\\implies \\Delta T = 0 \\implies \\Delta U = 0$. Maka menurut Hukum I: $Q = W + \\Delta U \\implies W = Q$."
   },
   {
     "id": "drill-ter-04",
@@ -1034,7 +1064,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Proses Adiabatik ($Q = 0$): $$\\Delta U = Q - W \\implies \\Delta U = -W$$ Jika gas berekspansi melakukan usaha ($W > 0$), maka energi dalamnya berkurang (suhu gas turun)."
   },
   {
     "id": "sup-fis-ter-04",
@@ -1067,7 +1098,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Gunakan perumusan konsep fisis: $\\Delta U = Q - W$, dengan konvensi tanda: • $Q > 0$ jika sistem menyerap kalor. • $W > 0$ jika sistem melakukan usaha ke lingkungan."
   },
   {
     "id": "drill2-ter-06",
@@ -1100,7 +1132,8 @@
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Usaha pada Proses Isotermal: $$W = n R T \\ln\\left( \\frac{V_2}{V_1} \\right)$$."
   }
 ];
 

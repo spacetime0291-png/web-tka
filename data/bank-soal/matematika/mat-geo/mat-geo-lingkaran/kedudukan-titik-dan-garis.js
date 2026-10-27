@@ -44,7 +44,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kedudukan titik $(x_1, y_1)$ terhadap lingkaran $x^2 + y^2 = r^2$ ditentukan dengan membandingkan nilai kuasa $K = x_1^2 + y_1^2$ terhadap $r^2$: jika $K = r^2$ titik berada pada lingkaran, jika $K < r^2$ di dalam, dan jika $K > r^2$ di luar."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-002",
@@ -77,7 +78,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk lingkaran $(x - a)^2 + (y - b)^2 = r^2$, jika hasil substitusi koordinat titik menghasilkan nilai yang lebih besar dari $r^2$, maka titik tersebut berada di luar lingkaran."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-003",
@@ -110,7 +112,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Suatu titik terletak di dalam lingkaran jika jarak dari titik tersebut ke titik pusat kurang dari panjang jari-jarinya, yaitu $x^2 + y^2 < r^2$. **Tips:** Terkecoh dengan titik $(2, 4)$ yang nilainya tepat sama dengan 20 (terletak pada batas kurva lingkaran, bukan di dalam)."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-004",
@@ -143,7 +146,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kedudukan garis terhadap lingkaran ditentukan oleh nilai diskriminan $D = b^2 - 4ac$ dari persamaan kuadrat persekutuan: $D > 0$ memotong di dua titik, $D = 0$ menyinggung di satu titik, dan $D < 0$ tidak memotong maupun menyinggung (di luar lingkaran)."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-005",
@@ -176,7 +180,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis menyinggung lingkaran jika memiliki tepat satu titik potong persekutuan, yang terjadi ketika jarak garis ke titik pusat sama persis dengan panjang jari-jari lingkaran ($d = r$). **Tips:** Mengira garis memotong di dua titik karena terkecoh melihat angka $9$ dan $3$ tanpa menyubstitusikan ke persamaan."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-006",
@@ -209,7 +214,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik $(x_1, y_1)$ terletak di luar lingkaran umum $x^2 + y^2 + Ax + By + C = 0$ jika nilai kuasanya lebih besar dari nol, yaitu $x_1^2 + y_1^2 + Ax_1 + By_1 + C > 0$. **Tips:** Memilih daerah interval di antara kedua akar ($-3 < k < 7$), yang merupakan daerah untuk titik di dalam lingkaran."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-007",
@@ -242,7 +248,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak terdekat dari titik luar $A$ ke kurva lingkaran berpusat $P$ dengan jari-jari $r$ dirumuskan sebagai selisih jarak titik ke pusat dengan jari-jari lingkaran: $d_{\\text{min}} = |AP| - r$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-008",
@@ -275,7 +282,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang tali busur lingkaran yang dipotong oleh garis lurus dapat dihitung menggunakan teorema Pythagoras pada segitiga siku-siku antara jari-jari $r$, jarak garis ke pusat $d$, dan setengah tali busur: $|AB| = 2\\sqrt{r^2 - d^2}$. **Tips:** Lupa mengalikan 2 di akhir langkah sehingga memilih panjang setengah tali busur $\\frac{7}{2}\\sqrt{2}$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-009",
@@ -308,7 +316,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis memotong lingkaran di dua titik berbeda jika sistem persamaan keduanya menghasilkan persamaan kuadrat dengan nilai diskriminan $D > 0$. **Tips:** Lupa membalik tanda ketaksamaan saat membagi dengan bilangan negatif $-4$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-010",
@@ -341,7 +350,8 @@
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kedudukan dua lingkaran ditentukan dengan membandingkan jarak antarpusat $d = |P_1 P_2|$ terhadap jumlah atau selisih panjang jari-jari: jika $d > r_1 + r_2$, maka kedua lingkaran saling terpisah di luar (saling lepas). **Tips:** Terkecoh menyimpulkan bersinggungan di luar ($d = r_1 + r_2$) tanpa menghitung jarak riil antarpusat."
   }
 ];
 

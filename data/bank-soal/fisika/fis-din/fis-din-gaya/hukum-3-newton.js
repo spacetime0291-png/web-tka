@@ -44,7 +44,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $\\vec{F}_{\\text{aksi}} = -\\vec{F}_{\\text{reaksi}}$. Ciri utama pasangan aksi-reaksi: 1. Besarnya sama persis ($|F_{\\text{aksi}}| = |F_{\\text{reaksi}}|$) 2. Arahnya berlawanan 3. Bekerja secara simultan tanpa jeda waktu 4. Bekerja pada DUA benda yang berbeda (benda $A$ pada benda $B$, dan benda $B$ pada benda $A$). **Tips:** Mengira aksi-reaksi bekerja pada benda yang sama sehingga saling membatalkan."
   },
   {
     "id": "fis-din-gaya-newton3-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pasangan aksi-reaksi harus melibatkan dua objek yang sama secara timbal balik dan sejenis gaya. Gaya berat ($w$) adalah gaya gravitasi bumi pada buku ($F_{\\text{Bumi}\\to\\text{buku}}$). Pasangan reaksinya adalah gaya gravitasi buku pada bumi ($F_{\\text{buku}\\to\\text{Bumi}}$). **Tips:** Miskonsepsi paling terkenal di fisika SMA: menganggap gaya normal ($N$) adalah reaksi dari gaya berat ($w$)."
   },
   {
     "id": "fis-din-gaya-newton3-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Resultan gaya hanya dapat dihitung jika dua atau lebih gaya bekerja pada SATU benda yang sama. Karena gaya aksi bekerja pada benda $B$ dan gaya reaksi bekerja pada benda $A$, keduanya mempengaruhi percepatan dua benda yang berbeda secara terpisah. **Tips:** Menyimpulkan benda tidak akan pernah bisa bergerak jika ada gaya aksi-reaksi."
   },
   {
     "id": "fis-din-gaya-newton3-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum III Newton, saat anak melompat ke depan, telapak kaki anak mendorong papan seluncur ke arah belakang (gaya aksi). Papan seluncur memberikan gaya reaksi yang sama besar ke arah depan pada tubuh anak sehingga anak terlontar ke depan sementara papan terpental ke belakang. **Tips:** Mengira papan terdorong karena tarikan gravitasi atau hembusan udara."
   },
   {
     "id": "fis-din-gaya-newton3-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$|F_{\\text{gerobak pada kuda}}| = |F_{\\text{kuda pada gerobak}}| = 400\\text{ N}$$. **Tips:** Paradoks kuda-gerobak: Mengira gaya gerobak harus lebih kecil dari $400\\text{ N}$ agar gerobak bisa bergerak."
   },
   {
     "id": "fis-din-gaya-newton3-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Roket memberikan gaya aksi ke belakang untuk mendorong molekul gas buang keluar, dan sebagai reaksinya gas buang memberikan gaya dorong ke depan yang sama besar pada badan roket: $$F_{\\text{thrust}} = v_{\\text{gas}} \\cdot \\frac{\\Delta m}{\\Delta t}$$. **Tips:** Mengalikan dengan massa total roket alih-alih laju alir massa semburan gas pembakaran."
   },
   {
     "id": "fis-din-gaya-newton3-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya rata-rata pada peluru dihitung dari impuls perubahan momentum: $F = \\frac{m \\Delta v}{\\Delta t}$. Berdasarkan Hukum III Newton, gaya reaksi yang dialami meriam sama besar dengan gaya pada peluru namun berlawanan arah. Percepatan sentakan meriam dihitung dengan $a = \\frac{F}{M}$. **Tips:** Membagi gaya dengan massa peluru alih-alih massa meriam saat menghitung percepatan gerak sentak meriam."
   },
   {
     "id": "fis-din-gaya-newton3-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pasangan aksi-reaksi harus memenuhi interaksi timbal balik antara dua objek yang sama persis: gaya benda $X$ pada benda $Y$ berpasangan dengan gaya benda $Y$ pada benda $X$, dan jenis gayanya harus sejenis (kontak-kontak, atau gravitasi-gravitasi). **Tips:** Menganggap gaya gravitasi bumi pada balok $A$ berpasangan dengan gaya normal balok $B$ pada $A$."
   },
   {
     "id": "fis-din-gaya-newton3-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya gravitasi antara dua benda langit memenuhi Hukum Gravitasi Universal Newton: $$F = G \\frac{M_B M_L}{R^2}$$ Berdasarkan Hukum III Newton, gaya tarik bumi pada bulan dan gaya tarik bulan pada bumi merupakan pasangan aksi-reaksi mutlak sehingga besarnya selalu tepat sama besar. **Tips:** Terkecoh mengira karena massa bulan 81 kali lebih kecil maka gaya gravitasi yang dikerjakannya juga 81 kali lebih kecil."
   },
   {
     "id": "fis-din-gaya-newton3-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum III Newton, ketika Rama mendorong Shinta dengan gaya $F = 120\\text{ N}$, Shinta secara otomatis memberikan gaya reaksi yang sama besar $120\\text{ N}$ pada Rama dengan arah berlawanan. Percepatan masing-masing berbanding terbalik dengan massanya ($a = \\frac{F}{m}$). **Tips:** Mengira Rama yang aktif mendorong tidak mengalami gaya reaksi dan tetap diam."
   }
 ];
 

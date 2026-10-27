@@ -44,7 +44,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk persamaan eksplisit garis lurus dengan gradien $m$ dan titik potong sumbu-$Y$ di $(0, c)$ adalah $y = mx + c$."
   },
   {
     "id": "fun-geo-dasar-garis-002",
@@ -77,7 +78,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk implisit garis $Ax + By + C = 0$ diubah ke bentuk eksplisit dengan mengisolasi variabel $y$ pada salah satu ruas persamaan."
   },
   {
     "id": "fun-geo-dasar-garis-003",
@@ -110,7 +112,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan garis lurus yang melalui titik $(x_1, y_1)$ dengan gradien $m$ dirumuskan sebagai $y - y_1 = m(x - x_1)$."
   },
   {
     "id": "fun-geo-dasar-garis-004",
@@ -143,7 +146,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong sumbu-$X$ terjadi saat $y = 0$, dan titik potong sumbu-$Y$ terjadi saat $x = 0$. **Tips:** Tertukar antara koordinat titik potong sumbu-$X$ dan sumbu-$Y$ sehingga memilih $(3, 0)$ dan $(0, 4)$."
   },
   {
     "id": "fun-geo-dasar-garis-005",
@@ -176,7 +180,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis yang melalui titik asal $(0, 0)$ memiliki persamaan bentuk $y = mx$, di mana $m = \\frac{y}{x}$. **Tips:** Terbalik dalam pembagian gradien $\\frac{\\Delta x}{\\Delta y} = \\frac{3}{6} = \\frac{1}{2}$ sehingga memilih $y = \\frac{1}{2}x$."
   },
   {
     "id": "fun-geo-dasar-garis-006",
@@ -209,7 +214,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus gradien dua titik $m = \\frac{y_2 - y_1}{x_2 - x_1}$, lalu susun persamaan garis $y - y_1 = m(x - x_1)$ dan ubah ke bentuk implisit $Ax + By + C = 0$."
   },
   {
     "id": "fun-geo-dasar-garis-007",
@@ -242,7 +248,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua titik yang diketahui pada garis adalah $P(1, 4)$ dan titik potong sumbu-$X$, yaitu $Q(3, 0)$. **Tips:** Keliru mengartikan memotong sumbu-$X$ di $(3, 0)$ sebagai titik $(0, 3)$."
   },
   {
     "id": "fun-geo-dasar-garis-008",
@@ -275,7 +282,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik $(x_0, y_0)$ terletak pada suatu garis jika dan hanya jika koordinatnya memenuhi persamaan garis tersebut."
   },
   {
     "id": "fun-geo-dasar-garis-009",
@@ -308,7 +316,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong dua garis lurus merupakan solusi persekutuan (himpunan penyelesaian) dari sistem persamaan linear kedua garis tersebut. **Tips:** Salah menjabarkan tanda distributif $3(-4)$ menjadi $-7$ atau $+12$."
   },
   {
     "id": "fun-geo-dasar-garis-010",
@@ -341,7 +350,8 @@
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan garis dengan titik potong sumbu $(a, 0)$ dan $(0, b)$ dapat ditentukan menggunakan bentuk intersep: $\\frac{x}{a} + \\frac{y}{b} = 1$."
   }
 ];
 

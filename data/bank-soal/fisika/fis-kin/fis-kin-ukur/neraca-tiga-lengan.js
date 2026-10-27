@@ -44,7 +44,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Massa total pada neraca tiga lengan adalah jumlah aljabar dari nilai skala pada ketiga lengan: $m = m_{\\text{belakang}} + m_{\\text{tengah}} + m_{\\text{depan}}$. Nilai ketidakpastian mutlak pengukuran tunggal adalah $\\Delta m = \\frac{1}{2} \\times \\text{skala terkecil}$."
   },
   {
     "id": "fis-kin-ukur-neraca-002",
@@ -77,7 +78,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kapasitas maksimum neraca tiga lengan tanpa beban gantung tambahan adalah penjumlahan nilai batas atas tiap lengan: $M_{\\text{maks}} = 500\\text{ g} + 100\\text{ g} + 10\\text{ g} = 610\\text{ g}$. Nilai skala terkecil ditentukan oleh pembagian skala terkecil pada lengan paling depan."
   },
   {
     "id": "fis-kin-ukur-neraca-003",
@@ -110,7 +112,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Massa total dihitung dengan menjumlahkan ketiga skala, kemudian dikonversikan ke satuan kilogram (SI) menggunakan faktor konversi $1\\text{ kg} = 1000\\text{ g} = 10^3\\text{ g}$. **Tips:** Kesalahan konversi satuan gram ke kilogram sering kali salah pangkat, seperti memilih $10^{-2}$ atau $10^{-3}$."
   },
   {
     "id": "fis-kin-ukur-neraca-004",
@@ -143,7 +146,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kalibrasi titik nol (zero adjustment) pada neraca Ohaus dilakukan saat semua anting geser berada tepat di posisi angka 0 tanpa beban di piringan, dengan memutar tombol penyeimbang / sekrup tara (zero adjustment knob). **Tips:** Menggeser anting geser untuk mengenolkan adalah kesalahan fatal praktikum yang merusak akurasi pengukuran."
   },
   {
     "id": "fis-kin-ukur-neraca-005",
@@ -176,7 +180,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Massa zat cair yang ditampung dalam wadah dihitung melalui selisih massa wadah berisi cairan dengan massa wadah kosong: $m_{\\text{cairan}} = m_{\\text{total}} - m_{\\text{wadah kosong}}$."
   },
   {
     "id": "fis-kin-ukur-neraca-006",
@@ -209,7 +214,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada neraca presisi empat lengan berketelitian centigram ($0{,}01\\text{ g}$), massa total dihitung dengan menjumlahkan keempat lengan: $m = m_1 + m_2 + m_3 + m_4$. Ketidakpastian mutlak pengukuran tunggal adalah $\\Delta m = \\frac{1}{2} \\times \\text{skala terkecil} = \\frac{1}{2} \\times 0{,}01\\text{ g} = 0{,}005\\text{ g}$."
   },
   {
     "id": "fis-kin-ukur-neraca-007",
@@ -242,7 +248,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa jenis benda padat dirumuskan sebagai $\\rho = \\frac{m}{V}$. Volume benda tak beraturan ditentukan melalui metode pemindahan zat cair: $V = V_2 - V_1$. Konversi satuan massa jenis: $1\\text{ g/cm}^3 = 1000\\text{ kg/m}^3$."
   },
   {
     "id": "fis-kin-ukur-neraca-008",
@@ -275,7 +282,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan rotasi adalah jumlah momen gaya terhadap titik tumpu sama dengan nol: $\\sum \\tau = 0$. Maka torsi searah jarum jam oleh anting geser sama dengan torsi berlawanan jarum jam oleh beban piringan: $m_b \\cdot g \\cdot L_1 = m_a \\cdot g \\cdot L_2$."
   },
   {
     "id": "fis-kin-ukur-neraca-009",
@@ -308,7 +316,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesalahan nol sistematik pada penimbangan: jika posisi awal neraca tanpa beban berada di bawah nol ($Z = -0{,}2\\text{ g}$), maka piringan membutuhkan gaya beban ekstra sebesar $0{,}2\\text{ g}$ agar sistem mencapai kesetimbangan nol. Massa sebenarnya dirumuskan: $m_{\\text{sebenarnya}} = m_{\\text{terbaca}} - Z$."
   },
   {
     "id": "fis-kin-ukur-neraca-010",
@@ -341,7 +350,8 @@
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Konsentrasi massa larutan dirumuskan dengan $C = \\frac{m}{V}$. Menurut teori propagasi ketidakpastian untuk operasi pembagian, ketidakpastian relatif total adalah penjumlahan dari ketidakpastian relatif massa dan ketidakpastian relatif volume: $\\frac{\\Delta C}{C} = \\frac{\\Delta m}{m} + \\frac{\\Delta V}{V}$."
   },
   {
     "id": "sup-fis-kin-02",
@@ -374,7 +384,8 @@
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "neraca-tiga-lengan"
+    "subTopicSlug": "neraca-tiga-lengan",
+    "hint": "Prinsip Kerja Neraca Tiga Lengan Ohaus: Massa benda merupakan hasil penjumlahan langsung dari penunjukan ketiga lengan penyeimbang: $M = M_{\\text{ratusan}} + M_{\\text{puluhan}} + M_{\\text{satuan/desimal}}$. **Tips:** Tertukar antara posisi skala puluhan dan ratusan, atau salah membaca nilai skala nonius pada lengan depan."
   }
 ];
 

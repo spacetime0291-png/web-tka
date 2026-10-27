@@ -44,7 +44,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Invers dari matriks ordo $2 \\times 2$, $M = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, dirumuskan sebagai: $$M^{-1} = \\frac{1}{\\det(M)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$$ dengan syarat $\\det(M) = ad - bc \\neq 0$. **Tips:** Sering lupa mengubah tanda elemen diagonal sekunder atau tertukar antara menukar posisi dan mengubah tanda."
   },
   {
     "id": "mat-alj-matriks-invers-002",
@@ -77,7 +78,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Suatu matriks persegi memiliki invers (non-singular) jika dan hanya jika nilai determinannya tidak sama dengan nol ($\\det(M) \\neq 0$)."
   },
   {
     "id": "mat-alj-matriks-invers-003",
@@ -110,7 +112,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan hubungan matematis dasar: $P \\cdot P^{-1} = P^{-1} \\cdot P = I$."
   },
   {
     "id": "mat-alj-matriks-invers-004",
@@ -143,7 +146,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Invers dari matriks diagonal tak-singular $D = \\text{diag}(d_1, d_2, \\dots, d_n)$ adalah matriks diagonal dengan elemen-elemen kebalikan dari masing-masing diagonal utamanya: $D^{-1} = \\text{diag}\\left(\\frac{1}{d_1}, \\frac{1}{d_2}, \\dots, \\frac{1}{d_n}\\right)$. **Tips:** Menukar letak diagonal tanpa membagi dengan determinan, atau salah tanda minus pada $-\\frac{1}{2}$."
   },
   {
     "id": "mat-alj-matriks-invers-005",
@@ -176,7 +180,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Invers matriks $B = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ diperoleh dengan rumus $B^{-1} = \\frac{1}{ad - bc} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$. **Tips:** Hanya menyusun adjoin tanpa membaginya dengan nilai determinan (2)."
   },
   {
     "id": "mat-alj-matriks-invers-006",
@@ -209,7 +214,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan teorema pembalikan urutan invers pada perkalian matriks (*reversal property*), invers dari hasil perkalian dua matriks adalah: $$(AB)^{-1} = B^{-1} \\cdot A^{-1}$$. **Tips:** Mengira urutan perkalian invers tidak berbalik, yaitu salah menghitung $A^{-1} B^{-1}$ alih-alih $B^{-1} A^{-1}$."
   },
   {
     "id": "mat-alj-matriks-invers-007",
@@ -242,7 +248,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks $(M^{-1})^2$ diperoleh dengan mencari invers $M^{-1}$ terlebih dahulu, kemudian mengalikan matriks invers tersebut dengan dirinya sendiri: $(M^{-1})^2 = M^{-1} \\cdot M^{-1}$. **Tips:** Menguadratkan masing-masing elemen di dalam matriks invers alih-alih melakukan perkalian baris kali kolom."
   },
   {
     "id": "mat-alj-matriks-invers-008",
@@ -275,7 +282,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk matriks diagonal tak-singular berordo $3 \\times 3$, invers matriksnya merupakan matriks diagonal yang elemen diagonalnya adalah resiprokal (kebalikan) dari elemen diagonal matriks semula. **Tips:** Salah menyamakan penyebut pecahan atau salah tanda pada $-1$."
   },
   {
     "id": "mat-alj-matriks-invers-009",
@@ -308,7 +316,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika matriks $A$ memenuhi persamaan polinomial $A^2 + pA + qI = O$ dengan $q \\neq 0$, maka matriks tersebut memiliki invers yang dapat dicari dengan memfaktorkan perkalian matriks $A$ terhadap matriks identitas $I$. **Tips:** Salah tanda ketika membagi dengan $-2$ sehingga memilih $\\frac{1}{2}(A - 5I)$."
   },
   {
     "id": "mat-alj-matriks-invers-010",
@@ -341,7 +350,8 @@
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Invers matriks $T$ memenuhi relasi $T \\cdot T^{-1} = I$. Elemen kolom ke-3 dari $T^{-1}$, yaitu $\\mathbf{v}_3 = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$, dapat diselesaikan melalui sistem persamaan $T \\mathbf{v}_3 = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$. **Tips:** Sering mengira nilai elemen tetap 0 seperti matriks asalnya atau keliru tanda menjadi $-6$."
   },
   {
     "id": "sup-mtk-alj-01",
@@ -374,7 +384,8 @@
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-matriks",
-    "subTopicSlug": "invers-matriks"
+    "subTopicSlug": "invers-matriks",
+    "hint": "Invers Matriks Ordo $2\\times2$: Untuk $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, inversnya adalah $A^{-1} = \\frac{1}{\\det(A)} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$ dengan $\\det(A) = ad - bc \\neq 0$. **Tips:** Lupa menukar posisi elemen diagonal utama saat membentuk matriks adjoin."
   }
 ];
 

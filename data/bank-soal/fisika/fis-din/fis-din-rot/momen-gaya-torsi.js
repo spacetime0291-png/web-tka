@@ -44,7 +44,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen gaya (torsi) menyatakan kecenderungan gaya untuk memutar suatu benda terhadap suatu poros tertentu: $\\tau = r F \\sin\\theta$. Jika gaya bekerja tegak lurus gagang ($\\theta = 90^\\circ$), maka $\\sin 90^\\circ = 1$ sehingga $\\tau = r F$."
   },
   {
     "id": "fis-din-rot-torsi-002",
@@ -77,7 +78,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen gaya ditentukan oleh komponen gaya yang tegak lurus terhadap lengan momen: $\\tau = r F \\sin\\theta$, di mana $\\theta$ adalah sudut antara vektor lengan posisi $\\vec{r}$ dan garis kerja gaya $\\vec{F}$."
   },
   {
     "id": "fis-din-rot-torsi-003",
@@ -110,7 +112,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan definisi matematis $\\tau = r F \\sin\\theta$, torsi bernilai nol jika salah satu dari kondisi berikut terpenuhi: (1) jarak ke poros $r = 0$ (gaya bekerja tepat di poros/garis kerja melewati poros), atau (2) sudut $\\theta = 0^\\circ$ atau $180^\\circ$ (gaya menarik atau mendorong sejajar lengan batang sehingga $\\sin\\theta = 0$)."
   },
   {
     "id": "fis-din-rot-torsi-004",
@@ -143,7 +146,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Resultan momen gaya adalah penjumlahan aljabar torsi dengan memperhatikan konvensi tanda rotasi: biasanya berlawanan arah jarum jam (CCW) bertanda positif ($+$) dan searah jarum jam (CW) bertanda negatif ($-$)."
   },
   {
     "id": "fis-din-rot-torsi-005",
@@ -176,7 +180,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen gaya $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$ adalah besaran pseudovektor yang menyatakan tendensi puntiran, sedangkan Usaha $W = \\vec{F} \\cdot \\vec{s}$ adalah besaran skalar energi. Untuk menghindari kerancuan antara besaran kapasitas kerja (energi) dan efek pemuntir (torsi), satuan joule secara konvensi hanya dialokasikan untuk usaha dan energi."
   },
   {
     "id": "fis-din-rot-torsi-006",
@@ -209,7 +214,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hitung torsi masing-masing gaya terhadap poros $A$ dengan rumus $\\tau = r F \\sin\\theta$. Terapkan aturan tanda arah rotasi: berlawanan arah jarum jam (CCW) bertanda positif ($+$) dan searah jarum jam (CW) bertanda negatif ($-$)."
   },
   {
     "id": "fis-din-rot-torsi-007",
@@ -242,7 +248,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Secara analitik tiga dimensi, momen gaya merupakan perkalian silang (vektor cross product) antara vektor lengan posisi dan vektor gaya: $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$."
   },
   {
     "id": "fis-din-rot-torsi-008",
@@ -275,7 +282,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen kopel dihasilkan oleh sepasang gaya sejajar berlawanan arah dengan besar sama ($F$) yang terpisah sejauh jarak tegak lurus $d$: $M = F \\times d$. Nilai momen kopel bernilai konstan dan tidak bergantung pada letak titik poros putaran acuan."
   },
   {
     "id": "fis-din-rot-torsi-009",
@@ -308,7 +316,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tali yang melilit silinder selalu bekerja menyinggung tepi lingkaran, sehingga sudut antara gaya tegangan tali dan jari-jari silinder selalu tegak lurus ($\\theta = 90^\\circ$). Torsi masing-masing tali adalah $\\tau = R \\times F$."
   },
   {
     "id": "fis-din-rot-torsi-010",
@@ -341,7 +350,8 @@
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan rotasi adalah resultan momen gaya terhadap titik tumpu harus sama dengan nol: $\\sum \\tau = 0$. Karena titik tumpu berada tepat di pusat massa papan, gaya berat papan tidak menghasilkan torsi (lengannya nol). **Tips:** Kerap mengikutsertakan massa papan secara keliru."
   },
   {
     "id": "fis-din-21",
@@ -374,7 +384,8 @@
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-gaya-torsi"
+    "subTopicSlug": "momen-gaya-torsi",
+    "hint": "Konsep: Definisi torsi (momen gaya): $\\tau = F \\cdot r \\cdot \\sin\\theta$."
   },
   {
     "id": "drill-rot-01",
@@ -407,7 +418,8 @@
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-gaya-torsi"
+    "subTopicSlug": "momen-gaya-torsi",
+    "hint": "Momen gaya adalah hasil kali silang antara lengan gaya dan komponen gaya yang tegak lurus terhadap lengan: $$\\tau = r \\cdot F \\sin \\theta$$."
   },
   {
     "id": "drill-rot-04",
@@ -440,7 +452,8 @@
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-gaya-torsi"
+    "subTopicSlug": "momen-gaya-torsi",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma \\tau = I \\cdot \\alpha \\implies \\alpha = \\frac{\\Sigma \\tau}{I}$$."
   },
   {
     "id": "hots-fis-01",
@@ -473,7 +486,8 @@
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-gaya-torsi"
+    "subTopicSlug": "momen-gaya-torsi",
+    "hint": "Prinsip Dinamika Sistem Translasi & Rotasi Terkopel: 1. Hukum II Newton Translasi: $\\Sigma F = m a$ 2. Hukum II Newton Rotasi: $\\Sigma \\tau = I \\alpha$ 3. Syarat Tali Tidak Selip (No-slip): $a = \\alpha R \\iff \\alpha = \\frac{a}{R}$ 4. Momen Inersia Silinder Pejal Homogen: $I = \\frac{1}{2} M R^2$. **Tips:** Pada sistem di mana katrol memiliki massa, tegangan tali pada kedua sisi katrol TIDAK sama ($T_1 \\neq T_2$)."
   }
 ];
 

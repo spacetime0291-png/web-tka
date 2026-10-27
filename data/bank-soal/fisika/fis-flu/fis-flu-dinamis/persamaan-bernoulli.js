@@ -44,7 +44,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan Bernoulli: $$P + \\frac{1}{2}\\rho v^2 + \\rho g h = \\text{konstan}$$Persamaan ini merupakan perwujudan dari teorema usaha-energi dan Hukum Kekekalan Energi Mekanik yang diterapkan pada aliran fluida ideal per satuan volume, yang terdiri dari energi tekanan ($P$), energi kinetik per satuan volume ($\\frac{1}{2}\\rho v^2$), dan energi potensial gravitasi per satuan volume ($\\rho g h$)."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-002",
@@ -77,7 +78,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk pipa horizontal ($h_1 = h_2$), suku energi potensial saling meniadakan, sehingga Persamaan Bernoulli menjadi: $$P_1 + \\frac{1}{2}\\rho v_1^2 = P_2 + \\frac{1}{2}\\rho v_2^2 \\implies P_2 = P_1 + \\frac{1}{2}\\rho (v_1^2 - v_2^2)$$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-003",
@@ -110,7 +112,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Teorema Torricelli merupakan bentuk khusus Persamaan Bernoulli untuk tangki terbuka dengan luas penampang tangki jauh lebih besar daripada luas lubang kebocoran: $$v = \\sqrt{2 \\cdot g \\cdot h}$$Di mana $h$ adalah kedalaman lubang kebocoran diukur dari permukaan bebas zat cair."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-004",
@@ -143,7 +146,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak jangkauan mendatar semburan air tangki Torricelli dirumuskan dari perpaduan kelajuan horisontal $v = \\sqrt{2gh}$ dan waktu jatuh bebas vertikal $t = \\sqrt{\\frac{2y}{g}}$: $$x = v \\cdot t = \\sqrt{2gh} \\cdot \\sqrt{\\frac{2y}{g}} = 2\\sqrt{h \\cdot y}$$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-005",
@@ -176,7 +180,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karena luas penampang pipa seragam ($A_1 = A_2$), menurut persamaan kontinuitas kelajuan air di lantai satu dan lantai dua sama besar ($v_1 = v_2$). Persamaan Bernoulli menjadi: $$P_1 + \\rho g h_1 = P_2 + \\rho g h_2 \\implies P_2 = P_1 - \\rho g (h_2 - h_1)$$. **Tips:** Terkecoh menjumlahkan tekanan $\\rho gh$ sehingga menghasilkan $1{,}90 \\times 10^5\\text{ Pa}$ ()."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-006",
@@ -209,7 +214,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penerapan Persamaan Bernoulli lengkap yang melibatkan perubahan kelajuan sekaligus perubahan elevasi ketinggian: $$P_1 + \\frac{1}{2}\\rho v_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2}\\rho v_2^2 + \\rho g h_2$$Kelajuan $v_2$ diperoleh melalui persamaan kontinuitas $A_1 v_1 = A_2 v_2$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-007",
@@ -242,7 +248,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada venturimeter tanpa manometer, selisih tekanan diukur langsung dari perbedaan tinggi kolom air pada pipa vertikal: $\\Delta P = \\rho g h$. Dikombinasikan dengan Persamaan Bernoulli dan Kontinuitas: $$v_1 = \\sqrt{\\frac{2gh}{\\left(\\frac{A_1}{A_2}\\right)^2 - 1}}$$ Dan debit aliran dihitung dengan $Q = A_1 \\cdot v_1$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-008",
@@ -275,7 +282,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tangki tertutup bertekanan, Teorema Torricelli dimodifikasi dengan memasukkan selisih tekanan gas dalam tangki terhadap atmosfer luar: $$P + \\rho g h = P_0 + \\frac{1}{2}\\rho v^2 \\implies v = \\sqrt{\\frac{2(P - P_0)}{\\rho} + 2gh}$$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-009",
@@ -308,7 +316,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan prinsip Bernoulli, kelajuan udara yang tinggi di atas atap menghasilkan penurunan tekanan statis dibanding udara di dalam rumah: $$P_{\\text{bawah}} - P_{\\text{atas}} = \\Delta P = \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2$$Gaya angkat total pada atap dirumuskan dengan: $$F_{\\text{angkat}} = \\Delta P \\cdot A = \\left(\\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2\\right) \\cdot A$$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-010",
@@ -341,7 +350,8 @@
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Kelajuan aliran di seluruh pipa berpenampang seragam ditentukan oleh perbedaan elevasi outlet dari permukaan air tangki: $$v = \\sqrt{2 \\cdot g \\cdot h_b}$$ 2) Tekanan di titik puncak sifon ($P_C$) dihitung dengan menerapkan persamaan Bernoulli antara permukaan air tangki ($P_0, v \\approx 0, y = 0$) dan titik puncak ($P_C, v, y = +h_a$): $$P_0 = P_C + \\frac{1}{2}\\rho v^2 + \\rho g h_a \\implies P_C = P_0 - \\rho g h_a - \\frac{1}{2}\\rho v^2$$."
   }
 ];
 

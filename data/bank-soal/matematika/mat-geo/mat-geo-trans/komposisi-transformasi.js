@@ -44,7 +44,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada komposisi transformasi, hasil bayangan dari transformasi pertama menjadi titik asal bagi transformasi berikutnya secara bertahap."
   },
   {
     "id": "mat-geo-trans-komposisi-002",
@@ -77,7 +78,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Transformasi bertahap: refleksi $y = x$ memetakan $(x, y) \\to (y, x)$, kemudian rotasi $[O, 90^\\circ]$ memetakan $(x_1, y_1) \\to (-y_1, x_1)$. Gabungannya setara dengan pencerminan terhadap sumbu-$Y$: $(x, y) \\to (-x, y)$."
   },
   {
     "id": "mat-geo-trans-komposisi-003",
@@ -110,7 +112,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Lakukan dilatasi $[O, k]$ terlebih dahulu: $(x_1, y_1) = (kx, ky)$, kemudian jumlahkan dengan komponen translasi $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$: $(x', y') = (x_1 + a, y_1 + b)$."
   },
   {
     "id": "mat-geo-trans-komposisi-004",
@@ -143,7 +146,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Komposisi transformasi $T_2 \\circ T_1$ berarti transformasi $T_1$ dikerjakan terlebih dahulu pada titik objek, kemudian hasilnya ditransformasikan oleh $T_2$. Dalam notasi matriks: $(T_2 \\circ T_1)(D) = M_2 \\times (M_1 \\times D) = (M_2 M_1) D$. **Tips:** Mengerjakan $T_2$ terlebih dahulu baru $T_1$ (yaitu $T_1 \\circ T_2$) yang menghasilkan koordinat $(8, 3)$."
   },
   {
     "id": "mat-geo-trans-komposisi-005",
@@ -176,7 +180,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rotasi $[O, 180^\\circ]$ memetakan $(x, y) \\to (-x, -y)$. Pencerminan terhadap garis $y = -x$ memetakan $(x_1, y_1) \\to (-y_1, -x_1)$. **Tips:** Hanya menukar koordinat tanpa mengubah tanda negatif saat menerapkan refleksi terhadap garis $y = -x$."
   },
   {
     "id": "mat-geo-trans-komposisi-006",
@@ -209,7 +214,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Cari relasi variabel asal $(x, y)$ terhadap variabel akhir $(x', y')$ melalui dua tahap transformasi berurutan: pertama transformasi linear oleh matriks, kemudian translasi. **Tips:** Salah membalikkan urutan substitusi variabel atau keliru tanda minus ketika mengalikan $-3(-x' + 2)$."
   },
   {
     "id": "mat-geo-trans-komposisi-007",
@@ -242,7 +248,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi berturut-turut terhadap dua garis yang saling tegak lurus $x = h$ dan $y = k$ setara dengan rotasi $180^\\circ$ berpusat di titik potong $(h, k)$, dengan rumus $x' = 2h - x$ dan $y' = 2k - y$."
   },
   {
     "id": "mat-geo-trans-komposisi-008",
@@ -275,7 +282,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pencerminan terhadap $y = x$ menukar variabel $(x, y) \\to (y, x)$. Dilatasi $[O, k]$ memperbesar koordinat menurut $(x', y') = (kx_1, ky_1)$. **Tips:** Lupa membagi 2 pada variabel $x$ dan $y$ saat mensubstitusikan hasil dilatasi ke fungsi semula."
   },
   {
     "id": "mat-geo-trans-komposisi-009",
@@ -308,7 +316,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika dua rotasi memiliki pusat yang berbeda, kita tidak dapat langsung menjumlahkan sudutnya begitu saja; kita harus menghitung koordinat bayangan tahap demi tahap secara berurutan."
   },
   {
     "id": "mat-geo-trans-komposisi-010",
@@ -341,7 +350,8 @@
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan titik $P$ oleh komposisi transformasi $T_2 \\circ T_1$ dihitung dengan mengalikan matriks $M_2$ terhadap hasil kali $M_1 P$: $P' = M_2 (M_1 P)$. **Tips:** Menghitung urutan perkalian matriks secara terbalik ($T_1 \\circ T_2$), yaitu mengalikan $M_1$ dengan $M_2 P$."
   },
   {
     "id": "mudah-mtk-12",
@@ -374,7 +384,8 @@
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-trans",
-    "subTopicSlug": "komposisi-transformasi"
+    "subTopicSlug": "komposisi-transformasi",
+    "hint": "Komposisi Translasi Titik: $$\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = \\begin{pmatrix} x \\\\ y \\end{pmatrix} + T_1 + T_2$$. **Tips:** Operasi translasi murni menggunakan penjumlahan aljabar vektor posisi, bukan perkalian matriks."
   },
   {
     "id": "sedang-mtk-12",
@@ -407,7 +418,8 @@
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-trans",
-    "subTopicSlug": "komposisi-transformasi"
+    "subTopicSlug": "komposisi-transformasi",
+    "hint": "• Rotasi $+90^\\circ$ pusat $(0,0)$: $(x, y) \\to (-y, x)$ • Refleksi garis $y = -x$: $(x', y') \\to (-y', -x')$. **Tips:** Perhatikan urutan komposisi: rotasi dilakukan terlebih dahulu, baru kemudian direfleksikan terhadap garis $y = -x$."
   },
   {
     "id": "hots-mtk-01",
@@ -440,7 +452,8 @@
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-trans",
-    "subTopicSlug": "komposisi-transformasi"
+    "subTopicSlug": "komposisi-transformasi",
+    "hint": "Perkalian Matriks Komposisi Transformasi: • Refleksi garis $y = -x$: $M_1 = \\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$ • Rotasi $+90^\\circ$: $M_2 = \\begin{pmatrix} \\cos 90^\\circ & -\\sin 90^\\circ \\\\ \\sin 90^\\circ & \\cos 90^\\circ \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$ • Matriks komposisi $T = M_2 \\cdot M_1$ (dikalikan dari kanan ke kiri)."
   }
 ];
 

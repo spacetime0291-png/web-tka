@@ -44,7 +44,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Daya listrik ($P$) didefinisikan sebagai laju transfer energi per satuan waktu ($P = \\frac{W}{t}$). Berdasarkan Hukum Ohm $V = I R$, rumus daya dapat dituliskan dalam tiga bentuk ekuivalen: $$P = V I = I^2 R = \\frac{V^2}{R}$$. **Tips:** Sering tertukar antara perkalian dan pembagian, misalnya keliru mengingat $V^2 R$ alih-alih $\\frac{V^2}{R}$."
   },
   {
     "id": "fis-lis-dc-daya-002",
@@ -77,7 +78,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Energi listrik dalam satuan kilowatt-jam (kWh) dihitung dengan mengalikan daya listrik (dalam kilowatt, kW) dengan total waktu penggunaan (dalam jam, h): $$W = P \\times t$$. **Tips:** Lupa mengonversi watt-jam (Wh) ke kilowatt-jam (kWh) dengan membagi 1.000, atau lupa mengalikan dengan 30 hari."
   },
   {
     "id": "fis-lis-dc-daya-003",
@@ -110,7 +112,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Joule, energi kalor listrik yang dilepaskan oleh suatu hambatan dirumuskan sebagai: $$W = I^2 R t$$ dengan $t$ dinyatakan dalam satuan detik (SI). **Tips:** Lupa mengonversi waktu 5 menit ke detik ($300\\text{ s}$) dan langsung mengalikan dengan 5 sehingga memperoleh $400\\text{ J}$."
   },
   {
     "id": "fis-lis-dc-daya-004",
@@ -143,7 +146,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Daya total dari sumber tegangan konstan $V$ berbanding terbalik dengan hambatan ekuivalen rangkaian ($P = \\frac{V^2}{R_{\\text{eq}}}$)."
   },
   {
     "id": "fis-lis-dc-daya-005",
@@ -176,7 +180,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Daya total maksimum yang dapat ditanggung oleh instalasi rumah ditentukan oleh kapasitas arus pembatas (sekring) dan tegangannya: $P_{\\text{maks}} = V \\times I_{\\text{maks}}$. Jumlah peralatan maksimum adalah $N = \\frac{P_{\\text{maks}}}{P_{\\text{alat}}}$. **Tips:** Kesalahan membagi $220 / 6$ alih-alih mengalikan $V \\times I$ untuk memperoleh kapasitas daya total."
   },
   {
     "id": "fis-lis-dc-daya-006",
@@ -209,7 +214,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi pemanas listrik ($\\eta$) adalah perbandingan antara energi kalor yang diserap oleh air ($Q = m c \\Delta T$) terhadap total energi listrik yang dipasok ($W = P t$): $$\\eta = \\frac{m c \\Delta T}{P t} \\times 100\\%$$. **Tips:** Lupa mengubah satuan waktu 14 menit ke satuan detik ($840\\text{ s}$) saat menghitung energi listrik ($W = P t$)."
   },
   {
     "id": "fis-lis-dc-daya-007",
@@ -242,7 +248,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya disipasi lampu adalah $P = I^2 R$. Pada susunan kombinasi, arus total cabang utama melewati lampu seri ($L_1$), sedangkan pada percabangan paralel arus terbagi dua sama besar ke lampu identik $L_2$ dan $L_3$."
   },
   {
     "id": "fis-lis-dc-daya-008",
@@ -275,7 +282,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Biaya listrik bulanan dihitung dari total konsumsi energi per hari dikalikan 30 hari dan dikalikan tarif per kWh: $$\\text{Biaya} = \\Sigma(P \\times t) \\times 30 \\times \\text{Tarif}$$. **Tips:** Lupa mengalikan jumlah unit lampu ($5 \\times 20\\text{ W}$) atau kesalahan perkalian aritmetika biaya."
   },
   {
     "id": "fis-lis-dc-daya-009",
@@ -308,7 +316,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jumlah kalor $Q$ yang diperlukan untuk mendidihkan air bernilai tetap. Pada tegangan tetap $V$, daya pemanas adalah $P = \\frac{V^2}{R}$. Karena $Q = P t = \\frac{V^2}{R} t$, diperoleh hubungan bahwa hambatan kumparan sebanding dengan waktu pemanasan ($R \\propto t$)."
   },
   {
     "id": "fis-lis-dc-daya-010",
@@ -341,7 +350,8 @@
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Motor listrik mengubah energi listrik menjadi energi mekanik. Tegangan sumber terbagi menjadi GGL balik motor ($\\mathcal{E}'$) dan tegangan jatuh resistif internal ($I r$): $$V = \\mathcal{E}' + I r$$ Daya output mekanik adalah $P_{\\text{out}} = \\mathcal{E}' I$ dan efisiensinya adalah $\\eta = \\frac{P_{\\text{out}}}{P_{\\text{in}}} \\times 100\\%$."
   },
   {
     "id": "sup-fis-lis-02",
@@ -374,7 +384,8 @@
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-dc",
-    "subTopicSlug": "energi-dan-daya-listrik"
+    "subTopicSlug": "energi-dan-daya-listrik",
+    "hint": "Daya Listrik Kuadratik Terhadap Tegangan: $P = \\frac{V^2}{R}$. Karena hambatan filamen lampu $R$ tetap, perbandingan daya listrik adalah kuadrat perbandingan tegangan: $\\frac{P_2}{P_1} = \\left(\\frac{V_2}{V_1}\\right)^2$. **Tips:** Siswa sering keliru menganggap hubungan linier $P \\propto V$ sehingga menjawab setengahnya ($50\\text{ W}$)."
   },
   {
     "id": "sedang-fis-15",
@@ -407,7 +418,8 @@
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-dc",
-    "subTopicSlug": "energi-dan-daya-listrik"
+    "subTopicSlug": "energi-dan-daya-listrik",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0 \\implies I = \\frac{\\mathcal{E}_1 - \\mathcal{E}_2}{R_{\\text{total}}}$$ Daya disipasi resistor: $P = I^2 R$."
   }
 ];
 

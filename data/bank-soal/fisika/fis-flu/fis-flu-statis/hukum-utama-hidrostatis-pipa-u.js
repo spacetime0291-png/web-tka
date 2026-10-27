@@ -44,7 +44,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$P_A = P_B \\iff \\rho_A \\cdot g \\cdot h_A = \\rho_B \\cdot g \\cdot h_B$$Hukum ini hanya berlaku jika titik A dan B berada pada fluida yang sejenis ($\\rho_A = \\rho_B$) dan fluida tidak mengalami percepatan (diam/statis)."
   },
   {
     "id": "fis-flu-statis-pipau-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Utama Hidrostatis pada bidang batas antara minyak dan air: $$P_{\\text{kiri}} = P_{\\text{kanan}} \\iff \\rho_{\\text{air}} \\cdot g \\cdot \\Delta h_{\\text{air}} = \\rho_{\\text{minyak}} \\cdot g \\cdot h_{\\text{minyak}}$$Sehingga: $$\\Delta h_{\\text{air}} = \\frac{\\rho_{\\text{minyak}}}{\\rho_{\\text{air}}} \\cdot h_{\\text{minyak}}$$."
   },
   {
     "id": "fis-flu-statis-pipau-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dengan menarik garis horizontal melalui bidang batas pisah fluida di kaki kiri (titik 1) ke titik setara di kaki kanan (titik 2): $$P_1 = P_2 \\iff \\rho_X \\cdot g \\cdot h_X = \\rho_{\\text{raksa}} \\cdot g \\cdot h_{\\text{raksa}}$$Maka massa jenis zat X dapat ditentukan melalui: $$\\rho_X = \\frac{\\rho_{\\text{raksa}} \\cdot h_{\\text{raksa}}}{h_X}$$."
   },
   {
     "id": "fis-flu-statis-pipau-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pipa U berpenampang tidak sama: 1) Kekekalan volume zat cair inkompresibel: Volume air yang tertekan turun pada kaki kiri sebesar $y_1$ sama dengan volume air yang naik pada kaki kanan sebesar $y_2$: $$A_1 \\cdot y_1 = A_2 \\cdot y_2$$ 2) Selisih tinggi permukaan air total adalah $\\Delta h_a = y_1 + y_2$. 3) Kesetimbangan hidrostatis pada bidang batas: $\\rho_m h_m = \\rho_a \\Delta h_a$."
   },
   {
     "id": "fis-flu-statis-pipau-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\rho_a \\cdot h_a = \\rho_b \\cdot h_b$$Selisih ketinggian antara kedua permukaan atas zat cair adalah selisih antara tinggi kolom zat cair organik dan tinggi kolom air penyeimbang: $$\\Delta H = h_b - h_a$$."
   },
   {
     "id": "fis-flu-statis-pipau-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum Utama Hidrostatis, kita buat bidang acuan horizontal yang melewati batas terendah antara raksa dan fluida lainnya (dalam hal ini bidang batas raksa di kaki kiri yang tertekan lebih dalam): $$P_{\\text{kiri}} = P_{\\text{kanan}} \\iff P_0 + \\rho_a \\cdot g \\cdot h_a = P_0 + \\rho_m \\cdot g \\cdot h_m + \\rho_r \\cdot g \\cdot \\Delta h_r$$Sehingga selisih tinggi raksa dirumuskan: $$\\Delta h_r = \\frac{\\rho_a \\cdot h_a - \\rho_m \\cdot h_m}{\\rho_r}$$."
   },
   {
     "id": "fis-flu-statis-pipau-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika bejana fluida mengalami percepatan horizontal $a$, permukaan bebas zat cair membentuk sudut kemiringan $\\theta$ terhadap bidang mendatar akibat resultan gaya berat dan gaya inersia (fiktif): $$\\tan \\theta = \\frac{a}{g}$$Untuk pipa U dengan jarak antarkaki vertikal $L$, selisih tinggi cairan antara kedua kaki dirumuskan: $$\\frac{\\Delta h}{L} = \\tan \\theta = \\frac{a}{g} \\implies \\Delta h = L \\cdot \\frac{a}{g}$$."
   },
   {
     "id": "fis-flu-statis-pipau-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Masalah ini memadukan Hukum Boyle pada gas terperangkap dengan kesetimbangan hidrostatis manometer: 1) Proses isotermal gas ideal: $$P_1 \\cdot V_1 = P_2 \\cdot V_2 \\iff P_1 \\cdot L_1 = P_2 \\cdot L_2$$ 2) Karena awalnya kedua permukaan raksa sama tinggi dan berhubungan dengan atmosfer, maka $P_1 = P_0 = 76\\text{ cmHg}$. 3) Hubungan manometer setelah penambahan raksa: $$P_2 = P_0 + \\Delta h \\implies \\Delta h = P_2 - P_0$$."
   },
   {
     "id": "fis-flu-statis-pipau-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluida yang berotasi dengan kecepatan sudut konstan $\\omega$ terhadap sumbu vertikal membentuk permukaan bebas berupa paraboloid revolusi yang memenuhi persamaan ketinggian: $$y(r) = \\frac{\\omega^2 \\cdot r^2}{2g}$$Kenaikan permukaan pada jarak radial $r = R$ relatif terhadap titik terendah di sumbu putaran ($r = 0$) adalah: $$\\Delta y = y(R) - y(0) = \\frac{\\omega^2 \\cdot R^2}{2g}$$."
   },
   {
     "id": "fis-flu-statis-pipau-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Volume air yang dituangkan: $V_a = \\frac{m}{\\rho_a}$, dan tinggi kolom air pada kaki kanan: $h_a = \\frac{V_a}{A_2}$. 2) Tekanan hidrostatis air pada batas pisah diimbangi oleh selisih total tinggi raksa $\\Delta h_r$: $$\\rho_a \\cdot h_a = \\rho_r \\cdot \\Delta h_r \\implies \\Delta h_r = \\frac{\\rho_a \\cdot h_a}{\\rho_r}$$ 3) Jika raksa di kaki kiri naik sebesar $y_1$ dan raksa di kaki kanan turun sebesar $y_2$, maka kekekalan volume raksa menyatakan $A_1 y_1 = A_2 y_2$, serta $\\Delta h_r = y_1 + y_2$."
   },
   {
     "id": "sup-fis-flu-03",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "hukum-utama-hidrostatis-pipa-u"
+    "subTopicSlug": "hukum-utama-hidrostatis-pipa-u",
+    "hint": "Venturimeter Tanpa Manometer: Kombinasi Persamaan Kontinuitas dan Persamaan Bernoulli menghasilkan kelajuan masuk: $v_1 = \\sqrt{\\frac{2 g h}{\\left(\\frac{A_1}{A_2}\\right)^2 - 1}}$."
   }
 ];
 

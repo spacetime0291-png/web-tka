@@ -44,7 +44,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$P_1 \\times V_1 = P_2 \\times V_2$$."
   },
   {
     "id": "fis-termo-gas-boyle-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$$ Suhu wajib dikonversikan ke skala mutlak Kelvin ($T = ^\\circ\\text{C} + 273$)."
   },
   {
     "id": "fis-termo-gas-boyle-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{V_1}{T_1} = \\frac{V_2}{T_2}$$. **Tips:** Perhatikan bahwa proses isobarik ditandai oleh tekanan tetap (misalnya piston bebas bergerak)."
   },
   {
     "id": "fis-termo-gas-boyle-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Boyle, hubungan antara tekanan dan volume pada suhu konstan adalah $P \\times V = C \\implies P = \\frac{C}{V}$. Dalam matematika analitik, persamaan berbentuk $y = \\frac{c}{x}$ dengan $c > 0$ merepresentasikan grafik hiperbola sama sisi di kuadran pertama, yang dalam termodinamika disebut sebagai kurva isoterm."
   },
   {
     "id": "fis-termo-gas-boyle-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karena volume ban diasumsikan konstan ($V_1 = V_2$), berlaku Hukum Gay-Lussac: $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\implies P_2 = P_1 \\times \\frac{T_2}{T_1}$$."
   },
   {
     "id": "fis-termo-gas-boyle-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tekanan mutlak di kedalaman danau merupakan penjumlahan tekanan atmosfer dan tekanan hidrostatis: $$P_1 = P_0 + \\rho \\times g \\times h$$ Di permukaan danau, tekanannya adalah tekanan atmosfer murni: $P_2 = P_0$. Karena suhu konstan (isotermal), berlaku Hukum Boyle: $P_1 \\times V_1 = P_2 \\times V_2$."
   },
   {
     "id": "fis-termo-gas-boyle-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tekanan total gas di bawah piston adalah jumlah tekanan atmosfer dan tekanan akibat berat piston beserta beban: $$P = P_0 + \\frac{m_{\\text{total}} \\times g}{A}$$ Volume gas dalam silinder berpenampang $A$ adalah $V = A \\times h$. Karena proses berlangsung isotermal, berlaku Hukum Boyle: $P_1 \\times h_1 = P_2 \\times h_2$."
   },
   {
     "id": "fis-termo-gas-boyle-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena volume tabung gas kaku bernilai konstan (proses isokhorik), hubungan tekanan dan suhu gas ideal memenuhi Hukum Gay-Lussac: $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$$ dengan $T$ adalah suhu mutlak dalam skala Kelvin. **Tips:** Jebakan konversi satuan: $480\\text{ K}$ () adalah nilai dalam Kelvin, bukan dalam Celsius."
   },
   {
     "id": "fis-termo-gas-boyle-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keadaan awal saat kedua permukaan raksa sejajar: tekanan udara terperangkap sama dengan tekanan atmosfer luar ($P_1 = P_0 = 76\\text{ cmHg}$). Keadaan akhir saat kaki terbuka lebih tinggi $\\Delta h = 24\\text{ cmHg}$: tekanan udara terperangkap meningkat menjadi $P_2 = P_0 + \\Delta h = 76 + 24 = 100\\text{ cmHg}$. Karena suhu konstan (isotermal), volume sebanding dengan panjang kolom ($V = A \\times L$), sehingga berlaku Hukum Boyle: $P_1 \\times L_1 = P_2 \\times L_2$."
   },
   {
     "id": "fis-termo-gas-boyle-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa jenis gas didefinisikan sebagai rasio massa terhadap volume ($\\rho = m/V$). Dari persamaan gas ideal $P V = n R T = \\frac{m}{M_r} R T$, diperoleh relasi massa jenis: $$P = \\frac{\\rho}{M_r} R T \\implies \\rho = \\frac{P \\times M_r}{R T}$$ Pada proses isotermal dengan jenis gas dan massa tetap, massa jenis gas berbanding lurus secara linier dengan tekanannya: $\\frac{\\rho_2}{\\rho_1} = \\frac{P_2}{P_1}$. **Tips:** Jangan mengira massa jenis berkurang saat tekanan naik."
   },
   {
     "id": "drill-gas-02",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "hukum-boyle-gay-lussac"
+    "subTopicSlug": "hukum-boyle-gay-lussac",
+    "hint": "Hasil kali tekanan dan volume gas dalam ruang tertutup bernilai konstan: $$P_1 \\cdot V_1 = P_2 \\cdot V_2 \\implies P_2 = \\frac{P_1 V_1}{V_2}$$."
   },
   {
     "id": "sup-fis-ter-03",
@@ -407,7 +418,8 @@
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "hukum-boyle-gay-lussac"
+    "subTopicSlug": "hukum-boyle-gay-lussac",
+    "hint": "Persamaan Keadaan Boyle-Gay Lussac: Untuk jumlah mol gas tetap pada ruang tertutup: $\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}$. Pastikan suhu selalu dalam skala Kelvin mutlak! **Tips:** Mengabaikan faktor suhu atau lupa bahwa suhu gas ideal wajib bersatuan Kelvin."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momentum linier didefinisikan sebagai hasil kali antara massa benda dan kecepatannya: $p = m v$. Satuan internasional untuk momentum adalah $\\text{kg}\\cdot\\text{m/s}$."
   },
   {
     "id": "fis-din-mom-linier-002",
@@ -77,7 +78,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan antara energi kinetik dan momentum linier dinyatakan oleh formula: $E_k = \\frac{p^2}{2m} \\implies p = \\sqrt{2m E_k}$. Pada energi kinetik yang sama, momentum berbanding lurus dengan akar massa benda ($p \\propto \\sqrt{m}$). **Tips:** Jangan menyamakan perbandingan momentum dengan perbandingan massa langsung ($1 : 4$)."
   },
   {
     "id": "fis-din-mom-linier-003",
@@ -110,7 +112,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momentum linier $\\vec{p} = m \\vec{v}$ adalah besaran vektor. Dimensi momentum $[M][L][T]^{-1}$ setara dengan $\\text{N}\\cdot\\text{s} = (\\text{kg}\\cdot\\text{m/s}^2)(\\text{s}) = \\text{kg}\\cdot\\text{m/s}$. Pada gerak melingkar, arah kecepatan berubah secara kontinu sehingga momentum linier tidak konstan. **Tips:** Kerap mengabaikan sifat vektor pada gerak melingkar beraturan."
   },
   {
     "id": "fis-din-mom-linier-004",
@@ -143,7 +146,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perubahan momentum adalah selisih vektor antara momentum akhir dan awal: $\\Delta \\vec{p} = \\vec{p}_2 - \\vec{p}_1$. Karena merupakan vektor satu dimensi, tanda positif dan negatif menentukan arah gerak."
   },
   {
     "id": "fis-din-mom-linier-005",
@@ -176,7 +180,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momentum linier dihitung melalui perkalian massa dalam kilogram dengan kelajuan dalam meter per sekon: $p = m v$."
   },
   {
     "id": "fis-din-mom-linier-006",
@@ -209,7 +214,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Besar vektor kecepatan adalah modulus Pythagoras: $|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}$. Besar momentum linier adalah $|\\vec{p}| = m |\\vec{v}|$, dan energi kinetik skalar adalah $E_k = \\frac{1}{2} m |\\vec{v}|^2 = \\frac{|\\vec{p}|^2}{2m}$."
   },
   {
     "id": "fis-din-mom-linier-007",
@@ -242,7 +248,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perubahan momentum dua dimensi dihitung dengan menguraikan vektor kecepatan pada sumbu tegak lurus (normal) dan sejajar permukaan dinding. Pada dinding licin, komponen kecepatan yang sejajar dinding tidak berubah ($Delta v_\\parallel = 0$), sedangkan komponen tegak lurus berbalik arah."
   },
   {
     "id": "fis-din-mom-linier-008",
@@ -275,7 +282,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $F_{\\text{net}} = \\frac{dp}{dt}$."
   },
   {
     "id": "fis-din-mom-linier-009",
@@ -308,7 +316,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan energi kinetik dan momentum linier adalah $p = \\sqrt{2m E_k}$. Kenaikan sebesar $300\\%$ berarti nilai akhirnya menjadi $E_k' = E_k + 3,00 E_k = 4 E_k$. **Tips:** Perhatikan frasa 'dinaikkan sebesar 300%' yang bermakna nilainya menjadi 4 kali lipat, bukan 3 kali lipat."
   },
   {
     "id": "fis-din-mom-linier-010",
@@ -341,7 +350,8 @@
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gerak parabola, kecepatan horizontal bernilai konstan: $v_x = v_0 \\cos\\theta$. Di titik puncak lintasan, komponen kecepatan vertikal sesaat bernilai nol ($v_y = 0$), sehingga kecepatan total benda hanyalah kecepatan horizontalnya ($v_{\\text{puncak}} = v_x$). **Tips:** Kerap terkecoh menganggap momentum di titik tertinggi bernilai nol karena benda 'berhenti sesaat'."
   }
 ];
 

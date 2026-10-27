@@ -44,7 +44,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada GLBB dengan kecepatan awal nol ($v_0 = 0$): $$v_t = a \\cdot t$$ $$s = \\frac{1}{2} a t^2$$. **Tips:** Lupa mengalikan faktor $\\frac{1}{2}$ pada rumus jarak sehingga memperoleh $108\\text{ m}$ ($3 \\times 36$)."
   },
   {
     "id": "fis-kin-gl-glbb-002",
@@ -77,7 +78,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan GLBB diperlambat menuju keadaan diam ($v_t = 0$): $$v_t = v_0 - a t$$."
   },
   {
     "id": "fis-kin-gl-glbb-003",
@@ -110,7 +112,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan GLBB antara kecepatan awal ($v_0$), kecepatan akhir ($v_t$), percepatan ($a$), dan jarak tempuh ($s$) tanpa variabel waktu adalah: $$v_t^2 = v_0^2 + 2 a s$$."
   },
   {
     "id": "fis-kin-gl-glbb-004",
@@ -143,7 +146,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karakteristik esensial GLBB adalah percepatan konstan ($a = \\text{konstan} \\ne 0$). Akibatnya, kecepatan berubah secara teratur/linier ($v(t) = v_0 + at$) dan grafik $s-t$ berbentuk parabola kuadrat. **Tips:** Membedakan kata 'kecepatan konstan' (GLB) dengan 'percepatan konstan' (GLBB)."
   },
   {
     "id": "fis-kin-gl-glbb-005",
@@ -176,7 +180,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada gerak diperlambat hingga berhenti ($v_t = 0$): $$v_t^2 = v_0^2 - 2 a s$$. **Tips:** Memasukkan nilai $72\\text{ km/jam}$ langsung ke dalam rumus tanpa konversi ke satuan SI $\\text{m/s}$."
   },
   {
     "id": "fis-kin-gl-glbb-006",
@@ -209,7 +214,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak yang ditempuh khusus pada detik ke-$n$ (selang dari $t = n-1$ sampai $t = n$) pada GLBB dari keadaan diam dirumuskan oleh deret Galileo: $$\\Delta s_n = s(n) - s(n-1) = \\frac{1}{2} a (2n - 1)$$."
   },
   {
     "id": "fis-kin-gl-glbb-007",
@@ -242,7 +248,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak tempuh GLBB dapat dinyatakan dalam kelajuan rata-rata dikali waktu: $$s = \\left( \\frac{v_A + v_B}{2} \\right) t$$ Percepatan konstan dihitung dari definisi laju perubahan kecepatan: $$a = \\frac{v_B - v_A}{t}$$."
   },
   {
     "id": "fis-kin-gl-glbb-008",
@@ -275,7 +282,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fase 1 adalah GLBB dari 0 ke $v$ dengan kelajuan rata-rata $\\frac{v}{2}$. Fase 2 adalah GLB dengan kelajuan konstan $v$. Waktu tempuh masing-masing fase ditentukan oleh rasio jarak terhadap kelajuan rata-ratanya."
   },
   {
     "id": "fis-kin-gl-glbb-009",
@@ -308,7 +316,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak henti total terdiri dari dua fase: fase gerak lurus beraturan (GLB) selama waktu reaksi pengemudi, dilanjutkan fase gerak lurus berubah beraturan (GLBB) diperlambat hingga berhenti ($v_t = 0$)."
   },
   {
     "id": "fis-kin-gl-glbb-010",
@@ -341,7 +350,8 @@
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada GLBB diperlambat konstan, perubahan kuadrat kecepatan sebanding dengan jarak penembusan lintasan ($v_t^2 - v_0^2 = -2as$)."
   },
   {
     "id": "mudah-fis-02",
@@ -374,7 +384,8 @@
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "glbb"
+    "subTopicSlug": "glbb",
+    "hint": "Gunakan perumusan konsep fisis: $$s = v_0 t + \\frac{1}{2} a t^2$$ dengan $v_0$ kecepatan awal, $a$ percepatan, dan $t$ selang waktu."
   }
 ];
 

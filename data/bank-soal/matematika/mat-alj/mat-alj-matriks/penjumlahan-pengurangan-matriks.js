@@ -44,7 +44,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Operasi penjumlahan dan pengurangan matriks dilakukan elemen demi elemen pada posisi yang bersesuaian ($c_{ij} = a_{ij} \\pm b_{ij}$). Oleh karena itu, syarat mutlaknya adalah kedua matriks harus memiliki dimensi (ordo) yang identik."
   },
   {
     "id": "mat-alj-matriks-operasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penjumlahan dua matriks dilakukan dengan menjumlahkan setiap pasang elemen yang seletak: $$\\begin{pmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22} \\end{pmatrix} + \\begin{pmatrix} b_{11} & b_{12} \\\\ b_{21} & b_{22} \\end{pmatrix} = \\begin{pmatrix} a_{11}+b_{11} & a_{12}+b_{12} \\\\ a_{21}+b_{21} & a_{22}+b_{22} \\end{pmatrix}$$. **Tips:** Kesalahan perhitungan tanda negatif pada $-2 + 7$ atau $5 + (-3)$."
   },
   {
     "id": "mat-alj-matriks-operasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian suatu matriks dengan skalar $k$ dilakukan dengan mengalikan setiap elemen matriks tersebut dengan bilangan skalar $k$: $$k \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = \\begin{pmatrix} ka & kb \\\\ kc & kd \\end{pmatrix}$$."
   },
   {
     "id": "mat-alj-matriks-operasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Operasi kombinasi $2K - L$ diselesaikan dengan mengalikan skalar 2 terlebih dahulu ke seluruh elemen matriks $K$, lalu mengurangkan hasilnya dengan elemen-elemen seletak dari matriks $L$."
   },
   {
     "id": "mat-alj-matriks-operasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan konsep penjumlahan matriks dan kesamaan dua matriks untuk menyusun persamaan linier bagi masing-masing elemen yang memuat variabel."
   },
   {
     "id": "mat-alj-matriks-operasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan matriks linear diselesaikan menggunakan sifat aljabar penjumlahan dan perkalian skalar: kumpulkan suku yang memuat variabel matriks $X$ ke satu ruas: $$2X + X = 3B - A \\implies 3X = 3B - A \\implies X = \\frac{1}{3}(3B - A)$$. **Tips:** Lupa mengalikan dengan skalar $\\frac{1}{3}$ di langkah terakhir sehingga memilih $\\begin{pmatrix} 9 & 6 \\\\ 9 & 6 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-operasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Lakukan operasi skalar dan pengurangan pada ruas kiri terlebih dahulu, lalu samakan elemen-elemen yang seletak untuk memperoleh sistem persamaan linear dua variabel (SPLDV) dalam $x$ dan $y$."
   },
   {
     "id": "mat-alj-matriks-operasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kombinasi linier dua matriks $C = p A + q B$ berarti setiap elemen matriks $C$ merupakan jumlahan dari perkalian skalar elemen matriks $A$ dan $B$: $c_{ij} = p a_{ij} + q b_{ij}$. **Tips:** Kesalahan membaca elemen baris 2 kolom 1 (lupa tanda minus pada $-q = -2$)."
   },
   {
     "id": "mat-alj-matriks-operasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Elemen pada baris ke-$i$ dan kolom ke-$j$ dari matriks transpos $N^T$ adalah elemen baris ke-$j$ dan kolom ke-$i$ dari matriks asal $N$, yaitu $(N^T)_{ij} = n_{ji}$."
   },
   {
     "id": "mat-alj-matriks-operasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan dekomposisi matriks menjadi bagian simetris $\\frac{1}{2}(A + A^T)$ dan bagian antisimetris $\\frac{1}{2}(A - A^T)$: $$A = \\frac{1}{2}(A + A^T) + \\frac{1}{2}(A - A^T)$$."
   }
 ];
 

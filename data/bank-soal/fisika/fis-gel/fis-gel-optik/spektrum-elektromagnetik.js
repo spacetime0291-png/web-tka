@@ -44,7 +44,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Spektrum gelombang elektromagnetik dari frekuensi terendah (energi terendah, $\\lambda$ terpanjang) ke frekuensi tertinggi (energi tertinggi, $\\lambda$ terpendek): Radio $\\to$ Mikro $\\to$ Inframerah $\\to$ Cahaya Tampak $\\to$ Ultraviolet $\\to$ Sinar-X $\\to$ Sinar Gamma. Mnemonic yang populer: RA-MI-IN-TAM-UL-X-GA ."
   },
   {
     "id": "fis-gel-optik-spektrum-002",
@@ -77,7 +78,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karakteristik dasar gelombang elektromagnetik: 1. Gelombang transversal (vektor $\\vec{E}$ tegak lurus $\\vec{B}$ dan tegak lurus arah rambat $\\vec{k}$). 2. Tidak memerlukan medium rambat (merambat di vakum). 3. Tidak bermuatan listrik (foton netral), sehingga TIDAK dibelokkan oleh medan listrik maupun medan magnet. 4. Kelajuan di ruang hampa adalah $c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}} \\approx 3 \\times 10^8\\text{ m/s}$."
   },
   {
     "id": "fis-gel-optik-spektrum-003",
@@ -110,7 +112,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan mendasar antara cepat rambat ($c$), frekuensi ($f$), dan panjang gelombang ($\\lambda$) gelombang elektromagnetik dirumuskan: $$c = \\lambda \\times f \\implies \\lambda = \\frac{c}{f}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-004",
@@ -143,7 +146,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gelombang mikro (microwaves) memiliki rentang frekuensi sekitar $10^9 - 10^{11}\\text{ Hz}$. Gelombang mikro diserap dengan sangat efisien oleh molekul air dan lemak pada makanan sehingga menimbulkan efek resonansi rotasi termal (pemanasan oven microwave). Selain itu, panjang gelombangnya yang relatif pendek membuatnya ideal untuk pemetaan radar (Radio Detection and Ranging). **Tips:** Siswa sering tertukar antara gelombang mikro dan sinar inframerah."
   },
   {
     "id": "fis-gel-optik-spektrum-005",
@@ -176,7 +180,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Spektrum cahaya tampak terbentang dari panjang gelombang $\\approx 700\\text{ nm}$ (merah) hingga $\\approx 400\\text{ nm}$ (ungu). Karena frekuensi berbanding terbalik dengan panjang gelombang ($f = c/\\lambda$): Merah memiliki $\\lambda$ terpanjang dan $f$ terendah. Ungu memiliki $\\lambda$ terpendek dan $f$ tertinggi. **Tips:** Jangan terbalik antara panjang gelombang dan frekuensi."
   },
   {
     "id": "fis-gel-optik-spektrum-006",
@@ -209,7 +214,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi foton ($E$) dari gelombang elektromagnetik berbanding lurus dengan frekuensi ($f$) dan berbanding terbalik dengan panjang gelombang ($\\lambda$): $$E = h f = \\frac{h c}{\\lambda}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-007",
@@ -242,7 +248,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya radiasi ($P$) adalah energi total foton yang dipancarkan per satuan waktu. Jika $N$ adalah laju pemancaran foton per detik: $$P = N \\times E_{\\text{foton}} = N \\times \\frac{h c}{\\lambda} \\implies N = \\frac{P \\lambda}{h c}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-008",
@@ -275,7 +282,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gelombang elektromagnetik, perbandingan antara amplitudo medan listrik ($E_{\\max}$) dan amplitudo medan magnet ($B_{\\max}$) selalu sebanding dengan kecepatan rambat gelombang ($c$): $$c = \\frac{E_{\\max}}{B_{\\max}} \\implies B_{\\max} = \\frac{E_{\\max}}{c}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-009",
@@ -308,7 +316,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Radiasi pengion adalah radiasi elektromagnetik yang energi fotonnya melebihi energi ionisasi atom/molekul (biasanya $\\gtrsim 10 - 12\\text{ eV}$). Spektrum yang termasuk radiasi pengion adalah sinar ultraviolet ekstrem/jauh, sinar-X, dan sinar gamma. Spektrum berenergi lebih rendah (cahaya tampak, inframerah, gelombang mikro, dan gelombang radio) adalah radiasi non-pengion."
   },
   {
     "id": "fis-gel-optik-spektrum-010",
@@ -341,7 +350,8 @@
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika gelombang elektromagnetik berpindah medium: 1. Frekuensi ($f$) selalu bernilai konstan karena ditentukan oleh sumber pemancar. 2. Kecepatan rambat berkurang sesuai indeks bias: $v = \\frac{c}{n}$. 3. Panjang gelombang di dalam medium memendek: $\\lambda = \\frac{v}{f} = \\frac{\\lambda_0}{n}$."
   },
   {
     "id": "drill-cah-01",
@@ -374,7 +384,8 @@
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Persamaan Gelombang Elektromagnetik: $$c = \\lambda \\cdot f \\implies f = \\frac{c}{\\lambda}$$."
   },
   {
     "id": "sedang-fis-11",
@@ -407,7 +418,8 @@
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Interferensi Maksimum (Garis Terang) Celah Ganda: $$\\frac{d \\cdot y}{L} = n \\lambda \\implies y = \\frac{n \\lambda L}{d}$$ dengan $n$ adalah orde terang ($n = 1, 2, 3, \\dots$)."
   },
   {
     "id": "drill-cah-08",
@@ -440,7 +452,8 @@
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Jarak Antar-Garis Terang Celah Ganda: Jarak pisah antara dua pola terang berurutan ($Delta y$) memenuhi persamaan: $$\\frac{d \\cdot \\Delta y}{L} = \\lambda \\implies \\Delta y = \\frac{\\lambda L}{d}$$."
   },
   {
     "id": "drill2-cah-07",
@@ -473,7 +486,8 @@
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Persamaan Kisi Difraksi: $$d \\sin \\theta = n \\lambda$$ dengan tetapan jarak antar-kisi: $d = \\frac{1}{N}$."
   }
 ];
 

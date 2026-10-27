@@ -44,7 +44,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus sudut rangkap untuk sinus adalah $\\sin 2\\alpha = 2\\sin \\alpha \\cos \\alpha$."
   },
   {
     "id": "fun-trig-dasar-rangkap-002",
@@ -77,7 +78,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus sudut rangkap cosinus dalam bentuk cosinus kuadrat adalah $\\cos 2\\theta = 2\\cos^2 \\theta - 1$. **Tips:** Lupa mengurangkan dengan 1 atau lupa mengalikan dengan 2 sebelum mengurangkan."
   },
   {
     "id": "fun-trig-dasar-rangkap-003",
@@ -110,7 +112,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus sudut rangkap untuk tangen adalah $\\tan 2x = \\frac{2\\tan x}{1 - \\tan^2 x}$. **Tips:** Menulis tanda tambah pada penyebut $(1 + \\tan^2 x)$ yang merupakan rumus turunan secan kuadrat."
   },
   {
     "id": "fun-trig-dasar-rangkap-004",
@@ -143,7 +146,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk $2\\sin A \\cos A$ merupakan bentuk terurai dari rumus sudut rangkap $\\sin 2A$. **Tips:** Mencari nilai $\\sin 15^\\circ$ dan $\\cos 15^\\circ$ terlebih dahulu sehingga perhitungan menjadi panjang dan berisiko salah hitung."
   },
   {
     "id": "fun-trig-dasar-rangkap-005",
@@ -176,7 +180,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk $1 - 2\\sin^2 A$ ekuivalen dengan rumus cosinus sudut rangkap $\\cos 2A$. **Tips:** Tertukar dengan fungsi sinus sehingga menjawab $\\sin 30^\\circ = \\frac{1}{2}$."
   },
   {
     "id": "fun-trig-dasar-rangkap-006",
@@ -209,7 +214,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadrat dari selisih $(\\sin x - \\cos x)^2$ memuat identitas Pythagoras dan sudut rangkap: $(\\sin x - \\cos x)^2 = 1 - \\sin 2x$. **Tips:** Lupa bahwa tanda suku silang bernilai negatif $(-2\\sin x \\cos x)$ sehingga malah menghitung $1 + \\frac{1}{25} = \\frac{26}{25}$."
   },
   {
     "id": "fun-trig-dasar-rangkap-007",
@@ -242,7 +248,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus sudut rangkap $\\sin 2x = 2\\sin x \\cos x$ dan $1 + \\cos 2x = 2\\cos^2 x$. **Tips:** Memilih varian cosinus sudut rangkap yang salah pada penyebut sehingga tidak saling mengeliminasi dengan angka 1."
   },
   {
     "id": "fun-trig-dasar-rangkap-008",
@@ -275,7 +282,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan hubungan matematis dasar: $\\sin^2 A = \\frac{1 - \\cos 2A}{2}$ dan $\\cos^2 A = \\frac{1 + \\cos 2A}{2}$. **Tips:** Terbalik dalam pembagian nilai $\\frac{\\sin A}{\\cos A}$ sehingga memilih $\\frac{4}{3}$."
   },
   {
     "id": "fun-trig-dasar-rangkap-009",
@@ -308,7 +316,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas sudut rangkap $1 - \\cos 2\\theta = 2\\sin^2 \\theta$ dan $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$. **Tips:** Tertukar antara $\\tan \\theta$ dan $\\cot \\theta$ karena salah menempatkan sinus kuadrat pada penyebut."
   },
   {
     "id": "fun-trig-dasar-rangkap-010",
@@ -341,7 +350,8 @@
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas $\\sin \\alpha \\cos \\alpha = \\frac{1}{2}\\sin 2\\alpha$ dapat diterapkan secara beruntun pada sudut-sudut kelipatan dua. **Tips:** Lupa faktor $\\frac{1}{2}$ pada setiap penerapan rumus sudut rangkap sehingga menghasilkan jawaban yang 2 atau 4 kali lebih besar."
   },
   {
     "id": "sedang-mtk-09",
@@ -374,7 +384,8 @@
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
     "subChapterId": "fun-trig-dasar",
-    "subTopicSlug": "rumus-sudut-rangkap"
+    "subTopicSlug": "rumus-sudut-rangkap",
+    "hint": "Identitas Sinus Sudut Rangkap: $$\\sin 2x = 2 \\sin x \\cos x$$ Di kuadran III, nilai $\\sin x < 0$ dan $\\cos x < 0$. **Tips:** Perkalian dua bilangan negatif menghasilkan nilai positif: $(-)(-) = (+)$, sehingga $\\sin 2x$ bernilai positif $+\\frac{24}{25}$."
   }
 ];
 

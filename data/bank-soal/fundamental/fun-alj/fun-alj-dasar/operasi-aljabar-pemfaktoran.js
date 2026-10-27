@@ -44,7 +44,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan sifat distributif perkalian aljabar $(ax + b)(cx + d) = acx^2 + (ad + bc)x + bd$. **Tips:** Keliru dalam menjumlahkan suku sejenis $8x - 3x$ menjadi $-5x$ atau $11x$ karena kurang teliti pada tanda minus."
   },
   {
     "id": "fun-alj-dasar-operasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus dasar selisih dua kuadrat menyatakan bahwa $a^2 - b^2 = (a - b)(a + b)$. **Tips:** Memilih $(x - 4)^2$ yang merupakan bentuk kuadrat sempurna dari $x^2 - 8x + 16$ alih-alih selisih kuadrat."
   },
   {
     "id": "fun-alj-dasar-operasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk kuadrat sempurna trinomial dirumuskan sebagai $a^2 + 2ab + b^2 = (a + b)^2$. **Tips:** Tertukar dengan bentuk kuadrat sempurna negatif $(x - 5)^2$ atau pemfaktoran selisih kuadrat $(x - 5)(x + 5)$."
   },
   {
     "id": "fun-alj-dasar-operasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rumus penjabaran kuadrat suku dua adalah $(x - y)^2 = x^2 - 2xy + y^2$. **Tips:** Lupa menghitung suku tengah $-2xy$ sehingga hanya menguadratkan suku depan dan belakang menjadi $9a^2 - 4b^2$."
   },
   {
     "id": "fun-alj-dasar-operasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Trinomial $x^2 + bx + c$ dapat difaktorkan menjadi $(x + p)(x + q)$ dengan syarat $p + q = b$ dan $p \\times q = c$. **Tips:** Memilih $(x + 1)(x - 6)$ karena $1 - 6 = -5$, namun perkaliannya $1 \\times (-6) = -6$, bukan $+6$."
   },
   {
     "id": "fun-alj-dasar-operasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas aljabar kuadrat jumlah: $(a + b)^2 = a^2 + 2ab + b^2$, sehingga diperoleh rumus turunan $a^2 + b^2 = (a + b)^2 - 2ab$. **Tips:** Langsung menguadratkan nilai $(a + b)$ menjadi 64 tanpa mengurangkan suku $2ab$."
   },
   {
     "id": "fun-alj-dasar-operasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pemfaktoran $ax^2 + bx + c$ dilakukan dengan mencari dua bilangan yang hasil kalinya sama dengan $a \\times c$ dan jumlahnya sama dengan $b$. **Tips:** Tertukar tanda menjadi $(2x - 1)(x + 3)$ yang jika dijabarkan menghasilkan suku tengah $+5x$, bukan $-5x$."
   },
   {
     "id": "fun-alj-dasar-operasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadrat dari suku resiprokal menghasilkan suku tengah bernilai konstan $2$, yaitu $\\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2}$."
   },
   {
     "id": "fun-alj-dasar-operasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan bagian pembilang dengan aturan selisih dua kuadrat $a^2 - b^2 = (a - b)(a + b)$. **Tips:** Mencoba menghitung nilai kuadrat bilangan secara manual yang memakan banyak waktu dan rentan kekeliruan perhitungan."
   },
   {
     "id": "fun-alj-dasar-operasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk selisih kuadrat $x^2 - y^2$ dapat dinyatakan sebagai perkalian $(x - y)(x + y)$."
   },
   {
     "id": "mudah-mtk-02",
@@ -374,7 +384,8 @@
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
     "subChapterId": "fun-alj-dasar",
-    "subTopicSlug": "operasi-aljabar-pemfaktoran"
+    "subTopicSlug": "operasi-aljabar-pemfaktoran",
+    "hint": "Pemfaktoran Persamaan Kuadrat $ax^2 + bx + c = 0$: Cari dua bilangan yang hasil kalinya $a \\times c = 2 \\times 3 = 6$ dan jumlahnya $b = -7$. Bilangan tersebut adalah $-6$ dan $-1$. **Tips:** Perhatikan tanda negatif saat pemfaktoran agar tidak terbalik menjadi negatif pada hasil akhir."
   },
   {
     "id": "sedang-mtk-07",
@@ -407,7 +418,8 @@
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
     "subChapterId": "fun-alj-dasar",
-    "subTopicSlug": "operasi-aljabar-pemfaktoran"
+    "subTopicSlug": "operasi-aljabar-pemfaktoran",
+    "hint": "Metode Eliminasi & Substitusi SPLDV: Kalikan persamaan kedua dengan 2 lalu jumlahkan untuk mengeliminasi variabel $y$."
   }
 ];
 

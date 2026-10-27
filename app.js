@@ -30,6 +30,7 @@ const state = {
   isVerified: [],
   isRagu: [],
   solutionOpen: [],
+  hintOpen: [],
   questionTimeSpent: [],
 
   // Drill Setup Modal Form State
@@ -490,6 +491,7 @@ function saveSessionState() {
       isVerified: state.isVerified,
       isRagu: state.isRagu,
       solutionOpen: state.solutionOpen,
+      hintOpen: state.hintOpen,
       isReviewMode: state.isReviewMode,
       timestamp: Date.now()
     };
@@ -682,6 +684,7 @@ function resumeActiveDrillSession() {
     state.isVerified = data.isVerified || new Array(data.questions.length).fill(false);
     state.isRagu = data.isRagu || new Array(data.questions.length).fill(false);
     state.solutionOpen = data.solutionOpen || new Array(data.questions.length).fill(false);
+    state.hintOpen = data.hintOpen || new Array(data.questions.length).fill(false);
     state.isReviewMode = Boolean(data.isReviewMode);
 
     state.timerRunning = true;
@@ -2175,6 +2178,7 @@ function startConfiguredDrillSession() {
   state.isVerified = new Array(finalQuestions.length).fill(false);
   state.isRagu = new Array(finalQuestions.length).fill(false);
   state.solutionOpen = new Array(finalQuestions.length).fill(false);
+  state.hintOpen = new Array(finalQuestions.length).fill(false);
   state.questionTimeSpent = new Array(finalQuestions.length).fill(0);
   state.sessionStartTime = Date.now();
 
@@ -2377,6 +2381,36 @@ function renderCurrentQuestion(shouldScrollToTop = false) {
     }).join('');
   }
 
+  // Hint Accordion & Button Handling
+  const hintAccordion = document.getElementById('hintAccordion');
+  const hintContent = document.getElementById('hintContent');
+  const btnHint = document.getElementById('btnHint');
+
+  if (state.sessionMode === 'ujian' && !state.isReviewMode) {
+    if (hintAccordion) hintAccordion.classList.add('hidden');
+    if (btnHint) btnHint.classList.add('hidden');
+  } else {
+    if (btnHint) {
+      btnHint.classList.remove('hidden');
+      if (state.hintOpen[state.currentIndex]) {
+        btnHint.classList.add('active');
+      } else {
+        btnHint.classList.remove('active');
+      }
+    }
+    if (hintAccordion) {
+      hintAccordion.classList.remove('hidden');
+      if (hintContent) {
+        hintContent.innerHTML = q.hint || (q.solution ? q.solution.concept : 'Gunakan konsep dasar pada topik ini.');
+      }
+      if (state.hintOpen[state.currentIndex]) {
+        hintAccordion.classList.add('open');
+      } else {
+        hintAccordion.classList.remove('open');
+      }
+    }
+  }
+
   // Solution Accordion vs Exam Locked Notice
   const solutionAccordion = document.getElementById('solutionAccordion');
   const examLockedNotice = document.getElementById('examLockedNotice');
@@ -2532,6 +2566,29 @@ function toggleSolutionAccordion() {
       }, 50);
     } else {
       solutionAccordion.classList.remove('open');
+    }
+  }
+  saveSessionState();
+}
+
+function toggleHintAccordion() {
+  if (state.sessionMode === 'ujian' && !state.isReviewMode) return;
+  state.hintOpen[state.currentIndex] = !state.hintOpen[state.currentIndex];
+  const hintAccordion = document.getElementById('hintAccordion');
+  const btnHint = document.getElementById('btnHint');
+  if (btnHint) {
+    if (state.hintOpen[state.currentIndex]) btnHint.classList.add('active');
+    else btnHint.classList.remove('active');
+  }
+  if (hintAccordion) {
+    if (state.hintOpen[state.currentIndex]) {
+      hintAccordion.classList.add('open');
+      triggerMathTypeset();
+      setTimeout(() => {
+        hintAccordion.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 50);
+    } else {
+      hintAccordion.classList.remove('open');
     }
   }
   saveSessionState();
@@ -2987,6 +3044,9 @@ function bindGlobalEvents() {
     } else if (key === 'R') {
       e.preventDefault();
       toggleRagu();
+    } else if (key === 'H') {
+      e.preventDefault();
+      toggleHintAccordion();
     }
   });
 
@@ -3124,6 +3184,7 @@ if (typeof module !== 'undefined' && module.exports) {
     saveSessionState,
     checkActiveSessionResume,
     renderChapterCard,
+    toggleHintAccordion,
     STORAGE_KEY_PARTIAL_SESSION
   };
 }

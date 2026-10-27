@@ -44,7 +44,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penyebab utama kenaikan konsentrasi gas rumah kaca global: - Pembakaran bahan bakar fosil hidrokarbon (batu bara, minyak bumi, gas alam) menyumbang lebih dari $75\\%$ dari total emisi gas rumah kaca global dan hampir $90\\%$ dari seluruh emisi $\\text{CO}_2$. - Reaksi kimia pembakaran hidrokarbon secara umum: $$\\text{C}_x\\text{H}_y + \\left(x + \\frac{y}{4}\\right)\\text{O}_2 \\to x\\,\\text{CO}_2 + \\frac{y}{2}\\,\\text{H}_2\\text{O} + \\text{Energi}$$."
   },
   {
     "id": "fis-termo-global-dampak-002",
@@ -77,7 +78,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kenaikan permukaan air laut global disebabkan oleh dua proses fisis utama: 1. Pemuaian termal air laut (thermal expansion): ketika suhu lapisan atas samudra naik, volume air laut memuai ($\\Delta V = V_0 \\gamma \\Delta T$). Proses ini menyumbang sekitar sepertiga hingga setengah dari total kenaikan muka air laut. 2. Pencairan es daratan: mencairnya gletser pegunungan dan lembaran es daratan (Greenland dan Antartika) menambah volume massa air baru ke cekungan samudra. **Tips:** Jebakan konseptual umum adalah mengira pencairan es laut terapung di Kutub Utara (Arktik) menaikkan muka air laut."
   },
   {
     "id": "fis-termo-global-dampak-003",
@@ -110,7 +112,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Reaksi kimia penyerapan $\\text{CO}_2$ oleh air laut: $$\\text{CO}_2 + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_2\\text{CO}_3 \\rightleftharpoons \\text{H}^+ + \\text{HCO}_3^-$$ Peningkatan ion hidrogen ($\\text{H}^+$) menyebabkan penurunan pH air laut (air laut menjadi lebih asam), serta menurunkan ketersediaan ion karbonat ($\\text{CO}_3^{2-}$), yang menghambat pembentukan cangkang kalsium karbonat ($\\text{CaCO}_3$) pada terumbu karang dan moluska. **Tips:** Pengasaman laut berarti nilai pH-nya TURUN (bukan naik, )."
   },
   {
     "id": "fis-termo-global-dampak-004",
@@ -143,7 +146,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kenaikan energi termal dalam sistem atmosfer-laut bumi meningkatkan ketidakstabilan dinamika fluida atmosfer: - Udara yang lebih hangat menampung lebih banyak uap air (energi potensial laten tinggi). - Akibatnya, saat terjadi pelepasan energi, badai presipitasi menjadi jauh lebih hebat dan berpotensi memicu banjir bandang ekstrem. - Sebaliknya, wilayah yang mengalami subsiden udara kering mengalami penguapan intensif yang memicu kekeringan parah dan gelombang panas ekstrem."
   },
   {
     "id": "fis-termo-global-dampak-005",
@@ -176,7 +180,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jejak karbon (carbon footprint) adalah ukuran total emisi gas rumah kaca (GRK)—termasuk $\\text{CO}_2$, $\\text{CH}_4$, $\\text{N}_2\\text{O}$—yang dihasilkan oleh aktivitas manusia (seperti konsumsi listrik, transportasi, konsumsi makanan, dan rantai pasok industri) yang diekspresikan dalam satuan ekuivalen $\\text{CO}_2$ ($\\text{kg CO}_2\\text{e}$ atau $\\text{ton CO}_2\\text{e}$)."
   },
   {
     "id": "fis-termo-global-dampak-006",
@@ -209,7 +214,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pemuaian volume zat cair dirumuskan: $\\Delta V = V_0 \\times \\gamma \\times \\Delta T$. Karena cekungan samudra dibatasi oleh daratan benua sehingga luas permukaan samudra ($A$) praktis konstan, maka pertambahan volume air terwujud sebagai kenaikan tinggi kolom permukaan laut secara vertikal (pemuaian linear vertikal zat cair yang terkekang horizontal): $$\\Delta V = A \\times \\Delta h \\implies \\frac{\\Delta h}{h_0} = \\gamma \\times \\Delta T \\implies \\Delta h = h_0 \\times \\gamma \\times \\Delta T$$. **Tips:** Jangan membagi koefisien muai volume dengan 3."
   },
   {
     "id": "fis-termo-global-dampak-007",
@@ -242,7 +248,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluks radiasi yang diserap suatu permukaan dihitung dari fraksi serapan $(1 - \\alpha)$ dikalikan fluks datang $I_0$: $$I_{\\text{serap}} = I_0 (1 - \\alpha)$$ Pertambahan fluks serapan saat terjadi pergantian tutupan permukaan dari es ke laut terbuka adalah: $$\\Delta I_{\\text{serap}} = I_0 \\left[(1 - \\alpha_{\\text{laut}}) - (1 - \\alpha_{\\text{es}})\\right] = I_0 (\\alpha_{\\text{es}} - \\alpha_{\\text{laut}})$$. **Tips:** Hati-hati: ($285\\text{ W/m}^2$) adalah daya serap total setelah menjadi air laut, bukan pertambahannya."
   },
   {
     "id": "fis-termo-global-dampak-008",
@@ -275,7 +282,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kekekalan massa berlaku saat es melebur menjadi air: $$m = \\rho_{\\text{es}} \\times V_{\\text{es}} = \\rho_{\\text{air}} \\times V_{\\text{air}} \\implies V_{\\text{air}} = V_{\\text{es}} \\times \\frac{\\rho_{\\text{es}}}{\\rho_{\\text{air}}}$$ Kenaikan tinggi rata-rata muka air laut ($\\Delta h$) diperoleh dengan membagi volume air cair tambahan dengan luas permukaan samudra dunia ($A_{\\text{samudra}}$): $$\\Delta h = \\frac{V_{\\text{air}}}{A_{\\text{samudra}}}$$."
   },
   {
     "id": "fis-termo-global-dampak-009",
@@ -308,7 +316,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tipping point dalam dinamika iklim adalah ambang batas kritis di mana perubahan kecil dapat memicu perubahan sistemik skala besar yang tidak dapat dipulihkan (irreversible). Ketika permafrost mencair, mikroorganisme tanah menjadi aktif dan mendekomposisi bahan organik yang sebelumnya terawetkan dalam kondisi beku, melepaskan miliaran ton gas metana ($\\text{CH}_4$) dan $\\text{CO}_2$. Gas rumah kaca ini semakin meningkatkan suhu atmosfer, yang memicu pencairan permafrost lebih luas lagi secara swasembada (siklus umpan balik positif tak terkendali)."
   },
   {
     "id": "fis-termo-global-dampak-010",
@@ -341,7 +350,8 @@
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Prinsip Sirkulasi Termohalin (AMOC): - Penggerak utama (engine) sirkulasi laut dalam adalah pembentukan air padat (dense water) di Atlantik Utara: pendinginan udara kutub (termo) dan pembentukan es laut menyisakan garam di air cair sehingga meningkatkan salinitas (halin). Air dengan kerapatan tinggi ini tenggelam (deep water formation). - Air leburan gletser Greenland adalah air tawar murni (salinitas $0\\text{ PSU}$). Masuknya volume masif air tawar mengencerkan air laut, menurunkan massa jenisnya secara drastis ($\\rho_{\\text{tawar}} < \\rho_{\\text{asin}}$), sehingga air permukaan tetap mengapung dan tidak dapat tenggelam ke dasar laut. **Tips:** Air leburan es gletser daratan adalah AIR TAWAR, bukan air asin."
   },
   {
     "id": "drill-pem-01",
@@ -374,7 +384,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Panjang gelombang intensitas maksimum berbanding terbalik dengan suhu mutlak benda: $$\\lambda_{\\max} \\cdot T = C = 2{,}9 \\times 10^{-3}\\text{ m}\\cdot\\text{K} \\implies \\lambda_{\\max} = \\frac{C}{T}$$."
   },
   {
     "id": "drill2-pem-01",
@@ -407,7 +418,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Spektrum Gelombang Elektromagnetik: Frekuensi Tinggi (Panjang Gelombang Pendek) $\\to$ Frekuensi Rendah: Sinar Gamma $\\to$ Sinar-X $\\to$ Ultraviolet $\\to$ Cahaya Tampak $\\to$ Inframerah $\\to$ Gelombang Mikro $\\to$ Gelombang Radio. **Tips:** ⚠️ Mnemonic Urutan Spektrum: GRUTAMUXI: G amma, R ontgen (X), U ltraviolet, TAm pak, M erah (Infra), U HF/Mikro, R ad i o."
   },
   {
     "id": "drill2-pem-02",
@@ -440,7 +452,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Karakteristik Hukum Stefan-Boltzmann: $$P \\propto T^4$$."
   },
   {
     "id": "drill2-pem-03",
@@ -473,7 +486,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Karakteristik Kimiawi CFC: 1. Radikal klorin ($\\text{Cl}^\\bullet$) dari CFC mengkatalisis penguraian ozon ($O_3 \\to O_2$) di stratosfer. 2. Molekul CFC memiliki masa hidup sangat panjang di atmosfer dan menyerap radiasi inframerah termal (gas rumah kaca)."
   },
   {
     "id": "sedang-fis-13",
@@ -506,7 +520,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin): $$P = e \\sigma A T^4 \\implies P \\propto T^4$$."
   },
   {
     "id": "drill-pem-02",
@@ -539,7 +554,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Perbandingan Hukum Wien: $$\\lambda_1 T_1 = \\lambda_2 T_2 \\implies \\frac{\\lambda_2}{\\lambda_1} = \\frac{T_1}{T_2}$$. **Tips:** ⚠️ Ingat Hubungan Terbalik: Suhu naik $\\implies$ panjang gelombang mengecil/memendek , bukan membesar."
   },
   {
     "id": "drill-pem-05",
@@ -572,7 +588,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Perbandingan Daya Radiasi Termal: $$P = \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_B}{P_A} = \\left( \\frac{T_B}{T_A} \\right)^4$$ (karena jari-jari dan luas permukaan sama)."
   },
   {
     "id": "drill2-pem-04",
@@ -605,7 +622,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Gunakan perumusan konsep fisis: $$\\lambda_{\\max} \\cdot T = C \\implies T = \\frac{C}{\\lambda_{\\max}}$$."
   },
   {
     "id": "drill2-pem-05",
@@ -638,7 +656,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Mekanisme Umpan Balik Albedo Es (Ice-Albedo Feedback): • Lapisan es putih memiliki albedo tinggi ($70-80\\%$ radiasi dipantulkan). • Permukaan laut gelap memiliki albedo rendah (hanya memantulkan $\\approx 10\\%$, menyerap $90\\%$ radiasi). • Saat es mencair $\\to$ laut menyerap lebih banyak panas $\\to$ suhu laut naik $\\to$ es makin cepat mencair. **Tips:** ⚠️ Definisi Albedo: Permukaan putih/terang memiliki albedo tinggi (memantulkan)."
   },
   {
     "id": "drill2-pem-06",
@@ -671,7 +690,8 @@
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Intensitas Radiasi Benda Hitam: $$I = \\frac{P}{A} = e \\cdot \\sigma \\cdot T^4$$."
   }
 ];
 

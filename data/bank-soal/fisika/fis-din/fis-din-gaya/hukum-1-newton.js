@@ -44,7 +44,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "'Jika resultan gaya pada suatu benda sama dengan nol, benda yang diam akan tetap diam dan benda yang bergerak akan tetap bergerak dengan kecepatan konstan pada garis lurus (GLB)'."
   },
   {
     "id": "fis-din-gaya-newton1-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kelembaman (inersia) adalah kecenderungan alami setiap benda materi untuk menolak perubahan keadaan geraknya. Sebelum direm, tubuh penumpang melaju bersama bus. Saat rem memperlambat bus, tubuh penumpang cenderung terus bergerak maju dengan kecepatan semula. **Tips:** Menganggap adanya 'gaya dorong nyata' ke depan, padahal itu hanyalah efek kelembaman tubuh dalam kerangka acuan yang diperlambat."
   },
   {
     "id": "fis-din-gaya-newton1-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Resultan gaya searah sumbu horizontal adalah selisih aljabar vektor gaya: $$\\Sigma F_x = F_1 - F_2$$."
   },
   {
     "id": "fis-din-gaya-newton1-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Massa inersial adalah sifat intrinsik materi yang mengukur ketahanan benda terhadap perubahan kecepatan (percepatan). Semakin besar massa suatu benda, semakin sulit benda tersebut diubah keadaan geraknya. **Tips:** Tertukar antara massa dan berat."
   },
   {
     "id": "fis-din-gaya-newton1-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat benda bergerak lurus dengan kelajuan konstan (GLB) menurut Hukum I Newton adalah resultan gaya total harus nol: $$\\Sigma F = 0$$. **Tips:** Menambahkan gaya ke arah timur sehingga resultan gayanya justru menjadi lebih besar dan benda dipercepat."
   },
   {
     "id": "fis-din-gaya-newton1-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan translasi statis menurut Hukum I Newton adalah $\\Sigma F_x = 0$ dan $\\Sigma F_y = 0$. Pada sumbu vertikal, komponen tegangan kedua tali menopang gaya berat lampu."
   },
   {
     "id": "fis-din-gaya-newton1-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya dorong $F$ berarah horizontal mendatar. Proyeksikan gaya-gaya yang bekerja sejajar dengan permukaan bidang miring untuk memenuhi syarat kesetimbangan $\\Sigma F_{\\parallel} = 0$."
   },
   {
     "id": "fis-din-gaya-newton1-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan partikel adalah resultan jumlahan vektor seluruh gaya bernilai nol: $$\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$$."
   },
   {
     "id": "fis-din-gaya-newton1-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak dengan kelajuan tetap pada lintasan lurus merupakan Gerak Lurus Beraturan (GLB). Berdasarkan Hukum I Newton, resultan gaya pada arah mendatar harus sama dengan nol ($\\Sigma F_x = 0$)."
   },
   {
     "id": "fis-din-gaya-newton1-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesetimbangan titik simpul tiga gaya: • Sumbu vertikal: $\\Sigma F_y = 0 \\implies T_B \\sin\\theta - w = 0$ • Sumbu horizontal: $\\Sigma F_x = 0 \\implies T_B \\cos\\theta - T_A = 0$. **Tips:** Tertukar antara tegangan tali $A$ dan tali $B$ saat membaca urutan pertanyaan."
   }
 ];
 

@@ -124,18 +124,19 @@ runTest('Strict Schema & Payload Validation for all questions', () => {
     assert(Number.isInteger(q.correctIndex), `${context}: correctIndex must be an integer`);
     assert(q.correctIndex >= 0 && q.correctIndex <= 4, `${context}: correctIndex must be between 0 and 4, got ${q.correctIndex}`);
 
-    // Solution
+    // Solution & Hint
     assert(q.solution && typeof q.solution === 'object', `${context}: solution must be an object`);
     assert(typeof q.solution.concept === 'string' && q.solution.concept.length > 0, `${context}: solution.concept is missing`);
     assert(typeof q.solution.steps === 'string' && q.solution.steps.length > 0, `${context}: solution.steps is missing`);
     assert(typeof q.solution.pitfalls === 'string' && q.solution.pitfalls.length > 0, `${context}: solution.pitfalls is missing`);
+    assert(typeof q.hint === 'string' && q.hint.trim().length > 15, `${context}: hint must be non-empty string`);
   });
 });
 
 // Test 6: Mathematical Delimiters & KaTeX Syntax check
 runTest('KaTeX Math delimiter consistency check', () => {
   allQuestions.forEach(q => {
-    const textToCheck = q.statement + ' ' + q.options.join(' ');
+    const textToCheck = q.statement + ' ' + q.options.join(' ') + ' ' + (q.hint || '');
     // Count unescaped dollar signs
     const dollars = (textToCheck.match(/(?<!\\)\$/g) || []).length;
     assert(dollars % 2 === 0, `Unmatched single dollar signs ($) in question ${q.id}: count is ${dollars}`);

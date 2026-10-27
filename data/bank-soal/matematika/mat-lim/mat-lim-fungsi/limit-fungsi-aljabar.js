@@ -44,7 +44,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi polinomial kontinu pada seluruh domain bilangan real, sehingga nilai limit untuk $x \\to c$ diperoleh melalui substitusi langsung nilai $c$ ke dalam fungsi: $\\lim_{x \\to c} P(x) = P(c)$. **Tips:** Melakukan kesalahan hitung urutan operasi aljabar, seperti mengalikan $3 \\times 2$ baru dikuadratkan."
   },
   {
     "id": "mat-lim-fungsi-aljabar-002",
@@ -77,7 +78,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Substitusi langsung menghasilkan bentuk tak tentu $\\frac{0}{0}$. Faktorkan pembilang menggunakan rumus selisih dua kuadrat $a^2 - b^2 = (a - b)(a + b)$ untuk mengeliminasi pembuat nol $(x - 3)$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-003",
@@ -110,7 +112,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk tak tentu $\\frac{0}{0}$ pada limit fungsi rasional diselesaikan dengan memfaktorkan bentuk kuadrat pembilang $x^2 - 5x + 4$ menjadi perkalian faktor-faktor linearnya. **Tips:** Salah memfaktorkan persamaan kuadrat, misalnya menjadi $(x - 4)(x + 1)$ yang akan menghasilkan nilai limit $5$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-004",
@@ -143,7 +146,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk tak tentu $\\frac{0}{0}$ yang memuat akar kuadrat dapat diselesaikan dengan memfaktorkan penyebut sebagai selisih kuadrat $x - 1 = (\\sqrt{x} - 1)(\\sqrt{x} + 1)$ atau mengalikan pembilang dan penyebut dengan bentuk sekawan $(\\sqrt{x} + 1)$. **Tips:** Lupa bahwa $\\sqrt{x} - 1$ saling membagi dengan faktor di penyebut dan meninggalkan angka $1$ di bagian pembilang (bukan $0$)."
   },
   {
     "id": "mat-lim-fungsi-aljabar-005",
@@ -176,7 +180,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk limit menuju tak hingga fungsi rasional $\\frac{P(x)}{Q(x)}$ di mana derajat tertinggi pembilang sama dengan derajat tertinggi penyebut ($n = m$), nilai limitnya sama dengan perbandingan koefisien pangkat tertingginya: $\\frac{a_n}{b_m}$. **Tips:** Menghitung seluruh suku polinomial alih-alih berfokus pada koefisien derajat tertinggi."
   },
   {
     "id": "mat-lim-fungsi-aljabar-006",
@@ -209,7 +214,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk tak tentu $\\frac{0}{0}$ yang memuat bentuk irasional di penyebut diatasi dengan mengalikan pembilang dan penyebut dengan bentuk sekawannya, yaitu $(\\sqrt{2x + 5} + 3)$, agar diperoleh selisih kuadrat $(a - b)(a + b) = a^2 - b^2$. **Tips:** Lupa memfaktorkan angka 2 dari $(2x - 4)$ sehingga keliru membagi penyebut secara langsung."
   },
   {
     "id": "mat-lim-fungsi-aljabar-007",
@@ -242,7 +248,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ubah suku $(2x - 3)$ menjadi bentuk akar $\\sqrt{(2x - 3)^2} = \\sqrt{4x^2 - 12x + 9}$. Rumus cepat selisih akar kuadrat untuk koefisien $a$ yang sama pada $\\lim_{x \\to \\infty} (\\sqrt{ax^2 + bx + c} - \\sqrt{ax^2 + px + q})$ adalah $L = \\frac{b - p}{2\\sqrt{a}}$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-008",
@@ -275,7 +282,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar limit fungsi rasional dengan penyebut nol saat $x \\to c$ menghasilkan nilai berhingga, pembilang harus memiliki pembuat nol yang sama ($x = c$), sehingga substitusi $x = c$ ke pembilang harus bernilai 0. Kemudian gunakan dalil L'Hopital atau pemfaktoran aljabar."
   },
   {
     "id": "mat-lim-fungsi-aljabar-009",
@@ -308,7 +316,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan selisih dua kubik pada pembilang menggunakan rumus aljabar $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$ dan faktorkan bentuk kuadrat penyebut untuk mengeliminasi pembuat nol $(x - 2)$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-010",
@@ -341,7 +350,8 @@
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk tak tentu $\\frac{0}{0}$ dengan selisih dua akar pada penyebut diselesaikan dengan mengalikan pembilang dan penyebut dengan bentuk sekawannya $(\\sqrt{1 + 3x} + \\sqrt{1 - 2x})$."
   },
   {
     "id": "mudah-mtk-06",
@@ -374,7 +384,8 @@
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-aljabar"
+    "subTopicSlug": "limit-fungsi-aljabar",
+    "hint": "Limit Aljabar Bentuk Tak Tentu $\\frac{0}{0}$: Jika substitusi langsung menghasilkan $\\frac{0}{0}$, faktorkan pembilang dan coret faktor pembuat nol $(x - c)$. **Tips:** Jangan langsung menyatakan limit bernilai 0 karena pembilang bernilai 0 saat substitusi awal."
   },
   {
     "id": "sup-mtk-tri-01",
@@ -407,7 +418,8 @@
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-aljabar"
+    "subTopicSlug": "limit-fungsi-aljabar",
+    "hint": "Metode Perkalian Sekawan Akar (Tanpa L'Hôpital): Bentuk tak tentu $\\frac{0}{0}$ diselesaikan dengan mengalikan faktor sekawan $(\\sqrt{x} + 2)$ pada pembilang dan penyebut sehingga faktor pembuat nol $(x - 4)$ dapat dieliminasi. **Tips:** Mengabaikan instruksi tanpa L'Hôpital atau salah mengalikan faktor sekawan."
   }
 ];
 

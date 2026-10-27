@@ -44,7 +44,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi pecahan aljabar $f(x) = \\frac{g(x)}{h(x)}$ terdefinisi pada himpunan bilangan real jika dan hanya jika penyebutnya tidak bernilai nol, yaitu $h(x) \\neq 0$. **Tips:** Menyamakan pembilang dengan nol alih-alih penyebut, sehingga salah memilih $x \\neq -\\frac{1}{2}$."
   },
   {
     "id": "mat-alj-fungsi-domain-002",
@@ -77,7 +78,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi irasional dalam bentuk akar berpangkat genap $f(x) = \\sqrt{g(x)}$ terdefinisi pada bilangan real jika dan hanya jika ekspresi di dalam tanda akar (radikan) bernilai non-negatif: $g(x) \\geq 0$. **Tips:** Lupa menyertakan tanda sama dengan ($geq$ menjadi $>$) atau salah memindahkan suku $-6$."
   },
   {
     "id": "mat-alj-fungsi-domain-003",
@@ -110,7 +112,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk fungsi kuadrat $f(x) = ax^2 + bx + c$ dengan $a > 0$, parabola terbuka ke atas sehingga memiliki nilai minimum di titik puncak $y_p = f\\left(-\\frac{b}{2a}\\right)$. Daerah hasilnya adalah $R_f = \\{y \\in \\mathbb{R} \\mid y \\geq y_p\\}$."
   },
   {
     "id": "mat-alj-fungsi-domain-004",
@@ -143,7 +146,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi linear $f(x) = mx + c$ dengan gradien positif ($m > 0$) bersifat monoton naik, sehingga nilai minimum dan maksimum pada interval tertutup $[a, b]$ dicapai berturut-turut pada ujung-ujung interval: $f(a)$ dan $f(b)$. **Tips:** Salah hitung saat mengalikan $3(-1) - 2 = -1$ alih-alih $-5$."
   },
   {
     "id": "mat-alj-fungsi-domain-005",
@@ -176,7 +180,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika bentuk akar berada di penyebut suatu pecahan, ekspresi di dalam akar harus positif murni (strictly greater than zero) karena radikan tidak boleh negatif dan penyebut tidak boleh nol: $g(x) > 0$."
   },
   {
     "id": "mat-alj-fungsi-domain-006",
@@ -209,7 +214,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi $f(x) = \\sqrt{\\frac{g(x)}{h(x)}}$ terdefinisi pada himpunan bilangan real jika nilai pecahan di dalam akar non-negatif ($\\frac{g(x)}{h(x)} \\geq 0$) dan penyebutnya tidak sama dengan nol ($h(x) \\neq 0$). **Tips:** Menutup selang pada penyebut sehingga memilih $x \\leq -3$ yang mengakibatkan penyebut bernilai nol."
   },
   {
     "id": "mat-alj-fungsi-domain-007",
@@ -242,7 +248,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah hasil fungsi homografik $f(x) = \\frac{ax + b}{cx + d}$ dapat ditentukan dengan mencari nilai asimtot datarnya $y = \\frac{a}{c}$, atau dengan menyatakan variabel $x$ sebagai fungsi dari $y$ ($x = f^{-1}(y)$) lalu menentukan syarat terdefinisinya $x$. **Tips:** Tertukar antara batas domain ($x \\neq -2$) dengan batas range ($y \\neq 3$)."
   },
   {
     "id": "mat-alj-fungsi-domain-008",
@@ -275,7 +282,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi logaritma $f(x) = \\log(g(x))$ terdefinisi pada bilangan real jika dan hanya jika syarat numerusnya bernilai positif murni: $g(x) > 0$. **Tips:** Menyertakan tanda sama dengan ($geq$) padahal numerus logaritma tidak boleh bernilai nol ($log(0)$ tidak terdefinisi)."
   },
   {
     "id": "mat-alj-fungsi-domain-009",
@@ -308,7 +316,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah asal dari jumlah dua fungsi $(f_1 + f_2)(x)$ adalah irisan dari daerah asal masing-masing fungsi: $D_f = D_{f_1} \\cap D_{f_2}$. **Tips:** Lupa membalik tanda pertidaksamaan saat membagi dengan bilangan negatif pada $-2x geq -6$."
   },
   {
     "id": "mat-alj-fungsi-domain-010",
@@ -341,7 +350,8 @@
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi $f(x) = \\sqrt{r^2 - x^2}$ merepresentasikan persamaan setengah lingkaran atas dengan pusat $(0,0)$ dan jari-jari $r$. Nilai fungsi selalu non-negatif dan dibatasi oleh nilai jari-jarinya: $0 \\leq y \\leq r$."
   },
   {
     "id": "sedang-mtk-08",
@@ -374,7 +384,8 @@
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-fungsi",
-    "subTopicSlug": "domain-kodomain-range"
+    "subTopicSlug": "domain-kodomain-range",
+    "hint": "Sifat Dasar Fungsi Invers: $$(f \\circ g)^{-1}(k) = a \\iff (f \\circ g)(a) = k$$ Daripada mencari rumus invers yang panjang, gunakan sifat kesetaraan nilai input-output secara langsung!"
   }
 ];
 

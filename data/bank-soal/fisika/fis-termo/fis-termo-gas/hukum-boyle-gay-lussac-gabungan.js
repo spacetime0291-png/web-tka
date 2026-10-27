@@ -44,7 +44,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{P_1 \\times V_1}{T_1} = \\frac{P_2 \\times V_2}{T_2}$$."
   },
   {
     "id": "fis-termo-gas-gabungan-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan persamaan keadaan gas ideal: $$\\frac{P_1 \\times V_1}{T_1} = \\frac{P_2 \\times V_2}{T_2} \\implies P_2 = P_1 \\times \\left(\\frac{V_1}{V_2}\\right) \\times \\left(\\frac{T_2}{T_1}\\right)$$."
   },
   {
     "id": "fis-termo-gas-gabungan-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan persamaan Boyle-Gay Lussac dengan memastikan semua suhu dinyatakan dalam Kelvin: $$T_1 = 0 + 273 = 273\\text{ K}$$ $$T_2 = 27 + 273 = 300\\text{ K}$$ $$\\frac{P_1 \\times V_1}{T_1} = \\frac{P_2 \\times V_2}{T_2}$$."
   },
   {
     "id": "fis-termo-gas-gabungan-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan keadaan gabungan gas ideal dapat diselesaikan untuk mencari suhu akhir $T_2$: $$T_2 = T_1 \\times \\left(\\frac{P_2 \\times V_2}{P_1 \\times V_1}\\right)$$."
   },
   {
     "id": "fis-termo-gas-gabungan-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dari persamaan umum gas ideal $P V = n R T = N k_B T$, jika kedua ruas dibagi dengan suhu mutlak $T$, diperoleh: $$\\frac{P \\times V}{T} = n \\times R = N \\times k_B$$ dengan $R$ adalah tetapan gas universal dan $k_B$ tetapan Boltzmann (keduanya bernilai konstan). Jadi, nilai $\\frac{P V}{T}$ berbanding lurus secara linier dengan jumlah mol gas ($n$) atau jumlah partikel gas ($N$)."
   },
   {
     "id": "fis-termo-gas-gabungan-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan persamaan keadaan gabungan Boyle-Gay Lussac untuk sistem gas tertutup dengan suhu mutlak Kelvin ($K = ^\\circ\\text{C} + 273$): $$\\frac{P_1 \\times V_1}{T_1} = \\frac{P_2 \\times V_2}{T_2} \\implies V_2 = V_1 \\times \\left(\\frac{P_1}{P_2}\\right) \\times \\left(\\frac{T_2}{T_1}\\right)$$."
   },
   {
     "id": "fis-termo-gas-gabungan-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dari persamaan gas ideal $P V = n R T = \\frac{m}{M_r} R T$, karena volume wadah ($V$) dan jenis gas ($M_r$) tetap, massa gas yang tersisa di dalam tabung berbanding lurus dengan rasio $P/T$: $$\\frac{m_2}{m_1} = \\frac{P_2 / T_2}{P_1 / T_1} = \\frac{P_2 \\times T_1}{P_1 \\times T_2}$$ Persentase massa gas yang bocor/keluar adalah: $\\%m_{\\text{keluar}} = \\left(1 - \\frac{m_2}{m_1}\\right) \\times 100\\%$."
   },
   {
     "id": "fis-termo-gas-gabungan-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dari $n = \\frac{PV}{RT}$, sebelum dan sesudah kran dibuka berlaku: $$\\frac{P_{\\text{akhir}} \\times V_{\\text{total}}}{T_{\\text{akhir}}} = \\frac{P_A \\times V_A}{T_A} + \\frac{P_B \\times V_B}{T_B}$$ dengan $V_{\\text{total}} = V_A + V_B$."
   },
   {
     "id": "fis-termo-gas-gabungan-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kesetimbangan mekanis, piston berhenti bergerak ketika tekanan pada kedua sisi sama ($P_1' = P_2'$). Karena jumlah mol gas pada masing-masing kompartemen tertutup bernilai konstan, dari $\\frac{P V}{T} = \\text{konstan}$, maka perbandingan volume akhir sama dengan perbandingan suhu akhirnya: $$\\frac{V_1'}{T_1'} = \\frac{V_2'}{T_2'} \\implies \\frac{L_1'}{T_1'} = \\frac{L_2'}{T_2'}$$ dengan $L_1' + L_2' = L_{\\text{total}} = 80\\text{ cm}$."
   },
   {
     "id": "fis-termo-gas-gabungan-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan antara tekanan, massa jenis, dan suhu mutlak gas ideal diturunkan dari persamaan keadaan: $$P = \\frac{\\rho}{M_r} R T \\implies \\rho = \\frac{P \\times M_r}{R \\times T}$$ Untuk gas yang sama ($M_r$ konstan), massa jenis berbanding lurus dengan tekanan dan berbanding terbalik dengan suhu mutlak: $$\\frac{\\rho_2}{\\rho_1} = \\left(\\frac{P_2}{P_1}\\right) \\times \\left(\\frac{T_1}{T_2}\\right)$$."
   }
 ];
 

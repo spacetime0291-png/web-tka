@@ -44,7 +44,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada bentuk umum eksplisit $y = mx + c$, koefisien di depan variabel $x$ menyatakan nilai kemiringan (gradien) garis $m$. **Tips:** Menjawab $-7$ karena mengira konstanta di belakang adalah nilai gradien."
   },
   {
     "id": "fun-geo-dasar-gradien-002",
@@ -77,7 +78,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gradien garis yang melalui dua titik $(x_1, y_1)$ dan $(x_2, y_2)$ dirumuskan sebagai perbandingan perubahan ordinat terhadap absis: $m = \\frac{y_2 - y_1}{x_2 - x_1}$. **Tips:** Terbalik membagi perubahan absis dengan perubahan ordinat $\\frac{4}{8} = \\frac{1}{2}$."
   },
   {
     "id": "fun-geo-dasar-gradien-003",
@@ -110,7 +112,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk persamaan garis bentuk implisit $Ax + By + C = 0$, gradien garis dirumuskan sebagai $m = -\\frac{A}{B}$. **Tips:** Lupa menyematkan tanda negatif saat memindahkan suku $3x$ ke ruas kanan."
   },
   {
     "id": "fun-geo-dasar-gradien-004",
@@ -143,7 +146,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua garis lurus sejajar memiliki kemiringan yang sama, sehingga syarat kesejajarannya adalah $m_1 = m_2$. **Tips:** Tertukar dengan syarat garis tegak lurus ($m_1 \\cdot m_2 = -1$) sehingga memilih $-\\frac{1}{5}$."
   },
   {
     "id": "fun-geo-dasar-gradien-005",
@@ -176,7 +180,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua garis saling tegak lurus jika hasil kali kedua gradiennya sama dengan $-1$, yaitu $m_g \\cdot m_h = -1$ atau $m_g = -\\frac{1}{m_h}$. **Tips:** Hanya membalik pecahan tanpa memberi tanda minus sehingga memilih $\\frac{3}{2}$."
   },
   {
     "id": "fun-geo-dasar-gradien-006",
@@ -209,7 +214,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis yang sejajar dengan $3x - y + C = 0$ memiliki koefisien variabel yang sama ($3x - y$), sehingga memiliki gradien $m = 3$."
   },
   {
     "id": "fun-geo-dasar-gradien-007",
@@ -242,7 +248,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gradien garis yang tegak lurus adalah lawan dan kebalikan dari gradien garis asal ($m_2 = -\\frac{1}{m_1}$). **Tips:** Menggunakan gradien $-\\frac{1}{2}$ (syarat sejajar) bukan gradien tegak lurus $2$."
   },
   {
     "id": "fun-geo-dasar-gradien-008",
@@ -275,7 +282,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua garis tegak lurus memenuhi $m_1 \\cdot m_2 = -1$. Gradien garis dari dua titik disamakan dengan gradien tegak lurus garis acuan."
   },
   {
     "id": "fun-geo-dasar-gradien-009",
@@ -308,7 +316,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua garis $A_1 x + B_1 y + C_1 = 0$ dan $A_2 x + B_2 y + C_2 = 0$ saling tegak lurus jika dan hanya jika $A_1 A_2 + B_1 B_2 = 0$. **Tips:** Mengabaikan tanda minus pada koefisien $B_2 = -6$ sehingga mendapatkan nilai $k = -2$."
   },
   {
     "id": "fun-geo-dasar-gradien-010",
@@ -341,7 +350,8 @@
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis sumbu adalah garis yang melalui titik tengah ruas garis $AB$ dan bergradien tegak lurus terhadap gradien garis $AB$. **Tips:** Menggunakan titik $A$ atau titik $B$ sebagai titik acuan, bukan titik tengah $M$."
   },
   {
     "id": "mudah-mtk-03",
@@ -374,7 +384,8 @@
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
     "subChapterId": "fun-geo-dasar",
-    "subTopicSlug": "gradien-garis-sejajar-tegak-lurus"
+    "subTopicSlug": "gradien-garis-sejajar-tegak-lurus",
+    "hint": "Sifat Gradien Dua Garis Tegak Lurus: $$m_1 \\cdot m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}$$. **Tips:** (1/2) adalah gradien garis yang sejajar , bukan tegak lurus."
   }
 ];
 

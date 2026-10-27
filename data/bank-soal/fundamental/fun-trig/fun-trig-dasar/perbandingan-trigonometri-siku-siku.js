@@ -44,7 +44,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada segitiga siku-siku, perbandingan sinus sudut didefinisikan sebagai perbandingan antara panjang sisi di depan sudut tersebut terhadap panjang sisi miring (hipotenusa): $\\sin \\theta = \\frac{\\text{sisi depan}}{\\text{sisi miring}}$. **Tips:** Tertukar dengan perbandingan cosinus (samping per miring) yang bernilai $\\frac{4}{5}$ atau tangen yang bernilai $\\frac{3}{4}$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-002",
@@ -77,7 +78,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan teorema Pythagoras pada segitiga siku-siku: $\\text{sisi depan} = \\sqrt{\\text{miring}^2 - \\text{samping}^2}$. Perbandingan tangen didefinisikan sebagai $\\tan \\theta = \\frac{\\text{sisi depan}}{\\text{sisi samping}}$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-003",
@@ -110,7 +112,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cosecan merupakan kebalikan dari fungsi sinus: $\\csc \\theta = \\frac{1}{\\sin \\theta} = \\frac{\\text{sisi miring}}{\\text{sisi depan}}$. **Tips:** Tertukar antara cosecan (kebalikan sinus) dengan secan (kebalikan cosinus yang bernilai $\\frac{10}{8} = \\frac{5}{4}$)."
   },
   {
     "id": "fun-trig-dasar-perbandingan-004",
@@ -143,7 +146,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan tabel nilai fungsi trigonometri untuk sudut-sudut istimewa: $\\sin 30^\\circ = \\frac{1}{2}$, $\\cos 60^\\circ = \\frac{1}{2}$, dan $\\tan 45^\\circ = 1$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-005",
@@ -176,7 +180,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tinggi objek tegak $t$ dapat dihitung melalui hubungan tangen sudut elevasi: $\\tan \\alpha = \\frac{\\text{tinggi objek}}{\\text{jarak horizontal}} \\implies t = s \\times \\tan \\alpha$. **Tips:** Mengalikan $12$ dengan $\\sqrt{3}$ (nilai dari $\\tan 60^\\circ$) menghasilkan $12\\sqrt{3}$ alih-alih membaginya dengan 3."
   },
   {
     "id": "fun-trig-dasar-perbandingan-006",
@@ -209,7 +214,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pecahan homogen derajat 1 yang memuat $\\sin \\alpha$ dan $\\cos \\alpha$ dapat disederhanakan dengan membagi pembilang dan penyebut dengan $\\cos \\alpha$ agar langsung dinyatakan dalam bentuk $\\tan \\alpha$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-007",
@@ -242,7 +248,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis tinggi $AD$ membagi segitiga $ABC$ menjadi dua segitiga siku-siku $\\triangle ABD$ dan $\\triangle ACD$ dengan siku-siku di $D$. Panjang sisi $BC$ adalah penjumlahan $BC = BD + DC$. **Tips:** Mengabaikan bahwa sudut $45^\\circ$ dan $30^\\circ$ berada pada segitiga yang berbeda dan salah menggunakan aturan sinus sembarang."
   },
   {
     "id": "fun-trig-dasar-perbandingan-008",
@@ -275,7 +282,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadratkan kedua ruas persamaan dan gunakan identitas Pythagoras trigonometri dasar: $\\sin^2 x + \\cos^2 x = 1$. **Tips:** Lupa membagi 2 di langkah akhir sehingga memilih opsi $\\frac{24}{25}$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-009",
@@ -308,7 +316,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan model dua segitiga siku-siku dengan tinggi yang sama $h$ dan jarak horizontal $x$ dari titik $B$ ke dasar menara, serta $(x + 40)$ dari titik $A$ ke dasar menara. **Tips:** Salah membedakan jarak antara $x$ dan $x + 40$ atau keliru rasionalisasi bentuk akar."
   },
   {
     "id": "fun-trig-dasar-perbandingan-010",
@@ -341,7 +350,8 @@
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas trigonometri turunan Pythagoras menyatakan $\\sec^2 \\beta - \\tan^2 \\beta = 1$. Bentuk ini dapat difaktorkan sebagai selisih kuadrat: $(\\sec \\beta - \\tan \\beta)(\\sec \\beta + \\tan \\beta) = 1$. **Tips:** Mencari nilai sisi-sisi segitiga secara manual yang memakan waktu lama, padahal kedua bentuk saling berkebalikan."
   }
 ];
 

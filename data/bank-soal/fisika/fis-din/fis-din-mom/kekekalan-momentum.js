@@ -44,7 +44,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada sistem senapan dan peluru yang terisolasi dari gaya luar horizontal, berlaku Hukum Kekekalan Momentum Linier: $p_{\\text{awal}} = p_{\\text{akhir}}$. Karena mula-mula sistem diam ($p_{\\text{awal}} = 0$), momentum peluru ke depan harus diimbangi oleh momentum senapan ke belakang."
   },
   {
     "id": "fis-din-mom-kekekalan-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karena tidak ada gaya luar horizontal pada sistem orang-perahu, momentum total sistem kekal. Sebelum orang melompat, sistem dalam keadaan diam ($P_{\\text{total}} = 0$). **Tips:** Jangan menjumlahkan massa orang dan perahu saat menghitung kecepatan akhir perahu."
   },
   {
     "id": "fis-din-mom-kekekalan-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum II Newton untuk sistem banyak partikel: $\\sum \\vec{F}_{\\text{eksternal}} = \\frac{d\\vec{P}_{\\text{total}}}{dt}$. Momentum total kekal konstan jika dan hanya jika turunan terhadap waktunya nol, yaitu ketika $\\sum \\vec{F}_{\\text{eksternal}} = 0$. **Tips:** Kekekalan momentum TIDAK mensyaratkan kekekalan energi kinetik."
   },
   {
     "id": "fis-din-mom-kekekalan-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya dorong pegas merupakan gaya internal sistem. Karena tidak ada gaya horizontal eksternal pada lintasan licin, berlaku kekekalan momentum linier total dari keadaan diam."
   },
   {
     "id": "fis-din-mom-kekekalan-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momentum total adalah penjumlahan vektor dari setiap momentum partikel penyusun sistem: $\\vec{P}_{\\text{total}} = \\vec{p}_1 + \\vec{p}_2$."
   },
   {
     "id": "fis-din-mom-kekekalan-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena tidak ada gaya luar eksternal pada arah horizontal (gesekan air diabaikan), pusat massa sistem orang dan perahu posisinya tetap tidak berpindah di danau: $\\Delta x_{\\text{pm}} = 0$. Perpindahan perahu dan orang memenuhi hubungan: $M \\Delta x_p + m \\Delta x_o = 0$."
   },
   {
     "id": "fis-din-mom-kekekalan-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ledakan terjadi akibat gaya internal sehingga vektor momentum total sistem kekal: $\\vec{P}_{\\text{awal}} = \\vec{P}_{\\text{akhir}} = \\vec{p}_A + \\vec{p}_B$. Uraikan komponen momentum pada sumbu-$x$ dan sumbu-$y$."
   },
   {
     "id": "fis-din-mom-kekekalan-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada interaksi tumbukan di lantai licin tanpa gaya luar horizontal, berlaku Hukum Kekekalan Momentum Linier: $m v_1 + M V_0 = m v_2 + M V$. **Tips:** Kerap keliru menganggap peluru tertanam di dalam balok (tumbukan tidak lentur sama sekali)."
   },
   {
     "id": "fis-din-mom-kekekalan-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kekekalan momentum linier pada sistem gerak bersama yang kemudian berpisah: $(M + m) v_0 = M v_t + m v_a$. Kecepatan anak diberikan relatif terhadap tanah sehingga langsung dimasukkan ke dalam persamaan. **Tips:** Perhatikan kerangka acuan kecepatan lompatan."
   },
   {
     "id": "fis-din-mom-kekekalan-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Propulsi roket di ruang hampa murni didasarkan pada Hukum Kekekalan Momentum Linier dan Hukum III Newton. Momentum gas yang disemburkan ke belakang menghasilkan momentum dorong wahana ke depan: $0 = M_{\\text{sisa}} v_w - m_{\\text{gas}} u$."
   },
   {
     "id": "drill-rot-06",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "kekekalan-momentum"
+    "subTopicSlug": "kekekalan-momentum",
+    "hint": "Jika tidak ada torsi luar yang bekerja pada sistem ($\\Sigma \\tau_{\\text{eksternal}} = 0$), maka momentum sudut sistem kekal: $$L_1 = L_2 \\implies I_1 \\omega_1 = I_2 \\omega_2$$."
   }
 ];
 

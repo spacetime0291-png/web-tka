@@ -44,7 +44,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hukum I Kirchhoff (KCL / Kirchhoff's Current Law) didasarkan pada prinsip hukum kekekalan muatan listrik di titik percabangan. Hukum II Kirchhoff (KVL / Kirchhoff's Voltage Law) didasarkan pada prinsip hukum kekekalan energi dalam suatu lintasan tertutup (loop). **Tips:** Sering tertukar urutan antara kekekalan muatan listrik (Hukum I) dan kekekalan energi (Hukum II)."
   },
   {
     "id": "fis-lis-dc-kirchhoff-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum I Kirchhoff, jumlah arus listrik yang masuk ke suatu titik simpul harus sama dengan jumlah arus yang keluar dari titik tersebut: $$\\Sigma I_{\\text{masuk}} = \\Sigma I_{\\text{keluar}}$$. **Tips:** Keliru menentukan arah arus (mengira masuk) atau salah menjumlahkan aljabar arus pada simpul."
   },
   {
     "id": "fis-lis-dc-kirchhoff-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada rangkaian satu loop tertutup dengan satu sumber GGL dan beberapa hambatan seri, kuat arus listrik dirumuskan oleh Hukum II Kirchhoff: $$I = \\frac{\\mathcal{E}}{\\Sigma R + r}$$."
   },
   {
     "id": "fis-lis-dc-kirchhoff-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Beda potensial antara titik $A$ dan $B$ dihitung dengan menelusuri lintasan dari $A$ ke $B$: $$V_{AB} = V_A - V_B = \\Sigma (I R) + \\Sigma \\mathcal{E}$$ dengan memperhatikan penurunan potensial searah arus ($+IR$) dan kutub GGL yang ditinggalkan."
   },
   {
     "id": "fis-lis-dc-kirchhoff-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Konvensi standar penelusuran loop pada Hukum II Kirchhoff ($\\Sigma \\mathcal{E} + \\Sigma I R = 0$) menyatakan bahwa tanda GGL ditentukan oleh kutub sumber tegangan yang pertama kali dijumpai oleh lintasan loop."
   },
   {
     "id": "fis-lis-dc-kirchhoff-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan analisis simpul (Nodal Analysis) berbasis Hukum I Kirchhoff (KCL) pada simpul $A$: jumlah arus yang meninggalkan simpul sama dengan nol ($\\Sigma I_{\\text{keluar}} = 0$). **Tips:** Kesalahan tanda aljabar saat merumuskan persamaan simpul atau salah memasukkan polaritas sumber tegangan."
   },
   {
     "id": "fis-lis-dc-kirchhoff-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tentukan terlebih dahulu arus loop rangkaian tertutup menggunakan Hukum II Kirchhoff, kemudian hitung potensial mutlak titik $C$ dari titik acuan tanah ($V_D = 0$) melalui penelusuran lintasan."
   },
   {
     "id": "fis-lis-dc-kirchhoff-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema transfer daya maksimum (Maximum Power Transfer Theorem) menyatakan bahwa daya yang diserap oleh beban $R_L$ mencapai nilai maksimum ketika nilai resistansi beban sama dengan resistansi dalam sumber tegangan ($R_L = r$). Daya maksimum dirumuskan sebagai: $$P_{\\text{maks}} = \\frac{\\mathcal{E}^2}{4r}$$."
   },
   {
     "id": "fis-lis-dc-kirchhoff-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema Thevenin menyatakan bahwa jaringan linier dua terminal dapat digantikan oleh sumber tegangan ekuivalen $V_{th}$ (tegangan rangkaian terbuka pada terminal) yang diseri dengan hambatan $R_{th}$ (hambatan ekuivalen saat sumber tegangan dinonaktifkan/hubung singkat)."
   },
   {
     "id": "fis-lis-dc-kirchhoff-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan Teorema Millman atau analisis simpul untuk cabang paralel multi-sumber guna menghitung beda potensial pada beban lampu ($V_L$), kemudian hitung arus lampu melalui $I_L = \\frac{V_L}{R}$. **Tips:** Siswa sering merata-ratakan GGL baterai secara langsung tanpa memperhitungkan pengaruh beban luar $R$."
   },
   {
     "id": "hots-fis-02",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-dc",
-    "subTopicSlug": "hukum-1-dan-2-kirchhoff"
+    "subTopicSlug": "hukum-1-dan-2-kirchhoff",
+    "hint": "Analisis Tegangan Nodal (Node Voltage Method): Tetapkan simpul referensi tanah (ground) pada simpul bawah $B$ dengan $V_B = 0\\text{ V}$. Maka beda potensial $V_{AB} = V_A - 0 = V_A$. $$\\Sigma I_{\\text{keluar dari node } A} = 0 \\implies \\sum \\frac{V_A - V_k}{R_k} = 0$$. **Tips:** Sering terjadi kekeliruan polaritas baterai: pelat panjang bernilai positif ($+24\\text{ V}$ dan $+12\\text{ V}$)."
   }
 ];
 

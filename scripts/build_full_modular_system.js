@@ -342,6 +342,109 @@ if (fs.existsSync(legacyFundDir)) {
   });
 }
 
+// Helper functions for Pedagogical Hint synthesis
+function cleanHtml(text) {
+  if (!text) return '';
+  return text
+    .replace(/<div[^>]*>/gi, ' ')
+    .replace(/<\/div>/gi, ' ')
+    .replace(/<strong>/gi, ' ')
+    .replace(/<\/strong>/gi, ' ')
+    .replace(/<em>/gi, ' ')
+    .replace(/<\/em>/gi, ' ')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<p[^>]*>/gi, ' ')
+    .replace(/<\/p>/gi, ' ')
+    .replace(/<li>/gi, ' ')
+    .replace(/<\/li>/gi, ' ')
+    .replace(/<ol[^>]*>/gi, ' ')
+    .replace(/<\/ol>/gi, ' ')
+    .replace(/<ul[^>]*>/gi, ' ')
+    .replace(/<\/ul>/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function removeSpoilers(text) {
+  if (!text) return '';
+  return text
+    .replace(/\b(Opsi|Pilihan)\s+[A-E]\b/gi, '')
+    .replace(/\bJawaban(nya)?\s+(adalah|yaitu)\s+[A-E]\b/gi, '')
+    .replace(/\bjadi\s+jawaban\s+yang\s+benar\s+adalah\b/gi, '')
+    .replace(/\bmaka\s+opsi\s+yang\s+tepat\s+adalah\b/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function synthesizePedagogicalHint(q) {
+  if (q.hint && typeof q.hint === 'string' && q.hint.trim().length > 15) {
+    return q.hint.trim();
+  }
+
+  const rawConcept = q.solution?.concept || '';
+  const rawPitfalls = q.solution?.pitfalls || '';
+  let cleanedConcept = removeSpoilers(cleanHtml(rawConcept));
+  let cleanedPitfall = removeSpoilers(cleanHtml(rawPitfalls));
+
+  // Strip formula or concept prefixes
+  cleanedConcept = cleanedConcept
+    .replace(/^Rumus [^:]+:\s*/i, '')
+    .replace(/^Konsep Dasar [^:]*:\s*/i, '')
+    .replace(/^Hukum [^:]+:\s*/i, '')
+    .replace(/^Peringatan Mutlak [^:]*:\s*/i, '')
+    .replace(/^Definisi [^:]*:\s*/i, '')
+    .replace(/^Kaidah [^:]*:\s*/i, '')
+    .trim();
+
+  // If concept starts with a formula directly ($$ or $)
+  if (cleanedConcept.startsWith('$$') || cleanedConcept.startsWith('$')) {
+    if (q.subject === 'FISIKA') {
+      cleanedConcept = `Gunakan perumusan konsep fisis: ${cleanedConcept}`;
+    } else {
+      cleanedConcept = `Gunakan hubungan matematis dasar: ${cleanedConcept}`;
+    }
+  }
+
+  // Ensure sentence punctuation
+  if (!cleanedConcept.endsWith('.') && !cleanedConcept.endsWith('!')) {
+    cleanedConcept += '.';
+  }
+
+  // Extract brief tactical warning from pitfalls (anti-spoiler)
+  let tacticalTip = '';
+  if (cleanedPitfall) {
+    let tip = cleanedPitfall
+      .replace(/^⚠️\s*(Tips Menghafal|Peringatan Mutlak|Jebakan Paling Populer|Waspada Jebakan|Jebakan Umum|Jebakan)[^:]*:\s*/i, '')
+      .replace(/^Peringatan:\s*/i, '')
+      .replace(/^Tips:\s*/i, '')
+      .trim();
+
+    // Take only the first sentence
+    const firstSentence = tip.split(/[.!?]\s+/)[0];
+    if (firstSentence && 
+        firstSentence.length > 15 && 
+        firstSentence.length < 130 && 
+        !firstSentence.match(/=\s*\d+/) && 
+        !firstSentence.match(/\b(opsi|pilihan)\s+[A-E]\b/i)) {
+      tacticalTip = firstSentence.trim();
+      if (!tacticalTip.endsWith('.')) tacticalTip += '.';
+    }
+  }
+
+  let finalHint = cleanedConcept;
+  if (tacticalTip) {
+    finalHint += ` **Tips:** ${tacticalTip}`;
+  }
+
+  // KaTeX balance sanity check
+  const singleDollars = (finalHint.match(/(?<!\\)\$/g) || []).length;
+  if (singleDollars % 2 !== 0) {
+    finalHint += '$';
+  }
+
+  return finalHint;
+}
+
 // Map questions into buckets by slug
 const subtopicBuckets = {};
 allSubTopicsList.forEach(st => {
@@ -367,6 +470,7 @@ inputQuestions.forEach(q => {
   q.subTopic = stInfo.title;
   q.chapterTitle = stInfo.chapterName;
   q.subject = stInfo.pillarId === 'fisika' ? 'FISIKA' : 'MATEMATIKA';
+  q.hint = q.hint || synthesizePedagogicalHint(q);
 
   subtopicBuckets[stInfo.slug].push(q);
 });
@@ -510,6 +614,7 @@ scannedFiles.forEach(file => {
     q.subject = q.subject || (q.pillarId === 'fisika' ? 'FISIKA' : 'MATEMATIKA');
     q.difficultyLabel = q.difficultyLabel || (q.difficulty === 'mudah' ? 'Mudah' : q.difficulty === 'sedang' ? 'Sedang' : 'HOTS');
     q.category = q.category || (stInfo ? stInfo.title : (q.subBab || 'Umum'));
+    q.hint = q.hint || synthesizePedagogicalHint(q);
 
     grandCompiledQuestions.push(q);
     if (q.difficulty === 'mudah') bundleMudah.push(q);

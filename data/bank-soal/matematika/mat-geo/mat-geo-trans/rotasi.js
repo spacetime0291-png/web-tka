@@ -44,7 +44,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rotasi titik $P(x, y)$ terhadap pusat $O(0, 0)$ sejauh $+90^\\circ$ menggunakan matriks rotasi $R_{90^\\circ} = \\begin{pmatrix} \\cos 90^\\circ & -\\sin 90^\\circ \\\\ \\sin 90^\\circ & \\cos 90^\\circ \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$, yang memberikan hubungan $x' = -y$ dan $y' = x$. **Tips:** Lupa bahwa sudut rotasi positif berarti berlawanan arah jarum jam, atau keliru tanda minus sehingga mendapatkan $(-3, 4)$."
   },
   {
     "id": "mat-geo-trans-rotasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rotasi sebesar $180^\\circ$ (baik searah maupun berlawanan arah jarum jam) terhadap pusat $O(0, 0)$ membalik tanda kedua koordinat: $(x, y) \\to (-x, -y)$. Matriks rotasinya adalah $\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}$. **Tips:** Menukar letak absis dan ordinat layaknya rotasi $90^\\circ$ atau $270^\\circ$."
   },
   {
     "id": "mat-geo-trans-rotasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rotasi $[O, 270^\\circ]$ berlawanan arah jarum jam ekuivalen dengan rotasi $[O, -90^\\circ]$ searah jarum jam. Matriks transformasinya adalah $\\begin{pmatrix} 0 & 1 \\\\ -1 & 0 \\end{pmatrix}$, sehingga $x' = y$ dan $y' = -x$. **Tips:** Tertukar dengan rotasi $90^\\circ$ berlawanan arah jarum jam yang memiliki rumus $x' = -y$ dan $y' = x$."
   },
   {
     "id": "mat-geo-trans-rotasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rotasi searah putaran jarum jam memiliki sudut negatif, yaitu $\\theta = -90^\\circ$. Hubungan bayangan terhadap titik awal adalah $x' = y$ dan $y' = -x$. **Tips:** Mengabaikan keterangan 'searah jarum jam' dan menganggap sudut rotasi $+90^\\circ$."
   },
   {
     "id": "mat-geo-trans-rotasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Matriks rotasi pusat $O(0,0)$ adalah $R_\\alpha = \\begin{pmatrix} \\cos \\alpha & -\\sin \\alpha \\\\ \\sin \\alpha & \\cos \\alpha \\end{pmatrix}$. Hubungan koordinat adalah $x' = x\\cos \\alpha - y\\sin \\alpha$ dan $y' = x\\sin \\alpha + y\\cos \\alpha$. Untuk pemetaan $(x, y) \\to (-y, x)$, diperoleh $\\cos \\alpha = 0$ dan $\\sin \\alpha = 1$, yang bersesuaian dengan sudut $\\alpha = 90^\\circ$. **Tips:** Keliru menyimpulkan sudut sebagai $270^\\circ$ yang memiliki pola berlawanan tanda: $x' = y$ dan $y' = -x$."
   },
   {
     "id": "mat-geo-trans-rotasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi titik $(x, y)$ terhadap pusat $(a, b)$ sebesar $+90^\\circ$ berlawanan arah jarum jam memenuhi relasi matriks $\\begin{pmatrix} x' - a \\\\ y' - b \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} x - a \\\\ y - b \\end{pmatrix}$, yang menghasilkan $x' - a = -(y - b)$ dan $y' - b = x - a$."
   },
   {
     "id": "mat-geo-trans-rotasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi $[O, 90^\\circ]$ memetakan koordinat menurut $x' = -y \\iff y = -x'$ dan $y' = x \\iff x = y'$. Substitusikan relasi variabel lama dalam variabel baru ke persamaan garis asal. **Tips:** Salah memasukkan substitusi variabel (misalnya tertukar antara $x = -y'$ dan $y = x'$)."
   },
   {
     "id": "mat-geo-trans-rotasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi $180^\\circ$ terhadap pusat $P(x_p, y_p)$ menjadikan titik $P$ sebagai titik tengah antara titik asal $(x, y)$ dan titik bayangan $(x', y')$, sehingga berlaku hubungan titik tengah: $x_p = \\frac{x + x'}{2}$ dan $y_p = \\frac{y + y'}{2}$. **Tips:** Lupa mengalikan 2 pada koordinat pusat saat menyelesaikan persamaan titik tengah."
   },
   {
     "id": "mat-geo-trans-rotasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua rotasi berurutan yang memiliki titik pusat yang sama bersesuaian dengan rotasi tunggal dengan titik pusat tersebut dan besar sudut total sama dengan jumlah kedua sudut rotasi: $\\theta_{\\text{total}} = \\theta_1 + \\theta_2$."
   },
   {
     "id": "mat-geo-trans-rotasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi sebesar $270^\\circ$ searah jarum jam memiliki sudut $\\theta = -270^\\circ$, yang secara posisi sudut setara dengan rotasi $+90^\\circ$ berlawanan arah jarum jam $(-270^\\circ + 360^\\circ = +90^\\circ)$. Rotasi mempertahankan jari-jari lingkaran ($r' = r$), sehingga cukup merotasikan titik pusat lingkaran."
   }
 ];
 

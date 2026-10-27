@@ -44,7 +44,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Panjang atau besar suatu vektor dua dimensi $\\vec{u} = x\\hat{i} + y\\hat{j}$ dihitung berdasarkan teorema Pythagoras: $|\\vec{u}| = \\sqrt{x^2 + y^2}$. **Tips:** Menjumlahkan komponen secara langsung $6 + (-8) = -2$ tanpa menguadratkan terlebih dahulu di dalam akar kuadrat."
   },
   {
     "id": "mat-geo-vektor-panjang-002",
@@ -77,7 +78,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Panjang vektor $\\vec{AB}$ dari titik $A(x_1, y_1)$ ke titik $B(x_2, y_2)$ adalah jarak Euclidean antara kedua titik tersebut: $|\\vec{AB}| = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$."
   },
   {
     "id": "mat-geo-vektor-panjang-003",
@@ -110,7 +112,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Panjang vektor di ruang $\\mathbb{R}^3$ dengan komponen $\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$ dirumuskan sebagai norma Euclidean: $|\\vec{v}| = \\sqrt{x^2 + y^2 + z^2}$. **Tips:** Kesalahan saat menguadratkan bilangan negatif $(-3)^2$ yang sering keliru dihitung sebagai $-9$."
   },
   {
     "id": "mat-geo-vektor-panjang-004",
@@ -143,7 +146,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Panjang dari perkalian skalar suatu vektor memenuhi sifat homogenitas norma: $|k\\vec{a}| = |k| \\cdot |\\vec{a}|$. **Tips:** Hanya menghitung panjang vektor awal $\\vec{a}$ bernilai 5 tanpa mengalikannya dengan faktor skala 2."
   },
   {
     "id": "mat-geo-vektor-panjang-005",
@@ -176,7 +180,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika panjang vektor diketahui, komponen yang belum diketahui dapat dicari dengan menyusun persamaan kuadrat dari rumus panjang vektor: $|\\vec{w}|^2 = x^2 + y^2$."
   },
   {
     "id": "mat-geo-vektor-panjang-006",
@@ -209,7 +214,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang vektor penjumlahan $|\\vec{a} + \\vec{b}|$ dihitung menggunakan aturan kosinus pada vektor: $|\\vec{a} + \\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 + 2|\\vec{a}||\\vec{b}|\\cos(\\theta)$."
   },
   {
     "id": "mat-geo-vektor-panjang-007",
@@ -242,7 +248,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas jajar genjang pada vektor menyatakan hubungan antara jumlah dan selisih dua vektor: $|\\vec{u} + \\vec{v}|^2 + |\\vec{u} - \\vec{v}|^2 = 2(|\\vec{u}|^2 + |\\vec{v}|^2)$."
   },
   {
     "id": "mat-geo-vektor-panjang-008",
@@ -275,7 +282,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang minimum kombinasi linier $|\\vec{a} + t\\vec{b}|$ dapat ditentukan dengan mencari nilai ekstrim minimum fungsi kuadrat dari kuadrat panjang vektor $f(t) = |\\vec{c}|^2$. **Tips:** Lupa menarik akar kuadrat di langkah akhir sehingga memilih nilai kuadrat panjang $\\frac{25}{3}$."
   },
   {
     "id": "mat-geo-vektor-panjang-009",
@@ -308,7 +316,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keliling suatu segitiga dihitung dengan menjumlahkan panjang ketiga vektor sisi pembentuknya: $K = |\\vec{PQ}| + |\\vec{PR}| + |\\vec{QR}|$."
   },
   {
     "id": "mat-geo-vektor-panjang-010",
@@ -341,7 +350,8 @@
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bila dua vektor saling tegak lurus (ortogonal), sudut apitnya $\\theta = 90^\\circ$ sehingga perkalian titiknya bernilai nol ($\\vec{u} \\cdot \\vec{v} = 0$). Teorema Pythagoras berlaku: $|\\vec{u} + \\vec{v}|^2 = |\\vec{u}|^2 + |\\vec{v}|^2$."
   },
   {
     "id": "sup-mtk-geo-01",
@@ -374,7 +384,8 @@
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-vektor",
-    "subTopicSlug": "panjang-modulus-vektor"
+    "subTopicSlug": "panjang-modulus-vektor",
+    "hint": "Panjang (Norm) Vektor Dimensi Tiga: Untuk $\\vec{v} = v_x \\hat{i} + v_y \\hat{j} + v_z \\hat{k}$, panjang vektor didefinisikan sebagai $|\\vec{v}| = \\sqrt{v_x^2 + v_y^2 + v_z^2}$. **Tips:** Lupa mengkuadratkan tanda negatif sehingga keliru menghitung $9 - 16 + 144$."
   }
 ];
 

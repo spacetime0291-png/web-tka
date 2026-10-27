@@ -44,7 +44,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Luas bayangan suatu bangun datar oleh matriks transformasi $M$ berukuran $2 \\times 2$ berbanding lurus dengan nilai mutlak determinan matriks tersebut: $L' = |\\det(M)| \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-002",
@@ -77,7 +78,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Rotasi dan refleksi merupakan transformasi isometri (mempertahankan jarak dan sudut). Nilai mutlak determinan matriks transformasi isometri selalu bernilai 1 ($|\\det(M)| = 1$), sehingga luas bangun bayangan tidak berubah ($L' = L$). **Tips:** Mengira bahwa perputaran atau pembalikan koordinat mengubah besaran ukuran luas bangun."
   },
   {
     "id": "mat-geo-trans-luas-003",
@@ -110,7 +112,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada dilatasi dengan faktor skala $k$, luas bangun bayangan bertambah sebanding dengan kuadrat faktor skalanya: $L' = k^2 \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-004",
@@ -143,7 +146,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Faktor pengali luas bangun datar oleh transformasi matriks ditentukan oleh determinan matriksnya: $L' = |ad - bc| \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-005",
@@ -176,7 +180,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada lingkaran yang mengalami dilatasi dengan faktor skala $k$, luas bayangannya memenuhi rumus $L' = k^2 \\times L$. **Tips:** Membagi luas hanya dengan 2 sehingga memperoleh $8\\pi\\text{ cm}^2$ bukannya membagi dengan kuadrat faktor skala ($4$)."
   },
   {
     "id": "mat-geo-trans-luas-006",
@@ -209,7 +214,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas segitiga dengan salah satu titik sudut di titik asal $(0, 0)$ dan dua titik lainnya $(x_1, y_1)$ serta $(x_2, y_2)$ adalah $L = \\frac{1}{2}|x_1 y_2 - x_2 y_1|$. Luas bayangannya setelah transformasi matriks $M$ adalah $L' = |\\det(M)| \\times L$. **Tips:** Lupa membagi 2 pada luas segitiga awal sehingga memperoleh hasil dua kali lipat yaitu $252\\text{ satuan luas}$."
   },
   {
     "id": "mat-geo-trans-luas-007",
@@ -242,7 +248,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada komposisi dua transformasi matriks berurutan $M_1$ dan $M_2$, determinan matriks total adalah perkalian determinan masing-masing: $\\det(M_2 M_1) = \\det(M_2) \\times \\det(M_1)$. Luas bayangan akhir adalah $L' = |\\det(M_2)| \\times |\\det(M_1)| \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-008",
@@ -275,7 +282,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas daerah elips $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ adalah $L = \\pi a b$. Luas daerah setelah transformasi matriks $M$ menjadi $L' = |\\det(M)| \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-009",
@@ -308,7 +316,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan perubahan luas dinyatakan oleh $|\\det(M)| = \\frac{L'}{L}$. Selesaikan nilai mutlak determinan matriks untuk memperoleh nilai parameter $x$. **Tips:** Lupa bahwa determinan matriks dapat bernilai negatif di dalam tanda mutlak atau salah mengurangkan suku determinan."
   },
   {
     "id": "mat-geo-trans-luas-010",
@@ -341,7 +350,8 @@
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi merupakan transformasi isometri yang mempertahankan luas awal bangun datar (pengali luas = 1). Dilatasi dengan faktor skala $k$ melipatgandakan luas sebesar kuadrat faktor skalanya ($k^2$)."
   }
 ];
 

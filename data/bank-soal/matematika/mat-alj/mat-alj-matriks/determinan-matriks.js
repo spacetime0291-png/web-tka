@@ -44,7 +44,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Determinan dari matriks ordo $2 \\times 2$, yaitu $M = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, didefinisikan sebagai selisih hasil kali elemen diagonal utama dengan elemen diagonal sekunder: $$\\det(M) = ad - bc$$."
   },
   {
     "id": "mat-alj-matriks-det-002",
@@ -77,7 +78,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Matriks singular adalah matriks persegi yang tidak memiliki invers, yang terjadi jika dan hanya jika nilai determinannya sama dengan nol: $\\det(B) = 0$. **Tips:** Lupa mengalikan 2 ke kedua suku $(x + 1)$ atau terbalik mendefinisikan matriks singular sebagai $\\det(B) \\neq 0$."
   },
   {
     "id": "mat-alj-matriks-det-003",
@@ -110,7 +112,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sifat perkalian determinan menyatakan bahwa determinan dari hasil perkalian dua matriks persegi berordo sama sama dengan hasil perkalian masing-masing determinannya: $$\\det(AB) = \\det(A) \\cdot \\det(B)$$. **Tips:** Mengira $\\det(P \\cdot Q) = \\det(P) + \\det(Q)$ atau keliru dalam aturan tanda perkalian bilangan negatif."
   },
   {
     "id": "mat-alj-matriks-det-004",
@@ -143,7 +146,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk matriks persegi $A$ berordo $n \\times n$ dan konstanta $k$, berlaku sifat determinan: 1. $\\det(A^T) = \\det(A)$ 2. $\\det(kA) = k^n \\cdot \\det(A)$."
   },
   {
     "id": "mat-alj-matriks-det-005",
@@ -176,7 +180,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Determinan dari matriks segitiga (baik segitiga atas maupun segitiga bawah) dan matriks diagonal sama dengan hasil kali seluruh elemen pada diagonal utamanya. **Tips:** Menghitung secara manual menggunakan aturan Sarrus yang panjang padahal cukup mengalikan elemen diagonal utama."
   },
   {
     "id": "mat-alj-matriks-det-006",
@@ -209,7 +214,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Determinan matriks $3 \\times 3$ dapat dihitung menggunakan aturan Sarrus atau ekspansi kofaktor baris/kolom. Menggunakan ekspansi kofaktor pada baris yang memuat elemen 0 akan mempermudah perhitungan aljabar. **Tips:** Kesalahan tanda selang-seling $+ - +$ pada kofaktor atau salah mengalikan diagonal pada aturan Sarrus."
   },
   {
     "id": "mat-alj-matriks-det-007",
@@ -242,7 +248,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk matriks berordo $n \\times n$ berlaku sifat-sifat determinan aljabar linier: 1. $\\det(k M) = k^n \\det(M)$ 2. $\\det(M_1 M_2) = \\det(M_1) \\cdot \\det(M_2)$ 3. $\\det(M^{-1}) = \\frac{1}{\\det(M)}$ 4. $\\det(M^T) = \\det(M)$."
   },
   {
     "id": "mat-alj-matriks-det-008",
@@ -275,7 +282,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks memiliki determinan yang sama jika nilai numerik hasil ekspansi masing-masing determinan memenuhi kesamaan aljabar: $\\det(C) = \\det(D)$."
   },
   {
     "id": "mat-alj-matriks-det-009",
@@ -308,7 +316,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat perlu dan cukup agar suatu matriks persegi berordo $3 \\times 3$ berstatus singular adalah nilai determinannya bernilai nol ($det(K) = 0$)."
   },
   {
     "id": "mat-alj-matriks-det-010",
@@ -341,7 +350,8 @@
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $\\det(A - \\lambda I) = 0$ disebut persamaan karakteristik matriks. Untuk matriks $2 \\times 2$, jumlah akar-akar karakteristik $\\lambda_1 + \\lambda_2$ sama dengan nilai jejak (*trace*) dari matriks $A$, yaitu jumlah elemen-elemen diagonal utamanya. **Tips:** Salah menjabarkan perkalian suku aljabar $(5 - \\lambda)(2 - \\lambda)$ atau salah tanda pada rumus Vieta."
   },
   {
     "id": "mudah-mtk-05",
@@ -374,7 +384,8 @@
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-matriks",
-    "subTopicSlug": "determinan-matriks"
+    "subTopicSlug": "determinan-matriks",
+    "hint": "Determinan Matriks Ordo 2x2: $$\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc$$. **Tips:** Awas tanda minus ganda: $-(-6) = +6$."
   },
   {
     "id": "sup-mtk-alj-02",
@@ -407,7 +418,8 @@
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-matriks",
-    "subTopicSlug": "determinan-matriks"
+    "subTopicSlug": "determinan-matriks",
+    "hint": "Metode Sarrus Matriks $3\\times3$: Salin dua kolom pertama ke sebelah kanan matriks, jumlahkan hasil kali diagonal utama ke bawah, lalu kurangkan hasil kali diagonal sekunder ke atas. **Tips:** Kesalahan tanda minus pada suku $(-1)$ saat melakukan perkalian diagonal sekunder."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tabung Pitot bekerja dengan membandingkan dua jenis tekanan pada aliran fluida: 1) Tekanan statis ($P_{\\text{statis}}$) pada dinding saluran fluida. 2) Tekanan stagnasi/total ($P_{\\text{stagnasi}}$) di ujung depan tabung tempat fluida membentur dan berhenti ($v = 0$). Berdasarkan Persamaan Bernoulli: $$P_{\\text{stagnasi}} - P_{\\text{statis}} = \\frac{1}{2}\\rho v^2$$Selisih tekanan ini dibaca melalui perbedaan tinggi cairan manometer. **Tips:** Siswa terkadang menyamakan tabung Pitot dengan barometer (pengukur tekanan atmosfer) atau viskometer (pengukur viskositas)."
   },
   {
     "id": "fis-flu-dinamis-pitot-002",
@@ -77,7 +78,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kelajuan aliran fluida gas pada tabung Pitot yang dihubungkan dengan manometer zat cair dirumuskan dengan: $$v = \\sqrt{\\frac{2 \\cdot \\rho' \\cdot g \\cdot h}{\\rho}}$$ Di mana $\\rho'$ adalah massa jenis cairan manometer dan $\\rho$ adalah massa jenis gas yang mengalir. **Tips:** Terkecoh membalik massa jenis gas ($\\rho$) dan cairan manometer ($\\rho'$), atau lupa mengonversi centimeter ke meter."
   },
   {
     "id": "fis-flu-dinamis-pitot-003",
@@ -110,7 +112,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Prinsip kerja alat penyemprot berlandaskan Efek Bernoulli: 1) Saat pompa ditekan, udara dipaksa mengalir dengan kelajuan sangat tinggi ($v$ besar) melewati ujung atas pipa sedot sempit vertikal. 2) Berdasarkan Persamaan Bernoulli, kelajuan yang tinggi menyebabkan tekanan statis udara di ujung atas pipa menurun ($P_{\\text{atas}} < P_{\\text{atm}}$). 3) Tekanan atmosfer yang menekan permukaan cairan di wadah bawah ($P_{\\text{atm}}$) mendorong cairan naik melewati pipa hingga disemburkan dan dipecah oleh tiupan udara kencang menjadi kabut halus."
   },
   {
     "id": "fis-flu-dinamis-pitot-004",
@@ -143,7 +146,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada venturimeter dengan manometer zat cair pengukur: 1) Dari kesetimbangan manometer hidrostatika: $\\Delta P = P_1 - P_2 = (\\rho' - \\rho) g h$ 2) Dari persamaan Bernoulli horisontal: $P_1 - P_2 = \\frac{1}{2}\\rho (v_2^2 - v_1^2)$ Menyamakan kedua ruas menghasilkan: $$(\\rho_r - \\rho_a) \\cdot g \\cdot h = \\frac{1}{2}\\rho_a (v_2^2 - v_1^2)$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-005",
@@ -176,7 +180,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan prinsip Bernoulli pada karburator, penurunan tekanan statis sebanding dengan penambahan tekanan dinamis aliran udara: $$\\Delta P = \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2 \\implies v = \\sqrt{\\frac{2 \\cdot \\Delta P}{\\rho_{\\text{udara}}}}$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-006",
@@ -209,7 +214,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tabung Pitot pesawat terbang, selisih tekanan antara lubang stagnasi (titik henti aliran udara di ujung moncong) dan lubang statis (pada sisi tabung) setara dengan tekanan dinamis aliran udara: $$\\Delta P = P_{\\text{stagnasi}} - P_{\\text{statis}} = \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2 \\implies v = \\sqrt{\\frac{2 \\cdot \\Delta P}{\\rho_{\\text{udara}}}}$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-007",
@@ -242,7 +248,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada venturimeter dengan manometer zat cair terpisah: 1) Kesetimbangan manometer: $\\Delta P = (\\rho' - \\rho) g h$ 2) Persamaan Bernoulli dan Kontinuitas menghasilkan: $$v_1 = \\sqrt{\\frac{2(\\rho' - \\rho)gh}{\\rho \\left[\\left(\\frac{A_1}{A_2}\\right)^2 - 1\\right]}}$$ 3) Debit aliran: $Q = A_1 \\cdot v_1$."
   },
   {
     "id": "fis-flu-dinamis-pitot-008",
@@ -275,7 +282,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar cairan terangkat naik setinggi $H$, penurunan tekanan statis akibat tiupan udara menurut Efek Bernoulli harus minimal mengimbangi tekanan hidrostatis kolom cairan setinggi $H$: $$\\Delta P_{\\text{Bernoulli}} = P_{\\text{hidrostatis}} \\iff \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2 = \\rho_c \\cdot g \\cdot H$$Sehingga kelajuan minimal udara dirumuskan: $$v = \\sqrt{\\frac{2 \\cdot \\rho_c \\cdot g \\cdot H}{\\rho_{\\text{udara}}}}$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-009",
@@ -308,7 +316,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Kelajuan gas buang di dalam cerobong dihitung dari tabung Pitot: $$v = \\sqrt{\\frac{2 \\cdot \\rho_{\\text{air}} \\cdot g \\cdot h}{\\rho_{\\text{gas}}}}$$ 2) Debit volume aliran emisi gas cerobong: $$Q = A \\cdot v$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-010",
@@ -341,7 +350,8 @@
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Kelajuan udara pada nosel semprot: $v_u = \\frac{Q_u}{A_n}$. 2) Penurunan tekanan hisap menurut Bernoulli: $\\Delta P_{\\text{hisap}} = \\frac{1}{2}\\rho_u v_u^2$. 3) Tekanan yang dibutuhkan untuk mengatasi beban hidrostatis kolom cat: $P_h = \\rho_{\\text{cat}} \\cdot g \\cdot h$. 4) Selisih tekanan netto efektif yang mendorong semburan cat keluar adalah: $$\\Delta P_{\\text{netto}} = \\Delta P_{\\text{hisap}} - P_h$$."
   }
 ];
 

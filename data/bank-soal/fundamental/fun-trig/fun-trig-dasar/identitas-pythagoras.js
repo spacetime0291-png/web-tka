@@ -44,7 +44,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Identitas pokok trigonometri menyatakan bahwa untuk setiap sudut real $\\alpha$, berlaku hubungan $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-002",
@@ -77,7 +78,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dari identitas $\\sin^2 x + \\cos^2 x = 1$, diperoleh rumus turunan $\\cos^2 x = 1 - \\sin^2 x$. **Tips:** Menjawab $\\frac{4}{5}$ karena terburu-buru menarik akar kuadrat padahal soal menanyakan $\\cos^2 x$ bukan $\\cos x$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-003",
@@ -110,7 +112,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Membagi kedua ruas identitas $\\sin^2 \\alpha + \\cos^2 \\alpha = 1$ dengan $\\cos^2 \\alpha$ menghasilkan identitas $1 + \\tan^2 \\alpha = \\sec^2 \\alpha$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-004",
@@ -143,7 +146,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Identitas Pythagoras antara tangen dan secan adalah $\\sec^2 x = 1 + \\tan^2 x$. **Tips:** Menjawab $\\frac{16}{9}$ karena lupa menambahkan angka $1$ pada rumus identitas."
   },
   {
     "id": "fun-trig-dasar-pythagoras-005",
@@ -176,7 +180,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan identitas Pythagoras, pembilang $1 - \\cos^2 \\theta$ dapat diubah menjadi $\\sin^2 \\theta$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-006",
@@ -209,7 +214,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyederhanaan pecahan trigonometri dilakukan dengan menyamakan penyebut dan menerapkan identitas pokok $\\sin^2 x + \\cos^2 x = 1$ serta $\\csc x = \\frac{1}{\\sin x}$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-007",
@@ -242,7 +248,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dengan menguadratkan kedua ruas persamaan $(\\sin x + \\cos x)^2$, identitas $\\sin^2 x + \\cos^2 x = 1$ memunculkan suku perkalian $2\\sin x \\cos x$. **Tips:** Lupa membagi dengan 2 setelah mengurangkan 1 dari $\\frac{49}{25}$, sehingga memilih $\\frac{24}{25}$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-008",
@@ -275,7 +282,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk selisih dua kuadrat trigonometri memanfaatkan identitas turunan Pythagoras $\\sec^2 \\theta - \\tan^2 \\theta = 1$ dan $\\csc^2 \\theta - \\cot^2 \\theta = 1$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-009",
@@ -308,7 +316,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena $\\cot x = \\frac{1}{\\tan x}$, maka hasil kali $\\tan x \\cdot \\cot x = 1$. Gunakan manipulasi kuadrat aljabar $a^2 + b^2 = (a + b)^2 - 2ab$. **Tips:** Langsung menguadratkan angka 3 menjadi 9 tanpa mengurangkan suku silang $2\\tan x\\cot x$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-010",
@@ -341,7 +350,8 @@
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian penyebut sekawan $(1 - \\sin x)(1 + \\sin x) = 1 - \\sin^2 x = \\cos^2 x$ memungkinkan pecahan diubah menjadi bentuk secan kuadrat. **Tips:** Keliru dalam operasi aljabar penyebut dengan menulis $1 + \\sin^2 x$ bukannya $1 - \\sin^2 x$."
   },
   {
     "id": "hots-mtk-03",
@@ -374,7 +384,8 @@
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
     "subChapterId": "fun-trig-dasar",
-    "subTopicSlug": "identitas-pythagoras"
+    "subTopicSlug": "identitas-pythagoras",
+    "hint": "King's Property Sifat Simetri Integral: $$\\int_{a}^{b} f(x)\\,dx = \\int_{a}^{b} f(a+b-x)\\,dx$$ Khusus untuk batas $[0, \\pi]$ dengan $x \\cdot g(\\sin x)$: $$\\int_{0}^{\\pi} x g(\\sin x)\\,dx = \\frac{\\pi}{2} \\int_{0}^{\\pi} g(\\sin x)\\,dx$$."
   }
 ];
 

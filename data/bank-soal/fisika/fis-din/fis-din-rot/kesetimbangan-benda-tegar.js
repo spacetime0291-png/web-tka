@@ -44,7 +44,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kesetimbangan statis benda tegar memerlukan ketiadaan percepatan translasi (kesetimbangan translasi: $\\sum \\vec{F} = 0$) sekaligus ketiadaan percepatan sudut (kesetimbangan rotasi: $\\sum \\vec{\\tau} = 0$)."
   },
   {
     "id": "fis-din-rot-kesetimbangan-002",
@@ -77,7 +78,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kesetimbangan stabil (mantap) terjadi ketika gangguan kecil menyebabkan titik berat benda naik sehingga memunculkan gaya/torsi pemulih yang berusaha mengembalikan benda ke posisi setimbang awalnya."
   },
   {
     "id": "fis-din-rot-kesetimbangan-003",
@@ -110,7 +112,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada balok horizontal simetris yang ditumpu di kedua ujungnya tanpa ada beban tambahan di luar pusat massa, beban total terbagi rata secara identik ke kedua penumpu: $N_A = N_B = \\frac{W}{2}$. **Tips:** Karena geometri batang homogen dan tumpuan simetris, beban terbagi sama besar masing-masing $50\\text{ N}$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-004",
@@ -143,7 +146,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kesetimbangan netral (indifferen) adalah kondisi kesetimbangan di mana gangguan atau pergeseran posisi tidak mengubah ketinggian titik berat benda, sehingga energi potensialnya tetap konstan dan benda tetap berada dalam keadaan setimbang di posisi yang baru. **Tips:** Kerap menyamakan dengan kesetimbangan stabil."
   },
   {
     "id": "fis-din-rot-kesetimbangan-005",
@@ -176,7 +180,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya berat batang homogen bekerja di titik tengah batang ($L/2 = 1,5\\text{ m}$ dari $A$). Ambil poros rotasi di titik penumpu $C$ dan terapkan syarat kesetimbangan rotasi: $\\sum \\tau_C = 0$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-006",
@@ -209,7 +214,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan syarat kesetimbangan statis: (1) $\\sum F_y = 0 \\implies N_L = W$, (2) $\\sum F_x = 0 \\implies f_s = N_D$, dan (3) $\\sum \\tau = 0$ terhadap titik tumpu lantai. Nilai batas tepat akan tergelincir mensyaratkan $f_s = \\mu_s N_L = \\mu_s W$, yang menghasilkan rumus umum $\\mu_s = \\frac{1}{2 \\tan\\theta}$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-007",
@@ -242,7 +248,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan titik engsel $A$ sebagai poros putar agar gaya reaksi engsel tidak masuk ke dalam perhitungan torsi (lengannya nol). Terapkan syarat kesetimbangan rotasi: $\\sum \\tau_A = 0$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-008",
@@ -275,7 +282,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat silinder tepat akan terangkat menaiki undakan, titik tumpu rotasi sesaat berpindah ke tepi undakan ($P$). Gaya normal lantai menjadi nol ($N_{\\text{lantai}} = 0$). Syarat terangkat adalah torsi gaya penarik $F$ harus mengimbangi torsi gaya gravitasi $W$ terhadap titik tumpu $P$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-009",
@@ -308,7 +316,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan kesetimbangan statis lengkap. Pada ambang batas tergelincir, gaya gesek statis lantai mencapai nilai maksimum: $f_{s,\\text{maks}} = \\mu_s N_L$. Dari kesetimbangan horizontal, gaya reaksi dinding adalah $N_D = f_{s,\\text{maks}}$. Nilai $x$ dicari dari kesetimbangan momen gaya terhadap kaki tangga di lantai. **Tips:** Kerap lupa menjumlahkan berat pekerja ke dalam gaya normal lantai ($N_L = W_t + W_p$)."
   },
   {
     "id": "fis-din-rot-kesetimbangan-010",
@@ -341,7 +350,8 @@
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena sudut tali terhadap horizontal adalah $37^\\circ$ dan $53^\\circ$, sudut antara kedua tali adalah $180^\\circ - (37^\\circ + 53^\\circ) = 90^\\circ$ (tegak lurus). Kedua tegangan tali dapat diuraikan pada sumbu-$x$ dan sumbu-$y$ untuk memenuhi kesetimbangan partikel $\\sum F_x = 0$ dan $\\sum F_y = 0$. **Tips:** Kerap tertukar antara $T_1$ dan $T_2$."
   }
 ];
 

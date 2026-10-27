@@ -44,7 +44,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dalam aljabar matriks tidak didefinisikan operasi pembagian. Untuk mengeliminasi matriks pengali $A$ di sebelah kiri pada persamaan $AX = B$, kedua ruas dikalikan dengan invers $A^{-1}$ dari arah kiri: $$A^{-1}(AX) = A^{-1}B \\implies IX = A^{-1}B \\implies X = A^{-1}B$$."
   },
   {
     "id": "mat-alj-matriks-persamaan-002",
@@ -77,7 +78,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk menyelesaikan persamaan matriks di mana variabel yang dicari berada di sebelah kiri matriks pengali ($XA = B$), kedua ruas harus dikalikan dengan invers $A^{-1}$ dari arah kanan: $$(XA) A^{-1} = B A^{-1} \\implies X I = B A^{-1} \\implies X = B A^{-1}$$. **Tips:** Tertukar antara mengalikan dari kanan ($B A^{-1}$) dan dari kiri ($A^{-1} B$)."
   },
   {
     "id": "mat-alj-matriks-persamaan-003",
@@ -110,7 +112,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk persamaan $AX = B$ diselesaikan dengan $X = A^{-1} B$, dengan $A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)$. **Tips:** Mengalikan $B$ dengan $A^{-1}$ dari kanan atau salah tanda pada invers matriks $A$."
   },
   {
     "id": "mat-alj-matriks-persamaan-004",
@@ -143,7 +146,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan matriks berbentuk $X \\cdot A = B$ memiliki penyelesaian $X = B \\cdot A^{-1}$. **Tips:** Mencoba mengalikan $A^{-1} B$ yang tidak kompatibel secara ordo ($(2 \\times 2) \\times (1 \\times 2)$)."
   },
   {
     "id": "mat-alj-matriks-persamaan-005",
@@ -176,7 +180,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan sifat perkalian determinan, jika $AX = B$ maka berlaku hubungan determinan: $$\\det(AX) = \\det(B) \\implies \\det(A) \\cdot \\det(X) = \\det(B) \\implies \\det(X) = \\frac{\\det(B)}{\\det(A)}$$. **Tips:** Mencari seluruh elemen matriks $X$ secara manual terlebih dahulu yang membutuhkan waktu lama dan rawan kesalahan hitung."
   },
   {
     "id": "mat-alj-matriks-persamaan-006",
@@ -209,7 +214,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk menyelesaikan persamaan $AXB = C$, kalikan dengan invers $A^{-1}$ dari arah kiri dan invers $B^{-1}$ dari arah kanan: $$A^{-1}(AXB)B^{-1} = A^{-1} C B^{-1} \\implies (A^{-1}A) X (B B^{-1}) = A^{-1} C B^{-1} \\implies I X I = A^{-1} C B^{-1} \\implies X = A^{-1} C B^{-1}$$."
   },
   {
     "id": "mat-alj-matriks-persamaan-007",
@@ -242,7 +248,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $XA = B$ diselesaikan melalui hubungan $X = B \\cdot A^{-1}$ dengan $A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)$. **Tips:** Mengalikan $A^{-1} B$ dari sebelah kiri yang menghasilkan matriks yang salah karena perkalian matriks tidak komutatif."
   },
   {
     "id": "mat-alj-matriks-persamaan-008",
@@ -275,7 +282,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $AX + B = C$ disederhanakan menjadi $AX = C - B$. Nilai determinan matriks $X$ kemudian dihitung memanfaatkan sifat $\\det(A) \\cdot \\det(X) = \\det(C - B)$. **Tips:** Lupa mengurangkan matriks $C - B$ terlebih dahulu atau langsung membagi elemen tanpa menghitung determinan."
   },
   {
     "id": "mat-alj-matriks-persamaan-009",
@@ -308,7 +316,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan sifat invers ganda: $((M)^{-1})^{-1} = M$. Jika $(A + X)^{-1} = B$, lakukan inversi pada kedua ruas untuk mengisolasi suku $(A + X)$. **Tips:** Mengasumsikan $(A + X)^{-1} = A^{-1} + X^{-1}$, padahal invers tidak bersifat distributif terhadap penjumlahan matriks."
   },
   {
     "id": "mat-alj-matriks-persamaan-010",
@@ -341,7 +350,8 @@
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $A^T X = B$ diselesaikan dengan $X = (A^T)^{-1} B$. Transpose matriks diperoleh dengan menukar baris menjadi kolom. **Tips:** Lupa melakukan transpose pada matriks $A$ terlebih dahulu sebelum mencari invers dan mengalikan vektor."
   },
   {
     "id": "sedang-mtk-11",
@@ -374,7 +384,8 @@
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-matriks",
-    "subTopicSlug": "persamaan-matriks"
+    "subTopicSlug": "persamaan-matriks",
+    "hint": "Sifat-Sifat Determinan Matriks: • $\\det(A \\cdot B) = \\det(A) \\cdot \\det(B)$ • Untuk matriks ordo $n\\times n$: $\\det(k \\cdot M) = k^n \\cdot \\det(M)$."
   }
 ];
 

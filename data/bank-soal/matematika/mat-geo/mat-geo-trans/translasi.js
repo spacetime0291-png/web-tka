@@ -44,7 +44,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Translasi titik $P(x, y)$ oleh matriks translasi $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$ menghasilkan titik bayangan $P'(x', y')$ dengan rumus penjumlahan koordinat: $x' = x + a$ dan $y' = y + b$. **Tips:** Melakukan operasi perkalian koordinat alih-alih penjumlahan, atau salah mengoperasikan penjumlahan tanda negatif $-5 + 4$."
   },
   {
     "id": "mat-geo-trans-translasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Vektor translasi $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$ dihitung dari selisih koordinat titik bayangan dikurangi titik asal: $a = x' - x$ dan $b = y' - y$. **Tips:** Tertukar mengurangkan titik asal dengan titik bayangan ($x - x'$) sehingga menghasilkan tanda yang berlawanan."
   },
   {
     "id": "mat-geo-trans-translasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Komposisi translasi berturut-turut bersifat aditif: $T_{\\text{total}} = T_1 + T_2 = \\begin{pmatrix} a_1 + a_2 \\\\ b_1 + b_2 \\end{pmatrix}$. **Tips:** Salah menjumlahkan bilangan negatif $-2 + 3$ yang terkadang keliru dihitung menjadi $-1$ atau $5$."
   },
   {
     "id": "mat-geo-trans-translasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk mentranslasikan persamaan garis $f(x, y) = 0$ oleh $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$, gantikan setiap variabel $x$ dengan $(x - a)$ dan setiap variabel $y$ dengan $(y - b)$. **Tips:** Langsung mengganti $x$ dengan $(x + 1)$ dan $y$ dengan $(y - 2)$ tanpa membalik tanda transformasi variabel."
   },
   {
     "id": "mat-geo-trans-translasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika bayangan $P'(x', y')$ dan vektor translasi $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$ diketahui, maka koordinat titik asal $P(x, y)$ diperoleh dengan operasi pengurangan: $x = x' - a$ dan $y = y' - b$. **Tips:** Menjumlahkan titik bayangan dengan translasi $(2 + 5, 4 - 3) = (7, 1)$, yang keliru mencari bayangan dari bayangan."
   },
   {
     "id": "mat-geo-trans-translasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika sebuah kurva $F(x, y) = 0$ ditranslasikan oleh $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$, maka koordinat baru memenuhi $x' = x + a \\iff x = x' - a$ dan $y' = y + b \\iff y = y' - b$. Persamaan bayangannya diperoleh dengan mensubstitusikan $x$ dan $y$ ke persamaan asal: $F(x' - a, y' - b) = 0$."
   },
   {
     "id": "mat-geo-trans-translasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi parabola oleh $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$ mengubah variabel $(x, y)$ menjadi $(x' - a, y' - b)$. Substitusikan bentuk ini ke persamaan parabola untuk mendapatkan kurva bayangan. **Tips:** Keliru saat melakukan substitusi variabel, seperti memasukkan $(x - 3)$ ke fungsi kuadrat padahal $x = x' + 3$."
   },
   {
     "id": "mat-geo-trans-translasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi lingkaran cukup ditinjau melalui pergeseran titik pusatnya. Jika pusat lingkaran awal adalah $P(x_p, y_p)$ dan pusat bayangan adalah $P'(x_p', y_p')$, maka vektor translasi berlaku $T = \\begin{pmatrix} x_p' - x_p \\\\ y_p' - y_p \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-trans-translasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi translasi berturut-turut $T_1$ dan $T_2$ setara dengan translasi tunggal $T = T_1 + T_2$. Titik puncak bayangan parabola diperoleh dari mentranslasikan titik puncak parabola mula-mula."
   },
   {
     "id": "mat-geo-trans-translasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi merupakan transformasi isometri (mempertahankan jarak dan sudut), sehingga luas bangun geometri bayangan tidak berubah ($L' = L$). Titik berat segitiga dengan titik-titik sudut $(x_i, y_i)$ adalah $Z\\left(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}\\right)$ dan titik berat bayangan memenuhi $Z' = Z + T$."
   }
 ];
 

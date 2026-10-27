@@ -44,7 +44,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pipa organa terbuka memiliki kedua ujung yang terbuka ke atmosfer: 1) Di kedua ujung terbuka, partikel fluida bebas berosilasi dengan amplitudo maksimum $\\implies$ kedua ujung berupa perut simpangan. 2) Panjang kolom pada nada dasar: $L = \\frac{1}{2}\\lambda_0 \\implies f_0 = \\frac{v}{2L}$. 3) Frekuensi harmonik ke-$n$ memenuhi seluruh kelipatan bulat bulat positif: $$f_n = (n + 1) f_0 \\implies f_0 : f_1 : f_2 : f_3 : \\dots = 1 : 2 : 3 : 4 : \\dots$$. **Tips:** Siswa sering tertukar dengan pipa organa tertutup yang hanya menghasilkan kelipatan ganjil ($1 : 3 : 5 : \\dots$, )."
   },
   {
     "id": "fis-gel-bunyi-organa-002",
@@ -77,7 +78,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pipa organa tertutup: 1) Ujung tertutup membatasi gerak partikel $\\implies$ simpul simpangan. 2) Ujung terbuka partikel bebas berosilasi $\\implies$ perut simpangan. 3) Nada dasar: $L = \\frac{1}{4}\\lambda_0 \\implies f_0 = \\frac{v}{4L}$. 4) Harmonik hanya terdiri dari kelipatan bilangan bulat ganjil: $$f_n = (2n + 1) f_0 \\implies f_0 : f_1 : f_2 : f_3 : \\dots = 1 : 3 : 5 : 7 : \\dots$$."
   },
   {
     "id": "fis-gel-bunyi-organa-003",
@@ -110,7 +112,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pipa organa terbuka, frekuensi nada atas ke-$n$ dirumuskan: $$f_n = (n + 1) \\cdot \\frac{v}{2L}$$Untuk nada atas pertama ($n = 1$): $$f_1 = 2 \\cdot \\frac{v}{2L} = \\frac{v}{L}$$."
   },
   {
     "id": "fis-gel-bunyi-organa-004",
@@ -143,7 +146,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pipa organa tertutup, frekuensi nada atas ke-$n$ dirumuskan: $$f_n = (2n + 1) \\cdot \\frac{v}{4L}$$Untuk nada atas pertama ($n = 1$): $$f_1 = 3 \\cdot \\frac{v}{4L}$$."
   },
   {
     "id": "fis-gel-bunyi-organa-005",
@@ -176,7 +180,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Frekuensi nada dasar masing-masing pipa organa adalah: • Pipa terbuka: $f_{0,\\text{terbuka}} = \\frac{v}{2 L_{\\text{terbuka}}}$ • Pipa tertutup: $f_{0,\\text{tertutup}} = \\frac{v}{4 L_{\\text{tertutup}}}$ Syarat frekuensi sama: $f_{0,\\text{terbuka}} = f_{0,\\text{tertutup}}$. **Tips:** Terkecoh membalik perbandingan menjadi $1 : 2$ ()."
   },
   {
     "id": "fis-gel-bunyi-organa-006",
@@ -209,7 +214,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Frekuensi nada atas pertama ($n = 1$) pipa organa terbuka: $$f_{1,\\text{terbuka}} = 2 \\cdot \\frac{v}{2 L_{\\text{terbuka}}} = \\frac{v}{L_{\\text{terbuka}}}$$ 2) Frekuensi nada atas kedua ($n = 2$) pipa organa tertutup: $$f_{2,\\text{tertutup}} = (2(2) + 1) \\cdot \\frac{v}{4 L_{\\text{tertutup}}} = \\frac{5v}{4 L_{\\text{tertutup}}}$$ 3) Kondisi resonansi: $f_{1,\\text{terbuka}} = f_{2,\\text{tertutup}}$."
   },
   {
     "id": "fis-gel-bunyi-organa-007",
@@ -242,7 +248,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Frekuensi nada dasar pipa organa terbuka berbanding lurus dengan cepat rambat bunyi di dalam medium gas pengisi pipa: $$f_0 = \\frac{v}{2L} \\implies \\frac{f_{0,\\text{He}}}{f_{0,\\text{udara}}} = \\frac{v_{\\text{He}}}{v_{\\text{udara}}}$$Panjang tabung pipa organa ($L$) tetap konstan."
   },
   {
     "id": "fis-gel-bunyi-organa-008",
@@ -275,7 +282,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pipa organa terbuka dengan memperhitungkan koreksi ujung (end correction), panjang akustik efektif ($L_{\\text{efektif}}$) adalah panjang fisik ditambah koreksi pada kedua ujung terbukanya: $$L_{\\text{efektif}} = L + 2 \\Delta L = L + 2(0{,}60 r)$$Frekuensi nada dasar sesungguhnya dihitung dengan: $$f_0 = \\frac{v}{2 L_{\\text{efektif}}}$$."
   },
   {
     "id": "fis-gel-bunyi-organa-009",
@@ -308,7 +316,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pipa organa tertutup nada atas ke-$n$ ($n = 2$ untuk nada atas kedua): 1) Pola gelombang: $L = (2n + 1) \\frac{\\lambda}{4} = \\frac{5}{4}\\lambda$. 2) Jumlah simpul simpangan $S = n + 1 = 3$ simpul. 3) Jumlah perut simpangan $P = n + 1 = 3$ perut. 4) Letak simpul simpangan dari ujung tertutup ($x = 0$): $x_k = (k - 1) \\frac{\\lambda}{2}$ untuk $k = 1, 2, 3$."
   },
   {
     "id": "fis-gel-bunyi-organa-010",
@@ -341,7 +350,8 @@
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Frekuensi nada dasar pipa organa terbuka mula-mula: $$f_0 = \\frac{v}{2 L_0}$$ 2) Setelah dicelupkan sedalam $h$, panjang kolom udara aktif yang tersisa di atas air adalah $L_1 = L_0 - h$. Karena ujung bawah tertutup oleh air, pipa berperilaku sebagai pipa organa tertutup dengan nada dasar: $$f_1 = \\frac{v}{4 L_1}$$."
   },
   {
     "id": "sup-fis-gel-01",
@@ -374,7 +384,8 @@
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "pipa-organa"
+    "subTopicSlug": "pipa-organa",
+    "hint": "Resonansi Pipa Organa Terbuka: Frekuensi nada ke-$n$ (dimulai dari $n=0$ nada dasar): $f_n = (n + 1) \\frac{v}{2L}$. Untuk nada atas pertama, $n = 1 \\implies f_1 = \\frac{v}{L}$."
   },
   {
     "id": "drill-bun-04",
@@ -407,7 +418,8 @@
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "pipa-organa"
+    "subTopicSlug": "pipa-organa",
+    "hint": "Pipa Organa Tertutup (Harmonik Ganjil): • Nada dasar ($n=0$): $f_0 = \\frac{v}{4L}$ • Perbandingan frekuensi hanya bilangan ganjil: $f_0 : f_1 : f_2 = 1 : 3 : 5$ • Nada atas pertama ($n=1$): $f_1 = 3 f_0 = \\frac{3v}{4L}$. **Tips:** ⚠️ Perbedaan Kunci: Pipa tertutup penyebutnya $4L$ dan bernada ganjil ($1 : 3 : 5$)."
   },
   {
     "id": "drill2-bun-02",
@@ -440,7 +452,8 @@
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "pipa-organa"
+    "subTopicSlug": "pipa-organa",
+    "hint": "Deret Harmonik Pipa Organa Terbuka: Perbandingan frekuensi harmonik berurutan berupa bilangan bulat lengkap: $$f_0 : f_1 : f_2 : f_3 = 1 : 2 : 3 : 4$$ • Nada dasar ($n=0$): $f_0$ • Nada atas ke-1 ($n=1$): $f_1 = 2f_0$ • Nada atas ke-2 ($n=2$): $f_2 = 3f_0$. **Tips:** ⚠️ Ingat Penamaan Nada: \"Nada atas ke-$n$\" setara dengan harmonik ke-$(n+1)$."
   },
   {
     "id": "drill2-bun-03",
@@ -473,7 +486,8 @@
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "pipa-organa"
+    "subTopicSlug": "pipa-organa",
+    "hint": "Deret Harmonik Pipa Organa Tertutup (Hanya Ganjil): $$f_0 : f_1 : f_2 : f_3 = 1 : 3 : 5 : 7$$ • Nada dasar ($n=0$): $f_0 = 1 f_0$ • Nada atas ke-1 ($n=1$): $f_1 = 3 f_0$ • Nada atas ke-2 ($n=2$): $f_2 = 5 f_0$."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Panjang busur lingkaran dengan sudut pusat $\\theta$ dirumuskan sebagai fraksi sudut pusat terhadap putaran penuh dikalikan keliling lingkaran: $s = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$."
   },
   {
     "id": "mat-geo-lingkaran-busur-002",
@@ -77,7 +78,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Teorema sudut keliling menyatakan bahwa besar sudut keliling yang menghadap busur yang sama dengan sudut pusat adalah tepat setengah dari besar sudut pusat tersebut: $\\text{Sudut Keliling} = \\frac{1}{2} \\times \\text{Sudut Pusat}$. **Tips:** Terkecoh mengalikan sudut pusat dengan 2 sehingga menghasilkan $140^\\circ$, yang merupakan kebalikan rumus."
   },
   {
     "id": "mat-geo-lingkaran-busur-003",
@@ -110,7 +112,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Teorema Thales, setiap sudut keliling lingkaran yang menghadap garis tengah (diameter) lingkaran selalu bernilai siku-siku ($90^\\circ$), karena sudut pusat garis lurus adalah $180^\\circ$. **Tips:** Mengira besar sudutnya bervariasi bergantung pada letak titik $C$ atau panjang diameter lingkaran."
   },
   {
     "id": "mat-geo-lingkaran-busur-004",
@@ -143,7 +146,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Semua sudut keliling yang menghadap busur yang sama pada sebuah lingkaran selalu memiliki besar sudut yang sama persis."
   },
   {
     "id": "mat-geo-lingkaran-busur-005",
@@ -176,7 +180,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada lingkaran yang sama, panjang busur lingkaran berbanding lurus secara linier dengan besar sudut pusat yang menghadapinya: $\\frac{\\text{Busur } CD}{\\text{Busur } AB} = \\frac{\\angle COD}{\\angle AOB}$. **Tips:** Kesalahan saat menyederhanakan pecahan $\\frac{105}{45}$ sehingga menghasilkan angka desimal yang keliru."
   },
   {
     "id": "mat-geo-lingkaran-busur-006",
@@ -209,7 +214,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sifat utama segi empat tali busur menyatakan bahwa jumlah dua sudut yang saling berhadapan selalu sama dengan sudut lurus ($180^\\circ$), yaitu $\\angle A + \\angle C = 180^\\circ$."
   },
   {
     "id": "mat-geo-lingkaran-busur-007",
@@ -242,7 +248,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Besar sudut antara dua tali busur yang berpotongan di dalam lingkaran sama dengan setengah dari jumlah sudut-sudut pusat busur yang dihadapi oleh sudut tersebut dan sudut bertolak belakangnya: $\\angle AEB = \\frac{1}{2}(\\angle AOB + \\angle COD)$. **Tips:** Mengurangkan kedua sudut pusat (yang merupakan rumus untuk perpotongan di luar lingkaran) alih-alih menjumlahkannya."
   },
   {
     "id": "mat-geo-lingkaran-busur-008",
@@ -275,7 +282,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Besar sudut yang dibentuk oleh perpotongan dua tali busur di luar lingkaran sama dengan setengah dari selisih besar sudut pusat busur besar dan busur kecil yang diapitnya: $\\angle APC = \\frac{1}{2}(\\text{sudut busur besar} - \\text{sudut busur kecil})$."
   },
   {
     "id": "mat-geo-lingkaran-busur-009",
@@ -308,7 +316,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema perkalian segmen tali busur (Chord Theorem) menyatakan bahwa jika dua tali busur $AB$ dan $CD$ berpotongan di titik $P$, maka hasil kali panjang segmen pada satu tali busur sama dengan hasil kali panjang segmen pada tali busur lainnya: $AP \\times PB = CP \\times PD$. **Tips:** Keliru menyamakan penjumlahan segmen $AP + PB = CP + PD$ alih-alih perkalian segmen garis."
   },
   {
     "id": "mat-geo-lingkaran-busur-010",
@@ -341,7 +350,8 @@
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema garis singgung-potong (Tangent-Secant Theorem) menyatakan bahwa kuadrat panjang segmen garis singgung sama dengan hasil kali panjang segmen garis potong luar dengan panjang keseluruhan garis potong: $PT^2 = PA \\times PB$."
   }
 ];
 

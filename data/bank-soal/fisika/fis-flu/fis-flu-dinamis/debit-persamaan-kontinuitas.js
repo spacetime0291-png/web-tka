@@ -44,7 +44,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Debit aliran ($Q$) didefinisikan sebagai laju volume fluida yang mengalir melalui suatu penampang per satuan waktu: $$Q = \\frac{V}{t}$$Satuan SI untuk volume adalah meter kubik ($1\\text{ liter} = 10^{-3}\\text{ m}^3$) dan waktu adalah sekon ($1\\text{ menit} = 60\\text{ s}$)."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-002",
@@ -77,7 +78,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Debit aliran fluida juga dapat dirumuskan dari perkalian antara luas penampang saluran ($A$) dengan kelajuan linier aliran ($v$): $$Q = A \\cdot v$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-003",
@@ -110,7 +112,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan Kontinuitas untuk fluida inkompresibel menyatakan kekekalan debit aliran pada setiap titik sepanjang pipa alir: $$Q_1 = Q_2 \\iff A_1 \\cdot v_1 = A_2 \\cdot v_2$$Sehingga kelajuan fluida berbanding terbalik dengan luas penampang: $$v_2 = v_1 \\cdot \\frac{A_1}{A_2}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-004",
@@ -143,7 +146,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karena luas penampang pipa lingkaran sebanding dengan kuadrat diameternya ($A \\propto d^2$), maka persamaan kontinuitas dapat dinyatakan dalam perbandingan diameter: $$d_1^2 \\cdot v_1 = d_2^2 \\cdot v_2 \\iff v_2 = v_1 \\cdot \\left(\\frac{d_1}{d_2}\\right)^2$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-005",
@@ -176,7 +180,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Empat sifat utama fluida ideal adalah: 1) Inkompresibel: massa jenis fluida konstan dan tidak berubah ketika ditekan. 2) Non-viskos: tidak memiliki gesekan internal atau kekentalan saat mengalir. 3) Aliran tunak (steady): kecepatan partikel pada titik tertentu selalu konstan terhadap waktu. 4) Tak berputar (irrotasional): partikel tidak memiliki momentum sudut terhadap porosnya. **Tips:** Jangan tertukar antara aliran tunak (steady) dan aliran laminer dengan aliran turbulen atau pusaran berolak."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-006",
@@ -209,7 +214,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan prinsip kontinuitas, debit aliran pada pembuluh utama sama dengan jumlah debit total pada seluruh cabang kapiler: $$Q_{\\text{aorta}} = N \\cdot Q_{\\text{kapiler}} \\iff A_{\\text{aorta}} \\cdot v_1 = N \\cdot A_{\\text{kapiler}} \\cdot v_2$$Dengan mensubstitusikan luas penampang lingkaran $A = \\frac{1}{4}\\pi d^2$: $$D^2 \\cdot v_1 = N \\cdot d^2 \\cdot v_2 \\implies v_2 = \\frac{D^2 \\cdot v_1}{N \\cdot d^2}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-007",
@@ -242,7 +248,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Laju pengisian netto tandon adalah selisih antara debit total air masuk dan debit air keluar: $$Q_{\\text{netto}} = Q_{\\text{masuk}} - Q_{\\text{keluar}} = (Q_A + Q_B) - (A_{\\text{bocor}} \\cdot v)$$Waktu pengisian dihitung dengan: $$t = \\frac{V}{Q_{\\text{netto}}}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-008",
@@ -275,7 +282,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Debit total fluida terbagi rata melalui $n$ lubang kecil yang identik: $$Q = n \\cdot a \\cdot v \\implies v = \\frac{Q}{n \\cdot a}$$Di mana $n \\cdot a$ adalah luas penampang total seluruh lubang sembur."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-009",
@@ -308,7 +316,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan persamaan kontinuitas fluida inkompresibel, debit penurunan air di dalam tangki sama dengan debit air yang keluar melalui keran: $$A_1 \\cdot v_1 = A_2 \\cdot v_2 \\implies v_1 = v_2 \\cdot \\frac{A_2}{A_1}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-010",
@@ -341,7 +350,8 @@
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Debit massa (laju aliran massa, $\\dot{m}$) adalah massa fluida yang melewati penampang pipa per satuan waktu: $$\\dot{m} = \\rho \\cdot Q = \\rho \\cdot A_2 \\cdot v_2 = \\rho \\cdot \\left(\\frac{1}{4}\\pi d_2^2\\right) \\cdot v_2$$Prinsip kekekalan massa menjamin bahwa nilai debit massa konstan di setiap penampang pipa."
   },
   {
     "id": "mudah-fis-13",
@@ -374,7 +384,8 @@
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-dinamis",
-    "subTopicSlug": "debit-persamaan-kontinuitas"
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "hint": "Persamaan Kontinuitas Fluida Inkompresibel: Debit aliran konstan di setiap penampang pipa: $$Q_1 = Q_2 \\implies A_1 v_1 = A_2 v_2$$. **Tips:** Karena satuan penampang kedua sisi sama-sama $\\text{cm}^2$, tidak perlu mengonversi ke $\\text{m}^2$ asalkan satuannya konsisten."
   },
   {
     "id": "sedang-fis-10",
@@ -407,7 +418,8 @@
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-dinamis",
-    "subTopicSlug": "debit-persamaan-kontinuitas"
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "hint": "Teorema Torricelli & Jarak Pancaran Maksimum: • Kelajuan semburan mendatar: $v = \\sqrt{2 g h_1}$ • Waktu jatuh bebas: $t = \\sqrt{\\frac{2 h_2}{g}}$ • Jarak pancaran horizontal: $x = v \\cdot t = 2\\sqrt{h_1 \\cdot h_2}$."
   },
   {
     "id": "hots-fis-03",
@@ -440,7 +452,8 @@
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-dinamis",
-    "subTopicSlug": "debit-persamaan-kontinuitas"
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "hint": "Teorema Torricelli & Gaya Reaksi Aliran Fluida: 1. Kecepatan pancaran Torricelli: $v = \\sqrt{2gh}$ (dengan $h$ kedalaman dari permukaan air) 2. Debit aliran massa: $\\dot{m} = \\rho Q = \\rho A v$ 3. Gaya reaksi dorong impuls fluida (Hukum III Newton): $F_{\\text{reaksi}} = \\dot{m} v = \\rho A v^2$."
   }
 ];
 

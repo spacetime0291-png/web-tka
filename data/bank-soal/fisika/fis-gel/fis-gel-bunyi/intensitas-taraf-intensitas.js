@@ -44,7 +44,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Taraf intensitas bunyi ($\\text{TI}$) dalam satuan desibel ($\\text{dB}$) didefinisikan sebagai logaritma dari perbandingan intensitas bunyi ($I$) terhadap intensitas ambang pendengaran ($I_0$): $$\\text{TI} = 10 \\log\\left(\\frac{I}{I_0}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-002",
@@ -77,7 +78,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan kebalikan untuk menentukan intensitas bunyi ($I$) dari taraf intensitas ($\\text{TI}$) adalah: $$\\text{TI} = 10 \\log\\left(\\frac{I}{I_0}\\right) \\implies \\log\\left(\\frac{I}{I_0}\\right) = \\frac{\\text{TI}}{10} \\implies I = I_0 \\times 10^{\\frac{\\text{TI}}{10}}$$. **Tips:** Hati-hati saat mengalikan $10^{-12} \\times 10^6$: pangkat dijumlahkan $(-12 + 6 = -6)$, bukan dikalikan."
   },
   {
     "id": "fis-gel-bunyi-taraf-003",
@@ -110,7 +112,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gelombang bunyi yang memancar dari sumber titik isotropis menyebar ke permukaan bola ($A = 4\\pi r^2$). Oleh karena itu, intensitas bunyi berbanding terbalik dengan kuadrat jarak: $$I = \\frac{P}{4\\pi r^2} \\implies \\frac{I_B}{I_A} = \\left(\\frac{r_A}{r_B}\\right)^2$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-004",
@@ -143,7 +146,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Taraf intensitas untuk $n$ sumber bunyi identik yang berbunyi serentak dihitung dengan rumus: $$\\text{TI}_n = \\text{TI}_1 + 10 \\log(n)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-005",
@@ -176,7 +180,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perubahan taraf intensitas akibat perubahan jarak dari sumber bunyi titik memenuhi persamaan: $$\\text{TI}_2 = \\text{TI}_1 - 20 \\log\\left(\\frac{r_2}{r_1}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-006",
@@ -209,7 +214,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kombinasi pengaruh penambahan jumlah sumber ($n$) dan perubahan jarak ($r$) terhadap taraf intensitas dirumuskan: $$\\text{TI}' = \\text{TI}_1 + 10 \\log(n) - 20 \\log\\left(\\frac{r_2}{r_1}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-007",
@@ -242,7 +248,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Peningkatan taraf intensitas ($\\Delta\\text{TI}$) akibat penambahan jumlah sumber identik pada jarak yang sama adalah: $$\\Delta \\text{TI} = \\text{TI}_n - \\text{TI}_1 = 10 \\log(n)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-008",
@@ -275,7 +282,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya akustik sumber ($P$) dapat ditentukan dari intensitas bunyi ($I$) melalui luas permukaan bola muka gelombang ($A = 4\\pi r^2$): $$I = I_0 \\times 10^{\\frac{\\text{TI}}{10}}, \\quad P = I \\times A = I \\times (4\\pi r^2)$$. **Tips:** Jangan menggunakan luas lingkaran $\\pi r^2$."
   },
   {
     "id": "fis-gel-bunyi-taraf-009",
@@ -308,7 +316,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan penurunan taraf intensitas terhadap pertambahan jarak memenuhi persamaan logaritmik kuadrat jarak: $$\\text{TI}_1 - \\text{TI}_2 = 20 \\log\\left(\\frac{r_2}{r_1}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-010",
@@ -341,7 +350,8 @@
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Taraf intensitas total dari dua sumber bunyi tidak dapat dijumlahkan secara langsung dalam satuan $\\text{dB}$. Yang dijumlahkan secara langsung adalah intensitas fisik ($I$) masing-masing sumber: $$I_{\\text{tot}} = I_1 + I_2 \\implies \\text{TI}_{\\text{tot}} = 10 \\log\\left(\\frac{I_{\\text{tot}}}{I_0}\\right)$$."
   },
   {
     "id": "drill2-bun-06",
@@ -374,7 +384,8 @@
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Intensitas Bunyi Permukaan Bola: Gelombang bunyi dari sumber titik menyebar membentuk bola dengan luas muka gelombang $A = 4\\pi r^2$: $$I = \\frac{P}{A} = \\frac{P}{4\\pi r^2}$$. **Tips:** Pembagi intensitas bola adalah $4\\pi r^2$ (luas kulit bola), bukan $\\pi r^2$ (luas lingkaran)."
   },
   {
     "id": "sup-fis-gel-02",
@@ -407,7 +418,8 @@
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Taraf Intensitas Multi Sumber Sejenis: Ketika $n$ sumber bunyi identik berbunyi bersamaan, intensitasnya berlipat ganda sebesar $n$, sehingga taraf intensitas totalnya: $TI_n = TI_1 + 10 \\log_{10}(n)$."
   },
   {
     "id": "drill-bun-08",
@@ -440,7 +452,8 @@
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Hubungan Taraf Intensitas terhadap Jarak Titik: Karena intensitas mematuhi hukum kuadrat terbalik ($I \\propto 1/r^2$), taraf intensitas berkurang secara logaritmik: $$TI_2 = TI_1 - 20 \\log_{10}\\left(\\frac{r_2}{r_1}\\right)$$. **Tips:** ⚠️ Rumus Sakti Jarak: Jarak naik $10\\times \\implies TI$ turun tepat $20\\text{ dB}$."
   },
   {
     "id": "drill2-bun-07",
@@ -473,7 +486,8 @@
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Setiap pelipatgandaan jumlah sumber sebesar $10\\times$ akan menambah taraf intensitas tepat $+10\\text{ dB}$: $$TI_n = TI_1 + 10 \\log_{10}(n)$$."
   }
 ];
 

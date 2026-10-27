@@ -44,7 +44,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pengukuran tunggal, ketidakpastian mutlak ditetapkan sebesar setengah nilai skala terkecil (NST) alat ukur: $\\Delta x = \\frac{1}{2} \\times \\text{NST}$. Jumlah tempat desimal pada nilai terbaik $x$ harus sama dengan jumlah tempat desimal pada ketidakpastian mutlak $\\Delta x$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-002",
@@ -77,7 +78,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketidakpastian relatif fraksional dirumuskan sebagai $KR = \\frac{\\Delta x}{x} \\times 100\\%$. Aturan hak angka penting menyatakan: jika $KR \\approx 10\\%$, berhak atas 2 angka penting; jika $KR \\approx 1\\%$, berhak atas 3 angka penting; jika $KR \\approx 0{,}1\\%$, berhak atas 4 angka penting."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-003",
@@ -110,7 +112,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Nilai terbaik dari suatu besaran yang diukur berulang sebanyak $N$ kali adalah rata-rata hitung (mean aritmatika): $\\bar{x} = \\frac{\\sum_{i=1}^N x_i}{N}$. **Tips:** Kesalahan aritmatika pembagian atau salah mengambil nilai median/modus tanpa menjumlahkan seluruh data."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-004",
@@ -143,7 +146,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kesalahan dalam pengukuran dikelompokkan menjadi: 1) Kesalahan acak (random error): disebabkan oleh fluktuasi tak terkontrol dan lingkungan yang berubah secara acak. 2) Kesalahan sistematik (systematic error): disebabkan oleh alat ukur (kalibrasi, titik nol) atau metode yang cacat konstan. 3) Keteledoran (blunder): kesalahan pembacaan/pencatatan oleh manusia."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-005",
@@ -176,7 +180,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Koreksi Bessel (Bessel's correction): pada sampel berukuran terbatas ($N$), pembagian dengan $(N - 1)$ yang merupakan derajat kebebasan (degrees of freedom) digunakan agar varians sampel menjadi estimator tak bias (unbiased estimator) bagi varians populasi."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-006",
@@ -209,7 +214,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pengukuran berulang, nilai terbaik adalah nilai rata-rata hitung $\\bar{x} = \\frac{\\sum x_i}{N}$ dan ketidakpastian mutlak dinyatakan oleh deviasi standar rata-rata $S_{\\bar{x}} = \\frac{1}{N}\\sqrt{\\frac{N \\sum x_i^2 - (\\sum x_i)^2}{N - 1}}$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-007",
@@ -242,7 +248,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada operasi penjumlahan $y = x_1 + x_2$ untuk kesalahan acak independen, ketidakpastian mutlak gabungan ditentukan melalui penjumlahan kuadratur Gauss: $\\Delta y = \\sqrt{(\\Delta x_1)^2 + (\\Delta x_2)^2}$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-008",
@@ -275,7 +282,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada hubungan fungsi berpangkat $g = k \\cdot L^1 \\cdot T^{-2}$, ketidakpastian relatif fraksional adalah jumlah dari ketidakpastian relatif tiap besaran dikalikan nilai mutlak pangkatnya: $\\frac{\\Delta g}{g} = \\left|1\\right| \\left(\\frac{\\Delta L}{L}\\right) + \\left|-2\\right| \\left(\\frac{\\Delta T}{T}\\right)$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-009",
@@ -308,7 +316,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan persamaan hukum Ohm $V = I \\cdot R$, jika $V$ diplot pada sumbu-Y dan $I$ pada sumbu-X, persamaan grafik berbentuk linier $y = m \\cdot x$ di mana gradien kemiringan garis $m = \\frac{\\Delta V}{\\Delta I} = R$ merepresentasikan nilai hambatan listrik. **Tips:** Tertukar antara grafik $V-I$ (gradien $= R$) dengan grafik $I-V$ (gradien $= \\frac{1}{R}$ / konduktansi, )."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-010",
@@ -341,7 +350,8 @@
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Akurasi mengukur kedekatan nilai rata-rata hasil ukur terhadap nilai sebenarnya (true value). Presisi mengukur kedekatan pengulangan data satu sama lain (reproducibility/varians kecil). Kesalahan sistematik menyebabkan pergeseran konstan (presisi tinggi tetapi akurasi rendah)."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perbesaran sudut lup untuk mata yang berakomodasi maksimum dirumuskan: $$M = \\frac{s_n}{f} + 1$$ dengan $s_n$ adalah jarak titik dekat mata normal ($25\\text{ cm}$) dan $f$ adalah jarak fokus lup."
   },
   {
     "id": "fis-gel-optik-alat-002",
@@ -77,7 +78,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk pengamatan tanpa berakomodasi (mata relaks), bayangan lup harus terbentuk di tak terhingga ($s' = \\infty$) sehingga benda diletakkan tepat di titik fokus ($s = f$). Perbesaran sudutnya adalah: $$M = \\frac{s_n}{f}$$. **Tips:** Jangan menambahkan angka 1 jika kondisi pengamatan adalah tanpa akomodasi."
   },
   {
     "id": "fis-gel-optik-alat-003",
@@ -110,7 +112,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pembentukan bayangan pada mikroskop: 1. Lensa objektif: Benda diletakkan di ruang II ($f_{\\text{ob}} < s_{\\text{ob}} < 2f_{\\text{ob}}$) sehingga menghasilkan bayangan di ruang III yang bersifat nyata, terbalik, dan diperbesar . 2. Lensa okuler (bertindak sebagai lup): Bayangan nyata objektif berada di ruang I okuler ($s_{\\text{ok}} \\le f_{\\text{ok}}$) sehingga menghasilkan bayangan akhir yang maya, terbalik terhadap benda asli, dan sangat diperbesar . **Tips:** Jangan tertukar dengan sifat bayangan akhir yang dilihat mata pengamat (maya, terbalik, diperbesar)."
   },
   {
     "id": "fis-gel-optik-alat-004",
@@ -143,7 +146,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Panjang tabung teropong bintang ($d$, jarak antara lensa objektif dan lensa okuler) saat mata tidak berakomodasi memenuhi persamaan: $$d = f_{\\text{ob}} + f_{\\text{ok}}$$kanan."
   },
   {
     "id": "fis-gel-optik-alat-005",
@@ -176,7 +180,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perbesaran sudut teropong bintang untuk pengamatan mata tanpa berakomodasi dirumuskan: $$M = \\frac{f_{\\text{ob}}}{f_{\\text{ok}}}$$."
   },
   {
     "id": "fis-gel-optik-alat-006",
@@ -209,7 +214,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbesaran total mikroskop ($M_{\\text{tot}}$) merupakan perkalian perbesaran linier lensa objektif ($M_{\\text{ob}}$) dan perbesaran sudut lensa okuler ($M_{\\text{ok}}$): $$M_{\\text{tot}} = M_{\\text{ob}} \\times M_{\\text{ok}} = \\left|\\frac{s_{\\text{ob}}'}{s_{\\text{ob}}}\\right| \\times \\left(\\frac{s_n}{f_{\\text{ok}}}\\right)$$."
   },
   {
     "id": "fis-gel-optik-alat-007",
@@ -242,7 +248,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada mikroskop untuk mata yang tidak berakomodasi, bayangan dari lensa objektif harus jatuh tepat di titik fokus lensa okuler ($s_{\\text{ok}} = f_{\\text{ok}}$). Panjang tubus mikroskop dirumuskan: $$d = s_{\\text{ob}}' + f_{\\text{ok}}$$kanan."
   },
   {
     "id": "fis-gel-optik-alat-008",
@@ -275,7 +282,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbesaran total mikroskop untuk mata berakomodasi maksimum dihitung dengan mengalikan perbesaran objektif dan perbesaran okuler berakomodasi maksimum ($M_{\\text{ok}} = \\frac{s_n}{f_{\\text{ok}}} + 1$): $$M_{\\text{tot}} = \\left|\\frac{s_{\\text{ob}}'}{s_{\\text{ob}}}\\right| \\times \\left(\\frac{s_n}{f_{\\text{ok}}} + 1\\right)$$."
   },
   {
     "id": "fis-gel-optik-alat-009",
@@ -308,7 +316,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teropong bumi dilengkapi dengan lensa pembalik agar bayangan akhir yang dilihat tegak. Panjang tubus teropong bumi saat mata tidak berakomodasi dirumuskan: $$d = f_{\\text{ob}} + 4f_p + f_{\\text{ok}}$$kanan."
   },
   {
     "id": "fis-gel-optik-alat-010",
@@ -341,7 +350,8 @@
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pengamatan dengan lup yang berakomodasi pada jarak tertentu ($x$) mengharuskan bayangan maya terbentuk pada jarak tersebut ($s' = -x$). Jarak benda ($s$) dicari dengan persamaan lensa tipis: $$\\frac{1}{s} = \\frac{1}{f} - \\frac{1}{s'}$$."
   }
 ];
 

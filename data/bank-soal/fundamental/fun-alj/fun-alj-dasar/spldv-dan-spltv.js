@@ -44,7 +44,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Metode eliminasi menyelesaikan sistem persamaan linear dengan menjumlahkan atau mengurangkan kedua persamaan untuk mengeliminasi salah satu variabel."
   },
   {
     "id": "fun-alj-dasar-spldv-002",
@@ -77,7 +78,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan eliminasi variabel $y$ untuk menemukan $x$, kemudian substitusikan nilai $x$ ke salah satu persamaan untuk mencari $y$. **Tips:** Menjawab $4$ karena terburu-buru mengira nilai yang diperoleh pertama kali $(x)$ adalah jawaban akhir."
   },
   {
     "id": "fun-alj-dasar-spldv-003",
@@ -110,7 +112,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Metode substitusi dilakukan dengan mengganti suatu variabel dengan ekspresi variabel lain yang telah dinyatakan secara eksplisit."
   },
   {
     "id": "fun-alj-dasar-spldv-004",
@@ -143,7 +146,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pemodelan aljabar menerjemahkan kalimat verbal menjadi persamaan matematika dengan memetakan besaran objek ke variabel linier. **Tips:** Tertukar koefisien antara variabel buku $b$ dan pensil $p$ pada persamaan."
   },
   {
     "id": "fun-alj-dasar-spldv-005",
@@ -176,7 +180,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada SPLTV dengan kombinasi penjumlahan parsial, substitusi gabungan $(x + y)$ langsung menghasilkan nilai variabel ketiga $z$. **Tips:** Melakukan proses eliminasi bertahap yang panjang dan rumit padahal suku $(x + y)$ sudah diketahui secara utuh."
   },
   {
     "id": "fun-alj-dasar-spldv-006",
@@ -209,7 +214,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan metode eliminasi dengan menyamakan koefisien salah satu variabel melalui perkalian konstanta sebelum melakukan penjumlahan atau pengurangan persamaan. **Tips:** Hanya mencari nilai $x$ atau $y$ tanpa melanjutkan menghitung nilai jumlahan $x + y$ yang diminta soal."
   },
   {
     "id": "fun-alj-dasar-spldv-007",
@@ -242,7 +248,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem persamaan non-linier dalam variabel pecahan dapat diubah menjadi SPLDV biasa dengan melakukan pemisalan variabel baru: $u = \\frac{1}{x}$ dan $v = \\frac{1}{y}$."
   },
   {
     "id": "fun-alj-dasar-spldv-008",
@@ -275,7 +282,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "SPLTV diselesaikan dengan mengeliminasi satu variabel yang sama secara bertahap menggunakan dua pasang persamaan sehingga diperoleh SPLDV. **Tips:** Kesalahan tanda saat proses eliminasi antar-persamaan bertingkat yang merambat ke seluruh nilai variabel berikutnya."
   },
   {
     "id": "fun-alj-dasar-spldv-009",
@@ -308,7 +316,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem persamaan linear dua variabel $a_1 x + b_1 y = c_1$ dan $a_2 x + b_2 y = c_2$ memiliki tak terhingga penyelesaian jika kedua garis berimpit, yaitu $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$. **Tips:** Menggunakan kondisi garis tegak lurus atau salah menyamakan perbandingan invers sehingga memilih $k = \\frac{3}{2}$."
   },
   {
     "id": "fun-alj-dasar-spldv-010",
@@ -341,7 +350,8 @@
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Masalah umur dimodelkan dengan memisalkan umur saat ini sebagai $A$ (Ayah) dan $B$ (anak), kemudian merumuskan kondisi masa lampau $(A - t)$ dan masa depan $(A + t)$. **Tips:** Lupa mengurangkan atau menambahkan umur kedua belah pihak (hanya mengubah umur Ayah saja, atau sebaliknya)."
   }
 ];
 

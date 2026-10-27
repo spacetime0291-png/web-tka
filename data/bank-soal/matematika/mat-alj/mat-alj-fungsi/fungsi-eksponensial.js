@@ -44,7 +44,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi eksponensial standar $f(x) = a^x$ dengan $a > 1$ mendekati nilai 0 saat $x$ menuju $-\\infty$ ($\\lim_{x \\to -\\infty} a^x = 0$), sehingga memiliki asimtot datar pada sumbu-$X$ yaitu garis horizontal $y = 0$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-002",
@@ -77,7 +78,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik dengan sumbu-$Y$ diperoleh saat $x = 0$. Untuk setiap bilangan real positif $a$, berlaku sifat pangkat nol: $a^0 = 1$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-003",
@@ -110,7 +112,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi eksponensial $f(x) = a^x$ merupakan fungsi pertumbuhan eksponensial (monoton naik) jika basis $a > 1$, dan merupakan fungsi peluruhan eksponensial (monoton turun) jika basis memenuhi interval $0 < a < 1$. **Tips:** Mengira fungsi peluruhan harus memiliki tanda minus di depan koefisien utama."
   },
   {
     "id": "mat-alj-fungsi-eksponen-004",
@@ -143,7 +146,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Grafik fungsi eksponensial berbentuk $f(x) = a^{x - h} + k$ memiliki asimtot datar pada garis horizontal $y = k$ yang ditentukan oleh pergeseran vertikal konstanta $k$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-005",
@@ -176,7 +180,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika kurva melalui titik $(x_1, y_1)$, maka koordinat titik tersebut harus memenuhi persamaan fungsi: $y_1 = f(x_1)$. **Tips:** Menghitung $(b \\cdot 2)^{x+1}$ alih-alih $b \\cdot (2^{x+1})$ karena salah aturan prioritas operasi perpangkatan."
   },
   {
     "id": "mat-alj-fungsi-eksponen-006",
@@ -209,7 +214,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Grafik fungsi eksponen $f(x) = a \\cdot b^x + c$ memiliki asimtot datar pada garis horizontal $y = c$ karena untuk basis $b > 1$, saat $x \\to -\\infty$ nilai suku eksponensial mendekati nol."
   },
   {
     "id": "mat-alj-fungsi-eksponen-007",
@@ -242,7 +248,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sifat dasar fungsi eksponen dengan basis positif menyatakan bahwa untuk setiap eksponen riil, nilai perpangkatan selalu positif tegas, yaitu $a^{g(x)} > 0$ untuk $a > 0$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-008",
@@ -275,7 +282,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong kurva dengan sumbu koordinat diperoleh dengan menetapkan $y = 0$ untuk perpotongan sumbu-$X$ dan $x = 0$ untuk perpotongan sumbu-$Y$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-009",
@@ -308,7 +316,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong dua kurva dicari dengan menyamakan kedua fungsi $f(x) = g(x)$ dan menyelesaikannya menggunakan pemisalan aljabar persamaan kuadrat."
   },
   {
     "id": "mat-alj-fungsi-eksponen-010",
@@ -341,7 +350,8 @@
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Model pertumbuhan eksponensial $N(t) = N_0 \\cdot b^{kt}$ diselesaikan dengan menentukan konstanta laju pertumbuhan $k$ terlebih dahulu melalui data awal dan pengamatan."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta U = Q - W \\quad \\text{atau} \\quad Q = \\Delta U + W$$ dengan $Q$ adalah kalor yang diserap sistem dan $W$ usaha luar yang dilakukan oleh sistem."
   },
   {
     "id": "fis-termo-hukum-hukum1-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Aturan konvensi tanda dalam Hukum I Termodinamika ($\\Delta U = Q - W$): - Sistem melepaskan kalor ke lingkungan: $Q < 0$ (negatif) - Lingkungan melakukan usaha pada sistem (kompresi): $W < 0$ (negatif). **Tips:** Hati-hati dengan tanda negatif ganda: $-(-200) = +200$."
   },
   {
     "id": "fis-termo-hukum-hukum1-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada proses isotermal gas ideal, suhu gas bernilai konstan ($\\Delta T = 0$). Karena energi dalam gas ideal murni fungsi suhu mutlak, maka perubahan energi dalam pada proses isotermal selalu bernilai nol: $$\\Delta U = 0$$ Berdasarkan Hukum I Termodinamika: $\\Delta U = Q - W \\implies 0 = Q - W \\implies W = Q$. **Tips:** Jangan mengira usaha luar bernilai nol ()."
   },
   {
     "id": "fis-termo-hukum-hukum1-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada proses isokhorik (volume konstan), gas tidak mengalami perubahan volume ($\\Delta V = 0$) sehingga usaha luar bernilai nol: $$W = 0$$ Berdasarkan Hukum I Termodinamika: $\\Delta U = Q - W \\implies \\Delta U = Q$. Seluruh kalor yang diserap semata-mata digunakan untuk meningkatkan energi dalam gas."
   },
   {
     "id": "fis-termo-hukum-hukum1-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada proses adiabatik, sistem tidak mengalami pertukaran kalor dengan lingkungan sekitarnya ($Q = 0$). Persamaan Hukum I Termodinamika menjadi: $$\\Delta U = Q - W = 0 - W = -W$$."
   },
   {
     "id": "fis-termo-hukum-hukum1-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta U_{\\text{siklus}} = \\Delta U_{AB} + \\Delta U_{BC} + \\Delta U_{CA} = 0$$. **Tips:** Hati-hati dengan tanda aljabar: $W_{CA} = Q_{CA} - \\Delta U_{CA} = (-50) - 100 = -150\\text{ J}$."
   },
   {
     "id": "fis-termo-hukum-hukum1-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan relasi Mayer untuk gas ideal, selisih kapasitas kalor molar pada tekanan tetap dan volume tetap adalah tetapan gas universal: $$C_p - C_v = R$$ Kalor pada tekanan tetap adalah $Q_p = n C_p \\Delta T$ dan pada volume tetap adalah $Q_v = n C_v \\Delta T$. Selisih kalor keduanya setara dengan usaha luar yang dilakukan gas pada pemuaian isobarik: $$Q_p - Q_v = n(C_p - C_v)\\Delta T = n R \\Delta T = W$$."
   },
   {
     "id": "fis-termo-hukum-hukum1-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta U = Q - W$$ - Kalor penyerapan laten: $Q = m \\times L_u$. - Usaha luar ekspansi melawan tekanan atmosfer: $W = P \\times (V_{\\text{uap}} - V_{\\text{cair}})$. **Tips:** Kalor laten penguapan tidak seluruhnya menjadi energi dalam."
   },
   {
     "id": "fis-termo-hukum-hukum1-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada satu siklus termodinamika tertutup penuh, perubahan energi dalam total adalah nol ($\\Delta U_{\\text{siklus}} = 0$). Berdasarkan Hukum I Termodinamika: $$Q_{\\text{netto}} = \\Delta U_{\\text{siklus}} + W_{\\text{siklus}} = 0 + W_{\\text{siklus}} = W_{\\text{siklus}}$$ Usaha satu siklus persegi panjang sama dengan luas persegi panjang tersebut."
   },
   {
     "id": "fis-termo-hukum-hukum1-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "- Karena dinding berinsulasi ideal: $Q = 0$ (tidak ada aliran kalor melintasi batas sistem). - Karena dinding kaku tak bergeser: $\\Delta V = 0 \\implies W = 0$ (tidak ada kerja mekanik luar). Maka perubahan energi dalam total sistem adalah: $$\\Delta U_{\\text{total}} = Q - W = 0 - 0 = 0$$. **Tips:** Jangan terkecoh dengan kenaikan suhu termometer di dalam bom."
   },
   {
     "id": "drill2-ter-01",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "hukum-1-termodinamika"
+    "subTopicSlug": "hukum-1-termodinamika",
+    "hint": "Perjanjian Tanda Baku Hukum I Termodinamika: $$\\Delta U = Q - W$$ • Sistem melepas kalor : $Q < 0$ ($Q = -300\\text{ J}$) • Sistem menerima usaha (ditekan dari luar): $W < 0$ ($W = -200\\text{ J}$)."
   }
 ];
 

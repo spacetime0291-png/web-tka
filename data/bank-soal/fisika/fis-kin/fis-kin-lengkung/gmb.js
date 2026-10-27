@@ -44,7 +44,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Frekuensi ($f$) menyatakan banyaknya putaran per satuan waktu, sedangkan periode ($T$) menyatakan waktu yang dibutuhkan untuk satu putaran penuh: $$f = \\frac{n}{t},\\quad T = \\frac{t}{n} = \\frac{1}{f}$$. **Tips:** Tertukar antara frekuensi dan periode sehingga menjawab $0{,}5\\text{ Hz}$ dan $2\\text{ sekon}$."
   },
   {
     "id": "fis-kin-lengkung-gmb-002",
@@ -77,7 +78,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan antara kelajuan linier ($v$), kecepatan sudut ($\\omega$), dan jari-jari lintasan ($r$) pada gerak melingkar adalah: $$v = \\omega \\cdot r$$. **Tips:** Lupa mengonversi satuan centimeter ke meter sehingga memperoleh hasil keliru $200\\pi\\text{ m/s}$."
   },
   {
     "id": "fis-kin-lengkung-gmb-003",
@@ -110,7 +112,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kecepatan sudut rata-rata untuk satu putaran penuh dengan periode $T$ adalah: $$\\omega = \\frac{2\\pi}{T}$$. **Tips:** Lupa bahwa satu putaran penuh adalah $2\\pi$ radian (bukan $1\\pi$ radian)."
   },
   {
     "id": "fis-kin-lengkung-gmb-004",
@@ -143,7 +146,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada GMB, kelajuan (skalar) konstan, namun arah vektor kecepatan linier (garis singgung) terus berbelok mengikuti lengkungan lingkaran setiap saat. Akibat perubahan arah vektor kecepatan ini, timbul percepatan ke arah pusat (percepatan sentripetal), sehingga percepatannya tidak nol. **Tips:** Menyamakan kata 'kelajuan linier konstan' dengan 'vektor kecepatan konstan'."
   },
   {
     "id": "fis-kin-lengkung-gmb-005",
@@ -176,7 +180,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Konversi satuan rotasi per menit (rpm) ke radian per sekon (rad/s): satu rotasi sama dengan $2\\pi$ radian dan satu menit sama dengan $60$ sekon: $$1\\text{ rpm} = \\frac{2\\pi}{60}\\text{ rad/s} = \\frac{\\pi}{30}\\text{ rad/s}$$."
   },
   {
     "id": "fis-kin-lengkung-gmb-006",
@@ -209,7 +214,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua roda yang dihubungkan dengan rantai atau tali sabuk memiliki kelajuan linier pada tepi roda yang sama besar ($v_A = v_B$): $$\\omega_A R_A = \\omega_B R_B$$."
   },
   {
     "id": "fis-kin-lengkung-gmb-007",
@@ -242,7 +248,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "• Roda $B$ dan $C$ dihubungkan sabuk: $v_B = v_C$. • Roda $A$ dan $B$ seporos: $\\omega_A = \\omega_B \\implies \\frac{v_A}{R_A} = \\frac{v_B}{R_B}$."
   },
   {
     "id": "fis-kin-lengkung-gmb-008",
@@ -275,7 +282,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik-titik yang terletak pada satu benda tegar atau piringan yang sama selalu menyapu sudut yang sama dalam selang waktu yang sama sehingga memiliki kecepatan sudut identik ($\\omega_P = \\omega_Q$). Kelajuan linier berbanding lurus dengan jarak titik ke poros ($v = \\omega r$). **Tips:** Terkecoh mengira titik yang lebih jauh memiliki kecepatan sudut yang lebih besar."
   },
   {
     "id": "fis-kin-lengkung-gmb-009",
@@ -308,7 +316,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Posisi sudut yang ditempuh dalam selang waktu $t$ pada GMB adalah $\\theta = \\omega \\cdot t$. Karena satu putaran penuh setara dengan $2\\pi\\text{ radian}$, jumlah putaran adalah: $$N = \\frac{\\theta}{2\\pi} = \\frac{\\omega \\cdot t}{2\\pi}$$. **Tips:** Lupa membagi dengan faktor $2\\pi$ sehingga menjawab $200\\pi$ atau $200$."
   },
   {
     "id": "fis-kin-lengkung-gmb-010",
@@ -341,7 +350,8 @@
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Roda bergigi yang bersinggungan luar memiliki kelajuan linier gigi yang sama ($v_A = v_B$) dan arah putar yang saling berlawanan. Hubungan frekuensi dengan jumlah gigi ($Z$) adalah $f_A Z_A = f_B Z_B$. **Tips:** Mengalikan terbalik sehingga mendapatkan $36\\text{ Hz}$ atau lupa bahwa persinggungan luar membalikkan arah putaran."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tekanan hidrostatis adalah tekanan yang diakibatkan oleh berat zat cair itu sendiri pada kedalaman tertentu, dirumuskan dengan: $$P_h = \\rho \\cdot g \\cdot h$$."
   },
   {
     "id": "fis-flu-statis-tekanan-002",
@@ -77,7 +78,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tekanan mutlak (total) pada kedalaman $h$ fluida terbuka adalah jumlah dari tekanan atmosfer di permukaan dan tekanan hidrostatis zat cair: $$P_{\\text{total}} = P_0 + P_h = P_0 + \\rho \\cdot g \\cdot h$$."
   },
   {
     "id": "fis-flu-statis-tekanan-003",
@@ -110,7 +112,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan prinsip Paradoks Hidrostatis, tekanan hidrostatis zat cair pada dasar wadah hanya bergantung pada massa jenis zat cair ($\\rho$), percepatan gravitasi ($g$), dan kedalaman vertikal zat cair ($h$), serta sama sekali tidak dipengaruhi oleh bentuk wadah maupun volume total zat cair: $$P_h = \\rho \\cdot g \\cdot h$$. **Tips:** Terkecoh oleh berat total atau volume fluida di dalam wadah yang berbeda-beda."
   },
   {
     "id": "fis-flu-statis-tekanan-004",
@@ -143,7 +146,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua kolom zat cair yang menghasilkan tekanan hidrostatis yang sama memenuhi hubungan kesetaraan tekanan: $$P_{h,\\text{air}} = P_{h,\\text{raksa}} \\iff \\rho_{\\text{air}} \\cdot g \\cdot h_{\\text{air}} = \\rho_{\\text{raksa}} \\cdot g \\cdot h_{\\text{raksa}}$$Sehingga tinggi kolom berbanding terbalik dengan massa jenisnya: $$h_{\\text{air}} = \\frac{\\rho_{\\text{raksa}}}{\\rho_{\\text{air}}} \\cdot h_{\\text{raksa}}$$."
   },
   {
     "id": "fis-flu-statis-tekanan-005",
@@ -176,7 +180,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya hidrostatis pada dasar bidang datar dihitung dari hasil kali tekanan hidrostatis pada kedalaman dasar dengan luas penampang alas wadah: $$F = P_h \\cdot A = (\\rho \\cdot g \\cdot h) \\cdot A$$."
   },
   {
     "id": "fis-flu-statis-tekanan-006",
@@ -209,7 +214,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada fluida berlapis yang tidak saling bercampur, tekanan hidrostatis total pada dasar bejana merupakan penjumlahan tekanan hidrostatis masing-masing lapisan fluida: $$P_h = \\sum_{i} \\rho_i \\cdot g \\cdot h_i = \\rho_{\\text{minyak}} g h_{\\text{minyak}} + \\rho_{\\text{air}} g h_{\\text{air}}$$Sedangkan tekanan mutlak diperoleh dengan menjumlahkan tekanan atmosfer permukaan: $$P_{\\text{mutlak}} = P_0 + P_h$$."
   },
   {
     "id": "fis-flu-statis-tekanan-007",
@@ -242,7 +248,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena tekanan hidrostatis bertambah secara linier terhadap kedalaman ($P(y) = \\rho g y$), maka gaya total pada dinding vertikal diperoleh dari integrasi atau perkalian antara tekanan rata-rata fluida (tekanan pada titik berat luasan, $\\bar{y} = H/2$) dengan luas penampang dinding: $$F = \\bar{P} \\cdot A = \\left(\\frac{1}{2} \\rho \\cdot g \\cdot H\\right) \\cdot (w \\cdot H) = \\frac{1}{2} \\rho \\cdot g \\cdot w \\cdot H^2$$."
   },
   {
     "id": "fis-flu-statis-tekanan-008",
@@ -275,7 +282,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kondisi suhu konstan (isotermal), gas di dalam gelembung mematuhi Hukum Boyle: $$P_1 \\cdot V_1 = P_2 \\cdot V_2$$Di dasar danau, tekanan mutlak adalah $P_1 = P_0 + \\rho g h$. Di permukaan danau, tekanan adalah $P_2 = P_0$."
   },
   {
     "id": "fis-flu-statis-tekanan-009",
@@ -308,7 +316,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam kerangka non-inersial lift yang dipercepat ke atas dengan percepatan $a$, fluida mengalami medan gravitasi efektif sebesar: $$g_{\\text{eff}} = g + a$$Sehingga tekanan hidrostatis fluida pada kedalaman $h$ menjadi: $$P_h = \\rho \\cdot g_{\\text{eff}} \\cdot h = \\rho (g + a) h$$."
   },
   {
     "id": "fis-flu-statis-tekanan-010",
@@ -341,7 +350,8 @@
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada manometer pipa U terbuka, selisih tinggi permukaan raksa $\\Delta h$ menunjukkan perbedaan antara tekanan gas di dalam wadah dan tekanan atmosfer luar: $$P_{\\text{gas}} = P_{\\text{atm}} + \\rho_{\\text{raksa}} \\cdot g \\cdot \\Delta h$$Tanda positif digunakan karena permukaan raksa pada kaki terbuka lebih tinggi, menandakan tekanan gas lebih besar daripada tekanan atmosfer."
   },
   {
     "id": "mudah-fis-04",
@@ -374,7 +384,8 @@
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "tekanan-hidrostatis-mutlak"
+    "subTopicSlug": "tekanan-hidrostatis-mutlak",
+    "hint": "Tekanan Hidrostatis Murni: $$P_h = \\rho g h$$. **Tips:** Soal menanyakan tekanan hidrostatis , bukan tekanan mutlak ($P_{\\text{mutlak}} = P_0 + P_h$)."
   },
   {
     "id": "sup-fis-flu-02",
@@ -407,7 +418,8 @@
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "tekanan-hidrostatis-mutlak"
+    "subTopicSlug": "tekanan-hidrostatis-mutlak",
+    "hint": "Tekanan Mutlak (Total): Tekanan total pada kedalaman $h$ merupakan jumlahan dari tekanan atmosfer luar dan tekanan hidrostatis zat cair: $P_{\\text{mutlak}} = P_{\\text{atm}} + \\rho g h$. **Tips:** Hanya menghitung tekanan hidrostatis murni ($2{,}00 \\times 10^5\\text{ Pa}$) dan mengabaikan tekanan atmosfer di permukaan danau."
   }
 ];
 

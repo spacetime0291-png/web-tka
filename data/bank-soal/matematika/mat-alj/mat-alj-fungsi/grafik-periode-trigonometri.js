@@ -44,7 +44,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi sinus dasar $\\sin(\\theta)$ memiliki rentang nilai $-1 \\le \\sin(\\theta) \\le 1$. Nilai maksimum dari bentuk umum $f(x) = A\\sin(kx) + c$ dicapai saat nilai sinus sama dengan 1, yaitu bernilai $|A| + c$."
   },
   {
     "id": "mat-alj-fungsi-trigono-002",
@@ -77,7 +78,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Periode gelombang fungsi kosinus $y = A\\cos(kx \\pm c) + d$ dirumuskan sebagai $T = \\frac{2\\pi}{|k|}$, dengan $k$ menyatakan frekuensi sudut atau koefisien dari variabel $x$. **Tips:** Keliru mengalikan $2\\pi$ dengan $4$ alih-alih membaginya, atau salah menyertakan nilai fasa $-\\pi$ ke dalam perhitungan periode."
   },
   {
     "id": "mat-alj-fungsi-trigono-003",
@@ -110,7 +112,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Amplitudo adalah setengah dari selisih nilai maksimum dan nilai minimum, yang selalu bernilai non-negatif dan dirumuskan sebagai $|A|$ dari fungsi $y = A\\cos(kx) + c$. **Tips:** Menjawab dengan nilai negatif $-4$, padahal amplitudo merupakan besaran jarak skalar yang selalu bernilai positif."
   },
   {
     "id": "mat-alj-fungsi-trigono-004",
@@ -143,7 +146,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik fungsi trigonometri dengan sumbu-$Y$ diperoleh dengan menetapkan absis $x = 0$ dan mengevaluasi nilai fungsi sudut istimewa yang dihasilkan."
   },
   {
     "id": "mat-alj-fungsi-trigono-005",
@@ -176,7 +180,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Nilai minimum dari bentuk $c - A\\cos(x)$ dengan $A > 0$ diperoleh saat $\\cos(x) = 1$, karena suku pengurang mencapai nilai terbesarnya."
   },
   {
     "id": "mat-alj-fungsi-trigono-006",
@@ -209,7 +214,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk kombinasi linier $A\\cos(x) + B\\sin(x)$ dapat diubah menjadi bentuk gelombang tunggal $R\\cos(x - \\alpha)$ dengan amplitudo $R = \\sqrt{A^2 + B^2}$. Nilai maksimum bentuk tersebut adalah $R + c$."
   },
   {
     "id": "mat-alj-fungsi-trigono-007",
@@ -242,7 +248,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong grafik dengan sumbu-$X$ dicari dengan menyelesaikan persamaan trigonometri $f(x) = 0$ dan menghitung jumlah solusi sudut yang berada dalam batasan interval domain yang ditentukan."
   },
   {
     "id": "mat-alj-fungsi-trigono-008",
@@ -275,7 +282,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk umum gelombang sinusoidal bertranslasi adalah $y = A\\sin(k(x - h)) + d$, dengan $A$ amplitudo, $k = \\frac{2\\pi}{T}$, $h$ pergeseran horizontal, dan $d$ pergeseran vertikal."
   },
   {
     "id": "mat-alj-fungsi-trigono-009",
@@ -308,7 +316,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi kuadrat dalam trigonometri $f(u) = au^2 + bu + c$ diselesaikan dengan pemisalan $u = \\sin(x)$ yang memiliki batas tertutup $-1 \\le u \\le 1$, lalu mencari nilai ekstrim pada interval tersebut."
   },
   {
     "id": "mat-alj-fungsi-trigono-010",
@@ -341,7 +350,8 @@
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi tangen $\\tan(x)$ bersifat monoton naik pada interval $-\\frac{\\pi}{4} \\le x \\le \\frac{\\pi}{4}$ dengan rentang $-1 \\le \\tan(x) \\le 1$. Nilai kuadratnya memiliki rentang $0 \\le \\tan^2(x) \\le 1$."
   }
 ];
 

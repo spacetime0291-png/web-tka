@@ -44,7 +44,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $\\sum \\tau = I \\alpha$, dengan $I$ adalah momen inersia benda terhadap sumbu putarnya."
   },
   {
     "id": "fis-din-rot-newton-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momentum sudut ($L$) dari benda tegar yang berputar terhadap sumbu simetris tetap dihitung melalui perkalian momen inersia dengan kecepatan sudutnya: $L = I \\omega$. Satuan SI momentum sudut adalah $\\text{kg}\\cdot\\text{m}^2/\\text{s}$ (setara $\\text{J}\\cdot\\text{s}$). **Tips:** Kerap tertukar antara momentum sudut ($L = I \\omega$) dengan energi kinetik rotasi ($E_{k,\\text{rot}} = \\frac{1}{2} I \\omega^2$)."
   },
   {
     "id": "fis-din-rot-newton-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Energi kinetik rotasi benda tegar dirumuskan sebagai: $E_{k,\\text{rot}} = \\frac{1}{2} I \\omega^2$, di mana momen inersia silinder pejal adalah $I = \\frac{1}{2} M R^2$."
   },
   {
     "id": "fis-din-rot-newton-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika tidak ada momen gaya luar yang bekerja pada sistem ($\\sum \\tau_{\\text{eksternal}} = 0$), berlaku Hukum Kekekalan Momentum Sudut: $L_1 = L_2 \\implies I_1 \\omega_1 = I_2 \\omega_2$."
   },
   {
     "id": "fis-din-rot-newton-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya tarik tali menghasilkan momen gaya tangensial $\\tau = F R$. Terapkan Hukum II Newton rotasi $\\tau = I \\alpha$ dengan momen inersia katrol silinder pejal $I = \\frac{1}{2} M R^2$. Hubungan langsungnya adalah: $\\alpha = \\frac{2 F}{M R}$. **Tips:** Kerap lupa mengalikan faktor 2 dari penyebut pecahan inersia silinder pejal, atau salah menghitung pembagian desimal $2 / 0,04$."
   },
   {
     "id": "fis-din-rot-newton-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gerak menggelinding murni benda tegar di bidang miring, percepatan linier translasi diturunkan dari gabungan Hukum II Newton translasi dan rotasi: $a = \\frac{g \\sin\\theta}{1 + k}$, di mana $k$ adalah konstanta bentuk momen inersia ($I = k M R^2$). Untuk silinder pejal, $k = \\frac{1}{2}$."
   },
   {
     "id": "fis-din-rot-newton-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinjau dua persamaan gerak yang saling terhubung: (1) Gerak translasi beban vertikal: $m g - T = m a$, dan (2) Gerak rotasi katrol pejal: $\\tau = T R = I \\alpha = (\\frac{1}{2} M R^2)(\\frac{a}{R}) \\implies T = \\frac{1}{2} M a$."
   },
   {
     "id": "fis-din-rot-newton-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi kinetik total benda menggelinding adalah penjumlahan energi kinetik translasi dan rotasi: $E_{k,\\text{total}} = E_{k,\\text{trans}} + E_{k,\\text{rot}}$. Untuk bola pejal, $I = \\frac{2}{5} M R^2$ dan $\\omega = \\frac{v}{R}$."
   },
   {
     "id": "fis-din-rot-newton-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan Hukum Kekekalan Momentum Sudut: $I_A \\omega_A = (I_A + I_B) \\omega'$. Energi kinetik yang hilang adalah selisih energi mekanik rotasi sebelum dan sesudah penggabungan: $\\Delta E_k = E_{k1} - E_{k2}$."
   },
   {
     "id": "fis-din-rot-newton-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum Kekekalan Energi Mekanik, energi potensial gravitasi di puncak sepenuhnya diubah menjadi energi kinetik translasi dan rotasi di dasar: $M g h = \\frac{1}{2} M v^2 + \\frac{1}{2} I \\omega^2 = \\frac{7}{10} M v^2$. **Tips:** Kerap menggunakan rumus luncur bebas licin ($v = \\sqrt{2 g h} = \\sqrt{140} \\approx 11,83\\text{ m/s}$)."
   },
   {
     "id": "fis-din-22",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Hukum II Newton untuk gerak rotasi: $\\Sigma \\tau = I \\cdot \\alpha$."
   },
   {
     "id": "fis-din-46",
@@ -407,7 +418,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Energi kinetik gerak menggelinding murni: $EK_{\\text{rot}} = \\frac{1}{2} I \\omega^2$ dan $EK_{\\text{trans}} = \\frac{1}{2} M v^2$ dengan $v = \\omega R$."
   },
   {
     "id": "drill2-rot-03",
@@ -440,7 +452,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Hubungan Besaran Sudut dan Linier Rotasi: • Kecepatan linier tangensial: $v = \\omega \\cdot R$ • Percepatan linier tangensial: $a = \\alpha \\cdot R$. **Tips:** ⚠️ Diameter vs Jari-Jari: Selalu bagi diameter dengan 2 untuk mendapatkan jari-jari $R$."
   },
   {
     "id": "fis-din-24",
@@ -473,7 +486,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Kesetimbangan statis benda tegar (tangga homogen bersandar): $\\Sigma F_x = 0$, $\\Sigma F_y = 0$, dan $\\Sigma \\tau = 0$."
   },
   {
     "id": "fis-din-47",
@@ -506,7 +520,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Percepatan linier gerak menggelinding murni: $a = \\frac{g \\sin\\theta}{1 + k}$. **Tips:** Siswa sering membalik perbandingan menjadi $7 : 10$ atau salah memasukkan konstanta momen inersia silinder berongga tipis."
   },
   {
     "id": "fis-din-48",
@@ -539,7 +554,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Kesetimbangan rotasi benda tegar terhadap poros engsel: $\\Sigma \\tau = 0$."
   },
   {
     "id": "drill-rot-05",
@@ -572,7 +588,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Percepatan Benda Menggelinding Murni pada Bidang Miring: $$a = \\frac{g \\sin \\theta}{1 + k}$$ dengan $k$ konstanta bentuk momen inersia ($I = k m R^2$). **Tips:** ⚠️ Perbedaan Luncur vs Gelinding: Jika bidang licin (meluncur tanpa rotasi), $a = g \\sin\\theta$."
   },
   {
     "id": "drill2-rot-04",
@@ -605,7 +622,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Energi Kinetik Menggelinding Murni: $$E_k = E_{k,\\text{translasi}} + E_{k,\\text{rotasi}} = \\frac{1}{2}mv^2(1 + k)$$ Untuk bola pejal, nilai $k = \\frac{2}{5} = 0{,}4$. **Tips:** ⚠️ Rumus Singkat Bola Pejal: $E_k = \\frac{7}{10} m v^2$."
   },
   {
     "id": "drill2-rot-05",
@@ -638,7 +656,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Rasio Fraksi Energi Kinetik Benda Menggelinding: $$\\frac{E_{k,\\text{rotasi}}}{E_{k,\\text{total}}} = \\frac{k}{1 + k}$$."
   },
   {
     "id": "drill2-rot-06",
@@ -671,7 +690,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Kelajuan Benda Menggelinding di Dasar Bidang Miring: Berdasarkan Hukum Kekekalan Energi Mekanik ($mgh = \\frac{1}{2}mv^2(1 + k)$): $$v = \\sqrt{\\frac{2gh}{1 + k}}$$."
   },
   {
     "id": "drill2-rot-07",
@@ -704,7 +724,8 @@
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Percepatan Sistem Katrol Bermassa: Inersia katrol silinder pejal ($I = \\frac{1}{2}MR^2$) menambah massa efektif sistem sebesar $\\frac{1}{2}M$: $$a = \\frac{m \\cdot g}{m + \\frac{1}{2}M}$$. **Tips:** ⚠️ Trik Kilat Katrol: Katrol silinder pejal menyumbang $\\frac{1}{2}M$ ke penyebut."
   }
 ];
 

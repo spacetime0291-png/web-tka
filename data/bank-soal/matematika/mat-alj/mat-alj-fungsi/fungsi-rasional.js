@@ -44,7 +44,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Asimtot tegak dari fungsi rasional tereduksi $f(x) = \\frac{g(x)}{h(x)}$ adalah garis vertikal $x = c$ yang diperoleh dari pembuat nol penyebut, yaitu $h(c) = 0$."
   },
   {
     "id": "mat-alj-fungsi-rasional-002",
@@ -77,7 +78,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Asimtot datar dari fungsi rasional $f(x) = \\frac{ax + b}{cx + d}$ dengan derajat pembilang dan penyebut sama diperoleh dari nilai limit menuju tak hingga: $y = \\lim_{x \\to \\pm\\infty} f(x) = \\frac{a}{c}$. **Tips:** Tertukar antara variabel garis horizontal ($y$) dengan garis vertikal ($x = \\frac{5}{2}$)."
   },
   {
     "id": "mat-alj-fungsi-rasional-003",
@@ -110,7 +112,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika derajat pembilang lebih kecil daripada derajat penyebut pada fungsi rasional, maka nilai limit fungsi saat $x \\to \\pm\\infty$ adalah 0, sehingga garis $y = 0$ (sumbu-$X$) merupakan asimtot datarnya."
   },
   {
     "id": "mat-alj-fungsi-rasional-004",
@@ -143,7 +146,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Grafik fungsi memotong sumbu-$X$ jika nilai $f(x) = 0$. Untuk fungsi pecahan $\\frac{g(x)}{h(x)} = 0$, syaratnya adalah pembilang bernilai nol ($g(x) = 0$) dengan penyebut tidak nol ($h(x) \\neq 0$). **Tips:** Menyamakan penyebut dengan nol ($x = -5$) yang justru merupakan asimtot tegak dan bukan titik potong grafik."
   },
   {
     "id": "mat-alj-fungsi-rasional-005",
@@ -176,7 +180,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik fungsi dengan sumbu-$Y$ diperoleh dengan mensubstitusikan nilai absis $x = 0$ ke dalam rumus fungsi. **Tips:** Salah tanda pada pembagian $\\frac{-12}{2} = -6$ menjadi $+6$."
   },
   {
     "id": "mat-alj-fungsi-rasional-006",
@@ -209,7 +214,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Asimtot miring terjadi pada fungsi rasional ketika derajat pembilang tepat satu tingkat lebih tinggi daripada derajat penyebut. Persamaan asimtot miring diperoleh dari hasil bagi polinomial (tanpa sisa)."
   },
   {
     "id": "mat-alj-fungsi-rasional-007",
@@ -242,7 +248,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik lubang (*hole*) terjadi ketika pembilang dan penyebut memiliki faktor persekutuan yang bernilai nol pada absis yang sama. Ordinat lubang dicari dengan mensubstitusikan absis tersebut ke bentuk fungsi yang telah disederhanakan."
   },
   {
     "id": "mat-alj-fungsi-rasional-008",
@@ -275,7 +282,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kurva fungsi rasional dapat memotong asimtot datarnya pada nilai $x$ berhingga. Titik potong dicari dengan menyamakan rumus fungsi dengan nilai asimtot datarnya: $f(x) = y_{\\text{asimtot}}$."
   },
   {
     "id": "mat-alj-fungsi-rasional-009",
@@ -308,7 +316,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Asimtot tegak $x = x_0$ diperoleh dari penyebut $x_0 + c = 0$. Asimtot datar $y = y_0$ diperoleh dari rasio koefisien $\\frac{a}{1} = y_0$. Titik potong sumbu-$Y$ diperoleh dari $f(0) = \\frac{b}{c}$."
   },
   {
     "id": "mat-alj-fungsi-rasional-010",
@@ -341,7 +350,8 @@
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Total garis asimtot diperoleh dengan menghitung banyaknya asimtot tegak (pembuat nol penyebut yang tidak dapat disederhanakan oleh pembilang) ditambah asimtot datar."
   },
   {
     "id": "sup-mtk-alj-04",
@@ -374,7 +384,8 @@
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-fungsi",
-    "subTopicSlug": "fungsi-rasional"
+    "subTopicSlug": "fungsi-rasional",
+    "hint": "Domain Fungsi Pecahan Rasional: Pecahan aljabar $\\frac{P(x)}{Q(x)}$ terdefinisi pada bilangan real jika dan hanya jika penyebutnya tidak sama dengan nol: $Q(x) \\neq 0$. **Tips:** Membingungkan antara syarat penyebut tidak nol dengan syarat pembilang tidak nol."
   }
 ];
 

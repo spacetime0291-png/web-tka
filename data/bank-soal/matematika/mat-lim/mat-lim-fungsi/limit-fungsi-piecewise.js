@@ -44,7 +44,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Limit kiri $\\lim_{x \\to c^-} f(x)$ adalah nilai pendekatan fungsi ketika variabel $x$ mendekati titik $c$ dari arah kiri ($x < c$). Oleh karena itu, kita menggunakan aturan fungsi yang terdefinisi untuk interval $x < c$. **Tips:** Menggunakan cabang kedua $x^2 - 2$ yang diperuntukkan bagi $x \\ge 3$ (pendekatan dari kanan)."
   },
   {
     "id": "mat-lim-fungsi-piecewise-002",
@@ -77,7 +78,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Suatu limit dua sisi $\\lim_{x \\to c} g(x)$ bernilai $L$ jika dan hanya jika limit kiri dan limit kanan keduanya bernilai sama: $\\lim_{x \\to c^-} g(x) = \\lim_{x \\to c^+} g(x) = L$. **Tips:** Langsung menyatakan limit tidak ada tanpa menguji dan membandingkan kesamaan nilai limit kiri dan kanannya."
   },
   {
     "id": "mat-lim-fungsi-piecewise-003",
@@ -110,7 +112,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan definisi nilai mutlak, $|u| = u$ jika $u \\ge 0$ dan $|u| = -u$ jika $u < 0$. Untuk pendekatan dari kanan $x \\to 4^+$, berlaku $x > 4$, sehingga $(x - 4) > 0$. **Tips:** Mengabaikan arah pendekatan dari kanan dan keliru menyamakan dengan limit dari arah kiri yang bernilai $-1$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-004",
@@ -143,7 +146,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika variabel $x$ mendekati $0$ dari arah kiri ($x \\to 0^-$), maka nilai $x$ bernilai negatif ($x < 0$). Oleh karena itu, $|2x| = -2x$. **Tips:** Lupa menambahkan tanda minus saat membuka tanda mutlak untuk bilangan bernilai negatif."
   },
   {
     "id": "mat-lim-fungsi-piecewise-005",
@@ -176,7 +180,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Limit kanan $\\lim_{x \\to 1^+} h(x)$ ditinjau untuk nilai-nilai $x$ yang lebih besar dari 1 ($x > 1$). Gunakan cabang aturan fungsi yang bersesuaian dengan interval tersebut. **Tips:** Salah memilih cabang fungsi pertama $x + 5$ yang bernilai $6$ (yang merupakan nilai limit kiri)."
   },
   {
     "id": "mat-lim-fungsi-piecewise-006",
@@ -209,7 +214,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi $f(x)$ dikatakan kontinu di $x = c$ jika memenuhi tiga syarat: $f(c)$ terdefinisi, limit $\\lim_{x \\to c} f(x)$ ada (limit kiri sama dengan limit kanan), dan $\\lim_{x \\to c} f(x) = f(c)$. **Tips:** Lupa mengalikan 2 dengan nilai $x$ pada suku kuadrat atau salah memindahkan suku konstanta $7 - 3$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-007",
@@ -242,7 +248,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk menguji keberadaan limit dua sisi fungsi yang memuat tanda mutlak di sekitar titik kritis pembuat nol, kita harus memeriksa kesamaan antara limit kiri dan limit kanannya. **Tips:** Hanya menghitung salah satu arah limit saja dan terburu-buru memilih jawaban $6$ atau $-6$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-008",
@@ -275,7 +282,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar fungsi kontinu di seluruh domain bilangan real, fungsi harus kontinu pada setiap titik peralihan interval, yaitu di $x = -1$ dan $x = 1$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-009",
@@ -308,7 +316,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perhatikan tanda dari argumen di dalam nilai mutlak $(x^2 - 1)$ saat $x$ mendekati 1 dari arah kiri ($x < 1$). Jika $x < 1$ (misalkan $x = 0{,}9$), maka $x^2 < 1$, sehingga $x^2 - 1 < 0$ dan $|x^2 - 1| = -(x^2 - 1)$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-010",
@@ -341,7 +350,8 @@
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik diskontinuitas yang dapat dihilangkan (*removable discontinuity*) terjadi ketika limit $\\lim_{x \\to c} f(x)$ ada, dan kekontinuan dicapai dengan menetapkan nilai fungsi $f(c) = k = \\lim_{x \\to c} f(x)$. **Tips:** Salah memfaktorkan pembilang menjadi $(x + 3)(x - 1)$ yang menyebabkan salah perhitungan."
   }
 ];
 

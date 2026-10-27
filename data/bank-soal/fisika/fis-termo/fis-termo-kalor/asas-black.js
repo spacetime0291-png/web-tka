@@ -44,7 +44,8 @@
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "asas-black"
+    "subTopicSlug": "asas-black",
+    "hint": "Asas Black ($Q_{\\text{lepas}} = Q_{\\text{terima}}$): Kalor yang dilepas oleh air panas digunakan untuk meleburkan es menjadi air $0^\\circ\\text{C}$, kemudian menaikkan suhu air leburan es ke suhu campuran $T_c$. **Tips:** Siswa sering lupa memperhitungkan kalor lebur es ($m_{\\text{es}} L$) dan hanya menghitung $m_1 c \\Delta T_1 = m_2 c \\Delta T_2$."
   },
   {
     "id": "drill-kal-05",
@@ -77,7 +78,8 @@
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "asas-black"
+    "subTopicSlug": "asas-black",
+    "hint": "Asas Black: Kalor yang dilepas oleh zat bersuhu lebih tinggi sama dengan kalor yang diserap oleh zat bersuhu lebih rendah: $$Q_{\\text{lepas}} = Q_{\\text{terima}}$$."
   },
   {
     "id": "drill2-kal-06",
@@ -110,7 +112,8 @@
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "asas-black"
+    "subTopicSlug": "asas-black",
+    "hint": "Asas Black Menentukan Kalor Jenis: $$m_L \\cdot c_L \\cdot (T_L - T_c) = m_{\\text{air}} \\cdot c_{\\text{air}} \\cdot (T_c - T_{\\text{air}})$$. **Tips:** ⚠️ Cek Satuan Kalor: Jika menggunakan gram dan $\\text{kal/g}^\\circ\\text{C}$, kalor jenis air adalah $1$."
   },
   {
     "id": "fis-termo-kalor-asasblack-001",
@@ -143,7 +146,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Asas Black, pada sistem terisolasi berlaku kekekalan energi kalor: $$Q_{\\text{lepas}} = Q_{\\text{serap}}$$Jika dua zat cair sejenis bermassa sama ($m_1 = m_2$) dicampurkan tanpa perubahan wujud, suhu kesetimbangan akhir adalah rata-rata aritmetika dari kedua suhu: $$T_c = \\frac{T_1 + T_2}{2}$$. **Tips:** Rumus rata-rata sederhana $\\frac{T_1+T_2}{2}$ hanya boleh digunakan jika massa kedua cairan sama dan jenis zatnya identik."
   },
   {
     "id": "fis-termo-kalor-asasblack-002",
@@ -176,7 +180,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan Asas Black untuk dua massa zat cair yang sama jenisnya ($c_1 = c_2 = c$): $$Q_{\\text{lepas}} = Q_{\\text{serap}} \\implies m_1 \\times c \\times (T_1 - T_c) = m_2 \\times c \\times (T_c - T_2)$$ Kalor jenis $c$ dapat disederhanakan dari kedua ruas."
   },
   {
     "id": "fis-termo-kalor-asasblack-003",
@@ -209,7 +214,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kalor yang dilepas oleh logam sama dengan kalor yang diserap oleh air: $$Q_{\\text{lepas}} = Q_{\\text{serap}} \\implies m_L \\times c_L \\times (T_L - T_c) = m_A \\times c_A \\times (T_c - T_A)$$."
   },
   {
     "id": "fis-termo-kalor-asasblack-004",
@@ -242,7 +248,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Asas Black merupakan manifestasi dari Hukum I Termodinamika (Hukum Kekekalan Energi) pada pertukaran kalor. Persamaan $Q_{\\text{lepas}} = Q_{\\text{serap}}$ berlaku tepat apabila sistem bersifat terisolasi sempurna (adiabatik terhadap lingkungan luar), sehingga tidak ada energi kalor yang bocor ke lingkungan atau diserap dari lingkungan."
   },
   {
     "id": "fis-termo-kalor-asasblack-005",
@@ -275,7 +282,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada suhu akhir kesetimbangan $0^\\circ\\text{C}$ dengan seluruh es melebur sempurna: - Air hangat melepaskan kalor untuk mendingin dari $40^\\circ\\text{C}$ ke $0^\\circ\\text{C}$: $Q_{\\text{lepas}} = m_A \\times c_A \\times \\Delta T_A$. - Es pada $0^\\circ\\text{C}$ menyerap kalor murni untuk melebur menjadi air pada $0^\\circ\\text{C}$: $Q_{\\text{serap}} = m_{\\text{es}} \\times L$. - Berdasarkan Asas Black: $Q_{\\text{lepas}} = Q_{\\text{serap}}$."
   },
   {
     "id": "fis-termo-kalor-asasblack-006",
@@ -308,7 +316,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proses pencampuran es bersuhu di bawah nol dengan air hangat melibatkan tiga kemungkinan penyerapan kalor oleh es: 1. Pemanasan es dari $-10^\\circ\\text{C}$ ke $0^\\circ\\text{C}$: $Q_1 = m_{\\text{es}} c_{\\text{es}} \\Delta T_1$. 2. Peleburan es menjadi air pada $0^\\circ\\text{C}$: $Q_2 = m_{\\text{es}} L$. 3. Pemanasan air leburan dari $0^\\circ\\text{C}$ ke $T_c$: $Q_3 = m_{\\text{es}} c_{\\text{air}} T_c$. Kalor dilepaskan oleh air hangat yang mendingin dari $50^\\circ\\text{C}$ ke $T_c$: $Q_{\\text{lepas}} = m_{\\text{air}} c_{\\text{air}} (50 - T_c)$."
   },
   {
     "id": "fis-termo-kalor-asasblack-007",
@@ -341,7 +350,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika wadah (kalorimeter) ikut menyerap kalor, maka kalor yang dilepas oleh benda panas sama dengan jumlah kalor yang diserap oleh air ditambah kalor yang diserap oleh kalorimeter: $$Q_{\\text{lepas}} = Q_{\\text{serap, air}} + Q_{\\text{serap, wadah}}$$ $$m_L \\times c_L \\times (T_L - T_c) = (m_{\\text{air}} c_{\\text{air}} + C_{\\text{kal}}) \\times (T_c - T_{\\text{awal}})$$."
   },
   {
     "id": "fis-termo-kalor-asasblack-008",
@@ -374,7 +384,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk pencampuran beberapa sampel zat yang sejenis tanpa perubahan wujud, persamaan Asas Black $\\sum Q = 0$ menghasilkan rumus rata-rata tertimbang (weighted average) terhadap massa: $$T_c = \\frac{\\sum_{i=1}^n m_i T_i}{\\sum_{i=1}^n m_i}$$."
   },
   {
     "id": "fis-termo-kalor-asasblack-009",
@@ -407,7 +418,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam interaksi termal es pada $0^\\circ\\text{C}$ dengan air cair, perlu diperiksa apakah kalor yang dilepaskan air cukup untuk meleburkan seluruh es: - Kalor maksimum yang dilepas air saat turun ke $0^\\circ\\text{C}$: $Q_{\\text{lepas, maks}} = m_{\\text{air}} c_{\\text{air}} \\Delta T$. - Kalor yang dibutuhkan untuk meleburkan seluruh es: $Q_{\\text{lebur, tot}} = m_{\\text{es}} L$. - Jika $Q_{\\text{lepas, maks}} < Q_{\\text{lebur, tot}}$, hanya sebagian es yang melebur dan suhu akhir tetap $0^\\circ\\text{C}$."
   },
   {
     "id": "fis-termo-kalor-asasblack-010",
@@ -440,7 +452,8 @@
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat uap air pada $100^\\circ\\text{C}$ masuk ke dalam air dingin, uap mengalami dua tahap pelepasan kalor: 1. Mengembun menjadi air pada suhu $100^\\circ\\text{C}$: $Q_1 = m_u \\times U$. 2. Air hasil kondensasi mendingin dari $100^\\circ\\text{C}$ ke suhu akhir $T_c$: $Q_2 = m_u \\times c_{\\text{air}} \\times (100 - T_c)$. Kalor ini sepenuhnya diserap oleh air dingin untuk naik suhunya dari $20^\\circ\\text{C}$ ke $T_c$: $Q_{\\text{serap}} = m_{\\text{air}} \\times c_{\\text{air}} \\times (T_c - 20)$. **Tips:** Jangan mengabaikan tahap kedua pelepasan kalor (pendinginan air hasil kondensasi dari $100^\\circ\\text{C}$ ke $40^\\circ\\text{C}$)."
   }
 ];
 

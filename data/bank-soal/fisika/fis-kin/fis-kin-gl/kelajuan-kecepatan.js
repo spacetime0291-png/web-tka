@@ -44,7 +44,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kelajuan rata-rata ($v_{\\text{rata}}$) adalah rasio jarak tempuh total ($s$) terhadap waktu tempuh total ($t$): $$v_{\\text{rata}} = \\frac{s}{t}$$ Konversi satuan dari $\\text{km/jam}$ ke $\\text{m/s}$ dilakukan dengan mengalikan $\\frac{1000}{3600} = \\frac{5}{18}$. **Tips:** Lupa mengonversi satuan ke SI ($ ext{m/s}$) sehingga langsung menjawab $72$."
   },
   {
     "id": "fis-kin-gl-kelajuan-002",
@@ -77,7 +78,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kecepatan rata-rata ($\\bar{v}$) adalah besaran vektor yang dihitung dari perpindahan total ($\\Delta x$) dibagi total selang waktu ($\\Delta t$): $$\\bar{v} = \\frac{\\Delta x}{\\Delta t}$$. **Tips:** Nilai $6\\text{ m/s}$ didapatkan jika menghitung kelajuan rata-rata (jarak total $120\\text{ m}$ dibagi $20\\text{ s}$)."
   },
   {
     "id": "fis-kin-gl-kelajuan-003",
@@ -110,7 +112,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kelajuan adalah besaran skalar ($v = \\frac{s_{\\text{total}}}{t_{\\text{total}}}$) dan tidak bergantung pada arah gerak. Kecepatan adalah besaran vektor ($\\vec{v} = \\frac{\\Delta \\vec{r}}{\\Delta t}$) yang memiliki besar dan arah. **Tips:** Perhatikan definisi skalar (jarak) versus vektor (perpindahan)."
   },
   {
     "id": "fis-kin-gl-kelajuan-004",
@@ -143,7 +146,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kecepatan sesaat ($v$) merupakan turunan pertama dari fungsi posisi $x(t)$ terhadap waktu $t$: $$v(t) = \\frac{dx}{dt}$$."
   },
   {
     "id": "fis-kin-gl-kelajuan-005",
@@ -176,7 +180,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kelajuan rata-rata bukan merupakan rata-rata aritmetika biasa dari dua kelajuan, melainkan rata-rata harmonik (karena jarak tempuh tiap segmen sama): $$v_{\\text{rata}} = \\frac{s_1 + s_2}{t_1 + t_2}$$."
   },
   {
     "id": "fis-kin-gl-kelajuan-006",
@@ -209,7 +214,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suatu perjalanan dibagi menjadi beberapa bagian jarak yang sama besar ($s_1 = s_2 = s_3 = s$), kelajuan rata-rata dihitung menggunakan rata-rata harmonik: $$\\frac{1}{v_{\\text{rata}}} = \\frac{1}{3} \\left( \\frac{1}{v_1} + \\frac{1}{v_2} + \\frac{1}{v_3} \\right)$$."
   },
   {
     "id": "fis-kin-gl-kelajuan-007",
@@ -242,7 +248,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perpindahan merupakan integral tentu dari fungsi kecepatan terhadap waktu: $$\\Delta x = \\int_{t_1}^{t_2} v(t)\\,dt$$ Kecepatan rata-rata adalah perbandingan perpindahan terhadap selang waktu: $$\\bar{v} = \\frac{\\Delta x}{t_2 - t_1}$$."
   },
   {
     "id": "fis-kin-gl-kelajuan-008",
@@ -275,7 +282,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan rata-rata adalah besar vektor perpindahan dibagi dengan waktu tempuh: $$|\\bar{\\vec{v}}| = \\frac{|\\Delta \\vec{r}|}{\\Delta t}$$ Untuk seperempat lingkaran, vektor posisi awal dan akhir saling tegak lurus."
   },
   {
     "id": "fis-kin-gl-kelajuan-009",
@@ -308,7 +316,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat waktu tempuh dibagi sama besar, kelajuan rata-rata adalah rata-rata aritmetika: $v = \\frac{v_1 + v_2}{2}$. Saat jarak tempuh dibagi sama panjang, kelajuan rata-rata adalah rata-rata harmonik: $v = \\frac{2v_1 v_2}{v_1 + v_2}$."
   },
   {
     "id": "fis-kin-gl-kelajuan-010",
@@ -341,7 +350,8 @@
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor kecepatan sesaat diperoleh dari turunan pertama vektor posisi terhadap waktu: $$\\vec{v}(t) = \\frac{d\\vec{r}}{dt} = v_x\\hat{i} + v_y\\hat{j}$$ Besar kecepatan sesaat merupakan norma vektor kecepatan: $$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}$$."
   },
   {
     "id": "sedang-fis-08",
@@ -374,7 +384,8 @@
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Kondisi Pertemuan/Pengejaran Dua Benda: Dua benda yang berangkat dari titik awal yang sama akan bertemu saat jarak tempuh keduanya sama: $$s_A(t) = s_B(t)$$."
   },
   {
     "id": "fis-din-13",
@@ -407,7 +418,8 @@
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Konsep: Dinamika gerak melingkar vertikal di puncak bukit/jembatan cembung: $mg - N = \\frac{m v^2}{R}$."
   },
   {
     "id": "fis-din-37",
@@ -440,7 +452,8 @@
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Konsep: Tikungan datar kasar: gaya gesek statis bertindak sebagai gaya sentripetal ($f_s \\le \\mu_s mg = \\frac{m v^2}{R}$). **Tips:** Lupa menarik akar kuadrat sehingga menjawab $100\\text{ m/s}$ atau mengira kelajuan maksimum bergantung pada massa mobil."
   },
   {
     "id": "fis-din-38",
@@ -473,7 +486,8 @@
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Konsep: Dinamika gerak melingkar di titik terendah lembah cekung: $N - mg = \\frac{m v^2}{R}$."
   },
   {
     "id": "fis-din-15",
@@ -506,7 +520,8 @@
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Konsep: Tikungan miring licin (design banking angle): komponen horizontal gaya normal bertindak sebagai gaya sentripetal ($N \\sin\\theta = \\frac{m v^2}{R}$ dan $N \\cos\\theta = mg$). **Tips:** Siswa sering membalik fungsi trigonometri menjadi $\\frac{g R}{\\tan\\theta}$ atau lupa menarik akar kuadrat dari 900."
   }
 ];
 

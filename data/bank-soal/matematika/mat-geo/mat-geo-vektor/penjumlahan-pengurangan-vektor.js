@@ -44,7 +44,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penjumlahan dua vektor dilakukan dengan menjumlahkan masing-masing komponen skalar yang bersesuaian dengan vektor basis: $(x_1\\hat{i} + y_1\\hat{j}) + (x_2\\hat{i} + y_2\\hat{j}) = (x_1 + x_2)\\hat{i} + (y_1 + y_2)\\hat{j}$. **Tips:** Keliru tanda saat mengoperasikan bilangan bulat $-2 + 5$ yang terkadang salah dihitung sebagai $-7$."
   },
   {
     "id": "mat-geo-vektor-operasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pengurangan dua vektor kolom dihitung dengan mengurangkan entri-entri baris yang seletak: $\\begin{pmatrix} u_1 \\\\ u_2 \\\\ u_3 \\end{pmatrix} - \\begin{pmatrix} v_1 \\\\ v_2 \\\\ v_3 \\end{pmatrix} = \\begin{pmatrix} u_1 - v_1 \\\\ u_2 - v_2 \\\\ u_3 - v_3 \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-vektor-operasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Operasi kombinasi linier skalar dan vektor dilakukan dengan mendistribusikan masing-masing pengali skalar ke setiap komponen vektor terlebih dahulu sebelum dijumlahkan atau dikurangkan."
   },
   {
     "id": "mat-geo-vektor-operasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian skalar (titik) dua buah vektor $\\vec{a} \\cdot \\vec{b}$ menghasilkan besaran skalar yang bernilai jumlah dari hasil kali masing-masing komponen seletak: $\\vec{a} \\cdot \\vec{b} = a_x b_x + a_y b_y$."
   },
   {
     "id": "mat-geo-vektor-operasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Vektor $\\vec{s}$ yang dijumlahkan dengan $\\vec{r}$ menghasilkan vektor nol $\\vec{0}$ adalah invers penjumlahan (vektor lawan) dari $\\vec{r}$, yaitu $\\vec{s} = -\\vec{r}$. **Tips:** Lupa mengubah tanda negatif pada komponen $-6\\hat{j}$ menjadi positif saat mengalikan dengan $-1$."
   },
   {
     "id": "mat-geo-vektor-operasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kosinus sudut antara dua vektor $\\theta$ dihitung dengan membagi perkalian skalar terhadap hasil kali panjang kedua vektor: $\\cos(\\theta) = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|}$. Bila perkalian titik bernilai nol, kedua vektor saling tegak lurus ($\\theta = 90^\\circ$)."
   },
   {
     "id": "mat-geo-vektor-operasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat perlu dan cukup agar dua buah vektor bukan nol saling tegak lurus (ortogonal) adalah hasil perkalian titik (dot product) keduanya sama dengan nol: $\\vec{u} \\cdot \\vec{v} = 0$. **Tips:** Kekeliruan tanda saat mengoperasikan $-2(4) = -8$, misalnya salah menuliskan $+8$ yang berakibat menghasilkan $k = -7$."
   },
   {
     "id": "mat-geo-vektor-operasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian skalar bersifat distributif terhadap penjumlahan vektor: $\\vec{p} \\cdot (\\vec{p} + \\vec{q}) = \\vec{p} \\cdot \\vec{p} + \\vec{p} \\cdot \\vec{q} = |\\vec{p}|^2 + |\\vec{p}||\\vec{q}|\\cos(\\theta)$."
   },
   {
     "id": "mat-geo-vektor-operasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proyeksi skalar ortogonal dari vektor $\\vec{a}$ pada vektor $\\vec{b}$ dirumuskan sebagai pembagian hasil kali titik dengan panjang vektor landasan: $|\\vec{c}| = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$. **Tips:** Membagi perkalian skalar dengan panjang vektor $\\vec{a}$ alih-alih vektor tujuan proyeksi $\\vec{b}$."
   },
   {
     "id": "mat-geo-vektor-operasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian silang dua vektor di ruang $\\mathbb{R}^3$ menghasilkan vektor yang tegak lurus terhadap kedua vektor awal, dihitung menggunakan determinan matriks $3 \\times 3$ dengan basis satuan. **Tips:** Lupa tanda minus di depan kofaktor basis $\\hat{j}$ pada ekspansi baris pertama determinan matriks."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan garis singgung pada lingkaran $x^2 + y^2 = r^2$ di titik singgung $(x_1, y_1)$ yang terletak pada lingkaran ditentukan menggunakan rumus bagi adil: $x_1 x + y_1 y = r^2$."
   },
   {
     "id": "mat-geo-lingkaran-singgung-002",
@@ -77,7 +78,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis singgung lingkaran $(x - a)^2 + (y - b)^2 = r^2$ di titik $(x_1, y_1)$ dirumuskan dengan metode bagi adil: $(x_1 - a)(x - a) + (y_1 - b)(y - b) = r^2$. **Tips:** Kesalahan tanda pada substitusi ordinat $(1 - (-3))$ yang keliru dihitung sebagai $1 - 3 = -2$."
   },
   {
     "id": "mat-geo-lingkaran-singgung-003",
@@ -110,7 +112,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan garis singgung lingkaran $x^2 + y^2 = r^2$ dengan gradien $m$ dirumuskan sebagai $y = mx \\pm r\\sqrt{1 + m^2}$."
   },
   {
     "id": "mat-geo-lingkaran-singgung-004",
@@ -143,7 +146,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis singgung lingkaran bentuk umum $x^2 + y^2 + Ax + By + C = 0$ di titik $(x_1, y_1)$ dirumuskan dengan rumus bagi adil: $x_1 x + y_1 y + \\frac{A}{2}(x + x_1) + \\frac{B}{2}(y + y_1) + C = 0$. **Tips:** Lupa membagi dua koefisien $A$ dan $B$ saat menerapkan rumus bagi adil bentuk umum."
   },
   {
     "id": "mat-geo-lingkaran-singgung-005",
@@ -176,7 +180,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis yang sejajar dengan sumbu-$X$ memiliki gradien kemiringan $m = 0$. Garis singgung horizontal pada lingkaran berpusat di asal $(0, 0)$ memiliki persamaan garis mendatar $y = \\pm r$. **Tips:** Tertukar dengan garis yang sejajar sumbu-$Y$ (garis vertikal $x = \\pm 4$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-006",
@@ -209,7 +214,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis singgung lingkaran $(x - a)^2 + (y - b)^2 = r^2$ yang tegak lurus garis dengan gradien $m_1$ memiliki gradien $m_2 = -\\frac{1}{m_1}$. Persamaan garis singgungnya dirumuskan sebagai $y - b = m_2(x - a) \\pm r\\sqrt{1 + m_2^2}$. **Tips:** Langsung memakai gradien $m = -2$ tanpa mengubahnya dengan syarat tegak lurus $m_2 = \\frac{1}{2}$."
   },
   {
     "id": "mat-geo-lingkaran-singgung-007",
@@ -242,7 +248,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis kutub (polar) yang ditarik dari titik luar $(x_1, y_1)$ menuju lingkaran $x^2 + y^2 = r^2$ memiliki rumus yang identik dengan rumus bagi adil garis singgung: $x_1 x + y_1 y = r^2$. **Tips:** Mengganti ruas kanan dengan nilai kuasa titik ($26$) alih-alih nilai kuadrat jari-jari lingkaran ($9$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-008",
@@ -275,7 +282,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang ruas garis singgung dari titik $(x_1, y_1)$ ke lingkaran $x^2 + y^2 + Ax + By + C = 0$ dihitung menggunakan akar dari nilai kuasa titik: $|AT| = \\sqrt{x_1^2 + y_1^2 + Ax_1 + By_1 + C}$. **Tips:** Lupa menarik akar kuadrat di akhir langkah sehingga memilih nilai kuadrat panjang garis singgung ($36$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-009",
@@ -308,7 +316,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis singgung lingkaran selalu tegak lurus terhadap jari-jari di titik singgung. Sudut separuh $\\alpha$ antara garis hubung pusat dan garis singgung memenuhi $\\sin(\\alpha) = \\frac{r}{|OP|}$, dan sudut antara kedua garis singgung adalah $2\\alpha$. **Tips:** Lupa mengalikan sudut $\\alpha$ dengan 2 sehingga langsung menjawab dengan sudut separuh ($30^\\circ$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-010",
@@ -341,7 +350,8 @@
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis yang sejajar memiliki gradien yang sama ($m_1 = m_2$). Persamaan garis singgung bergradien $m$ pada lingkaran berpusat di $(a, b)$ dirumuskan sebagai $y - b = m(x - a) \\pm r\\sqrt{1 + m^2}$."
   },
   {
     "id": "sup-mtk-geo-02",
@@ -374,7 +384,8 @@
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-lingkaran",
-    "subTopicSlug": "garis-singgung-lingkaran"
+    "subTopicSlug": "garis-singgung-lingkaran",
+    "hint": "Garis Singgung Titik Singgung Lingkaran Pusat $(0,0)$: Persamaan garis singgung lingkaran $x^2 + y^2 = r^2$ pada titik singgung $(x_1, y_1)$ adalah $x_1 x + y_1 y = r^2$."
   },
   {
     "id": "sedang-mtk-05",
@@ -407,7 +418,8 @@
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-lingkaran",
-    "subTopicSlug": "garis-singgung-lingkaran"
+    "subTopicSlug": "garis-singgung-lingkaran",
+    "hint": "Garis Singgung Lingkaran $x^2 + y^2 = r^2$ dengan Gradien $m$: $$y = mx \\pm r\\sqrt{1 + m^2}$$. **Tips:** Sering lupa bahwa kondisi tegak lurus menuntut $m = -\\frac{1}{m_1}$."
   }
 ];
 

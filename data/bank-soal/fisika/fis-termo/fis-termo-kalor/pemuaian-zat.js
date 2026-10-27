@@ -44,7 +44,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pertambahan panjang zat padat akibat kenaikan suhu dirumuskan oleh hukum pemuaian panjang: $$\\Delta L = L_0 \\times \\alpha \\times \\Delta T$$ dengan $L_0$ adalah panjang mula-mula, $\\alpha$ koefisien muai panjang, dan $\\Delta T$ perubahan suhu. **Tips:** Perhatikan satuan hasil akhir."
   },
   {
     "id": "fis-termo-kalor-pemuaian-002",
@@ -77,7 +78,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk benda padat isotropik (memiliki sifat fisis seragam ke segala arah), hubungan antara koefisien muai panjang ($\\alpha$), koefisien muai luas ($\\beta$), dan koefisien muai volume ($\\gamma$) adalah: $$\\beta = 2\\alpha \\quad \\text{dan} \\quad \\gamma = 3\\alpha$$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-003",
@@ -110,7 +112,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pemuaian luas benda padat memenuhi persamaan: $$\\Delta A = A_0 \\times \\beta \\times \\Delta T \\quad \\text{dengan} \\quad \\beta = 2\\alpha$$ Luas akhir benda setelah pemuaian adalah $A = A_0 + \\Delta A$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-004",
@@ -143,7 +146,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pertambahan volume pada pemuaian zat padat dinyatakan oleh: $$\\Delta V = V_0 \\times \\gamma \\times \\Delta T \\quad \\text{dengan} \\quad \\gamma = 3\\alpha$$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-005",
@@ -176,7 +180,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Keping bimetal bekerja berdasarkan perbedaan koefisien muai panjang dua logam yang disatukan: - Saat dipanaskan, logam dengan $\\alpha$ lebih besar akan memanjang lebih banyak sehingga berada pada sisi luar lengkungan (sisi cembung). Akibatnya, bimetal melengkung/membengkok ke arah logam yang memiliki $\\alpha$ lebih kecil. - Sebaliknya saat didinginkan, logam dengan $\\alpha$ lebih besar menyusut lebih banyak sehingga bimetal membengkok ke arah logam dengan $\\alpha$ lebih besar. **Tips:** Jangan terbalik dengan peristiwa pendinginan."
   },
   {
     "id": "fis-termo-kalor-pemuaian-006",
@@ -209,7 +214,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat bejana dan zat cair di dalamnya dipanaskan bersama, keduanya mengalami pertambahan volume. Jika koefisien muai zat cair lebih besar daripada koefisien muai bejana, sebagian zat cair akan tumpah. Volume tumpah dihitung sebagai pemuaian semu: $$\\Delta V_{\\text{tumpah}} = \\Delta V_{\\text{cair}} - \\Delta V_{\\text{bejana}} = V_0 (\\gamma_{\\text{cair}} - \\gamma_{\\text{bejana}}) \\Delta T$$ dengan $\\gamma_{\\text{bejana}} = 3\\alpha_{\\text{bejana}}$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-007",
@@ -242,7 +248,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Celah antarbatang rel berfungsi memberikan ruang bebas bagi pemuaian panjang baja saat suhu lingkungan naik. Besar celah minimum setara dengan pertambahan panjang satu batang rel pada rentang kenaikan suhu maksimum: $$\\Delta L = L_0 \\times \\alpha \\times \\Delta T$$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-008",
@@ -275,7 +282,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pemuaian diameter lubang atau cincin mengikuti hukum pemuaian panjang linear pada dimensi diameternya: $$\\Delta D = D_0 \\times \\alpha \\times \\Delta T \\implies \\Delta T = \\frac{\\Delta D}{D_0 \\times \\alpha}$$ Suhu akhir pemanasan cincin dihitung dari $T = T_0 + \\Delta T$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-009",
@@ -308,7 +316,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa benda konstan selama pemanasan ($m = \\rho \\times V$). Karena volume memuai ($V = V_0(1 + \\gamma \\Delta T)$), maka massa jenis benda berkurang: $$\\rho = \\frac{m}{V_0(1 + \\gamma \\Delta T)} = \\frac{\\rho_0}{1 + \\gamma \\Delta T} \\approx \\rho_0 (1 - \\gamma \\Delta T)$$ Penurunan massa jenisnya adalah $\\Delta \\rho = \\rho_0 - \\rho \\approx \\rho_0 \\times \\gamma \\times \\Delta T$. **Tips:** Hati-hati dengan tanda dan makna 'penurunan massa jenis'."
   },
   {
     "id": "fis-termo-kalor-pemuaian-010",
@@ -341,7 +350,8 @@
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Air mengalami fenomena anomali termal antara rentang suhu $0^\\circ\\text{C}$ sampai $4^\\circ\\text{C}$: - Saat dipanaskan dari $0^\\circ\\text{C}$ ke $4^\\circ\\text{C}$, volumenya menyusut dan massa jenisnya bertambah. - Pada suhu tepat $4^\\circ\\text{C}$, air mencapai volume minimum dan massa jenis maksimum ($\\rho_{\\text{maks}} \\approx 1000\\text{ kg/m}^3$). - Air terpadat ini turun ke dasar danau, sedangkan air yang lebih dingin ($< 4^\\circ\\text{C}$) dan lapisan es terapung di permukaan karena massa jenis es lebih kecil dari air cair. **Tips:** Pernyataan pada keliru karena dari $0^\\circ\\text{C}$ ke $4^\\circ\\text{C}$ air menyusut (bukan memuai)."
   },
   {
     "id": "sup-fis-ter-01",
@@ -374,7 +384,8 @@
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "pemuaian-zat"
+    "subTopicSlug": "pemuaian-zat",
+    "hint": "Pemuaian Panjang Benda Padat: Pertambahan panjang zat padat sebanding dengan panjang mula-mula, koefisien muai panjang, dan kenaikan suhu: $\\Delta L = L_0 \\alpha \\Delta T$. **Tips:** Mengalikan dengan suhu akhir $50^\\circ\\text{C}$ tanpa mengurangkan suhu awal $20^\\circ\\text{C}$."
   },
   {
     "id": "drill-kal-03",
@@ -407,7 +418,8 @@
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "pemuaian-zat"
+    "subTopicSlug": "pemuaian-zat",
+    "hint": "Hubungan Koefisien Pemuaian: • Koefisien muai luas adalah dua kali koefisien muai panjang: $\\beta = 2\\alpha$ • Pertambahan luas: $\\Delta A = A_0 \\cdot \\beta \\cdot \\Delta T = A_0 \\cdot (2\\alpha) \\cdot \\Delta T$."
   },
   {
     "id": "drill-kal-04",
@@ -440,7 +452,8 @@
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "pemuaian-zat"
+    "subTopicSlug": "pemuaian-zat",
+    "hint": "Pemuaian Volume Zat Padat: $$\\gamma = 3\\alpha$$ $$\\Delta V = V_0 \\cdot \\gamma \\cdot \\Delta T$$. **Tips:** Menggunakan nilai $\\alpha$ langsung untuk menghitung pemuaian ruang/volume tanpa mengalikan dengan 3."
   },
   {
     "id": "drill2-kal-02",
@@ -473,7 +486,8 @@
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "pemuaian-zat"
+    "subTopicSlug": "pemuaian-zat",
+    "hint": "Penyusutan Termal: $$\\Delta L = L_0 \\cdot \\alpha \\cdot |\\Delta T|$$."
   }
 ];
 

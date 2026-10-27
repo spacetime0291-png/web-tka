@@ -44,7 +44,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penyederhanaan monomial aljabar dilakukan dengan membagi koefisien numerik dan mengurangkan pangkat variabel sejenis: $\\frac{a^m}{a^n} = a^{m-n}$. **Tips:** Menjumlahkan eksponen variabel (menjadi $y^6$) alih-alih mengurangkannya pada operasi pembagian."
   },
   {
     "id": "fun-alj-dasar-pecahan-002",
@@ -77,7 +78,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Faktorkan bagian pembilang dengan aturan selisih dua kuadrat $a^2 - b^2 = (a - b)(a + b)$ sebelum membaginya dengan penyebut. **Tips:** Membagi suku per suku secara langsung (seperti $\\frac{x^2}{x} - \\frac{9}{3}$) yang melanggar kaidah aljabar dasar."
   },
   {
     "id": "fun-alj-dasar-pecahan-003",
@@ -110,7 +112,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk menjumlahkan pecahan dengan penyebut berbeda, samakan penyebutnya ke KPK penyebut, yaitu $xy$. **Tips:** Menjumlahkan langsung pembilang dan penyebut menjadi $\\frac{2 + 3}{x + y} = \\frac{5}{x + y}$."
   },
   {
     "id": "fun-alj-dasar-pecahan-004",
@@ -143,7 +146,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada perkalian pecahan aljabar, faktorkan suku-suku yang dapat difaktorkan terlebih dahulu, lalu hilangkan faktor pembagi yang sama. **Tips:** Mengalikan suku secara langsung sehingga menjadi $\\frac{x^3 - 4x}{x^2 - 2x}$ tanpa menyederhanakannya."
   },
   {
     "id": "fun-alj-dasar-pecahan-005",
@@ -176,7 +180,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pecahan aljabar dengan penyebut yang sama dapat langsung dikurangkan pembilangnya, kemudian disederhanakan bila terdapat faktor persekutuan. **Tips:** Lupa menyederhanakan pecahan $\\frac{4}{2x}$ menjadi $\\frac{2}{x}$ atau mengurangkan penyebutnya sehingga menghasilkan penyebut 0."
   },
   {
     "id": "fun-alj-dasar-pecahan-006",
@@ -209,7 +214,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan polinomial pembilang dan penyebut ke dalam faktor linier, kemudian lakukan penyederhanaan terhadap faktor yang sama."
   },
   {
     "id": "fun-alj-dasar-pecahan-007",
@@ -242,7 +248,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Operasi pengurangan dua pecahan aljabar dengan penyebut berbeda dilakukan dengan menyamakan penyebut ke KPK $(x - 1)(x + 1) = x^2 - 1$."
   },
   {
     "id": "fun-alj-dasar-pecahan-008",
@@ -275,7 +282,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pecahan kompleks dapat disederhanakan dengan mengalikan pembilang dan penyebut dengan penyebut persekutuan tertinggi (yaitu $x^2$) atau dengan menyederhanakan masing-masing tingkat. **Tips:** Membagi langsung suku demi suku tanpa menyamakan penyebut sehingga menghasilkan jawaban keliru seperti $\\frac{1}{x}$ atau $x$."
   },
   {
     "id": "fun-alj-dasar-pecahan-009",
@@ -308,7 +316,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembagian pecahan diubah menjadi operasi perkalian dengan membalik pembilang dan penyebut pecahan pembagi: $\\frac{A}{B} \\div \\frac{C}{D} = \\frac{A}{B} \\times \\frac{D}{C}$. **Tips:** Lupa membalik pecahan kedua saat mengubah operasi tanda bagi menjadi kali."
   },
   {
     "id": "fun-alj-dasar-pecahan-010",
@@ -341,7 +350,8 @@
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kalikan pembilang dan penyebut utama dengan faktor persekutuan $ab$ untuk mengubah pecahan bertingkat menjadi pecahan biasa. **Tips:** Tertukar tanda selisih menjadi $b - a$ karena urutan suku pada penyebut adalah $b + a$."
   },
   {
     "id": "sup-mtk-fun-02",
@@ -374,7 +384,8 @@
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
     "subChapterId": "fun-alj-dasar",
-    "subTopicSlug": "pecahan-bentuk-aljabar"
+    "subTopicSlug": "pecahan-bentuk-aljabar",
+    "hint": "Penyederhanaan Pecahan Bentuk Aljabar: Faktorkan pembilang dan penyebut ke bentuk perkalian faktor-faktor linearnya, lalu bagi dengan faktor persekutuan terbesarnya. **Tips:** Mencoret suku $x^2$ secara langsung tanpa memfaktorkan bentuk penjumlahan aljabar terlebih dahulu."
   },
   {
     "id": "sup-mtk-fun-04",
@@ -407,7 +418,8 @@
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
     "subChapterId": "fun-alj-dasar",
-    "subTopicSlug": "pecahan-bentuk-aljabar"
+    "subTopicSlug": "pecahan-bentuk-aljabar",
+    "hint": "Syarat Pecahan Terdefinisi: Penyebut dari suatu pecahan rasional tidak boleh sama dengan nol: $\\text{Penyebut} \\neq 0$. **Tips:** Menganggap pembilang tidak boleh nol sehingga menyertakan $x \\neq -4$."
   }
 ];
 

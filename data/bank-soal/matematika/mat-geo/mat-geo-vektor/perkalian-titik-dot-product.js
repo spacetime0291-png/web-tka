@@ -44,7 +44,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian titik dua vektor dua dimensi $\\vec{u} = u_x\\hat{i} + u_y\\hat{j}$ dan $\\vec{v} = v_x\\hat{i} + v_y\\hat{j}$ menghasilkan bilangan skalar: $\\vec{u} \\cdot \\vec{v} = u_x v_x + u_y v_y$. **Tips:** Keliru tanda saat mengalikan bilangan negatif $-2 \\times 4 = -8$ yang sering dihitung sebagai $+8$."
   },
   {
     "id": "mat-geo-vektor-dot-002",
@@ -77,7 +78,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan hubungan matematis dasar: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}|\\cos(\\theta)$. **Tips:** Tertukar antara nilai $\\cos(60^\\circ) = \\frac{1}{2}$ dengan $\\sin(60^\\circ) = \\frac{1}{2}\\sqrt{3}$."
   },
   {
     "id": "mat-geo-vektor-dot-003",
@@ -110,7 +112,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada ruang dimensi tiga, perkalian skalar dihitung dari jumlah perkalian ketiga pasang komponen seletak: $\\vec{p} \\cdot \\vec{q} = p_x q_x + p_y q_y + p_z q_z$. **Tips:** Kekeliruan tanda saat mengoperasikan suku-suku negatif, seperti mengabaikan tanda minus pada komponen ketiga."
   },
   {
     "id": "mat-geo-vektor-dot-004",
@@ -143,7 +146,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian titik suatu vektor dengan dirinya sendiri sama dengan kuadrat dari panjang (norma) vektor tersebut: $\\vec{v} \\cdot \\vec{v} = |\\vec{v}|^2 = v_x^2 + v_y^2$. **Tips:** Menjawab dengan panjang vektornya ($5$) alih-alih kuadrat panjangnya ($25$)."
   },
   {
     "id": "mat-geo-vektor-dot-005",
@@ -176,7 +180,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua vektor yang saling tegak lurus membentuk sudut apit $\\theta = 90^\\circ$. Karena nilai $\\cos(90^\\circ) = 0$, maka hasil perkalian titik keduanya selalu nol. **Tips:** Terkecoh dengan nilai 1, yang merupakan nilai kosinus untuk sudut $0^\\circ$ (dua vektor sejajar dan searah)."
   },
   {
     "id": "mat-geo-vektor-dot-006",
@@ -209,7 +214,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut antara dua vektor $\\theta$ merupakan sudut tumpul ($90^\\circ < \\theta \\le 180^\\circ$) jika dan hanya jika nilai kosinusnya negatif, yang berarti hasil perkalian skalar keduanya bernilai negatif tegas: $\\vec{a} \\cdot \\vec{b} < 0$."
   },
   {
     "id": "mat-geo-vektor-dot-007",
@@ -242,7 +248,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadrat panjang kombinasi linier vektor diuraikan dengan sifat distributif perkalian titik: $|c_1\\vec{u} + c_2\\vec{v}|^2 = c_1^2|\\vec{u}|^2 + 2c_1 c_2(\\vec{u} \\cdot \\vec{v}) + c_2^2|\\vec{v}|^2$."
   },
   {
     "id": "mat-geo-vektor-dot-008",
@@ -275,7 +282,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut $\\angle BAC$ dibentuk oleh dua vektor yang berpangkal di titik $A$, yaitu vektor $\\vec{AB}$ dan $\\vec{AC}$. Nilai kosinusnya dirumuskan sebagai $\\cos(\\angle BAC) = \\frac{\\vec{AB} \\cdot \\vec{AC}}{|\\vec{AB}||\\vec{AC}|}$."
   },
   {
     "id": "mat-geo-vektor-dot-009",
@@ -308,7 +316,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proyeksi vektor ortogonal dari vektor $\\vec{a}$ pada vektor $\\vec{b}$ menghasilkan besaran vektor yang searah dengan vektor $\\vec{b}$, dirumuskan sebagai $\\vec{p} = \\left(\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2}\\right)\\vec{b}$."
   },
   {
     "id": "mat-geo-vektor-dot-010",
@@ -341,7 +350,8 @@
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan sifat distributif perkalian titik, perkalian bentuk jumlah dan selisih dua vektor setara dengan selisih kuadrat panjang masing-masing vektor: $(\\vec{a} + \\vec{b}) \\cdot (\\vec{a} - \\vec{b}) = |\\vec{a}|^2 - |\\vec{b}|^2$. **Tips:** Terkecoh menghitung nilai sudut $120^\\circ$ secara rumit padahal suku silang saling meniadakan secara aljabar vektor."
   },
   {
     "id": "mudah-mtk-10",
@@ -374,7 +384,8 @@
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-vektor",
-    "subTopicSlug": "perkalian-titik-dot-product"
+    "subTopicSlug": "perkalian-titik-dot-product",
+    "hint": "Perkalian Skalar (Dot Product) Dua Vektor: $$\\vec{u} \\cdot \\vec{v} = u_x v_x + u_y v_y$$. **Tips:** Hasil kali skalar (dot product) berupa bilangan skalar real, bukan vektor."
   },
   {
     "id": "sedang-mtk-04",
@@ -407,7 +418,8 @@
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-vektor",
-    "subTopicSlug": "perkalian-titik-dot-product"
+    "subTopicSlug": "perkalian-titik-dot-product",
+    "hint": "Gunakan hubungan matematis dasar: $$\\cos\\theta = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| \\cdot |\\vec{v}|}$$. **Tips:** Perhatikan bahwa komponen $\\hat{k}$ pada vektor $\\vec{v}$ adalah nol karena hanya ditulis $\\hat{i} + \\hat{j}$."
   }
 ];
 

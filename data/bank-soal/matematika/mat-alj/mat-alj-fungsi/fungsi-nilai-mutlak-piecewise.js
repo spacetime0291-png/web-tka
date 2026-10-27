@@ -44,7 +44,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi nilai mutlak berbentuk $f(x) = a|x - h| + k$ dengan $a > 0$ memiliki titik balik minimum pada $(h, k)$ karena nilai suku mutlak $|x - h| \\ge 0$ dan mencapai nilai terendah nol saat $x = h$. **Tips:** Sering salah menentukan tanda absis puncak menjadi $x = -4$ akibat keliru membaca pergeseran horizontal fungsi."
   },
   {
     "id": "mat-alj-fungsi-mutlak-002",
@@ -77,7 +78,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik fungsi dengan sumbu-$Y$ ditentukan dengan menyubstitusikan nilai absis $x = 0$ ke dalam persamaan fungsi."
   },
   {
     "id": "mat-alj-fungsi-mutlak-003",
@@ -110,7 +112,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sifat nilai mutlak menyatakan bahwa $|g(x)| \\ge 0$ untuk setiap nilai riil. Mengalikan bentuk tersebut dengan tanda minus akan membalik arah tanda ketaksamaan menjadi $-|g(x)| \\le 0$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-004",
@@ -143,7 +146,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik potong grafik fungsi dengan sumbu-$X$ diperoleh dengan menyelesaikan persamaan $f(x) = 0$, yang mengarah pada bentuk persamaan nilai mutlak $|u| = c$ dengan solusi $u = c$ atau $u = -c$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-005",
@@ -176,7 +180,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Menentukan nilai fungsi dilakukan dengan menyubstitusikan nilai argumen ke dalam rumus fungsi dan menerapkan definisi $|a| = a$ untuk $a \\ge 0$ serta $|a| = -a$ untuk $a < 0$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-006",
@@ -209,7 +214,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong kurva dengan garis horizontal dicari dengan menyamakan rumus fungsi dengan nilai ordinat garis. Jarak antara dua titik pada garis horizontal sama dengan selisih mutlak dari kedua absisnya, yaitu $|x_1 - x_2|$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-007",
@@ -242,7 +248,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan ketaksamaan segitiga $|a| + |b| \\ge |a + b|$, penjumlahan jarak $|x - a| + |x - b|$ bernilai minimum konstan sebesar $|b - a|$ untuk setiap $x$ yang terletak di antara $a$ dan $b$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-008",
@@ -275,7 +282,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Grafik fungsi simetris $f(x) = c - |ax|$ yang berada di atas sumbu-$X$ membentuk bangun datar segitiga sama kaki dengan titik puncak pada sumbu-$Y$ dan alas pada sumbu-$X$. **Tips:** Lupa membagi dengan 2 pada rumus luas segitiga sehingga menghasilkan jawaban 36 yang merupakan luas persegi panjang."
   },
   {
     "id": "mat-alj-fungsi-mutlak-009",
@@ -308,7 +316,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi $(f \\circ g)(x) = f(g(x))$ diuraikan dengan menyubstitusikan $g(x)$ ke dalam fungsi nilai mutlak $f$, kemudian menyelesaikan persamaan nilai mutlak yang terbentuk. **Tips:** Memaksakan mencari solusi pada kasus diskriminan negatif atau salah memfaktorkan persamaan kuadrat pada kasus pertama."
   },
   {
     "id": "mat-alj-fungsi-mutlak-010",
@@ -341,7 +350,8 @@
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pertidaksamaan berbentuk $|A| < |B|$ dapat diselesaikan dengan menguadratkan kedua ruas, yang setara dengan pemfaktoran selisih kuadrat $(A + B)(A - B) < 0$."
   }
 ];
 

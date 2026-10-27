@@ -44,7 +44,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Titik tengah suatu ruas garis merupakan titik pembagi dengan rasio $1 : 1$, sehingga vektor posisinya merupakan rata-rata dari kedua koordinat ujungnya: $\\vec{m} = \\frac{\\vec{a} + \\vec{b}}{2}$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-002",
@@ -77,7 +78,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Vektor posisi titik $P$ yang membagi ruas garis $AB$ dengan perbandingan $AP : PB = m : n$ dirumuskan sebagai $\\vec{p} = \\frac{m\\vec{b} + n\\vec{a}}{m + n}$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-003",
@@ -110,7 +112,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada ruang dimensi tiga, koordinat titik bagi ruas garis dihitung terpisah untuk masing-masing sumbu menggunakan rumus pembagian vektor berbobot: $\\vec{r} = \\frac{m\\vec{q} + n\\vec{p}}{m + n}$. **Tips:** Keliru saat mengoperasikan tanda bilangan negatif pada sumbu-$Z$ sehingga tidak menghasilkan nilai nol."
   },
   {
     "id": "mat-geo-vektor-perbandingan-004",
@@ -143,7 +146,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pembagian di luar ruas garis ditandai dengan nilai perbandingan bertanda negatif pada salah satu ruasnya. Rumus perbandingan vektor tetap berlaku: $\\vec{k} = \\frac{m\\vec{b} + n\\vec{a}}{m + n}$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-005",
@@ -176,7 +180,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perbandingan segmen garis $AC : CB$ ditentukan dengan membandingkan komponen vektor perpindahan $\\vec{AC}$ terhadap vektor perpindahan $\\vec{CB}$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-006",
@@ -209,7 +214,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika titik $T$ membagi perpanjangan ruas garis $AB$ dengan perbandingan $AT : TB = 3 : -1$, maka vektor posisi titik $T$ dirumuskan sebagai $\\vec{t} = \\frac{3\\vec{b} - \\vec{a}}{3 - 1} = \\frac{3\\vec{b} - \\vec{a}}{2}$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-007",
@@ -242,7 +248,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat segitiga membagi garis berat dari titik sudut ke titik tengah sisi di hadapannya dengan rasio tetap $2 : 1$. Berdasarkan rumus perbandingan ruas garis berbobot, $\\vec{g} = \\frac{m\\vec{d} + n\\vec{a}}{m + n}$. **Tips:** Tertukar bobot pengali perbandingan menjadi $\\frac{2\\vec{a} + \\vec{d}}{3}$ akibat salah meletakkan posisi segmen $AG$ dan $GD$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-008",
@@ -275,7 +282,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena titik $P$ terletak pada ruas garis $KL$, rasio pembagian $KP : PL = m : n$ dapat dicari terlebih dahulu melalui komponen ordinat $y$ yang nilainya telah diketahui lengkap."
   },
   {
     "id": "mat-geo-vektor-perbandingan-009",
@@ -308,7 +316,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sifat geometris jajar genjang menyatakan bahwa kedua garis diagonalnya saling berpotongan dan membagi dua sama panjang di titik tengah masing-masing diagonal. **Tips:** Mencari titik tengah ruas garis $AB$ alih-alih diagonal $AC$, yang keliru menganggap sisi jajar genjang sebagai diagonalnya."
   },
   {
     "id": "mat-geo-vektor-perbandingan-010",
@@ -341,7 +350,8 @@
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbandingan luas dua segitiga yang memiliki satu sudut persekutuan yang sama ($angle O$) sama dengan perbandingan hasil kali sisi-sisi pengapit sudut tersebut: $\\frac{\\text{Luas } \\triangle OPQ}{\\text{Luas } \\triangle OAB} = \\frac{OP}{OA} \\times \\frac{OQ}{OB}$."
   }
 ];
 

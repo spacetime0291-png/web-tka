@@ -75,7 +75,10 @@ const mockElements = {
   syllabusView: { classList: { add() {}, remove() {} } },
   headerTopic: { textContent: '' },
   btnHeaderSyllabus: { innerHTML: '', title: '' },
-  headerProgressFill: { style: {} }
+  headerProgressFill: { style: {} },
+  btnHint: { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
+  hintAccordion: { classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, scrollIntoView() {} },
+  hintContent: { innerHTML: '' }
 };
 
 global.document = {
@@ -586,6 +589,51 @@ assert(app.state.setupForm.expandedInfoSubTopicIds.has(sampleSubId),
 app.toggleSubTopicInfo(sampleSubId);
 assert(!app.state.setupForm.expandedInfoSubTopicIds.has(sampleSubId),
   'toggleSubTopicInfo(sampleSubId) closes info drawer when toggled again');
+
+console.log('\n--- TEST GROUP 11: INTERACTIVE HINT (PETUNJUK) SYSTEM ---');
+
+// 1. Elements in HTML and styles in CSS
+assert(indexHtmlContent.includes('id="btnHint"'), 'index.html contains #btnHint');
+assert(indexHtmlContent.includes('id="hintAccordion"'), 'index.html contains #hintAccordion');
+assert(indexHtmlContent.includes('id="hintContent"'), 'index.html contains #hintContent');
+assert(cssContent.includes('.hint-accordion') && cssContent.includes('.tactile-btn-hint'),
+  'styles.css contains .hint-accordion and .tactile-btn-hint definitions');
+assert(cssContent.includes('.hint-accordion.open'),
+  'styles.css defines open state for hint-accordion');
+
+// 2. app.toggleHintAccordion exported
+assert(typeof app.toggleHintAccordion === 'function',
+  'app.toggleHintAccordion is defined and exported');
+
+// 3. Test Hint toggle in active session
+app.state.sessionMode = 'latihan';
+app.state.isReviewMode = false;
+app.state.currentIndex = 0;
+app.state.questions = [
+  { id: 'test-q1', hint: 'Gunakan hukum kekekalan momentum: $p_1 = p_2$', solution: { concept: 'Konsep dasar' } }
+];
+app.state.hintOpen = [false];
+
+// Initially closed
+assert(!app.state.hintOpen[0], 'Hint is closed by default');
+
+// Toggle hint open
+app.toggleHintAccordion();
+assert(app.state.hintOpen[0] === true, 'toggleHintAccordion opens hint for current question');
+assert(mockElements.hintAccordion.classList.contains('open'), 'hintAccordion element receives "open" class');
+assert(mockElements.btnHint.classList.contains('active'), 'btnHint receives "active" class');
+
+// Toggle hint closed
+app.toggleHintAccordion();
+assert(app.state.hintOpen[0] === false, 'toggleHintAccordion closes hint when called again');
+assert(!mockElements.hintAccordion.classList.contains('open'), 'hintAccordion removes "open" class');
+assert(!mockElements.btnHint.classList.contains('active'), 'btnHint removes "active" class');
+
+// In Exam Mode, hint is locked and non-toggleable
+app.state.sessionMode = 'ujian';
+app.state.isReviewMode = false;
+app.toggleHintAccordion();
+assert(app.state.hintOpen[0] === false, 'In exam mode, toggleHintAccordion does not open hint');
 
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);

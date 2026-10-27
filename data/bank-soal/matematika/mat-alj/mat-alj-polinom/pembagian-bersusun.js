@@ -44,7 +44,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Algoritma pembagian polinomial menyatakan bahwa $P(x) = (x - c) H(x) + S$, dengan $H(x)$ adalah hasil bagi dan $S$ adalah konstanta sisa pembagian."
   },
   {
     "id": "mat-alj-polinom-susun-002",
@@ -77,7 +78,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pembagian polinomial, proses pembagian berhenti ketika derajat polinomial sisa pembagian strictly lebih kecil dari derajat polinomial pembagi: $\\deg(S(x)) < \\deg(Q(x))$. Derajat maksimum sisa adalah $\\deg(Q(x)) - 1$."
   },
   {
     "id": "mat-alj-polinom-susun-003",
@@ -110,7 +112,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pembagian bersusun panjang polinomial derajat 3 oleh bentuk linear menghasilkan hasil bagi berderajat 2 ($3 - 1 = 2$). **Tips:** Kesalahan tanda saat mengurangkan $-3x^2 - (-x^2) = -2x^2$ menjadi $-4x^2$."
   },
   {
     "id": "mat-alj-polinom-susun-004",
@@ -143,7 +146,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sisa pembagian polinomial $P(x)$ oleh pembagi $(x - c)$ sama dengan nilai fungsi pada pembuat nol pembagi, yaitu $P(c)$. Jika $P(c) = 0$, maka polinomial habis dibagi tanpa sisa."
   },
   {
     "id": "mat-alj-polinom-susun-005",
@@ -176,7 +180,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada pembagian bersusun dengan pembagi berkoefisien $a > 1$, setiap langkah pembagian suku berderajat tertinggi dibagi dengan suku $ax$. **Tips:** Lupa membagi koefisien dengan 2 sehingga menghasilkan $4x^2 - 4x + 6$."
   },
   {
     "id": "mat-alj-polinom-susun-006",
@@ -209,7 +214,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembagian suku banyak oleh pembagi berbentuk kuadrat definit yang tidak dapat difaktorkan diselesaikan menggunakan algoritma pembagian bersusun panjang hingga menghasilkan sisa dengan derajat kurang dari 2 (bentuk linear $Ax + B$). **Tips:** Kesalahan tanda saat mengurangkan suku-suku negatif pada setiap tahapan bersusun."
   },
   {
     "id": "mat-alj-polinom-susun-007",
@@ -242,7 +248,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suku banyak $P(x)$ habis dibagi oleh $(x^2 + x - 2) = (x + 2)(x - 1)$, maka menurut teorema faktor berlaku $P(-2) = 0$ dan $P(1) = 0$. **Tips:** Lupa bahwa $(-2)^3 = -8$ dan $-b(-2) = +2b$."
   },
   {
     "id": "mat-alj-polinom-susun-008",
@@ -275,7 +282,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas pembagian suku banyak menyatakan bahwa polinomial asal diperoleh dari perkalian pembagi dengan hasil bagi ditambah sisa pembagian: $P(x) = Q(x) \\cdot H(x) + S(x)$."
   },
   {
     "id": "mat-alj-polinom-susun-009",
@@ -308,7 +316,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pembagian bersusun dengan koefisien utama pembagi $a > 1$, hasil bagi ditentukan melalui pembagian suku tertinggi berturut-turut oleh suku utama pembagi ($2x^2$). **Tips:** Lupa membagi koefisien dengan 2 pada setiap langkah pembagian suku baru."
   },
   {
     "id": "mat-alj-polinom-susun-010",
@@ -341,7 +350,8 @@
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika polinomial habis dibagi oleh $(x^2 - 1) = (x - 1)(x + 1)$, maka sisa pembagian untuk pembuat nol $x = 1$ dan $x = -1$ keduanya harus bernilai nol ($P(1) = 0$ dan $P(-1) = 0$)."
   }
 ];
 

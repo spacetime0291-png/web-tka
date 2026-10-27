@@ -44,7 +44,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fungsi irasional bentuk akar kuadrat $\\sqrt{g(x)}$ terdefinisi pada himpunan bilangan real jika bilangan di bawah tanda akar (radikan) bernilai non-negatif ($g(x) \\ge 0$)."
   },
   {
     "id": "fun-mutlak-dasar-akar-002",
@@ -77,7 +78,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Saat membagi atau mengalikan kedua ruas pertidaksamaan dengan bilangan negatif, tanda arah pertidaksamaan wajib dibalik. **Tips:** Lupa membalikkan tanda pertidaksamaan saat membagi dengan $-2$ sehingga menghasilkan $x \\ge 3$."
   },
   {
     "id": "fun-mutlak-dasar-akar-003",
@@ -110,7 +112,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk akar berindeks genap bernilai riil jika ekspresi di dalam akar tidak bernilai negatif. **Tips:** Kesalahan tanda operasi saat memindahkan konstanta 9 menjadi $+9$ sehingga memilih $x \\ge 3$."
   },
   {
     "id": "fun-mutlak-dasar-akar-004",
@@ -143,7 +146,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat agar fungsi terdefinisi adalah nilai di bawah tanda akar lebih besar dari atau sama dengan nol. **Tips:** Menulis $x \\ge 5$ karena mengira tanda pertidaksamaan selalu mengarah ke nilai lebih besar."
   },
   {
     "id": "fun-mutlak-dasar-akar-005",
@@ -176,7 +180,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Radikan di dalam akar kuadrat harus bernilai lebih besar atau sama dengan nol ($2x - 8 \\ge 0$). **Tips:** Lupa membagi dengan 2 sehingga menyimpulkan $x \\ge 8$."
   },
   {
     "id": "fun-mutlak-dasar-akar-006",
@@ -209,7 +214,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Radikan di dalam akar kuadrat harus bernilai non-negatif ($x^2 - 16 \\ge 0$). Pertidaksamaan kuadrat diselesaikan melalui pemfaktoran dan uji garis bilangan. **Tips:** Tertukar dengan daerah interval tertutup $-4 \\le x \\le 4$ yang merupakan penyelesaian untuk $x^2 - 16 \\le 0$."
   },
   {
     "id": "fun-mutlak-dasar-akar-007",
@@ -242,7 +248,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyelesaian dari pertidaksamaan kuadrat bertanda koefisien $x^2$ negatif $a - x^2 \\ge 0$ berbentuk interval tertutup $-\\sqrt{a} \\le x \\le \\sqrt{a}$. **Tips:** Lupa membalik tanda pertidaksamaan saat mengalikan dengan $-1$ sehingga memilih daerah di luar akar $x \\le -3$ atau $x \\ge 3$."
   },
   {
     "id": "fun-mutlak-dasar-akar-008",
@@ -275,7 +282,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika bentuk akar berada pada posisi penyebut pecahan, radikan harus positif tegas ($> 0$), karena penyebut tidak boleh sama dengan nol dan radikan tidak boleh negatif."
   },
   {
     "id": "fun-mutlak-dasar-akar-009",
@@ -308,7 +316,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat radikan pecahan adalah $\\frac{x - 1}{x + 2} \\ge 0$ dengan syarat tambahan penyebut $x + 2 \\neq 0$. **Tips:** Memasukkan tanda sama dengan pada titik $-2$ ($x \\le -2$) yang membuat penyebut bernilai nol."
   },
   {
     "id": "fun-mutlak-dasar-akar-010",
@@ -341,7 +350,8 @@
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah asal dari jumlahan dua fungsi irasional merupakan irisan dari daerah asal masing-masing suku akar: $D_f = D_1 \\cap D_2$. **Tips:** Menggabungkan (union) kedua interval alih-alih mengirisnya (intersection)."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Refleksi titik $P(x, y)$ terhadap sumbu-$X$ tidak mengubah absis ($x$), tetapi mengubah tanda ordinat ($y$). Matriks transformasinya adalah $\\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$, sehingga $x' = x$ dan $y' = -y$. **Tips:** Tertukar dengan refleksi terhadap sumbu-$Y$ yang mengubah tanda absis ($x$) bukannya ordinat ($y$)."
   },
   {
     "id": "mat-geo-trans-refleksi-002",
@@ -77,7 +78,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Refleksi titik $P(x, y)$ terhadap sumbu-$Y$ membalikkan tanda absis ($x$) dan mempertahankan ordinat ($y$), yaitu $x' = -x$ dan $y' = y$. **Tips:** Mengubah kedua tanda koordinat seperti pada refleksi terhadap titik pusat $(0,0)$."
   },
   {
     "id": "mat-geo-trans-refleksi-003",
@@ -110,7 +112,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pencerminan suatu titik $P(x, y)$ terhadap garis $y = x$ menukarkan posisi absis dan ordinat tanpa mengubah tanda: $(x, y) \\to (y, x)$. Matriks transformasinya adalah $\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$. **Tips:** Mengubah tanda koordinat menjadi $(-y, -x)$ yang merupakan aturan refleksi terhadap garis $y = -x$."
   },
   {
     "id": "mat-geo-trans-refleksi-004",
@@ -143,7 +146,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pencerminan titik $P(x, y)$ terhadap garis $y = -x$ menghasilkan bayangan dengan menukar posisi serta membalikkan tanda kedua koordinat: $(x, y) \\to (-y, -x)$. Matriks transformasinya adalah $\\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$. **Tips:** Lupa mengubah tanda negatif saat menukar posisi koordinat, menghasilkan $(-6, 2)$."
   },
   {
     "id": "mat-geo-trans-refleksi-005",
@@ -176,7 +180,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pencerminan titik $P(x, y)$ terhadap titik pangkal $O(0, 0)$ setara dengan rotasi $180^\\circ$, yang membalik tanda kedua koordinat: $(x, y) \\to (-x, -y)$. Matriks transformasinya adalah $\\begin{pmatrix} -1 & 0 \\\\ 0 & -1 \\end{pmatrix}$. **Tips:** Hanya mengubah salah satu tanda koordinat atau tidak teliti dengan tanda minus ganda $(-(-7) = +7)$."
   },
   {
     "id": "mat-geo-trans-refleksi-006",
@@ -209,7 +214,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi suatu kurva terhadap garis vertikal $x = h$ memenuhi rumus koordinat $x' = 2h - x \\iff x = 2h - x'$ dan $y' = y \\iff y = y'$. Substitusikan relasi ini ke persamaan garis asal. **Tips:** Lupa mengalikan $-1$ pada seluruh suku, atau salah menerapkan rumus $2h - x$ menjadi $x - 2h$."
   },
   {
     "id": "mat-geo-trans-refleksi-007",
@@ -242,7 +248,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pencerminan terhadap garis horizontal $y = k$ mengubah koordinat menurut $x' = x \\iff x = x'$ dan $y' = 2k - y \\iff y = 2k - y'$. **Tips:** Hanya menegatifkan ruas kanan tanpa mengurangkan dari $2k$, sehingga menghasilkan $y = -x^2 + 4x - 1$."
   },
   {
     "id": "mat-geo-trans-refleksi-008",
@@ -275,7 +282,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi dua refleksi berurutan terhadap dua garis vertikal sejajar $x = h_1$ lalu $x = h_2$ ekuivalen dengan pergeseran (translasi) horizontal sejauh $\\Delta x = 2(h_2 - h_1)$ dengan ordinat tetap ($y' = y$). **Tips:** Membalik urutan pengurangan garis cermin $2(h_1 - h_2)$ yang menghasilkan pergeseran positif alih-alih negatif."
   },
   {
     "id": "mat-geo-trans-refleksi-009",
@@ -308,7 +316,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi merupakan transformasi isometri sehingga jari-jari lingkaran bayangan tetap ($r' = r$). Oleh karena itu, kita cukup merefleksikan koordinat titik pusat lingkaran $P(x_p, y_p)$ terhadap garis $y = -x$, yang memenuhi $(x', y') = (-y_p, -x_p)$. **Tips:** Lupa menukar komponen absis dan ordinat saat mencerminkan terhadap garis $y = -x$ sehingga hanya mengubah tandanya saja."
   },
   {
     "id": "mat-geo-trans-refleksi-010",
@@ -341,7 +350,8 @@
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak antara dua titik $(x_1, y_1)$ dan $(x_2, y_2)$ dihitung dengan rumus $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Bayangan titik dicari secara bertahap menggunakan kaidah refleksi sumbu-$X$ lalu refleksi garis vertikal $x = h$. **Tips:** Salah menghitung selisih ordinat $(-6 - 2)$ menjadi $-4$ karena keliru tanda pengurangan bilangan negatif."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat perkalian dua matriks $A_{m \\times p} \\cdot B_{q \\times n}$ adalah banyak kolom pada matriks pengali pertama harus sama dengan banyak baris pada matriks pengali kedua ($p = q$). Matriks hasil perkaliannya akan berordo $m \\times n$. **Tips:** Sering mengira kedua matriks harus memiliki ordo yang sama (seperti syarat penjumlahan matriks)."
   },
   {
     "id": "mat-alj-matriks-kali-002",
@@ -77,7 +78,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian matriks baris berordo $1 \\times n$ dengan matriks kolom berordo $n \\times 1$ menghasilkan matriks skalar berordo $1 \\times 1$ melalui penjumlahan hasil kali elemen-elemen yang sepadan: $$\\begin{pmatrix} p_1 & p_2 & p_3 \\end{pmatrix} \\begin{pmatrix} q_1 \\\\ q_2 \\\\ q_3 \\end{pmatrix} = (p_1 q_1 + p_2 q_2 + p_3 q_3)$$. **Tips:** Kesalahan tanda operasi pada $(-2 \\times 5) = -10$."
   },
   {
     "id": "mat-alj-matriks-kali-003",
@@ -110,7 +112,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perkalian dua matriks ordo $2 \\times 2$ dirumuskan sebagai: $$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} e & f \\\\ g & h \\end{pmatrix} = \\begin{pmatrix} ae + bg & af + bh \\\\ ce + dg & cf + dh \\end{pmatrix}$$."
   },
   {
     "id": "mat-alj-matriks-kali-004",
@@ -143,7 +146,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Matriks identitas $I$ bertindak sebagai elemen netral (unsur identitas) terhadap operasi perkalian matriks, sehingga berlaku sifat: $$A \\cdot I = I \\cdot A = A$$. **Tips:** Mengira perkalian dengan matriks identitas menghasilkan matriks identitas $I$ atau matriks kuadrat $A^2$."
   },
   {
     "id": "mat-alj-matriks-kali-005",
@@ -176,7 +180,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perpangkatan matriks $M^2$ didefinisikan sebagai perkalian matriks $M$ dengan dirinya sendiri ($M \\cdot M$), bukan mengkuadratkan setiap elemennya."
   },
   {
     "id": "mat-alj-matriks-kali-006",
@@ -209,7 +214,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian matriks pada umumnya tidak bersifat komutatif ($AB \\neq BA$). Operasi $AB - BA$ (disebut komutator) dihitung dengan mengalikan masing-masing urutan terlebih dahulu, kemudian mengurangkan elemen-elemen yang seletak. **Tips:** Mengasumsikan bahwa $AB = BA$ sehingga langsung menjawab matriks nol $\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-kali-007",
@@ -242,7 +248,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk menghitung perpangkatan matriks berpangkat besar $A^n$, selidiki pola dari $A^2, A^3, \\dots$. Matriks segitiga atas satuan berpola $\\begin{pmatrix} 1 & k \\\\ 0 & 1 \\end{pmatrix}^n = \\begin{pmatrix} 1 & n \\cdot k \\\\ 0 & 1 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-kali-008",
@@ -275,7 +282,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Teorema Cayley-Hamilton, setiap matriks persegi ordo $2 \\times 2$ memenuhi persamaan karakteristiknya sendiri: $$A^2 - \\text{tr}(A) \\cdot A + \\det(A) \\cdot I = O \\implies A^2 = \\text{tr}(A) \\cdot A - \\det(A) \\cdot I$$ dengan $\\text{tr}(A) = a + d$ (trace matriks) dan $\\det(A) = ad - bc$."
   },
   {
     "id": "mat-alj-matriks-kali-009",
@@ -308,7 +316,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks bernilai sama jika elemen-elemen seletaknya bernilai sama. Perkalian matriks pada ruas kiri dijabarkan terlebih dahulu, lalu elemen-elemen yang bersesuaian disamakan untuk menyusun sistem persamaan linier satu peubah."
   },
   {
     "id": "mat-alj-matriks-kali-010",
@@ -341,7 +350,8 @@
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Transpos dari perkalian dua matriks memenuhi sifat $(AB)^T = B^T A^T$. Kita dapat menghitung hasil kali $AB$ terlebih dahulu lalu mentransposkannya dengan menukar baris menjadi kolom. **Tips:** Lupa mentransposkan matriks hasil perkalian sehingga memilih $\\begin{pmatrix} 10 & -8 \\\\ 8 & 2 \\end{pmatrix}$."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$F = k \\frac{|q_1 q_2|}{r^2}$$ dengan $k$ adalah konstanta elektrostatik."
   },
   {
     "id": "fis-lis-statis-coulomb-002",
@@ -77,7 +78,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$F \\propto \\frac{1}{r^2} \\implies \\frac{F'}{F} = \\left(\\frac{r}{r'}\\right)^2$$."
   },
   {
     "id": "fis-lis-statis-coulomb-003",
@@ -110,7 +112,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Besar gaya Coulomb dirumuskan dengan $F = k \\frac{|q_1 q_2|}{r^2}$. Dua muatan yang berlawanan jenis tanda (+ dan -) akan saling tarik-menarik."
   },
   {
     "id": "fis-lis-statis-coulomb-004",
@@ -143,7 +146,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya Coulomb di dalam medium dengan permitivitas relatif $\\varepsilon_r$ melemah dibandingkan dengan gayanya di ruang hampa/udara menurut hubungan: $$F_{\\text{medium}} = \\frac{F_{\\text{udara}}}{\\varepsilon_r}$$."
   },
   {
     "id": "fis-lis-statis-coulomb-005",
@@ -176,7 +180,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika dua konduktor identik disentuhkan, muatan total akan terdistribusi sama rata ke kedua bola: $$q' = \\frac{q_A + q_B}{2}$$ Gaya elektrostatik sebanding dengan hasil kali nilai mutlak muatan ($F \\propto |q_1 q_2|$)."
   },
   {
     "id": "fis-lis-statis-coulomb-006",
@@ -209,7 +214,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar resultan gaya Coulomb pada muatan uji di antara dua muatan sejenis bernilai nol, gaya tolak dari muatan $A$ harus seimbang dengan gaya tolak dari muatan $B$: $$F_{AC} = F_{BC} \\implies k \\frac{q_A q_C}{r_{AC}^2} = k \\frac{q_B q_C}{r_{BC}^2}$$."
   },
   {
     "id": "fis-lis-statis-coulomb-007",
@@ -242,7 +248,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya elektrostatik merupakan besaran vektor. Resultan dua gaya $F_1$ dan $F_2$ yang membentuk sudut apit $\\theta$ dihitung menggunakan aturan kosinus penjumlahan vektor: $$F_{\\text{res}} = \\sqrt{F_1^2 + F_2^2 + 2 F_1 F_2 \\cos\\theta}$$."
   },
   {
     "id": "fis-lis-statis-coulomb-008",
@@ -275,7 +282,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Salah satu muatan berinteraksi dengan tiga muatan lainnya: dua muatan pada sisi bujur sangkar berjarak $a$ yang saling tegak lurus, dan satu muatan pada sudut diagonal berjarak $a\\sqrt{2}$. Resultan gaya diperoleh dari penjumlahan vektor ketiganya."
   },
   {
     "id": "fis-lis-statis-coulomb-009",
@@ -308,7 +316,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kesetimbangan statis sebuah bola bermuatan yang digantung tali, berlaku $\\Sigma F_x = 0$ dan $\\Sigma F_y = 0$: $$T \\sin\\theta = F_e$$ $$T \\cos\\theta = m g$$ Maka berlaku hubungan: $\\tan\\theta = \\frac{F_e}{m g} \\implies F_e = m g \\tan\\theta$."
   },
   {
     "id": "fis-lis-statis-coulomb-010",
@@ -341,7 +350,8 @@
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar seluruh sistem seimbang, gaya neto pada setiap muatan harus nol. Muatan tengah yang simetris selalu berada dalam kesetimbangan ($F_{\\text{net}} = 0$) untuk sembarang nilai $q$. Oleh karena itu, nilai $q$ ditentukan oleh syarat kesetimbangan pada salah satu muatan $+Q$ di ujung."
   },
   {
     "id": "mudah-fis-05",
@@ -374,7 +384,8 @@
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-statis",
-    "subTopicSlug": "muatan-listrik-coulomb"
+    "subTopicSlug": "muatan-listrik-coulomb",
+    "hint": "Gunakan perumusan konsep fisis: $$F = k \\frac{|q_1 q_2|}{r^2}$$. **Tips:** Sering lupa mengubah satuan $\\text{cm}$ ke $\\text{meter}$ atau $\\mu\\text{C}$ ke $\\text{Coulomb}$."
   }
 ];
 

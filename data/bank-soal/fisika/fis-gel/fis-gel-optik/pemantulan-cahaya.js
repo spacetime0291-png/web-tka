@@ -44,7 +44,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Pemantulan Cahaya (Hukum Snellius): 1. Sinar datang, sinar pantul, dan garis normal terletak pada satu bidang datar. 2. Sudut datang ($i$) sama dengan sudut pantul ($r$), dengan sudut selalu diukur relatif terhadap garis normal (bukan terhadap bidang cermin). $$i = r$$. **Tips:** Jebakan paling sering adalah langsung menganggap sudut terhadap bidang cermin ($30^\\circ$) sebagai sudut datang/pantul ()."
   },
   {
     "id": "fis-gel-optik-pantul-002",
@@ -77,7 +78,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cermin datar membentuk bayangan melalui perpanjangan sinar-sinar pantul di belakang cermin. Sifat bayangan cermin datar: 1. Maya (terbentuk di belakang cermin, tidak dapat ditangkap layar). 2. Tegak dan tertukar sisi kiri-kanan (lateral inversion). 3. Sama besar dengan bendanya ($M = 1$). 4. Jarak bayangan ke cermin sama dengan jarak benda ke cermin ($|s'| = s$). **Tips:** Jangan mengira bayangan cermin datar bersifat nyata."
   },
   {
     "id": "fis-gel-optik-pantul-003",
@@ -110,7 +112,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jumlah bayangan ($n$) yang dibentuk oleh dua cermin datar yang saling membentuk sudut apit $\\alpha$ dihitung dengan persamaan: $$n = \\frac{360^\\circ}{\\alpha} - 1$$. **Tips:** Lupa mengurangi angka 1 adalah kesalahan yang sangat umum, sehingga memilih angka 6 ()."
   },
   {
     "id": "fis-gel-optik-pantul-004",
@@ -143,7 +146,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada cermin cekung, jarak fokus bernilai positif dan sama dengan setengah jari-jari kelengkungan ($f = \\frac{R}{2}$). Hubungan antara jarak benda ($s$), jarak fokus ($f$), dan jarak bayangan ($s'$) adalah: $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$$."
   },
   {
     "id": "fis-gel-optik-pantul-005",
@@ -176,7 +180,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cermin cembung memiliki titik fokus negatif ($f = -R/2$). Untuk semua posisi benda nyata di depan cermin cembung ($s > 0$): $$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s} < 0$$ Nilai $s'$ selalu negatif (maya), bayangan selalu tegak ($M > 0$), dan $|s'| < s$ sehingga $|M| < 1$ (diperkecil)."
   },
   {
     "id": "fis-gel-optik-pantul-006",
@@ -209,7 +214,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan yang bersifat tegak pada cermin cekung selalu merupakan bayangan maya (terletak di ruang I, yaitu $s < f$). Pada bayangan maya tegak, jarak bayangan bernilai negatif: $$M = -\\frac{s'}{s} = +3 \\implies s' = -3s$$."
   },
   {
     "id": "fis-gel-optik-pantul-007",
@@ -242,7 +248,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan nyata pada cermin cekung selalu berjarak positif ($s' > 0$) dan berada di depan cermin. Hubungan perbesaran linier untuk bayangan nyata adalah: $$M = \\frac{s'}{s} = 2 \\implies s' = 2s$$."
   },
   {
     "id": "fis-gel-optik-pantul-008",
@@ -275,7 +282,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada cermin cembung, fokus bernilai negatif ($f = -R/2$) dan bayangan selalu maya ($s' = -M \\cdot s = -\\frac{1}{3}s$): $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$$."
   },
   {
     "id": "fis-gel-optik-pantul-009",
@@ -308,7 +316,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan hukum pemantulan sudut datang sama dengan sudut pantul: 1. Panjang cermin datar minimum agar seseorang dapat melihat seluruh tubuhnya adalah setengah dari tinggi tubuh orang tersebut: $$L_{\\min} = \\frac{1}{2} h_{\\text{badan}}$$ 2. Ketinggian tepi bawah cermin dari lantai agar kaki terlihat adalah setengah dari ketinggian matanya dari lantai: $$H_{\\text{bawah}} = \\frac{1}{2} h_{\\text{mata}}$$."
   },
   {
     "id": "fis-gel-optik-pantul-010",
@@ -341,7 +350,8 @@
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Posisi bayangan dihitung pada dua keadaan berbeda dengan rumus cermin cekung: $$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$ Pergeseran bayangan adalah selisih posisi bayangan akhir terhadap posisi bayangan awal: $\\Delta s' = |s_2' - s_1'|$."
   }
 ];
 

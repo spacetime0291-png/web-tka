@@ -44,7 +44,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada bidang horizontal tanpa gaya vertikal luar tambahan, gaya normal ($N$) mengimbangi gaya berat ($w$): $$N = w = m \\cdot g$$. **Tips:** Menyamakan satuan gaya dengan massa ($8\\text{ N}$) atau lupa mengalikan dengan percepatan gravitasi $g$."
   },
   {
     "id": "fis-din-gaya-berat-normal-002",
@@ -77,7 +78,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya normal pada bidang miring mengimbangi komponen gaya berat yang tegak lurus terhadap permukaan bidang miring: $$N = w \\cos\\theta = m \\cdot g \\cdot \\cos\\theta$$."
   },
   {
     "id": "fis-din-gaya-berat-normal-003",
@@ -110,7 +112,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Timbangan badan mengukur gaya normal ($N$) desakan kaki. Saat lift dipercepat ke atas, berlaku Hukum II Newton: $$\\Sigma F_y = m \\cdot a \\implies N - w = m \\cdot a \\implies N = m(g + a)$$."
   },
   {
     "id": "fis-din-gaya-berat-normal-004",
@@ -143,7 +146,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kata 'normal' dalam geometri matematika berarti tegak lurus ($90^\\circ$). Gaya normal adalah gaya kontak tolak-menolak antar atom pada permukaan sentuh yang selalu tegak lurus bidang kontak."
   },
   {
     "id": "fis-din-gaya-berat-normal-005",
@@ -176,7 +180,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya normal pada bidang horizontal dipengaruhi oleh seluruh gaya vertikal luar yang bekerja pada benda: $$\\Sigma F_y = 0 \\implies N - w - F = 0 \\implies N = w + F$$."
   },
   {
     "id": "fis-din-gaya-berat-normal-006",
@@ -209,7 +214,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $\\sum F_y = m a_y$. Ketika lift bergerak ke bawah dan mengalami perlambatan, vektor percepatan lift justru berarah ke atas ($a_y = +a$). Gaya normal yang dikerjakan timbangan merupakan gaya berat semu yang terbaca oleh alat ukur."
   },
   {
     "id": "fis-din-gaya-berat-normal-007",
@@ -242,7 +248,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya normal bekerja tegak lurus permukaan bidang miring. Pada sumbu tegak lurus bidang miring (sumbu-$y'$), berlaku kesetimbangan translasi $\\sum F_\\perp = 0$. Komponen gaya yang tegak lurus bidang miring berasal dari proyeksi gaya berat ($W_\\perp = m g \\cos\\theta$) dan proyeksi gaya luar horizontal ($F_\\perp = F \\sin\\theta$)."
   },
   {
     "id": "fis-din-gaya-berat-normal-008",
@@ -275,7 +282,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya normal adalah gaya kontak yang arahnya selalu tegak lurus terhadap bidang sentuh. Pada dinding vertikal, bidang sentuh berada pada posisi vertikal sehingga gaya normal berarah horizontal tegak lurus dinding. Pada sumbu horizontal buku diam, sehingga $\\sum F_x = 0 \\implies N = F$. **Tips:** Salah satu miskonsepsi paling umum adalah menganggap gaya normal selalu sama dengan gaya berat $m g$."
   },
   {
     "id": "fis-din-gaya-berat-normal-009",
@@ -308,7 +316,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Diagram benda bebas (Free Body Diagram) dipisahkan untuk balok $B$ dan sistem gabungan balok $(A+B)$. Gaya normal timbul pada setiap antarmuka kontak berdasarkan kondisi kesetimbangan vertikal $\\sum F_y = 0$."
   },
   {
     "id": "fis-din-gaya-berat-normal-010",
@@ -341,7 +350,8 @@
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada puncak lintasan cembung melingkar vertikal, resultan gaya berarah menuju pusat kelengkungan (ke arah bawah) sebagai gaya sentripetal: $\\sum F_r = m \\frac{v^2}{R}$. Gaya yang bekerja adalah gaya berat ke bawah ($W$) dan gaya normal ke atas ($N$). **Tips:** Kerap tertukar tanda antara puncak cembung ($N = m(g - v^2/R)$) dan lembah cekung ($N = m(g + v^2/R)$)."
   },
   {
     "id": "fis-din-01",
@@ -374,7 +384,8 @@
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-berat-normal"
+    "subTopicSlug": "gaya-berat-normal",
+    "hint": "Konsep: Hukum II Newton pada kerangka acuan vertikal: $\\Sigma F_y = m \\cdot a$."
   },
   {
     "id": "fis-din-25",
@@ -407,7 +418,8 @@
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-berat-normal"
+    "subTopicSlug": "gaya-berat-normal",
+    "hint": "Konsep: Kondisi jatuh bebas dan bobot semu: saat percepatan sistem $a = g$ ke bawah, berat semu bernilai nol (keadaan tanpa bobot / weightlessness)."
   },
   {
     "id": "fis-din-42",
@@ -440,7 +452,8 @@
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-berat-normal"
+    "subTopicSlug": "gaya-berat-normal",
+    "hint": "Konsep: Perbandingan gaya berat benda pada dua planet: $W \\propto \\frac{M}{R^2}$."
   },
   {
     "id": "fis-din-27",
@@ -473,7 +486,8 @@
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-berat-normal"
+    "subTopicSlug": "gaya-berat-normal",
+    "hint": "Konsep: Hukum II Newton pada kerangka acuan vertikal mengalami akselerasi tinggi ($g$-force): $N = m(g + a)$."
   }
 ];
 

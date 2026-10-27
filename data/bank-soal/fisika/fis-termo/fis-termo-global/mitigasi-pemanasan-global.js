@@ -44,7 +44,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Energi terbarukan adalah energi yang bersumber dari proses alam yang berkelanjutan dan tidak akan habis jika dikonsumsi, serta tidak melepaskan gas rumah kaca selama masa operasinya. Contohnya: radiasi foton surya (fotovoltaik), energi kinetik angin (turbin bayu), dan energi potensial gravitasi aliran air (pembangkit listrik hidroelektrik)."
   },
   {
     "id": "fis-termo-global-mitigasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tumbuhan berfotosintesis dengan menyerap karbon dioksida dan air menggunakan energi foton matahari: $$6\\,\\text{CO}_2 + 6\\,\\text{H}_2\\text{O} + \\text{cahaya} \\to \\text{C}_6\\text{H}_{12}\\text{O}_6 + 6\\,\\text{O}_2$$ Molekul glukosa kemudian dipolimerisasi menjadi selulosa dan lignin yang menyusun struktur batang pohon (sekuestrasi karbon terikat)."
   },
   {
     "id": "fis-termo-global-mitigasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Efisiensi konversi energi menyatakan rasio daya berguna terhadap daya masukan total ($\\eta = \\frac{P_{\\text{berguna}}}{P_{\\text{total}}} \\times 100\\%$). - Lampu pijar bekerja berdasarkan radiasi termal benda hitam pada filament tungsten bersuhu sekitar $2500\\text{ K}$, di mana $>90\\%$ radiasinya berada pada spektrum inframerah (panas) dan $<10\\%$ berupa cahaya tampak. - Lampu LED menggunakan semikonduktor p-n junction yang memancarkan foton cahaya tampak secara langsung melalui rekombinasi elektron-hole elektro-luminesens dengan efisiensi konversi sangat tinggi dan panas terbuang minimal."
   },
   {
     "id": "fis-termo-global-mitigasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Produksi aluminium primer melalui proses Hall-Héroult membutuhkan elektrolisis leburan alumina ($\\text{Al}_2\\text{O}_3$) pada suhu sekitar $950^\\circ\\text{C}$ yang menghabiskan daya listrik masif ($\\approx 14 - 15\\text{ kWh/kg Al}$) dan anoda karbon yang teroksidasi menjadi $\\text{CO}_2$. Mendaur ulang aluminium hanya membutuhkan kalor peleburan logam aluminium bekas pada $660^\\circ\\text{C}$ (hanya butuh $\\approx 5\\%$ energi), sehingga secara langsung memangkas konsumsi energi dan emisi gas $\\text{CO}_2$ dari pembangkit listrik terkait."
   },
   {
     "id": "fis-termo-global-mitigasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pasal 2 Perjanjian Paris (UNFCCC 2015) menetapkan tujuan jangka panjang untuk menahan laju peningkatan suhu rata-rata global hingga 'jauh di bawah $2^\\circ\\text{C}$' di atas tingkat masa pra-industri, serta secara sungguh-sungguh berikhtiar membatasi kenaikan suhu tersebut hingga $1{,}5^\\circ\\text{C}$ demi menghindari dampak bencana iklim paling katastropik bagi peradaban manusia."
   },
   {
     "id": "fis-termo-global-mitigasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Reduksi emisi gas rumah kaca dihitung dari perkalian antara energi listrik terbarukan yang disubstitusikan ($E$) dengan intensitas emisi karbon pembangkit listrik fosil acuan ($FE$): $$\\Delta m_{\\text{CO}_2} = E \\times FE$$."
   },
   {
     "id": "fis-termo-global-mitigasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluida superkritis adalah keadaan materi pada temperatur dan tekanan di atas titik kritis termodinamikanya ($T_c = 31{,}1^\\circ\\text{C}$ dan $P_c = 73{,}8\\text{ bar}$ untuk $\\text{CO}_2$). Pada keadaan superkritis, batas fase cair-gas lenyap sehingga materi memiliki kombinasi sifat fisis unik: 1. Kerapatan (densitas) tinggi mendekati cairan ($600 - 800\\text{ kg/m}^3$), menghemat volume penyimpanan secara drastis. 2. Viskositas rendah dan difusivitas tinggi menyerupai gas, meminimalkan kehilangan tekanan saat dipompa melalui pipa injeksi dan memaksimalkan kemampuan penetrasi ke celah mikroskopis batuan sedimen penampung."
   },
   {
     "id": "fis-termo-global-mitigasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada sistem Cap-and-Trade: 1. Surplus kuota (kredit karbon yang dapat dijual) = $\\text{Kuota} - \\text{Emisi Aktual}$. 2. Defisit kuota (kredit karbon yang wajib dibeli) = $\\text{Emisi Aktual} - \\text{Kuota}$. 3. Total biaya transaksi = $\\text{Defisit yang dibeli} \\times \\text{Harga per satuan ton}$. **Tips:** Jangan menggunakan surplus total Pabrik A ($6.000 \\times 30 = \\$180.000$, )."
   },
   {
     "id": "fis-termo-global-mitigasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Analisis siklus hidup neraca karbon BECCS: 1. Fase Pertumbuhan: Tanaman biomassa menyerap $\\text{CO}_2$ dari atmosfer melalui fotosintesis (aliran karbon: atmosfer $\\to$ biomassa, $\\Delta C < 0$). 2. Fase Pembangkitan: Biomassa dibakar menghasilkan energi kalor/listrik. 3. Fase Penangkapan & Sekuestrasi: Alih-alih dilepaskan ke udara, emisi $\\text{CO}_2$ cerobong ditangkap oleh unit CCS dan disimpan permanen di formasi geologi bawah tanah (aliran karbon: cerobong $\\to$ litosfer). Akibatnya, total karbon di atmosfer berkurang secara bersih (net-negative carbon balance)."
   },
   {
     "id": "fis-termo-global-mitigasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Manajemen Radiasi Surya (SRM) terinspirasi oleh letusan gunung berapi besar (seperti Gunung Pinatubo 1991), di mana partikel aerosol belerang ($\\text{SO}_2 / \\text{SO}_4^{2-}$) di stratosfer menghamburkan dan memantulkan radiasi surya datang kembali ke luar angkasa, menaikkan albedo planetari bumi sehingga mendinginkan permukaan secara cepat. Namun, SRM hanya memanipulasi kesetimbangan radiasi insolasi surya dan sama sekali TIDAK menyerap atau mengurangi molekul gas $\\text{CO}_2$ di atmosfer. Oleh karena itu, konsentrasi $\\text{CO}_2$ yang tetap tinggi terus larut ke samudra dan menyebabkan pengasaman laut (ocean acidification) tanpa henti."
   },
   {
     "id": "drill-pem-04",
@@ -374,7 +384,8 @@
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "mitigasi-pemanasan-global"
+    "subTopicSlug": "mitigasi-pemanasan-global",
+    "hint": "Global Warming Potential (GWP): Metana ($CH_4$) memiliki indeks GWP sekitar 25–28 kali lebih kuat daripada $CO_2$ dalam kurun waktu 100 tahun dalam hal efektivitas penyerapan radiasi inframerah."
   }
 ];
 

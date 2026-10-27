@@ -44,7 +44,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Mudah",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Pembacaan jangka sorong dirumuskan dengan $x = \\text{Skala Utama} + (\\text{Skala Nonius} \\times \\text{Ketelitian})$. Pelaporan hasil pengukuran tunggal dituliskan dalam format baku $(x \\pm \\Delta x)$, di mana ketidakpastian mutlak adalah $\\Delta x = \\frac{1}{2} \\times \\text{nilai skala terkecil}$."
   },
   {
     "id": "fis-kin-ukur-jangka-002",
@@ -77,7 +78,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Mudah",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Prinsip skala nonius (Vernier) adalah memanfaatkan selisih panjang antara 1 bagian skala utama dan 1 bagian skala nonius. Ketelitian atau nilai skala terkecil (NST) alat dirumuskan sebagai $\\text{NST} = 1\\text{ SU} - 1\\text{ SN}$."
   },
   {
     "id": "fis-kin-ukur-jangka-003",
@@ -110,7 +112,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Mudah",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Rahang atas jangka sorong digunakan khusus untuk mengukur diameter dalam suatu rongga pipa. Hasil pembacaan diameter $d = \\text{SU} + (\\text{SN} \\times \\text{Ketelitian})$, kemudian luas penampang lingkaran dihitung dengan $A = \\frac{1}{4} \\pi d^2 = \\pi r^2$."
   },
   {
     "id": "fis-kin-ukur-jangka-004",
@@ -143,7 +146,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Mudah",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Jangka sorong memiliki tiga bagian pengukuran utama: rahang bawah untuk mengukur diameter luar atau ketebalan, rahang atas untuk mengukur diameter dalam, dan bilah tangkai ekor (depth probe) untuk mengukur kedalaman rongga. Baut pengunci berfungsi mempertahankan posisi rahang saat pembacaan hasil."
   },
   {
     "id": "fis-kin-ukur-jangka-005",
@@ -176,7 +180,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Mudah",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Pembacaan jangka sorong dalam satuan milimeter: $x = \\text{SU (mm)} + (\\text{SN} \\times \\text{Ketelitian (mm)})$. Konversi satuan dari milimeter ke satuan SI (meter) menggunakan faktor $1\\text{ mm} = 10^{-3}\\text{ m}$. **Tips:** Distraktor B mengasumsikan garis ke-7 dikali $0{,}1\\text{ mm}$ menghasilkan $46{,}70\\text{ mm}$."
   },
   {
     "id": "fis-kin-ukur-jangka-006",
@@ -209,7 +214,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Kesalahan titik nol positif (positive zero error) terjadi ketika rahang tertutup rapat tetapi garis nol nonius berada di sebelah kanan garis nol skala utama ($Z > 0$). Nilai pembacaan yang sebenarnya diperoleh dengan mengurangkan nilai terukur dengan nilai kesalahan nol: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-jangka-007",
@@ -242,7 +248,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Kesalahan titik nol negatif (negative zero error) terjadi bila garis nol nonius berada di sebelah kiri garis nol skala utama saat rahang rapat. Besar kesalahan negatif dihitung dari selisih jumlah total skala nonius dengan garis yang berimpit: $Z = - (N - n) \\times \\text{Ketelitian}$. Koreksi nilai terukur dirumuskan: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-jangka-008",
@@ -275,7 +282,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Jangka sorong dengan 20 bagian skala nonius memiliki ketelitian $\\text{NST} = \\frac{1\\text{ mm}}{20} = 0{,}05\\text{ mm}$. Karena kedua koin homogen sejenis (massa jenis $\\rho$ sama) dan ketebalan $h$ sama, perbandingan massa sebanding dengan perbandingan kuadrat diameter koin: $\\frac{m_B}{m_A} = \\frac{V_B}{V_A} = \\left(\\frac{d_B}{d_A}\\right)^2$."
   },
   {
     "id": "fis-kin-ukur-jangka-009",
@@ -308,7 +316,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Ketelitian (nilai skala terkecil) suatu jangka sorong non-standar ditentukan oleh selisih nilai 1 bagian skala utama dengan nilai 1 bagian skala nonius: $\\text{NST} = 1\\text{ SU} - 1\\text{ SN}$. **Tips:** Siswa sering mengasumsikan nilai skala utama selalu $1\\text{ mm}$ sehingga menghitung ketelitian secara keliru."
   },
   {
     "id": "fis-kin-ukur-jangka-010",
@@ -341,7 +350,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Massa jenis balok dihitung dengan $\\rho = \\frac{m}{V} = \\frac{m}{p \\cdot l \\cdot t}$. Menurut teori perambatan kesalahan (propagation of uncertainty) untuk operasi perkalian dan pembagian, ketidakpastian relatif fraksional total adalah jumlah dari ketidakpastian relatif masing-masing variabel: $\\frac{\\Delta \\rho}{\\rho} = \\frac{\\Delta m}{m} + \\frac{\\Delta p}{p} + \\frac{\\Delta l}{l} + \\frac{\\Delta t}{t}$."
   },
   {
     "id": "mudah-fis-01",
@@ -374,7 +384,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "jangka-sorong"
+    "subTopicSlug": "jangka-sorong",
+    "hint": "Pembacaan Jangka Sorong & Ketidakpastian Mutlak: • Hasil bacaan: $x = \\text{Skala Utama} + (\\text{Skala Nonius} \\times \\text{Ketelitian})$ • Nilai ketidakpastian pengukuran tunggal: $\\Delta x = \\frac{1}{2} \\times \\text{skala terkecil}$ • Format pelaporan baku: $x \\pm \\Delta x$. **Tips:** Jangan lupa membagi ketelitian alat dengan 2 untuk memperoleh ketidakpastian mutlak tunggal $\\Delta x$."
   },
   {
     "id": "fis-din-16",
@@ -407,7 +418,8 @@
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "jangka-sorong"
+    "subTopicSlug": "jangka-sorong",
+    "hint": "Konsep: Hukum II Newton arah radial gerak melingkar vertikal di titik terendah: $T - mg = \\frac{m v^2}{R}$."
   }
 ];
 

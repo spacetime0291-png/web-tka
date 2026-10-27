@@ -44,7 +44,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Teorema Faktor menyatakan bahwa $(x - k)$ adalah faktor dari polinomial $P(x)$ jika dan hanya jika sisa pembagiannya bernilai nol, yang berarti $P(k) = 0$, dan $x = k$ merupakan akar dari persamaan $P(x) = 0$."
   },
   {
     "id": "mat-alj-polinom-faktor-002",
@@ -77,7 +78,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk menguji apakah $(x - c)$ merupakan faktor dari $P(x)$, substitusikan pembuat nol $x = c$. Jika $P(c) = 0$, maka $(x - c)$ adalah faktor."
   },
   {
     "id": "mat-alj-polinom-faktor-003",
@@ -110,7 +112,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat agar $(x - 2)$ menjadi faktor dari $P(x)$ adalah nilai $P(2) = 0$. **Tips:** Lupa menyertakan perkalian dengan konstanta $-6$ di akhir persamaan aljabar."
   },
   {
     "id": "mat-alj-polinom-faktor-004",
@@ -143,7 +146,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Teorema Vieta untuk persamaan polinomial kubik $ax^3 + bx^2 + cx + d = 0$, jumlah seluruh akar-akarnya dirumuskan sebagai: $$x_1 + x_2 + x_3 = -\\frac{b}{a}$$."
   },
   {
     "id": "mat-alj-polinom-faktor-005",
@@ -176,7 +180,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Teorema Vieta untuk persamaan polinomial berderajat 3 ($ax^3 + bx^2 + cx + d = 0$), perkalian ketiga akarnya adalah: $$x_1 \\cdot x_2 \\cdot x_3 = -\\frac{d}{a}$$. **Tips:** Lupa tanda minus pada rumus hasil kali persamaan kubik ($-\\frac{d}{a}$) sehingga menjawab $+10$."
   },
   {
     "id": "mat-alj-polinom-faktor-006",
@@ -209,7 +214,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Teorema Faktor, jika $(x - c_1)$ dan $(x - c_2)$ adalah faktor-faktor dari $P(x)$, maka berlaku $P(c_1) = 0$ dan $P(c_2) = 0$. **Tips:** Kesalahan tanda saat mengurangkan $-(-2p) = +2p$ atau keliru memindahkan ruas."
   },
   {
     "id": "mat-alj-polinom-faktor-007",
@@ -242,7 +248,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Akar persamaan suku banyak memenuhi $P(x_1) = 0$. Berdasarkan Teorema Vieta untuk kubik $ax^3 + bx^2 + cx + d = 0$, jumlah hasil kali sepasang akar adalah $\\frac{c}{a}$. **Tips:** Mencoba mencari akar-akar $x_2$ dan $x_3$ secara terpisah padahal dapat langsung dijawab melalui rumus Vieta $\\frac{c}{a}$."
   },
   {
     "id": "mat-alj-polinom-faktor-008",
@@ -275,7 +282,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas aljabar tiga variabel: $$\\alpha^2 + \\beta^2 + \\gamma^2 = (\\alpha + \\beta + \\gamma)^2 - 2(\\alpha\\beta + \\beta\\gamma + \\alpha\\gamma)$$."
   },
   {
     "id": "mat-alj-polinom-faktor-009",
@@ -308,7 +316,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tiga bilangan yang membentuk barisan aritmetika dapat dimisalkan sebagai $(a - b), a, (a + b)$. Jumlah ketiga akar sama dengan $3a = -\\frac{\\text{koef } x^2}{\\text{koef } x^3}$. **Tips:** Salah memisalkan suku tengah barisan aritmetika sehingga penyelesaian menjadi sangat rumit."
   },
   {
     "id": "mat-alj-polinom-faktor-010",
@@ -341,7 +350,8 @@
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penjumlahan kebalikan akar-akar polinomial dapat disamakan penyebutnya: $$\\frac{1}{x_1} + \\frac{1}{x_2} + \\frac{1}{x_3} = \\frac{x_1 x_2 + x_2 x_3 + x_1 x_3}{x_1 x_2 x_3} = \\frac{c / a}{-d / a} = -\\frac{c}{d}$$. **Tips:** Lupa tanda minus pada $-\\frac{d}{a}$ yang membatalkan tanda negatif dari $d = -3$."
   },
   {
     "id": "sup-mtk-alj-03",
@@ -374,7 +384,8 @@
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-polinom",
-    "subTopicSlug": "teorema-faktor-akar"
+    "subTopicSlug": "teorema-faktor-akar",
+    "hint": "Teorema Faktor: Bentuk $(x - k)$ merupakan faktor dari suku banyak $P(x)$ jika dan hanya jika $P(k) = 0$."
   }
 ];
 

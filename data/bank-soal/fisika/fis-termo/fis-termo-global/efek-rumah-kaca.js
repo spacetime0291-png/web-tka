@@ -44,7 +44,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Pergeseran Wien ($\\lambda_{\\text{maks}} \\times T = C$), panjang gelombang puncak radiasi berbanding terbalik dengan suhu mutlak benda pembocor radiasi: - Permukaan matahari bersuhu sangat tinggi ($\\approx 5800\\text{ K}$) sehingga memancarkan radiasi bergelombang pendek (spektrum cahaya tampak dan UV dekat). - Permukaan bumi bersuhu jauh lebih rendah ($\\approx 288\\text{ K}$) sehingga meradiasikan energi kalor dalam spektrum gelombang yang jauh lebih panjang, yaitu gelombang inframerah termal (panjang gelombang $4\\text{ }\\mu\\text{m} - 100\\text{ }\\mu\\text{m}$)."
   },
   {
     "id": "fis-termo-global-efek-002",
@@ -77,7 +78,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gas rumah kaca (GRK) adalah molekul gas yang mampu menyerap dan memancarkan radiasi inframerah termal karena memiliki ikatan kimia heteronuklir atau poliatomik yang dapat bervibrasi dengan momen dipol listrik asimetris. - Molekul diatomik homonuklir seperti $\\text{N}_2$ dan $\\text{O}_2$ (penyusun $99\\%$ atmosfer) tidak menyerap inframerah. - Gas rumah kaca alami dan antropogenik utama meliputi uap air ($\\text{H}_2\\text{O}$), karbon dioksida ($\\text{CO}_2$), metana ($\\text{CH}_4$), dinitrogen oksida ($\\text{N}_2\\text{O}$), serta gas-gas fluorinasi."
   },
   {
     "id": "fis-termo-global-efek-003",
@@ -110,7 +112,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tanpa atmosfer dan efek rumah kaca alami, suhu kesetimbangan radiatif bumi murni dihitung dari kesetimbangan fluks radiasi matahari yang diserap dan radiasi termal benda hitam yang dipancarkan bumi: $$S_0 (1 - \\alpha) \\pi R^2 = 4 \\pi R^2 \\sigma T_e^4 \\implies T_e = \\left[\\frac{S_0 (1 - \\alpha)}{4\\sigma}\\right]^{1/4}$$ Dengan konstanta surya $S_0 \\approx 1361\\text{ W/m}^2$ dan albedo bumi $\\alpha \\approx 0{,}30$, diperoleh suhu efektif $T_e \\approx 255\\text{ K} \\approx -18^\\circ\\text{C}$."
   },
   {
     "id": "fis-termo-global-efek-004",
@@ -143,7 +146,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gas metana ($\\text{CH}_4$) terbentuk dari proses dekomposisi anaerobik (tanpa oksigen) oleh bakteri metanogenik. Sumber antropogenik utama pelepasan $\\text{CH}_4$ meliputi: 1. Sektor peternakan: fermentasi enterik pada saluran pencernaan hewan ruminansia (seperti sapi dan kambing). 2. Sektor pertanian: lahan sawah padi tergenang air yang miskin oksigen. 3. Pengolahan limbah: tempat pemrosesan akhir (TPA) sampah organik tertimbun. 4. Kebocoran infrastruktur gas alam dan ekstraksi bahan bakar fosil."
   },
   {
     "id": "fis-termo-global-efek-005",
@@ -176,7 +180,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Albedo ($\\alpha$) berkisar antara 0 (menyerap seluruh radiasi/benda hitam sempurna) hingga 1 (memantulkan seluruh radiasi): - Permukaan berwarna gelap (aspal $\\approx 0{,}05 - 0{,}10$, laut dalam $\\approx 0{,}06 - 0{,}10$, hutan lebat $\\approx 0{,}15$) menyerap sebagian besar radiasi surya. - Permukaan berwarna terang dan berkilau seperti lapisan salju segar dan tutupan es gletser memiliki albedo tertinggi (mencapai $0{,}80 - 0{,}90$), sehingga memantulkan sebagian besar energi radiasi kembali ke angkasa."
   },
   {
     "id": "fis-termo-global-efek-006",
@@ -209,7 +214,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Model kesetimbangan energi satu lapis atmosfer (Single-layer Greenhouse Model): 1. Kesetimbangan radiasi atmosfer: Atmosfer menyerap fluks dari bumi ($\\sigma T_s^4$) dan memancarkan radiasi ke atas dan ke bawah: $$\\sigma T_s^4 = 2\\sigma T_a^4 \\implies \\sigma T_a^4 = \\frac{1}{2}\\sigma T_s^4$$ 2. Kesetimbangan di puncak atmosfer (TOA): Fluks matahari masuk harus sama dengan fluks keluar ke angkasa luar: $$\\sigma T_e^4 = \\sigma T_a^4$$."
   },
   {
     "id": "fis-termo-global-efek-007",
@@ -242,7 +248,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Emisi ekuivalen karbon dioksida ($\\text{CO}_2\\text{e}$) dihitung dengan menjumlahkan hasil kali massa masing-masing gas rumah kaca dengan nilai GWP-nya: $$\\text{Massa } \\text{CO}_2\\text{e} = \\sum (m_i \\times \\text{GWP}_i)$$."
   },
   {
     "id": "fis-termo-global-efek-008",
@@ -275,7 +282,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Mekanisme umpan balik (feedback loop) dalam sistem iklim: - Umpan balik positif (positive feedback): proses di mana perubahan awal pada suatu variabel menyebabkan perubahan variabel lain yang dampaknya memperkuat perubahan awal tersebut (amplifikasi ketidakstabilan). - Contoh klasik adalah umpan balik uap air (water vapor feedback) dan umpan balik albedo es (ice-albedo feedback). - Umpan balik negatif (negative feedback): mekanisme yang meredam atau melawan perubahan awal menuju kesetimbangan baru."
   },
   {
     "id": "fis-termo-global-efek-009",
@@ -308,7 +316,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jendela atmosfer inframerah ($8-12\\text{ }\\mu\\text{m}$) adalah rentang transparan tempat radiasi termal bumi dapat lepas ke antariksa tanpa terhambat $\\text{H}_2\\text{O}$ dan $\\text{CO}_2$. Senyawa halokarbon buatan manusia (CFC, HCFC, HFC, $\\text{SF}_6$) memiliki ikatan karbon-fluor dan karbon-klor yang frekuensi vibrasi resonansinya tepat berada pada rentang jendela atmosfer ($8-12\\text{ }\\mu\\text{m}$). Akibatnya, gas-gas ini menutup celah transmisi kalor bumi yang sebelumnya terbuka, menghasilkan efisiensi penyerapan panas per molekul hingga ribuan kali lipat dibandingkan $\\text{CO}_2$."
   },
   {
     "id": "fis-termo-global-efek-010",
@@ -341,7 +350,8 @@
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluks radiasi surya yang datang ke bumi disebarkan ke seluruh luas permukaan bola bumi ($4\\pi R^2$), sehingga fluks surya rata-rata insiden di puncak atmosfer adalah: $$\\bar{F}_{\\text{in}} = \\frac{S \\times \\pi R^2}{4\\pi R^2} = \\frac{S}{4}$$ Fluks yang diserap permukaan bumi setelah dikurangi fraksi albedo yang dipantulkan ($\\alpha$) dirumuskan: $$F_{\\text{serap}} = \\frac{S}{4} (1 - \\alpha)$$."
   },
   {
     "id": "mudah-fis-10",
@@ -374,7 +384,8 @@
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "efek-rumah-kaca"
+    "subTopicSlug": "efek-rumah-kaca",
+    "hint": "Fisika Efek Rumah Kaca: Permukaan bumi menyerap cahaya tampak dari matahari dan meradiasikannya kembali sebagai radiasi termal bergelombang panjang yaitu radiasi inframerah , yang kemudian diserap oleh molekul gas rumah kaca ($CO_2, CH_4, H_2O$) sehingga memerangkap panas di troposfer. **Tips:** Jangan tertukar dengan lapisan ozon di stratosfer yang menyerap radiasi ultraviolet (UV)."
   },
   {
     "id": "drill-pem-03",
@@ -407,7 +418,8 @@
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "efek-rumah-kaca"
+    "subTopicSlug": "efek-rumah-kaca",
+    "hint": "Proses Fisik Efek Rumah Kaca: Radiasi matahari yang masuk sebagian besar berupa gelombang pendek (cahaya tampak) yang lolos melewati atmosfer. Permukaan bumi menyerap energi ini lalu memancarkannya kembali sebagai gelombang panjang (inframerah termal) yang diserap oleh gas rumah kaca sehingga terperangkap di atmosfer. **Tips:** ⚠️ Bedakan: Lapisan ozon ($O_3$) menyerap sinar Ultraviolet (UV)."
   }
 ];
 

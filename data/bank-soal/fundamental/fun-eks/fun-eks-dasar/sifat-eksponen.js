@@ -44,7 +44,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sifat perkalian bilangan berpangkat dengan basis yang sama menyatakan bahwa pangkatnya dijumlahkan: $a^m \\times a^n = a^{m+n}$."
   },
   {
     "id": "fun-eks-dasar-eksponen-002",
@@ -77,7 +78,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sifat pembagian bilangan berpangkat dengan basis yang sama menyatakan bahwa pangkat pembilang dikurangi pangkat penyebut: $\\frac{a^m}{a^n} = a^{m-n}$. **Tips:** Membagi pangkat ($8 / 5$) atau menjumlahkannya menjadi $3^{13}$."
   },
   {
     "id": "fun-eks-dasar-eksponen-003",
@@ -110,7 +112,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sifat perpangkatan dari bilangan berpangkat menyatakan bahwa kedua eksponen saling dikalikan: $(a^m)^n = a^{m \\cdot n}$."
   },
   {
     "id": "fun-eks-dasar-eksponen-004",
@@ -143,7 +146,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bilangan berpangkat negatif didefinisikan sebagai kebalikan dari bilangan berpangkat positif: $a^{-n} = \\frac{1}{a^n}$. **Tips:** Memindahkan seluruh variabel ke bagian penyebut sehingga menghasilkan $\\frac{1}{x^3 y^2}$."
   },
   {
     "id": "fun-eks-dasar-eksponen-005",
@@ -176,7 +180,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pecahan berpangkat negatif dapat diubah menjadi pangkat positif dengan membalik pembilang dan penyebut: $\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n$."
   },
   {
     "id": "fun-eks-dasar-eksponen-006",
@@ -209,7 +214,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan aturan pangkat eksponen $(x^m y^n)^k = x^{mk} y^{nk}$ dan pembagian basis sama $\\frac{x^p}{x^q} = x^{p-q}$."
   },
   {
     "id": "fun-eks-dasar-eksponen-007",
@@ -242,7 +248,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan keluar suku berpangkat terkecil $2^n$ pada pembilang dan penyebut untuk menyederhanakan pecahan aljabar eksponen. **Tips:** Mencoret langsung suku $2^n$ tanpa melakukan faktorisasi distributif aljabar terlebih dahulu."
   },
   {
     "id": "fun-eks-dasar-eksponen-008",
@@ -275,7 +282,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Basis majemuk $8^x$ dan $4^x$ dapat dinyatakan dalam basis $2^x$ menggunakan sifat pemangkatan: $a^{kx} = (a^x)^k$."
   },
   {
     "id": "fun-eks-dasar-eksponen-009",
@@ -308,7 +316,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika $a^{f(x)} = a^p$ dengan $a > 0$ dan $a \\neq 1$, maka eksponennya bernilai sama: $f(x) = p$."
   },
   {
     "id": "fun-eks-dasar-eksponen-010",
@@ -341,7 +350,8 @@
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sederhanakan terlebih dahulu suku-suku di dalam kurung, lalu terapkan pembalikan pecahan oleh pangkat $-1$. **Tips:** Lupa membalik koefisien 9 menjadi $\\frac{1}{9}$ saat menerapkan pemangkatan $-1$."
   }
 ];
 

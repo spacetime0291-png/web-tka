@@ -44,7 +44,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pembacaan mikrometer sekrup dirumuskan dengan $x = \\text{Skala Utama} + (\\text{Skala Putar} \\times \\text{Ketelitian})$. Format pelaporan pengukuran tunggal baku adalah $(x \\pm \\Delta x)$ dengan $\\Delta x = \\frac{1}{2} \\times \\text{ketelitian alat}$."
   },
   {
     "id": "fis-kin-ukur-mikro-002",
@@ -77,7 +78,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketelitian (nilai skala terkecil/NST) mikrometer sekrup didefinisikan sebagai pergeseran linier poros geser untuk satu bagian skala putar: $\\text{NST} = \\frac{\\text{Kisar Ulir (Pitch)}}{\\text{Jumlah Skala Putar}}$."
   },
   {
     "id": "fis-kin-ukur-mikro-003",
@@ -110,7 +112,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hasil bacaan ukur mikrometer sekrup: $x = \\text{SU} + (\\text{SP} \\times 0{,}01\\text{ mm})$. Untuk mengubah milimeter ke sentimeter, bagi nilai dengan 10: $1\\text{ cm} = 10\\text{ mm}$. **Tips:** Kesalahan konversi satuan adalah jebakan utama: memilih $3{,}42\\text{ cm}$ () padahal satuan yang diminta adalah sentimeter."
   },
   {
     "id": "fis-kin-ukur-mikro-004",
@@ -143,7 +146,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Roda bergigi pemutar halus (ratchet knob / rachet) adalah mekanisme pembatas torsi (torque limiter) pada mikrometer sekrup untuk memastikan gaya jepit selalu seragam pada setiap pengukuran."
   },
   {
     "id": "fis-kin-ukur-mikro-005",
@@ -176,7 +180,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika garis batas bawah ($0{,}5\\text{ mm}$) pada selubung tetap (sleeve) sudah tampak, nilai skala utama adalah penjumlahan angka milimeter bulat dengan $0{,}5\\text{ mm}$: $\\text{SU} = \\text{Angka Bulat} + 0{,}5\\text{ mm}$."
   },
   {
     "id": "fis-kin-ukur-mikro-006",
@@ -209,7 +214,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesalahan titik nol positif ($Z > 0$) pada mikrometer sekrup terjadi ketika rahang tertutup rapat tetapi garis nol skala putar berada di bawah garis acuan horizontal. Nilai sebenarnya adalah hasil bacaan terukur dikurangi nilai kesalahan nol: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-mikro-007",
@@ -242,7 +248,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesalahan titik nol negatif ($Z < 0$) terjadi bila garis nol bidal berada di atas garis acuan saat rahang rapat. Besar kesalahan nol negatif dihitung dari selisih pembagian total skala putar: $Z = - (50 - n) \\times 0{,}01\\text{ mm}$. Nilai sebenarnya: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-mikro-008",
@@ -275,7 +282,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Mikrometer sekrup vernier memiliki tiga tingkat pembacaan: skala utama ($0{,}5\\text{ mm}$), skala bidal ($0{,}01\\text{ mm}$), dan skala vernier longitudinal ($0{,}001\\text{ mm}$). Rumus pembacaan: $x = \\text{SU} + (\\text{Bidal} \\times 0{,}01\\text{ mm}) + (\\text{Vernier} \\times 0{,}001\\text{ mm})$."
   },
   {
     "id": "fis-kin-ukur-mikro-009",
@@ -308,7 +316,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan listrik kawat kawat silinder dihitung dengan rumus Pouillet $R = \\rho \\frac{L}{A}$. Dengan penampang lingkaran berdiameter $d$, luas penampang adalah $A = \\frac{1}{4} \\pi d^2$, sehingga $R = \\frac{4 \\rho L}{\\pi d^2}$."
   },
   {
     "id": "fis-kin-ukur-mikro-010",
@@ -341,7 +350,8 @@
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Volume bola dinyatakan dalam fungsi diameter: $V = \\frac{4}{3} \\pi \\left(\\frac{d}{2}\\right)^3 = \\frac{1}{6} \\pi d^3$. Berdasarkan aturan propagasi kesalahan untuk fungsi berpangkat $y = k x^n$, ketidakpastian relatif fraksionalnya adalah $\\frac{\\Delta y}{y} = n \\left(\\frac{\\Delta x}{x}\\right)$."
   },
   {
     "id": "sup-fis-kin-01",
@@ -374,7 +384,8 @@
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "mikrometer-sekrup"
+    "subTopicSlug": "mikrometer-sekrup",
+    "hint": "Pembacaan Mikrometer Sekrup: • $x = \\text{Skala Utama} + (\\text{Skala Nonius} \\times 0{,}01\\text{ mm})$ • Nilai ketidakpastian mutlak pengukuran tunggal: $\\Delta x = \\frac{1}{2} \\times 0{,}01\\text{ mm} = 0{,}005\\text{ mm}$."
   }
 ];
 

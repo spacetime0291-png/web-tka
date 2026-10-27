@@ -44,7 +44,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan sifat dasar nilai mutlak, $|f(x)| = c$ (dengan $c > 0$) ekuivalen dengan $f(x) = c$ atau $f(x) = -c$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-002",
@@ -77,7 +78,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pecah persamaan mutlak ke dalam dua persamaan linear: $2x + 1 = 7$ atau $2x + 1 = -7$. **Tips:** Salah menghitung $-7 - 1$ menjadi $-6$ sehingga menghasilkan akar keliru $x = -3$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-003",
@@ -110,7 +112,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Nilai mutlak bernilai nol jika dan hanya jika ekspresi di dalamnya bernilai nol: $|u| = 0 \\iff u = 0$. **Tips:** Mengira ada dua akar $\\pm 2$ karena terbiasa memecah persamaan mutlak menjadi dua kasus padahal ruas kanan bernilai 0."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-004",
@@ -143,7 +146,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Nilai mutlak dari sembarang bilangan real selalu bernilai non-negatif ($|u| \\ge 0$). Oleh karena itu, persamaan mutlak yang disamakan dengan bilangan negatif tidak memiliki solusi real."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-005",
@@ -176,7 +180,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Cari seluruh nilai akar penyelesaian terlebih dahulu menggunakan dua cabang nilai mutlak, kemudian jumlahkan hasilnya. **Tips:** Hanya menjumlahkan nilai tanpa memperhatikan tanda negatif pada akar $x_1 = -2$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-006",
@@ -209,7 +214,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $|f(x)| = |g(x)|$ ekuivalen dengan $(f(x) - g(x))(f(x) + g(x)) = 0$, yang setara dengan $f(x) = g(x)$ atau $f(x) = -g(x)$. **Tips:** Lupa mendistribusikan tanda minus pada seluruh suku kurung kedua saat $-(x + 4)$ sehingga keliru menulis $-x + 4$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-007",
@@ -242,7 +248,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk persamaan $|f(x)| = g(x)$, ruas kanan harus memenuhi syarat non-negatif $g(x) \\ge 0$, kemudian diselesaikan dengan cabang $f(x) = g(x)$ atau $f(x) = -g(x)$. **Tips:** Langsung mencoret akar negatif tanpa mengecek apakah nilai tersebut memenuhi batas syarat ruas kanan $x \\ge -3{,}5$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-008",
@@ -275,7 +282,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan pemisalan variabel baru $u = |x - 2| \\ge 0$ untuk mengubahnya menjadi persamaan kuadrat biasa, kemudian buang akar yang tidak memenuhi syarat $u \\ge 0$. **Tips:** Menyelesaikan $|x - 2| = -1$ yang menghasilkan akar imajiner/tidak sah, atau salah mengalikan tanda akar."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-009",
@@ -308,7 +316,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Secara geometris, $|x - a| + |x - b|$ menyatakan jumlah jarak dari titik $x$ ke titik $a$ dan ke titik $b$. Jika jumlah jaraknya sama dengan jarak antara $a$ dan $b$ ($|b - a|$), maka seluruh titik pada segmen $[a, b]$ adalah solusinya."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-010",
@@ -341,7 +350,8 @@
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Isolasi bentuk nilai mutlak ke satu ruas: $|2x - 6| = 9 - x$, dengan syarat ruas kanan non-negatif: $9 - x \\ge 0 \\iff x \\le 9$."
   }
 ];
 

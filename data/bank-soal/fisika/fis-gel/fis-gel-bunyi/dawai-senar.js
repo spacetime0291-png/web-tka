@@ -44,7 +44,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$v = \\sqrt{\\frac{F}{\\mu}} = \\sqrt{\\frac{F \\cdot L}{m}}$$. **Tips:** Lupa mengonversi satuan massa dari gram ke kilogram ($20$ alih-alih $0{,}02$), yang menghasilkan nilai akar pecahan keliru."
   },
   {
     "id": "fis-gel-bunyi-dawai-002",
@@ -77,7 +78,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada nada dasar (harmonik pertama, $n = 0$) dawai yang kedua ujungnya terikat, terbentuk setengah panjang gelombang di sepanjang dawai ($L = \\frac{1}{2}\\lambda_0$). Frekuensi nada dasarnya dirumuskan: $$f_0 = \\frac{v}{2L}$$."
   },
   {
     "id": "fis-gel-bunyi-dawai-003",
@@ -110,7 +112,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Frekuensi harmonik ke-$n$ (nada atas ke-$n$) pada dawai dengan kedua ujung terikat memenuhi deret bilangan bulat positif lengkap: $$f_n = (n + 1) f_0, \\quad n = 0, 1, 2, 3, \\dots$$Sehingga perbandingannya adalah: $$f_0 : f_1 : f_2 : f_3 : \\dots = 1 : 2 : 3 : 4 : \\dots$$."
   },
   {
     "id": "fis-gel-bunyi-dawai-004",
@@ -143,7 +146,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pola gelombang stasioner pada dawai kedua ujung terikat untuk nada atas ke-$n$ ($n = 1$ untuk nada atas pertama): • Jumlah perut: $P = n + 1$ • Jumlah simpul: $S = n + 2$ Pada nada atas pertama ($n = 1$), panjang dawai membentuk 1 gelombang penuh ($L = \\lambda$). **Tips:** Siswa sering mengira nada atas pertama memiliki 1 simpul dan 1 perut, lupa menghitung simpul di kedua ujung ikatan kaku dawai."
   },
   {
     "id": "fis-gel-bunyi-dawai-005",
@@ -176,7 +180,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Frekuensi nada dasar dawai sebanding dengan kelajuan gelombang pada dawai: $$f_0 = \\frac{v}{2L} = \\frac{1}{2L}\\sqrt{\\frac{F}{\\mu}} \\implies f_0 \\propto \\sqrt{F}$$Sehingga perbandingan frekuensinya terhadap tegangan dawai adalah: $$\\frac{f_0'}{f_0} = \\sqrt{\\frac{F'}{F}}$$."
   },
   {
     "id": "fis-gel-bunyi-dawai-006",
@@ -209,7 +214,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa linier dawai ($\\mu$) berkaitan dengan massa jenis logam ($\\rho$) dan diameter penampang ($d$): $$\\mu = \\frac{m}{L} = \\rho \\cdot A = \\rho \\cdot \\left(\\frac{1}{4}\\pi d^2\\right)$$Frekuensi nada dasar dawai menurut Hukum Mersenne adalah: $$f_0 = \\frac{1}{2L}\\sqrt{\\frac{F}{\\mu}} = \\frac{1}{2L}\\sqrt{\\frac{F}{\\rho \\cdot \\frac{1}{4}\\pi d^2}} = \\frac{1}{\\pi L d}\\sqrt{\\frac{F}{\\rho}}$$ Sehingga frekuensi nada dasar berbanding lurus dengan $\\frac{\\sqrt{F}}{d}$."
   },
   {
     "id": "fis-gel-bunyi-dawai-007",
@@ -242,7 +248,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Frekuensi nada dasar pipa organa terbuka: $$f_{p0} = \\frac{v_{\\text{udara}}}{2 L_p}$$ 2) Frekuensi nada atas kedua dawai ($n = 2$): $$f_{d2} = 3 f_{d0} = 3 \\cdot \\frac{v_d}{2 L_d}$$ 3) Kondisi resonansi: $f_{d2} = f_{p0}$."
   },
   {
     "id": "fis-gel-bunyi-dawai-008",
@@ -275,7 +282,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang gelombang dinyatakan sebagai panjang kawat dibagi jumlah gelombang penuh yang terbentuk ($\\lambda = \\frac{L}{n}$). Karena frekuensi vibrator konstan ($f$), cepat rambat gelombang berbanding lurus dengan panjang gelombang: $$v = \\lambda \\cdot f \\implies \\frac{v_2}{v_1} = \\frac{\\lambda_2}{\\lambda_1}$$Menurut Hukum Melde, $v = \\sqrt{\\frac{M g}{\\mu}}$, sehingga $\\frac{M_2}{M_1} = \\left(\\frac{\\lambda_2}{\\lambda_1}\\right)^2$."
   },
   {
     "id": "fis-gel-bunyi-dawai-009",
@@ -308,7 +316,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tegangan dawai yang tetap, kelajuan gelombang konstan, sehingga frekuensi nada dasar berbanding terbalik dengan panjang dawai aktif yang bergetar: $$f_0 \\propto \\frac{1}{L} \\implies f_0 \\cdot L = f_0' \\cdot L'$$Panjang pemendekan fret diukur dari ujung atas adalah $\\Delta L = L - L'$."
   },
   {
     "id": "fis-gel-bunyi-dawai-010",
@@ -341,7 +350,8 @@
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan persamaan gelombang stasioner ujung terikat $y = 2A \\sin(kx) \\cos(\\omega t)$: 1) Bilangan gelombang $k = 5\\pi\\text{ rad/m}$, frekuensi sudut $\\omega = 40\\pi\\text{ rad/s}$. 2) Cepat rambat gelombang pembentuk: $v = \\frac{\\omega}{k}$. 3) Panjang gelombang: $\\lambda = \\frac{2\\pi}{k}$. 4) Letak simpul ke-$n$ dari ujung pantul ($x = 0$): $x_n = (n - 1) \\frac{\\lambda}{2}$ untuk $n = 1, 2, 3, \\dots$."
   },
   {
     "id": "drill-bun-01",
@@ -374,7 +384,8 @@
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "dawai-senar"
+    "subTopicSlug": "dawai-senar",
+    "hint": "Kelajuan rambat gelombang pada dawai berbanding lurus dengan akar gaya tegangan dan berbanding terbalik dengan akar massa persatuan panjang: $$v = \\sqrt{\\frac{F}{\\mu}}$$. **Tips:** Ingat kata kunci \"Melde = Gaya per mu\" ($v = \\sqrt{F/\\mu}$)."
   },
   {
     "id": "drill-bun-03",
@@ -407,7 +418,8 @@
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "dawai-senar"
+    "subTopicSlug": "dawai-senar",
+    "hint": "Frekuensi Nada Dasar Dawai (Kedua Ujung Terikat): Pada nada dasar, panjang dawai membentuk setengah gelombang ($L = \\frac{1}{2}\\lambda \\implies \\lambda = 2L$): $$f_0 = \\frac{v}{2L}$$. **Tips:** Rumus nada dasar dawai sama persis dengan pipa organa terbuka: $f_0 = \\frac{v}{2L}$."
   }
 ];
 

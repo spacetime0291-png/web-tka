@@ -44,7 +44,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak ($s$) adalah besaran skalar yang menyatakan total panjang seluruh lintasan yang dilalui tanpa memperhatikan arah. Perpindahan ($\\Delta \\vec{r}$) adalah besaran vektor yang menyatakan perubahan kedudukan/posisi dari posisi awal ke posisi akhir. **Tips:** Jangan mengurangkan jarak tempuh ketika berbalik arah."
   },
   {
     "id": "fis-kin-gl-jarak-002",
@@ -77,7 +78,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak pada lintasan lengkung merupakan panjang busur yang dilalui. Sedangkan perpindahan adalah garis lurus yang menghubungkan titik awal ke titik akhir (dalam setengah lingkaran, garis lurus tersebut adalah garis tengah/diameter lingkaran)."
   },
   {
     "id": "fis-kin-gl-jarak-003",
@@ -110,7 +112,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak merupakan besaran skalar (hanya memiliki nilai besar dan selalu positif/akumulatif). Perpindahan merupakan besaran vektor (memiliki nilai besar dan arah tertentu), di mana $\\Delta \\vec{r} = \\vec{r}_{\\text{akhir}} - \\vec{r}_{\\text{awal}}$. Bila posisi akhir berimpit dengan posisi awal, maka $|\\Delta \\vec{r}| = 0$. **Tips:** Hati-hati dengan kata mutlak seperti 'selalu identik' atau 'tidak pernah bernilai nol'."
   },
   {
     "id": "fis-kin-gl-jarak-004",
@@ -143,7 +146,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perpindahan pada satu dimensi (sumbu-$x$) didefinisikan secara langsung oleh selisih koordinat posisi akhir terhadap posisi awal: $$\\Delta x = x_{\\text{akhir}} - x_{\\text{awal}}$$."
   },
   {
     "id": "fis-kin-gl-jarak-005",
@@ -176,7 +180,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jarak tempuh adalah jumlahan panjang lintasan skalar. Perpindahan dua dimensi yang saling tegak lurus (utara dan timur) dihitung menggunakan teorema Pythagoras. **Tips:** Perhatikan urutan yang ditanyakan pada soal: 'jarak tempuh dan besar perpindahan' (70 m dan 50 m), bukan terbalik."
   },
   {
     "id": "fis-kin-gl-jarak-006",
@@ -209,7 +214,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak skalar adalah penjumlahan seluruh panjang lintasan: $s = \\Delta x + \\Delta y + \\Delta z$. Perpindahan dalam vektor ruang 3 dimensi ditentukan dengan norma Euclidean: $$|\\Delta \\vec{r}| = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2 + (\\Delta z)^2}$$. **Tips:** Jangan hanya memproyeksikan pada dua sumbu mendatar."
   },
   {
     "id": "fis-kin-gl-jarak-007",
@@ -242,7 +248,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak tempuh adalah akumulasi ketiga sisi persegi yang dilewati ($AB + BC + CD$). Perpindahan adalah jarak langsung garis lurus dari posisi awal ($A$) ke posisi akhir ($D$)."
   },
   {
     "id": "fis-kin-gl-jarak-008",
@@ -275,7 +282,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk mencari jarak total dari fungsi posisi yang mengalami pembalikan arah gerak, cari terlebih dahulu waktu saat partikel diam sesaat ($v(t) = \\frac{dx}{dt} = 0$), lalu jumlahkan harga mutlak perpindahan tiap segmen perjalanan."
   },
   {
     "id": "fis-kin-gl-jarak-009",
@@ -308,7 +316,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Resultan perpindahan dua vektor dengan sudut apit $\\theta$ dihitung menggunakan aturan kosinus penjumlahan vektor: $$R = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}$$."
   },
   {
     "id": "fis-kin-gl-jarak-010",
@@ -341,7 +350,8 @@
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarum jam yang berputar membentuk segitiga sama kaki dengan panjang kedua sisi sama dengan panjang jarum ($r$) dan sudut pusat $\\alpha$. Besar perpindahan ujung jarum adalah panjang tali busur yang menghubungkan posisi awal dan akhir: $$|\\Delta \\vec{r}| = 2r\\sin\\left(\\frac{\\alpha}{2}\\right)$$. **Tips:** Nilai $\\frac{44}{3}\\text{ cm}$ adalah panjang lintasan busur lingkaran (jarak tempuh), bukan perpindahan."
   },
   {
     "id": "sup-fis-kin-04",
@@ -374,7 +384,8 @@
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "jarak-perpindahan"
+    "subTopicSlug": "jarak-perpindahan",
+    "hint": "Jarak (Skalar) vs Perpindahan (Vektor): • Jarak ($s$): total panjang lintasan yang ditempuh tanpa memperhatikan arah. • Perpindahan ($\\Delta \\vec{r}$): perubahan posisi terpendek dari titik awal ke titik akhir (vektor). **Tips:** Menyamakan nilai perpindahan dengan jarak total lintasan gerak."
   },
   {
     "id": "sedang-fis-01",
@@ -407,7 +418,8 @@
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "jarak-perpindahan"
+    "subTopicSlug": "jarak-perpindahan",
+    "hint": "Analisis Komponen Gerak Parabola: • Sumbu horizontal (GLB): $v_x = v_0\\cos\\theta$ (konstan), $X = v_x \\cdot t$ • Sumbu vertikal (GLBB gravitasi): $v_{0y} = v_0\\sin\\theta$, $v_y = v_{0y} - gt$ • Waktu mencapai titik puncak: $t_p = \\frac{v_0\\sin\\theta}{g}$ • Waktu total di udara: $t_{\\text{udara}} = 2 t_p = \\frac{2v_0\\sin\\theta}{g}$ • Jarak terjauh: $X_{\\max} = v_x \\cdot t_{\\text{udara}}$."
   }
 ];
 

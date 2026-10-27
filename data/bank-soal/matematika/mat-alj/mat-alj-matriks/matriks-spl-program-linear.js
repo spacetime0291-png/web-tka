@@ -44,7 +44,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sistem persamaan linear dapat dituliskan dalam bentuk persamaan matriks $A \\mathbf{x} = \\mathbf{b}$, di mana matriks $A$ adalah matriks koefisien variabel, $\\mathbf{x}$ adalah vektor kolom variabel, dan $\\mathbf{b}$ adalah vektor kolom konstanta hasil. **Tips:** Lupa menyertakan tanda negatif pada koefisien $y$ pada persamaan kedua ($-y$ memiliki koefisien $-1$)."
   },
   {
     "id": "mat-alj-matriks-spl-002",
@@ -77,7 +78,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Aturan Cramer menyatakan bahwa untuk sistem $A \\mathbf{x} = \\mathbf{b}$ dengan $\\det(A) \\neq 0$, nilai setiap variabel $x_i$ adalah perbandingan antara determinan matriks $A_i$ (matriks $A$ yang kolom ke-$i$ diganti vektor konstanta $\\mathbf{b}$) terhadap determinan matriks koefisien utama $D$: $x_i = \\frac{D_i}{D}$. **Tips:** Tertukar dengan rumus untuk variabel $y$ yang mengganti kolom kedua ($D_y$)."
   },
   {
     "id": "mat-alj-matriks-spl-003",
@@ -110,7 +112,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Determinan utama ($D$) pada sistem persamaan linear adalah determinan dari matriks yang beranggotakan koefisien-koefisien variabel sistem persamaan linear tersebut."
   },
   {
     "id": "mat-alj-matriks-spl-004",
@@ -143,7 +146,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk menyelesaikan $A \\mathbf{x} = \\mathbf{b}$, cari invers $A^{-1}$ lalu kalikan $\\mathbf{x} = A^{-1} \\mathbf{b}$. **Tips:** Tertukar nilai antara $x$ dan $y$ saat menuliskan jawaban akhir."
   },
   {
     "id": "mat-alj-matriks-spl-005",
@@ -176,7 +180,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Suatu sistem persamaan linear persegi memiliki tepat satu solusi (konsisten dan independen) jika dan hanya jika determinan matriks koefisiennya tidak sama dengan nol ($D \\neq 0$)."
   },
   {
     "id": "mat-alj-matriks-spl-006",
@@ -209,7 +214,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Determinan utama ($D$) dari SPLTV tiga variabel $3 \\times 3$ diperoleh dari matriks koefisien variabel $x, y, z$. Nilai determinan dapat dihitung menggunakan ekspansi kofaktor sepanjang baris pertama. **Tips:** Kesalahan tanda pada kofaktor elemen tengah baris pertama ($-a_{12}$) atau salah tanda saat mengurangkan bilangan negatif."
   },
   {
     "id": "mat-alj-matriks-spl-007",
@@ -242,7 +248,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam Aturan Cramer, determinan $D_y$ diperoleh dengan mengganti kolom kedua (koefisien $y$) dengan vektor konstanta. Nilai variabel $y$ kemudian dihitung dari $y = \\frac{D_y}{D}$. **Tips:** Lupa membagi $D_y$ dengan determinan utama $D$ atau salah mengganti kolom $x$ alih-alih kolom $y$."
   },
   {
     "id": "mat-alj-matriks-spl-008",
@@ -275,7 +282,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem persamaan linear homogen $A \\mathbf{x} = \\mathbf{0}$ selalu memiliki solusi trivial $\\mathbf{x} = \\mathbf{0}$. Sistem tersebut memiliki solusi tak-trivial (solusi selain nol) jika dan hanya jika matriks koefisiennya singular, yaitu $\\det(A) = 0$. **Tips:** Lupa bahwa solusi tak-trivial mensyaratkan determinan nol, atau salah memilih nilai negatif $-3$."
   },
   {
     "id": "mat-alj-matriks-spl-009",
@@ -308,7 +316,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Model persamaan linear dari cerita diubah ke bentuk matriks $A \\mathbf{x} = \\mathbf{b}$, kemudian diselesaikan dengan $\\mathbf{x} = A^{-1} \\mathbf{b}$ dengan $A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)$. **Tips:** Lupa tanda minus pada determinan $-10$ sehingga tanda skala invers menjadi salah."
   },
   {
     "id": "mat-alj-matriks-spl-010",
@@ -341,7 +350,8 @@
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem dua persamaan linear dua variabel tidak memiliki solusi (garis-garisnya sejajar dan tidak berpotongan) jika rasio koefisien variabelnya sama tetapi rasio konstanta hasilnya berbeda: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$."
   }
 ];
 

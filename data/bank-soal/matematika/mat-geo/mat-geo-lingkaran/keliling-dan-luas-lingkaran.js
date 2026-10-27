@@ -44,7 +44,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Luas juring lingkaran dengan sudut pusat $\\alpha$ dan jari-jari $r$ dirumuskan sebagai perbandingan sudut pusat terhadap satu putaran penuh ($360^\\circ$) dikalikan dengan luas lingkaran utuh: $L_{\\text{juring}} = \\frac{\\alpha}{360^\\circ} \\times \\pi r^2$. **Tips:** Lupa membagi dengan 4 sehingga memilih luas lingkaran utuh ($616\\text{ cm}^2$)."
   },
   {
     "id": "mat-geo-lingkaran-luas-002",
@@ -77,7 +78,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Luas juring lingkaran sebanding dengan besar sudut pusatnya terhadap sudut satu putaran penuh: $L_{\\text{juring}} = \\frac{\\theta}{360^\\circ} \\times \\pi r^2$. **Tips:** Lupa menguadratkan panjang jari-jari $6$ sehingga hanya menghitung $\\frac{1}{6} \\times 6\\pi = \\pi\\text{ cm}^2$."
   },
   {
     "id": "mat-geo-lingkaran-luas-003",
@@ -110,7 +112,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Luas tembereng lingkaran sama dengan luas juring lingkaran dikurangi luas segitiga pembatas yang terbentuk dari dua jari-jari dan tali busurnya: $L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$. **Tips:** Hanya menghitung luas juring ($78{,}5\\text{ cm}^2$) tanpa mengurangkan luas segitiga pembatasnya."
   },
   {
     "id": "mat-geo-lingkaran-luas-004",
@@ -143,7 +146,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada lingkaran yang sama, rasio luas dua juring berbanding lurus secara linier dengan rasio besar sudut pusat masing-masing juring: $\\frac{L_1}{L_2} = \\frac{\\alpha_1}{\\alpha_2}$."
   },
   {
     "id": "mat-geo-lingkaran-luas-005",
@@ -176,7 +180,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Luas daerah cincin lingkaran (anulus) dihitung dari selisih luas lingkaran luar dengan luas lingkaran dalam: $L_{\\text{cincin}} = \\pi(r_2^2 - r_1^2)$."
   },
   {
     "id": "mat-geo-lingkaran-luas-006",
@@ -209,7 +214,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas tembereng diperoleh dari selisih antara luas juring lingkaran dan luas segitiga sama sisi yang dibentuk oleh kedua jari-jari dan tali busur: $L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$. **Tips:** Salah menghitung nilai $\\sin(60^\\circ) = \\frac{1}{2}\\sqrt{3}$ atau keliru mengurangkan luas segitiga dari luas juring."
   },
   {
     "id": "mat-geo-lingkaran-luas-007",
@@ -242,7 +248,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keliling juring adalah $K = 2r + s$, dan luas juring adalah $L = \\frac{1}{2}rs$. Nilai maksimum luas dicapai pada titik puncak fungsi kuadrat $L(r)$."
   },
   {
     "id": "mat-geo-lingkaran-luas-008",
@@ -275,7 +282,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas tembereng untuk sembarang sudut pusat $\\theta$ dihitung dari $L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$, dengan $L_{\\triangle} = \\frac{1}{2}r^2\\sin(\\theta)$. **Tips:** Salah memasukkan tanda negatif pada nilai $\\sin(120^\\circ)$, padahal fungsi sinus tetap bertanda positif di kuadran II."
   },
   {
     "id": "mat-geo-lingkaran-luas-009",
@@ -308,7 +316,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rasio luas tembereng terhadap juring dihitung dengan membagi formula aljabar luas tembereng terhadap luas juring pada sudut pusat yang sama."
   },
   {
     "id": "mat-geo-lingkaran-luas-010",
@@ -341,7 +350,8 @@
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika jarak antarpusat sama dengan jari-jari lingkaran ($d = r$), daerah irisan dibentuk oleh dua juring lingkaran bersudut pusat $120^\\circ$ yang saling bertumpukan pada layang-layang (dua segitiga sama sisi). Luas irisan = $2 \\times L_{\\text{juring}(120^\\circ)} - L_{\\text{belah ketupat}}$."
   }
 ];
 

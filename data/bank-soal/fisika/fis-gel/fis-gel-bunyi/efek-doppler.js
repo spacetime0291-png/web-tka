@@ -44,7 +44,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Efek Doppler adalah gejala perubahan frekuensi yang terdeteksi akibat gerak relatif antara sumber bunyi dan pengamat: $$f_p = \\frac{v \\pm v_p}{v \\mp v_s} f_s$$ Jika jarak relatif berkurang (saling mendekati), muka gelombang yang diterima per satuan waktu semakin rapat $\\implies f_p > f_s$. **Tips:** Jika keduanya bergerak searah dengan kelajuan sama, jarak relatif konstan sehingga tidak terjadi efek Doppler ($f_p = f_s$)."
   },
   {
     "id": "fis-gel-bunyi-doppler-002",
@@ -77,7 +78,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan efek Doppler ketika sumber bunyi bergerak mendekati pendengar yang diam ($v_p = 0$) adalah: $$f_p = \\frac{v}{v - v_s} f_s$$. **Tips:** Hati-hati dengan tanda pada penyebut: sumber mendekati pendengar menggunakan tanda minus ($v - v_s$), bukan plus."
   },
   {
     "id": "fis-gel-bunyi-doppler-003",
@@ -110,7 +112,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan efek Doppler ketika pendengar bergerak mendekati sumber bunyi yang diam ($v_s = 0$) adalah: $$f_p = \\frac{v + v_p}{v} f_s$$. **Tips:** Pendengar mendekati sumber menggunakan tanda tambah ($+$) di pembilang."
   },
   {
     "id": "fis-gel-bunyi-doppler-004",
@@ -143,7 +146,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika sumber bunyi bergerak menjauhi pendengar yang diam ($v_p = 0$), frekuensi yang didengar memenuhi persamaan: $$f_p = \\frac{v}{v + v_s} f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-005",
@@ -176,7 +180,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika pendengar bergerak menjauhi sumber bunyi yang diam ($v_s = 0$), frekuensi yang didengar berkurang dan memenuhi persamaan: $$f_p = \\frac{v - v_p}{v} f_s$$. **Tips:** Pendengar menjauh menyebabkan pembilang berkurang ($v - v_p$)."
   },
   {
     "id": "fis-gel-bunyi-doppler-006",
@@ -209,7 +214,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika sumber bunyi dan pendengar saling mendekati di sepanjang garis lurus yang sama, konvensi tanda Efek Doppler adalah pendengar bernilai positif ($+v_p$) dan sumber bernilai negatif ($-v_s$): $$f_p = \\left(\\frac{v + v_p}{v - v_s}\\right) f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-007",
@@ -242,7 +248,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika sumber bunyi dan pendengar saling menjauhi, tanda kecepatan adalah pendengar negatif ($-v_p$) dan sumber bunyi positif ($+v_s$): $$f_p = \\left(\\frac{v - v_p}{v + v_s}\\right) f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-008",
@@ -275,7 +282,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pengaruh angin dengan kecepatan $v_w$ yang bertiup searah dengan perambatan gelombang bunyi menuju pendengar menyebabkan kecepatan efektif bunyi di udara menjadi $(v + v_w)$: $$f_p = \\left(\\frac{(v + v_w) \\pm v_p}{(v + v_w) \\mp v_s}\\right) f_s$$. **Tips:** Jika angin bertiup searah perambatan gelombang bunyi, kecepatan angin ditambahkan ke kecepatan gelombang bunyi ($v + v_w$)."
   },
   {
     "id": "fis-gel-bunyi-doppler-009",
@@ -308,7 +316,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Peristiwa pantulan pada dinding diam diselesaikan dalam dua tahap: Tahap 1: Dinding bertindak sebagai pendengar diam menerima bunyi dari sumber yang mendekat ($v_p = 0, v_s = 10\\text{ m/s}$): $$f_{\\text{tebing}} = \\left(\\frac{v}{v - v_s}\\right) f_s$$ Tahap 2: Dinding memantulkan kembali bunyi ($f_{\\text{pantul}} = f_{\\text{tebing}}$) dan bertindak sebagai sumber diam. Pengemudi bertindak sebagai pendengar yang mendekat ($v_p = 10\\text{ m/s}, v_s = 0$): $$f_p = \\left(\\frac{v + v_p}{v}\\right) f_{\\text{tebing}} = \\left(\\frac{v + v_{\\text{mobil}}}{v - v_{\\text{mobil}}}\\right) f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-010",
@@ -341,7 +350,8 @@
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbandingan frekuensi saat sumber mendekati pendengar diam ($f_{\\text{dekat}}$) dan saat sumber menjauhi pendengar diam ($f_{\\text{jauh}}$): $$f_{\\text{dekat}} = \\left(\\frac{v}{v - v_s}\\right) f_0, \\quad f_{\\text{jauh}} = \\left(\\frac{v}{v + v_s}\\right) f_0 \\implies \\frac{f_{\\text{dekat}}}{f_{\\text{jauh}}} = \\frac{v + v_s}{v - v_s}$$. **Tips:** Pastikan rasio yang dibentuk adalah $\\frac{v + v_s}{v - v_s}$ (kebalikan dari posisi penyebutnya)."
   },
   {
     "id": "sedang-fis-05",
@@ -374,7 +384,8 @@
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Persamaan Efek Doppler: $$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$ • Pengamat diam: $v_p = 0$ • Sumber mendekati pengamat: tanda pada penyebut bernilai negatif ($-v_s$), sehingga frekuensi terdengar lebih tinggi ($f_p > f_s$). **Tips:** Perhatikan aturan tanda: sumber mendekat selalu memperkecil penyebut ($v - v_s$), bukan memperbesar ($v + v_s$)."
   },
   {
     "id": "drill-bun-07",
@@ -407,7 +418,8 @@
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Gunakan perumusan konsep fisis: $$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$ • Pendengar mendekati sumber $\\implies (+v_p)$ pada pembilang. • Sumber mendekati pendengar $\\implies (-v_s)$ pada penyebut. • Efek keduanya saling mendekat membuat frekuensi yang didengar semakin tinggi ($f_p > f_s$). **Tips:** ⚠️ Mnemonic Tanda Doppler: \"Mendekat = Lebih Tinggi\" (pembilang ditambah, penyebut dikurang)."
   },
   {
     "id": "drill2-bun-04",
@@ -440,7 +452,8 @@
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Efek Doppler Sumber Menjauh: Karena sumber menjauh ($+v_s$ pada penyebut), panjang gelombang merenggang sehingga frekuensi yang terdengar lebih rendah ($f_p < f_s$): $$f_p = \\left( \\frac{v}{v + v_s} \\right) f_s$$. **Tips:** ⚠️ Logika Akal Sehat: Sumber menjauh pasti menghasilkan nada yang lebih rendah dari frekuensi asli ($< 600\\text{ Hz}$)."
   },
   {
     "id": "drill2-bun-05",
@@ -473,7 +486,8 @@
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Efek Doppler Pendengar Menjauh: $$f_p = \\left( \\frac{v - v_p}{v} \\right) f_s$$."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kuat lensa atau daya lensa ($P$) dalam satuan dioptri didefinisikan sebagai kebalikan dari jarak fokus dalam meter ($f$), atau jika $f$ dalam sentimeter: $$P = \\frac{100}{f\\text{ (cm)}}$$."
   },
   {
     "id": "fis-gel-optik-lensa-002",
@@ -77,7 +78,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan lensa tipis menghubungkan jarak benda ($s$), jarak fokus ($f$), dan jarak bayangan ($s'$): $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'} \\implies \\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$."
   },
   {
     "id": "fis-gel-optik-lensa-003",
@@ -110,7 +112,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Lensa cekung memiliki bagian tengah yang lebih tipis dibandingkan bagian tepinya. Berkas sinar datang yang sejajar sumbu utama akan dibiaskan menyebar (divergen) sedemikian rupa sehingga perpanjangan sinar bias tersebut seolah-olah bersumber dari titik fokus maya ($F$) di depan lensa. **Tips:** adalah sifat lensa cembung (konvergen)."
   },
   {
     "id": "fis-gel-optik-lensa-004",
@@ -143,7 +146,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk setiap posisi benda nyata ($s > 0$) di depan lensa cekung ($f < 0$): $$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s} < 0$$ Nilai $s'$ selalu negatif (maya, di depan lensa), bayangan selalu tegak ($M > 0$), dan $|s'| < s$ sehingga $|M| < 1$ (diperkecil). **Tips:** Lensa cekung tidak pernah menghasilkan bayangan nyata dari sebuah benda nyata, sifatnya persis analog dengan cermin cembung."
   },
   {
     "id": "fis-gel-optik-lensa-005",
@@ -176,7 +180,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perbesaran linier bayangan ($M$) pada lensa dihitung melalui perbandingan jarak bayangan terhadap jarak benda: $$M = \\left|\\frac{s'}{s}\\right|$$."
   },
   {
     "id": "fis-gel-optik-lensa-006",
@@ -209,7 +214,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{1}{f} = \\left(\\frac{n_l}{n_u} - 1\\right) \\left(\\frac{1}{R_1} + \\frac{1}{R_2}\\right)$$ Untuk permukaan pertama cembung $R_1 > 0$, dan permukaan kedua cembung $R_2 > 0$ dalam bentuk penjumlahan tanda kelengkungan."
   },
   {
     "id": "fis-gel-optik-lensa-007",
@@ -242,7 +248,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbandingan jarak fokus lensa di dalam suatu zat cair ($f_c$) terhadap jarak fokusnya di udara ($f_u$) dirumuskan: $$\\frac{f_c}{f_u} = \\frac{\\frac{n_l}{n_u} - 1}{\\frac{n_l}{n_c} - 1}$$."
   },
   {
     "id": "fis-gel-optik-lensa-008",
@@ -275,7 +282,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya lensa gabungan ($P_{\\text{gab}}$) dari dua lensa tipis yang bersentuhan adalah penjumlahan aljabar dari daya masing-masing lensa: $$P_{\\text{gab}} = P_1 + P_2 = \\frac{100}{f_1} + \\frac{100}{f_2}$$ Ingat bahwa fokus lensa cekung bertanda negatif ($f_2 < 0$). **Tips:** Jangan menjumlahkan kedua nilai secara positif (+4 + 2 = +6 D, )."
   },
   {
     "id": "fis-gel-optik-lensa-009",
@@ -308,7 +316,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan tegak pada lensa cembung selalu bersifat maya dan berada di depan lensa ($s' < 0$): $$M = -\\frac{s'}{s} = 3 \\implies s' = -3s$$."
   },
   {
     "id": "fis-gel-optik-lensa-010",
@@ -341,7 +350,8 @@
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada metode kedudukan ganda (Metode Bessel), jarak benda ke layar adalah $D = s + s' = 100\\text{ cm}$, sehingga $s' = 100 - s$. Persamaan lensa menjadi: $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{D - s} = \\frac{D}{s(D - s)}$$."
   },
   {
     "id": "drill-cah-05",
@@ -374,7 +384,8 @@
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "lensa-cekung-cembung"
+    "subTopicSlug": "lensa-cekung-cembung",
+    "hint": "Gunakan perumusan konsep fisis: $$P = \\frac{1}{f\\text{ (meter)}} = \\frac{100}{f\\text{ (cm)}}$$."
   },
   {
     "id": "drill2-cah-03",
@@ -407,7 +418,8 @@
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "lensa-cekung-cembung"
+    "subTopicSlug": "lensa-cekung-cembung",
+    "hint": "Sifat Mutlak Lensa Cekung: Lensa cekung bersifat menyebarkan cahaya (divergen) dengan fokus negatif ($f = -15\\text{ cm}$). Bayangannya selalu bersifat maya, tegak, dan diperkecil ($s' < 0$). **Tips:** ⚠️ Karakteristik Tetap Lensa Cekung: Lensa cekung tidak pernah bisa menghasilkan bayangan nyata pada posisi benda real apa pun."
   },
   {
     "id": "drill2-cah-04",
@@ -440,7 +452,8 @@
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "lensa-cekung-cembung"
+    "subTopicSlug": "lensa-cekung-cembung",
+    "hint": "Kuat Lensa Sistem Gabungan Berimpit: Kuat lensa gabungan merupakan penjumlahan aljabar langsung dari kuat masing-masing lensa: $$P_{\\text{gab}} = P_1 + P_2$$."
   },
   {
     "id": "sup-fis-gel-04",
@@ -473,7 +486,8 @@
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "lensa-cekung-cembung"
+    "subTopicSlug": "lensa-cekung-cembung",
+    "hint": "Persamaan Lensa Tipis Gauss: $\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$. Tanda $s' > 0$ menandakan bayangan nyata di belakang lensa (selalu terbalik). **Tips:** Menganggap bayangan pada cermin dan lensa memiliki aturan tanda sama untuk letak maya/nyata."
   }
 ];
 

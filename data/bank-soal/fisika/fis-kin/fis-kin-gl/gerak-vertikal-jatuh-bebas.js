@@ -44,7 +44,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gerak Jatuh Bebas (GJB) adalah gerak lurus berubah beraturan vertikal ke bawah dengan kecepatan awal nol ($v_0 = 0$) dan percepatan $a = g$: $$t = \\sqrt{\\frac{2h}{g}}$$ $$v_t = \\sqrt{2gh} = g \\cdot t$$. **Tips:** Lupa mengalikan angka 2 pada $\\frac{2h}{g}$ saat menghitung waktu jatuh sehingga mendapatkan $t = \\sqrt{20/10} = \\sqrt{2}$."
   },
   {
     "id": "fis-kin-gl-vertikal-002",
@@ -77,7 +78,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada gerak vertikal ke atas, kecepatan di titik puncak adalah nol ($v_t = 0$): $$t_{\\text{puncak}} = \\frac{v_0}{g}$$ $$h_{\\max} = \\frac{v_0^2}{2g}$$. **Tips:** Nilai $6\\text{ sekon}$ adalah waktu total bolak-balik di udara ($2 \\times t_{\\text{puncak}}$), bukan waktu mencapai titik puncak."
   },
   {
     "id": "fis-kin-gl-vertikal-003",
@@ -110,7 +112,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Keduanya merupakan gerak lurus berubah beraturan dengan percepatan yang sama yaitu percepatan gravitasi bumi ($a = g$). Pembeda utamanya adalah kondisi awal: GJB dilepaskan tanpa kecepatan awal ($v_0 = 0$), sedangkan GVB dilemparkan ke bawah dengan kecepatan awal ($v_0 > 0$). **Tips:** Terkadang siswa mengira gaya gravitasi pada gerak jatuh bebas berbeda dari gerak vertikal yang dilempar."
   },
   {
     "id": "fis-kin-gl-vertikal-004",
@@ -143,7 +146,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Persamaan perpindahan vertikal ke bawah (GVB) dengan kecepatan awal $v_0$ adalah: $$h = v_0 t + \\frac{1}{2} g t^2$$."
   },
   {
     "id": "fis-kin-gl-vertikal-005",
@@ -176,7 +180,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum II Newton dan Hukum Gravitasi Universal: $F = m a \\implies m g = m a \\implies a = g$. Percepatan jatuh bebas tidak bergantung pada massa benda ($m$). Karena percepatan $g$ dan ketinggian awal $h$ identik, waktu tempuh $t = \\sqrt{\\frac{2h}{g}}$ kedua benda bernilai tepat sama."
   },
   {
     "id": "fis-kin-gl-vertikal-006",
@@ -209,7 +214,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kedua bola bergerak pada garis vertikal yang sama. Pertemuan terjadi saat ketinggian posisi kedua bola terhadap acuan tanah bernilai sama ($y_A(t) = y_B(t)$)."
   },
   {
     "id": "fis-kin-gl-vertikal-007",
@@ -242,7 +248,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena terlepas dari wahana yang sedang bergerak naik, karung pasir mewarisi kecepatan awal balon ke arah atas ($v_0 = +5\\text{ m/s}$). Gerak karung pasir merupakan gerak vertikal ke atas dari ketinggian $h = 30\\text{ m}$ sebelum akhirnya jatuh bebas ke tanah."
   },
   {
     "id": "fis-kin-gl-vertikal-008",
@@ -275,7 +282,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak yang ditempuh pada detik terakhir dari gerak jatuh bebas berdurasi total $t$ sekon adalah selisih jarak tempuh total dengan jarak tempuh hingga detik ke-$(t-1)$: $$\\Delta h = h(t) - h(t-1) = \\frac{1}{2} g (2t - 1)$$."
   },
   {
     "id": "fis-kin-gl-vertikal-009",
@@ -308,7 +316,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak bola saat melintasi jendela dapat dianalisis sebagai gerak vertikal ke atas dengan kecepatan awal $v_b$ (di bingkai bawah) dan ketinggian $h = 2\\text{ m}$ dalam selang waktu $\\Delta t = 0{,}2\\text{ s}$: $$h = v_b \\Delta t - \\frac{1}{2} g (\\Delta t)^2$$."
   },
   {
     "id": "fis-kin-gl-vertikal-010",
@@ -341,7 +350,8 @@
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketinggian pada gerak vertikal ke atas memenuhi persamaan kuadrat $h = v_0 t - \\frac{1}{2} g t^2$. Selisih antara kedua akar waktu ($t_2 - t_1$) berkaitan dengan diskriminan persamaan kuadrat tersebut. **Tips:** Lupa bahwa selang waktu $4\\text{ s}$ adalah $\\Delta t = t_2 - t_1$, bukan waktu mencapai titik puncak."
   },
   {
     "id": "fis-din-14",
@@ -374,7 +384,8 @@
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "gerak-vertikal-jatuh-bebas"
+    "subTopicSlug": "gerak-vertikal-jatuh-bebas",
+    "hint": "Konsep: Kelajuan kritis pada titik tertinggi gerak melingkar vertikal: $N + mg = \\frac{m v^2}{R}$ dengan syarat $N \\ge 0$."
   },
   {
     "id": "fis-din-39",
@@ -407,7 +418,8 @@
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "gerak-vertikal-jatuh-bebas"
+    "subTopicSlug": "gerak-vertikal-jatuh-bebas",
+    "hint": "Konsep: Bandul konis: $T \\cos\\theta = mg$ dan $T \\sin\\theta = \\frac{m v^2}{R}$ dengan jari-jari lintasan $R = L \\sin\\theta$."
   },
   {
     "id": "fis-din-40",
@@ -440,7 +452,8 @@
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "gerak-vertikal-jatuh-bebas"
+    "subTopicSlug": "gerak-vertikal-jatuh-bebas",
+    "hint": "Konsep: Silinder putar vertikal: gaya normal dinding menjadi gaya sentripetal ($N = \\frac{m v^2}{R}$) dan gaya gesek statis menahan berat badan ($f_s = mg \\le \\mu_s N$)."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ciri esensial GLB adalah lintasan berupa garis lurus, vektor kecepatan bernilai tetap baik besar maupun arahnya ($v = \\text{konstan}$), sehingga percepatan $a = \\frac{dv}{dt} = 0$, dan resultan gaya $\\Sigma F = 0$ (Hukum I Newton)."
   },
   {
     "id": "fis-kin-gl-glb-002",
@@ -77,7 +78,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada GLB, hubungan antara jarak tempuh ($s$), kecepatan konstan ($v$), dan waktu tempuh ($t$) dirumuskan dengan: $$s = v \\cdot t$$."
   },
   {
     "id": "fis-kin-gl-glb-003",
@@ -110,7 +112,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gelombang merambat dengan kelajuan tetap GLB ($c = \\text{konstan}$). Karena gelombang menempuh perjalanan bolak-balik (pergi dan pulang), jarak satu arah ke objek dihitung dengan: $$s = \\frac{c \\cdot \\Delta t}{2}$$. **Tips:** Lupa membagi dua waktu tempuh bolak-balik sehingga mendapatkan jawaban $120\\text{ km}$."
   },
   {
     "id": "fis-kin-gl-glb-004",
@@ -143,7 +146,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk umum persamaan posisi GLB adalah $x(t) = x_0 + v t$, di mana $x_0$ adalah posisi awal dan $v = \\frac{dx}{dt}$ adalah kecepatan tetap."
   },
   {
     "id": "fis-kin-gl-glb-005",
@@ -176,7 +180,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dua benda GLB yang bergerak saling mendekat menempuh jarak total bersama sebesar jarak pemisah kedua kota ($d$): $$t = \\frac{d}{v_A + v_B}$$. **Tips:** Menghitung $1{,}2\\text{ jam}$ sebagai $1\\text{ jam } 20\\text{ menit}$ ($80\\text{ menit}$)."
   },
   {
     "id": "fis-kin-gl-glb-006",
@@ -209,7 +214,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar seluruh badan kereta melintasi terowongan secara utuh, jarak yang harus ditempuh oleh kereta adalah jumlahan panjang terowongan ($L_T$) dan panjang rangkaian kereta ($L_K$): $$s = L_T + L_K$$."
   },
   {
     "id": "fis-kin-gl-glb-007",
@@ -242,7 +248,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi menyusul tercapai ketika jarak tempuh kedua kendaraan dari titik tolak awal bernilai sama ($s_A = s_B$). Perhatikan perbedaan selang waktu tempuh antara mobil $A$ dan $B$. **Tips:** Menghitung jarak tempuh mobil $A$ hanya selama 10 sekon pertama ($150\\text{ m}$) atau lupa mengalikan dengan kecepatan mobil $B$."
   },
   {
     "id": "fis-kin-gl-glb-008",
@@ -275,7 +282,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bunyi merambat secara GLB pada masing-masing medium. Selisih waktu kedatangan bunyi pada jarak yang sama ($d$) adalah: $$\\Delta t = t_{\\text{udara}} - t_{\\text{baja}} = \\frac{d}{v_{\\text{udara}}} - \\frac{d}{v_{\\text{baja}}}$$."
   },
   {
     "id": "fis-kin-gl-glb-009",
@@ -308,7 +316,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak pisah dua partikel adalah harga mutlak selisih kedudukan $|x_A(t) - x_B(t)|$. Kedua partikel bertemu ketika kedudukan keduanya sama persis ($x_A(t) = x_B(t)$). **Tips:** Perhatikan tanda minus pada $-20$ saat memindahkan ruas aljabar agar tidak keliru menghitung waktu pertemuan."
   },
   {
     "id": "fis-kin-gl-glb-010",
@@ -341,7 +350,8 @@
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan efektif orang terhadap lantai diam adalah $v_{\\text{searah}} = v_{\\text{orang}} + v_{\\text{konveyor}}$ saat bergerak searah, dan $v_{\\text{lawan}} = v_{\\text{orang}} - v_{\\text{konveyor}}$ saat bergerak berlawanan arah. **Tips:** Mengabaikan fakta bahwa kecepatan konveyor mengurangi laju gerak orang saat berjalan berlawanan arah."
   }
 ];
 

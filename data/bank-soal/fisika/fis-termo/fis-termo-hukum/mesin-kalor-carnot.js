@@ -44,7 +44,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Siklus mesin Carnot bekerja melalui 4 proses kuasistatis yang reversibel secara siklis: 1. Ekspansi isotermal (penyerapan kalor $Q_H$ pada suhu konstan $T_H$) 2. Ekspansi adiabatik (penurunan suhu dari $T_H$ ke $T_L$ tanpa perpindahan kalor) 3. Kompresi isotermal (pembuangan kalor $Q_L$ pada suhu konstan $T_L$) 4. Kompresi adiabatik (kenaikan suhu dari $T_L$ kembali ke $T_H$ tanpa perpindahan kalor)."
   },
   {
     "id": "fis-termo-hukum-carnot-002",
@@ -77,7 +78,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Efisiensi termal maksimum dari suatu mesin Carnot ideal dirumuskan sebagai: $$\\eta = 1 - \\frac{T_L}{T_H} = \\frac{T_H - T_L}{T_H}$$ dengan $T_H$ dan $T_L$ berturut-turut adalah suhu mutlak reservoir tinggi dan reservoir rendah dalam satuan Kelvin."
   },
   {
     "id": "fis-termo-hukum-carnot-003",
@@ -110,7 +112,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan usaha ($W$), kalor yang diserap ($Q_H$), dan efisiensi Carnot ($\\eta$) adalah: $$W = \\eta \\times Q_H = \\left(1 - \\frac{T_L}{T_H}\\right) Q_H$$."
   },
   {
     "id": "fis-termo-hukum-carnot-004",
@@ -143,7 +146,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dari rumus efisiensi Carnot $\\eta = 1 - \\frac{T_L}{T_H}$, suhu reservoir dingin dapat ditentukan melalui: $$\\frac{T_L}{T_H} = 1 - \\eta \\implies T_L = (1 - \\eta) T_H$$."
   },
   {
     "id": "fis-termo-hukum-carnot-005",
@@ -176,7 +180,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan prinsip kekekalan energi pada siklus termal: $$Q_H = W + Q_L \\implies Q_L = Q_H - W$$ Karena usaha yang dihasilkan adalah $W = \\eta Q_H$, maka kalor yang dibuang adalah: $$Q_L = (1 - \\eta) Q_H$$."
   },
   {
     "id": "fis-termo-hukum-carnot-006",
@@ -209,7 +214,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi mesin Carnot dirumuskan sebagai $\\eta = 1 - \\frac{T_L}{T_H}$, yang dapat diubah menjadi bentuk $T_H = \\frac{T_L}{1 - \\eta}$."
   },
   {
     "id": "fis-termo-hukum-carnot-007",
@@ -242,7 +248,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi Carnot awal adalah $\\eta_0 = 1 - \\frac{T_L}{T_H} = 1 - \\frac{300}{600} = \\frac{1}{2} = 50\\%$. Kenaikan efisiensi dihitung dengan $\\Delta \\eta = \\eta_{\\text{baru}} - \\eta_0$."
   },
   {
     "id": "fis-termo-hukum-carnot-008",
@@ -275,7 +282,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koefisien performansi (Coefficient of Performance / $COP$) mesin pendingin Carnot dirumuskan sebagai: $$COP = \\frac{T_L}{T_H - T_L} = \\frac{Q_L}{W}$$ dan daya mekanik/listrik adalah laju usaha per satuan waktu: $P = \\frac{W}{t}$. **Tips:** Lupa mengubah satuan waktu 1 menit menjadi 60 detik saat menghitung daya listrik ($P = W/t$)."
   },
   {
     "id": "fis-termo-hukum-carnot-009",
@@ -308,7 +316,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk dua mesin Carnot yang tersusun secara seri di mana kalor buang mesin 1 ($Q$) menjadi kalor masuk mesin 2, relasi kalor dan suhu adalah $\\frac{Q_1}{T_1} = \\frac{Q}{T} = \\frac{Q_2}{T_2}$. Usaha mesin 1 adalah $W_1 = Q_1 - Q$ dan mesin 2 adalah $W_2 = Q - Q_2$."
   },
   {
     "id": "fis-termo-hukum-carnot-010",
@@ -341,7 +350,8 @@
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koefisien performansi pompa kalor ($COP_{\\text{HP}}$) mengukur perbandingan kalor yang dialirkan ke reservoir panas ($Q_H$) terhadap usaha luar yang diberikan ($W$): $$COP_{\\text{HP}} = \\frac{Q_H}{W} = \\frac{T_H}{T_H - T_L} = 1 + COP_{\\text{refrigerator}}$$."
   },
   {
     "id": "drill-ter-05",
@@ -374,7 +384,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Efisiensi Mesin Kalor Carnot: $$\\eta = \\left( 1 - \\frac{T_2}{T_1} \\right) \\times 100\\% = \\left( \\frac{T_1 - T_2}{T_1} \\right) \\times 100\\%$$ dengan $T_1$ reservoir suhu tinggi dan $T_2$ reservoir suhu rendah (wajib Kelvin!). **Tips:** Efisiensi Carnot adalah \"selisih dibagi suhu tinggi\": $\\eta = \\frac{T_{\\text{tinggi}} - T_{\\text{rendah}}}{T_{\\text{tinggi}}}$."
   },
   {
     "id": "sedang-fis-04",
@@ -407,7 +418,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Mesin Kalor Carnot & Suhu Mutlak Kelvin: • Suhu WAJIB dalam skala Kelvin: $T(\\text{K}) = T(^\\circ\\text{C}) + 273$ • Efisiensi: $\\eta = 1 - \\frac{T_C}{T_H} = \\frac{W}{Q_H}$ • Hukum Kekekalan Energi: $W = Q_H - Q_C \\iff Q_C = Q_H - W$."
   },
   {
     "id": "drill-ter-06",
@@ -440,7 +452,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Hubungan Usaha dan Kalor Mesin: • $W = \\eta \\cdot Q_1$ • Menurut kekekalan energi: $Q_1 = W + Q_2 \\implies Q_2 = Q_1 - W$."
   },
   {
     "id": "drill-ter-07",
@@ -473,7 +486,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Suhu pada rumus efisiensi Carnot HARUS dalam skala Kelvin mutlak, tidak boleh menggunakan derajat Celsius! $$T\\text{ (K)} = T\\text{ (}^\\circ\\text{C)} + 273$$. **Tips:** Menghitung dengan Celsius: $\\eta = \\frac{327 - 27}{327} \\approx 91{,}7\\%$ (SALAH BESAR!)."
   },
   {
     "id": "drill-ter-08",
@@ -506,7 +520,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Koefisien Performansi Mesin Pendingin Carnot ($C_P$): $$C_P = \\frac{Q_2}{W} = \\frac{T_2}{T_1 - T_2}$$ dengan $T_2$ suhu ruang dingin dan $T_1$ suhu lingkungan panas (dalam Kelvin)."
   },
   {
     "id": "drill2-ter-04",
@@ -539,7 +554,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Efisiensi dan Usaha Carnot: $$\\eta = 1 - \\frac{T_2}{T_1} \\quad \\text{dan} \\quad \\eta = \\frac{W}{Q_1} \\implies Q_1 = \\frac{W}{\\eta}$$. **Tips:** ⚠️ Alur Terbalik: Jika diketahui usaha dan suhu, hitung efisiensi $\\eta$ terlebih dahulu, lalu cari $Q_1 = W / \\eta$."
   },
   {
     "id": "drill2-ter-05",
@@ -572,7 +588,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Prinsip Batas Efisiensi Carnot: Efisiensi mesin kalor ideal hanya bergantung pada rasio suhu mutlak kedua reservoir ($T_2/T_1$). Efisiensi meningkat jika selisih $(T_1 - T_2)$ diperbesar, yaitu dengan menaikkan $T_1$ setinggi mungkin dan/atau mendinginkan $T_2$ serendah mungkin."
   },
   {
     "id": "drill2-ter-07",
@@ -605,7 +622,8 @@
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Koefisien Performansi Mesin Pendingin: $$C_P = \\frac{T_2}{T_1 - T_2}$$ dengan $T_2$ suhu ruang dingin dan $T_1$ suhu ruang panas dalam Kelvin."
   }
 ];
 

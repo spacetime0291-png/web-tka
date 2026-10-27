@@ -44,7 +44,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$a = \\frac{\\Sigma F}{m}$$."
   },
   {
     "id": "fis-din-gaya-newton2-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Resultan gaya searah dijumlahkan untuk memperoleh percepatan benda. Kecepatan akhir dihitung menggunakan kinematika GLBB: $$\\Sigma F = F_1 + F_2,\\quad a = \\frac{\\Sigma F}{m},\\quad v_t = v_0 + a t$$."
   },
   {
     "id": "fis-din-gaya-newton2-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $\\vec{a} = \\frac{\\Sigma \\vec{F}}{m}$. Secara fisis, percepatan bertambah jika gaya luar membesar, dan berkurang jika massa kelembaman membesar. **Tips:** Tertukar antara konsep berbanding lurus (proporsional langsung) dan berbanding terbalik."
   },
   {
     "id": "fis-din-gaya-newton2-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya dihitung dari perkalian massa dengan percepatan ($\\Sigma F = m \\cdot a$), di mana percepatan diperoleh dari perubahan kecepatan per satuan waktu ($a = \\frac{\\Delta v}{\\Delta t}$)."
   },
   {
     "id": "fis-din-gaya-newton2-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada gaya yang konstan ($F = \\text{konstan}$), massa berbanding terbalik dengan percepatan yang dialami benda: $$F = m_A a_A = m_B a_B \\implies \\frac{m_A}{m_B} = \\frac{a_B}{a_A}$$. **Tips:** Terkecoh menganggap massa berbanding lurus dengan percepatan sehingga menjawab $1 : 2$."
   },
   {
     "id": "fis-din-gaya-newton2-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinjau sistem gabungan untuk menentukan percepatan bersama, kemudian tinjau diagram benda bebas balok kedua untuk menentukan gaya kontak: $$a = \\frac{F}{m_A + m_B},\\quad N_{AB} = m_B \\cdot a$$."
   },
   {
     "id": "fis-din-gaya-newton2-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hanya komponen gaya horizontal ($F_x = F \\cos\\theta$) yang menghasilkan percepatan translasi pada lantai licin. Komponen vertikal ($F_y = F \\sin\\theta = 30\\text{ N}$) lebih kecil dari berat benda ($w = 100\\text{ N}$) sehingga balok tetap meluncur di lantai."
   },
   {
     "id": "fis-din-gaya-newton2-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Percepatan adalah turunan kedua dari fungsi posisi terhadap waktu ($a = \\frac{d^2x}{dt^2}$). Berdasarkan Hukum II Newton, resultan gaya adalah hasil kali massa dengan percepatan tersebut: $$\\Sigma F = m \\cdot a$$. **Tips:** Hanya menurunkan posisi satu kali sehingga menyangka kecepatan sebagai percepatan."
   },
   {
     "id": "fis-din-gaya-newton2-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika gaya luar bergantung pada waktu ($F(t)$), percepatan juga berubah terhadap waktu ($a(t) = \\frac{F(t)}{m}$). Perubahan kecepatan dicari melalui integrasi percepatan: $$\\Delta v = \\int_0^t a(t)\\,dt$$."
   },
   {
     "id": "fis-din-gaya-newton2-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Seluruh sistem bergerak bersama dengan percepatan yang sama ($a$). Tali 1 hanya bertugas menarik balok $m_1$, sedangkan tali 2 bertugas menarik gabungan balok ($m_1 + m_2$)."
   },
   {
     "id": "fis-din-17",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Hukum kuadrat terbalik kuat medan gravitasi: $g(r) = G \\frac{M}{r^2}$ dengan jarak diukur dari pusat massa bumi ($r = R + h$)."
   },
   {
     "id": "fis-din-18",
@@ -407,7 +418,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Perbandingan kuat medan gravitasi permukaan planet: $g = G \\frac{M}{R^2}$."
   },
   {
     "id": "fis-din-41",
@@ -440,7 +452,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Hukum Gravitasi Universal Newton: $F = G \\frac{m_1 m_2}{r^2}$."
   },
   {
     "id": "fis-din-19",
@@ -473,7 +486,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Titik netral gravitasi: kesetimbangan kuat medan gravitasi dua sumber massa segaris ($g_1 = g_2$)."
   },
   {
     "id": "fis-din-20",
@@ -506,7 +520,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Kelajuan orbit satelit lingkaran: gaya gravitasi bumi bertindak sebagai gaya sentripetal ($\\frac{G M m}{r^2} = \\frac{m v^2}{r}$)."
   },
   {
     "id": "fis-din-43",
@@ -539,7 +554,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Hukum III Kepler: perbandingan kuadrat periode revolusi sama dengan perbandingan pangkat tiga jari-jari orbit ($\\frac{T_B^2}{T_A^2} = \\frac{r_B^3}{r_A^3}$)."
   },
   {
     "id": "fis-din-44",
@@ -572,7 +588,8 @@
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Kelajuan lepas medan gravitasi: $v_{\\text{lepas}} = \\sqrt{\\frac{2GM}{R}}$."
   }
 ];
 

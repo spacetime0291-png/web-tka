@@ -44,7 +44,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Garis-garis medan listrik (electric field lines) menggambarkan arah dan kuat medan listrik. Garis medan selalu berawal dari muatan positif dan berakhir pada muatan negatif (atau di tak hingga), serta tidak pernah saling berpotongan."
   },
   {
     "id": "fis-lis-statis-medan-002",
@@ -77,7 +78,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kuat medan listrik ($E$) pada jarak $r$ dari muatan titik $q$ dirumuskan sebagai: $$E = k \\frac{|q|}{r^2}$$ Arah medan listrik menjauhi muatan jika muatan sumber positif, dan menuju muatan jika muatan sumber negatif."
   },
   {
     "id": "fis-lis-statis-medan-003",
@@ -110,7 +112,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya elektrostatik yang dialami muatan uji dalam medan listrik adalah $\\vec{F} = q_0 \\vec{E}$. Jika muatan uji positif, arah $\\vec{F}$ searah dengan $\\vec{E}$. Jika muatan uji negatif, arah $\\vec{F}$ berlawanan arah dengan $\\vec{E}$."
   },
   {
     "id": "fis-lis-statis-medan-004",
@@ -143,7 +146,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kuat medan listrik dari muatan titik berbanding terbalik dengan kuadrat jaraknya terhadap muatan sumber: $$E \\propto \\frac{1}{r^2} \\implies \\frac{E_Q}{E_P} = \\left(\\frac{r_P}{r_Q}\\right)^2$$. **Tips:** Lupa mengkuadratkan faktor perbandingan jarak sehingga memilih $\\frac{1}{2}E$."
   },
   {
     "id": "fis-lis-statis-medan-005",
@@ -176,7 +180,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Gauss dan sifat konduktor elektrostatik, seluruh kelebihan muatan pada bahan konduktor akan saling tolak-menolak dan berkumpul hanya di permukaan terluar konduktor. Tidak ada muatan netto di dalam rongga bola, sehingga kuat medan listrik di dalam bola konduktor selalu nol ($E = 0$)."
   },
   {
     "id": "fis-lis-statis-medan-006",
@@ -209,7 +214,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk dua muatan yang berlawanan jenis, kuat medan listrik tidak mungkin nol di antara kedua muatan (karena vektor medannya searah). Titik bernilai nol harus berada di luar bentang kedua muatan, tepatnya di sisi yang lebih dekat dengan muatan yang memiliki magnitudo (nilai mutlak) lebih kecil. **Tips:** Mencari titik nol di antara kedua muatan."
   },
   {
     "id": "fis-lis-statis-medan-007",
@@ -242,7 +248,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuat medan listrik resultan di titik $O$ merupakan penjumlahan vektor dari medan listrik yang ditimbulkan oleh muatan di $A$ dan muatan di $B$: $$\\vec{E}_{O} = \\vec{E}_A + \\vec{E}_B$$ Karena sumbu-$x$ dan sumbu-$y$ saling tegak lurus, besar resultannya adalah $E_{\\text{res}} = \\sqrt{E_A^2 + E_B^2}$."
   },
   {
     "id": "fis-lis-statis-medan-008",
@@ -275,7 +282,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluks listrik ($\\Phi$) didefinisikan sebagai jumlah garis medan listrik yang menembus suatu luasan bidang secara tegak lurus: $$\\Phi = E A \\cos\\theta$$ dengan $\\theta$ adalah sudut antara arah medan listrik dengan garis normal bidang (vektor luas $\\vec{A}$)."
   },
   {
     "id": "fis-lis-statis-medan-009",
@@ -308,7 +316,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Distribusi medan listrik pada bola konduktor bermuatan bergantung pada posisinya terhadap jari-jari bola $R$: - Di dalam bola ($r < R$): $E = 0$ - Di permukaan ($r = R$): $E = E_0 = k\\frac{Q}{R^2}$ - Di luar bola ($r > R$): $E = k\\frac{Q}{r^2}$. **Tips:** Mengira medan di dalam bola berbanding lurus dengan jarak seperti pada bola isolator bermuatan merata."
   },
   {
     "id": "fis-lis-statis-medan-010",
@@ -341,7 +350,8 @@
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak partikel bermuatan dalam medan listrik homogen tegak lurus analog dengan gerak parabola peluru. Gerak horizontal merupakan gerak lurus beraturan (GLB) dan gerak vertikal merupakan gerak lurus berubah beraturan (GLBB)."
   },
   {
     "id": "sedang-fis-06",
@@ -374,7 +384,8 @@
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-statis",
-    "subTopicSlug": "kuat-medan-listrik"
+    "subTopicSlug": "kuat-medan-listrik",
+    "hint": "Kuat Medan Listrik Nol di Antara Dua Muatan Sejenis: Karena kedua muatan sejenis (keduanya positif), kuat medan listrik bernilai nol di suatu titik di antara keduanya: $$E_A = E_B \\implies k \\frac{q_A}{x^2} = k \\frac{q_B}{(d - x)^2} \\implies \\frac{\\sqrt{q_A}}{x} = \\frac{\\sqrt{q_B}}{d - x}$$. **Tips:** Perhatikan pertanyaan: jarak diukur dari muatan A atau muatan B."
   }
 ];
 

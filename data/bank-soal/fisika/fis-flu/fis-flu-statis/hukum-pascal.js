@@ -44,7 +44,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta P_1 = \\Delta P_2 = \\dots = \\Delta P_n$$Artinya, setiap perubahan tekanan yang diberikan pada permukaan zat cair dalam wadah tertutup akan diteruskan ke setiap bagian zat cair dan dinding wadahnya ke segala arah dengan besar yang sama tanpa berkurang."
   },
   {
     "id": "fis-flu-statis-pascal-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan Hukum Pascal, tekanan fluida pada kedua penampang bernilai sama: $$P_1 = P_2 \\iff \\frac{F_1}{A_1} = \\frac{F_2}{A_2}$$Sehingga gaya angkat pada piston besar dirumuskan: $$F_2 = F_1 \\cdot \\frac{A_2}{A_1}$$."
   },
   {
     "id": "fis-flu-statis-pascal-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Luas penampang lingkaran berbanding lurus dengan kuadrat diameternya ($A = \\frac{1}{4}\\pi d^2$). Sehingga persamaan Hukum Pascal menggunakan diameter menjadi: $$\\frac{F_1}{d_1^2} = \\frac{F_2}{d_2^2} \\iff F_1 = F_2 \\cdot \\left(\\frac{d_1}{d_2}\\right)^2$$."
   },
   {
     "id": "fis-flu-statis-pascal-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Karena fluida hidrolik bersifat inkompresibel (tak termampatkan), volume fluida yang dipindahkan oleh piston kecil harus sama dengan volume fluida yang mendorong piston besar: $$V_1 = V_2 \\iff A_1 \\cdot s_1 = A_2 \\cdot s_2$$Sehingga perpindahan piston berbanding terbalik dengan luas penampangnya: $$s_2 = s_1 \\cdot \\frac{A_1}{A_2}$$."
   },
   {
     "id": "fis-flu-statis-pascal-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Prinsip kerja rem hidrolik memanfaatkan transmisi tekanan fluida Hukum Pascal. Gaya dorong pada silinder roda ($F_2$) berbanding lurus dengan kuadrat rasio diameternya terhadap silinder master ($F_1$): $$F_2 = F_1 \\cdot \\left(\\frac{d_2}{d_1}\\right)^2$$."
   },
   {
     "id": "fis-flu-statis-pascal-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika terdapat perbedaan ketinggian cairan setinggi $h$ antara kedua piston, tekanan pada bidang acuan horizontal setinggi piston kecil harus setimbang: $$P_1 = P_2 + \\rho \\cdot g \\cdot h \\iff \\frac{F_1}{A_1} = \\frac{F_2}{A_2} + \\rho \\cdot g \\cdot h$$Sehingga gaya pada piston kecil dihitung dengan: $$F_1 = A_1 \\cdot \\left(\\frac{F_2}{A_2} + \\rho \\cdot g \\cdot h\\right)$$."
   },
   {
     "id": "fis-flu-statis-pascal-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi mekanik dongkrak hidrolik dirumuskan sebagai rasio gaya angkat ideal terhadap gaya nyata yang diberikan: $$\\eta = \\frac{F_{1,\\text{ideal}}}{F_{1,\\text{nyata}}} \\implies F_{1,\\text{nyata}} = \\frac{F_{1,\\text{ideal}}}{\\eta}$$Di mana gaya ideal menurut Hukum Pascal dengan rasio diameter adalah: $$F_{1,\\text{ideal}} = W \\cdot \\left(\\frac{d_1}{d_2}\\right)^2$$."
   },
   {
     "id": "fis-flu-statis-pascal-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem ini menggabungkan dua tahap penggandaan gaya mekanik: 1) Keuntungan mekanik tuas pengungkit: $$F_1 = F_{\\text{tangan}} \\cdot \\frac{L_k}{L_b}$$ 2) Keuntungan mekanik bejana hidrolik Hukum Pascal: $$F_2 = F_1 \\cdot \\frac{A_2}{A_1}$$Sehingga keuntungan mekanik total adalah hasil kali kedua faktor pengali."
   },
   {
     "id": "fis-flu-statis-pascal-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Tekanan kerja fluida hidrolik adalah perbandingan berat beban terhadap luas penampang silinder: $$P = \\frac{F}{A} = \\frac{M \\cdot g}{A}$$ 2) Daya mekanik rata-rata adalah laju usaha pengangkatan terhadap waktu: $$\\mathcal{P} = \\frac{W}{t} = \\frac{(M \\cdot g) \\cdot h}{t}$$."
   },
   {
     "id": "fis-flu-statis-pascal-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya yang dihasilkan pada piston beban dihitung menggunakan Hukum Pascal: $$F_2 = F_1 \\cdot \\frac{A_2}{A_1}$$Gaya ini mengompresi pegas sesuai Hukum Hooke: $$F_{\\text{pegas}} = k \\cdot \\Delta x$$Pada kondisi setimbang berlaku $F_2 = F_{\\text{pegas}}$. **Tips:** Siswa sering lupa mengubah satuan meter ke sentimeter pada akhir perhitungan, atau salah menghitung rasio penampang $A_2 / A_1$."
   },
   {
     "id": "sup-fis-flu-01",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "hukum-pascal"
+    "subTopicSlug": "hukum-pascal",
+    "hint": "Tekanan yang diberikan pada zat cair dalam ruang tertutup diteruskan sama besar ke segala arah: $\\frac{F_1}{A_1} = \\frac{F_2}{A_2} \\implies F_1 = \\frac{A_1}{A_2} F_2$. **Tips:** Terbalik mengalikan rasio penampang sehingga menghasilkan nilai gaya yang tidak masuk akal ($200.000\\text{ N}$)."
   }
 ];
 

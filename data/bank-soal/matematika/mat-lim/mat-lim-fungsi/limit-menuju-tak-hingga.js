@@ -44,7 +44,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada fungsi polinomial saat $x \\to \\infty$, perilaku asimtotik seluruh fungsi didominasi sepenuhnya oleh suku dengan derajat tertinggi ($a_n x^n$)."
   },
   {
     "id": "mat-lim-fungsi-takhingga-002",
@@ -77,7 +78,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika derajat polinomial pembilang ($n = 1$) lebih kecil daripada derajat polinomial penyebut ($m = 2$), maka nilai limit menuju tak hingga bernilai $0$ karena penyebut tumbuh jauh lebih cepat dibandingkan pembilang. **Tips:** Mengambil rasio koefisien $\\frac{5}{2}$ tanpa memperhatikan bahwa pangkat dari kedua variabel berbeda ($x$ berbanding $x^2$)."
   },
   {
     "id": "mat-lim-fungsi-takhingga-003",
@@ -110,7 +112,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika derajat tertinggi pembilang sama dengan penyebut ($n = m = 2$), nilai limit menuju tak hingga adalah perbandingan koefisien suku berpangkat tertinggi dari pembilang dan penyebut."
   },
   {
     "id": "mat-lim-fungsi-takhingga-004",
@@ -143,7 +146,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk tak tentu $\\infty - \\infty$ yang memuat bentuk akar diubah menjadi bentuk pecahan dengan mengalikan bentuk sekawannya, yaitu $(\\sqrt{x + 4} + \\sqrt{x})$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-005",
@@ -176,7 +180,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk $x > 0$ saat $x \\to \\infty$, suku $x$ dapat dimasukkan ke dalam bentuk akar sebagai $\\sqrt{x^2}$. Bagi pembilang dan penyebut dengan $x$ untuk mencari nilai asimtotik fungsi. **Tips:** Lupa menarik akar dari koefisien 4 di penyebut sehingga menghasilkan $\\frac{3}{4}$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-006",
@@ -209,7 +214,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk selisih $\\sqrt{ax^2 + bx + c} - (px + q)$ diubah menjadi $\\sqrt{ax^2 + bx + c} - \\sqrt{(px + q)^2}$. Jika koefisien kuadratnya sama ($a = p^2$), rumus praktis nilai limitnya adalah $L = \\frac{b - \\text{koefisien } x \\text{ bentuk kedua}}{2\\sqrt{a}}$. **Tips:** Lupa mengubah tanda positif $+1$ saat memfaktorkan tanda minus: $-(3x - 1)$, bukan $-(3x + 1)$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-007",
@@ -242,7 +248,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perhatikan bahwa untuk $x < 0$ saat $x \\to -\\infty$, berlaku $\\sqrt{x^2} = |x| = -x$, sehingga $x = -\\sqrt{x^2}$. Hal ini menyebabkan faktor pembuat tanda minus keluar saat membagi bentuk akar dengan $x$. **Tips:** Lupa bahwa $\\sqrt{x^2} = -x$ untuk $x < 0$, sehingga menghasilkan nilai positif $+\\frac{3}{2}$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-008",
@@ -275,7 +282,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pecah suku tengah $-2\\sqrt{x^2 + x}$ menjadi $-\\sqrt{x^2 + x} - \\sqrt{x^2 + x}$, kemudian kelompokkan masing-masing dengan suku pertama dan suku ketiga agar dapat diselesaikan menggunakan rumus selisih dua akar kuadrat. **Tips:** Mencoba mengalikan ketiga bentuk akar sekaligus dengan sekawan panjang yang berakibat pada kerumitan aljabar tak berujung."
   },
   {
     "id": "mat-lim-fungsi-takhingga-009",
@@ -308,7 +316,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk $(x - 2)$ diubah menjadi bentuk akar $\\sqrt{(x - 2)^2} = \\sqrt{x^2 - 4x + 4}$. Samakan hasil rumus limit selisih akar $\\frac{b - p}{2\\sqrt{a}}$ dengan nilai limit yang diberikan untuk mencari parameter $k$. **Tips:** Lupa bahwa $(-2)^2$ menghasilkan tanda negatif pada suku tengah $-4x$, sehingga salah menuliskan tanda $p$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-010",
@@ -341,7 +350,8 @@
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembilang dan penyebut masing-masing berbentuk tak tentu $\\infty - \\infty$. Kita dapat menyelesaikan nilai limit pembilang dan nilai limit penyebut secara terpisah dengan rumus selisih akar."
   }
 ];
 

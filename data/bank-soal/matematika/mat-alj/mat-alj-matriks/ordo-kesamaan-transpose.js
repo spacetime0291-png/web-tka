@@ -44,7 +44,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ordo suatu matriks dinyatakan dalam bentuk $m \\times n$, di mana $m$ melambangkan banyak baris horizontal dan $n$ melambangkan banyak kolom vertikal. Banyak seluruh elemen di dalam matriks tersebut sama dengan hasil kali $m \\times n$."
   },
   {
     "id": "mat-alj-matriks-ordo-002",
@@ -77,7 +78,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Notasi $b_{ij}$ menyatakan elemen matriks $B$ yang terletak pada baris ke-$i$ dan kolom ke-$j$."
   },
   {
     "id": "mat-alj-matriks-ordo-003",
@@ -110,7 +112,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Matriks identitas ($I$) adalah matriks persegi khusus yang elemen diagonal utamanya bernilai 1 ($a_{ii} = 1$) dan semua elemen lainnya bernilai 0 ($a_{ij} = 0$ untuk $i \\neq j$)."
   },
   {
     "id": "mat-alj-matriks-ordo-004",
@@ -143,7 +146,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Transpos matriks ($C^T$) diperoleh dengan menukar baris menjadi kolom dan kolom menjadi baris. Jika matriks $C$ berordo $m \\times n$, maka matriks transposnya $C^T$ berordo $n \\times m$."
   },
   {
     "id": "mat-alj-matriks-ordo-005",
@@ -176,7 +180,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada matriks simetris, elemen yang simetris terhadap diagonal utama harus bernilai sama, yaitu $a_{ij} = a_{ji}$ untuk setiap $i$ dan $j$."
   },
   {
     "id": "mat-alj-matriks-ordo-006",
@@ -209,7 +214,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Trace dari suatu matriks persegi adalah jumlahan dari semua elemen yang berada pada diagonal utama, yaitu $\\text{Trace}(A) = \\sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \\dots + a_{nn}$. **Tips:** Menghitung seluruh elemen matriks yang tidak perlu; cukup hitung tiga elemen pada diagonal utama ($i=j$) untuk menghemat waktu."
   },
   {
     "id": "mat-alj-matriks-ordo-007",
@@ -242,7 +248,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada matriks simetris miring, berlaku $K^T = -K$, yang berarti elemen diagonal utama bernilai nol ($k_{ii} = 0$) dan pasangan elemen yang saling berkebalikan letaknya memenuhi relasi $k_{ij} = -k_{ji}$."
   },
   {
     "id": "mat-alj-matriks-ordo-008",
@@ -275,7 +282,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks $A_{m \\times k}$ dan $B_{k \\times n}$ dapat dikalikan dan menghasilkan matriks berordo $m \\times n$. Jika matriks $M$ berordo $m \\times n$, maka matriks transposnya $M^T$ memiliki ordo yang dibalik, yaitu $n \\times m$. **Tips:** Lupa melakukan operasi transpos di akhir sehingga menjawab $2 \\times 5$ ()."
   },
   {
     "id": "mat-alj-matriks-ordo-009",
@@ -308,7 +316,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks segitiga atas adalah matriks persegi yang semua elemen di bawah diagonal utamanya bernilai nol ($s_{ij} = 0$ untuk $i > j$)."
   },
   {
     "id": "mat-alj-matriks-ordo-010",
@@ -341,7 +350,8 @@
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks bernilai sama ($A = B^T$) jika dan hanya jika keduanya memiliki ordo yang sama dan setiap pasangan elemen yang bersesuaian nilainya tepat sama. **Tips:** Langsung menyamakan $A = B$ tanpa melakukan transpos terlebih dahulu pada matriks $B$."
   }
 ];
 

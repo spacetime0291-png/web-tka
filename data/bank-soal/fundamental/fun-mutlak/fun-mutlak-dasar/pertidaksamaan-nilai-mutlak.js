@@ -44,7 +44,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Sifat dasar pertidaksamaan nilai mutlak menyatakan bahwa untuk $a > 0$, bentuk $|x| < a$ ekuivalen dengan rentang $-a < x < a$. **Tips:** Tertukar dengan sifat lebih dari ($x < -4$ atau $x > 4$) atau menyertakan tanda sama dengan."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-002",
@@ -77,7 +78,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk $|f(x)| \\le a$ ekuivalen dengan pertidaksamaan ganda $-a \\le f(x) \\le a$. **Tips:** Lupa menambahkan 2 pada batas kiri sehingga menghasilkan $-3 \\le x \\le 5$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-003",
@@ -110,7 +112,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk $a > 0$, bentuk $|x| > a$ ekuivalen dengan gabungan dua daerah terpisah: $x < -a$ atau $x > a$. **Tips:** Tertukar dengan bentuk interval terbuka antara dua bilangan $-5 < x < 5$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-004",
@@ -143,7 +146,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan sifat $-a < 2x - 1 < a$, lalu tambahkan 1 dan bagi 2 pada setiap ruas. **Tips:** Lupa membagi dengan koefisien 2 sehingga berhenti di rentang $-4 < x < 6$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-005",
@@ -176,7 +180,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bentuk $|f(x)| \\ge a$ ekuivalen dengan $f(x) \\le -a$ atau $f(x) \\ge a$. **Tips:** Tertukar tanda menjadi rentang tertutup $-7 \\le x \\le 1$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-006",
@@ -209,7 +214,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pertidaksamaan bentuk $|f(x)| \\le |g(x)|$ dapat diselesaikan dengan memfaktorkan selisih kuadrat: $(f(x) - g(x))(f(x) + g(x)) \\le 0$. **Tips:** Lupa mendistribusikan tanda minus pada $(x + 6)$ sehingga salah menghitung faktor $(x - 3)$ menjadi $(x + 9)$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-007",
@@ -242,7 +248,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan pengkuadratan kedua ruas dan faktorisasi selisih kuadrat: $(f(x) - g(x))(f(x) + g(x)) > 0$. **Tips:** Memilih daerah di antara dua akar $-\\frac{1}{2} < x < 3$ yang merupakan penyelesaian jika tandanya adalah $< 0$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-008",
@@ -275,7 +282,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pertidaksamaan $a < |u| \\le b$ dipecah menjadi sistem dua kondisi yang harus dipenuhi secara bersamaan: $|u| \\le b$ diiriskan dengan $|u| > a$. **Tips:** Hanya menyelesaikan batas atas $|x - 2| \\le 4$ dan mengabaikan pembatasan dari batas bawah."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-009",
@@ -308,7 +316,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan pemisalan $u = |x - 1| \\ge 0$. Selesaikan pertidaksamaan kuadrat dalam $u$, kemudian kembalikan ke variabel $x$. **Tips:** Membuka nilai mutlak sebelum menyelesaikan pertidaksamaan kuadrat yang membuat proses perhitungan sangat rumit."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-010",
@@ -341,7 +350,8 @@
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembilang memuat nilai mutlak $|x + 1| \\ge 0$. Agar pecahan bernilai negatif tegas ($< 0$), penyebut harus bernilai negatif dan pembilang tidak boleh bernilai nol. **Tips:** Lupa mengecualikan $x = -1$ sehingga salah memilih $x < 2$ ()."
   },
   {
     "id": "mudah-mtk-08",
@@ -374,7 +384,8 @@
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
     "subChapterId": "fun-mutlak-dasar",
-    "subTopicSlug": "pertidaksamaan-nilai-mutlak"
+    "subTopicSlug": "pertidaksamaan-nilai-mutlak",
+    "hint": "Sifat Dasar Pertidaksamaan Nilai Mutlak: $$|u| < k \\iff -k < u < k \\quad (k > 0)$$."
   },
   {
     "id": "sedang-mtk-01",
@@ -407,7 +418,8 @@
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
     "subChapterId": "fun-mutlak-dasar",
-    "subTopicSlug": "pertidaksamaan-nilai-mutlak"
+    "subTopicSlug": "pertidaksamaan-nilai-mutlak",
+    "hint": "Metode Kuadrat Kedua Ruas $|A| \\le |B|$: Karena kedua ruas non-negatif, kuadratkan kedua ruas: $$A^2 \\le B^2 \\iff A^2 - B^2 \\le 0 \\iff (A - B)(A + B) \\le 0$$."
   }
 ];
 

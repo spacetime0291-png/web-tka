@@ -44,7 +44,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dilatasi titik $P(x, y)$ terhadap titik pusat $O(0, 0)$ dengan faktor skala $k$, ditulis $[O, k]$, menghasilkan bayangan $P'(x', y')$ dengan rumus perkalian langsung: $x' = kx$ dan $y' = ky$."
   },
   {
     "id": "mat-geo-trans-dilatasi-002",
@@ -77,7 +78,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Faktor skala negatif pada dilatasi $[O, k]$ membalik arah posisi titik bayangan terhadap titik pusat selain mengubah perbandingannya: $x' = kx$ dan $y' = ky$. **Tips:** Lupa bahwa perkalian dua bilangan negatif menghasilkan nilai positif: $-\\frac{1}{2} \\times (-8) = +4$."
   },
   {
     "id": "mat-geo-trans-dilatasi-003",
@@ -110,7 +112,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Faktor skala dilatasi $k$ dengan pusat $O(0, 0)$ dihitung dari perbandingan koordinat bayangan dengan koordinat asal: $k = \\frac{x'}{x} = \\frac{y'}{y}$. **Tips:** Membalik perbandingan menjadi $\\frac{x}{x'} = \\frac{4}{10} = \\frac{2}{5}$."
   },
   {
     "id": "mat-geo-trans-dilatasi-004",
@@ -143,7 +146,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dilatasi suatu titik $(x, y)$ terhadap pusat $(a, b)$ dengan faktor skala $k$ memiliki rumus koordinat: $x' = a + k(x - a)$ dan $y' = b + k(y - b)$."
   },
   {
     "id": "mat-geo-trans-dilatasi-005",
@@ -176,7 +180,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dilatasi $[O, k]$ pada kurva $F(x, y) = 0$ dilakukan dengan mensubstitusi variabel lama $x = \\frac{x'}{k}$ dan $y = \\frac{y'}{k}$. Untuk garis $Ax + By + C = 0$, garis bayangannya sejajar dengan konstanta yang diskalakan: $Ax + By + kC = 0$."
   },
   {
     "id": "mat-geo-trans-dilatasi-006",
@@ -209,7 +214,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi kurva $[O, k]$ dilakukan dengan mensubstitusi variabel asal $x = \\frac{x'}{k}$ dan $y = \\frac{y'}{k}$ ke dalam persamaan kurva."
   },
   {
     "id": "mat-geo-trans-dilatasi-007",
@@ -242,7 +248,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi lingkaran $[P(a, b), k]$ memperbesar jari-jari menurut $r' = |k| \\cdot r$ dan memetakan pusat lingkaran $(x_c, y_c)$ menurut rumus dilatasi terhadap titik pusat: $x_c' = a + k(x_c - a)$ dan $y_c' = b + k(y_c - b)$."
   },
   {
     "id": "mat-geo-trans-dilatasi-008",
@@ -275,7 +282,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi garis menghasilkan garis baru yang sejajar dengan garis asal. Hubungan koordinat asal dan bayangan terhadap pusat $P(a, b)$ adalah $x = a + \\frac{x' - a}{k}$ dan $y = b + \\frac{y' - b}{k}$."
   },
   {
     "id": "mat-geo-trans-dilatasi-009",
@@ -308,7 +316,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi dua dilatasi berturut-turut dengan titik pusat yang sama ekuivalen dengan sebuah dilatasi tunggal berpusat di titik yang sama dengan faktor skala perkalian: $k_{\\text{total}} = k_1 \\times k_2$."
   },
   {
     "id": "mat-geo-trans-dilatasi-010",
@@ -341,7 +350,8 @@
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi dengan faktor skala $k$ mengubah besaran panjang dan keliling sebanding dengan $|k|$, sedangkan luas bangun datar berubah sebanding dengan kuadrat faktor skala ($k^2$)."
   }
 ];
 

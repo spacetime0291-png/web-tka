@@ -191,6 +191,17 @@ questions.forEach((q, idx) => {
   }
 
   // ------------------------------------------------------------------
+  // Rule 4b: Pedagogical Hint Check
+  // ------------------------------------------------------------------
+  if (typeof q.hint !== 'string' || q.hint.trim().length < 15) {
+    errors.push(`Rule 4b (Hint): ${qContext} hint must be substantively populated (> 15 chars)`);
+  } else {
+    if (q.hint.match(/\b(opsi|pilihan)\s+[A-E]\b/i) || q.hint.match(/\bjawaban(nya)?\s+(adalah|yaitu)\s+[A-E]\b/i)) {
+      warnings.push(`Rule 4b (Hint Spoiler Warning): ${qContext} hint appears to mention specific answer options`);
+    }
+  }
+
+  // ------------------------------------------------------------------
   // Rule 5: Multi-level KaTeX Math Delimiter Validation
   // ------------------------------------------------------------------
   function validateKaTeX(text, fieldName) {
@@ -222,6 +233,9 @@ questions.forEach((q, idx) => {
     validateKaTeX(q.solution.concept, 'solution.concept');
     validateKaTeX(q.solution.steps, 'solution.steps');
     validateKaTeX(q.solution.pitfalls, 'solution.pitfalls');
+  }
+  if (q.hint) {
+    validateKaTeX(q.hint, 'hint');
   }
   if (q.diagramCaption) {
     validateKaTeX(q.diagramCaption, 'diagramCaption');

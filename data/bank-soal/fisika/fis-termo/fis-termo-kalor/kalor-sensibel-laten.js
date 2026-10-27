@@ -44,7 +44,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kalor sensibel ($Q$) adalah energi kalor yang diserap atau dilepaskan suatu zat yang menyebabkan perubahan suhu tanpa mengalami perubahan wujud: $$Q = m \\times c \\times \\Delta T$$."
   },
   {
     "id": "fis-termo-kalor-sensibel-002",
@@ -77,7 +78,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kapasitas kalor ($C$) menyatakan banyaknya kalor yang diperlukan suatu benda utuh untuk menaikkan suhunya sebesar $1^\\circ\\text{C}$: $$C = \\frac{Q}{\\Delta T}$$."
   },
   {
     "id": "fis-termo-kalor-sensibel-003",
@@ -110,7 +112,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kalor laten lebur ($Q$) adalah kalor yang dibutuhkan untuk mengubah wujud zat dari padat menjadi cair pada titik leburnya tanpa adanya kenaikan suhu: $$Q = m \\times L$$. **Tips:** Pastikan massa selalu dikonversikan ke satuan SI kilogram ($0{,}5\\text{ kg}$)."
   },
   {
     "id": "fis-termo-kalor-sensibel-004",
@@ -143,7 +146,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kalor laten penguapan ($Q$) adalah energi kalor yang diserap suatu zat untuk mengubah wujudnya dari cair menjadi gas pada titik didihnya: $$Q = m \\times U$$."
   },
   {
     "id": "fis-termo-kalor-sensibel-005",
@@ -176,7 +180,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kalor jenis ($c$) adalah karakteristik termal intrinsik suatu zat yang didefinisikan sebagai jumlah kalor yang diserap per satuan massa per kenaikan satu satuan suhu: $$c = \\frac{Q}{m \\times \\Delta T}$$ Satuan standarnya dalam SI adalah $\\text{J}/(\\text{kg}\\cdot^\\circ\\text{C})$ atau $\\text{J}/(\\text{kg}\\cdot\\text{K})$."
   },
   {
     "id": "fis-termo-kalor-sensibel-006",
@@ -209,7 +214,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proses pemanasan es dari suhu di bawah nol hingga menjadi air di atas nol terdiri dari 3 tahapan penyerapan kalor: 1. Pemanasan es: $Q_1 = m \\times c_{\\text{es}} \\times \\Delta T_1$ 2. Peleburan es menjadi air pada $0^\\circ\\text{C}$: $Q_2 = m \\times L$ 3. Pemanasan air: $Q_3 = m \\times c_{\\text{air}} \\times \\Delta T_2$ Kalor total: $Q_{\\text{tot}} = Q_1 + Q_2 + Q_3$. **Tips:** Jangan melewatkan tahap peleburan ($Q_2 = mL$)."
   },
   {
     "id": "fis-termo-kalor-sensibel-007",
@@ -242,7 +248,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan daya listrik ($P$), efisiensi ($\\eta$), waktu ($t$), dan kalor pemanasan ($Q$) dirumuskan: $$W_{\\text{berguna}} = Q \\implies \\eta \\times P \\times t = m \\times c \\times \\Delta T \\implies t = \\frac{m \\times c \\times \\Delta T}{\\eta \\times P}$$."
   },
   {
     "id": "fis-termo-kalor-sensibel-008",
@@ -275,7 +282,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Asas Black, pada sistem terisolasi, kalor yang dilepaskan oleh benda bersuhu lebih tinggi sama dengan kalor yang diserap oleh benda bersuhu lebih rendah: $$Q_{\\text{lepas}} = Q_{\\text{serap}} \\implies m_1 \\times c \\times (T_1 - T_c) = m_2 \\times c \\times (T_c - T_2)$$ Karena kedua zat sama-sama air, kalor jenis $c$ dapat saling meniadakan."
   },
   {
     "id": "fis-termo-kalor-sensibel-009",
@@ -308,7 +316,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penerapan Asas Black untuk menentukan kalor jenis suatu bahan tak dikenal ($c_L$): $$Q_{\\text{lepas}} = Q_{\\text{serap}} \\implies m_L \\times c_L \\times (T_L - T_c) = m_a \\times c_a \\times (T_c - T_a)$$. **Tips:** Periksa kembali konversi massa gram ke kilogram."
   },
   {
     "id": "fis-termo-kalor-sensibel-010",
@@ -341,7 +350,8 @@
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinjau kemampuan pelepasan kalor air hangat dibandingkan kebutuhan kalor peleburan seluruh es: 1. Kalor maksimum yang dilepas air jika didinginkan hingga $0^\\circ\\text{C}$: $$Q_{\\text{lepas, maks}} = m_a \\times c_a \\times (T_a - 0)$$ 2. Kalor yang dibutuhkan untuk meleburkan seluruh es: $$Q_{\\text{lebur, tot}} = m_{\\text{es}} \\times L$$ Jika $Q_{\\text{lepas, maks}} < Q_{\\text{lebur, tot}}$, maka suhu akhir kesetimbangan adalah tepat $0^\\circ\\text{C}$ dan hanya sebagian es yang mencair: $m_{\\text{cair}} = \\frac{Q_{\\text{lepas, maks}}}{L}$."
   },
   {
     "id": "mudah-fis-09",
@@ -374,7 +384,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Gunakan perumusan konsep fisis: $$Q = m c \\Delta T$$. **Tips:** Perhatikan $\\Delta T$ adalah selisih suhu akhir dikurang suhu awal ($50$), bukan suhu akhir ($70$)."
   },
   {
     "id": "drill-kal-01",
@@ -407,7 +418,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Persamaan Kalor Sensibel: Kalor yang dibutuhkan untuk menaikkan suhu zat tanpa mengubah wujud: $$Q = m \\cdot c \\cdot \\Delta T$$."
   },
   {
     "id": "drill-kal-02",
@@ -440,7 +452,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Kalor Laten Perubahan Wujud: Saat zat melebur atau membeku pada suhu tetap, kalor yang diserap/dilepas tidak menaikkan suhu: $$Q = m \\cdot L_f$$. **Tips:** ⚠️ Konsep Kunci: Pada peristiwa perubahan wujud zat, suhu zat selalu konstan (tidak ada $\\Delta T$)."
   },
   {
     "id": "drill-kal-08",
@@ -473,7 +486,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Hubungan Kapasitas Kalor ($C$) dan Kalor ($Q$): Kapasitas kalor adalah kemampuan seluruh benda menyerap kalor per derajat kenaikan suhu ($C = m \\cdot c$): $$Q = C \\cdot \\Delta T$$. **Tips:** ⚠️ Bedakan $c$ dan $C$: Kalor jenis ($c$) memiliki satuan $\\text{J/kg}^\\circ\\text{C}$ (tergantung massa)."
   },
   {
     "id": "drill2-kal-01",
@@ -506,7 +520,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Kalor Laten Penguapan: $$Q = m \\cdot L_v$$."
   },
   {
     "id": "drill2-kal-04",
@@ -539,7 +554,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Keseimbangan Sambungan Konduksi: Laju aliran kalor pada kedua batang adalah sama: $$H_A = H_B \\implies k_A (T_A - T_s) = k_B (T_s - T_B)$$."
   },
   {
     "id": "drill2-kal-07",
@@ -572,7 +588,8 @@
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Kesetaraan Energi Listrik dan Kalor: $$W_{\\text{listrik}} = Q_{\\text{kalor}} \\implies P \\cdot t = m \\cdot c \\cdot \\Delta T$$."
   }
 ];
 

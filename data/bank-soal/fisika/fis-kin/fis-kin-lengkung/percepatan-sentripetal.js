@@ -44,7 +44,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kata 'sentripetal' berasal dari bahasa Latin yang berarti 'mencari pusat' (center-seeking). Vektor percepatan sentripetal ($\\vec{a}_s$) selalu berarah radial menuju ke titik pusat lingkaran dan tegak lurus terhadap vektor kecepatan linier ($\\vec{v} \\perp \\vec{a}_s$)."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-002",
@@ -77,7 +78,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Besar percepatan sentripetal ($a_s$) dinyatakan oleh hubungan: $$a_s = \\frac{v^2}{r}$$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-003",
@@ -110,7 +112,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hubungan percepatan sentripetal dengan kecepatan sudut ($\\omega$) dan jari-jari ($R$) adalah: $$a_s = \\omega^2 R$$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-004",
@@ -143,7 +146,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Percepatan sentripetal berbanding lurus dengan kuadrat kelajuan linier jika jari-jari lintasan konstan: $$a_s = \\frac{v^2}{r} \\implies a_s \\propto v^2$$. **Tips:** Mengabaikan kuadrat kecepatan sehingga mengira percepatan hanya meningkat 2 kali lipat."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-005",
@@ -176,7 +180,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Mobil yang berbelok pada tikungan melingkar mengalami percepatan sentripetal sebesar $a_s = \\frac{v^2}{R}$. Satuan kelajuan harus dikonversi terlebih dahulu ke satuan SI ($ ext{m/s}$)."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-006",
@@ -209,7 +214,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Percepatan sentripetal dinyatakan dalam periode putaran ($T$) dan jari-jari ($R$) adalah: $$a_s = \\omega^2 R = \\left(\\frac{2\\pi}{T}\\right)^2 R = \\frac{4\\pi^2 R}{T^2}$$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-007",
@@ -242,7 +248,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan sudut sesaat merupakan turunan pertama posisi sudut: $\\omega(t) = \\frac{d\\theta}{dt}$. Percepatan sentripetal sesaat dirumuskan oleh $a_s(t) = [\\omega(t)]^2 R$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-008",
@@ -275,7 +282,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gerak melingkar yang mengalami perubahan kelajuan (GMBB), terdapat dua komponen percepatan yang saling tegak lurus: percepatan sentripetal ($a_s$) yang mengarah ke pusat dan percepatan tangensial ($a_t$) yang menyinggung lintasan. Percepatan totalnya adalah: $$a_{\\text{total}} = \\sqrt{a_s^2 + a_t^2}$$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-009",
@@ -308,7 +316,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Batas kelajuan maksimum pada tikungan dihitung dari rumus percepatan sentripetal: $$a_{s,\\max} = \\frac{v_{\\max}^2}{R} \\implies v_{\\max} = \\sqrt{a_{s,\\max} \\cdot R}$$. **Tips:** Lupa mengonversikan satuan dari $\\text{m/s}$ ke $\\text{km/jam}$ dan langsung memilih angka $40$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-010",
@@ -341,7 +350,8 @@
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena berada di atas satu piringan yang sama, kedua koin berputar dengan kecepatan sudut yang sama ($\\omega_A = \\omega_B = \\omega$). Hubungan percepatan sentripetal terhadap jari-jari adalah linear sebanding: $$a_s = \\omega^2 r \\implies \\frac{a_{sB}}{a_{sA}} = \\frac{r_B}{r_A}$$."
   }
 ];
 

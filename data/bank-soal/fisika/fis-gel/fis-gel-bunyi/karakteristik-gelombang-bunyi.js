@@ -44,7 +44,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gelombang bunyi adalah gelombang mekanik longitudinal: 1) Mekanik: membutuhkan partikel medium elastis untuk merambat, sehingga bunyi tidak dapat merambat di ruang hampa udara (vakum). 2) Longitudinal: arah getaran partikel medium sejajar dengan arah perambatan energi gelombang, membentuk pola rapatan (kompresi) dan renggangan (ekspansi)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-002",
@@ -77,7 +78,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Klasifikasi gelombang bunyi berdasarkan frekuensinya: • Infrasonik: $f < 20\\text{ Hz}$ (didengar oleh gajah, jangkrik, paus). • Audiosonik: $20\\text{ Hz} \\le f \\le 20.000\\text{ Hz}$ (rentang pendengaran manusia normal). • Ultrasonik: $f > 20.000\\text{ Hz}$ (didengar dan dipancarkan oleh kelelawar, lumba-lumba, alat USG medis). **Tips:** Jangan tertukar dengan batas infrasonik ($< 20\\text{ Hz}$) atau ultrasonik ($> 20.000\\text{ Hz}$)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-003",
@@ -110,7 +112,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Warna bunyi (timbre) adalah kualitas khas dari suatu bunyi yang membedakannya dari bunyi lain meskipun frekuensi dasar dan amplitudonya sama. Timbre ditentukan oleh bentuk gelombang akustik unik yang dihasilkan dari perpaduan nada harmonik atas (overtones) yang menyertai nada dasar alat musik tersebut."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-004",
@@ -143,7 +146,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pelayangan bunyi (beats) terjadi akibat interferensi konstruktif dan destruktif dari dua gelombang bunyi yang memiliki amplitudo hampir sama namun frekuensinya sedikit berbeda. Frekuensi pelayangan dirumuskan dengan: $$f_p = |f_1 - f_2|$$."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-005",
@@ -176,7 +180,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Resonansi adalah peristiwa ikut bergetarnya suatu sistem fisis ketika dipicu oleh gaya periodik dari luar. Syarat mutlak terjadinya resonansi adalah frekuensi gaya penggetar dari luar tepat menyamai atau kelipatan bulat dari frekuensi alami (natural frequency) sistem tersebut ($f_{\\text{sumber}} = f_{\\text{alami}}$), yang menghasilkan transfer energi maksimum dan amplitudo getaran terbesar."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-006",
@@ -209,7 +214,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Frekuensi pelayangan bunyi adalah selisih mutlak antara dua frekuensi yang berinterferensi: $$f_p = |f_A - f_B|$$Penambahan massa lilin pada garputala B akan menambah inersia getarannya sehingga frekuensi alaminya selalu menurun ($f_B' < f_B$)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-007",
@@ -242,7 +248,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat interferensi destruktif (bunyi minimum) untuk dua sumber koheren sefase adalah beda lintasan gelombang merupakan kelipatan ganjil dari setengah panjang gelombang: $$\\Delta r = |r_1 - r_2| = \\left(m - \\frac{1}{2}\\right) \\lambda, \\quad m = 1, 2, 3, \\dots$$Di mana $\\lambda = \\frac{v}{f}$."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-008",
@@ -275,7 +282,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tabung resonansi tertutup satu ujung: 1) Selisih panjang kolom udara antara dua resonansi berurutan selalu tepat sama dengan setengah panjang gelombang (bebas dari efek koreksi ujung tabung): $$L_2 - L_1 = \\frac{1}{2}\\lambda \\implies \\lambda = 2(L_2 - L_1)$$ 2) Cepat rambat gelombang: $v = f \\cdot \\lambda$. 3) Hubungan resonansi pertama dengan koreksi ujung tabung ($\\Delta L$): $L_1 + \\Delta L = \\frac{1}{4}\\lambda$."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-009",
@@ -308,7 +316,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gelombang bunyi stasioner memiliki hubungan dualitas antara simpangan partikel ($s(x)$) dan variasi tekanan ($\\Delta P(x)$): $$\\Delta P(x) = -B \\frac{\\partial s}{\\partial x}$$Karena tekanan merupakan turunan spasial dari simpangan, gelombang tekanan berbeda fase spasial sebesar $\\frac{\\pi}{2}$ ($90^\\circ$) terhadap gelombang simpangan: • Simpul simpangan (partikel diam) $\\iff$ Perut tekanan (tekanan berfluktuasi maksimum). • Perut simpangan (partikel bebas bergerak) $\\iff$ Simpul tekanan (tekanan sama dengan tekanan atmosfer luar)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-010",
@@ -341,7 +350,8 @@
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Frekuensi getaran dawai berbanding lurus dengan cepat rambat gelombang transversal pada dawai (Hukum Melde): $$f \\propto v = \\sqrt{\\frac{F}{\\mu}}$$Sehingga peningkatan gaya tegangan dawai ($F$) dipastikan akan menaikkan frekuensi getaran dawai ($f_{\\text{dawai}}' > f_{\\text{dawai}}$)."
   },
   {
     "id": "drill-bun-02",
@@ -374,7 +384,8 @@
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "karakteristik-gelombang-bunyi"
+    "subTopicSlug": "karakteristik-gelombang-bunyi",
+    "hint": "Kelajuan Bunyi pada Gas Ideal: $$v = \\sqrt{\\frac{\\gamma R T}{M_r}} \\implies v \\propto \\sqrt{T}$$ Kelajuan bunyi berbanding lurus dengan akar suhu mutlak (Kelvin). **Tips:** Menganggap hubungan linear $v \\propto T$ sehingga mengalikan 4 kali lipat ($1280\\text{ m/s}$)."
   },
   {
     "id": "drill-bun-06",
@@ -407,7 +418,8 @@
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "karakteristik-gelombang-bunyi"
+    "subTopicSlug": "karakteristik-gelombang-bunyi",
+    "hint": "Frekuensi Pelayangan Bunyi (Beats): Frekuensi pelayangan adalah selisih mutlak dari dua frekuensi gelombang bunyi yang berinterferensi: $$f_{\\text{layang}} = |f_A - f_B|$$. **Tips:** Pelayangan bunyi selalu berupa selisih sederhana ($|f_1 - f_2|$), bukan rata-rata atau rasio."
   },
   {
     "id": "drill-bun-05",
@@ -440,7 +452,8 @@
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "karakteristik-gelombang-bunyi"
+    "subTopicSlug": "karakteristik-gelombang-bunyi",
+    "hint": "Selisih Resonansi Berurutan Tabung Bunyi: Jarak antara dua resonansi berurutan selalu tepat sama dengan setengah panjang gelombang : $$\\Delta L = L_2 - L_1 = \\frac{1}{2}\\lambda \\implies \\lambda = 2(L_2 - L_1)$$ $$v = f \\cdot \\lambda$$."
   }
 ];
 

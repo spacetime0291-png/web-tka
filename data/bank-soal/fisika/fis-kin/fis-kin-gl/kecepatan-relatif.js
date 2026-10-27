@@ -44,7 +44,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Transformasi Galileo satu dimensi menyatakan bahwa kecepatan relatif benda $A$ terhadap pengamat kerangka acuan $B$ adalah: $$v_{A/B} = v_A - v_B$$."
   },
   {
     "id": "fis-kin-gl-relatif-002",
@@ -77,7 +78,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Ketika dua benda bergerak saling berlawanan arah, pengamat pada salah satu benda akan melihat benda lainnya mendekat/menjauh dengan kelajuan gabungan: $$v_{P/Q} = v_P - v_Q$$."
   },
   {
     "id": "fis-kin-gl-relatif-003",
@@ -110,7 +112,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kecepatan suatu objek terhadap kerangka tanah/stasiun ($v_{O/T}$) merupakan jumlahan vektor kecepatan objek relatif terhadap kereta ($v_{O/K}$) dengan kecepatan kereta relatif terhadap tanah ($v_{K/T}$): $$v_{O/T} = v_{O/K} + v_{K/T}$$."
   },
   {
     "id": "fis-kin-gl-relatif-004",
@@ -143,7 +146,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gerak searah arus sungai (hilir): kecepatan perahu terhadap tanah bertambah besar karena didorong oleh aliran arus air sungai: $$v_{\\text{tanah}} = v_{\\text{perahu}} + v_{\\text{arus}}$$. **Tips:** Nilai $6\\text{ m/s}$ terjadi jika perahu melawan arus sungai (mudik/hulu)."
   },
   {
     "id": "fis-kin-gl-relatif-005",
@@ -176,7 +180,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dalam kerangka acuan Andi (Andi dianggap diam), Budi mendekati Andi dengan kecepatan relatif: $$v_{\\text{rel}} = v_B - v_A$$ Waktu untuk menyusul adalah jarak pemisah dibagi kecepatan relatif: $$t = \\frac{d}{v_{\\text{rel}}}$$."
   },
   {
     "id": "fis-kin-gl-relatif-006",
@@ -209,7 +214,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat dua kereta saling berpapasan dengan arah berlawanan, kecepatan relatif kedua kereta adalah jumlahan kelajuannya: $$v_{\\text{rel}} = v_A + v_B$$ Panjang lintasan relatif yang harus ditempuh agar keduanya berpisah penuh adalah jumlahan panjang kedua kereta: $$L_{\\text{total}} = L_A + L_B$$."
   },
   {
     "id": "fis-kin-gl-relatif-007",
@@ -242,7 +248,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak dua dimensi saling independen: waktu menyeberang sungai ($t$) hanya ditentukan oleh lebar sungai dan komponen kecepatan perahu yang tegak lurus arus. Pergeseran ke arah hilir ($x$) merupakan hasil kali kecepatan arus sungai dengan waktu tempuh tersebut. **Tips:** Nilai $150\\text{ m}$ adalah panjang lintasan serong total (resultan perpindahan), bukan pergeseran ke arah hilir saja."
   },
   {
     "id": "fis-kin-gl-relatif-008",
@@ -275,7 +282,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi berpapasan dua benda yang bergerak saling mendekat terjadi ketika jumlahan jarak tempuh kedua benda sama dengan jarak pisah mula-mula: $$s_A(t) + s_B(t) = d$$. **Tips:** Nilai $200\\text{ meter}$ adalah jarak yang ditempuh mobil $B$."
   },
   {
     "id": "fis-kin-gl-relatif-009",
@@ -308,7 +316,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar resultan gerak tepat tegak lurus tepi sungai, komponen kecepatan perenang yang melawan aliran arus sungai harus tepat mengimbangi laju arus sungai: $$v_{\\text{renang}} \\sin\\theta = v_{\\text{arus}}$$."
   },
   {
     "id": "fis-kin-gl-relatif-010",
@@ -341,7 +350,8 @@
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan masing-masing partikel diperoleh dari turunan posisi. Kecepatan relatif $\\vec{v}_{A/B} = \\vec{v}_A - \\vec{v}_B$. Besar kecepatan relatif merupakan norma Euclidean dari vektor kecepatan relatif tersebut."
   }
 ];
 

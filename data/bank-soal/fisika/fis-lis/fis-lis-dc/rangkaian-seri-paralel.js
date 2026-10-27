@@ -44,7 +44,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma I_{\\text{masuk}} = \\Sigma I_{\\text{keluar}}$$. **Tips:** Salah menentukan arah arus (mengira masuk ke percabangan) sehingga salah memilih ."
   },
   {
     "id": "fis-lis-dc-rangkaian-002",
@@ -77,7 +78,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada rangkaian seri, arus yang mengalir pada setiap resistor sama besar ($I = \\text{konstan}$). Tegangan terbagi sebanding dengan nilai masing-masing hambatan (prinsip pembagi tegangan): $$V_2 = \\frac{R_2}{R_1 + R_2} V$$."
   },
   {
     "id": "fis-lis-dc-rangkaian-003",
@@ -110,7 +112,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada rangkaian paralel, beda potensial pada setiap cabang sama besar. Kuat arus pada cabang terbagi berbanding terbalik dengan nilai hambatannya (prinsip pembagi arus): $$I_1 = \\frac{R_2}{R_1 + R_2} I_{\\text{total}}$$."
   },
   {
     "id": "fis-lis-dc-rangkaian-004",
@@ -143,7 +146,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk mencari arus total rangkaian kombinasi, sederhanakan rangkaian terlebih dahulu menjadi hambatan pengganti total ($R_{\\text{total}}$), kemudian gunakan Hukum Ohm: $I_{\\text{total}} = \\frac{V}{R_{\\text{total}}}$."
   },
   {
     "id": "fis-lis-dc-rangkaian-005",
@@ -176,7 +180,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Tegangan jepit ($V_{\\text{jepit}}$) adalah beda potensial antara kutub-kutub sumber tegangan ketika arus listrik mengalir. Tegangan jepit selalu lebih kecil daripada GGL ($\\mathcal{E}$) karena adanya tegangan jatuh pada hambatan dalam ($I r$): $$V_{\\text{jepit}} = \\mathcal{E} - I r = I R$$."
   },
   {
     "id": "fis-lis-dc-rangkaian-006",
@@ -209,7 +214,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0$$ Daya disipasi pada suatu resistor adalah $P = I^2 R$."
   },
   {
     "id": "fis-lis-dc-rangkaian-007",
@@ -242,7 +248,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Analisis tegangan simpul (Nodal Analysis) menerapkan KCL pada simpul $A$: jumlah arus yang meninggalkan simpul sama dengan nol ($\\Sigma I_{\\text{keluar}} = 0$). **Tips:** Kesalahan tanda saat menuliskan persamaan loop atau salah memasukkan polaritas baterai, serta kekeliruan aritmetika pecahan."
   },
   {
     "id": "fis-lis-dc-rangkaian-008",
@@ -275,7 +282,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jembatan Wheatstone dikatakan setimbang apabila hasil kali nilai resistansi lengan yang saling berseberangan bernilai sama: $$R_1 \\times R_4 = R_2 \\times R_3$$ Dalam keadaan setimbang, potensial pada kedua ujung cabang diagonal bernilai sama sehingga tidak ada arus yang mengalir melalui cabang tengah ($I_G = 0$)."
   },
   {
     "id": "fis-lis-dc-rangkaian-009",
@@ -308,7 +316,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk memperbesar batas ukur amperemeter sebanyak $n$ kali lipat ($n = \\frac{I}{I_A}$), dipasang resistor shunt ($R_{sh}$) secara paralel dengan galvanometer: $$R_{sh} = \\frac{R_A}{n - 1}$$."
   },
   {
     "id": "fis-lis-dc-rangkaian-010",
@@ -341,7 +350,8 @@
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada rangkaian RC arus searah: - Saat awal sakelar ditutup ($t = 0$), kapasitor belum menyimpan muatan ($q = 0 \\implies V_C = 0$), sehingga berlaku seperti kawat hubung singkat (short circuit) dengan arus maksimum $I_0 = \\frac{V}{R}$. - Pada keadaan tunak ($t \\to \\infty$), kapasitor terisi penuh muatan hingga $V_C = V$, sehingga berlaku seperti rangkaian terbuka (open circuit) dan arus berhenti mengalir ($I_\\infty = 0$)."
   },
   {
     "id": "mudah-fis-15",
@@ -374,7 +384,8 @@
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-dc",
-    "subTopicSlug": "rangkaian-seri-paralel"
+    "subTopicSlug": "rangkaian-seri-paralel",
+    "hint": "Hambatan Pengganti Seri & Paralel: • Paralel dua resistor: $R_p = \\frac{R_1 R_2}{R_1 + R_2}$ • Seri gabungan: $R_{\\text{total}} = R_p + R_3$."
   }
 ];
 

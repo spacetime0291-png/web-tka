@@ -44,7 +44,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Usaha luar ($W$) yang dilakukan gas pada proses tekanan konstan (isobarik) dihitung dengan mengalikan tekanan dengan perubahan volumenya: $$W = P \\times \\Delta V = P \\times (V_2 - V_1)$$."
   },
   {
     "id": "fis-termo-hukum-proses-002",
@@ -77,7 +78,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Usaha termodinamika dinyatakan sebagai integral tekanan terhadap perubahan volume: $W = \\int P\\,dV$. Pada wadah kaku, volume gas tidak dapat memuai maupun menyusut ($V = \\text{konstan}$ atau $\\Delta V = 0$). Karena tidak terjadi pergeseran batas sistem, usaha luar yang dilakukan oleh gas pada proses isokhorik bernilai tepat nol ($W = 0$)."
   },
   {
     "id": "fis-termo-hukum-proses-003",
@@ -110,7 +112,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Empat proses termodinamika dasar: 1. Isobarik: tekanan konstan ($\\Delta P = 0$). 2. Isotermal: suhu konstan ($\\Delta T = 0$, $\\Delta U = 0$). 3. Isokhorik: volume konstan ($\\Delta V = 0$, $W = 0$). 4. Adiabatik: tidak ada pertukaran kalor antara sistem dan lingkungan ($Q = 0$)."
   },
   {
     "id": "fis-termo-hukum-proses-004",
@@ -143,7 +146,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Usaha luar pada proses isotermal gas ideal dihitung dari integral persamaan keadaan $P = \\frac{nRT}{V}$: $$W = \\int_{V_1}^{V_2} P\\,dV = n R T \\int_{V_1}^{V_2} \\frac{dV}{V} = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)$$."
   },
   {
     "id": "fis-termo-hukum-proses-005",
@@ -176,7 +180,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Secara fisis dan grafis pada diagram $P-V$, usaha yang dilakukan gas selama proses termodinamika sama dengan luas area di bawah kurva lintasan proses yang dibatasi oleh sumbu volume: $$W = \\text{Luas daerah di bawah kurva } P-V$$ Untuk proses isobarik, bentuk bangun datarnya adalah persegi panjang dengan tinggi $P$ dan alas $\\Delta V = V_B - V_A$."
   },
   {
     "id": "fis-termo-hukum-proses-006",
@@ -209,7 +214,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha netto ($W_{\\text{net}}$) pada siklus tertutup dalam diagram $P-V$ setara dengan luas area tertutup di dalam kurva siklus: $$W_{\\text{siklus}} = \\text{Luas daerah tertutup}$$ Untuk siklus berbentuk segitiga: $W = \\frac{1}{2} \\times \\text{alas} \\times \\text{tinggi}$. Karena lintasan siklus berputar searah jarum jam (clockwise), usaha total bernilai positif (sistem menghasilkan kerja luar). **Tips:** Lupa mengalikan dengan faktor $1/2$ (menghitung luas persegi panjang penuh) akan menghasilkan $1200\\text{ kJ}$ ()."
   },
   {
     "id": "fis-termo-hukum-proses-007",
@@ -242,7 +248,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada proses adiabatik kuasistatis gas ideal berlaku relasi Poisson antara suhu mutlak dan volume: $$T_1 \\times V_1^{\\gamma - 1} = T_2 \\times V_2^{\\gamma - 1} \\implies T_2 = T_1 \\times \\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1}$$."
   },
   {
     "id": "fis-termo-hukum-proses-008",
@@ -275,7 +282,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum I Termodinamika, pada proses adiabatik tidak ada kalor yang mengalir ($Q = 0$): $$\\Delta U = Q - W \\implies \\Delta U = -W \\implies W = -\\Delta U$$ Untuk gas monoatomik, perubahan energi dalam adalah $\\Delta U = \\frac{3}{2} n R (T_2 - T_1)$, sehingga usaha luar bernilai: $$W = \\frac{3}{2} n R (T_1 - T_2)$$."
   },
   {
     "id": "fis-termo-hukum-proses-009",
@@ -308,7 +316,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kemiringan kurva pada diagram $P-V$ dicari dengan turunan pertama $\\frac{dP}{dV}$: 1. Kurva isotermal ($P = C_1 V^{-1}$): $$\\left(\\frac{dP}{dV}\\right)_{\\text{isotermal}} = -C_1 V^{-2} = -\\frac{P}{V}$$ 2. Kurva adiabatik ($P = C_2 V^{-\\gamma}$): $$\\left(\\frac{dP}{dV}\\right)_{\\text{adiabatik}} = -\\gamma C_2 V^{-\\gamma - 1} = -\\gamma \\frac{P}{V}$$ Rasio kemiringan kurva adiabatik terhadap kurva isotermal adalah $\\gamma$. **Tips:** Ingat bahwa $\\gamma = C_p/C_v > 1$."
   },
   {
     "id": "fis-termo-hukum-proses-010",
@@ -341,7 +350,8 @@
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum I Termodinamika: $Q = \\Delta U + W$. - Usaha isobarik: $W = P \\times \\Delta V$. - Perubahan energi dalam monoatomik: $\\Delta U = \\frac{3}{2} n R \\Delta T = \\frac{3}{2} P \\times \\Delta V$. - Kalor total yang diserap pada tekanan konstan: $Q = \\Delta U + W = \\frac{3}{2} P \\Delta V + P \\Delta V = \\frac{5}{2} P \\Delta V$."
   }
 ];
 

@@ -44,7 +44,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya gesek statis ($f_s$) bersifat responsif terhadap gaya luar yang berusaha menggerakkan benda, dengan nilai maksimum $f_{s,\\text{maks}} = \\mu_s N$. Jika gaya penarik $F \\le f_{s,\\text{maks}}$, maka benda tetap diam dan besar gaya gesek statis tepat sama dengan gaya penarik ($f_s = F$)."
   },
   {
     "id": "fis-din-gaya-gesek-002",
@@ -77,7 +78,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Saat benda meluncur relatif terhadap permukaan bidang, gaya hambat yang bekerja adalah gaya gesekan kinetis dengan besar konstan: $f_k = \\mu_k N$, di mana $N$ adalah gaya normal tegak lurus bidang. **Tips:** Jangan mengurangkan gaya penarik dengan gaya gesek untuk mencari $f_k$."
   },
   {
     "id": "fis-din-gaya-gesek-003",
@@ -110,7 +112,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Hukum Amontons tentang gesekan menyatakan bahwa gaya gesekan berbanding lurus dengan gaya normal dan pada pendekatan makroskopis standar tidak bergantung pada luas bidang sentuh semu benda. **Tips:** Kerap dianggap bahwa semakin lebar penampang balok, semakin besar gaya geseknya."
   },
   {
     "id": "fis-din-gaya-gesek-004",
@@ -143,7 +146,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Perpaduan kinematika gerak lurus berubah beraturan (GLBB diperlambat) dan dinamika Hukum II Newton: $v_t^2 = v_0^2 - 2 a s$ dan $\\sum F = f_k = m a$, dengan $f_k = \\mu_k m g$. **Tips:** Perhatikan bahwa koefisien gesekan merupakan besaran tak berdimensi yang tidak bergantung pada massa benda yang meluncur."
   },
   {
     "id": "fis-din-gaya-gesek-005",
@@ -176,7 +180,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gaya gesek statis maksimum pada bidang miring ditentukan oleh gaya normal tegak lurus bidang: $f_{s,\\text{maks}} = \\mu_s N = \\mu_s m g \\cos\\theta$. **Tips:** Jangan keliru menggunakan $m g \\sin\\theta$ untuk mencari gaya normal."
   },
   {
     "id": "fis-din-gaya-gesek-006",
@@ -209,7 +214,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya tarik miring ke atas memiliki dua komponen: komponen horizontal $F_x = F \\cos\\theta$ yang mempercepat balok dan komponen vertikal $F_y = F \\sin\\theta$ yang mengurangi gaya normal lantai: $N = m g - F \\sin\\theta$. Gaya gesekan kinetis yang menghambat adalah $f_k = \\mu_k N$."
   },
   {
     "id": "fis-din-gaya-gesek-007",
@@ -242,7 +248,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Balok $A$ ikut bergerak dipercepat semata-mata karena gaya gesek statis yang dikerjakan oleh permukaan atas balok $B$. Nilai batas percepatan bersama dicapai saat gaya gesek mencapai nilai statis maksimum: $f_{s,\\text{maks}} = \\mu_s m_A g$. **Tips:** Jangan menggunakan massa total untuk menghitung gaya gesek statis antara $A$ dan $B$."
   },
   {
     "id": "fis-din-gaya-gesek-008",
@@ -275,7 +282,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kelajuan konstan ($a = 0$), komponen gaya luncur gravitasi tepat diimbangi oleh gaya gesekan kinetis: $m g \\sin\\theta_1 = \\mu_k m g \\cos\\theta_1 \\implies \\mu_k = \\tan\\theta_1$. Koefisien gesekan bernilai tetap saat sudut diubah. **Tips:** Kerap keliru menganggap koefisien gesekan berubah seiring perubahan sudut."
   },
   {
     "id": "fis-din-gaya-gesek-009",
@@ -308,7 +316,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya tekan mendatar $F$ membangkitkan gaya normal kontak dari dinding: $N = F$. Gaya penahan gerak jatuh ke bawah adalah gaya gesek statis vertikal ke atas: $f_s \\le \\mu_s N = \\mu_s F$. Kondisi tepat akan melorot mensyaratkan $f_{s,\\text{maks}} = W$."
   },
   {
     "id": "fis-din-gaya-gesek-010",
@@ -341,7 +350,8 @@
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika benda bergerak menaiki bidang miring, gaya gesekan kinetis berarah menuruni bidang miring (searah dengan komponen gaya gravitasi sejajar bidang). Keduanya bersama-sama menghasilkan perlambatan: $a_{\\text{naik}} = g(\\sin\\theta + \\mu_k \\cos\\theta)$. **Tips:** Kekeliruan fatal yang sering terjadi adalah mengurangkan gaya gesek dari komponen berat ($g(\\sin\\theta - \\mu_k\\cos\\theta)$)."
   },
   {
     "id": "mudah-fis-03",
@@ -374,7 +384,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma F = m a \\implies a = \\frac{\\Sigma F}{m}$$. **Tips:** Perhatikan apakah ada koefisien gesekan atau lantai dinyatakan licin sempurna."
   },
   {
     "id": "fis-din-02",
@@ -407,7 +418,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Hukum II Newton sistem multi-benda kontak: $a = \\frac{\\Sigma F}{\\Sigma m}$ dan gaya aksi-reaksi kontak."
   },
   {
     "id": "fis-din-26",
@@ -440,7 +452,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Percepatan bersama sistem gabungan $a = \\frac{F}{\\Sigma m}$ dan gaya desak aksi-reaksi kontak."
   },
   {
     "id": "fis-din-05",
@@ -473,7 +486,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Syarat benda tidak bertranslasi relatif: gaya inersia maksimum diimbangi oleh gaya gesek statis maksimum ($f_{s,\\max} = \\mu_s N$)."
   },
   {
     "id": "fis-din-06",
@@ -506,7 +520,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Kesetimbangan statis benda pada bidang vertikal: $\\Sigma F_y = 0$ dan $\\Sigma F_x = 0$ dengan $f_s \\le \\mu_s N$."
   },
   {
     "id": "fis-din-29",
@@ -539,7 +554,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Sifat adaptif gaya gesek statis: selama gaya luar horizontal $F \\le f_{s,\\max}$, benda tetap diam dan besar gaya gesek statis tepat sama dengan gaya luar ($f_s = F$)."
   },
   {
     "id": "fis-din-30",
@@ -572,7 +588,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Kondisi kelajuan konstan pada bidang miring ($a = 0$): $\\Sigma F = 0 \\Rightarrow mg \\sin\\theta = \\mu_k mg \\cos\\theta \\Rightarrow \\mu_k = \\tan\\theta$."
   },
   {
     "id": "sedang-fis-02",
@@ -605,7 +622,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "1. Gaya normal tegak lurus bidang: $N = mg\\cos\\theta$ 2. Gaya gesek kinetis: $f_k = \\mu_k N = \\mu_k mg\\cos\\theta$ 3. Gaya penarik sejajar bidang menuruni kemiringan: $F_g = mg\\sin\\theta$ 4. Persamaan gerak: $\\Sigma F = ma \\implies mg\\sin\\theta - f_k = ma \\implies a = g(\\sin\\theta - \\mu_k\\cos\\theta)$. **Tips:** Jangan tertukar antara sinus dan kosinus pada bidang miring."
   },
   {
     "id": "fis-din-28",
@@ -638,7 +656,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Sistem balok bertumpuk: percepatan maksimum balok atas dibatasi oleh gaya gesek statis maksimum ($f_{s,\\max} = \\mu_s m_A g$)."
   },
   {
     "id": "fis-din-07",
@@ -671,7 +690,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Hukum II Newton pada bidang miring dengan gesekan: $\\Sigma F_x = m \\cdot a$, di mana $W_x = mg \\sin\\theta$ dan $f_k = \\mu_k mg \\cos\\theta$."
   },
   {
     "id": "fis-din-08",
@@ -704,7 +724,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Analisis ambang gerak ($F_x$ vs $f_{s,\\max}$) dengan modifikasi gaya normal akibat gaya tarik bersudut."
   },
   {
     "id": "fis-din-31",
@@ -737,7 +758,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Gaya normal pada langit-langit atap: $N = F_v - mg$ dan Hukum II Newton horizontal: $F_h - f_k = m \\cdot a$."
   },
   {
     "id": "fis-din-32",
@@ -770,7 +792,8 @@
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Hukum II Newton balok didorong menuruni bidang miring kasar: $\\Sigma F_x = F + mg \\sin\\theta - f_k = m \\cdot a$. **Tips:** Keliru menentukan arah gaya gesek (menambahkan gaya gesek ke arah bawah), atau salah menghitung $W_x$."
   }
 ];
 

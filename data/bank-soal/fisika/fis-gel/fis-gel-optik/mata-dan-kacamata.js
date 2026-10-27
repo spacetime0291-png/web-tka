@@ -44,7 +44,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Mata normal (emetropi) memiliki: 1. Titik dekat ($PP$, punctum proximum) standar sebesar $s_n = 25\\text{ cm}$ saat berakomodasi maksimum. 2. Titik jauh ($PR$, punctum remotum) berada di jarak tak terhingga ($PR = \\infty$) saat mata tidak berakomodasi (relaks). **Tips:** Jika titik dekat lebih besar dari 25 cm, mata mengalami rabun dekat (hipermetropi)."
   },
   {
     "id": "fis-gel-optik-mata-002",
@@ -77,7 +78,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penderita miopi ditolong dengan lensa cekung (negatif) agar benda di tak terhingga ($s = \\infty$) dibentuk bayangannya tepat di titik jauh penderita ($s' = -PR$): $$P = -\\frac{100}{PR\\text{ (cm)}}$$. **Tips:** Jangan menggunakan tanda positif ($+0{,}5\\text{ D}$, )."
   },
   {
     "id": "fis-gel-optik-mata-003",
@@ -110,7 +112,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penderita hipermetropi ditolong lensa cembung (positif) agar buku pada jarak baca normal ($s = 25\\text{ cm}$) dibentuk bayangan mayanya di titik dekat penderita ($s' = -PP$): $$P = \\frac{100}{s_n} - \\frac{100}{PP}$$. **Tips:** Hati-hati jangan sampai terbalik mengurangkan $\\frac{100}{50} - \\frac{100}{25} = -2\\text{ D}$."
   },
   {
     "id": "fis-gel-optik-mata-004",
@@ -143,7 +146,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Presbiopi adalah penurunan kemampuan akomodasi mata yang terjadi secara alami seiring bertambahnya usia akibat penuaan fisik. Otot siliaris kehilangan kelenturannya sehingga lensa mata tidak dapat menebal secara maksimal untuk melihat dekat maupun menipis maksimal untuk melihat jauh. **Tips:** adalah penyebab astigmatisme, adalah miopi anatomis, adalah hipermetropi anatomis, dan adalah glaukoma."
   },
   {
     "id": "fis-gel-optik-mata-005",
@@ -176,7 +180,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Astigmatisme disebabkan oleh lengkungan kornea atau lensa mata yang tidak sferis sempurna (memiliki jari-jari kelengkungan yang berbeda pada meridian horizontal dan vertikal). Untuk mengimbanginya, dibutuhkan lensa silindris (cylindrical lens) yang memiliki kelengkungan hanya pada satu aksis tertentu. **Tips:** Kacamata bifokal () digunakan untuk penderita presbiopi yang membutuhkan koreksi melihat jauh sekaligus membaca dekat."
   },
   {
     "id": "fis-gel-optik-mata-006",
@@ -209,7 +214,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak terdekat yang masih dapat dibaca tanpa kacamata adalah titik dekat asli ($PP$, punctum proximum) mata penderita. Rumus kacamata hipermetropi: $$P = \\frac{100}{s_n} - \\frac{100}{PP}$$."
   },
   {
     "id": "fis-gel-optik-mata-007",
@@ -242,7 +248,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika benda yang ingin dilihat tidak berada di jarak tak terhingga melainkan pada jarak berhingga $s$, maka rumus lensa berlaku: $$P = \\frac{100}{s\\text{ (cm)}} + \\frac{100}{s'\\text{ (cm)}}$$ dengan $s' = -PR$ karena bayangan maya harus jatuh di titik jauh siswa."
   },
   {
     "id": "fis-gel-optik-mata-008",
@@ -275,7 +282,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kacamata bifokal memiliki dua segmen lensa: 1. Bagian atas untuk melihat jauh (miopi): $P_{\\text{jauh}} = -\\frac{100}{PR}$. 2. Bagian bawah untuk membaca dekat (hipermetropi/presbiopi): $P_{\\text{dekat}} = \\frac{100}{s_n} - \\frac{100}{PP}$."
   },
   {
     "id": "fis-gel-optik-mata-009",
@@ -308,7 +316,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika jarak antara kacamata dan mata diperhitungkan sebesar $d$, maka jarak bayangan terhadap lensa kacamata ($s'$) adalah: $$s' = -(PR - d)$$ Untuk melihat benda di tak terhingga ($s = \\infty$): $$P = -\\frac{100}{PR - d}$$."
   },
   {
     "id": "fis-gel-optik-mata-010",
@@ -341,7 +350,8 @@
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya bias lensa mata dihitung dengan persamaan lensa tipis di mana jarak bayangan ke retina bernilai konstan ($s' = 2\\text{ cm} = 0{,}02\\text{ m}$): $$P = \\frac{1}{s} + \\frac{1}{s'}$$ Daya akomodasi adalah selisih kekuatan lensa mata maksimum terhadap minimum: $$\\Delta P = P_{\\max} - P_{\\min}$$."
   },
   {
     "id": "drill-cah-07",
@@ -374,7 +384,8 @@
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "Perbesaran Sudut Lup (Kaca Pembesar): • Mata tanpa akomodasi (rileks): $M = \\frac{s_n}{f}$ • Mata berakomodasi maksimum : $M = \\frac{s_n}{f} + 1$. **Tips:** Menambahkan $+1$ saat mata rileks."
   },
   {
     "id": "drill-cah-06",
@@ -407,7 +418,8 @@
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "Kacamata Rabun Jauh (Miopi): Lensa cekung negatif digunakan untuk membentuk bayangan maya benda jauh tak hingga ($s = \\infty$) tepat pada titik jauhnya ($s' = -PR$): $$P = -\\frac{100}{PR\\text{ (cm)}} = -\\frac{1}{PR\\text{ (meter)}}$$. **Tips:** Miopi selalu butuh lensa minus (cekung)."
   },
   {
     "id": "drill2-cah-05",
@@ -440,7 +452,8 @@
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "Gunakan perumusan konsep fisis: $$P = \\frac{100}{s_n\\text{ (cm)}} - \\frac{100}{PP\\text{ (cm)}} = 4 - \\frac{100}{PP\\text{ (cm)}}$$ (dengan jarak baca normal standar $s_n = 25\\text{ cm}$). **Tips:** Kacamata baca selalu berlensa plus (+)."
   },
   {
     "id": "drill2-cah-06",
@@ -473,7 +486,8 @@
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "• Perbesaran bayangan: $M = \\frac{f_{\\text{ob}}}{f_{\\text{ok}}}$ • Panjang teropong: $d = f_{\\text{ob}} + f_{\\text{ok}}$."
   }
 ];
 

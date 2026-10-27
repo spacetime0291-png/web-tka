@@ -44,7 +44,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen inersia sistem partikel diskret dihitung melalui penjumlahan skalar hasil kali massa masing-masing partikel dengan kuadrat jarak tegak lurusnya ke sumbu rotasi: $I = \\sum m_i r_i^2$."
   },
   {
     "id": "fis-din-rot-inersia-002",
@@ -77,7 +78,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen inersia silinder pejal homogen yang berputar terhadap sumbu simetrinya adalah: $I = \\frac{1}{2} M R^2$. Satuan SI untuk momen inersia adalah $\\text{kg}\\cdot\\text{m}^2$."
   },
   {
     "id": "fis-din-rot-inersia-003",
@@ -110,7 +112,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Teorema sumbu sejajar (Steiner): $I = I_{\\text{pm}} + M d^2$, di mana $d$ adalah jarak pergeseran sumbu putar dari pusat massa. Untuk batang panjang $L$, jarak pusat massa ke ujung batang adalah $d = \\frac{1}{2} L$."
   },
   {
     "id": "fis-din-rot-inersia-004",
@@ -143,7 +146,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen inersia ($I$) adalah analogi rotasional dari massa inersial pada gerak translasi. Momen inersia mencerminkan resistensi benda terhadap percepatan sudut. Secara definisi integral $I = \\int r^2 dm$, nilainya ditentukan oleh geometri distribusi massa relatif terhadap sumbu putar tertentu. **Tips:** Kerap menganggap momen inersia bernilai tetap untuk suatu benda layaknya massa translasi."
   },
   {
     "id": "fis-din-rot-inersia-005",
@@ -176,7 +180,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Momen inersia bola pejal melalui pusat adalah $I_p = \\frac{2}{5} M R^2$. Momen inersia bola berongga tipis melalui pusat adalah $I_b = \\frac{2}{3} M R^2$. **Tips:** Kerap tertukar karena bola berongga memiliki koefisien $\\frac{2}{3}$ sedangkan bola pejal memiliki koefisien $\\frac{2}{5}$."
   },
   {
     "id": "fis-din-rot-inersia-006",
@@ -209,7 +214,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema sumbu sejajar (Steiner) menghubungkan momen inersia terhadap sembarang sumbu sejajar ($I$) dengan momen inersia terhadap sumbu yang melalui pusat massa ($I_{\\text{pm}}$): $I = I_{\\text{pm}} + M d^2$, di mana $d$ adalah jarak antara kedua sumbu sejajar."
   },
   {
     "id": "fis-din-rot-inersia-007",
@@ -242,7 +248,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen inersia sistem partikel diskret terhadap sumbu-$z$ yang melalui pusat adalah $I_z = \\sum_{i=1}^4 m_i r_i^2$, di mana $r_i$ adalah jarak dari titik pusat persegi ke masing-masing titik sudut."
   },
   {
     "id": "fis-din-rot-inersia-008",
@@ -275,7 +282,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema sumbu tegak lurus untuk lamina tipis 2D pada bidang $xy$: $I_z = I_x + I_y$. Karena bentuk lingkaran simetris sempurna di segala arah, momen inersia terhadap sembarang sumbu diameter adalah identik ($I_x = I_y = I_{\\text{diameter}}$). **Tips:** Kerap menganggap momen inersia terhadap diameter sama dengan momen inersia terhadap sumbu polar tegak lurus ($\\frac{1}{2} M R^2$)."
   },
   {
     "id": "fis-din-rot-inersia-009",
@@ -308,7 +316,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen inersia silinder berongga homogen berdinding tebal dengan massa $M$, jari-jari dalam $R_1$, dan jari-jari luar $R_2$ dinyatakan oleh rumus integrasi: $I = \\frac{1}{2} M (R_1^2 + R_2^2)$."
   },
   {
     "id": "fis-din-rot-inersia-010",
@@ -341,7 +350,8 @@
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen inersia total sistem komposit adalah penjumlahan skalar momen inersia batang kontinu terhadap pusat massanya dan momen inersia kedua partikel di ujung-ujungnya: $I_{\\text{total}} = I_{\\text{batang}} + \\sum m r^2$."
   },
   {
     "id": "fis-din-45",
@@ -374,7 +384,8 @@
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Konsep: Momen inersia sistem partikel titik diskrit: $I = \\Sigma m_i r_i^2 = m_1 r_1^2 + m_2 r_2^2$. **Tips:** Lupa mengkuadratkan jarak lengan ($r$), atau salah menentukan jarak bola kedua terhadap poros."
   },
   {
     "id": "drill-rot-02",
@@ -407,7 +418,8 @@
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Konstanta Momen Inersia Benda Pejal Baku: • Silinder pejal homogen: $I_{\\text{silinder}} = \\frac{1}{2} M R^2 = 0{,}5 M R^2$ • Bola pejal homogen: $I_{\\text{bola}} = \\frac{2}{5} M R^2 = 0{,}4 M R^2$."
   },
   {
     "id": "drill2-rot-01",
@@ -440,7 +452,8 @@
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Momen Inersia Sistem Partikel Diskrit: $$I = \\sum m_i r_i^2 = m_1 r_1^2 + m_2 r_2^2 + m_3 r_3^2$$ dengan $r_i$ adalah jarak tegak lurus partikel ke sumbu putar."
   },
   {
     "id": "drill2-rot-02",
@@ -473,7 +486,8 @@
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Momen Inersia Kulit Bola Berongga: $$I = \\frac{2}{3} M R^2$$."
   },
   {
     "id": "fis-din-23",
@@ -506,7 +520,8 @@
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Konsep: Dinamika gerak menggelinding murni tanpa slip: translasi ($Mg \\sin\\theta - f_s = Ma$) dan rotasi ($f_s R = I \\alpha$). Formula percepatan: $a = \\frac{g \\sin\\theta}{1 + k}$."
   },
   {
     "id": "drill-rot-03",
@@ -539,7 +554,8 @@
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Teorema Sumbu Sejajar (Steiner): Momen inersia terhadap sumbu sejajar yang berjarak $d$ dari pusat massa adalah: $$I = I_{\\text{pm}} + M d^2$$. **Tips:** ⚠️ Pasangan Rumus Batang: Poros di tengah $\\implies \\frac{1}{12}ML^2$."
   }
 ];
 

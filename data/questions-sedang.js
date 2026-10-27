@@ -31,7 +31,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $\\sum F_y = m a_y$. Ketika lift bergerak ke bawah dan mengalami perlambatan, vektor percepatan lift justru berarah ke atas ($a_y = +a$). Gaya normal yang dikerjakan timbangan merupakan gaya berat semu yang terbaca oleh alat ukur."
   },
   {
     "id": "fis-din-gaya-berat-normal-007",
@@ -64,7 +65,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya normal bekerja tegak lurus permukaan bidang miring. Pada sumbu tegak lurus bidang miring (sumbu-$y'$), berlaku kesetimbangan translasi $\\sum F_\\perp = 0$. Komponen gaya yang tegak lurus bidang miring berasal dari proyeksi gaya berat ($W_\\perp = m g \\cos\\theta$) dan proyeksi gaya luar horizontal ($F_\\perp = F \\sin\\theta$)."
   },
   {
     "id": "fis-din-gaya-berat-normal-008",
@@ -97,7 +99,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya normal adalah gaya kontak yang arahnya selalu tegak lurus terhadap bidang sentuh. Pada dinding vertikal, bidang sentuh berada pada posisi vertikal sehingga gaya normal berarah horizontal tegak lurus dinding. Pada sumbu horizontal buku diam, sehingga $\\sum F_x = 0 \\implies N = F$. **Tips:** Salah satu miskonsepsi paling umum adalah menganggap gaya normal selalu sama dengan gaya berat $m g$."
   },
   {
     "id": "fis-din-gaya-berat-normal-009",
@@ -130,7 +133,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Diagram benda bebas (Free Body Diagram) dipisahkan untuk balok $B$ dan sistem gabungan balok $(A+B)$. Gaya normal timbul pada setiap antarmuka kontak berdasarkan kondisi kesetimbangan vertikal $\\sum F_y = 0$."
   },
   {
     "id": "fis-din-gaya-berat-normal-010",
@@ -163,7 +167,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Berat dan Gaya Normal",
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada puncak lintasan cembung melingkar vertikal, resultan gaya berarah menuju pusat kelengkungan (ke arah bawah) sebagai gaya sentripetal: $\\sum F_r = m \\frac{v^2}{R}$. Gaya yang bekerja adalah gaya berat ke bawah ($W$) dan gaya normal ke atas ($N$). **Tips:** Kerap tertukar tanda antara puncak cembung ($N = m(g - v^2/R)$) dan lembah cekung ($N = m(g + v^2/R)$)."
   },
   {
     "id": "fis-din-gaya-gesek-006",
@@ -196,7 +201,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya tarik miring ke atas memiliki dua komponen: komponen horizontal $F_x = F \\cos\\theta$ yang mempercepat balok dan komponen vertikal $F_y = F \\sin\\theta$ yang mengurangi gaya normal lantai: $N = m g - F \\sin\\theta$. Gaya gesekan kinetis yang menghambat adalah $f_k = \\mu_k N$."
   },
   {
     "id": "fis-din-gaya-gesek-007",
@@ -229,7 +235,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Balok $A$ ikut bergerak dipercepat semata-mata karena gaya gesek statis yang dikerjakan oleh permukaan atas balok $B$. Nilai batas percepatan bersama dicapai saat gaya gesek mencapai nilai statis maksimum: $f_{s,\\text{maks}} = \\mu_s m_A g$. **Tips:** Jangan menggunakan massa total untuk menghitung gaya gesek statis antara $A$ dan $B$."
   },
   {
     "id": "fis-din-gaya-gesek-008",
@@ -262,7 +269,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kelajuan konstan ($a = 0$), komponen gaya luncur gravitasi tepat diimbangi oleh gaya gesekan kinetis: $m g \\sin\\theta_1 = \\mu_k m g \\cos\\theta_1 \\implies \\mu_k = \\tan\\theta_1$. Koefisien gesekan bernilai tetap saat sudut diubah. **Tips:** Kerap keliru menganggap koefisien gesekan berubah seiring perubahan sudut."
   },
   {
     "id": "fis-din-gaya-gesek-009",
@@ -295,7 +303,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya tekan mendatar $F$ membangkitkan gaya normal kontak dari dinding: $N = F$. Gaya penahan gerak jatuh ke bawah adalah gaya gesek statis vertikal ke atas: $f_s \\le \\mu_s N = \\mu_s F$. Kondisi tepat akan melorot mensyaratkan $f_{s,\\text{maks}} = W$."
   },
   {
     "id": "fis-din-gaya-gesek-010",
@@ -328,7 +337,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Gesek Statis dan Kinetis",
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika benda bergerak menaiki bidang miring, gaya gesekan kinetis berarah menuruni bidang miring (searah dengan komponen gaya gravitasi sejajar bidang). Keduanya bersama-sama menghasilkan perlambatan: $a_{\\text{naik}} = g(\\sin\\theta + \\mu_k \\cos\\theta)$. **Tips:** Kekeliruan fatal yang sering terjadi adalah mengurangkan gaya gesek dari komponen berat ($g(\\sin\\theta - \\mu_k\\cos\\theta)$)."
   },
   {
     "id": "fis-din-gaya-newton1-006",
@@ -361,7 +371,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan translasi statis menurut Hukum I Newton adalah $\\Sigma F_x = 0$ dan $\\Sigma F_y = 0$. Pada sumbu vertikal, komponen tegangan kedua tali menopang gaya berat lampu."
   },
   {
     "id": "fis-din-gaya-newton1-007",
@@ -394,7 +405,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya dorong $F$ berarah horizontal mendatar. Proyeksikan gaya-gaya yang bekerja sejajar dengan permukaan bidang miring untuk memenuhi syarat kesetimbangan $\\Sigma F_{\\parallel} = 0$."
   },
   {
     "id": "fis-din-gaya-newton1-008",
@@ -427,7 +439,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan partikel adalah resultan jumlahan vektor seluruh gaya bernilai nol: $$\\vec{F}_1 + \\vec{F}_2 + \\vec{F}_3 = \\vec{0}$$."
   },
   {
     "id": "fis-din-gaya-newton1-009",
@@ -460,7 +473,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak dengan kelajuan tetap pada lintasan lurus merupakan Gerak Lurus Beraturan (GLB). Berdasarkan Hukum I Newton, resultan gaya pada arah mendatar harus sama dengan nol ($\\Sigma F_x = 0$)."
   },
   {
     "id": "fis-din-gaya-newton1-010",
@@ -493,7 +507,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Newton",
     "subTopic": "Hukum I Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesetimbangan titik simpul tiga gaya: • Sumbu vertikal: $\\Sigma F_y = 0 \\implies T_B \\sin\\theta - w = 0$ • Sumbu horizontal: $\\Sigma F_x = 0 \\implies T_B \\cos\\theta - T_A = 0$. **Tips:** Tertukar antara tegangan tali $A$ dan tali $B$ saat membaca urutan pertanyaan."
   },
   {
     "id": "fis-din-gaya-newton2-006",
@@ -526,7 +541,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinjau sistem gabungan untuk menentukan percepatan bersama, kemudian tinjau diagram benda bebas balok kedua untuk menentukan gaya kontak: $$a = \\frac{F}{m_A + m_B},\\quad N_{AB} = m_B \\cdot a$$."
   },
   {
     "id": "fis-din-gaya-newton2-007",
@@ -559,7 +575,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hanya komponen gaya horizontal ($F_x = F \\cos\\theta$) yang menghasilkan percepatan translasi pada lantai licin. Komponen vertikal ($F_y = F \\sin\\theta = 30\\text{ N}$) lebih kecil dari berat benda ($w = 100\\text{ N}$) sehingga balok tetap meluncur di lantai."
   },
   {
     "id": "fis-din-gaya-newton2-008",
@@ -592,7 +609,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Percepatan adalah turunan kedua dari fungsi posisi terhadap waktu ($a = \\frac{d^2x}{dt^2}$). Berdasarkan Hukum II Newton, resultan gaya adalah hasil kali massa dengan percepatan tersebut: $$\\Sigma F = m \\cdot a$$. **Tips:** Hanya menurunkan posisi satu kali sehingga menyangka kecepatan sebagai percepatan."
   },
   {
     "id": "fis-din-gaya-newton2-009",
@@ -625,7 +643,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika gaya luar bergantung pada waktu ($F(t)$), percepatan juga berubah terhadap waktu ($a(t) = \\frac{F(t)}{m}$). Perubahan kecepatan dicari melalui integrasi percepatan: $$\\Delta v = \\int_0^t a(t)\\,dt$$."
   },
   {
     "id": "fis-din-gaya-newton2-010",
@@ -658,7 +677,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton",
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Seluruh sistem bergerak bersama dengan percepatan yang sama ($a$). Tali 1 hanya bertugas menarik balok $m_1$, sedangkan tali 2 bertugas menarik gabungan balok ($m_1 + m_2$)."
   },
   {
     "id": "fis-din-gaya-newton3-006",
@@ -691,7 +711,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Roket memberikan gaya aksi ke belakang untuk mendorong molekul gas buang keluar, dan sebagai reaksinya gas buang memberikan gaya dorong ke depan yang sama besar pada badan roket: $$F_{\\text{thrust}} = v_{\\text{gas}} \\cdot \\frac{\\Delta m}{\\Delta t}$$. **Tips:** Mengalikan dengan massa total roket alih-alih laju alir massa semburan gas pembakaran."
   },
   {
     "id": "fis-din-gaya-newton3-007",
@@ -724,7 +745,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya rata-rata pada peluru dihitung dari impuls perubahan momentum: $F = \\frac{m \\Delta v}{\\Delta t}$. Berdasarkan Hukum III Newton, gaya reaksi yang dialami meriam sama besar dengan gaya pada peluru namun berlawanan arah. Percepatan sentakan meriam dihitung dengan $a = \\frac{F}{M}$. **Tips:** Membagi gaya dengan massa peluru alih-alih massa meriam saat menghitung percepatan gerak sentak meriam."
   },
   {
     "id": "fis-din-gaya-newton3-008",
@@ -757,7 +779,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pasangan aksi-reaksi harus memenuhi interaksi timbal balik antara dua objek yang sama persis: gaya benda $X$ pada benda $Y$ berpasangan dengan gaya benda $Y$ pada benda $X$, dan jenis gayanya harus sejenis (kontak-kontak, atau gravitasi-gravitasi). **Tips:** Menganggap gaya gravitasi bumi pada balok $A$ berpasangan dengan gaya normal balok $B$ pada $A$."
   },
   {
     "id": "fis-din-gaya-newton3-009",
@@ -790,7 +813,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya gravitasi antara dua benda langit memenuhi Hukum Gravitasi Universal Newton: $$F = G \\frac{M_B M_L}{R^2}$$ Berdasarkan Hukum III Newton, gaya tarik bumi pada bulan dan gaya tarik bulan pada bumi merupakan pasangan aksi-reaksi mutlak sehingga besarnya selalu tepat sama besar. **Tips:** Terkecoh mengira karena massa bulan 81 kali lebih kecil maka gaya gravitasi yang dikerjakannya juga 81 kali lebih kecil."
   },
   {
     "id": "fis-din-gaya-newton3-010",
@@ -823,7 +847,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum III Newton",
     "subTopic": "Hukum III Newton",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum III Newton, ketika Rama mendorong Shinta dengan gaya $F = 120\\text{ N}$, Shinta secara otomatis memberikan gaya reaksi yang sama besar $120\\text{ N}$ pada Rama dengan arah berlawanan. Percepatan masing-masing berbanding terbalik dengan massanya ($a = \\frac{F}{m}$). **Tips:** Mengira Rama yang aktif mendorong tidak mengalami gaya reaksi dan tetap diam."
   },
   {
     "id": "fis-din-gaya-sentripetal-006",
@@ -856,7 +881,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya sentripetal penahan belokan pada jalan mendatar disediakan oleh gaya gesek statis: $F_s = f_s \\le f_{s,\\text{maks}} = \\mu_s N$. Pada batas kritis selip, $m \\frac{v_{\\text{maks}}^2}{R} = \\mu_s m g \\implies v_{\\text{maks}} = \\sqrt{\\mu_s g R}$. **Tips:** Kerap salah membagi atau lupa mengakar kuadratkan hasil kali $\\mu_s g R$."
   },
   {
     "id": "fis-din-gaya-sentripetal-007",
@@ -889,7 +915,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada titik terendah gerak melingkar vertikal, resultan gaya radial mengarah ke atas menuju pusat lingkaran: $\\sum F_r = T - m g = m \\frac{v^2}{R}$. Sehingga tegangan tali merupakan penjumlahan gaya berat dan gaya sentripetal: $T = m g + m \\frac{v^2}{R}$."
   },
   {
     "id": "fis-din-gaya-sentripetal-008",
@@ -922,7 +949,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tikungan miring tanpa gesekan (banked curve), komponen horizontal dari gaya normal menyediakan gaya sentripetal: $N \\sin\\theta = m \\frac{v^2}{R}$, sedangkan komponen vertikalnya menahan berat kendaraan: $N \\cos\\theta = m g$. Rasio keduanya menghasilkan: $\\tan\\theta = \\frac{v^2}{g R}$."
   },
   {
     "id": "fis-din-gaya-sentripetal-009",
@@ -955,7 +983,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada ayunan konis, bola bergerak melingkar pada bidang horizontal. Komponen vertikal tegangan tali mengimbangi berat bola: $T \\cos\\theta = m g$. Komponen horizontal tegangan tali berperan sebagai gaya sentripetal: $F_s = T \\sin\\theta$."
   },
   {
     "id": "fis-din-gaya-sentripetal-010",
@@ -988,7 +1017,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Sentripetal",
     "subTopic": "Gaya Sentripetal",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Di titik tertinggi lintasan vertikal, baik gaya tegangan tali $T$ maupun gaya gravitasi $m g$ keduanya mengarah ke bawah menuju pusat lingkaran: $\\sum F_r = T + m g = m \\frac{v^2}{R}$. Batas kritis agar tali tidak kendur (air tidak tumpah) dicapai saat tegangan tali mendekati nol ($T \\ge 0$). **Tips:** Kerap menyamakan kelajuan di titik tertinggi dengan kelajuan di titik terendah."
   },
   {
     "id": "fis-din-gaya-tegangan-006",
@@ -1021,7 +1051,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pesawat Atwood, tegangan tali selama bergerak bernilai: $T = \\frac{2 m_1 m_2}{m_1 + m_2} g$. Nilai tegangan ini berada di antara berat beban ringan ($m_2 g = 20\\text{ N}$) dan beban berat ($m_1 g = 30\\text{ N}$)."
   },
   {
     "id": "fis-din-gaya-tegangan-007",
@@ -1054,7 +1085,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya penggerak sistem berasal dari berat balok gantung $B$ ($W_B = m_B g$), sedangkan gaya hambat berasal dari gesekan kinetis pada balok $A$ ($f_k = \\mu_k m_A g$). Percepatan: $a = \\frac{W_B - f_k}{m_A + m_B}$. **Tips:** Kekeliruan terjadi jika menganggap tegangan tali tepat sama dengan berat beban gantung ($20\\text{ N}$)."
   },
   {
     "id": "fis-din-gaya-tegangan-008",
@@ -1087,7 +1119,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan statis partikel pada simpul tali: $\\sum F_x = 0$ dan $\\sum F_y = 0$. Uraikan tegangan tali miring $T_2$ ke dalam komponen horizontal ($T_2 \\cos 53^\\circ$) dan vertikal ($T_2 \\sin 53^\\circ$)."
   },
   {
     "id": "fis-din-gaya-tegangan-009",
@@ -1120,7 +1153,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada sistem rangkaian balok mendatar, percepatan seluruh benda bernilai sama ($a$). Setiap tali hanya bertanggung jawab menarik massa total balok yang berada di belakangnya: $T_k = m_{\\text{belakang}} \\times a$."
   },
   {
     "id": "fis-din-gaya-tegangan-010",
@@ -1153,7 +1187,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Tegangan Tali",
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya penggerak netto berasal dari selisih antara gaya berat balok gantung ($W_B = m_B g$) dan komponen gaya berat balok $A$ yang sejajar bidang miring ($W_{A,\\parallel} = m_A g \\sin\\theta$). Percepatan sistem: $a = \\frac{m_B g - m_A g \\sin\\theta}{m_A + m_B}$."
   },
   {
     "id": "fis-din-27",
@@ -1186,7 +1221,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Berat dan Gaya Normal",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-berat-normal"
+    "subTopicSlug": "gaya-berat-normal",
+    "hint": "Konsep: Hukum II Newton pada kerangka acuan vertikal mengalami akselerasi tinggi ($g$-force): $N = m(g + a)$."
   },
   {
     "id": "sedang-fis-02",
@@ -1219,7 +1255,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "1. Gaya normal tegak lurus bidang: $N = mg\\cos\\theta$ 2. Gaya gesek kinetis: $f_k = \\mu_k N = \\mu_k mg\\cos\\theta$ 3. Gaya penarik sejajar bidang menuruni kemiringan: $F_g = mg\\sin\\theta$ 4. Persamaan gerak: $\\Sigma F = ma \\implies mg\\sin\\theta - f_k = ma \\implies a = g(\\sin\\theta - \\mu_k\\cos\\theta)$. **Tips:** Jangan tertukar antara sinus dan kosinus pada bidang miring."
   },
   {
     "id": "fis-din-28",
@@ -1252,7 +1289,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Sistem balok bertumpuk: percepatan maksimum balok atas dibatasi oleh gaya gesek statis maksimum ($f_{s,\\max} = \\mu_s m_A g$)."
   },
   {
     "id": "fis-din-07",
@@ -1285,7 +1323,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Hukum II Newton pada bidang miring dengan gesekan: $\\Sigma F_x = m \\cdot a$, di mana $W_x = mg \\sin\\theta$ dan $f_k = \\mu_k mg \\cos\\theta$."
   },
   {
     "id": "fis-din-08",
@@ -1318,7 +1357,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Analisis ambang gerak ($F_x$ vs $f_{s,\\max}$) dengan modifikasi gaya normal akibat gaya tarik bersudut."
   },
   {
     "id": "fis-din-31",
@@ -1351,7 +1391,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Gaya normal pada langit-langit atap: $N = F_v - mg$ dan Hukum II Newton horizontal: $F_h - f_k = m \\cdot a$."
   },
   {
     "id": "fis-din-32",
@@ -1384,7 +1425,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Gesek Statis dan Kinetis",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-gesek"
+    "subTopicSlug": "gaya-gesek",
+    "hint": "Konsep: Hukum II Newton balok didorong menuruni bidang miring kasar: $\\Sigma F_x = F + mg \\sin\\theta - f_k = m \\cdot a$. **Tips:** Keliru menentukan arah gaya gesek (menambahkan gaya gesek ke arah bawah), atau salah menghitung $W_x$."
   },
   {
     "id": "fis-din-03",
@@ -1417,7 +1459,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Penggabungan Hukum II Newton sistem gabungan (lift + muatan) dan analisis gaya kontak internal."
   },
   {
     "id": "fis-din-04",
@@ -1450,7 +1493,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Kesetimbangan gaya vertikal multi-benda dengan gaya eksternal bersudut: $\\Sigma F_y = 0$."
   },
   {
     "id": "fis-din-11",
@@ -1483,7 +1527,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Penggabungan gaya gesek kinetis permukaan horizontal dengan dinamika sistem katrol dua benda terhubung."
   },
   {
     "id": "fis-din-12",
@@ -1516,7 +1561,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Dinamika sistem katrol bidang miring licin terhubung beban vertikal: $a = \\frac{m_B g - m_A g \\sin\\theta}{m_A + m_B}$."
   },
   {
     "id": "fis-din-35",
@@ -1549,7 +1595,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Sistem katrol bidang miring ganda: $a = \\frac{m_A g \\sin\\theta_A - m_B g \\sin\\theta_B}{m_A + m_B}$."
   },
   {
     "id": "fis-din-36",
@@ -1582,7 +1629,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gaya Tegangan Tali",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "gaya-tegangan-tali"
+    "subTopicSlug": "gaya-tegangan-tali",
+    "hint": "Konsep: Hukum II Newton pada sistem katrol dengan gaya tarik eksternal berlawanan arah gerak beban gantung. **Tips:** Salah menentukan arah gaya gesek kinetis (mengira gaya gesek mengarah ke kiri bersama $F$)."
   },
   {
     "id": "fis-din-19",
@@ -1615,7 +1663,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Titik netral gravitasi: kesetimbangan kuat medan gravitasi dua sumber massa segaris ($g_1 = g_2$)."
   },
   {
     "id": "fis-din-20",
@@ -1648,7 +1697,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Kelajuan orbit satelit lingkaran: gaya gravitasi bumi bertindak sebagai gaya sentripetal ($\\frac{G M m}{r^2} = \\frac{m v^2}{r}$)."
   },
   {
     "id": "fis-din-43",
@@ -1681,7 +1731,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Hukum III Kepler: perbandingan kuadrat periode revolusi sama dengan perbandingan pangkat tiga jari-jari orbit ($\\frac{T_B^2}{T_A^2} = \\frac{r_B^3}{r_A^3}$)."
   },
   {
     "id": "fis-din-44",
@@ -1714,7 +1765,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-gaya",
-    "subTopicSlug": "hukum-2-newton"
+    "subTopicSlug": "hukum-2-newton",
+    "hint": "Konsep: Kelajuan lepas medan gravitasi: $v_{\\text{lepas}} = \\sqrt{\\frac{2GM}{R}}$."
   },
   {
     "id": "fis-din-mom-impuls-006",
@@ -1747,7 +1799,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Impuls gaya sama dengan luas daerah di bawah grafik gaya terhadap waktu ($F - t$). Menurut teorema impuls-momentum, impuls total menghasilkan perubahan momentum linier benda: $I = \\text{Luas} = m(v_t - v_0)$."
   },
   {
     "id": "fis-din-mom-impuls-007",
@@ -1780,7 +1833,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perubahan kecepatan adalah besaran vektor dua dimensi ortogonal (tegak lurus): $|\\Delta \\vec{v}| = \\sqrt{v_x^2 + v_y^2}$. Gaya rata-rata impulsif dihitung melalui: $\\bar{F} = \\frac{m |\\Delta \\vec{v}|}{\\Delta t}$."
   },
   {
     "id": "fis-din-mom-impuls-008",
@@ -1813,7 +1867,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya pada aliran fluida kontinu yang momentumnya diserap dinding diturunkan dari Hukum II Newton bentuk massa laju alir: $F = \\frac{\\Delta p}{\\Delta t} = \\frac{\\Delta m}{\\Delta t} \\Delta v$. **Tips:** Jangan membagi dengan faktor 2 seolah-olah menghitung energi kinetik."
   },
   {
     "id": "fis-din-mom-impuls-009",
@@ -1846,7 +1901,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan sesaat sebelum dan sesudah tumbukan diperoleh dari prinsip kekekalan energi mekanik/GLBB jatuh bebas: $v_1 = \\sqrt{2 g h_1}$ dan $v_2 = \\sqrt{2 g h_2}$. Gaya netto rata-rata dihitung melalui perubahan momentum: $\\bar{F}_{\\text{net}} = \\frac{m \\Delta v}{\\Delta t}$."
   },
   {
     "id": "fis-din-mom-impuls-010",
@@ -1879,7 +1935,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Impuls & Teorema Impuls-Momentum",
     "subTopic": "Impuls & Teorema Impuls-Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena $F(t) \\ge 0$ untuk rentang $0 \\le t \\le 4$, arah gaya selalu searah dengan gerak benda sehingga benda mengalami percepatan positif sepanjang selang waktu tersebut. Kecepatan maksimum terjadi saat gaya berakhir ($t = 4\\text{ s}$). Impuls total diperoleh dari integral tentu: $I = \\int_0^4 F(t) dt$."
   },
   {
     "id": "fis-din-mom-kekekalan-006",
@@ -1912,7 +1969,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena tidak ada gaya luar eksternal pada arah horizontal (gesekan air diabaikan), pusat massa sistem orang dan perahu posisinya tetap tidak berpindah di danau: $\\Delta x_{\\text{pm}} = 0$. Perpindahan perahu dan orang memenuhi hubungan: $M \\Delta x_p + m \\Delta x_o = 0$."
   },
   {
     "id": "fis-din-mom-kekekalan-007",
@@ -1945,7 +2003,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ledakan terjadi akibat gaya internal sehingga vektor momentum total sistem kekal: $\\vec{P}_{\\text{awal}} = \\vec{P}_{\\text{akhir}} = \\vec{p}_A + \\vec{p}_B$. Uraikan komponen momentum pada sumbu-$x$ dan sumbu-$y$."
   },
   {
     "id": "fis-din-mom-kekekalan-008",
@@ -1978,7 +2037,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada interaksi tumbukan di lantai licin tanpa gaya luar horizontal, berlaku Hukum Kekekalan Momentum Linier: $m v_1 + M V_0 = m v_2 + M V$. **Tips:** Kerap keliru menganggap peluru tertanam di dalam balok (tumbukan tidak lentur sama sekali)."
   },
   {
     "id": "fis-din-mom-kekekalan-009",
@@ -2011,7 +2071,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kekekalan momentum linier pada sistem gerak bersama yang kemudian berpisah: $(M + m) v_0 = M v_t + m v_a$. Kecepatan anak diberikan relatif terhadap tanah sehingga langsung dimasukkan ke dalam persamaan. **Tips:** Perhatikan kerangka acuan kecepatan lompatan."
   },
   {
     "id": "fis-din-mom-kekekalan-010",
@@ -2044,7 +2105,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Kekekalan Momentum",
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Propulsi roket di ruang hampa murni didasarkan pada Hukum Kekekalan Momentum Linier dan Hukum III Newton. Momentum gas yang disemburkan ke belakang menghasilkan momentum dorong wahana ke depan: $0 = M_{\\text{sisa}} v_w - m_{\\text{gas}} u$."
   },
   {
     "id": "fis-din-mom-linier-006",
@@ -2077,7 +2139,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Besar vektor kecepatan adalah modulus Pythagoras: $|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}$. Besar momentum linier adalah $|\\vec{p}| = m |\\vec{v}|$, dan energi kinetik skalar adalah $E_k = \\frac{1}{2} m |\\vec{v}|^2 = \\frac{|\\vec{p}|^2}{2m}$."
   },
   {
     "id": "fis-din-mom-linier-007",
@@ -2110,7 +2173,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perubahan momentum dua dimensi dihitung dengan menguraikan vektor kecepatan pada sumbu tegak lurus (normal) dan sejajar permukaan dinding. Pada dinding licin, komponen kecepatan yang sejajar dinding tidak berubah ($Delta v_\\parallel = 0$), sedangkan komponen tegak lurus berbalik arah."
   },
   {
     "id": "fis-din-mom-linier-008",
@@ -2143,7 +2207,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $F_{\\text{net}} = \\frac{dp}{dt}$."
   },
   {
     "id": "fis-din-mom-linier-009",
@@ -2176,7 +2241,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan energi kinetik dan momentum linier adalah $p = \\sqrt{2m E_k}$. Kenaikan sebesar $300\\%$ berarti nilai akhirnya menjadi $E_k' = E_k + 3,00 E_k = 4 E_k$. **Tips:** Perhatikan frasa 'dinaikkan sebesar 300%' yang bermakna nilainya menjadi 4 kali lipat, bukan 3 kali lipat."
   },
   {
     "id": "fis-din-mom-linier-010",
@@ -2209,7 +2275,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momentum Linier",
     "subTopic": "Momentum Linier",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gerak parabola, kecepatan horizontal bernilai konstan: $v_x = v_0 \\cos\\theta$. Di titik puncak lintasan, komponen kecepatan vertikal sesaat bernilai nol ($v_y = 0$), sehingga kecepatan total benda hanyalah kecepatan horizontalnya ($v_{\\text{puncak}} = v_x$). **Tips:** Kerap terkecoh menganggap momentum di titik tertinggi bernilai nol karena benda 'berhenti sesaat'."
   },
   {
     "id": "fis-din-mom-tumbukan-006",
@@ -2242,7 +2309,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Selesaikan sistem persamaan yang melibatkan dua hukum: (1) Hukum Kekekalan Momentum Linier: $m_A v_A + m_B v_B = m_A v_A' + m_B v_B'$, dan (2) Persamaan Koefisien Restitusi: $e = -\\frac{v_B' - v_A'}{v_B - v_A}$."
   },
   {
     "id": "fis-din-mom-tumbukan-007",
@@ -2275,7 +2343,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persoalan ayunan balistik dipecahkan dalam dua tahap: (1) Ayunan naik memenuhi Kekekalan Energi Mekanik: $V = \\sqrt{2 g h}$, dan (2) Tumbukan peluru dan balok memenuhi Kekekalan Momentum Linier: $m v_0 = (m + M) V$."
   },
   {
     "id": "fis-din-mom-tumbukan-008",
@@ -2308,7 +2377,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi yang hilang adalah selisih energi kinetik sebelum dan sesudah tumbukan: $\\Delta E_k = E_{k,\\text{awal}} - E_{k,\\text{akhir}}$. Kecepatan akhir gabungan dicari melalui Hukum Kekekalan Momentum Linier. **Tips:** Jangan keliru menganggap energi kinetik akhir adalah energi yang hilang."
   },
   {
     "id": "fis-din-mom-tumbukan-009",
@@ -2341,7 +2411,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinggi pantulan ke-$n$ pada tumbukan bola berulang dengan lantai mengikuti deret geometri: $h_n = e^{2n} h_0$, di mana rasio ketinggian setiap pantulan berurutan adalah $\\frac{h_k}{h_{k-1}} = e^2$."
   },
   {
     "id": "fis-din-mom-tumbukan-010",
@@ -2374,7 +2445,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tumbukan & Koefisien Restitusi",
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tumbukan lenting sempurna dua dimensi antara dua partikel bermassa identik di mana salah satu partikel awalnya diam, kedua vektor kecepatan akhir selalu saling tegak lurus: $\\theta_1 + \\theta_2 = 90^\\circ$. Hubungan komponen trigonometrinya adalah $v_1' = v_0 \\cos\\theta_1$ dan $v_2' = v_0 \\sin\\theta_1$."
   },
   {
     "id": "drill-rot-06",
@@ -2407,7 +2479,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum Kekekalan Momentum",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "kekekalan-momentum"
+    "subTopicSlug": "kekekalan-momentum",
+    "hint": "Jika tidak ada torsi luar yang bekerja pada sistem ($\\Sigma \\tau_{\\text{eksternal}} = 0$), maka momentum sudut sistem kekal: $$L_1 = L_2 \\implies I_1 \\omega_1 = I_2 \\omega_2$$."
   },
   {
     "id": "sedang-fis-09",
@@ -2440,7 +2513,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "tumbukan-restitusi"
+    "subTopicSlug": "tumbukan-restitusi",
+    "hint": "Karakteristik Tumbukan Lenting Sempurna Dua Massa Identik ($m_1 = m_2, e = 1$): Kedua benda akan saling bertukar kecepatan secara utuh: $$v_1' = v_2 \\quad \\text{dan} \\quad v_2' = v_1$$."
   },
   {
     "id": "sup-fis-din-02",
@@ -2473,7 +2547,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Tumbukan & Koefisien Restitusi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-mom",
-    "subTopicSlug": "tumbukan-restitusi"
+    "subTopicSlug": "tumbukan-restitusi",
+    "hint": "Pada tumbukan tidak lenting sama sekali ($e = 0$), kedua benda bergabung menjadi satu massa dengan kecepatan akhir bersama ($v'$): $m_1 v_1 + m_2 v_2 = (m_1 + m_2) v'$. **Tips:** Lupa mengonversi satuan gram ke kilogram atau salah menjumlahkan massa total peluru dan balok."
   },
   {
     "id": "fis-din-rot-inersia-006",
@@ -2506,7 +2581,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema sumbu sejajar (Steiner) menghubungkan momen inersia terhadap sembarang sumbu sejajar ($I$) dengan momen inersia terhadap sumbu yang melalui pusat massa ($I_{\\text{pm}}$): $I = I_{\\text{pm}} + M d^2$, di mana $d$ adalah jarak antara kedua sumbu sejajar."
   },
   {
     "id": "fis-din-rot-inersia-007",
@@ -2539,7 +2615,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen inersia sistem partikel diskret terhadap sumbu-$z$ yang melalui pusat adalah $I_z = \\sum_{i=1}^4 m_i r_i^2$, di mana $r_i$ adalah jarak dari titik pusat persegi ke masing-masing titik sudut."
   },
   {
     "id": "fis-din-rot-inersia-008",
@@ -2572,7 +2649,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema sumbu tegak lurus untuk lamina tipis 2D pada bidang $xy$: $I_z = I_x + I_y$. Karena bentuk lingkaran simetris sempurna di segala arah, momen inersia terhadap sembarang sumbu diameter adalah identik ($I_x = I_y = I_{\\text{diameter}}$). **Tips:** Kerap menganggap momen inersia terhadap diameter sama dengan momen inersia terhadap sumbu polar tegak lurus ($\\frac{1}{2} M R^2$)."
   },
   {
     "id": "fis-din-rot-inersia-009",
@@ -2605,7 +2683,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen inersia silinder berongga homogen berdinding tebal dengan massa $M$, jari-jari dalam $R_1$, dan jari-jari luar $R_2$ dinyatakan oleh rumus integrasi: $I = \\frac{1}{2} M (R_1^2 + R_2^2)$."
   },
   {
     "id": "fis-din-rot-inersia-010",
@@ -2638,7 +2717,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Inersia",
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen inersia total sistem komposit adalah penjumlahan skalar momen inersia batang kontinu terhadap pusat massanya dan momen inersia kedua partikel di ujung-ujungnya: $I_{\\text{total}} = I_{\\text{batang}} + \\sum m r^2$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-006",
@@ -2671,7 +2751,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan syarat kesetimbangan statis: (1) $\\sum F_y = 0 \\implies N_L = W$, (2) $\\sum F_x = 0 \\implies f_s = N_D$, dan (3) $\\sum \\tau = 0$ terhadap titik tumpu lantai. Nilai batas tepat akan tergelincir mensyaratkan $f_s = \\mu_s N_L = \\mu_s W$, yang menghasilkan rumus umum $\\mu_s = \\frac{1}{2 \\tan\\theta}$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-007",
@@ -2704,7 +2785,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan titik engsel $A$ sebagai poros putar agar gaya reaksi engsel tidak masuk ke dalam perhitungan torsi (lengannya nol). Terapkan syarat kesetimbangan rotasi: $\\sum \\tau_A = 0$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-008",
@@ -2737,7 +2819,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat silinder tepat akan terangkat menaiki undakan, titik tumpu rotasi sesaat berpindah ke tepi undakan ($P$). Gaya normal lantai menjadi nol ($N_{\\text{lantai}} = 0$). Syarat terangkat adalah torsi gaya penarik $F$ harus mengimbangi torsi gaya gravitasi $W$ terhadap titik tumpu $P$."
   },
   {
     "id": "fis-din-rot-kesetimbangan-009",
@@ -2770,7 +2853,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan kesetimbangan statis lengkap. Pada ambang batas tergelincir, gaya gesek statis lantai mencapai nilai maksimum: $f_{s,\\text{maks}} = \\mu_s N_L$. Dari kesetimbangan horizontal, gaya reaksi dinding adalah $N_D = f_{s,\\text{maks}}$. Nilai $x$ dicari dari kesetimbangan momen gaya terhadap kaki tangga di lantai. **Tips:** Kerap lupa menjumlahkan berat pekerja ke dalam gaya normal lantai ($N_L = W_t + W_p$)."
   },
   {
     "id": "fis-din-rot-kesetimbangan-010",
@@ -2803,7 +2887,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kesetimbangan Benda Tegar",
     "subTopic": "Kesetimbangan Benda Tegar",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena sudut tali terhadap horizontal adalah $37^\\circ$ dan $53^\\circ$, sudut antara kedua tali adalah $180^\\circ - (37^\\circ + 53^\\circ) = 90^\\circ$ (tegak lurus). Kedua tegangan tali dapat diuraikan pada sumbu-$x$ dan sumbu-$y$ untuk memenuhi kesetimbangan partikel $\\sum F_x = 0$ dan $\\sum F_y = 0$. **Tips:** Kerap tertukar antara $T_1$ dan $T_2$."
   },
   {
     "id": "fis-din-rot-newton-006",
@@ -2836,7 +2921,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gerak menggelinding murni benda tegar di bidang miring, percepatan linier translasi diturunkan dari gabungan Hukum II Newton translasi dan rotasi: $a = \\frac{g \\sin\\theta}{1 + k}$, di mana $k$ adalah konstanta bentuk momen inersia ($I = k M R^2$). Untuk silinder pejal, $k = \\frac{1}{2}$."
   },
   {
     "id": "fis-din-rot-newton-007",
@@ -2869,7 +2955,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinjau dua persamaan gerak yang saling terhubung: (1) Gerak translasi beban vertikal: $m g - T = m a$, dan (2) Gerak rotasi katrol pejal: $\\tau = T R = I \\alpha = (\\frac{1}{2} M R^2)(\\frac{a}{R}) \\implies T = \\frac{1}{2} M a$."
   },
   {
     "id": "fis-din-rot-newton-008",
@@ -2902,7 +2989,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi kinetik total benda menggelinding adalah penjumlahan energi kinetik translasi dan rotasi: $E_{k,\\text{total}} = E_{k,\\text{trans}} + E_{k,\\text{rot}}$. Untuk bola pejal, $I = \\frac{2}{5} M R^2$ dan $\\omega = \\frac{v}{R}$."
   },
   {
     "id": "fis-din-rot-newton-009",
@@ -2935,7 +3023,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan Hukum Kekekalan Momentum Sudut: $I_A \\omega_A = (I_A + I_B) \\omega'$. Energi kinetik yang hilang adalah selisih energi mekanik rotasi sebelum dan sesudah penggabungan: $\\Delta E_k = E_{k1} - E_{k2}$."
   },
   {
     "id": "fis-din-rot-newton-010",
@@ -2968,7 +3057,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Newton Rotasi",
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum Kekekalan Energi Mekanik, energi potensial gravitasi di puncak sepenuhnya diubah menjadi energi kinetik translasi dan rotasi di dasar: $M g h = \\frac{1}{2} M v^2 + \\frac{1}{2} I \\omega^2 = \\frac{7}{10} M v^2$. **Tips:** Kerap menggunakan rumus luncur bebas licin ($v = \\sqrt{2 g h} = \\sqrt{140} \\approx 11,83\\text{ m/s}$)."
   },
   {
     "id": "fis-din-rot-titikberat-006",
@@ -3001,7 +3091,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada benda berlubang (bagian yang dipotong atau dibuang), luas lubang diperlakukan sebagai pembobot negatif: $x_0 = \\frac{A_1 x_1 - A_2 x_2}{A_1 - A_2}$ dan $y_0 = \\frac{A_1 y_1 - A_2 y_2}{A_1 - A_2}$."
   },
   {
     "id": "fis-din-rot-titikberat-007",
@@ -3034,7 +3125,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat benda gabungan tiga dimensi pejal dihitung menggunakan volume masing-masing komponen: $y_0 = \\frac{\\sum V_i y_i}{\\sum V_i}$. Titik berat silinder berada di $\\frac{1}{2} t_s$, dan titik berat kerucut berada di $\\frac{1}{4} t_k$ dari alas kerucut."
   },
   {
     "id": "fis-din-rot-titikberat-008",
@@ -3067,7 +3159,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena bangun simetris terhadap sumbu-$y$, maka $x_0 = 0$. Koordinat vertikal titik berat komposit dihitung berdasarkan pembobotan luas masing-masing bidang: $y_0 = \\frac{A_1 y_1 + A_2 y_2}{A_1 + A_2}$."
   },
   {
     "id": "fis-din-rot-titikberat-009",
@@ -3100,7 +3193,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Letak titik berat plat tipis homogen berbentuk setengah lingkaran pejal dari garis diameternya diperoleh melalui hasil integrasi kalkulus: $y_0 = \\frac{4R}{3\\pi}$."
   },
   {
     "id": "fis-din-rot-titikberat-010",
@@ -3133,7 +3227,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Berat",
     "subTopic": "Titik Berat",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Benda tegar tepat akan terguling ketika garis kerja gaya berat yang berpusat di titik berat benda tepat berimpit dengan titik sudut tumpuan terluar alasnya. Kondisi batas terguling pada balok berdimensi alas $b$ dan tinggi $h$ memenuhi persamaan trigonometri: $\\tan\\theta = \\frac{b}{h}$. **Tips:** Kerap terbalik menghitung $\\tan\\theta = \\frac{h}{b} = \\frac{4}{3} \\implies 53^\\circ$."
   },
   {
     "id": "fis-din-rot-torsi-006",
@@ -3166,7 +3261,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hitung torsi masing-masing gaya terhadap poros $A$ dengan rumus $\\tau = r F \\sin\\theta$. Terapkan aturan tanda arah rotasi: berlawanan arah jarum jam (CCW) bertanda positif ($+$) dan searah jarum jam (CW) bertanda negatif ($-$)."
   },
   {
     "id": "fis-din-rot-torsi-007",
@@ -3199,7 +3295,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Secara analitik tiga dimensi, momen gaya merupakan perkalian silang (vektor cross product) antara vektor lengan posisi dan vektor gaya: $\\vec{\\tau} = \\vec{r} \\times \\vec{F}$."
   },
   {
     "id": "fis-din-rot-torsi-008",
@@ -3232,7 +3329,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Momen kopel dihasilkan oleh sepasang gaya sejajar berlawanan arah dengan besar sama ($F$) yang terpisah sejauh jarak tegak lurus $d$: $M = F \\times d$. Nilai momen kopel bernilai konstan dan tidak bergantung pada letak titik poros putaran acuan."
   },
   {
     "id": "fis-din-rot-torsi-009",
@@ -3265,7 +3363,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tali yang melilit silinder selalu bekerja menyinggung tepi lingkaran, sehingga sudut antara gaya tegangan tali dan jari-jari silinder selalu tegak lurus ($\\theta = 90^\\circ$). Torsi masing-masing tali adalah $\\tau = R \\times F$."
   },
   {
     "id": "fis-din-rot-torsi-010",
@@ -3298,7 +3397,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Momen Gaya (Torsi)",
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan rotasi adalah resultan momen gaya terhadap titik tumpu harus sama dengan nol: $\\sum \\tau = 0$. Karena titik tumpu berada tepat di pusat massa papan, gaya berat papan tidak menghasilkan torsi (lengannya nol). **Tips:** Kerap mengikutsertakan massa papan secara keliru."
   },
   {
     "id": "fis-din-24",
@@ -3331,7 +3431,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Kesetimbangan statis benda tegar (tangga homogen bersandar): $\\Sigma F_x = 0$, $\\Sigma F_y = 0$, dan $\\Sigma \\tau = 0$."
   },
   {
     "id": "fis-din-47",
@@ -3364,7 +3465,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Percepatan linier gerak menggelinding murni: $a = \\frac{g \\sin\\theta}{1 + k}$. **Tips:** Siswa sering membalik perbandingan menjadi $7 : 10$ atau salah memasukkan konstanta momen inersia silinder berongga tipis."
   },
   {
     "id": "fis-din-48",
@@ -3397,7 +3499,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Konsep: Kesetimbangan rotasi benda tegar terhadap poros engsel: $\\Sigma \\tau = 0$."
   },
   {
     "id": "drill-rot-05",
@@ -3430,7 +3533,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Percepatan Benda Menggelinding Murni pada Bidang Miring: $$a = \\frac{g \\sin \\theta}{1 + k}$$ dengan $k$ konstanta bentuk momen inersia ($I = k m R^2$). **Tips:** ⚠️ Perbedaan Luncur vs Gelinding: Jika bidang licin (meluncur tanpa rotasi), $a = g \\sin\\theta$."
   },
   {
     "id": "drill2-rot-04",
@@ -3463,7 +3567,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Energi Kinetik Menggelinding Murni: $$E_k = E_{k,\\text{translasi}} + E_{k,\\text{rotasi}} = \\frac{1}{2}mv^2(1 + k)$$ Untuk bola pejal, nilai $k = \\frac{2}{5} = 0{,}4$. **Tips:** ⚠️ Rumus Singkat Bola Pejal: $E_k = \\frac{7}{10} m v^2$."
   },
   {
     "id": "drill2-rot-05",
@@ -3496,7 +3601,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Rasio Fraksi Energi Kinetik Benda Menggelinding: $$\\frac{E_{k,\\text{rotasi}}}{E_{k,\\text{total}}} = \\frac{k}{1 + k}$$."
   },
   {
     "id": "drill2-rot-06",
@@ -3529,7 +3635,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Kelajuan Benda Menggelinding di Dasar Bidang Miring: Berdasarkan Hukum Kekekalan Energi Mekanik ($mgh = \\frac{1}{2}mv^2(1 + k)$): $$v = \\sqrt{\\frac{2gh}{1 + k}}$$."
   },
   {
     "id": "drill2-rot-07",
@@ -3562,7 +3669,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum II Newton Rotasi",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "hukum-2-newton-rotasi"
+    "subTopicSlug": "hukum-2-newton-rotasi",
+    "hint": "Percepatan Sistem Katrol Bermassa: Inersia katrol silinder pejal ($I = \\frac{1}{2}MR^2$) menambah massa efektif sistem sebesar $\\frac{1}{2}M$: $$a = \\frac{m \\cdot g}{m + \\frac{1}{2}M}$$. **Tips:** ⚠️ Trik Kilat Katrol: Katrol silinder pejal menyumbang $\\frac{1}{2}M$ ke penyebut."
   },
   {
     "id": "drill-rot-04",
@@ -3595,7 +3703,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Momen Gaya (Torsi)",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-gaya-torsi"
+    "subTopicSlug": "momen-gaya-torsi",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma \\tau = I \\cdot \\alpha \\implies \\alpha = \\frac{\\Sigma \\tau}{I}$$."
   },
   {
     "id": "fis-din-23",
@@ -3628,7 +3737,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Konsep: Dinamika gerak menggelinding murni tanpa slip: translasi ($Mg \\sin\\theta - f_s = Ma$) dan rotasi ($f_s R = I \\alpha$). Formula percepatan: $a = \\frac{g \\sin\\theta}{1 + k}$."
   },
   {
     "id": "drill-rot-03",
@@ -3661,7 +3771,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Momen Inersia",
     "chapterTitle": "Dinamika",
     "subChapterId": "fis-din-rot",
-    "subTopicSlug": "momen-inersia"
+    "subTopicSlug": "momen-inersia",
+    "hint": "Teorema Sumbu Sejajar (Steiner): Momen inersia terhadap sumbu sejajar yang berjarak $d$ dari pusat massa adalah: $$I = I_{\\text{pm}} + M d^2$$. **Tips:** ⚠️ Pasangan Rumus Batang: Poros di tengah $\\implies \\frac{1}{12}ML^2$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-006",
@@ -3694,7 +3805,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penerapan Persamaan Bernoulli lengkap yang melibatkan perubahan kelajuan sekaligus perubahan elevasi ketinggian: $$P_1 + \\frac{1}{2}\\rho v_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2}\\rho v_2^2 + \\rho g h_2$$Kelajuan $v_2$ diperoleh melalui persamaan kontinuitas $A_1 v_1 = A_2 v_2$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-007",
@@ -3727,7 +3839,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada venturimeter tanpa manometer, selisih tekanan diukur langsung dari perbedaan tinggi kolom air pada pipa vertikal: $\\Delta P = \\rho g h$. Dikombinasikan dengan Persamaan Bernoulli dan Kontinuitas: $$v_1 = \\sqrt{\\frac{2gh}{\\left(\\frac{A_1}{A_2}\\right)^2 - 1}}$$ Dan debit aliran dihitung dengan $Q = A_1 \\cdot v_1$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-008",
@@ -3760,7 +3873,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tangki tertutup bertekanan, Teorema Torricelli dimodifikasi dengan memasukkan selisih tekanan gas dalam tangki terhadap atmosfer luar: $$P + \\rho g h = P_0 + \\frac{1}{2}\\rho v^2 \\implies v = \\sqrt{\\frac{2(P - P_0)}{\\rho} + 2gh}$$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-009",
@@ -3793,7 +3907,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan prinsip Bernoulli, kelajuan udara yang tinggi di atas atap menghasilkan penurunan tekanan statis dibanding udara di dalam rumah: $$P_{\\text{bawah}} - P_{\\text{atas}} = \\Delta P = \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2$$Gaya angkat total pada atap dirumuskan dengan: $$F_{\\text{angkat}} = \\Delta P \\cdot A = \\left(\\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2\\right) \\cdot A$$."
   },
   {
     "id": "fis-flu-dinamis-bernoulli-010",
@@ -3826,7 +3941,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Bernoulli",
     "subTopic": "Persamaan Bernoulli",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Kelajuan aliran di seluruh pipa berpenampang seragam ditentukan oleh perbedaan elevasi outlet dari permukaan air tangki: $$v = \\sqrt{2 \\cdot g \\cdot h_b}$$ 2) Tekanan di titik puncak sifon ($P_C$) dihitung dengan menerapkan persamaan Bernoulli antara permukaan air tangki ($P_0, v \\approx 0, y = 0$) dan titik puncak ($P_C, v, y = +h_a$): $$P_0 = P_C + \\frac{1}{2}\\rho v^2 + \\rho g h_a \\implies P_C = P_0 - \\rho g h_a - \\frac{1}{2}\\rho v^2$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-006",
@@ -3859,7 +3975,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan prinsip kontinuitas, debit aliran pada pembuluh utama sama dengan jumlah debit total pada seluruh cabang kapiler: $$Q_{\\text{aorta}} = N \\cdot Q_{\\text{kapiler}} \\iff A_{\\text{aorta}} \\cdot v_1 = N \\cdot A_{\\text{kapiler}} \\cdot v_2$$Dengan mensubstitusikan luas penampang lingkaran $A = \\frac{1}{4}\\pi d^2$: $$D^2 \\cdot v_1 = N \\cdot d^2 \\cdot v_2 \\implies v_2 = \\frac{D^2 \\cdot v_1}{N \\cdot d^2}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-007",
@@ -3892,7 +4009,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Laju pengisian netto tandon adalah selisih antara debit total air masuk dan debit air keluar: $$Q_{\\text{netto}} = Q_{\\text{masuk}} - Q_{\\text{keluar}} = (Q_A + Q_B) - (A_{\\text{bocor}} \\cdot v)$$Waktu pengisian dihitung dengan: $$t = \\frac{V}{Q_{\\text{netto}}}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-008",
@@ -3925,7 +4043,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Debit total fluida terbagi rata melalui $n$ lubang kecil yang identik: $$Q = n \\cdot a \\cdot v \\implies v = \\frac{Q}{n \\cdot a}$$Di mana $n \\cdot a$ adalah luas penampang total seluruh lubang sembur."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-009",
@@ -3958,7 +4077,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan persamaan kontinuitas fluida inkompresibel, debit penurunan air di dalam tangki sama dengan debit air yang keluar melalui keran: $$A_1 \\cdot v_1 = A_2 \\cdot v_2 \\implies v_1 = v_2 \\cdot \\frac{A_2}{A_1}$$."
   },
   {
     "id": "fis-flu-dinamis-kontinuitas-010",
@@ -3991,7 +4111,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Debit & Persamaan Kontinuitas",
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Debit massa (laju aliran massa, $\\dot{m}$) adalah massa fluida yang melewati penampang pipa per satuan waktu: $$\\dot{m} = \\rho \\cdot Q = \\rho \\cdot A_2 \\cdot v_2 = \\rho \\cdot \\left(\\frac{1}{4}\\pi d_2^2\\right) \\cdot v_2$$Prinsip kekekalan massa menjamin bahwa nilai debit massa konstan di setiap penampang pipa."
   },
   {
     "id": "fis-flu-dinamis-pitot-006",
@@ -4024,7 +4145,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tabung Pitot pesawat terbang, selisih tekanan antara lubang stagnasi (titik henti aliran udara di ujung moncong) dan lubang statis (pada sisi tabung) setara dengan tekanan dinamis aliran udara: $$\\Delta P = P_{\\text{stagnasi}} - P_{\\text{statis}} = \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2 \\implies v = \\sqrt{\\frac{2 \\cdot \\Delta P}{\\rho_{\\text{udara}}}}$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-007",
@@ -4057,7 +4179,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada venturimeter dengan manometer zat cair terpisah: 1) Kesetimbangan manometer: $\\Delta P = (\\rho' - \\rho) g h$ 2) Persamaan Bernoulli dan Kontinuitas menghasilkan: $$v_1 = \\sqrt{\\frac{2(\\rho' - \\rho)gh}{\\rho \\left[\\left(\\frac{A_1}{A_2}\\right)^2 - 1\\right]}}$$ 3) Debit aliran: $Q = A_1 \\cdot v_1$."
   },
   {
     "id": "fis-flu-dinamis-pitot-008",
@@ -4090,7 +4213,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar cairan terangkat naik setinggi $H$, penurunan tekanan statis akibat tiupan udara menurut Efek Bernoulli harus minimal mengimbangi tekanan hidrostatis kolom cairan setinggi $H$: $$\\Delta P_{\\text{Bernoulli}} = P_{\\text{hidrostatis}} \\iff \\frac{1}{2}\\rho_{\\text{udara}} \\cdot v^2 = \\rho_c \\cdot g \\cdot H$$Sehingga kelajuan minimal udara dirumuskan: $$v = \\sqrt{\\frac{2 \\cdot \\rho_c \\cdot g \\cdot H}{\\rho_{\\text{udara}}}}$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-009",
@@ -4123,7 +4247,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Kelajuan gas buang di dalam cerobong dihitung dari tabung Pitot: $$v = \\sqrt{\\frac{2 \\cdot \\rho_{\\text{air}} \\cdot g \\cdot h}{\\rho_{\\text{gas}}}}$$ 2) Debit volume aliran emisi gas cerobong: $$Q = A \\cdot v$$."
   },
   {
     "id": "fis-flu-dinamis-pitot-010",
@@ -4156,7 +4281,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tabung Pitot & Penyemprot",
     "subTopic": "Tabung Pitot & Penyemprot",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Kelajuan udara pada nosel semprot: $v_u = \\frac{Q_u}{A_n}$. 2) Penurunan tekanan hisap menurut Bernoulli: $\\Delta P_{\\text{hisap}} = \\frac{1}{2}\\rho_u v_u^2$. 3) Tekanan yang dibutuhkan untuk mengatasi beban hidrostatis kolom cat: $P_h = \\rho_{\\text{cat}} \\cdot g \\cdot h$. 4) Selisih tekanan netto efektif yang mendorong semburan cat keluar adalah: $$\\Delta P_{\\text{netto}} = \\Delta P_{\\text{hisap}} - P_h$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-006",
@@ -4189,7 +4315,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat pesawat terbang mendatar pada ketinggian konstan, gaya angkat aerodinamis sayap sama besar dengan berat total pesawat: $$F_A = W = M \\cdot g$$Menurut Persamaan Bernoulli: $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A \\implies v_{\\text{atas}} = \\sqrt{v_{\\text{bawah}}^2 + \\frac{2 \\cdot M \\cdot g}{\\rho \\cdot A}}$$. **Tips:** Siswa sering lupa mengalikan massa pesawat dengan percepatan gravitasi bumi $g$ sehingga gaya angkat menjadi 10 kali lebih kecil."
   },
   {
     "id": "fis-flu-dinamis-sayap-007",
@@ -4222,7 +4349,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya angkat sayap yang dibutuhkan untuk lepas landas harus sama dengan berat pesawat ($F_A = W = \\text{konstan}$). Karena bentuk aerofoil dan luas sayap tetap, gaya angkat berbanding lurus dengan $\\rho \\cdot v^2$: $$\\rho_1 \\cdot v_1^2 = \\rho_2 \\cdot v_2^2 \\implies v_2 = v_1 \\cdot \\sqrt{\\frac{\\rho_1}{\\rho_2}}$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-008",
@@ -4255,7 +4383,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Menurut Hukum II Newton pada arah vertikal pesawat yang dipercepat ke atas: $$\\Sigma F_y = M \\cdot a \\implies F_A - M \\cdot g = M \\cdot a \\iff F_A = M(g + a)$$Gaya angkat ini dihubungkan dengan prinsip Bernoulli sayap: $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-009",
@@ -4288,7 +4417,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya angkat pada terbang mendatar sama dengan berat pesawat ($F_A = W$): $$F_A = \\frac{1}{2}\\rho (v_{\\text{atas}}^2 - v_{\\text{bawah}}^2) \\cdot A$$Dengan mensubstitusikan $v_{\\text{atas}} = 1{,}20 v_{\\text{bawah}}$: $$v_{\\text{atas}}^2 - v_{\\text{bawah}}^2 = (1{,}20 v_{\\text{bawah}})^2 - v_{\\text{bawah}}^2 = (1{,}44 - 1) v_{\\text{bawah}}^2 = 0{,}44 v_{\\text{bawah}}^2$$."
   },
   {
     "id": "fis-flu-dinamis-sayap-010",
@@ -4321,7 +4451,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gaya Angkat Pesawat",
     "subTopic": "Gaya Angkat Pesawat",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat pesawat berbelok dengan sayap miring bersudut $\\theta$ terhadap horizontal: • Komponen vertikal gaya angkat menahan bobot pesawat: $F_A \\cos \\theta = M \\cdot g$ • Komponen horizontal gaya angkat berfungsi sebagai gaya sentripetal belokan: $F_A \\sin \\theta = \\frac{M v^2}{R}$ Sehingga gaya angkat total yang harus dihasilkan sayap adalah: $$F_A = \\frac{M \\cdot g}{\\cos \\theta}$$."
   },
   {
     "id": "sedang-fis-10",
@@ -4354,7 +4485,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Debit & Persamaan Kontinuitas",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-dinamis",
-    "subTopicSlug": "debit-persamaan-kontinuitas"
+    "subTopicSlug": "debit-persamaan-kontinuitas",
+    "hint": "Teorema Torricelli & Jarak Pancaran Maksimum: • Kelajuan semburan mendatar: $v = \\sqrt{2 g h_1}$ • Waktu jatuh bebas: $t = \\sqrt{\\frac{2 h_2}{g}}$ • Jarak pancaran horizontal: $x = v \\cdot t = 2\\sqrt{h_1 \\cdot h_2}$."
   },
   {
     "id": "fis-flu-statis-archimedes-006",
@@ -4387,7 +4519,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika benda terapung di antara dua cairan yang tak bercampur, gaya apung total adalah jumlah gaya apung yang diberikan oleh masing-masing cairan: $$F_{a,\\text{total}} = F_{a,\\text{air}} + F_{a,\\text{minyak}} = \\rho_a \\cdot g \\cdot V_{\\text{air}} + \\rho_m \\cdot g \\cdot V_{\\text{minyak}}$$Pada kesetimbangan statis, gaya apung total sama dengan berat benda: $$\\rho_b \\cdot g \\cdot V_{\\text{total}} = \\rho_a \\cdot g \\cdot V_{\\text{air}} + \\rho_m \\cdot g \\cdot V_{\\text{minyak}}$$Karena penampang balok seragam, rasio volume setara dengan rasio ketinggian."
   },
   {
     "id": "fis-flu-statis-archimedes-007",
@@ -4420,7 +4553,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Volume total luar mahkota diperoleh dari gaya apung (selisih massa semu dalam air): $$V_{\\text{total}} = \\frac{m - m'}{\\rho_a}$$ 2) Volume bahan emas murni diperoleh dari massa nyata dibagi massa jenis emas: $$V_{\\text{emas}} = \\frac{m}{\\rho_{\\text{emas}}}$$ 3) Volume rongga dihitung dari selisihnya: $$V_{\\text{rongga}} = V_{\\text{total}} - V_{\\text{emas}}$$."
   },
   {
     "id": "fis-flu-statis-archimedes-008",
@@ -4453,7 +4587,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi batas balon dapat terangkat terjadi ketika gaya apung udara ($F_a$) setimbang dengan berat total sistem: $$F_a = W_{\\text{He}} + W_0 + W_{\\text{beban}}$$Di mana: • $F_a = \\rho_{\\text{udara}} \\cdot V \\cdot g$ • $W_{\\text{He}} = \\rho_{\\text{He}} \\cdot V \\cdot g$ • $W_0 = m_0 \\cdot g$."
   },
   {
     "id": "fis-flu-statis-archimedes-009",
@@ -4486,7 +4621,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada balok yang terbenam dan ditahan oleh tali di dasar wadah, bekerja tiga gaya vertikal: • Gaya apung ke atas: $F_a = \\rho_a \\cdot V \\cdot g$ • Gaya berat balok ke bawah: $W = \\rho_b \\cdot V \\cdot g$ • Gaya tegangan tali ke bawah: $T$ Persamaan kesetimbangan gaya vertikal ($\\Sigma F_y = 0$): $$F_a - W - T = 0 \\implies T = F_a - W = (\\rho_a - \\rho_b) \\cdot V \\cdot g$$. **Tips:** Terkecoh menganggap tegangan tali sama dengan gaya apung murni ($20\\text{ N}$, ) atau berat balok murni ($12\\text{ N}$, )."
   },
   {
     "id": "fis-flu-statis-archimedes-010",
@@ -4519,7 +4655,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat balok tepat terbenam seluruhnya di dalam air, volume air yang dipindahkan sama dengan volume total balok ($V_{bf} = V$). Kesetimbangan gaya vertikal mensyaratkan: $$F_a = W_{\\text{kayu}} + W_{\\text{timbal}}$$Di mana $W_{\\text{timbal}} = m_{\\text{timbal}} \\cdot g$, sehingga: $$m_{\\text{timbal}} = (\\rho_a - \\rho_b) \\cdot V$$."
   },
   {
     "id": "fis-flu-statis-pascal-006",
@@ -4552,7 +4689,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika terdapat perbedaan ketinggian cairan setinggi $h$ antara kedua piston, tekanan pada bidang acuan horizontal setinggi piston kecil harus setimbang: $$P_1 = P_2 + \\rho \\cdot g \\cdot h \\iff \\frac{F_1}{A_1} = \\frac{F_2}{A_2} + \\rho \\cdot g \\cdot h$$Sehingga gaya pada piston kecil dihitung dengan: $$F_1 = A_1 \\cdot \\left(\\frac{F_2}{A_2} + \\rho \\cdot g \\cdot h\\right)$$."
   },
   {
     "id": "fis-flu-statis-pascal-007",
@@ -4585,7 +4723,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi mekanik dongkrak hidrolik dirumuskan sebagai rasio gaya angkat ideal terhadap gaya nyata yang diberikan: $$\\eta = \\frac{F_{1,\\text{ideal}}}{F_{1,\\text{nyata}}} \\implies F_{1,\\text{nyata}} = \\frac{F_{1,\\text{ideal}}}{\\eta}$$Di mana gaya ideal menurut Hukum Pascal dengan rasio diameter adalah: $$F_{1,\\text{ideal}} = W \\cdot \\left(\\frac{d_1}{d_2}\\right)^2$$."
   },
   {
     "id": "fis-flu-statis-pascal-008",
@@ -4618,7 +4757,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem ini menggabungkan dua tahap penggandaan gaya mekanik: 1) Keuntungan mekanik tuas pengungkit: $$F_1 = F_{\\text{tangan}} \\cdot \\frac{L_k}{L_b}$$ 2) Keuntungan mekanik bejana hidrolik Hukum Pascal: $$F_2 = F_1 \\cdot \\frac{A_2}{A_1}$$Sehingga keuntungan mekanik total adalah hasil kali kedua faktor pengali."
   },
   {
     "id": "fis-flu-statis-pascal-009",
@@ -4651,7 +4791,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Tekanan kerja fluida hidrolik adalah perbandingan berat beban terhadap luas penampang silinder: $$P = \\frac{F}{A} = \\frac{M \\cdot g}{A}$$ 2) Daya mekanik rata-rata adalah laju usaha pengangkatan terhadap waktu: $$\\mathcal{P} = \\frac{W}{t} = \\frac{(M \\cdot g) \\cdot h}{t}$$."
   },
   {
     "id": "fis-flu-statis-pascal-010",
@@ -4684,7 +4825,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Pascal",
     "subTopic": "Hukum Pascal",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya yang dihasilkan pada piston beban dihitung menggunakan Hukum Pascal: $$F_2 = F_1 \\cdot \\frac{A_2}{A_1}$$Gaya ini mengompresi pegas sesuai Hukum Hooke: $$F_{\\text{pegas}} = k \\cdot \\Delta x$$Pada kondisi setimbang berlaku $F_2 = F_{\\text{pegas}}$. **Tips:** Siswa sering lupa mengubah satuan meter ke sentimeter pada akhir perhitungan, atau salah menghitung rasio penampang $A_2 / A_1$."
   },
   {
     "id": "fis-flu-statis-pipau-006",
@@ -4717,7 +4859,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum Utama Hidrostatis, kita buat bidang acuan horizontal yang melewati batas terendah antara raksa dan fluida lainnya (dalam hal ini bidang batas raksa di kaki kiri yang tertekan lebih dalam): $$P_{\\text{kiri}} = P_{\\text{kanan}} \\iff P_0 + \\rho_a \\cdot g \\cdot h_a = P_0 + \\rho_m \\cdot g \\cdot h_m + \\rho_r \\cdot g \\cdot \\Delta h_r$$Sehingga selisih tinggi raksa dirumuskan: $$\\Delta h_r = \\frac{\\rho_a \\cdot h_a - \\rho_m \\cdot h_m}{\\rho_r}$$."
   },
   {
     "id": "fis-flu-statis-pipau-007",
@@ -4750,7 +4893,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika bejana fluida mengalami percepatan horizontal $a$, permukaan bebas zat cair membentuk sudut kemiringan $\\theta$ terhadap bidang mendatar akibat resultan gaya berat dan gaya inersia (fiktif): $$\\tan \\theta = \\frac{a}{g}$$Untuk pipa U dengan jarak antarkaki vertikal $L$, selisih tinggi cairan antara kedua kaki dirumuskan: $$\\frac{\\Delta h}{L} = \\tan \\theta = \\frac{a}{g} \\implies \\Delta h = L \\cdot \\frac{a}{g}$$."
   },
   {
     "id": "fis-flu-statis-pipau-008",
@@ -4783,7 +4927,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Masalah ini memadukan Hukum Boyle pada gas terperangkap dengan kesetimbangan hidrostatis manometer: 1) Proses isotermal gas ideal: $$P_1 \\cdot V_1 = P_2 \\cdot V_2 \\iff P_1 \\cdot L_1 = P_2 \\cdot L_2$$ 2) Karena awalnya kedua permukaan raksa sama tinggi dan berhubungan dengan atmosfer, maka $P_1 = P_0 = 76\\text{ cmHg}$. 3) Hubungan manometer setelah penambahan raksa: $$P_2 = P_0 + \\Delta h \\implies \\Delta h = P_2 - P_0$$."
   },
   {
     "id": "fis-flu-statis-pipau-009",
@@ -4816,7 +4961,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluida yang berotasi dengan kecepatan sudut konstan $\\omega$ terhadap sumbu vertikal membentuk permukaan bebas berupa paraboloid revolusi yang memenuhi persamaan ketinggian: $$y(r) = \\frac{\\omega^2 \\cdot r^2}{2g}$$Kenaikan permukaan pada jarak radial $r = R$ relatif terhadap titik terendah di sumbu putaran ($r = 0$) adalah: $$\\Delta y = y(R) - y(0) = \\frac{\\omega^2 \\cdot R^2}{2g}$$."
   },
   {
     "id": "fis-flu-statis-pipau-010",
@@ -4849,7 +4995,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Utama Hidrostatis (Pipa U)",
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Volume air yang dituangkan: $V_a = \\frac{m}{\\rho_a}$, dan tinggi kolom air pada kaki kanan: $h_a = \\frac{V_a}{A_2}$. 2) Tekanan hidrostatis air pada batas pisah diimbangi oleh selisih total tinggi raksa $\\Delta h_r$: $$\\rho_a \\cdot h_a = \\rho_r \\cdot \\Delta h_r \\implies \\Delta h_r = \\frac{\\rho_a \\cdot h_a}{\\rho_r}$$ 3) Jika raksa di kaki kiri naik sebesar $y_1$ dan raksa di kaki kanan turun sebesar $y_2$, maka kekekalan volume raksa menyatakan $A_1 y_1 = A_2 y_2$, serta $\\Delta h_r = y_1 + y_2$."
   },
   {
     "id": "fis-flu-statis-tekanan-006",
@@ -4882,7 +5029,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada fluida berlapis yang tidak saling bercampur, tekanan hidrostatis total pada dasar bejana merupakan penjumlahan tekanan hidrostatis masing-masing lapisan fluida: $$P_h = \\sum_{i} \\rho_i \\cdot g \\cdot h_i = \\rho_{\\text{minyak}} g h_{\\text{minyak}} + \\rho_{\\text{air}} g h_{\\text{air}}$$Sedangkan tekanan mutlak diperoleh dengan menjumlahkan tekanan atmosfer permukaan: $$P_{\\text{mutlak}} = P_0 + P_h$$."
   },
   {
     "id": "fis-flu-statis-tekanan-007",
@@ -4915,7 +5063,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena tekanan hidrostatis bertambah secara linier terhadap kedalaman ($P(y) = \\rho g y$), maka gaya total pada dinding vertikal diperoleh dari integrasi atau perkalian antara tekanan rata-rata fluida (tekanan pada titik berat luasan, $\\bar{y} = H/2$) dengan luas penampang dinding: $$F = \\bar{P} \\cdot A = \\left(\\frac{1}{2} \\rho \\cdot g \\cdot H\\right) \\cdot (w \\cdot H) = \\frac{1}{2} \\rho \\cdot g \\cdot w \\cdot H^2$$."
   },
   {
     "id": "fis-flu-statis-tekanan-008",
@@ -4948,7 +5097,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kondisi suhu konstan (isotermal), gas di dalam gelembung mematuhi Hukum Boyle: $$P_1 \\cdot V_1 = P_2 \\cdot V_2$$Di dasar danau, tekanan mutlak adalah $P_1 = P_0 + \\rho g h$. Di permukaan danau, tekanan adalah $P_2 = P_0$."
   },
   {
     "id": "fis-flu-statis-tekanan-009",
@@ -4981,7 +5131,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam kerangka non-inersial lift yang dipercepat ke atas dengan percepatan $a$, fluida mengalami medan gravitasi efektif sebesar: $$g_{\\text{eff}} = g + a$$Sehingga tekanan hidrostatis fluida pada kedalaman $h$ menjadi: $$P_h = \\rho \\cdot g_{\\text{eff}} \\cdot h = \\rho (g + a) h$$."
   },
   {
     "id": "fis-flu-statis-tekanan-010",
@@ -5014,7 +5165,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Tekanan Hidrostatis & Mutlak",
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada manometer pipa U terbuka, selisih tinggi permukaan raksa $\\Delta h$ menunjukkan perbedaan antara tekanan gas di dalam wadah dan tekanan atmosfer luar: $$P_{\\text{gas}} = P_{\\text{atm}} + \\rho_{\\text{raksa}} \\cdot g \\cdot \\Delta h$$Tanda positif digunakan karena permukaan raksa pada kaki terbuka lebih tinggi, menandakan tekanan gas lebih besar daripada tekanan atmosfer."
   },
   {
     "id": "sedang-fis-03",
@@ -5047,7 +5199,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "hukum-archimedes"
+    "subTopicSlug": "hukum-archimedes",
+    "hint": "Keseimbangan Benda Terapung Multilapis: Gaya berat total benda sama dengan jumlah seluruh gaya apung Archimedes dari fluida-fluida yang terdesak: $$W = F_{A1} + F_{A2} \\implies \\rho_b V_b g = \\rho_A V_{A} g + \\rho_B V_{B} g$$ $$\\rho_b = \\rho_A \\left(\\frac{V_A}{V_b}\\right) + \\rho_B \\left(\\frac{V_B}{V_b}\\right)$$."
   },
   {
     "id": "sup-fis-flu-03",
@@ -5080,7 +5233,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum Utama Hidrostatis (Pipa U)",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "hukum-utama-hidrostatis-pipa-u"
+    "subTopicSlug": "hukum-utama-hidrostatis-pipa-u",
+    "hint": "Venturimeter Tanpa Manometer: Kombinasi Persamaan Kontinuitas dan Persamaan Bernoulli menghasilkan kelajuan masuk: $v_1 = \\sqrt{\\frac{2 g h}{\\left(\\frac{A_1}{A_2}\\right)^2 - 1}}$."
   },
   {
     "id": "sup-fis-flu-02",
@@ -5113,7 +5267,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Tekanan Hidrostatis & Mutlak",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "tekanan-hidrostatis-mutlak"
+    "subTopicSlug": "tekanan-hidrostatis-mutlak",
+    "hint": "Tekanan Mutlak (Total): Tekanan total pada kedalaman $h$ merupakan jumlahan dari tekanan atmosfer luar dan tekanan hidrostatis zat cair: $P_{\\text{mutlak}} = P_{\\text{atm}} + \\rho g h$. **Tips:** Hanya menghitung tekanan hidrostatis murni ($2{,}00 \\times 10^5\\text{ Pa}$) dan mengabaikan tekanan atmosfer di permukaan danau."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-006",
@@ -5146,7 +5301,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Menurut persamaan Laplace untuk gas ideal, cepat rambat bunyi dirumuskan: $$v = \\sqrt{\\frac{\\gamma \\cdot R \\cdot T}{M}}$$Pada suhu ($T$) dan tetapan Laplace ($\\gamma$) yang sama, cepat rambat bunyi berbanding terbalik dengan akar massa molar gas: $$\\frac{v_1}{v_2} = \\sqrt{\\frac{M_2}{M_1}}$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-007",
@@ -5179,7 +5335,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Cepat rambat gelombang bunyi pada fluida cair dihitung dari modulus Bulk: $$v = \\sqrt{\\frac{B}{\\rho}}$$ 2) Jarak kedalaman palung laut dari pantulan gema (sonar): $$d = \\frac{v \\cdot \\Delta t}{2}$$Faktor pembagi 2 mencerminkan perjalanan bolak-balik pulsa bunyi dari permukaan ke dasar lalu kembali ke permukaan. **Tips:** Lupa membagi dengan faktor 2 sehingga menghasilkan jarak bolak-balik $3.600\\text{ meter}$ ()."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-008",
@@ -5212,7 +5369,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gelombang bunyi merambat pada jarak yang sama $L$ melalui dua medium berbeda. Karena $v_b > v_u$, waktu tempuh melalui baja lebih singkat daripada melalui udara. Selisih waktu kedatangan kedua bunyi adalah: $$\\Delta t = t_u - t_b = \\frac{L}{v_u} - \\frac{L}{v_b} = L \\left(\\frac{1}{v_u} - \\frac{1}{v_b}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-009",
@@ -5245,7 +5403,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Cepat rambat bunyi pada gas ideal berbanding lurus dengan akar kuadrat suhu mutlak Kelvin: $$v \\propto \\sqrt{T} \\implies \\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} \\iff T_2 = T_1 \\cdot \\left(\\frac{v_2}{v_1}\\right)^2$$Perhitungan termodinamika mutlak wajib menggunakan satuan Kelvin ($T = T_C + 273$)."
   },
   {
     "id": "fis-gel-bunyi-cepatrambat-010",
@@ -5278,7 +5437,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cepat Rambat Bunyi",
     "subTopic": "Cepat Rambat Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Batang logam yang dijepit di tengah berosilasi pada nada dasar dengan simpul di tengah dan perut di kedua ujungnya, sehingga panjang batang adalah setengah panjang gelombang: $$L = \\frac{1}{2}\\lambda_{\\text{batang}} \\implies \\lambda_{\\text{batang}} = 2L$$ 2) Di dalam tabung gas, jarak antara dua simpul serbuk gabus berurutan adalah setengah panjang gelombang udara: $$\\Delta x = \\frac{1}{2}\\lambda_{\\text{udara}} \\implies \\lambda_{\\text{udara}} = 2\\Delta x$$ 3) Karena frekuensi gelombang pada batang dan gas sama ($f_{\\text{batang}} = f_{\\text{udara}}$): $$\\frac{v_{\\text{batang}}}{\\lambda_{\\text{batang}}} = \\frac{v_{\\text{udara}}}{\\lambda_{\\text{udara}}} \\implies v_{\\text{batang}} = v_{\\text{udara}} \\cdot \\frac{L}{\\Delta x}$$. **Tips:** Siswa sering mengira $\\lambda_{\\text{batang}} = L$ sehingga menghasilkan nilai setengahnya ($2.000\\text{ m/s}$, )."
   },
   {
     "id": "fis-gel-bunyi-dawai-006",
@@ -5311,7 +5471,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa linier dawai ($\\mu$) berkaitan dengan massa jenis logam ($\\rho$) dan diameter penampang ($d$): $$\\mu = \\frac{m}{L} = \\rho \\cdot A = \\rho \\cdot \\left(\\frac{1}{4}\\pi d^2\\right)$$Frekuensi nada dasar dawai menurut Hukum Mersenne adalah: $$f_0 = \\frac{1}{2L}\\sqrt{\\frac{F}{\\mu}} = \\frac{1}{2L}\\sqrt{\\frac{F}{\\rho \\cdot \\frac{1}{4}\\pi d^2}} = \\frac{1}{\\pi L d}\\sqrt{\\frac{F}{\\rho}}$$ Sehingga frekuensi nada dasar berbanding lurus dengan $\\frac{\\sqrt{F}}{d}$."
   },
   {
     "id": "fis-gel-bunyi-dawai-007",
@@ -5344,7 +5505,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Frekuensi nada dasar pipa organa terbuka: $$f_{p0} = \\frac{v_{\\text{udara}}}{2 L_p}$$ 2) Frekuensi nada atas kedua dawai ($n = 2$): $$f_{d2} = 3 f_{d0} = 3 \\cdot \\frac{v_d}{2 L_d}$$ 3) Kondisi resonansi: $f_{d2} = f_{p0}$."
   },
   {
     "id": "fis-gel-bunyi-dawai-008",
@@ -5377,7 +5539,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang gelombang dinyatakan sebagai panjang kawat dibagi jumlah gelombang penuh yang terbentuk ($\\lambda = \\frac{L}{n}$). Karena frekuensi vibrator konstan ($f$), cepat rambat gelombang berbanding lurus dengan panjang gelombang: $$v = \\lambda \\cdot f \\implies \\frac{v_2}{v_1} = \\frac{\\lambda_2}{\\lambda_1}$$Menurut Hukum Melde, $v = \\sqrt{\\frac{M g}{\\mu}}$, sehingga $\\frac{M_2}{M_1} = \\left(\\frac{\\lambda_2}{\\lambda_1}\\right)^2$."
   },
   {
     "id": "fis-gel-bunyi-dawai-009",
@@ -5410,7 +5573,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tegangan dawai yang tetap, kelajuan gelombang konstan, sehingga frekuensi nada dasar berbanding terbalik dengan panjang dawai aktif yang bergetar: $$f_0 \\propto \\frac{1}{L} \\implies f_0 \\cdot L = f_0' \\cdot L'$$Panjang pemendekan fret diukur dari ujung atas adalah $\\Delta L = L - L'$."
   },
   {
     "id": "fis-gel-bunyi-dawai-010",
@@ -5443,7 +5607,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dawai (Senar)",
     "subTopic": "Dawai (Senar)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan persamaan gelombang stasioner ujung terikat $y = 2A \\sin(kx) \\cos(\\omega t)$: 1) Bilangan gelombang $k = 5\\pi\\text{ rad/m}$, frekuensi sudut $\\omega = 40\\pi\\text{ rad/s}$. 2) Cepat rambat gelombang pembentuk: $v = \\frac{\\omega}{k}$. 3) Panjang gelombang: $\\lambda = \\frac{2\\pi}{k}$. 4) Letak simpul ke-$n$ dari ujung pantul ($x = 0$): $x_n = (n - 1) \\frac{\\lambda}{2}$ untuk $n = 1, 2, 3, \\dots$."
   },
   {
     "id": "fis-gel-bunyi-doppler-006",
@@ -5476,7 +5641,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika sumber bunyi dan pendengar saling mendekati di sepanjang garis lurus yang sama, konvensi tanda Efek Doppler adalah pendengar bernilai positif ($+v_p$) dan sumber bernilai negatif ($-v_s$): $$f_p = \\left(\\frac{v + v_p}{v - v_s}\\right) f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-007",
@@ -5509,7 +5675,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika sumber bunyi dan pendengar saling menjauhi, tanda kecepatan adalah pendengar negatif ($-v_p$) dan sumber bunyi positif ($+v_s$): $$f_p = \\left(\\frac{v - v_p}{v + v_s}\\right) f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-008",
@@ -5542,7 +5709,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pengaruh angin dengan kecepatan $v_w$ yang bertiup searah dengan perambatan gelombang bunyi menuju pendengar menyebabkan kecepatan efektif bunyi di udara menjadi $(v + v_w)$: $$f_p = \\left(\\frac{(v + v_w) \\pm v_p}{(v + v_w) \\mp v_s}\\right) f_s$$. **Tips:** Jika angin bertiup searah perambatan gelombang bunyi, kecepatan angin ditambahkan ke kecepatan gelombang bunyi ($v + v_w$)."
   },
   {
     "id": "fis-gel-bunyi-doppler-009",
@@ -5575,7 +5743,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Peristiwa pantulan pada dinding diam diselesaikan dalam dua tahap: Tahap 1: Dinding bertindak sebagai pendengar diam menerima bunyi dari sumber yang mendekat ($v_p = 0, v_s = 10\\text{ m/s}$): $$f_{\\text{tebing}} = \\left(\\frac{v}{v - v_s}\\right) f_s$$ Tahap 2: Dinding memantulkan kembali bunyi ($f_{\\text{pantul}} = f_{\\text{tebing}}$) dan bertindak sebagai sumber diam. Pengemudi bertindak sebagai pendengar yang mendekat ($v_p = 10\\text{ m/s}, v_s = 0$): $$f_p = \\left(\\frac{v + v_p}{v}\\right) f_{\\text{tebing}} = \\left(\\frac{v + v_{\\text{mobil}}}{v - v_{\\text{mobil}}}\\right) f_s$$."
   },
   {
     "id": "fis-gel-bunyi-doppler-010",
@@ -5608,7 +5777,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Doppler",
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbandingan frekuensi saat sumber mendekati pendengar diam ($f_{\\text{dekat}}$) dan saat sumber menjauhi pendengar diam ($f_{\\text{jauh}}$): $$f_{\\text{dekat}} = \\left(\\frac{v}{v - v_s}\\right) f_0, \\quad f_{\\text{jauh}} = \\left(\\frac{v}{v + v_s}\\right) f_0 \\implies \\frac{f_{\\text{dekat}}}{f_{\\text{jauh}}} = \\frac{v + v_s}{v - v_s}$$. **Tips:** Pastikan rasio yang dibentuk adalah $\\frac{v + v_s}{v - v_s}$ (kebalikan dari posisi penyebutnya)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-006",
@@ -5641,7 +5811,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Frekuensi pelayangan bunyi adalah selisih mutlak antara dua frekuensi yang berinterferensi: $$f_p = |f_A - f_B|$$Penambahan massa lilin pada garputala B akan menambah inersia getarannya sehingga frekuensi alaminya selalu menurun ($f_B' < f_B$)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-007",
@@ -5674,7 +5845,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat interferensi destruktif (bunyi minimum) untuk dua sumber koheren sefase adalah beda lintasan gelombang merupakan kelipatan ganjil dari setengah panjang gelombang: $$\\Delta r = |r_1 - r_2| = \\left(m - \\frac{1}{2}\\right) \\lambda, \\quad m = 1, 2, 3, \\dots$$Di mana $\\lambda = \\frac{v}{f}$."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-008",
@@ -5707,7 +5879,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada tabung resonansi tertutup satu ujung: 1) Selisih panjang kolom udara antara dua resonansi berurutan selalu tepat sama dengan setengah panjang gelombang (bebas dari efek koreksi ujung tabung): $$L_2 - L_1 = \\frac{1}{2}\\lambda \\implies \\lambda = 2(L_2 - L_1)$$ 2) Cepat rambat gelombang: $v = f \\cdot \\lambda$. 3) Hubungan resonansi pertama dengan koreksi ujung tabung ($\\Delta L$): $L_1 + \\Delta L = \\frac{1}{4}\\lambda$."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-009",
@@ -5740,7 +5913,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gelombang bunyi stasioner memiliki hubungan dualitas antara simpangan partikel ($s(x)$) dan variasi tekanan ($\\Delta P(x)$): $$\\Delta P(x) = -B \\frac{\\partial s}{\\partial x}$$Karena tekanan merupakan turunan spasial dari simpangan, gelombang tekanan berbeda fase spasial sebesar $\\frac{\\pi}{2}$ ($90^\\circ$) terhadap gelombang simpangan: • Simpul simpangan (partikel diam) $\\iff$ Perut tekanan (tekanan berfluktuasi maksimum). • Perut simpangan (partikel bebas bergerak) $\\iff$ Simpul tekanan (tekanan sama dengan tekanan atmosfer luar)."
   },
   {
     "id": "fis-gel-bunyi-karakteristik-010",
@@ -5773,7 +5947,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Karakteristik Gelombang Bunyi",
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Frekuensi getaran dawai berbanding lurus dengan cepat rambat gelombang transversal pada dawai (Hukum Melde): $$f \\propto v = \\sqrt{\\frac{F}{\\mu}}$$Sehingga peningkatan gaya tegangan dawai ($F$) dipastikan akan menaikkan frekuensi getaran dawai ($f_{\\text{dawai}}' > f_{\\text{dawai}}$)."
   },
   {
     "id": "fis-gel-bunyi-organa-006",
@@ -5806,7 +5981,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Frekuensi nada atas pertama ($n = 1$) pipa organa terbuka: $$f_{1,\\text{terbuka}} = 2 \\cdot \\frac{v}{2 L_{\\text{terbuka}}} = \\frac{v}{L_{\\text{terbuka}}}$$ 2) Frekuensi nada atas kedua ($n = 2$) pipa organa tertutup: $$f_{2,\\text{tertutup}} = (2(2) + 1) \\cdot \\frac{v}{4 L_{\\text{tertutup}}} = \\frac{5v}{4 L_{\\text{tertutup}}}$$ 3) Kondisi resonansi: $f_{1,\\text{terbuka}} = f_{2,\\text{tertutup}}$."
   },
   {
     "id": "fis-gel-bunyi-organa-007",
@@ -5839,7 +6015,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Frekuensi nada dasar pipa organa terbuka berbanding lurus dengan cepat rambat bunyi di dalam medium gas pengisi pipa: $$f_0 = \\frac{v}{2L} \\implies \\frac{f_{0,\\text{He}}}{f_{0,\\text{udara}}} = \\frac{v_{\\text{He}}}{v_{\\text{udara}}}$$Panjang tabung pipa organa ($L$) tetap konstan."
   },
   {
     "id": "fis-gel-bunyi-organa-008",
@@ -5872,7 +6049,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pipa organa terbuka dengan memperhitungkan koreksi ujung (end correction), panjang akustik efektif ($L_{\\text{efektif}}$) adalah panjang fisik ditambah koreksi pada kedua ujung terbukanya: $$L_{\\text{efektif}} = L + 2 \\Delta L = L + 2(0{,}60 r)$$Frekuensi nada dasar sesungguhnya dihitung dengan: $$f_0 = \\frac{v}{2 L_{\\text{efektif}}}$$."
   },
   {
     "id": "fis-gel-bunyi-organa-009",
@@ -5905,7 +6083,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pipa organa tertutup nada atas ke-$n$ ($n = 2$ untuk nada atas kedua): 1) Pola gelombang: $L = (2n + 1) \\frac{\\lambda}{4} = \\frac{5}{4}\\lambda$. 2) Jumlah simpul simpangan $S = n + 1 = 3$ simpul. 3) Jumlah perut simpangan $P = n + 1 = 3$ perut. 4) Letak simpul simpangan dari ujung tertutup ($x = 0$): $x_k = (k - 1) \\frac{\\lambda}{2}$ untuk $k = 1, 2, 3$."
   },
   {
     "id": "fis-gel-bunyi-organa-010",
@@ -5938,7 +6117,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pipa Organa",
     "subTopic": "Pipa Organa",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Frekuensi nada dasar pipa organa terbuka mula-mula: $$f_0 = \\frac{v}{2 L_0}$$ 2) Setelah dicelupkan sedalam $h$, panjang kolom udara aktif yang tersisa di atas air adalah $L_1 = L_0 - h$. Karena ujung bawah tertutup oleh air, pipa berperilaku sebagai pipa organa tertutup dengan nada dasar: $$f_1 = \\frac{v}{4 L_1}$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-006",
@@ -5971,7 +6151,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kombinasi pengaruh penambahan jumlah sumber ($n$) dan perubahan jarak ($r$) terhadap taraf intensitas dirumuskan: $$\\text{TI}' = \\text{TI}_1 + 10 \\log(n) - 20 \\log\\left(\\frac{r_2}{r_1}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-007",
@@ -6004,7 +6185,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Peningkatan taraf intensitas ($\\Delta\\text{TI}$) akibat penambahan jumlah sumber identik pada jarak yang sama adalah: $$\\Delta \\text{TI} = \\text{TI}_n - \\text{TI}_1 = 10 \\log(n)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-008",
@@ -6037,7 +6219,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya akustik sumber ($P$) dapat ditentukan dari intensitas bunyi ($I$) melalui luas permukaan bola muka gelombang ($A = 4\\pi r^2$): $$I = I_0 \\times 10^{\\frac{\\text{TI}}{10}}, \\quad P = I \\times A = I \\times (4\\pi r^2)$$. **Tips:** Jangan menggunakan luas lingkaran $\\pi r^2$."
   },
   {
     "id": "fis-gel-bunyi-taraf-009",
@@ -6070,7 +6253,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan penurunan taraf intensitas terhadap pertambahan jarak memenuhi persamaan logaritmik kuadrat jarak: $$\\text{TI}_1 - \\text{TI}_2 = 20 \\log\\left(\\frac{r_2}{r_1}\\right)$$."
   },
   {
     "id": "fis-gel-bunyi-taraf-010",
@@ -6103,7 +6287,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Intensitas & Taraf Intensitas",
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Taraf intensitas total dari dua sumber bunyi tidak dapat dijumlahkan secara langsung dalam satuan $\\text{dB}$. Yang dijumlahkan secara langsung adalah intensitas fisik ($I$) masing-masing sumber: $$I_{\\text{tot}} = I_1 + I_2 \\implies \\text{TI}_{\\text{tot}} = 10 \\log\\left(\\frac{I_{\\text{tot}}}{I_0}\\right)$$."
   },
   {
     "id": "sedang-fis-05",
@@ -6136,7 +6321,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Persamaan Efek Doppler: $$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$ • Pengamat diam: $v_p = 0$ • Sumber mendekati pengamat: tanda pada penyebut bernilai negatif ($-v_s$), sehingga frekuensi terdengar lebih tinggi ($f_p > f_s$). **Tips:** Perhatikan aturan tanda: sumber mendekat selalu memperkecil penyebut ($v - v_s$), bukan memperbesar ($v + v_s$)."
   },
   {
     "id": "drill-bun-07",
@@ -6169,7 +6355,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Gunakan perumusan konsep fisis: $$f_p = \\left( \\frac{v \\pm v_p}{v \\mp v_s} \\right) f_s$$ • Pendengar mendekati sumber $\\implies (+v_p)$ pada pembilang. • Sumber mendekati pendengar $\\implies (-v_s)$ pada penyebut. • Efek keduanya saling mendekat membuat frekuensi yang didengar semakin tinggi ($f_p > f_s$). **Tips:** ⚠️ Mnemonic Tanda Doppler: \"Mendekat = Lebih Tinggi\" (pembilang ditambah, penyebut dikurang)."
   },
   {
     "id": "drill2-bun-04",
@@ -6202,7 +6389,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Efek Doppler Sumber Menjauh: Karena sumber menjauh ($+v_s$ pada penyebut), panjang gelombang merenggang sehingga frekuensi yang terdengar lebih rendah ($f_p < f_s$): $$f_p = \\left( \\frac{v}{v + v_s} \\right) f_s$$. **Tips:** ⚠️ Logika Akal Sehat: Sumber menjauh pasti menghasilkan nada yang lebih rendah dari frekuensi asli ($< 600\\text{ Hz}$)."
   },
   {
     "id": "drill2-bun-05",
@@ -6235,7 +6423,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Efek Doppler",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "efek-doppler"
+    "subTopicSlug": "efek-doppler",
+    "hint": "Efek Doppler Pendengar Menjauh: $$f_p = \\left( \\frac{v - v_p}{v} \\right) f_s$$."
   },
   {
     "id": "sup-fis-gel-02",
@@ -6268,7 +6457,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Taraf Intensitas Multi Sumber Sejenis: Ketika $n$ sumber bunyi identik berbunyi bersamaan, intensitasnya berlipat ganda sebesar $n$, sehingga taraf intensitas totalnya: $TI_n = TI_1 + 10 \\log_{10}(n)$."
   },
   {
     "id": "drill-bun-08",
@@ -6301,7 +6491,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Hubungan Taraf Intensitas terhadap Jarak Titik: Karena intensitas mematuhi hukum kuadrat terbalik ($I \\propto 1/r^2$), taraf intensitas berkurang secara logaritmik: $$TI_2 = TI_1 - 20 \\log_{10}\\left(\\frac{r_2}{r_1}\\right)$$. **Tips:** ⚠️ Rumus Sakti Jarak: Jarak naik $10\\times \\implies TI$ turun tepat $20\\text{ dB}$."
   },
   {
     "id": "drill2-bun-07",
@@ -6334,7 +6525,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Intensitas & Taraf Intensitas",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "intensitas-taraf-intensitas"
+    "subTopicSlug": "intensitas-taraf-intensitas",
+    "hint": "Setiap pelipatgandaan jumlah sumber sebesar $10\\times$ akan menambah taraf intensitas tepat $+10\\text{ dB}$: $$TI_n = TI_1 + 10 \\log_{10}(n)$$."
   },
   {
     "id": "drill-bun-05",
@@ -6367,7 +6559,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Karakteristik Gelombang Bunyi",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-bunyi",
-    "subTopicSlug": "karakteristik-gelombang-bunyi"
+    "subTopicSlug": "karakteristik-gelombang-bunyi",
+    "hint": "Selisih Resonansi Berurutan Tabung Bunyi: Jarak antara dua resonansi berurutan selalu tepat sama dengan setengah panjang gelombang : $$\\Delta L = L_2 - L_1 = \\frac{1}{2}\\lambda \\implies \\lambda = 2(L_2 - L_1)$$ $$v = f \\cdot \\lambda$$."
   },
   {
     "id": "fis-gel-optik-alat-006",
@@ -6400,7 +6593,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbesaran total mikroskop ($M_{\\text{tot}}$) merupakan perkalian perbesaran linier lensa objektif ($M_{\\text{ob}}$) dan perbesaran sudut lensa okuler ($M_{\\text{ok}}$): $$M_{\\text{tot}} = M_{\\text{ob}} \\times M_{\\text{ok}} = \\left|\\frac{s_{\\text{ob}}'}{s_{\\text{ob}}}\\right| \\times \\left(\\frac{s_n}{f_{\\text{ok}}}\\right)$$."
   },
   {
     "id": "fis-gel-optik-alat-007",
@@ -6433,7 +6627,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada mikroskop untuk mata yang tidak berakomodasi, bayangan dari lensa objektif harus jatuh tepat di titik fokus lensa okuler ($s_{\\text{ok}} = f_{\\text{ok}}$). Panjang tubus mikroskop dirumuskan: $$d = s_{\\text{ob}}' + f_{\\text{ok}}$$kanan."
   },
   {
     "id": "fis-gel-optik-alat-008",
@@ -6466,7 +6661,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbesaran total mikroskop untuk mata berakomodasi maksimum dihitung dengan mengalikan perbesaran objektif dan perbesaran okuler berakomodasi maksimum ($M_{\\text{ok}} = \\frac{s_n}{f_{\\text{ok}}} + 1$): $$M_{\\text{tot}} = \\left|\\frac{s_{\\text{ob}}'}{s_{\\text{ob}}}\\right| \\times \\left(\\frac{s_n}{f_{\\text{ok}}} + 1\\right)$$."
   },
   {
     "id": "fis-gel-optik-alat-009",
@@ -6499,7 +6695,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teropong bumi dilengkapi dengan lensa pembalik agar bayangan akhir yang dilihat tegak. Panjang tubus teropong bumi saat mata tidak berakomodasi dirumuskan: $$d = f_{\\text{ob}} + 4f_p + f_{\\text{ok}}$$kanan."
   },
   {
     "id": "fis-gel-optik-alat-010",
@@ -6532,7 +6729,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lup, Mikroskop, dan Teropong",
     "subTopic": "Lup, Mikroskop, dan Teropong",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pengamatan dengan lup yang berakomodasi pada jarak tertentu ($x$) mengharuskan bayangan maya terbentuk pada jarak tersebut ($s' = -x$). Jarak benda ($s$) dicari dengan persamaan lensa tipis: $$\\frac{1}{s} = \\frac{1}{f} - \\frac{1}{s'}$$."
   },
   {
     "id": "fis-gel-optik-bias-006",
@@ -6565,7 +6763,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut deviasi minimum ($\\delta_m$) pada prisma dengan sudut pembias besar memenuhi persamaan Snellius prisma: $$\\sin\\left(\\frac{\\delta_m + \\beta}{2}\\right) = \\frac{n_{\\text{prisma}}}{n_{\\text{medium}}} \\sin\\left(\\frac{\\beta}{2}\\right)$$."
   },
   {
     "id": "fis-gel-optik-bias-007",
@@ -6598,7 +6797,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sinar yang melewati kaca plan paralel mengalami pergeseran lateral ($t$) sejajar sinar datang yang dirumuskan: $$t = d \\times \\frac{\\sin(i - r)}{\\cos(r)}$$ dengan sudut bias $r$ ditentukan melalui hukum Snellius: $n_1 \\sin(i) = n_2 \\sin(r)$. **Tips:** Pastikan penyebutnya adalah $\\cos(r)$, bukan $\\cos(i)$."
   },
   {
     "id": "fis-gel-optik-bias-008",
@@ -6631,7 +6831,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi transmisi serat optik bergantung pada pemantulan internal total di dinding batas antara inti ($n_1$) dan selubung ($n_2$). Nilai sinus sudut kritis pada antarmuka inti-selubung dirumuskan: $$\\sin(\\theta_k) = \\frac{n_2}{n_1}$$. **Tips:** Syarat serat optik selalu menuntut $n_{\\text{inti}} > n_{\\text{selubung}}$ agar pemantulan total dapat terjadi."
   },
   {
     "id": "fis-gel-optik-bias-009",
@@ -6664,7 +6865,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan pembiasan pada permukaan lengkung tunggal (permukaan sferis): $$\\frac{n_1}{s} + \\frac{n_2}{s'} = \\frac{n_2 - n_1}{R}$$. **Tips:** Perhatikan koefisien indeks bias di atas pembilang: $n_1$ untuk jarak benda ($s$) dan $n_2$ untuk jarak bayangan ($s'$)."
   },
   {
     "id": "fis-gel-optik-bias-010",
@@ -6697,7 +6899,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembiasan Cahaya (Hukum Snellius)",
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kedalaman semu total ($h'$) untuk sistem multi-lapisan zat cair dilihat tegak lurus dari udara ($n_u = 1$) adalah penjumlahan kedalaman semu masing-masing lapisan: $$h' = \\sum \\frac{h_i}{n_i} = \\frac{h_B}{n_B} + \\frac{h_A}{n_A}$$."
   },
   {
     "id": "fis-gel-optik-cermin-006",
@@ -6730,7 +6933,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan nyata pada cermin cekung berada di depan cermin ($s' > 0$) dan bersifat terbalik. Hubungan perbesaran bayangan nyata: $$M = \\frac{s'}{s} = 3 \\implies s' = 3s$$ Persamaan cermin: $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$$."
   },
   {
     "id": "fis-gel-optik-cermin-007",
@@ -6763,7 +6967,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada cermin cembung, fokus bernilai negatif ($f = -R/2$) dan bayangan dari benda nyata selalu bersifat maya ($s' < 0$): $$f = -\\frac{40}{2} = -20\\text{ cm}, \\quad s' = -\\frac{1}{4}s$$."
   },
   {
     "id": "fis-gel-optik-cermin-008",
@@ -6796,7 +7001,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan tegak pada cermin cekung selalu merupakan bayangan maya yang terletak di belakang cermin ($s' < 0$): $$M = -\\frac{s'}{s} = 2 \\implies s' = -2s, \\quad f = +\\frac{R}{2} = +30\\text{ cm}$$."
   },
   {
     "id": "fis-gel-optik-cermin-009",
@@ -6829,7 +7035,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pergeseran posisi bayangan diperoleh dengan menghitung posisi bayangan mula-mula ($s_1'$) dan posisi bayangan akhir ($s_2'$) setelah pergeseran: $$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$."
   },
   {
     "id": "fis-gel-optik-cermin-010",
@@ -6862,7 +7069,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Cermin Datar, Cekung, dan Cembung",
     "subTopic": "Cermin Datar, Cekung, dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Aturan Dalil Esbach pada cermin cekung: 1. Jumlah nomor ruang benda dan ruang bayangan sama dengan 5: $$R_{\\text{benda}} + R_{\\text{bayangan}} = 5$$ 2. Jika $R_{\\text{bayangan}} > R_{\\text{benda}}$, bayangan diperbesar. 3. Bayangan di depan cermin (ruang I, II, III) bersifat nyata dan terbalik; bayangan di belakang cermin (ruang IV) bersifat maya dan tegak."
   },
   {
     "id": "fis-gel-optik-lensa-006",
@@ -6895,7 +7103,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{1}{f} = \\left(\\frac{n_l}{n_u} - 1\\right) \\left(\\frac{1}{R_1} + \\frac{1}{R_2}\\right)$$ Untuk permukaan pertama cembung $R_1 > 0$, dan permukaan kedua cembung $R_2 > 0$ dalam bentuk penjumlahan tanda kelengkungan."
   },
   {
     "id": "fis-gel-optik-lensa-007",
@@ -6928,7 +7137,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbandingan jarak fokus lensa di dalam suatu zat cair ($f_c$) terhadap jarak fokusnya di udara ($f_u$) dirumuskan: $$\\frac{f_c}{f_u} = \\frac{\\frac{n_l}{n_u} - 1}{\\frac{n_l}{n_c} - 1}$$."
   },
   {
     "id": "fis-gel-optik-lensa-008",
@@ -6961,7 +7171,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya lensa gabungan ($P_{\\text{gab}}$) dari dua lensa tipis yang bersentuhan adalah penjumlahan aljabar dari daya masing-masing lensa: $$P_{\\text{gab}} = P_1 + P_2 = \\frac{100}{f_1} + \\frac{100}{f_2}$$ Ingat bahwa fokus lensa cekung bertanda negatif ($f_2 < 0$). **Tips:** Jangan menjumlahkan kedua nilai secara positif (+4 + 2 = +6 D, )."
   },
   {
     "id": "fis-gel-optik-lensa-009",
@@ -6994,7 +7205,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan tegak pada lensa cembung selalu bersifat maya dan berada di depan lensa ($s' < 0$): $$M = -\\frac{s'}{s} = 3 \\implies s' = -3s$$."
   },
   {
     "id": "fis-gel-optik-lensa-010",
@@ -7027,7 +7239,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Lensa Cekung dan Cembung",
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada metode kedudukan ganda (Metode Bessel), jarak benda ke layar adalah $D = s + s' = 100\\text{ cm}$, sehingga $s' = 100 - s$. Persamaan lensa menjadi: $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{D - s} = \\frac{D}{s(D - s)}$$."
   },
   {
     "id": "fis-gel-optik-mata-006",
@@ -7060,7 +7273,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak terdekat yang masih dapat dibaca tanpa kacamata adalah titik dekat asli ($PP$, punctum proximum) mata penderita. Rumus kacamata hipermetropi: $$P = \\frac{100}{s_n} - \\frac{100}{PP}$$."
   },
   {
     "id": "fis-gel-optik-mata-007",
@@ -7093,7 +7307,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika benda yang ingin dilihat tidak berada di jarak tak terhingga melainkan pada jarak berhingga $s$, maka rumus lensa berlaku: $$P = \\frac{100}{s\\text{ (cm)}} + \\frac{100}{s'\\text{ (cm)}}$$ dengan $s' = -PR$ karena bayangan maya harus jatuh di titik jauh siswa."
   },
   {
     "id": "fis-gel-optik-mata-008",
@@ -7126,7 +7341,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kacamata bifokal memiliki dua segmen lensa: 1. Bagian atas untuk melihat jauh (miopi): $P_{\\text{jauh}} = -\\frac{100}{PR}$. 2. Bagian bawah untuk membaca dekat (hipermetropi/presbiopi): $P_{\\text{dekat}} = \\frac{100}{s_n} - \\frac{100}{PP}$."
   },
   {
     "id": "fis-gel-optik-mata-009",
@@ -7159,7 +7375,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika jarak antara kacamata dan mata diperhitungkan sebesar $d$, maka jarak bayangan terhadap lensa kacamata ($s'$) adalah: $$s' = -(PR - d)$$ Untuk melihat benda di tak terhingga ($s = \\infty$): $$P = -\\frac{100}{PR - d}$$."
   },
   {
     "id": "fis-gel-optik-mata-010",
@@ -7192,7 +7409,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mata dan Kacamata",
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya bias lensa mata dihitung dengan persamaan lensa tipis di mana jarak bayangan ke retina bernilai konstan ($s' = 2\\text{ cm} = 0{,}02\\text{ m}$): $$P = \\frac{1}{s} + \\frac{1}{s'}$$ Daya akomodasi adalah selisih kekuatan lensa mata maksimum terhadap minimum: $$\\Delta P = P_{\\max} - P_{\\min}$$."
   },
   {
     "id": "fis-gel-optik-pantul-006",
@@ -7225,7 +7443,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan yang bersifat tegak pada cermin cekung selalu merupakan bayangan maya (terletak di ruang I, yaitu $s < f$). Pada bayangan maya tegak, jarak bayangan bernilai negatif: $$M = -\\frac{s'}{s} = +3 \\implies s' = -3s$$."
   },
   {
     "id": "fis-gel-optik-pantul-007",
@@ -7258,7 +7477,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan nyata pada cermin cekung selalu berjarak positif ($s' > 0$) dan berada di depan cermin. Hubungan perbesaran linier untuk bayangan nyata adalah: $$M = \\frac{s'}{s} = 2 \\implies s' = 2s$$."
   },
   {
     "id": "fis-gel-optik-pantul-008",
@@ -7291,7 +7511,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada cermin cembung, fokus bernilai negatif ($f = -R/2$) dan bayangan selalu maya ($s' = -M \\cdot s = -\\frac{1}{3}s$): $$\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$$."
   },
   {
     "id": "fis-gel-optik-pantul-009",
@@ -7324,7 +7545,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan hukum pemantulan sudut datang sama dengan sudut pantul: 1. Panjang cermin datar minimum agar seseorang dapat melihat seluruh tubuhnya adalah setengah dari tinggi tubuh orang tersebut: $$L_{\\min} = \\frac{1}{2} h_{\\text{badan}}$$ 2. Ketinggian tepi bawah cermin dari lantai agar kaki terlihat adalah setengah dari ketinggian matanya dari lantai: $$H_{\\text{bawah}} = \\frac{1}{2} h_{\\text{mata}}$$."
   },
   {
     "id": "fis-gel-optik-pantul-010",
@@ -7357,7 +7579,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemantulan Cahaya",
     "subTopic": "Pemantulan Cahaya",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Posisi bayangan dihitung pada dua keadaan berbeda dengan rumus cermin cekung: $$\\frac{1}{s'} = \\frac{1}{f} - \\frac{1}{s}$$ Pergeseran bayangan adalah selisih posisi bayangan akhir terhadap posisi bayangan awal: $\\Delta s' = |s_2' - s_1'|$."
   },
   {
     "id": "fis-gel-optik-spektrum-006",
@@ -7390,7 +7613,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi foton ($E$) dari gelombang elektromagnetik berbanding lurus dengan frekuensi ($f$) dan berbanding terbalik dengan panjang gelombang ($\\lambda$): $$E = h f = \\frac{h c}{\\lambda}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-007",
@@ -7423,7 +7647,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya radiasi ($P$) adalah energi total foton yang dipancarkan per satuan waktu. Jika $N$ adalah laju pemancaran foton per detik: $$P = N \\times E_{\\text{foton}} = N \\times \\frac{h c}{\\lambda} \\implies N = \\frac{P \\lambda}{h c}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-008",
@@ -7456,7 +7681,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gelombang elektromagnetik, perbandingan antara amplitudo medan listrik ($E_{\\max}$) dan amplitudo medan magnet ($B_{\\max}$) selalu sebanding dengan kecepatan rambat gelombang ($c$): $$c = \\frac{E_{\\max}}{B_{\\max}} \\implies B_{\\max} = \\frac{E_{\\max}}{c}$$."
   },
   {
     "id": "fis-gel-optik-spektrum-009",
@@ -7489,7 +7715,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Radiasi pengion adalah radiasi elektromagnetik yang energi fotonnya melebihi energi ionisasi atom/molekul (biasanya $\\gtrsim 10 - 12\\text{ eV}$). Spektrum yang termasuk radiasi pengion adalah sinar ultraviolet ekstrem/jauh, sinar-X, dan sinar gamma. Spektrum berenergi lebih rendah (cahaya tampak, inframerah, gelombang mikro, dan gelombang radio) adalah radiasi non-pengion."
   },
   {
     "id": "fis-gel-optik-spektrum-010",
@@ -7522,7 +7749,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Spektrum Elektromagnetik",
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika gelombang elektromagnetik berpindah medium: 1. Frekuensi ($f$) selalu bernilai konstan karena ditentukan oleh sumber pemancar. 2. Kecepatan rambat berkurang sesuai indeks bias: $v = \\frac{c}{n}$. 3. Panjang gelombang di dalam medium memendek: $\\lambda = \\frac{v}{f} = \\frac{\\lambda_0}{n}$."
   },
   {
     "id": "sup-fis-gel-04",
@@ -7555,7 +7783,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Lensa Cekung dan Cembung",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "lensa-cekung-cembung"
+    "subTopicSlug": "lensa-cekung-cembung",
+    "hint": "Persamaan Lensa Tipis Gauss: $\\frac{1}{f} = \\frac{1}{s} + \\frac{1}{s'}$. Tanda $s' > 0$ menandakan bayangan nyata di belakang lensa (selalu terbalik). **Tips:** Menganggap bayangan pada cermin dan lensa memiliki aturan tanda sama untuk letak maya/nyata."
   },
   {
     "id": "drill-cah-06",
@@ -7588,7 +7817,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "Kacamata Rabun Jauh (Miopi): Lensa cekung negatif digunakan untuk membentuk bayangan maya benda jauh tak hingga ($s = \\infty$) tepat pada titik jauhnya ($s' = -PR$): $$P = -\\frac{100}{PR\\text{ (cm)}} = -\\frac{1}{PR\\text{ (meter)}}$$. **Tips:** Miopi selalu butuh lensa minus (cekung)."
   },
   {
     "id": "drill2-cah-05",
@@ -7621,7 +7851,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "Gunakan perumusan konsep fisis: $$P = \\frac{100}{s_n\\text{ (cm)}} - \\frac{100}{PP\\text{ (cm)}} = 4 - \\frac{100}{PP\\text{ (cm)}}$$ (dengan jarak baca normal standar $s_n = 25\\text{ cm}$). **Tips:** Kacamata baca selalu berlensa plus (+)."
   },
   {
     "id": "drill2-cah-06",
@@ -7654,7 +7885,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mata dan Kacamata",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "mata-dan-kacamata"
+    "subTopicSlug": "mata-dan-kacamata",
+    "hint": "• Perbesaran bayangan: $M = \\frac{f_{\\text{ob}}}{f_{\\text{ok}}}$ • Panjang teropong: $d = f_{\\text{ob}} + f_{\\text{ok}}$."
   },
   {
     "id": "drill-cah-03",
@@ -7687,7 +7919,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Pembiasan Cahaya (Hukum Snellius)",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "pembiasan-cahaya-snellius"
+    "subTopicSlug": "pembiasan-cahaya-snellius",
+    "hint": "Syarat Pemantulan Total Sempurna & Sudut Kritis: 1. Cahaya harus merambat dari medium lebih rapat ke medium kurang rapat ($n_1 > n_2$). 2. Pada sudut kritis, sudut bias $r = 90^\\circ$ ($\\sin 90^\\circ = 1$): $$\\sin \\theta_k = \\frac{n_2}{n_1}$$. **Tips:** ⚠️ Cek Masuk Akal: Nilai sinus suatu sudut nyata tidak pernah boleh lebih dari 1."
   },
   {
     "id": "sedang-fis-11",
@@ -7720,7 +7953,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Interferensi Maksimum (Garis Terang) Celah Ganda: $$\\frac{d \\cdot y}{L} = n \\lambda \\implies y = \\frac{n \\lambda L}{d}$$ dengan $n$ adalah orde terang ($n = 1, 2, 3, \\dots$)."
   },
   {
     "id": "drill-cah-08",
@@ -7753,7 +7987,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Jarak Antar-Garis Terang Celah Ganda: Jarak pisah antara dua pola terang berurutan ($Delta y$) memenuhi persamaan: $$\\frac{d \\cdot \\Delta y}{L} = \\lambda \\implies \\Delta y = \\frac{\\lambda L}{d}$$."
   },
   {
     "id": "drill2-cah-07",
@@ -7786,7 +8021,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Spektrum Elektromagnetik",
     "chapterTitle": "Gelombang dan Optik",
     "subChapterId": "fis-gel-optik",
-    "subTopicSlug": "spektrum-elektromagnetik"
+    "subTopicSlug": "spektrum-elektromagnetik",
+    "hint": "Persamaan Kisi Difraksi: $$d \\sin \\theta = n \\lambda$$ dengan tetapan jarak antar-kisi: $d = \\frac{1}{N}$."
   },
   {
     "id": "sup-fis-kin-05",
@@ -7819,7 +8055,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "analisis-grafik"
+    "subTopicSlug": "analisis-grafik",
+    "hint": "Geometri Luas Kurva Grafik $v-t$: Jarak tempuh total partikel pada gerak satu dimensi sama dengan luas daerah di bawah kurva grafik kecepatan terhadap waktu ($s = \\int v\\,dt = \\text{Luas Bidang}$)."
   },
   {
     "id": "fis-kin-gl-grafik-006",
@@ -7852,7 +8089,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada grafik $v-t$: • Perpindahan ($\\Delta x$) dihitung dari selisih luas area di atas sumbu-$t$ (positif) dikurangi luas area di bawah sumbu-$t$ (negatif): $\\Delta x = L_{\\text{atas}} - L_{\\text{bawah}}$. • Jarak total ($s$) dihitung dari jumlahan mutlak seluruh luas area: $s = L_{\\text{atas}} + L_{\\text{bawah}}$. **Tips:** Menyamakan nilai jarak dengan perpindahan atau tidak mengurangkan area di bawah sumbu waktu saat menghitung perpindahan."
   },
   {
     "id": "fis-kin-gl-grafik-007",
@@ -7885,7 +8123,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada grafik $v-t$: • Kelajuan sama terjadi pada titik potong kurva ($v_A(t) = v_B(t)$). • Posisi menyusul terjadi saat luas di bawah kurva kedua grafik bernilai sama ($s_A(t) = s_B(t)$)."
   },
   {
     "id": "fis-kin-gl-grafik-008",
@@ -7918,7 +8157,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan akhir partikel adalah jumlahan kecepatan awal dengan integral luas kurva grafik $a-t$: $$v_t = v_0 + \\Delta v = v_0 + \\text{Luas daerah bawah kurva } a-t$$."
   },
   {
     "id": "fis-kin-gl-grafik-009",
@@ -7951,7 +8191,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kemiringan garis singgung grafik posisi-waktu ($s-t$) menunjukkan kecepatan sesaat ($v = \\frac{ds}{dt}$): • Parabola membuka ke atas: kemiringan terus bertambah besar $\\implies$ kecepatan bertambah $\\implies$ GLBB dipercepat ($a > 0$). • Garis lurus miring dengan kemiringan tetap: kemiringan konstan $\\implies$ kecepatan tetap $\\implies$ GLB ($a = 0$). **Tips:** Terkecoh dengan grafik $v-t$."
   },
   {
     "id": "fis-kin-gl-grafik-010",
@@ -7984,7 +8225,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Analisis Grafik Gerak Lurus",
     "subTopic": "Analisis Grafik Gerak Lurus",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketinggian total dihitung dari luas total grafik trapesium $v-t$. Waktu fase perlambatan dihitung dari perbandingan kecepatan puncak terhadap besar perlambatannya."
   },
   {
     "id": "fis-kin-gl-glbb-006",
@@ -8017,7 +8259,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak yang ditempuh khusus pada detik ke-$n$ (selang dari $t = n-1$ sampai $t = n$) pada GLBB dari keadaan diam dirumuskan oleh deret Galileo: $$\\Delta s_n = s(n) - s(n-1) = \\frac{1}{2} a (2n - 1)$$."
   },
   {
     "id": "fis-kin-gl-glbb-007",
@@ -8050,7 +8293,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak tempuh GLBB dapat dinyatakan dalam kelajuan rata-rata dikali waktu: $$s = \\left( \\frac{v_A + v_B}{2} \\right) t$$ Percepatan konstan dihitung dari definisi laju perubahan kecepatan: $$a = \\frac{v_B - v_A}{t}$$."
   },
   {
     "id": "fis-kin-gl-glbb-008",
@@ -8083,7 +8327,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fase 1 adalah GLBB dari 0 ke $v$ dengan kelajuan rata-rata $\\frac{v}{2}$. Fase 2 adalah GLB dengan kelajuan konstan $v$. Waktu tempuh masing-masing fase ditentukan oleh rasio jarak terhadap kelajuan rata-ratanya."
   },
   {
     "id": "fis-kin-gl-glbb-009",
@@ -8116,7 +8361,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak henti total terdiri dari dua fase: fase gerak lurus beraturan (GLB) selama waktu reaksi pengemudi, dilanjutkan fase gerak lurus berubah beraturan (GLBB) diperlambat hingga berhenti ($v_t = 0$)."
   },
   {
     "id": "fis-kin-gl-glbb-010",
@@ -8149,7 +8395,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Berubah Beraturan (GLBB)",
     "subTopic": "Gerak Lurus Berubah Beraturan (GLBB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada GLBB diperlambat konstan, perubahan kuadrat kecepatan sebanding dengan jarak penembusan lintasan ($v_t^2 - v_0^2 = -2as$)."
   },
   {
     "id": "fis-kin-gl-glb-006",
@@ -8182,7 +8429,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar seluruh badan kereta melintasi terowongan secara utuh, jarak yang harus ditempuh oleh kereta adalah jumlahan panjang terowongan ($L_T$) dan panjang rangkaian kereta ($L_K$): $$s = L_T + L_K$$."
   },
   {
     "id": "fis-kin-gl-glb-007",
@@ -8215,7 +8463,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi menyusul tercapai ketika jarak tempuh kedua kendaraan dari titik tolak awal bernilai sama ($s_A = s_B$). Perhatikan perbedaan selang waktu tempuh antara mobil $A$ dan $B$. **Tips:** Menghitung jarak tempuh mobil $A$ hanya selama 10 sekon pertama ($150\\text{ m}$) atau lupa mengalikan dengan kecepatan mobil $B$."
   },
   {
     "id": "fis-kin-gl-glb-008",
@@ -8248,7 +8497,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bunyi merambat secara GLB pada masing-masing medium. Selisih waktu kedatangan bunyi pada jarak yang sama ($d$) adalah: $$\\Delta t = t_{\\text{udara}} - t_{\\text{baja}} = \\frac{d}{v_{\\text{udara}}} - \\frac{d}{v_{\\text{baja}}}$$."
   },
   {
     "id": "fis-kin-gl-glb-009",
@@ -8281,7 +8531,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak pisah dua partikel adalah harga mutlak selisih kedudukan $|x_A(t) - x_B(t)|$. Kedua partikel bertemu ketika kedudukan keduanya sama persis ($x_A(t) = x_B(t)$). **Tips:** Perhatikan tanda minus pada $-20$ saat memindahkan ruas aljabar agar tidak keliru menghitung waktu pertemuan."
   },
   {
     "id": "fis-kin-gl-glb-010",
@@ -8314,7 +8565,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Lurus Beraturan (GLB)",
     "subTopic": "Gerak Lurus Beraturan (GLB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan efektif orang terhadap lantai diam adalah $v_{\\text{searah}} = v_{\\text{orang}} + v_{\\text{konveyor}}$ saat bergerak searah, dan $v_{\\text{lawan}} = v_{\\text{orang}} - v_{\\text{konveyor}}$ saat bergerak berlawanan arah. **Tips:** Mengabaikan fakta bahwa kecepatan konveyor mengurangi laju gerak orang saat berjalan berlawanan arah."
   },
   {
     "id": "fis-kin-gl-jarak-006",
@@ -8347,7 +8599,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak skalar adalah penjumlahan seluruh panjang lintasan: $s = \\Delta x + \\Delta y + \\Delta z$. Perpindahan dalam vektor ruang 3 dimensi ditentukan dengan norma Euclidean: $$|\\Delta \\vec{r}| = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2 + (\\Delta z)^2}$$. **Tips:** Jangan hanya memproyeksikan pada dua sumbu mendatar."
   },
   {
     "id": "fis-kin-gl-jarak-007",
@@ -8380,7 +8633,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak tempuh adalah akumulasi ketiga sisi persegi yang dilewati ($AB + BC + CD$). Perpindahan adalah jarak langsung garis lurus dari posisi awal ($A$) ke posisi akhir ($D$)."
   },
   {
     "id": "fis-kin-gl-jarak-008",
@@ -8413,7 +8667,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk mencari jarak total dari fungsi posisi yang mengalami pembalikan arah gerak, cari terlebih dahulu waktu saat partikel diam sesaat ($v(t) = \\frac{dx}{dt} = 0$), lalu jumlahkan harga mutlak perpindahan tiap segmen perjalanan."
   },
   {
     "id": "fis-kin-gl-jarak-009",
@@ -8446,7 +8701,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Resultan perpindahan dua vektor dengan sudut apit $\\theta$ dihitung menggunakan aturan kosinus penjumlahan vektor: $$R = \\sqrt{A^2 + B^2 + 2AB\\cos\\theta}$$."
   },
   {
     "id": "fis-kin-gl-jarak-010",
@@ -8479,7 +8735,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak dan Perpindahan",
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarum jam yang berputar membentuk segitiga sama kaki dengan panjang kedua sisi sama dengan panjang jarum ($r$) dan sudut pusat $\\alpha$. Besar perpindahan ujung jarum adalah panjang tali busur yang menghubungkan posisi awal dan akhir: $$|\\Delta \\vec{r}| = 2r\\sin\\left(\\frac{\\alpha}{2}\\right)$$. **Tips:** Nilai $\\frac{44}{3}\\text{ cm}$ adalah panjang lintasan busur lingkaran (jarak tempuh), bukan perpindahan."
   },
   {
     "id": "fis-kin-gl-kelajuan-006",
@@ -8512,7 +8769,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suatu perjalanan dibagi menjadi beberapa bagian jarak yang sama besar ($s_1 = s_2 = s_3 = s$), kelajuan rata-rata dihitung menggunakan rata-rata harmonik: $$\\frac{1}{v_{\\text{rata}}} = \\frac{1}{3} \\left( \\frac{1}{v_1} + \\frac{1}{v_2} + \\frac{1}{v_3} \\right)$$."
   },
   {
     "id": "fis-kin-gl-kelajuan-007",
@@ -8545,7 +8803,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perpindahan merupakan integral tentu dari fungsi kecepatan terhadap waktu: $$\\Delta x = \\int_{t_1}^{t_2} v(t)\\,dt$$ Kecepatan rata-rata adalah perbandingan perpindahan terhadap selang waktu: $$\\bar{v} = \\frac{\\Delta x}{t_2 - t_1}$$."
   },
   {
     "id": "fis-kin-gl-kelajuan-008",
@@ -8578,7 +8837,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan rata-rata adalah besar vektor perpindahan dibagi dengan waktu tempuh: $$|\\bar{\\vec{v}}| = \\frac{|\\Delta \\vec{r}|}{\\Delta t}$$ Untuk seperempat lingkaran, vektor posisi awal dan akhir saling tegak lurus."
   },
   {
     "id": "fis-kin-gl-kelajuan-009",
@@ -8611,7 +8871,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat waktu tempuh dibagi sama besar, kelajuan rata-rata adalah rata-rata aritmetika: $v = \\frac{v_1 + v_2}{2}$. Saat jarak tempuh dibagi sama panjang, kelajuan rata-rata adalah rata-rata harmonik: $v = \\frac{2v_1 v_2}{v_1 + v_2}$."
   },
   {
     "id": "fis-kin-gl-kelajuan-010",
@@ -8644,7 +8905,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kelajuan dan Kecepatan",
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor kecepatan sesaat diperoleh dari turunan pertama vektor posisi terhadap waktu: $$\\vec{v}(t) = \\frac{d\\vec{r}}{dt} = v_x\\hat{i} + v_y\\hat{j}$$ Besar kecepatan sesaat merupakan norma vektor kecepatan: $$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2}$$."
   },
   {
     "id": "fis-kin-gl-relatif-006",
@@ -8677,7 +8939,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat dua kereta saling berpapasan dengan arah berlawanan, kecepatan relatif kedua kereta adalah jumlahan kelajuannya: $$v_{\\text{rel}} = v_A + v_B$$ Panjang lintasan relatif yang harus ditempuh agar keduanya berpisah penuh adalah jumlahan panjang kedua kereta: $$L_{\\text{total}} = L_A + L_B$$."
   },
   {
     "id": "fis-kin-gl-relatif-007",
@@ -8710,7 +8973,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak dua dimensi saling independen: waktu menyeberang sungai ($t$) hanya ditentukan oleh lebar sungai dan komponen kecepatan perahu yang tegak lurus arus. Pergeseran ke arah hilir ($x$) merupakan hasil kali kecepatan arus sungai dengan waktu tempuh tersebut. **Tips:** Nilai $150\\text{ m}$ adalah panjang lintasan serong total (resultan perpindahan), bukan pergeseran ke arah hilir saja."
   },
   {
     "id": "fis-kin-gl-relatif-008",
@@ -8743,7 +9007,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi berpapasan dua benda yang bergerak saling mendekat terjadi ketika jumlahan jarak tempuh kedua benda sama dengan jarak pisah mula-mula: $$s_A(t) + s_B(t) = d$$. **Tips:** Nilai $200\\text{ meter}$ adalah jarak yang ditempuh mobil $B$."
   },
   {
     "id": "fis-kin-gl-relatif-009",
@@ -8776,7 +9041,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar resultan gerak tepat tegak lurus tepi sungai, komponen kecepatan perenang yang melawan aliran arus sungai harus tepat mengimbangi laju arus sungai: $$v_{\\text{renang}} \\sin\\theta = v_{\\text{arus}}$$."
   },
   {
     "id": "fis-kin-gl-relatif-010",
@@ -8809,7 +9075,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kecepatan Relatif",
     "subTopic": "Kecepatan Relatif",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan masing-masing partikel diperoleh dari turunan posisi. Kecepatan relatif $\\vec{v}_{A/B} = \\vec{v}_A - \\vec{v}_B$. Besar kecepatan relatif merupakan norma Euclidean dari vektor kecepatan relatif tersebut."
   },
   {
     "id": "fis-kin-gl-vertikal-006",
@@ -8842,7 +9109,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kedua bola bergerak pada garis vertikal yang sama. Pertemuan terjadi saat ketinggian posisi kedua bola terhadap acuan tanah bernilai sama ($y_A(t) = y_B(t)$)."
   },
   {
     "id": "fis-kin-gl-vertikal-007",
@@ -8875,7 +9143,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena terlepas dari wahana yang sedang bergerak naik, karung pasir mewarisi kecepatan awal balon ke arah atas ($v_0 = +5\\text{ m/s}$). Gerak karung pasir merupakan gerak vertikal ke atas dari ketinggian $h = 30\\text{ m}$ sebelum akhirnya jatuh bebas ke tanah."
   },
   {
     "id": "fis-kin-gl-vertikal-008",
@@ -8908,7 +9177,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak yang ditempuh pada detik terakhir dari gerak jatuh bebas berdurasi total $t$ sekon adalah selisih jarak tempuh total dengan jarak tempuh hingga detik ke-$(t-1)$: $$\\Delta h = h(t) - h(t-1) = \\frac{1}{2} g (2t - 1)$$."
   },
   {
     "id": "fis-kin-gl-vertikal-009",
@@ -8941,7 +9211,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak bola saat melintasi jendela dapat dianalisis sebagai gerak vertikal ke atas dengan kecepatan awal $v_b$ (di bingkai bawah) dan ketinggian $h = 2\\text{ m}$ dalam selang waktu $\\Delta t = 0{,}2\\text{ s}$: $$h = v_b \\Delta t - \\frac{1}{2} g (\\Delta t)^2$$."
   },
   {
     "id": "fis-kin-gl-vertikal-010",
@@ -8974,7 +9245,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Vertikal & Jatuh Bebas",
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketinggian pada gerak vertikal ke atas memenuhi persamaan kuadrat $h = v_0 t - \\frac{1}{2} g t^2$. Selisih antara kedua akar waktu ($t_2 - t_1$) berkaitan dengan diskriminan persamaan kuadrat tersebut. **Tips:** Lupa bahwa selang waktu $4\\text{ s}$ adalah $\\Delta t = t_2 - t_1$, bukan waktu mencapai titik puncak."
   },
   {
     "id": "fis-din-39",
@@ -9007,7 +9279,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "gerak-vertikal-jatuh-bebas"
+    "subTopicSlug": "gerak-vertikal-jatuh-bebas",
+    "hint": "Konsep: Bandul konis: $T \\cos\\theta = mg$ dan $T \\sin\\theta = \\frac{m v^2}{R}$ dengan jari-jari lintasan $R = L \\sin\\theta$."
   },
   {
     "id": "fis-din-40",
@@ -9040,7 +9313,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Gerak Vertikal & Jatuh Bebas",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "gerak-vertikal-jatuh-bebas"
+    "subTopicSlug": "gerak-vertikal-jatuh-bebas",
+    "hint": "Konsep: Silinder putar vertikal: gaya normal dinding menjadi gaya sentripetal ($N = \\frac{m v^2}{R}$) dan gaya gesek statis menahan berat badan ($f_s = mg \\le \\mu_s N$)."
   },
   {
     "id": "sedang-fis-01",
@@ -9073,7 +9347,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jarak dan Perpindahan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "jarak-perpindahan"
+    "subTopicSlug": "jarak-perpindahan",
+    "hint": "Analisis Komponen Gerak Parabola: • Sumbu horizontal (GLB): $v_x = v_0\\cos\\theta$ (konstan), $X = v_x \\cdot t$ • Sumbu vertikal (GLBB gravitasi): $v_{0y} = v_0\\sin\\theta$, $v_y = v_{0y} - gt$ • Waktu mencapai titik puncak: $t_p = \\frac{v_0\\sin\\theta}{g}$ • Waktu total di udara: $t_{\\text{udara}} = 2 t_p = \\frac{2v_0\\sin\\theta}{g}$ • Jarak terjauh: $X_{\\max} = v_x \\cdot t_{\\text{udara}}$."
   },
   {
     "id": "sedang-fis-08",
@@ -9106,7 +9381,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Kondisi Pertemuan/Pengejaran Dua Benda: Dua benda yang berangkat dari titik awal yang sama akan bertemu saat jarak tempuh keduanya sama: $$s_A(t) = s_B(t)$$."
   },
   {
     "id": "fis-din-15",
@@ -9139,7 +9415,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Kelajuan dan Kecepatan",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-gl",
-    "subTopicSlug": "kelajuan-kecepatan"
+    "subTopicSlug": "kelajuan-kecepatan",
+    "hint": "Konsep: Tikungan miring licin (design banking angle): komponen horizontal gaya normal bertindak sebagai gaya sentripetal ($N \\sin\\theta = \\frac{m v^2}{R}$ dan $N \\cos\\theta = mg$). **Tips:** Siswa sering membalik fungsi trigonometri menjadi $\\frac{g R}{\\tan\\theta}$ atau lupa menarik akar kuadrat dari 900."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-006",
@@ -9172,7 +9449,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan umum antara tinggi maksimum dan jarak mendatar terjauh pada tanah datar memenuhi: $$\\frac{h_{\\max}}{X_{\\max}} = \\frac{1}{4} \\tan\\theta$$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-007",
@@ -9205,7 +9483,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Di titik puncak, komponen kecepatan vertikal nol ($v_y = 0$). Kelajuan partikel hanya tersisa komponen horizontal konstan ($v_x = v_0 \\cos\\theta$). Maka energi kinetik di puncak adalah $E_{k,\\text{puncak}} = E_k \\cos^2\\theta$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-008",
@@ -9238,7 +9517,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kelajuan di puncak menyatakan komponen horizontal konstan ($v_x = 20\\text{ m/s}$). Waktu naik menuju puncak dapat dihitung dari ketinggian maksimum ($h_{\\max} = \\frac{1}{2} g t_p^2$). Jarak mendatar adalah hasil kali kelajuan horizontal dengan waktu total di udara ($t_{\\text{total}} = 2 t_p$)."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-009",
@@ -9271,7 +9551,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketinggian maksimum total diukur dari permukaan tanah ($H_{\\text{total}}$) adalah jumlahan ketinggian awal gedung ($H$) dengan pertambahan ketinggian maksimum gerak parabola ($\\Delta h_{\\max}$): $$H_{\\text{total}} = H + \\frac{v_0^2 \\sin^2\\theta}{2g}$$."
   },
   {
     "id": "fis-kin-lengkung-ekstrem-010",
@@ -9304,7 +9585,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Titik Ekstrem Gerak Parabola",
     "subTopic": "Titik Ekstrem Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinggi maksimum berbanding lurus dengan kuadrat sinus sudut elevasinya: $$h_{\\max} \\propto \\sin^2\\theta$$."
   },
   {
     "id": "fis-kin-lengkung-gmb-006",
@@ -9337,7 +9619,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua roda yang dihubungkan dengan rantai atau tali sabuk memiliki kelajuan linier pada tepi roda yang sama besar ($v_A = v_B$): $$\\omega_A R_A = \\omega_B R_B$$."
   },
   {
     "id": "fis-kin-lengkung-gmb-007",
@@ -9370,7 +9653,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "• Roda $B$ dan $C$ dihubungkan sabuk: $v_B = v_C$. • Roda $A$ dan $B$ seporos: $\\omega_A = \\omega_B \\implies \\frac{v_A}{R_A} = \\frac{v_B}{R_B}$."
   },
   {
     "id": "fis-kin-lengkung-gmb-008",
@@ -9403,7 +9687,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik-titik yang terletak pada satu benda tegar atau piringan yang sama selalu menyapu sudut yang sama dalam selang waktu yang sama sehingga memiliki kecepatan sudut identik ($\\omega_P = \\omega_Q$). Kelajuan linier berbanding lurus dengan jarak titik ke poros ($v = \\omega r$). **Tips:** Terkecoh mengira titik yang lebih jauh memiliki kecepatan sudut yang lebih besar."
   },
   {
     "id": "fis-kin-lengkung-gmb-009",
@@ -9436,7 +9721,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Posisi sudut yang ditempuh dalam selang waktu $t$ pada GMB adalah $\\theta = \\omega \\cdot t$. Karena satu putaran penuh setara dengan $2\\pi\\text{ radian}$, jumlah putaran adalah: $$N = \\frac{\\theta}{2\\pi} = \\frac{\\omega \\cdot t}{2\\pi}$$. **Tips:** Lupa membagi dengan faktor $2\\pi$ sehingga menjawab $200\\pi$ atau $200$."
   },
   {
     "id": "fis-kin-lengkung-gmb-010",
@@ -9469,7 +9755,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gerak Melingkar Beraturan (GMB)",
     "subTopic": "Gerak Melingkar Beraturan (GMB)",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Roda bergigi yang bersinggungan luar memiliki kelajuan linier gigi yang sama ($v_A = v_B$) dan arah putar yang saling berlawanan. Hubungan frekuensi dengan jumlah gigi ($Z$) adalah $f_A Z_A = f_B Z_B$. **Tips:** Mengalikan terbalik sehingga mendapatkan $36\\text{ Hz}$ atau lupa bahwa persinggungan luar membalikkan arah putaran."
   },
   {
     "id": "fis-kin-lengkung-parabola-006",
@@ -9502,7 +9789,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan sesaat pada gerak parabola merupakan resultan dari komponen horizontal konstan ($v_x$) dan komponen vertikal berubah beraturan ($v_y$): $$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2},\\quad \\tan\\alpha = \\frac{v_y}{v_x}$$. **Tips:** Lupa bahwa komponen horizontal $v_x$ tetap bernilai $30\\text{ m/s}$ dan tidak terpengaruh gravitasi."
   },
   {
     "id": "fis-kin-lengkung-parabola-007",
@@ -9535,7 +9823,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan tumbuk batu ke permukaan air laut diperoleh dari gabungan komponen horizontal konstan ($v_x = v_0$) dan komponen vertikal akibat jatuh bebas ($v_y = \\sqrt{2gH}$): $$v = \\sqrt{v_x^2 + v_y^2}$$. **Tips:** Menghitung hanya komponen vertikalnya saja ($20\\text{ m/s}$) dan melupakan kecepatan mendatar awal lemparan."
   },
   {
     "id": "fis-kin-lengkung-parabola-008",
@@ -9568,7 +9857,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk baku persamaan trajektori gerak parabola adalah: $$y = x\\tan\\theta - \\frac{g}{2 v_0^2 \\cos^2\\theta} x^2$$. **Tips:** Lupa mengkuadratkan nilai $\\cos 45^\\circ$ pada penyebut koefisien kuadratik."
   },
   {
     "id": "fis-kin-lengkung-parabola-009",
@@ -9601,7 +9891,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jangkauan mendatar peluru dirumuskan oleh: $$X_{\\max} = \\frac{v_0^2 \\sin(2\\theta)}{g}$$ Dua sudut komplementer ($\\theta_1 + \\theta_2 = 90^\\circ$) menghasilkan jangkauan mendatar yang sama karena $\\sin(2(90^\\circ - \\theta)) = \\sin(180^\\circ - 2\\theta) = \\sin(2\\theta)$."
   },
   {
     "id": "fis-kin-lengkung-parabola-010",
@@ -9634,7 +9925,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor kecepatan diperoleh dari turunan pertama $\\vec{v} = \\frac{d\\vec{r}}{dt}$ dan percepatan dari $\\vec{a} = \\frac{d\\vec{v}}{dt}$. Di titik tertinggi, komponen kecepatan vertikal nol ($v_y = 0$), sehingga kecepatan peluru murni merupakan komponen horizontal ($v_x$)."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-006",
@@ -9667,7 +9959,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Percepatan sentripetal dinyatakan dalam periode putaran ($T$) dan jari-jari ($R$) adalah: $$a_s = \\omega^2 R = \\left(\\frac{2\\pi}{T}\\right)^2 R = \\frac{4\\pi^2 R}{T^2}$$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-007",
@@ -9700,7 +9993,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan sudut sesaat merupakan turunan pertama posisi sudut: $\\omega(t) = \\frac{d\\theta}{dt}$. Percepatan sentripetal sesaat dirumuskan oleh $a_s(t) = [\\omega(t)]^2 R$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-008",
@@ -9733,7 +10027,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada gerak melingkar yang mengalami perubahan kelajuan (GMBB), terdapat dua komponen percepatan yang saling tegak lurus: percepatan sentripetal ($a_s$) yang mengarah ke pusat dan percepatan tangensial ($a_t$) yang menyinggung lintasan. Percepatan totalnya adalah: $$a_{\\text{total}} = \\sqrt{a_s^2 + a_t^2}$$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-009",
@@ -9766,7 +10061,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Batas kelajuan maksimum pada tikungan dihitung dari rumus percepatan sentripetal: $$a_{s,\\max} = \\frac{v_{\\max}^2}{R} \\implies v_{\\max} = \\sqrt{a_{s,\\max} \\cdot R}$$. **Tips:** Lupa mengonversikan satuan dari $\\text{m/s}$ ke $\\text{km/jam}$ dan langsung memilih angka $40$."
   },
   {
     "id": "fis-kin-lengkung-sentripetal-010",
@@ -9799,7 +10095,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Percepatan Sentripetal",
     "subTopic": "Percepatan Sentripetal",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena berada di atas satu piringan yang sama, kedua koin berputar dengan kecepatan sudut yang sama ($\\omega_A = \\omega_B = \\omega$). Hubungan percepatan sentripetal terhadap jari-jari adalah linear sebanding: $$a_s = \\omega^2 r \\implies \\frac{a_{sB}}{a_{sA}} = \\frac{r_B}{r_A}$$."
   },
   {
     "id": "sedang-fis-07",
@@ -9832,7 +10129,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "angka-penting"
+    "subTopicSlug": "angka-penting",
+    "hint": "Aturan Angka Penting pada Operasi Perkalian/Pembagian: Hasil operasi perkalian atau pembagian hanya boleh memiliki jumlah angka penting sebanyak faktor pengali yang memiliki angka penting paling sedikit ."
   },
   {
     "id": "sup-fis-kin-03",
@@ -9865,7 +10163,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "angka-penting"
+    "subTopicSlug": "angka-penting",
+    "hint": "Hasil penjumlahan atau pengurangan hanya boleh mengandung satu angka taksiran , yang ditentukan oleh suku dengan angka di belakang koma paling sedikit (paling tidak teliti). **Tips:** Menggunakan aturan perkalian (jumlah AP paling sedikit) bukannya aturan penjumlahan (angka di belakang koma paling sedikit)."
   },
   {
     "id": "fis-kin-ukur-angka-006",
@@ -9898,7 +10197,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Aturan penarikan akar dan pemangkatan pada angka penting: hasil penarikan akar kuadrat memiliki jumlah angka penting yang sama persis dengan jumlah angka penting dari bilangan yang ditarik akarnya."
   },
   {
     "id": "fis-kin-ukur-angka-007",
@@ -9931,7 +10231,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada operasi gabungan, aturan penjumlahan (angka taksiran paling tidak teliti) diterapkan terlebih dahulu pada jarak total, kemudian aturan pembagian (jumlah angka penting tersedikit) diterapkan pada perhitungan kelajuan rata-rata $v = \\frac{s_{\\text{total}}}{t}$."
   },
   {
     "id": "fis-kin-ukur-angka-008",
@@ -9964,7 +10265,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada operasi kuadrat, angka penting awal menentukan presisi hasil pemangkatan. Pada operasi pengurangan, hasil akhir ditentukan oleh posisi desimal taksiran paling tidak teliti."
   },
   {
     "id": "fis-kin-ukur-angka-009",
@@ -9997,7 +10299,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perhitungan persentase melibatkan operasi pembagian dan perkalian dengan faktor 100% (bilangan eksak). Jumlah angka penting hasil akhir ditentukan oleh komponen pengukuran dengan angka penting paling sedikit."
   },
   {
     "id": "fis-kin-ukur-angka-010",
@@ -10030,7 +10333,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Angka Penting",
     "subTopic": "Angka Penting",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Aturan pembulatan genap (round-to-even / Gaussian rounding): jika angka yang dibuang tepat sama dengan 5 (atau 5 diikuti nol), maka jika angka sebelumnya ganjil dibulatkan ke atas menjadi genap, dan jika angka sebelumnya genap dibiarkan tetap (tidak berubah). **Tips:** Aturan pembulatan sekolah dasar tradisional selalu menaikkan angka 5 ke atas ($24{,}4$ dan $24{,}7$, )."
   },
   {
     "id": "fis-kin-ukur-jangka-006",
@@ -10063,7 +10367,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Kesalahan titik nol positif (positive zero error) terjadi ketika rahang tertutup rapat tetapi garis nol nonius berada di sebelah kanan garis nol skala utama ($Z > 0$). Nilai pembacaan yang sebenarnya diperoleh dengan mengurangkan nilai terukur dengan nilai kesalahan nol: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-jangka-007",
@@ -10096,7 +10401,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Kesalahan titik nol negatif (negative zero error) terjadi bila garis nol nonius berada di sebelah kiri garis nol skala utama saat rahang rapat. Besar kesalahan negatif dihitung dari selisih jumlah total skala nonius dengan garis yang berimpit: $Z = - (N - n) \\times \\text{Ketelitian}$. Koreksi nilai terukur dirumuskan: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-jangka-008",
@@ -10129,7 +10435,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Jangka sorong dengan 20 bagian skala nonius memiliki ketelitian $\\text{NST} = \\frac{1\\text{ mm}}{20} = 0{,}05\\text{ mm}$. Karena kedua koin homogen sejenis (massa jenis $\\rho$ sama) dan ketebalan $h$ sama, perbandingan massa sebanding dengan perbandingan kuadrat diameter koin: $\\frac{m_B}{m_A} = \\frac{V_B}{V_A} = \\left(\\frac{d_B}{d_A}\\right)^2$."
   },
   {
     "id": "fis-kin-ukur-jangka-009",
@@ -10162,7 +10469,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Ketelitian (nilai skala terkecil) suatu jangka sorong non-standar ditentukan oleh selisih nilai 1 bagian skala utama dengan nilai 1 bagian skala nonius: $\\text{NST} = 1\\text{ SU} - 1\\text{ SN}$. **Tips:** Siswa sering mengasumsikan nilai skala utama selalu $1\\text{ mm}$ sehingga menghitung ketelitian secara keliru."
   },
   {
     "id": "fis-kin-ukur-jangka-010",
@@ -10195,7 +10503,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "difficultyLabel": "Sedang",
-    "category": "Jangka Sorong"
+    "category": "Jangka Sorong",
+    "hint": "Massa jenis balok dihitung dengan $\\rho = \\frac{m}{V} = \\frac{m}{p \\cdot l \\cdot t}$. Menurut teori perambatan kesalahan (propagation of uncertainty) untuk operasi perkalian dan pembagian, ketidakpastian relatif fraksional total adalah jumlah dari ketidakpastian relatif masing-masing variabel: $\\frac{\\Delta \\rho}{\\rho} = \\frac{\\Delta m}{m} + \\frac{\\Delta p}{p} + \\frac{\\Delta l}{l} + \\frac{\\Delta t}{t}$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-006",
@@ -10228,7 +10537,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pengukuran berulang, nilai terbaik adalah nilai rata-rata hitung $\\bar{x} = \\frac{\\sum x_i}{N}$ dan ketidakpastian mutlak dinyatakan oleh deviasi standar rata-rata $S_{\\bar{x}} = \\frac{1}{N}\\sqrt{\\frac{N \\sum x_i^2 - (\\sum x_i)^2}{N - 1}}$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-007",
@@ -10261,7 +10571,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada operasi penjumlahan $y = x_1 + x_2$ untuk kesalahan acak independen, ketidakpastian mutlak gabungan ditentukan melalui penjumlahan kuadratur Gauss: $\\Delta y = \\sqrt{(\\Delta x_1)^2 + (\\Delta x_2)^2}$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-008",
@@ -10294,7 +10605,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada hubungan fungsi berpangkat $g = k \\cdot L^1 \\cdot T^{-2}$, ketidakpastian relatif fraksional adalah jumlah dari ketidakpastian relatif tiap besaran dikalikan nilai mutlak pangkatnya: $\\frac{\\Delta g}{g} = \\left|1\\right| \\left(\\frac{\\Delta L}{L}\\right) + \\left|-2\\right| \\left(\\frac{\\Delta T}{T}\\right)$."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-009",
@@ -10327,7 +10639,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan persamaan hukum Ohm $V = I \\cdot R$, jika $V$ diplot pada sumbu-Y dan $I$ pada sumbu-X, persamaan grafik berbentuk linier $y = m \\cdot x$ di mana gradien kemiringan garis $m = \\frac{\\Delta V}{\\Delta I} = R$ merepresentasikan nilai hambatan listrik. **Tips:** Tertukar antara grafik $V-I$ (gradien $= R$) dengan grafik $I-V$ (gradien $= \\frac{1}{R}$ / konduktansi, )."
   },
   {
     "id": "fis-kin-ukur-ketidakpastian-010",
@@ -10360,7 +10673,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ketidakpastian & Evaluasi Data",
     "subTopic": "Ketidakpastian & Evaluasi Data",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Akurasi mengukur kedekatan nilai rata-rata hasil ukur terhadap nilai sebenarnya (true value). Presisi mengukur kedekatan pengulangan data satu sama lain (reproducibility/varians kecil). Kesalahan sistematik menyebabkan pergeseran konstan (presisi tinggi tetapi akurasi rendah)."
   },
   {
     "id": "fis-kin-ukur-mikro-006",
@@ -10393,7 +10707,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesalahan titik nol positif ($Z > 0$) pada mikrometer sekrup terjadi ketika rahang tertutup rapat tetapi garis nol skala putar berada di bawah garis acuan horizontal. Nilai sebenarnya adalah hasil bacaan terukur dikurangi nilai kesalahan nol: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-mikro-007",
@@ -10426,7 +10741,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesalahan titik nol negatif ($Z < 0$) terjadi bila garis nol bidal berada di atas garis acuan saat rahang rapat. Besar kesalahan nol negatif dihitung dari selisih pembagian total skala putar: $Z = - (50 - n) \\times 0{,}01\\text{ mm}$. Nilai sebenarnya: $x_{\\text{sebenarnya}} = x_{\\text{terukur}} - Z$."
   },
   {
     "id": "fis-kin-ukur-mikro-008",
@@ -10459,7 +10775,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Mikrometer sekrup vernier memiliki tiga tingkat pembacaan: skala utama ($0{,}5\\text{ mm}$), skala bidal ($0{,}01\\text{ mm}$), dan skala vernier longitudinal ($0{,}001\\text{ mm}$). Rumus pembacaan: $x = \\text{SU} + (\\text{Bidal} \\times 0{,}01\\text{ mm}) + (\\text{Vernier} \\times 0{,}001\\text{ mm})$."
   },
   {
     "id": "fis-kin-ukur-mikro-009",
@@ -10492,7 +10809,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan listrik kawat kawat silinder dihitung dengan rumus Pouillet $R = \\rho \\frac{L}{A}$. Dengan penampang lingkaran berdiameter $d$, luas penampang adalah $A = \\frac{1}{4} \\pi d^2$, sehingga $R = \\frac{4 \\rho L}{\\pi d^2}$."
   },
   {
     "id": "fis-kin-ukur-mikro-010",
@@ -10525,7 +10843,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mikrometer Sekrup",
     "subTopic": "Mikrometer Sekrup",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Volume bola dinyatakan dalam fungsi diameter: $V = \\frac{4}{3} \\pi \\left(\\frac{d}{2}\\right)^3 = \\frac{1}{6} \\pi d^3$. Berdasarkan aturan propagasi kesalahan untuk fungsi berpangkat $y = k x^n$, ketidakpastian relatif fraksionalnya adalah $\\frac{\\Delta y}{y} = n \\left(\\frac{\\Delta x}{x}\\right)$."
   },
   {
     "id": "fis-kin-ukur-neraca-006",
@@ -10558,7 +10877,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada neraca presisi empat lengan berketelitian centigram ($0{,}01\\text{ g}$), massa total dihitung dengan menjumlahkan keempat lengan: $m = m_1 + m_2 + m_3 + m_4$. Ketidakpastian mutlak pengukuran tunggal adalah $\\Delta m = \\frac{1}{2} \\times \\text{skala terkecil} = \\frac{1}{2} \\times 0{,}01\\text{ g} = 0{,}005\\text{ g}$."
   },
   {
     "id": "fis-kin-ukur-neraca-007",
@@ -10591,7 +10911,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa jenis benda padat dirumuskan sebagai $\\rho = \\frac{m}{V}$. Volume benda tak beraturan ditentukan melalui metode pemindahan zat cair: $V = V_2 - V_1$. Konversi satuan massa jenis: $1\\text{ g/cm}^3 = 1000\\text{ kg/m}^3$."
   },
   {
     "id": "fis-kin-ukur-neraca-008",
@@ -10624,7 +10945,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat kesetimbangan rotasi adalah jumlah momen gaya terhadap titik tumpu sama dengan nol: $\\sum \\tau = 0$. Maka torsi searah jarum jam oleh anting geser sama dengan torsi berlawanan jarum jam oleh beban piringan: $m_b \\cdot g \\cdot L_1 = m_a \\cdot g \\cdot L_2$."
   },
   {
     "id": "fis-kin-ukur-neraca-009",
@@ -10657,7 +10979,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kesalahan nol sistematik pada penimbangan: jika posisi awal neraca tanpa beban berada di bawah nol ($Z = -0{,}2\\text{ g}$), maka piringan membutuhkan gaya beban ekstra sebesar $0{,}2\\text{ g}$ agar sistem mencapai kesetimbangan nol. Massa sebenarnya dirumuskan: $m_{\\text{sebenarnya}} = m_{\\text{terbaca}} - Z$."
   },
   {
     "id": "fis-kin-ukur-neraca-010",
@@ -10690,7 +11013,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Neraca Tiga Lengan",
     "subTopic": "Neraca Tiga Lengan",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Konsentrasi massa larutan dirumuskan dengan $C = \\frac{m}{V}$. Menurut teori propagasi ketidakpastian untuk operasi pembagian, ketidakpastian relatif total adalah penjumlahan dari ketidakpastian relatif massa dan ketidakpastian relatif volume: $\\frac{\\Delta C}{C} = \\frac{\\Delta m}{m} + \\frac{\\Delta V}{V}$."
   },
   {
     "id": "fis-din-16",
@@ -10723,7 +11047,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jangka Sorong",
     "chapterTitle": "Kinematika",
     "subChapterId": "fis-kin-ukur",
-    "subTopicSlug": "jangka-sorong"
+    "subTopicSlug": "jangka-sorong",
+    "hint": "Konsep: Hukum II Newton arah radial gerak melingkar vertikal di titik terendah: $T - mg = \\frac{m v^2}{R}$."
   },
   {
     "id": "fis-lis-dc-daya-006",
@@ -10756,7 +11081,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi pemanas listrik ($\\eta$) adalah perbandingan antara energi kalor yang diserap oleh air ($Q = m c \\Delta T$) terhadap total energi listrik yang dipasok ($W = P t$): $$\\eta = \\frac{m c \\Delta T}{P t} \\times 100\\%$$. **Tips:** Lupa mengubah satuan waktu 14 menit ke satuan detik ($840\\text{ s}$) saat menghitung energi listrik ($W = P t$)."
   },
   {
     "id": "fis-lis-dc-daya-007",
@@ -10789,7 +11115,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daya disipasi lampu adalah $P = I^2 R$. Pada susunan kombinasi, arus total cabang utama melewati lampu seri ($L_1$), sedangkan pada percabangan paralel arus terbagi dua sama besar ke lampu identik $L_2$ dan $L_3$."
   },
   {
     "id": "fis-lis-dc-daya-008",
@@ -10822,7 +11149,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Biaya listrik bulanan dihitung dari total konsumsi energi per hari dikalikan 30 hari dan dikalikan tarif per kWh: $$\\text{Biaya} = \\Sigma(P \\times t) \\times 30 \\times \\text{Tarif}$$. **Tips:** Lupa mengalikan jumlah unit lampu ($5 \\times 20\\text{ W}$) atau kesalahan perkalian aritmetika biaya."
   },
   {
     "id": "fis-lis-dc-daya-009",
@@ -10855,7 +11183,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jumlah kalor $Q$ yang diperlukan untuk mendidihkan air bernilai tetap. Pada tegangan tetap $V$, daya pemanas adalah $P = \\frac{V^2}{R}$. Karena $Q = P t = \\frac{V^2}{R} t$, diperoleh hubungan bahwa hambatan kumparan sebanding dengan waktu pemanasan ($R \\propto t$)."
   },
   {
     "id": "fis-lis-dc-daya-010",
@@ -10888,7 +11217,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi dan Daya Listrik",
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Motor listrik mengubah energi listrik menjadi energi mekanik. Tegangan sumber terbagi menjadi GGL balik motor ($\\mathcal{E}'$) dan tegangan jatuh resistif internal ($I r$): $$V = \\mathcal{E}' + I r$$ Daya output mekanik adalah $P_{\\text{out}} = \\mathcal{E}' I$ dan efisiensinya adalah $\\eta = \\frac{P_{\\text{out}}}{P_{\\text{in}}} \\times 100\\%$."
   },
   {
     "id": "fis-lis-dc-kirchhoff-006",
@@ -10921,7 +11251,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan analisis simpul (Nodal Analysis) berbasis Hukum I Kirchhoff (KCL) pada simpul $A$: jumlah arus yang meninggalkan simpul sama dengan nol ($\\Sigma I_{\\text{keluar}} = 0$). **Tips:** Kesalahan tanda aljabar saat merumuskan persamaan simpul atau salah memasukkan polaritas sumber tegangan."
   },
   {
     "id": "fis-lis-dc-kirchhoff-007",
@@ -10954,7 +11285,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tentukan terlebih dahulu arus loop rangkaian tertutup menggunakan Hukum II Kirchhoff, kemudian hitung potensial mutlak titik $C$ dari titik acuan tanah ($V_D = 0$) melalui penelusuran lintasan."
   },
   {
     "id": "fis-lis-dc-kirchhoff-008",
@@ -10987,7 +11319,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema transfer daya maksimum (Maximum Power Transfer Theorem) menyatakan bahwa daya yang diserap oleh beban $R_L$ mencapai nilai maksimum ketika nilai resistansi beban sama dengan resistansi dalam sumber tegangan ($R_L = r$). Daya maksimum dirumuskan sebagai: $$P_{\\text{maks}} = \\frac{\\mathcal{E}^2}{4r}$$."
   },
   {
     "id": "fis-lis-dc-kirchhoff-009",
@@ -11020,7 +11353,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema Thevenin menyatakan bahwa jaringan linier dua terminal dapat digantikan oleh sumber tegangan ekuivalen $V_{th}$ (tegangan rangkaian terbuka pada terminal) yang diseri dengan hambatan $R_{th}$ (hambatan ekuivalen saat sumber tegangan dinonaktifkan/hubung singkat)."
   },
   {
     "id": "fis-lis-dc-kirchhoff-010",
@@ -11053,7 +11387,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I dan II Kirchhoff",
     "subTopic": "Hukum I dan II Kirchhoff",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan Teorema Millman atau analisis simpul untuk cabang paralel multi-sumber guna menghitung beda potensial pada beban lampu ($V_L$), kemudian hitung arus lampu melalui $I_L = \\frac{V_L}{R}$. **Tips:** Siswa sering merata-ratakan GGL baterai secara langsung tanpa memperhitungkan pengaruh beban luar $R$."
   },
   {
     "id": "fis-lis-dc-ohm-006",
@@ -11086,7 +11421,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan mikroskopis kuat arus listrik ($I$) dengan kecepatan hanyut elektron pembawa muatan ($v_d$) dirumuskan sebagai: $$I = n e A v_d \\implies v_d = \\frac{I}{n e A}$$ di mana $A = \\pi r^2$ adalah luas penampang kawat. **Tips:** Siswa sering mengira elektron mengalir dengan kecepatan mendekati kecepatan cahaya."
   },
   {
     "id": "fis-lis-dc-ohm-007",
@@ -11119,7 +11455,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan aksial silinder berongga dihitung dengan rumus hambatan kawat $R = \\rho \\frac{L}{A}$, dengan luas penampang konduktor berbentuk cincin melingkar: $$A = \\pi (r_2^2 - r_1^2)$$."
   },
   {
     "id": "fis-lis-dc-ohm-008",
@@ -11152,7 +11489,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan filamen lampu adalah konstan: $R = \\frac{V_0^2}{P_0}$. Daya yang diserap pada tegangan baru $V$ dirumuskan sebagai: $$P = \\frac{V^2}{R} = \\left(\\frac{V}{V_0}\\right)^2 P_0$$."
   },
   {
     "id": "fis-lis-dc-ohm-009",
@@ -11185,7 +11523,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hambatan saat filamen membara panas dihitung dari Hukum Ohm $R = \\frac{V}{I}$. Kenaikan suhu $\\Delta T$ diperoleh dari hubungan termal hambatan: $R = R_0(1 + \\alpha \\Delta T)$. Suhu akhir adalah $T = T_0 + \\Delta T$."
   },
   {
     "id": "fis-lis-dc-ohm-010",
@@ -11218,7 +11557,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Ohm & Hambatan",
     "subTopic": "Hukum Ohm & Hambatan",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Arus transmisi ditentukan oleh daya dan tegangan saluran: $I = \\frac{P}{V}$. Daya yang hilang akibat disipasi kalor Joule pada kawat saluran adalah: $$P_{\\text{rugi}} = I^2 R = \\left(\\frac{P}{V}\\right)^2 R = \\frac{P^2 R}{V^2}$$ Daya rugi berbanding terbalik dengan kuadrat tegangan transmisi ($P_{\\text{rugi}} \\propto \\frac{1}{V^2}$)."
   },
   {
     "id": "fis-lis-dc-rangkaian-006",
@@ -11251,7 +11591,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0$$ Daya disipasi pada suatu resistor adalah $P = I^2 R$."
   },
   {
     "id": "fis-lis-dc-rangkaian-007",
@@ -11284,7 +11625,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Analisis tegangan simpul (Nodal Analysis) menerapkan KCL pada simpul $A$: jumlah arus yang meninggalkan simpul sama dengan nol ($\\Sigma I_{\\text{keluar}} = 0$). **Tips:** Kesalahan tanda saat menuliskan persamaan loop atau salah memasukkan polaritas baterai, serta kekeliruan aritmetika pecahan."
   },
   {
     "id": "fis-lis-dc-rangkaian-008",
@@ -11317,7 +11659,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jembatan Wheatstone dikatakan setimbang apabila hasil kali nilai resistansi lengan yang saling berseberangan bernilai sama: $$R_1 \\times R_4 = R_2 \\times R_3$$ Dalam keadaan setimbang, potensial pada kedua ujung cabang diagonal bernilai sama sehingga tidak ada arus yang mengalir melalui cabang tengah ($I_G = 0$)."
   },
   {
     "id": "fis-lis-dc-rangkaian-009",
@@ -11350,7 +11693,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk memperbesar batas ukur amperemeter sebanyak $n$ kali lipat ($n = \\frac{I}{I_A}$), dipasang resistor shunt ($R_{sh}$) secara paralel dengan galvanometer: $$R_{sh} = \\frac{R_A}{n - 1}$$."
   },
   {
     "id": "fis-lis-dc-rangkaian-010",
@@ -11383,7 +11727,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rangkaian Seri dan Paralel",
     "subTopic": "Rangkaian Seri dan Paralel",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada rangkaian RC arus searah: - Saat awal sakelar ditutup ($t = 0$), kapasitor belum menyimpan muatan ($q = 0 \\implies V_C = 0$), sehingga berlaku seperti kawat hubung singkat (short circuit) dengan arus maksimum $I_0 = \\frac{V}{R}$. - Pada keadaan tunak ($t \\to \\infty$), kapasitor terisi penuh muatan hingga $V_C = V$, sehingga berlaku seperti rangkaian terbuka (open circuit) dan arus berhenti mengalir ($I_\\infty = 0$)."
   },
   {
     "id": "sedang-fis-15",
@@ -11416,7 +11761,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Energi dan Daya Listrik",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-dc",
-    "subTopicSlug": "energi-dan-daya-listrik"
+    "subTopicSlug": "energi-dan-daya-listrik",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Sigma \\mathcal{E} + \\Sigma (I R) = 0 \\implies I = \\frac{\\mathcal{E}_1 - \\mathcal{E}_2}{R_{\\text{total}}}$$ Daya disipasi resistor: $P = I^2 R$."
   },
   {
     "id": "fis-lis-statis-coulomb-006",
@@ -11449,7 +11795,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar resultan gaya Coulomb pada muatan uji di antara dua muatan sejenis bernilai nol, gaya tolak dari muatan $A$ harus seimbang dengan gaya tolak dari muatan $B$: $$F_{AC} = F_{BC} \\implies k \\frac{q_A q_C}{r_{AC}^2} = k \\frac{q_B q_C}{r_{BC}^2}$$."
   },
   {
     "id": "fis-lis-statis-coulomb-007",
@@ -11482,7 +11829,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gaya elektrostatik merupakan besaran vektor. Resultan dua gaya $F_1$ dan $F_2$ yang membentuk sudut apit $\\theta$ dihitung menggunakan aturan kosinus penjumlahan vektor: $$F_{\\text{res}} = \\sqrt{F_1^2 + F_2^2 + 2 F_1 F_2 \\cos\\theta}$$."
   },
   {
     "id": "fis-lis-statis-coulomb-008",
@@ -11515,7 +11863,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Salah satu muatan berinteraksi dengan tiga muatan lainnya: dua muatan pada sisi bujur sangkar berjarak $a$ yang saling tegak lurus, dan satu muatan pada sudut diagonal berjarak $a\\sqrt{2}$. Resultan gaya diperoleh dari penjumlahan vektor ketiganya."
   },
   {
     "id": "fis-lis-statis-coulomb-009",
@@ -11548,7 +11897,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kesetimbangan statis sebuah bola bermuatan yang digantung tali, berlaku $\\Sigma F_x = 0$ dan $\\Sigma F_y = 0$: $$T \\sin\\theta = F_e$$ $$T \\cos\\theta = m g$$ Maka berlaku hubungan: $\\tan\\theta = \\frac{F_e}{m g} \\implies F_e = m g \\tan\\theta$."
   },
   {
     "id": "fis-lis-statis-coulomb-010",
@@ -11581,7 +11931,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Muatan Listrik & Hukum Coulomb",
     "subTopic": "Muatan Listrik & Hukum Coulomb",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar seluruh sistem seimbang, gaya neto pada setiap muatan harus nol. Muatan tengah yang simetris selalu berada dalam kesetimbangan ($F_{\\text{net}} = 0$) untuk sembarang nilai $q$. Oleh karena itu, nilai $q$ ditentukan oleh syarat kesetimbangan pada salah satu muatan $+Q$ di ujung."
   },
   {
     "id": "fis-lis-statis-keping-006",
@@ -11614,7 +11965,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat kapasitor dilepas dari baterai, muatan listrik pada keping terisolasi sehingga nilainya kekal konstan ($Q = Q_0$). Penyisipan bahan dielektrik dengan konstanta $K$ mengubah kapasitas menjadi $C = K C_0$, beda potensial menjadi $V = \\frac{Q}{C} = \\frac{V_0}{K}$, dan energi menjadi $W = \\frac{Q^2}{2C} = \\frac{W_0}{K}$. **Tips:** Sering tertukar antara kasus baterai dilepas ($Q$ konstan) dengan kasus baterai tetap terhubung ($V$ konstan)."
   },
   {
     "id": "fis-lis-statis-keping-007",
@@ -11647,7 +11999,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada rangkaian kombinasi seri-paralel, tentukan terlebih dahulu kapasitas pengganti total untuk memperoleh muatan total yang dialirkan sumber. Muatan pada komponen yang tersusun seri sama dengan muatan total."
   },
   {
     "id": "fis-lis-statis-keping-008",
@@ -11680,7 +12033,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Medan listrik total $E$ di antara dua keping kapasitor merupakan resultan superposisi dari medan yang dihasilkan oleh keping positif ($E_1$) dan keping negatif ($E_2$), di mana $E = E_1 + E_2 = 2E_1 \\implies E_1 = \\frac{1}{2}E$. Gaya pada salah satu keping diakibatkan oleh medan keping lainnya saja, bukan oleh medan total."
   },
   {
     "id": "fis-lis-statis-keping-009",
@@ -11713,7 +12067,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kapasitor yang diisi sebagian dielektrik secara paralel terhadap permukaan keping dapat dimodelkan sebagai dua buah kapasitor yang tersusun secara seri dengan ketebalan celah masing-masing: $$\\frac{1}{C_{\\text{eff}}} = \\frac{1}{C_1} + \\frac{1}{C_2}$$."
   },
   {
     "id": "fis-lis-statis-keping-010",
@@ -11746,7 +12101,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keping Sejajar",
     "subTopic": "Keping Sejajar",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada penggabungan dua kapasitor, muatan total kekal ($Q_{\\text{awal}} = Q_{\\text{akhir}}$), namun sebagian energi elektrostatik selalu terdisipasi menjadi panas pada kawat penghubung dan radiasi elektromagnetik: $$\\Delta W = W_{\\text{awal}} - W_{\\text{akhir}}$$."
   },
   {
     "id": "fis-lis-statis-medan-006",
@@ -11779,7 +12135,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk dua muatan yang berlawanan jenis, kuat medan listrik tidak mungkin nol di antara kedua muatan (karena vektor medannya searah). Titik bernilai nol harus berada di luar bentang kedua muatan, tepatnya di sisi yang lebih dekat dengan muatan yang memiliki magnitudo (nilai mutlak) lebih kecil. **Tips:** Mencari titik nol di antara kedua muatan."
   },
   {
     "id": "fis-lis-statis-medan-007",
@@ -11812,7 +12169,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuat medan listrik resultan di titik $O$ merupakan penjumlahan vektor dari medan listrik yang ditimbulkan oleh muatan di $A$ dan muatan di $B$: $$\\vec{E}_{O} = \\vec{E}_A + \\vec{E}_B$$ Karena sumbu-$x$ dan sumbu-$y$ saling tegak lurus, besar resultannya adalah $E_{\\text{res}} = \\sqrt{E_A^2 + E_B^2}$."
   },
   {
     "id": "fis-lis-statis-medan-008",
@@ -11845,7 +12203,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluks listrik ($\\Phi$) didefinisikan sebagai jumlah garis medan listrik yang menembus suatu luasan bidang secara tegak lurus: $$\\Phi = E A \\cos\\theta$$ dengan $\\theta$ adalah sudut antara arah medan listrik dengan garis normal bidang (vektor luas $\\vec{A}$)."
   },
   {
     "id": "fis-lis-statis-medan-009",
@@ -11878,7 +12237,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Distribusi medan listrik pada bola konduktor bermuatan bergantung pada posisinya terhadap jari-jari bola $R$: - Di dalam bola ($r < R$): $E = 0$ - Di permukaan ($r = R$): $E = E_0 = k\\frac{Q}{R^2}$ - Di luar bola ($r > R$): $E = k\\frac{Q}{r^2}$. **Tips:** Mengira medan di dalam bola berbanding lurus dengan jarak seperti pada bola isolator bermuatan merata."
   },
   {
     "id": "fis-lis-statis-medan-010",
@@ -11911,7 +12271,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kuat Medan Listrik",
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gerak partikel bermuatan dalam medan listrik homogen tegak lurus analog dengan gerak parabola peluru. Gerak horizontal merupakan gerak lurus beraturan (GLB) dan gerak vertikal merupakan gerak lurus berubah beraturan (GLBB)."
   },
   {
     "id": "fis-lis-statis-potensial-006",
@@ -11944,7 +12305,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Potensial listrik adalah besaran skalar, sehingga potensial total di titik $P$ merupakan penjumlahan aljabar biasa dari potensial yang dihasilkan oleh masing-masing muatan: $$V_P = V_A + V_B = k \\frac{q_A}{r_A} + k \\frac{q_B}{r_B} = 0$$."
   },
   {
     "id": "fis-lis-statis-potensial-007",
@@ -11977,7 +12339,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan hukum kekekalan energi mekanik, energi potensial listrik yang hilang diubah seluruhnya menjadi energi kinetik partikel: $$q \\Delta V = \\Delta E_k = \\frac{1}{2} m v^2 \\implies v = \\sqrt{\\frac{2 q \\Delta V}{m}}$$."
   },
   {
     "id": "fis-lis-statis-potensial-008",
@@ -12010,7 +12373,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan antara kuat medan listrik homogen $E$ dan beda potensial antar pelat $\\Delta V$ adalah $E = \\frac{\\Delta V}{d}$. Usaha oleh gaya medan listrik adalah $W = \\vec{F} \\cdot \\Delta \\vec{s} = q \\vec{E} \\cdot \\Delta \\vec{s}$. **Tips:** Lupa memperhatikan tanda aljabar muatan elektron."
   },
   {
     "id": "fis-lis-statis-potensial-009",
@@ -12043,7 +12407,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi potensial elektrostatik total dari sistem多-muatan dihitung dari jumlahan energi potensial setiap pasangan muatan yang unik: $$E_{p,\\text{total}} = k \\left(\\frac{q_1 q_2}{r_{12}} + \\frac{q_1 q_3}{r_{13}} + \\frac{q_2 q_3}{r_{23}}\\right)$$. **Tips:** Hanya menghitung dua pasang interaksi dan melupakan pasangan ketiga, atau mengabaikan tanda minus pada muatan $q_3$."
   },
   {
     "id": "fis-lis-statis-potensial-010",
@@ -12076,7 +12441,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Energi Potensial & Potensial Listrik",
     "subTopic": "Energi Potensial & Potensial Listrik",
     "chapterTitle": "Kelistrikan",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Potensial di setiap titik merupakan superposisi dari kontribusi kedua kulit bola bermuatan. Untuk kulit bermuatan $q$ dan jari-jari $R$, potensial di titik berjarak $r \\le R$ adalah $k\\frac{q}{R}$, sedangkan untuk $r \\ge R$ adalah $k\\frac{q}{r}$."
   },
   {
     "id": "sedang-fis-06",
@@ -12109,7 +12475,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Kuat Medan Listrik",
     "chapterTitle": "Kelistrikan",
     "subChapterId": "fis-lis-statis",
-    "subTopicSlug": "kuat-medan-listrik"
+    "subTopicSlug": "kuat-medan-listrik",
+    "hint": "Kuat Medan Listrik Nol di Antara Dua Muatan Sejenis: Karena kedua muatan sejenis (keduanya positif), kuat medan listrik bernilai nol di suatu titik di antara keduanya: $$E_A = E_B \\implies k \\frac{q_A}{x^2} = k \\frac{q_B}{(d - x)^2} \\implies \\frac{\\sqrt{q_A}}{x} = \\frac{\\sqrt{q_B}}{d - x}$$. **Tips:** Perhatikan pertanyaan: jarak diukur dari muatan A atau muatan B."
   },
   {
     "id": "fis-termo-gas-boyle-006",
@@ -12142,7 +12509,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tekanan mutlak di kedalaman danau merupakan penjumlahan tekanan atmosfer dan tekanan hidrostatis: $$P_1 = P_0 + \\rho \\times g \\times h$$ Di permukaan danau, tekanannya adalah tekanan atmosfer murni: $P_2 = P_0$. Karena suhu konstan (isotermal), berlaku Hukum Boyle: $P_1 \\times V_1 = P_2 \\times V_2$."
   },
   {
     "id": "fis-termo-gas-boyle-007",
@@ -12175,7 +12543,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tekanan total gas di bawah piston adalah jumlah tekanan atmosfer dan tekanan akibat berat piston beserta beban: $$P = P_0 + \\frac{m_{\\text{total}} \\times g}{A}$$ Volume gas dalam silinder berpenampang $A$ adalah $V = A \\times h$. Karena proses berlangsung isotermal, berlaku Hukum Boyle: $P_1 \\times h_1 = P_2 \\times h_2$."
   },
   {
     "id": "fis-termo-gas-boyle-008",
@@ -12208,7 +12577,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena volume tabung gas kaku bernilai konstan (proses isokhorik), hubungan tekanan dan suhu gas ideal memenuhi Hukum Gay-Lussac: $$\\frac{P_1}{T_1} = \\frac{P_2}{T_2}$$ dengan $T$ adalah suhu mutlak dalam skala Kelvin. **Tips:** Jebakan konversi satuan: $480\\text{ K}$ () adalah nilai dalam Kelvin, bukan dalam Celsius."
   },
   {
     "id": "fis-termo-gas-boyle-009",
@@ -12241,7 +12611,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keadaan awal saat kedua permukaan raksa sejajar: tekanan udara terperangkap sama dengan tekanan atmosfer luar ($P_1 = P_0 = 76\\text{ cmHg}$). Keadaan akhir saat kaki terbuka lebih tinggi $\\Delta h = 24\\text{ cmHg}$: tekanan udara terperangkap meningkat menjadi $P_2 = P_0 + \\Delta h = 76 + 24 = 100\\text{ cmHg}$. Karena suhu konstan (isotermal), volume sebanding dengan panjang kolom ($V = A \\times L$), sehingga berlaku Hukum Boyle: $P_1 \\times L_1 = P_2 \\times L_2$."
   },
   {
     "id": "fis-termo-gas-boyle-010",
@@ -12274,7 +12645,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle & Gay-Lussac",
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa jenis gas didefinisikan sebagai rasio massa terhadap volume ($\\rho = m/V$). Dari persamaan gas ideal $P V = n R T = \\frac{m}{M_r} R T$, diperoleh relasi massa jenis: $$P = \\frac{\\rho}{M_r} R T \\implies \\rho = \\frac{P \\times M_r}{R T}$$ Pada proses isotermal dengan jenis gas dan massa tetap, massa jenis gas berbanding lurus secara linier dengan tekanannya: $\\frac{\\rho_2}{\\rho_1} = \\frac{P_2}{P_1}$. **Tips:** Jangan mengira massa jenis berkurang saat tekanan naik."
   },
   {
     "id": "fis-termo-gas-gabungan-006",
@@ -12307,7 +12679,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan persamaan keadaan gabungan Boyle-Gay Lussac untuk sistem gas tertutup dengan suhu mutlak Kelvin ($K = ^\\circ\\text{C} + 273$): $$\\frac{P_1 \\times V_1}{T_1} = \\frac{P_2 \\times V_2}{T_2} \\implies V_2 = V_1 \\times \\left(\\frac{P_1}{P_2}\\right) \\times \\left(\\frac{T_2}{T_1}\\right)$$."
   },
   {
     "id": "fis-termo-gas-gabungan-007",
@@ -12340,7 +12713,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dari persamaan gas ideal $P V = n R T = \\frac{m}{M_r} R T$, karena volume wadah ($V$) dan jenis gas ($M_r$) tetap, massa gas yang tersisa di dalam tabung berbanding lurus dengan rasio $P/T$: $$\\frac{m_2}{m_1} = \\frac{P_2 / T_2}{P_1 / T_1} = \\frac{P_2 \\times T_1}{P_1 \\times T_2}$$ Persentase massa gas yang bocor/keluar adalah: $\\%m_{\\text{keluar}} = \\left(1 - \\frac{m_2}{m_1}\\right) \\times 100\\%$."
   },
   {
     "id": "fis-termo-gas-gabungan-008",
@@ -12373,7 +12747,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dari $n = \\frac{PV}{RT}$, sebelum dan sesudah kran dibuka berlaku: $$\\frac{P_{\\text{akhir}} \\times V_{\\text{total}}}{T_{\\text{akhir}}} = \\frac{P_A \\times V_A}{T_A} + \\frac{P_B \\times V_B}{T_B}$$ dengan $V_{\\text{total}} = V_A + V_B$."
   },
   {
     "id": "fis-termo-gas-gabungan-009",
@@ -12406,7 +12781,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kesetimbangan mekanis, piston berhenti bergerak ketika tekanan pada kedua sisi sama ($P_1' = P_2'$). Karena jumlah mol gas pada masing-masing kompartemen tertutup bernilai konstan, dari $\\frac{P V}{T} = \\text{konstan}$, maka perbandingan volume akhir sama dengan perbandingan suhu akhirnya: $$\\frac{V_1'}{T_1'} = \\frac{V_2'}{T_2'} \\implies \\frac{L_1'}{T_1'} = \\frac{L_2'}{T_2'}$$ dengan $L_1' + L_2' = L_{\\text{total}} = 80\\text{ cm}$."
   },
   {
     "id": "fis-termo-gas-gabungan-010",
@@ -12439,7 +12815,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum Boyle-Gay Lussac",
     "subTopic": "Hukum Boyle-Gay Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan antara tekanan, massa jenis, dan suhu mutlak gas ideal diturunkan dari persamaan keadaan: $$P = \\frac{\\rho}{M_r} R T \\implies \\rho = \\frac{P \\times M_r}{R \\times T}$$ Untuk gas yang sama ($M_r$ konstan), massa jenis berbanding lurus dengan tekanan dan berbanding terbalik dengan suhu mutlak: $$\\frac{\\rho_2}{\\rho_1} = \\left(\\frac{P_2}{P_1}\\right) \\times \\left(\\frac{T_1}{T_2}\\right)$$."
   },
   {
     "id": "fis-termo-gas-ideal-006",
@@ -12472,7 +12849,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kelajuan efektif akar kuadrat rata-rata ($v_{\\text{rms}}$) molekul gas ideal dirumuskan oleh: $$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}}$$ Agar dua jenis gas berbeda memiliki kelajuan efektif yang sama ($v_{\\text{rms}, 1} = v_{\\text{rms}, 2}$), maka rasio suhu mutlak terhadap massa molarnya harus sama: $$\\frac{T_1}{M_{r1}} = \\frac{T_2}{M_{r2}} \\implies T_2 = T_1 \\times \\frac{M_{r2}}{M_{r1}}$$. **Tips:** Lupa bahwa $v_{\\text{rms}}$ berbanding terbalik dengan akar massa molar."
   },
   {
     "id": "fis-termo-gas-ideal-007",
@@ -12505,7 +12883,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan teori kinetik gas, tekanan gas ideal ($P$) berhubungan langsung dengan kerapatan energi kinetik translasi total ($E_{k,\\text{tot}}$) per satuan volume ($V$): $$P = \\frac{2}{3} \\frac{E_{k,\\text{tot}}}{V}$$. **Tips:** Faktor pengali adalah $2/3$, bukan $3/2$ atau $1/2$."
   },
   {
     "id": "fis-termo-gas-ideal-008",
@@ -12538,7 +12917,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema ekipartisi energi untuk gas diatomik memiliki derajat kebebasan ($f$) yang bergantung pada rentang suhu: - Suhu rendah ($\\approx 100\\text{ K}$): 3 translasi ($f = 3$). - Suhu kamar/sedang ($\\approx 300\\text{ K}$): 3 translasi + 2 rotasi ($f = 5$). - Suhu tinggi ($T \\ge 1000\\text{ K}$): 3 translasi + 2 rotasi + 2 vibrasi ($f = 7$). Energi dalam total dirumuskan sebagai: $U = \\frac{f}{2} n R T$."
   },
   {
     "id": "fis-termo-gas-ideal-009",
@@ -12571,7 +12951,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada suhu mutlak yang sama ($T_A = T_B$), kelajuan efektif molekul gas ideal berbanding terbalik dengan akar kuadrat massa molar gas tersebut: $$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}} \\implies \\frac{v_{\\text{rms}, A}}{v_{\\text{rms}, B}} = \\sqrt{\\frac{M_{rB}}{M_{rA}}}$$."
   },
   {
     "id": "fis-termo-gas-ideal-010",
@@ -12604,7 +12985,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Umum Gas Ideal",
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perubahan energi dalam ($\\Delta U$) gas ideal hanya bergantung pada perubahan suhu mutlaknya (fungsi keadaan suhu): $$\\Delta U = \\frac{3}{2} n R \\Delta T$$ dengan $\\Delta T = T_2 - T_1$ dalam skala Kelvin atau Celsius (karena rentang satu derajat Celsius sama dengan satu Kelvin)."
   },
   {
     "id": "sup-fis-ter-03",
@@ -12637,7 +13019,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Hukum Boyle & Gay-Lussac",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "hukum-boyle-gay-lussac"
+    "subTopicSlug": "hukum-boyle-gay-lussac",
+    "hint": "Persamaan Keadaan Boyle-Gay Lussac: Untuk jumlah mol gas tetap pada ruang tertutup: $\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}$. Pastikan suhu selalu dalam skala Kelvin mutlak! **Tips:** Mengabaikan faktor suhu atau lupa bahwa suhu gas ideal wajib bersatuan Kelvin."
   },
   {
     "id": "sedang-fis-14",
@@ -12670,7 +13053,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Kelajuan Efektif Gas Ideal ($v_{\\text{rms}}$): $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T}$$."
   },
   {
     "id": "drill-gas-06",
@@ -12703,7 +13087,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Energi Dalam Gas Ideal Monoatomik: $$U = \\frac{3}{2} n R T$$ Faktor derajat kebebasan untuk gas monoatomik (seperti He, Ne, Ar) adalah 3 derajat kebebasan translasi ($f = 3$). **Tips:** Ingat faktor $\\frac{3}{2}$ untuk energi dalam monoatomik ($U = \\frac{3}{2} n R T = \\frac{3}{2} P V$)."
   },
   {
     "id": "drill-gas-07",
@@ -12736,7 +13121,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Kelajuan Efektif Molekul Gas Ideal: $$v_{\\text{rms}} = \\sqrt{\\frac{3 R T}{M_r}} \\implies v_{\\text{rms}} \\propto \\sqrt{T} \\implies T \\propto v_{\\text{rms}}^2$$."
   },
   {
     "id": "drill-gas-08",
@@ -12769,7 +13155,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Hubungan Kelajuan Efektif terhadap Massa Molar: Pada suhu yang sama, kelajuan efektif molekul berbanding terbalik dengan akar massa molarnya: $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies \\frac{v_1}{v_2} = \\sqrt{\\frac{M_{r2}}{M_{r1}}}$$."
   },
   {
     "id": "drill2-gas-04",
@@ -12802,7 +13189,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Gunakan perumusan konsep fisis: $$\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\implies P_2 = P_1 \\left( \\frac{V_1}{V_2} \\right) \\left( \\frac{T_2}{T_1} \\right)$$. **Tips:** ⚠️ Efek Berganda: Suhu naik $2\\times \\implies$ tekanan naik $2\\times$."
   },
   {
     "id": "drill2-gas-05",
@@ -12835,7 +13223,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Energi Dalam Gas Ideal Monoatomik: $$U = \\frac{3}{2} n R T$$."
   },
   {
     "id": "drill2-gas-06",
@@ -12868,7 +13257,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Perbandingan Kelajuan Efektif $v_{\\text{rms}}$: $$v_{\\text{rms}} = \\sqrt{\\frac{3RT}{M_r}} \\implies \\frac{v_{He}}{v_{O_2}} = \\sqrt{\\frac{M_{r, O_2}}{M_{r, He}}}$$. **Tips:** ⚠️ Jangan Lupa Bentuk Akar: Nilai perbandingannya adalah $\\sqrt{8}$, bukan $8$."
   },
   {
     "id": "drill2-gas-07",
@@ -12901,7 +13291,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Ketergantungan Energi Kinetik terhadap Suhu Kelvin: $$\\overline{E_k} \\propto T \\implies \\frac{\\overline{E_{k2}}}{\\overline{E_{k1}}} = \\frac{T_2}{T_1}$$ Wajib menggunakan satuan mutlak Kelvin! **Tips:** Menggunakan Celsius langsung: $\\frac{327}{27} \\approx 12{,}1$ (SALAH!)."
   },
   {
     "id": "sup-fis-ter-04",
@@ -12934,7 +13325,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Gunakan perumusan konsep fisis: $\\Delta U = Q - W$, dengan konvensi tanda: • $Q > 0$ jika sistem menyerap kalor. • $W > 0$ jika sistem melakukan usaha ke lingkungan."
   },
   {
     "id": "drill2-ter-06",
@@ -12967,7 +13359,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Umum Gas Ideal",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-gas",
-    "subTopicSlug": "persamaan-umum-gas-ideal"
+    "subTopicSlug": "persamaan-umum-gas-ideal",
+    "hint": "Usaha pada Proses Isotermal: $$W = n R T \\ln\\left( \\frac{V_2}{V_1} \\right)$$."
   },
   {
     "id": "fis-termo-global-dampak-006",
@@ -13000,7 +13393,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pemuaian volume zat cair dirumuskan: $\\Delta V = V_0 \\times \\gamma \\times \\Delta T$. Karena cekungan samudra dibatasi oleh daratan benua sehingga luas permukaan samudra ($A$) praktis konstan, maka pertambahan volume air terwujud sebagai kenaikan tinggi kolom permukaan laut secara vertikal (pemuaian linear vertikal zat cair yang terkekang horizontal): $$\\Delta V = A \\times \\Delta h \\implies \\frac{\\Delta h}{h_0} = \\gamma \\times \\Delta T \\implies \\Delta h = h_0 \\times \\gamma \\times \\Delta T$$. **Tips:** Jangan membagi koefisien muai volume dengan 3."
   },
   {
     "id": "fis-termo-global-dampak-007",
@@ -13033,7 +13427,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluks radiasi yang diserap suatu permukaan dihitung dari fraksi serapan $(1 - \\alpha)$ dikalikan fluks datang $I_0$: $$I_{\\text{serap}} = I_0 (1 - \\alpha)$$ Pertambahan fluks serapan saat terjadi pergantian tutupan permukaan dari es ke laut terbuka adalah: $$\\Delta I_{\\text{serap}} = I_0 \\left[(1 - \\alpha_{\\text{laut}}) - (1 - \\alpha_{\\text{es}})\\right] = I_0 (\\alpha_{\\text{es}} - \\alpha_{\\text{laut}})$$. **Tips:** Hati-hati: ($285\\text{ W/m}^2$) adalah daya serap total setelah menjadi air laut, bukan pertambahannya."
   },
   {
     "id": "fis-termo-global-dampak-008",
@@ -13066,7 +13461,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kekekalan massa berlaku saat es melebur menjadi air: $$m = \\rho_{\\text{es}} \\times V_{\\text{es}} = \\rho_{\\text{air}} \\times V_{\\text{air}} \\implies V_{\\text{air}} = V_{\\text{es}} \\times \\frac{\\rho_{\\text{es}}}{\\rho_{\\text{air}}}$$ Kenaikan tinggi rata-rata muka air laut ($\\Delta h$) diperoleh dengan membagi volume air cair tambahan dengan luas permukaan samudra dunia ($A_{\\text{samudra}}$): $$\\Delta h = \\frac{V_{\\text{air}}}{A_{\\text{samudra}}}$$."
   },
   {
     "id": "fis-termo-global-dampak-009",
@@ -13099,7 +13495,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tipping point dalam dinamika iklim adalah ambang batas kritis di mana perubahan kecil dapat memicu perubahan sistemik skala besar yang tidak dapat dipulihkan (irreversible). Ketika permafrost mencair, mikroorganisme tanah menjadi aktif dan mendekomposisi bahan organik yang sebelumnya terawetkan dalam kondisi beku, melepaskan miliaran ton gas metana ($\\text{CH}_4$) dan $\\text{CO}_2$. Gas rumah kaca ini semakin meningkatkan suhu atmosfer, yang memicu pencairan permafrost lebih luas lagi secara swasembada (siklus umpan balik positif tak terkendali)."
   },
   {
     "id": "fis-termo-global-dampak-010",
@@ -13132,7 +13529,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penyebab & Dampak Pemanasan Global",
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Prinsip Sirkulasi Termohalin (AMOC): - Penggerak utama (engine) sirkulasi laut dalam adalah pembentukan air padat (dense water) di Atlantik Utara: pendinginan udara kutub (termo) dan pembentukan es laut menyisakan garam di air cair sehingga meningkatkan salinitas (halin). Air dengan kerapatan tinggi ini tenggelam (deep water formation). - Air leburan gletser Greenland adalah air tawar murni (salinitas $0\\text{ PSU}$). Masuknya volume masif air tawar mengencerkan air laut, menurunkan massa jenisnya secara drastis ($\\rho_{\\text{tawar}} < \\rho_{\\text{asin}}$), sehingga air permukaan tetap mengapung dan tidak dapat tenggelam ke dasar laut. **Tips:** Air leburan es gletser daratan adalah AIR TAWAR, bukan air asin."
   },
   {
     "id": "fis-termo-global-efek-006",
@@ -13165,7 +13563,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Model kesetimbangan energi satu lapis atmosfer (Single-layer Greenhouse Model): 1. Kesetimbangan radiasi atmosfer: Atmosfer menyerap fluks dari bumi ($\\sigma T_s^4$) dan memancarkan radiasi ke atas dan ke bawah: $$\\sigma T_s^4 = 2\\sigma T_a^4 \\implies \\sigma T_a^4 = \\frac{1}{2}\\sigma T_s^4$$ 2. Kesetimbangan di puncak atmosfer (TOA): Fluks matahari masuk harus sama dengan fluks keluar ke angkasa luar: $$\\sigma T_e^4 = \\sigma T_a^4$$."
   },
   {
     "id": "fis-termo-global-efek-007",
@@ -13198,7 +13597,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Emisi ekuivalen karbon dioksida ($\\text{CO}_2\\text{e}$) dihitung dengan menjumlahkan hasil kali massa masing-masing gas rumah kaca dengan nilai GWP-nya: $$\\text{Massa } \\text{CO}_2\\text{e} = \\sum (m_i \\times \\text{GWP}_i)$$."
   },
   {
     "id": "fis-termo-global-efek-008",
@@ -13231,7 +13631,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Mekanisme umpan balik (feedback loop) dalam sistem iklim: - Umpan balik positif (positive feedback): proses di mana perubahan awal pada suatu variabel menyebabkan perubahan variabel lain yang dampaknya memperkuat perubahan awal tersebut (amplifikasi ketidakstabilan). - Contoh klasik adalah umpan balik uap air (water vapor feedback) dan umpan balik albedo es (ice-albedo feedback). - Umpan balik negatif (negative feedback): mekanisme yang meredam atau melawan perubahan awal menuju kesetimbangan baru."
   },
   {
     "id": "fis-termo-global-efek-009",
@@ -13264,7 +13665,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jendela atmosfer inframerah ($8-12\\text{ }\\mu\\text{m}$) adalah rentang transparan tempat radiasi termal bumi dapat lepas ke antariksa tanpa terhambat $\\text{H}_2\\text{O}$ dan $\\text{CO}_2$. Senyawa halokarbon buatan manusia (CFC, HCFC, HFC, $\\text{SF}_6$) memiliki ikatan karbon-fluor dan karbon-klor yang frekuensi vibrasi resonansinya tepat berada pada rentang jendela atmosfer ($8-12\\text{ }\\mu\\text{m}$). Akibatnya, gas-gas ini menutup celah transmisi kalor bumi yang sebelumnya terbuka, menghasilkan efisiensi penyerapan panas per molekul hingga ribuan kali lipat dibandingkan $\\text{CO}_2$."
   },
   {
     "id": "fis-termo-global-efek-010",
@@ -13297,7 +13699,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Efek Rumah Kaca",
     "subTopic": "Efek Rumah Kaca",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluks radiasi surya yang datang ke bumi disebarkan ke seluruh luas permukaan bola bumi ($4\\pi R^2$), sehingga fluks surya rata-rata insiden di puncak atmosfer adalah: $$\\bar{F}_{\\text{in}} = \\frac{S \\times \\pi R^2}{4\\pi R^2} = \\frac{S}{4}$$ Fluks yang diserap permukaan bumi setelah dikurangi fraksi albedo yang dipantulkan ($\\alpha$) dirumuskan: $$F_{\\text{serap}} = \\frac{S}{4} (1 - \\alpha)$$."
   },
   {
     "id": "fis-termo-global-mitigasi-006",
@@ -13330,7 +13733,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Reduksi emisi gas rumah kaca dihitung dari perkalian antara energi listrik terbarukan yang disubstitusikan ($E$) dengan intensitas emisi karbon pembangkit listrik fosil acuan ($FE$): $$\\Delta m_{\\text{CO}_2} = E \\times FE$$."
   },
   {
     "id": "fis-termo-global-mitigasi-007",
@@ -13363,7 +13767,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fluida superkritis adalah keadaan materi pada temperatur dan tekanan di atas titik kritis termodinamikanya ($T_c = 31{,}1^\\circ\\text{C}$ dan $P_c = 73{,}8\\text{ bar}$ untuk $\\text{CO}_2$). Pada keadaan superkritis, batas fase cair-gas lenyap sehingga materi memiliki kombinasi sifat fisis unik: 1. Kerapatan (densitas) tinggi mendekati cairan ($600 - 800\\text{ kg/m}^3$), menghemat volume penyimpanan secara drastis. 2. Viskositas rendah dan difusivitas tinggi menyerupai gas, meminimalkan kehilangan tekanan saat dipompa melalui pipa injeksi dan memaksimalkan kemampuan penetrasi ke celah mikroskopis batuan sedimen penampung."
   },
   {
     "id": "fis-termo-global-mitigasi-008",
@@ -13396,7 +13801,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada sistem Cap-and-Trade: 1. Surplus kuota (kredit karbon yang dapat dijual) = $\\text{Kuota} - \\text{Emisi Aktual}$. 2. Defisit kuota (kredit karbon yang wajib dibeli) = $\\text{Emisi Aktual} - \\text{Kuota}$. 3. Total biaya transaksi = $\\text{Defisit yang dibeli} \\times \\text{Harga per satuan ton}$. **Tips:** Jangan menggunakan surplus total Pabrik A ($6.000 \\times 30 = \\$180.000$, )."
   },
   {
     "id": "fis-termo-global-mitigasi-009",
@@ -13429,7 +13835,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Analisis siklus hidup neraca karbon BECCS: 1. Fase Pertumbuhan: Tanaman biomassa menyerap $\\text{CO}_2$ dari atmosfer melalui fotosintesis (aliran karbon: atmosfer $\\to$ biomassa, $\\Delta C < 0$). 2. Fase Pembangkitan: Biomassa dibakar menghasilkan energi kalor/listrik. 3. Fase Penangkapan & Sekuestrasi: Alih-alih dilepaskan ke udara, emisi $\\text{CO}_2$ cerobong ditangkap oleh unit CCS dan disimpan permanen di formasi geologi bawah tanah (aliran karbon: cerobong $\\to$ litosfer). Akibatnya, total karbon di atmosfer berkurang secara bersih (net-negative carbon balance)."
   },
   {
     "id": "fis-termo-global-mitigasi-010",
@@ -13462,7 +13869,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mitigasi Pemanasan Global",
     "subTopic": "Mitigasi Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Manajemen Radiasi Surya (SRM) terinspirasi oleh letusan gunung berapi besar (seperti Gunung Pinatubo 1991), di mana partikel aerosol belerang ($\\text{SO}_2 / \\text{SO}_4^{2-}$) di stratosfer menghamburkan dan memantulkan radiasi surya datang kembali ke luar angkasa, menaikkan albedo planetari bumi sehingga mendinginkan permukaan secara cepat. Namun, SRM hanya memanipulasi kesetimbangan radiasi insolasi surya dan sama sekali TIDAK menyerap atau mengurangi molekul gas $\\text{CO}_2$ di atmosfer. Oleh karena itu, konsentrasi $\\text{CO}_2$ yang tetap tinggi terus larut ke samudra dan menyebabkan pengasaman laut (ocean acidification) tanpa henti."
   },
   {
     "id": "sedang-fis-13",
@@ -13495,7 +13903,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Daya radiasi kalor berbanding lurus dengan pangkat empat suhu mutlaknya ($T$ dalam Kelvin): $$P = e \\sigma A T^4 \\implies P \\propto T^4$$."
   },
   {
     "id": "drill-pem-02",
@@ -13528,7 +13937,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Perbandingan Hukum Wien: $$\\lambda_1 T_1 = \\lambda_2 T_2 \\implies \\frac{\\lambda_2}{\\lambda_1} = \\frac{T_1}{T_2}$$. **Tips:** ⚠️ Ingat Hubungan Terbalik: Suhu naik $\\implies$ panjang gelombang mengecil/memendek , bukan membesar."
   },
   {
     "id": "drill-pem-05",
@@ -13561,7 +13971,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Perbandingan Daya Radiasi Termal: $$P = \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_B}{P_A} = \\left( \\frac{T_B}{T_A} \\right)^4$$ (karena jari-jari dan luas permukaan sama)."
   },
   {
     "id": "drill2-pem-04",
@@ -13594,7 +14005,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Gunakan perumusan konsep fisis: $$\\lambda_{\\max} \\cdot T = C \\implies T = \\frac{C}{\\lambda_{\\max}}$$."
   },
   {
     "id": "drill2-pem-05",
@@ -13627,7 +14039,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Mekanisme Umpan Balik Albedo Es (Ice-Albedo Feedback): • Lapisan es putih memiliki albedo tinggi ($70-80\\%$ radiasi dipantulkan). • Permukaan laut gelap memiliki albedo rendah (hanya memantulkan $\\approx 10\\%$, menyerap $90\\%$ radiasi). • Saat es mencair $\\to$ laut menyerap lebih banyak panas $\\to$ suhu laut naik $\\to$ es makin cepat mencair. **Tips:** ⚠️ Definisi Albedo: Permukaan putih/terang memiliki albedo tinggi (memantulkan)."
   },
   {
     "id": "drill2-pem-06",
@@ -13660,7 +14073,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Penyebab & Dampak Pemanasan Global",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-global",
-    "subTopicSlug": "penyebab-dampak-global"
+    "subTopicSlug": "penyebab-dampak-global",
+    "hint": "Intensitas Radiasi Benda Hitam: $$I = \\frac{P}{A} = e \\cdot \\sigma \\cdot T^4$$."
   },
   {
     "id": "fis-termo-hukum-carnot-006",
@@ -13693,7 +14107,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi mesin Carnot dirumuskan sebagai $\\eta = 1 - \\frac{T_L}{T_H}$, yang dapat diubah menjadi bentuk $T_H = \\frac{T_L}{1 - \\eta}$."
   },
   {
     "id": "fis-termo-hukum-carnot-007",
@@ -13726,7 +14141,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Efisiensi Carnot awal adalah $\\eta_0 = 1 - \\frac{T_L}{T_H} = 1 - \\frac{300}{600} = \\frac{1}{2} = 50\\%$. Kenaikan efisiensi dihitung dengan $\\Delta \\eta = \\eta_{\\text{baru}} - \\eta_0$."
   },
   {
     "id": "fis-termo-hukum-carnot-008",
@@ -13759,7 +14175,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koefisien performansi (Coefficient of Performance / $COP$) mesin pendingin Carnot dirumuskan sebagai: $$COP = \\frac{T_L}{T_H - T_L} = \\frac{Q_L}{W}$$ dan daya mekanik/listrik adalah laju usaha per satuan waktu: $P = \\frac{W}{t}$. **Tips:** Lupa mengubah satuan waktu 1 menit menjadi 60 detik saat menghitung daya listrik ($P = W/t$)."
   },
   {
     "id": "fis-termo-hukum-carnot-009",
@@ -13792,7 +14209,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk dua mesin Carnot yang tersusun secara seri di mana kalor buang mesin 1 ($Q$) menjadi kalor masuk mesin 2, relasi kalor dan suhu adalah $\\frac{Q_1}{T_1} = \\frac{Q}{T} = \\frac{Q_2}{T_2}$. Usaha mesin 1 adalah $W_1 = Q_1 - Q$ dan mesin 2 adalah $W_2 = Q - Q_2$."
   },
   {
     "id": "fis-termo-hukum-carnot-010",
@@ -13825,7 +14243,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Mesin Kalor & Siklus Carnot",
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koefisien performansi pompa kalor ($COP_{\\text{HP}}$) mengukur perbandingan kalor yang dialirkan ke reservoir panas ($Q_H$) terhadap usaha luar yang diberikan ($W$): $$COP_{\\text{HP}} = \\frac{Q_H}{W} = \\frac{T_H}{T_H - T_L} = 1 + COP_{\\text{refrigerator}}$$."
   },
   {
     "id": "fis-termo-hukum-hukum1-006",
@@ -13858,7 +14277,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta U_{\\text{siklus}} = \\Delta U_{AB} + \\Delta U_{BC} + \\Delta U_{CA} = 0$$. **Tips:** Hati-hati dengan tanda aljabar: $W_{CA} = Q_{CA} - \\Delta U_{CA} = (-50) - 100 = -150\\text{ J}$."
   },
   {
     "id": "fis-termo-hukum-hukum1-007",
@@ -13891,7 +14311,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan relasi Mayer untuk gas ideal, selisih kapasitas kalor molar pada tekanan tetap dan volume tetap adalah tetapan gas universal: $$C_p - C_v = R$$ Kalor pada tekanan tetap adalah $Q_p = n C_p \\Delta T$ dan pada volume tetap adalah $Q_v = n C_v \\Delta T$. Selisih kalor keduanya setara dengan usaha luar yang dilakukan gas pada pemuaian isobarik: $$Q_p - Q_v = n(C_p - C_v)\\Delta T = n R \\Delta T = W$$."
   },
   {
     "id": "fis-termo-hukum-hukum1-008",
@@ -13924,7 +14345,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\Delta U = Q - W$$ - Kalor penyerapan laten: $Q = m \\times L_u$. - Usaha luar ekspansi melawan tekanan atmosfer: $W = P \\times (V_{\\text{uap}} - V_{\\text{cair}})$. **Tips:** Kalor laten penguapan tidak seluruhnya menjadi energi dalam."
   },
   {
     "id": "fis-termo-hukum-hukum1-009",
@@ -13957,7 +14379,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada satu siklus termodinamika tertutup penuh, perubahan energi dalam total adalah nol ($\\Delta U_{\\text{siklus}} = 0$). Berdasarkan Hukum I Termodinamika: $$Q_{\\text{netto}} = \\Delta U_{\\text{siklus}} + W_{\\text{siklus}} = 0 + W_{\\text{siklus}} = W_{\\text{siklus}}$$ Usaha satu siklus persegi panjang sama dengan luas persegi panjang tersebut."
   },
   {
     "id": "fis-termo-hukum-hukum1-010",
@@ -13990,7 +14413,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum I Termodinamika",
     "subTopic": "Hukum I Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "- Karena dinding berinsulasi ideal: $Q = 0$ (tidak ada aliran kalor melintasi batas sistem). - Karena dinding kaku tak bergeser: $\\Delta V = 0 \\implies W = 0$ (tidak ada kerja mekanik luar). Maka perubahan energi dalam total sistem adalah: $$\\Delta U_{\\text{total}} = Q - W = 0 - 0 = 0$$. **Tips:** Jangan terkecoh dengan kenaikan suhu termometer di dalam bom."
   },
   {
     "id": "fis-termo-hukum-hukum2-006",
@@ -14023,7 +14447,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Entropi total semesta pada perpindahan kalor konduksi tak-reversibel di antara dua reservoir bersuhu tetap dirumuskan sebagai penjumlahan perubahan entropi reservoir panas dan reservoir dingin: $$\\Delta S_{\\text{semesta}} = \\Delta S_H + \\Delta S_C = -\\frac{Q}{T_H} + \\frac{Q}{T_C}$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-007",
@@ -14056,7 +14481,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada proses isotermal reversibel gas ideal, perubahan energi dalam $\\Delta U = 0$ sehingga $Q = W = nRT \\ln\\left(\\frac{V_2}{V_1}\\right)$. Maka perubahan entropi gas dirumuskan sebagai: $$\\Delta S = \\frac{Q}{T} = n R \\ln\\left(\\frac{V_2}{V_1}\\right)$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-008",
@@ -14089,7 +14515,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suhu sistem berubah secara kontinu dari $T_1$ ke $T_2$, perubahan entropi dihitung melalui integrasi: $$\\Delta S = \\int_{T_1}^{T_2} \\frac{dQ}{T} = \\int_{T_1}^{T_2} \\frac{m c\\, dT}{T} = m c \\ln\\left(\\frac{T_2}{T_1}\\right)$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-009",
@@ -14122,7 +14549,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema Carnot menyatakan bahwa tidak ada mesin kalor riil maupun reversibel yang dapat memiliki efisiensi lebih tinggi daripada efisiensi mesin Carnot ideal yang bekerja di antara dua batas reservoir suhu mutlak yang sama: $$\\eta_{\\text{maks}} = \\eta_{\\text{Carnot}} = 1 - \\frac{T_C}{T_H}$$."
   },
   {
     "id": "fis-termo-hukum-hukum2-010",
@@ -14155,7 +14583,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Hukum II Termodinamika",
     "subTopic": "Hukum II Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pencampuran tak-reversibel di dalam bejana adiabatik terisolasi, kalor diserap oleh fluida dingin dan dilepaskan oleh fluida panas ($Q_{\\text{lepas}} = Q_{\\text{terima}}$). Total perubahan entropi semesta adalah $\\Delta S_{\\text{semesta}} = \\Delta S_1 + \\Delta S_2$. **Tips:** Terkadang mengira sistem tertutup terisolasi tidak mengalami perubahan entropi total."
   },
   {
     "id": "fis-termo-hukum-proses-006",
@@ -14188,7 +14617,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha netto ($W_{\\text{net}}$) pada siklus tertutup dalam diagram $P-V$ setara dengan luas area tertutup di dalam kurva siklus: $$W_{\\text{siklus}} = \\text{Luas daerah tertutup}$$ Untuk siklus berbentuk segitiga: $W = \\frac{1}{2} \\times \\text{alas} \\times \\text{tinggi}$. Karena lintasan siklus berputar searah jarum jam (clockwise), usaha total bernilai positif (sistem menghasilkan kerja luar). **Tips:** Lupa mengalikan dengan faktor $1/2$ (menghitung luas persegi panjang penuh) akan menghasilkan $1200\\text{ kJ}$ ()."
   },
   {
     "id": "fis-termo-hukum-proses-007",
@@ -14221,7 +14651,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada proses adiabatik kuasistatis gas ideal berlaku relasi Poisson antara suhu mutlak dan volume: $$T_1 \\times V_1^{\\gamma - 1} = T_2 \\times V_2^{\\gamma - 1} \\implies T_2 = T_1 \\times \\left(\\frac{V_1}{V_2}\\right)^{\\gamma - 1}$$."
   },
   {
     "id": "fis-termo-hukum-proses-008",
@@ -14254,7 +14685,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum I Termodinamika, pada proses adiabatik tidak ada kalor yang mengalir ($Q = 0$): $$\\Delta U = Q - W \\implies \\Delta U = -W \\implies W = -\\Delta U$$ Untuk gas monoatomik, perubahan energi dalam adalah $\\Delta U = \\frac{3}{2} n R (T_2 - T_1)$, sehingga usaha luar bernilai: $$W = \\frac{3}{2} n R (T_1 - T_2)$$."
   },
   {
     "id": "fis-termo-hukum-proses-009",
@@ -14287,7 +14719,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kemiringan kurva pada diagram $P-V$ dicari dengan turunan pertama $\\frac{dP}{dV}$: 1. Kurva isotermal ($P = C_1 V^{-1}$): $$\\left(\\frac{dP}{dV}\\right)_{\\text{isotermal}} = -C_1 V^{-2} = -\\frac{P}{V}$$ 2. Kurva adiabatik ($P = C_2 V^{-\\gamma}$): $$\\left(\\frac{dP}{dV}\\right)_{\\text{adiabatik}} = -\\gamma C_2 V^{-\\gamma - 1} = -\\gamma \\frac{P}{V}$$ Rasio kemiringan kurva adiabatik terhadap kurva isotermal adalah $\\gamma$. **Tips:** Ingat bahwa $\\gamma = C_p/C_v > 1$."
   },
   {
     "id": "fis-termo-hukum-proses-010",
@@ -14320,7 +14753,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Proses Termodinamika",
     "subTopic": "Proses Termodinamika",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Hukum I Termodinamika: $Q = \\Delta U + W$. - Usaha isobarik: $W = P \\times \\Delta V$. - Perubahan energi dalam monoatomik: $\\Delta U = \\frac{3}{2} n R \\Delta T = \\frac{3}{2} P \\times \\Delta V$. - Kalor total yang diserap pada tekanan konstan: $Q = \\Delta U + W = \\frac{3}{2} P \\Delta V + P \\Delta V = \\frac{5}{2} P \\Delta V$."
   },
   {
     "id": "fis-termo-hukum-usaha-006",
@@ -14353,7 +14787,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha luar ($W$) pada diagram $P-V$ untuk lintasan garis lurus miring setara dengan luas daerah bangun trapesium yang dibatasi oleh kurva, sumbu volume, serta garis tegak $V = V_A$ dan $V = V_B$: $$W = \\frac{P_A + P_B}{2} \\times (V_B - V_A)$$."
   },
   {
     "id": "fis-termo-hukum-usaha-007",
@@ -14386,7 +14821,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karakteristik besaran termodinamika: 1. Energi dalam ($U$) adalah fungsi keadaan, sehingga perubahannya $\\Delta U = U_2 - U_1$ hanya bergantung pada keadaan awal 1 dan akhir 2, artinya $\\Delta U_{\\text{I}} = \\Delta U_{\\text{II}} = \\Delta U_{\\text{III}}$. 2. Usaha ($W = \\int P\\,dV$) adalah fungsi lintasan yang nilainya sama dengan luas area di bawah grafik $P-V$. Luas di bawah Lintasan I paling besar, diikuti Lintasan III (trapesium), dan Lintasan II memiliki luas paling kecil. **Tips:** Jangan menyimpulkan bahwa jika keadaan awal dan akhir sama maka usahanya juga sama."
   },
   {
     "id": "fis-termo-hukum-usaha-008",
@@ -14419,7 +14855,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha luar yang dilakukan oleh gas pada proses isotermal dirumuskan: $$W_{\\text{gas}} = n R T \\ln\\left(\\frac{V_2}{V_1}\\right)$$ Karena $V_2 < V_1$, $W_{\\text{gas}}$ bernilai negatif. Usaha yang dilakukan oleh lingkungan PADA gas bernilai positif: $W_{\\text{lingkungan}} = -W_{\\text{gas}} = n R T \\ln\\left(\\frac{V_1}{V_2}\\right)$."
   },
   {
     "id": "fis-termo-hukum-usaha-009",
@@ -14452,7 +14889,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Energi dalam total sistem campuran gas ideal adalah penjumlahan aljabar dari energi dalam masing-masing komponen gasnya: $$U_{\\text{total}} = U_{\\text{He}} + U_{\\text{N}_2} = \\left(\\frac{f_1}{2} n_1 R T\\right) + \\left(\\frac{f_2}{2} n_2 R T\\right)$$."
   },
   {
     "id": "fis-termo-hukum-usaha-010",
@@ -14485,7 +14923,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Usaha & Energi Dalam",
     "subTopic": "Usaha & Energi Dalam",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Usaha pada proses politropik $P V^n = C$ (untuk $n \\ne 1$) dihitung dari integrasi kalkulus: $$W = \\int_{V_1}^{V_2} P\\,dV = \\int_{V_1}^{V_2} C V^{-n}\\,dV = \\frac{C}{1 - n} \\left[V_2^{1 - n} - V_1^{1 - n}\\right] = \\frac{P_1 V_1 - P_2 V_2}{n - 1}$$. **Tips:** Perhatikan penyebut pada rumus politropik adalah $n - 1$."
   },
   {
     "id": "sedang-fis-04",
@@ -14518,7 +14957,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Mesin Kalor Carnot & Suhu Mutlak Kelvin: • Suhu WAJIB dalam skala Kelvin: $T(\\text{K}) = T(^\\circ\\text{C}) + 273$ • Efisiensi: $\\eta = 1 - \\frac{T_C}{T_H} = \\frac{W}{Q_H}$ • Hukum Kekekalan Energi: $W = Q_H - Q_C \\iff Q_C = Q_H - W$."
   },
   {
     "id": "drill-ter-06",
@@ -14551,7 +14991,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Hubungan Usaha dan Kalor Mesin: • $W = \\eta \\cdot Q_1$ • Menurut kekekalan energi: $Q_1 = W + Q_2 \\implies Q_2 = Q_1 - W$."
   },
   {
     "id": "drill-ter-07",
@@ -14584,7 +15025,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Suhu pada rumus efisiensi Carnot HARUS dalam skala Kelvin mutlak, tidak boleh menggunakan derajat Celsius! $$T\\text{ (K)} = T\\text{ (}^\\circ\\text{C)} + 273$$. **Tips:** Menghitung dengan Celsius: $\\eta = \\frac{327 - 27}{327} \\approx 91{,}7\\%$ (SALAH BESAR!)."
   },
   {
     "id": "drill-ter-08",
@@ -14617,7 +15059,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Koefisien Performansi Mesin Pendingin Carnot ($C_P$): $$C_P = \\frac{Q_2}{W} = \\frac{T_2}{T_1 - T_2}$$ dengan $T_2$ suhu ruang dingin dan $T_1$ suhu lingkungan panas (dalam Kelvin)."
   },
   {
     "id": "drill2-ter-04",
@@ -14650,7 +15093,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Efisiensi dan Usaha Carnot: $$\\eta = 1 - \\frac{T_2}{T_1} \\quad \\text{dan} \\quad \\eta = \\frac{W}{Q_1} \\implies Q_1 = \\frac{W}{\\eta}$$. **Tips:** ⚠️ Alur Terbalik: Jika diketahui usaha dan suhu, hitung efisiensi $\\eta$ terlebih dahulu, lalu cari $Q_1 = W / \\eta$."
   },
   {
     "id": "drill2-ter-05",
@@ -14683,7 +15127,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Prinsip Batas Efisiensi Carnot: Efisiensi mesin kalor ideal hanya bergantung pada rasio suhu mutlak kedua reservoir ($T_2/T_1$). Efisiensi meningkat jika selisih $(T_1 - T_2)$ diperbesar, yaitu dengan menaikkan $T_1$ setinggi mungkin dan/atau mendinginkan $T_2$ serendah mungkin."
   },
   {
     "id": "drill2-ter-07",
@@ -14716,7 +15161,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Mesin Kalor & Siklus Carnot",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-hukum",
-    "subTopicSlug": "mesin-kalor-carnot"
+    "subTopicSlug": "mesin-kalor-carnot",
+    "hint": "Koefisien Performansi Mesin Pendingin: $$C_P = \\frac{T_2}{T_1 - T_2}$$ dengan $T_2$ suhu ruang dingin dan $T_1$ suhu ruang panas dalam Kelvin."
   },
   {
     "id": "sedang-fis-12",
@@ -14749,7 +15195,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "asas-black"
+    "subTopicSlug": "asas-black",
+    "hint": "Asas Black ($Q_{\\text{lepas}} = Q_{\\text{terima}}$): Kalor yang dilepas oleh air panas digunakan untuk meleburkan es menjadi air $0^\\circ\\text{C}$, kemudian menaikkan suhu air leburan es ke suhu campuran $T_c$. **Tips:** Siswa sering lupa memperhitungkan kalor lebur es ($m_{\\text{es}} L$) dan hanya menghitung $m_1 c \\Delta T_1 = m_2 c \\Delta T_2$."
   },
   {
     "id": "drill-kal-05",
@@ -14782,7 +15229,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "asas-black"
+    "subTopicSlug": "asas-black",
+    "hint": "Asas Black: Kalor yang dilepas oleh zat bersuhu lebih tinggi sama dengan kalor yang diserap oleh zat bersuhu lebih rendah: $$Q_{\\text{lepas}} = Q_{\\text{terima}}$$."
   },
   {
     "id": "drill2-kal-06",
@@ -14815,7 +15263,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "asas-black"
+    "subTopicSlug": "asas-black",
+    "hint": "Asas Black Menentukan Kalor Jenis: $$m_L \\cdot c_L \\cdot (T_L - T_c) = m_{\\text{air}} \\cdot c_{\\text{air}} \\cdot (T_c - T_{\\text{air}})$$. **Tips:** ⚠️ Cek Satuan Kalor: Jika menggunakan gram dan $\\text{kal/g}^\\circ\\text{C}$, kalor jenis air adalah $1$."
   },
   {
     "id": "fis-termo-kalor-asasblack-006",
@@ -14848,7 +15297,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proses pencampuran es bersuhu di bawah nol dengan air hangat melibatkan tiga kemungkinan penyerapan kalor oleh es: 1. Pemanasan es dari $-10^\\circ\\text{C}$ ke $0^\\circ\\text{C}$: $Q_1 = m_{\\text{es}} c_{\\text{es}} \\Delta T_1$. 2. Peleburan es menjadi air pada $0^\\circ\\text{C}$: $Q_2 = m_{\\text{es}} L$. 3. Pemanasan air leburan dari $0^\\circ\\text{C}$ ke $T_c$: $Q_3 = m_{\\text{es}} c_{\\text{air}} T_c$. Kalor dilepaskan oleh air hangat yang mendingin dari $50^\\circ\\text{C}$ ke $T_c$: $Q_{\\text{lepas}} = m_{\\text{air}} c_{\\text{air}} (50 - T_c)$."
   },
   {
     "id": "fis-termo-kalor-asasblack-007",
@@ -14881,7 +15331,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika wadah (kalorimeter) ikut menyerap kalor, maka kalor yang dilepas oleh benda panas sama dengan jumlah kalor yang diserap oleh air ditambah kalor yang diserap oleh kalorimeter: $$Q_{\\text{lepas}} = Q_{\\text{serap, air}} + Q_{\\text{serap, wadah}}$$ $$m_L \\times c_L \\times (T_L - T_c) = (m_{\\text{air}} c_{\\text{air}} + C_{\\text{kal}}) \\times (T_c - T_{\\text{awal}})$$."
   },
   {
     "id": "fis-termo-kalor-asasblack-008",
@@ -14914,7 +15365,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk pencampuran beberapa sampel zat yang sejenis tanpa perubahan wujud, persamaan Asas Black $\\sum Q = 0$ menghasilkan rumus rata-rata tertimbang (weighted average) terhadap massa: $$T_c = \\frac{\\sum_{i=1}^n m_i T_i}{\\sum_{i=1}^n m_i}$$."
   },
   {
     "id": "fis-termo-kalor-asasblack-009",
@@ -14947,7 +15399,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam interaksi termal es pada $0^\\circ\\text{C}$ dengan air cair, perlu diperiksa apakah kalor yang dilepaskan air cukup untuk meleburkan seluruh es: - Kalor maksimum yang dilepas air saat turun ke $0^\\circ\\text{C}$: $Q_{\\text{lepas, maks}} = m_{\\text{air}} c_{\\text{air}} \\Delta T$. - Kalor yang dibutuhkan untuk meleburkan seluruh es: $Q_{\\text{lebur, tot}} = m_{\\text{es}} L$. - Jika $Q_{\\text{lepas, maks}} < Q_{\\text{lebur, tot}}$, hanya sebagian es yang melebur dan suhu akhir tetap $0^\\circ\\text{C}$."
   },
   {
     "id": "fis-termo-kalor-asasblack-010",
@@ -14980,7 +15433,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Asas Black",
     "subTopic": "Asas Black",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat uap air pada $100^\\circ\\text{C}$ masuk ke dalam air dingin, uap mengalami dua tahap pelepasan kalor: 1. Mengembun menjadi air pada suhu $100^\\circ\\text{C}$: $Q_1 = m_u \\times U$. 2. Air hasil kondensasi mendingin dari $100^\\circ\\text{C}$ ke suhu akhir $T_c$: $Q_2 = m_u \\times c_{\\text{air}} \\times (100 - T_c)$. Kalor ini sepenuhnya diserap oleh air dingin untuk naik suhunya dari $20^\\circ\\text{C}$ ke $T_c$: $Q_{\\text{serap}} = m_{\\text{air}} \\times c_{\\text{air}} \\times (T_c - 20)$. **Tips:** Jangan mengabaikan tahap kedua pelepasan kalor (pendinginan air hasil kondensasi dari $100^\\circ\\text{C}$ ke $40^\\circ\\text{C}$)."
   },
   {
     "id": "fis-termo-kalor-pemuaian-006",
@@ -15013,7 +15467,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat bejana dan zat cair di dalamnya dipanaskan bersama, keduanya mengalami pertambahan volume. Jika koefisien muai zat cair lebih besar daripada koefisien muai bejana, sebagian zat cair akan tumpah. Volume tumpah dihitung sebagai pemuaian semu: $$\\Delta V_{\\text{tumpah}} = \\Delta V_{\\text{cair}} - \\Delta V_{\\text{bejana}} = V_0 (\\gamma_{\\text{cair}} - \\gamma_{\\text{bejana}}) \\Delta T$$ dengan $\\gamma_{\\text{bejana}} = 3\\alpha_{\\text{bejana}}$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-007",
@@ -15046,7 +15501,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Celah antarbatang rel berfungsi memberikan ruang bebas bagi pemuaian panjang baja saat suhu lingkungan naik. Besar celah minimum setara dengan pertambahan panjang satu batang rel pada rentang kenaikan suhu maksimum: $$\\Delta L = L_0 \\times \\alpha \\times \\Delta T$$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-008",
@@ -15079,7 +15535,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pemuaian diameter lubang atau cincin mengikuti hukum pemuaian panjang linear pada dimensi diameternya: $$\\Delta D = D_0 \\times \\alpha \\times \\Delta T \\implies \\Delta T = \\frac{\\Delta D}{D_0 \\times \\alpha}$$ Suhu akhir pemanasan cincin dihitung dari $T = T_0 + \\Delta T$."
   },
   {
     "id": "fis-termo-kalor-pemuaian-009",
@@ -15112,7 +15569,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Massa benda konstan selama pemanasan ($m = \\rho \\times V$). Karena volume memuai ($V = V_0(1 + \\gamma \\Delta T)$), maka massa jenis benda berkurang: $$\\rho = \\frac{m}{V_0(1 + \\gamma \\Delta T)} = \\frac{\\rho_0}{1 + \\gamma \\Delta T} \\approx \\rho_0 (1 - \\gamma \\Delta T)$$ Penurunan massa jenisnya adalah $\\Delta \\rho = \\rho_0 - \\rho \\approx \\rho_0 \\times \\gamma \\times \\Delta T$. **Tips:** Hati-hati dengan tanda dan makna 'penurunan massa jenis'."
   },
   {
     "id": "fis-termo-kalor-pemuaian-010",
@@ -15145,7 +15603,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pemuaian Zat",
     "subTopic": "Pemuaian Zat",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Air mengalami fenomena anomali termal antara rentang suhu $0^\\circ\\text{C}$ sampai $4^\\circ\\text{C}$: - Saat dipanaskan dari $0^\\circ\\text{C}$ ke $4^\\circ\\text{C}$, volumenya menyusut dan massa jenisnya bertambah. - Pada suhu tepat $4^\\circ\\text{C}$, air mencapai volume minimum dan massa jenis maksimum ($\\rho_{\\text{maks}} \\approx 1000\\text{ kg/m}^3$). - Air terpadat ini turun ke dasar danau, sedangkan air yang lebih dingin ($< 4^\\circ\\text{C}$) dan lapisan es terapung di permukaan karena massa jenis es lebih kecil dari air cair. **Tips:** Pernyataan pada keliru karena dari $0^\\circ\\text{C}$ ke $4^\\circ\\text{C}$ air menyusut (bukan memuai)."
   },
   {
     "id": "fis-termo-kalor-perpindahan-006",
@@ -15178,7 +15637,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada kondisi tunak (steady state) tanpa kebocoran kalor melalui selimut batang, laju konduksi kalor yang mengalir melalui batang P harus sama dengan laju konduksi kalor yang melalui batang Q: $$H_P = H_Q \\implies \\frac{k_P \\times A_P \\times (T_P - T_s)}{L_P} = \\frac{k_Q \\times A_Q \\times (T_s - T_Q)}{L_Q}$$."
   },
   {
     "id": "fis-termo-kalor-perpindahan-007",
@@ -15211,7 +15671,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Laju bersih perpindahan kalor secara radiasi antara benda pada suhu $T$ dan lingkungan pada suhu $T_0$ dihitung dengan rumus radiasi netto Stefan-Boltzmann: $$P_{\\text{neto}} = e \\times \\sigma \\times A \\times (T^4 - T_0^4)$$ dengan suhu wajib dikonversikan ke skala mutlak Kelvin ($K = ^\\circ\\text{C} + 273$)."
   },
   {
     "id": "fis-termo-kalor-perpindahan-008",
@@ -15244,7 +15705,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada susunan dinding berlapis seri, laju aliran kalor konduksi per satuan luas ($H/A$) sama di setiap lapisan: $$\\frac{H}{A} = \\frac{T_1 - T_b}{R_A} = \\frac{T_b - T_2}{R_B}$$ dengan resistansi termal konduksi per satuan luas $R = \\frac{d}{k}$."
   },
   {
     "id": "fis-termo-kalor-perpindahan-009",
@@ -15277,7 +15739,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan perumusan konsep fisis: $$\\lambda_{\\text{maks}} \\times T = C \\implies T \\propto \\frac{1}{\\lambda_{\\text{maks}}}$$ Sedangkan Hukum Stefan-Boltzmann menyatakan intensitas radiasi berbanding lurus dengan pangkat empat suhu: $$I = \\sigma T^4 \\implies I \\propto \\left(\\frac{1}{\\lambda_{\\text{maks}}}\\right)^4$$. **Tips:** Perhatikan bahwa panjang gelombang berbanding TERBALIK dengan suhu."
   },
   {
     "id": "fis-termo-kalor-perpindahan-010",
@@ -15310,7 +15773,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Konduksi, Konveksi, dan Radiasi",
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kalor yang dihantarkan secara konduksi sepanjang batang dalam selang waktu $t$ digunakan sepenuhnya untuk meleburkan es: $$Q = H \\times t = \\frac{k \\times A \\times \\Delta T}{L_{\\text{batang}}} \\times t$$ Massa es yang melebur dihitung dari kalor laten peleburan: $Q = m_{\\text{es}} \\times L_{\\text{lebur}}$."
   },
   {
     "id": "fis-termo-kalor-sensibel-006",
@@ -15343,7 +15807,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proses pemanasan es dari suhu di bawah nol hingga menjadi air di atas nol terdiri dari 3 tahapan penyerapan kalor: 1. Pemanasan es: $Q_1 = m \\times c_{\\text{es}} \\times \\Delta T_1$ 2. Peleburan es menjadi air pada $0^\\circ\\text{C}$: $Q_2 = m \\times L$ 3. Pemanasan air: $Q_3 = m \\times c_{\\text{air}} \\times \\Delta T_2$ Kalor total: $Q_{\\text{tot}} = Q_1 + Q_2 + Q_3$. **Tips:** Jangan melewatkan tahap peleburan ($Q_2 = mL$)."
   },
   {
     "id": "fis-termo-kalor-sensibel-007",
@@ -15376,7 +15841,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan daya listrik ($P$), efisiensi ($\\eta$), waktu ($t$), dan kalor pemanasan ($Q$) dirumuskan: $$W_{\\text{berguna}} = Q \\implies \\eta \\times P \\times t = m \\times c \\times \\Delta T \\implies t = \\frac{m \\times c \\times \\Delta T}{\\eta \\times P}$$."
   },
   {
     "id": "fis-termo-kalor-sensibel-008",
@@ -15409,7 +15875,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Asas Black, pada sistem terisolasi, kalor yang dilepaskan oleh benda bersuhu lebih tinggi sama dengan kalor yang diserap oleh benda bersuhu lebih rendah: $$Q_{\\text{lepas}} = Q_{\\text{serap}} \\implies m_1 \\times c \\times (T_1 - T_c) = m_2 \\times c \\times (T_c - T_2)$$ Karena kedua zat sama-sama air, kalor jenis $c$ dapat saling meniadakan."
   },
   {
     "id": "fis-termo-kalor-sensibel-009",
@@ -15442,7 +15909,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penerapan Asas Black untuk menentukan kalor jenis suatu bahan tak dikenal ($c_L$): $$Q_{\\text{lepas}} = Q_{\\text{serap}} \\implies m_L \\times c_L \\times (T_L - T_c) = m_a \\times c_a \\times (T_c - T_a)$$. **Tips:** Periksa kembali konversi massa gram ke kilogram."
   },
   {
     "id": "fis-termo-kalor-sensibel-010",
@@ -15475,7 +15943,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kalor Sensibel & Kalor Laten",
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tinjau kemampuan pelepasan kalor air hangat dibandingkan kebutuhan kalor peleburan seluruh es: 1. Kalor maksimum yang dilepas air jika didinginkan hingga $0^\\circ\\text{C}$: $$Q_{\\text{lepas, maks}} = m_a \\times c_a \\times (T_a - 0)$$ 2. Kalor yang dibutuhkan untuk meleburkan seluruh es: $$Q_{\\text{lebur, tot}} = m_{\\text{es}} \\times L$$ Jika $Q_{\\text{lepas, maks}} < Q_{\\text{lebur, tot}}$, maka suhu akhir kesetimbangan adalah tepat $0^\\circ\\text{C}$ dan hanya sebagian es yang mencair: $m_{\\text{cair}} = \\frac{Q_{\\text{lepas, maks}}}{L}$."
   },
   {
     "id": "drill2-kal-04",
@@ -15508,7 +15977,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Keseimbangan Sambungan Konduksi: Laju aliran kalor pada kedua batang adalah sama: $$H_A = H_B \\implies k_A (T_A - T_s) = k_B (T_s - T_B)$$."
   },
   {
     "id": "drill2-kal-07",
@@ -15541,7 +16011,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Kalor Sensibel & Kalor Laten",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "kalor-sensibel-laten"
+    "subTopicSlug": "kalor-sensibel-laten",
+    "hint": "Kesetaraan Energi Listrik dan Kalor: $$W_{\\text{listrik}} = Q_{\\text{kalor}} \\implies P \\cdot t = m \\cdot c \\cdot \\Delta T$$."
   },
   {
     "id": "sup-fis-ter-02",
@@ -15574,7 +16045,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Laju Konduksi Kalor Keadaan Stasioner: Pada sambungan batang, laju aliran kalor melalui batang $P$ sama dengan laju aliran kalor melalui batang $Q$: $H_P = H_Q \\implies k_P A \\frac{\\Delta T_P}{L} = k_Q A \\frac{\\Delta T_Q}{L}$."
   },
   {
     "id": "drill-kal-06",
@@ -15607,7 +16079,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Laju Konduksi Termal Fourier: Laju rambatan kalor per detik berbanding lurus dengan konduktivitas termal, luas penampang, dan gradien suhu: $$H = \\frac{Q}{t} = \\frac{k \\cdot A \\cdot \\Delta T}{L}$$."
   },
   {
     "id": "drill-kal-07",
@@ -15640,7 +16113,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Daya radiasi kalor sebanding dengan pangkat empat dari suhu mutlaknya: $$P = e \\cdot \\sigma \\cdot A \\cdot T^4 \\implies \\frac{P_2}{P_1} = \\left( \\frac{T_2}{T_1} \\right)^4$$."
   },
   {
     "id": "drill2-kal-05",
@@ -15673,7 +16147,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Konduksi, Konveksi, dan Radiasi",
     "chapterTitle": "Kalor dan Termodinamika",
     "subChapterId": "fis-termo-kalor",
-    "subTopicSlug": "konduksi-konveksi-radiasi"
+    "subTopicSlug": "konduksi-konveksi-radiasi",
+    "hint": "Ketergantungan Radiasi terhadap Luas: $$P = e \\sigma A T^4 \\implies P \\propto A$$ Pada suhu tetap, daya radiasi berbanding lurus linear dengan luas permukaan pemancar."
   },
   {
     "id": "fun-alj-dasar-operasi-006",
@@ -15706,7 +16181,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas aljabar kuadrat jumlah: $(a + b)^2 = a^2 + 2ab + b^2$, sehingga diperoleh rumus turunan $a^2 + b^2 = (a + b)^2 - 2ab$. **Tips:** Langsung menguadratkan nilai $(a + b)$ menjadi 64 tanpa mengurangkan suku $2ab$."
   },
   {
     "id": "fun-alj-dasar-operasi-007",
@@ -15739,7 +16215,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pemfaktoran $ax^2 + bx + c$ dilakukan dengan mencari dua bilangan yang hasil kalinya sama dengan $a \\times c$ dan jumlahnya sama dengan $b$. **Tips:** Tertukar tanda menjadi $(2x - 1)(x + 3)$ yang jika dijabarkan menghasilkan suku tengah $+5x$, bukan $-5x$."
   },
   {
     "id": "fun-alj-dasar-operasi-008",
@@ -15772,7 +16249,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadrat dari suku resiprokal menghasilkan suku tengah bernilai konstan $2$, yaitu $\\left(x + \\frac{1}{x}\\right)^2 = x^2 + 2 + \\frac{1}{x^2}$."
   },
   {
     "id": "fun-alj-dasar-operasi-009",
@@ -15805,7 +16283,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan bagian pembilang dengan aturan selisih dua kuadrat $a^2 - b^2 = (a - b)(a + b)$. **Tips:** Mencoba menghitung nilai kuadrat bilangan secara manual yang memakan banyak waktu dan rentan kekeliruan perhitungan."
   },
   {
     "id": "fun-alj-dasar-operasi-010",
@@ -15838,7 +16317,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar & Pemfaktoran",
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk selisih kuadrat $x^2 - y^2$ dapat dinyatakan sebagai perkalian $(x - y)(x + y)$."
   },
   {
     "id": "fun-alj-dasar-pecahan-006",
@@ -15871,7 +16351,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan polinomial pembilang dan penyebut ke dalam faktor linier, kemudian lakukan penyederhanaan terhadap faktor yang sama."
   },
   {
     "id": "fun-alj-dasar-pecahan-007",
@@ -15904,7 +16385,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Operasi pengurangan dua pecahan aljabar dengan penyebut berbeda dilakukan dengan menyamakan penyebut ke KPK $(x - 1)(x + 1) = x^2 - 1$."
   },
   {
     "id": "fun-alj-dasar-pecahan-008",
@@ -15937,7 +16419,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pecahan kompleks dapat disederhanakan dengan mengalikan pembilang dan penyebut dengan penyebut persekutuan tertinggi (yaitu $x^2$) atau dengan menyederhanakan masing-masing tingkat. **Tips:** Membagi langsung suku demi suku tanpa menyamakan penyebut sehingga menghasilkan jawaban keliru seperti $\\frac{1}{x}$ atau $x$."
   },
   {
     "id": "fun-alj-dasar-pecahan-009",
@@ -15970,7 +16453,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembagian pecahan diubah menjadi operasi perkalian dengan membalik pembilang dan penyebut pecahan pembagi: $\\frac{A}{B} \\div \\frac{C}{D} = \\frac{A}{B} \\times \\frac{D}{C}$. **Tips:** Lupa membalik pecahan kedua saat mengubah operasi tanda bagi menjadi kali."
   },
   {
     "id": "fun-alj-dasar-pecahan-010",
@@ -16003,7 +16487,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pecahan Bentuk Aljabar",
     "subTopic": "Pecahan Bentuk Aljabar",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kalikan pembilang dan penyebut utama dengan faktor persekutuan $ab$ untuk mengubah pecahan bertingkat menjadi pecahan biasa. **Tips:** Tertukar tanda selisih menjadi $b - a$ karena urutan suku pada penyebut adalah $b + a$."
   },
   {
     "id": "fun-alj-dasar-spldv-006",
@@ -16036,7 +16521,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan metode eliminasi dengan menyamakan koefisien salah satu variabel melalui perkalian konstanta sebelum melakukan penjumlahan atau pengurangan persamaan. **Tips:** Hanya mencari nilai $x$ atau $y$ tanpa melanjutkan menghitung nilai jumlahan $x + y$ yang diminta soal."
   },
   {
     "id": "fun-alj-dasar-spldv-007",
@@ -16069,7 +16555,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem persamaan non-linier dalam variabel pecahan dapat diubah menjadi SPLDV biasa dengan melakukan pemisalan variabel baru: $u = \\frac{1}{x}$ dan $v = \\frac{1}{y}$."
   },
   {
     "id": "fun-alj-dasar-spldv-008",
@@ -16102,7 +16589,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "SPLTV diselesaikan dengan mengeliminasi satu variabel yang sama secara bertahap menggunakan dua pasang persamaan sehingga diperoleh SPLDV. **Tips:** Kesalahan tanda saat proses eliminasi antar-persamaan bertingkat yang merambat ke seluruh nilai variabel berikutnya."
   },
   {
     "id": "fun-alj-dasar-spldv-009",
@@ -16135,7 +16623,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem persamaan linear dua variabel $a_1 x + b_1 y = c_1$ dan $a_2 x + b_2 y = c_2$ memiliki tak terhingga penyelesaian jika kedua garis berimpit, yaitu $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$. **Tips:** Menggunakan kondisi garis tegak lurus atau salah menyamakan perbandingan invers sehingga memilih $k = \\frac{3}{2}$."
   },
   {
     "id": "fun-alj-dasar-spldv-010",
@@ -16168,7 +16657,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "SPLDV dan SPLTV",
     "subTopic": "SPLDV dan SPLTV",
     "chapterTitle": "Aljabar Elementer",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Masalah umur dimodelkan dengan memisalkan umur saat ini sebagai $A$ (Ayah) dan $B$ (anak), kemudian merumuskan kondisi masa lampau $(A - t)$ dan masa depan $(A + t)$. **Tips:** Lupa mengurangkan atau menambahkan umur kedua belah pihak (hanya mengubah umur Ayah saja, atau sebaliknya)."
   },
   {
     "id": "sedang-mtk-07",
@@ -16201,7 +16691,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Operasi Aljabar & Pemfaktoran",
     "chapterTitle": "Aljabar Elementer",
     "subChapterId": "fun-alj-dasar",
-    "subTopicSlug": "operasi-aljabar-pemfaktoran"
+    "subTopicSlug": "operasi-aljabar-pemfaktoran",
+    "hint": "Metode Eliminasi & Substitusi SPLDV: Kalikan persamaan kedua dengan 2 lalu jumlahkan untuk mengeliminasi variabel $y$."
   },
   {
     "id": "fun-eks-dasar-akar-006",
@@ -16234,7 +16725,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Bentuk Akar & Rasionalisasi",
     "subTopic": "Bentuk Akar & Rasionalisasi",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rasionalisasi penyebut berbentuk $\\sqrt{a} - b$ dilakukan dengan mengalikan pembilang dan penyebut dengan bentuk sekawannya, yaitu $\\sqrt{a} + b$."
   },
   {
     "id": "fun-eks-dasar-akar-007",
@@ -16267,7 +16759,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Bentuk Akar & Rasionalisasi",
     "subTopic": "Bentuk Akar & Rasionalisasi",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kalikan pembilang dan penyebut dengan bentuk sekawan $(\\sqrt{3} - \\sqrt{2})$ agar penyebut berubah menjadi selisih kuadrat rasional."
   },
   {
     "id": "fun-eks-dasar-akar-008",
@@ -16300,7 +16793,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Bentuk Akar & Rasionalisasi",
     "subTopic": "Bentuk Akar & Rasionalisasi",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk $\\sqrt{(a + b) \\pm 2\\sqrt{ab}}$ ekuivalen dengan $\\sqrt{a} \\pm \\sqrt{b}$ dengan $a > b > 0$. **Tips:** Memilih pasangan bilangan lain seperti 6 dan 2 yang jumlahnya 8 tetapi hasil kalinya 12, bukan 15."
   },
   {
     "id": "fun-eks-dasar-akar-009",
@@ -16333,7 +16827,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Bentuk Akar & Rasionalisasi",
     "subTopic": "Bentuk Akar & Rasionalisasi",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rasionalkan masing-masing pecahan terlebih dahulu sebelum melakukan operasi pengurangan aljabar. **Tips:** Lupa mendistribusikan tanda minus ke suku $\\sqrt{5}$ sehingga keliru menjawab $\\sqrt{7} + \\sqrt{5}$."
   },
   {
     "id": "fun-eks-dasar-akar-010",
@@ -16366,7 +16861,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Bentuk Akar & Rasionalisasi",
     "subTopic": "Bentuk Akar & Rasionalisasi",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas selisih dua kuadrat $(a - b)(a + b) = a^2 - b^2$."
   },
   {
     "id": "fun-eks-dasar-basis-006",
@@ -16399,7 +16895,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perubahan Basis Logaritma",
     "subTopic": "Perubahan Basis Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan sifat rantai logaritma untuk mencari nilai $^2\\log 5$: $^2\\log 5 = \\,^2\\log 3 \\times \\,^3\\log 5 = a \\cdot b$. **Tips:** Langsung menjumlahkan $a + b$ tanpa memperhatikan bahwa basis pada logaritma kedua adalah 3, bukan 2."
   },
   {
     "id": "fun-eks-dasar-basis-007",
@@ -16432,7 +16929,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perubahan Basis Logaritma",
     "subTopic": "Perubahan Basis Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ubah basis logaritma $^6\\log 15$ ke basis yang diketahui (basis 2): $^6\\log 15 = \\frac{^2\\log 15}{^2\\log 6}$. **Tips:** Lupa mengubah penyebut basis 6 menjadi $1 + a$ dan malah membiarkannya bernilai $a$."
   },
   {
     "id": "fun-eks-dasar-basis-008",
@@ -16465,7 +16963,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perubahan Basis Logaritma",
     "subTopic": "Perubahan Basis Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ubah setiap basis dan numerus ke dalam bentuk bilangan prima berpangkat, lalu gunakan $^{a^m}\\log(b^n) = \\frac{n}{m} \\,^a\\log b$ dan $^a\\log b \\times \\,^b\\log a = 1$. **Tips:** Terbalik dalam pembagian rasio pangkat $\\frac{m}{n}$ alih-alih $\\frac{n}{m}$."
   },
   {
     "id": "fun-eks-dasar-basis-009",
@@ -16498,7 +16997,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perubahan Basis Logaritma",
     "subTopic": "Perubahan Basis Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan sifat resiprokal $^{ac}\\log b = \\frac{1}{^b\\log(ac)}$ dan uraikan penyebut menjadi $^b\\log a + \\,^b\\log c$. **Tips:** Lupa membalik hasil akhir penyebut $\\frac{7}{3}$ sehingga memilih $\\frac{7}{3}$."
   },
   {
     "id": "fun-eks-dasar-basis-010",
@@ -16531,7 +17031,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perubahan Basis Logaritma",
     "subTopic": "Perubahan Basis Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Samakan basis kedua ruas dengan sifat $^{a^m}\\log b = \\frac{1}{m} \\,^a\\log b = \\,^a\\log (b^{\\frac{1}{m}})$, serta perhatikan syarat numerus $x > 0$. **Tips:** Menyertakan nilai $x = -1$ sebagai solusi padahal nilai negatif melanggar syarat numerus logaritma."
   },
   {
     "id": "fun-eks-dasar-eksponen-006",
@@ -16564,7 +17065,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan aturan pangkat eksponen $(x^m y^n)^k = x^{mk} y^{nk}$ dan pembagian basis sama $\\frac{x^p}{x^q} = x^{p-q}$."
   },
   {
     "id": "fun-eks-dasar-eksponen-007",
@@ -16597,7 +17099,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan keluar suku berpangkat terkecil $2^n$ pada pembilang dan penyebut untuk menyederhanakan pecahan aljabar eksponen. **Tips:** Mencoret langsung suku $2^n$ tanpa melakukan faktorisasi distributif aljabar terlebih dahulu."
   },
   {
     "id": "fun-eks-dasar-eksponen-008",
@@ -16630,7 +17133,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Basis majemuk $8^x$ dan $4^x$ dapat dinyatakan dalam basis $2^x$ menggunakan sifat pemangkatan: $a^{kx} = (a^x)^k$."
   },
   {
     "id": "fun-eks-dasar-eksponen-009",
@@ -16663,7 +17167,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika $a^{f(x)} = a^p$ dengan $a > 0$ dan $a \\neq 1$, maka eksponennya bernilai sama: $f(x) = p$."
   },
   {
     "id": "fun-eks-dasar-eksponen-010",
@@ -16696,7 +17201,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Eksponen",
     "subTopic": "Sifat Eksponen",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sederhanakan terlebih dahulu suku-suku di dalam kurung, lalu terapkan pembalikan pecahan oleh pangkat $-1$. **Tips:** Lupa membalik koefisien 9 menjadi $\\frac{1}{9}$ saat menerapkan pemangkatan $-1$."
   },
   {
     "id": "fun-eks-dasar-logaritma-006",
@@ -16729,7 +17235,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Operasi Logaritma",
     "subTopic": "Sifat Operasi Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan penggabungan sifat perkalian dan pembagian logaritma: $^a\\log b + \\,^a\\log c - \\,^a\\log d = \\,^a\\log \\left(\\frac{b \\cdot c}{d}\\right)$."
   },
   {
     "id": "fun-eks-dasar-logaritma-007",
@@ -16762,7 +17269,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Operasi Logaritma",
     "subTopic": "Sifat Operasi Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan numerus ke dalam bentuk faktor prima, kemudian gunakan sifat penjumlahan logaritma."
   },
   {
     "id": "fun-eks-dasar-logaritma-008",
@@ -16795,7 +17303,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Operasi Logaritma",
     "subTopic": "Sifat Operasi Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan sifat pangkat numerus $^a\\log (b^n) = n \\cdot \\,^a\\log b$ dan rantai perkalian logaritma $^a\\log b \\times \\,^b\\log c = \\,^a\\log c$."
   },
   {
     "id": "fun-eks-dasar-logaritma-009",
@@ -16828,7 +17337,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Operasi Logaritma",
     "subTopic": "Sifat Operasi Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Angka 5 dapat dinyatakan sebagai hasil bagi $\\frac{10}{2}$ pada sistem logaritma berbasis 10. **Tips:** Membalik logaritma menjadi $\\frac{1}{a}$ yang merupakan nilai dari $^2\\log 10$, bukan $\\log 5$."
   },
   {
     "id": "fun-eks-dasar-logaritma-010",
@@ -16861,7 +17371,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sifat Operasi Logaritma",
     "subTopic": "Sifat Operasi Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Terapkan pemfaktoran selisih dua kuadrat $x^2 - y^2 = (x - y)(x + y)$ terhadap suku-suku logaritma."
   },
   {
     "id": "sedang-mtk-02",
@@ -16894,7 +17405,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Sifat Operasi Logaritma",
     "chapterTitle": "Eksponen dan Logaritma",
     "subChapterId": "fun-eks-dasar",
-    "subTopicSlug": "sifat-operasi-logaritma"
+    "subTopicSlug": "sifat-operasi-logaritma",
+    "hint": "Substitusi Persamaan Eksponen ke Bentuk Kuadrat: Misalkan $u = 3^x$ dengan syarat $u > 0$. Maka $3^{2x+1} = 3^1 \\cdot (3^x)^2 = 3u^2$."
   },
   {
     "id": "fun-geo-dasar-garis-006",
@@ -16927,7 +17439,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus gradien dua titik $m = \\frac{y_2 - y_1}{x_2 - x_1}$, lalu susun persamaan garis $y - y_1 = m(x - x_1)$ dan ubah ke bentuk implisit $Ax + By + C = 0$."
   },
   {
     "id": "fun-geo-dasar-garis-007",
@@ -16960,7 +17473,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua titik yang diketahui pada garis adalah $P(1, 4)$ dan titik potong sumbu-$X$, yaitu $Q(3, 0)$. **Tips:** Keliru mengartikan memotong sumbu-$X$ di $(3, 0)$ sebagai titik $(0, 3)$."
   },
   {
     "id": "fun-geo-dasar-garis-008",
@@ -16993,7 +17507,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik $(x_0, y_0)$ terletak pada suatu garis jika dan hanya jika koordinatnya memenuhi persamaan garis tersebut."
   },
   {
     "id": "fun-geo-dasar-garis-009",
@@ -17026,7 +17541,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong dua garis lurus merupakan solusi persekutuan (himpunan penyelesaian) dari sistem persamaan linear kedua garis tersebut. **Tips:** Salah menjabarkan tanda distributif $3(-4)$ menjadi $-7$ atau $+12$."
   },
   {
     "id": "fun-geo-dasar-garis-010",
@@ -17059,7 +17575,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Garis Lurus",
     "subTopic": "Persamaan Garis Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan garis dengan titik potong sumbu $(a, 0)$ dan $(0, b)$ dapat ditentukan menggunakan bentuk intersep: $\\frac{x}{a} + \\frac{y}{b} = 1$."
   },
   {
     "id": "fun-geo-dasar-gradien-006",
@@ -17092,7 +17609,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis yang sejajar dengan $3x - y + C = 0$ memiliki koefisien variabel yang sama ($3x - y$), sehingga memiliki gradien $m = 3$."
   },
   {
     "id": "fun-geo-dasar-gradien-007",
@@ -17125,7 +17643,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gradien garis yang tegak lurus adalah lawan dan kebalikan dari gradien garis asal ($m_2 = -\\frac{1}{m_1}$). **Tips:** Menggunakan gradien $-\\frac{1}{2}$ (syarat sejajar) bukan gradien tegak lurus $2$."
   },
   {
     "id": "fun-geo-dasar-gradien-008",
@@ -17158,7 +17677,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua garis tegak lurus memenuhi $m_1 \\cdot m_2 = -1$. Gradien garis dari dua titik disamakan dengan gradien tegak lurus garis acuan."
   },
   {
     "id": "fun-geo-dasar-gradien-009",
@@ -17191,7 +17711,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua garis $A_1 x + B_1 y + C_1 = 0$ dan $A_2 x + B_2 y + C_2 = 0$ saling tegak lurus jika dan hanya jika $A_1 A_2 + B_1 B_2 = 0$. **Tips:** Mengabaikan tanda minus pada koefisien $B_2 = -6$ sehingga mendapatkan nilai $k = -2$."
   },
   {
     "id": "fun-geo-dasar-gradien-010",
@@ -17224,7 +17745,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Gradien Garis Sejajar & Tegak Lurus",
     "subTopic": "Gradien Garis Sejajar & Tegak Lurus",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis sumbu adalah garis yang melalui titik tengah ruas garis $AB$ dan bergradien tegak lurus terhadap gradien garis $AB$. **Tips:** Menggunakan titik $A$ atau titik $B$ sebagai titik acuan, bukan titik tengah $M$."
   },
   {
     "id": "fun-geo-dasar-jarak-006",
@@ -17257,7 +17779,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sebelum menerapkan rumus jarak titik ke garis, ubah terlebih dahulu persamaan garis bentuk eksplisit $y = mx + c$ menjadi bentuk umum implisit $Ax + By + C = 0$. **Tips:** Lupa merasionalkan penyebut pecahan $\\frac{3}{\\sqrt{5}}$ atau salah mengubah tanda saat memindahkan suku $y$."
   },
   {
     "id": "fun-geo-dasar-jarak-007",
@@ -17290,7 +17813,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak antara dua garis sejajar $Ax + By + C_1 = 0$ dan $Ax + By + C_2 = 0$ dirumuskan sebagai $d = \\frac{|C_2 - C_1|}{\\sqrt{A^2 + B^2}}$."
   },
   {
     "id": "fun-geo-dasar-jarak-008",
@@ -17323,7 +17847,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan jarak memuat nilai mutlak $|Ax_0 + By_0 + C| = d \\sqrt{A^2 + B^2}$ yang menghasilkan dua kemungkinan nilai variabel. **Tips:** Mengabaikan persamaan nilai mutlak negatif sehingga tidak menyadari adanya dua kemungkinan solusi matematis."
   },
   {
     "id": "fun-geo-dasar-jarak-009",
@@ -17356,7 +17881,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis singgung lingkaran selalu tegak lurus terhadap jari-jari yang ditarik ke titik singgung, sehingga jari-jari lingkaran sama dengan jarak titik pusat ke garis singgung tersebut. **Tips:** Salah menghitung nilai di dalam tanda mutlak akibat tanda minus pada $-1$ dan $-12$."
   },
   {
     "id": "fun-geo-dasar-jarak-010",
@@ -17389,7 +17915,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Jarak Titik ke Garis",
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang garis tinggi dari suatu titik sudut ke sisi alas adalah jarak tegak lurus dari titik sudut tersebut ke garis yang memuat sisi alas. **Tips:** Menghitung panjang sisi miring segitiga $AC = \\sqrt{2^2 + 3^2} = \\sqrt{13}$ alih-alih panjang garis tingginya."
   },
   {
     "id": "fun-geo-dasar-koordinat-006",
@@ -17422,7 +17949,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus kuadrat jarak dua titik $d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$ untuk membentuk persamaan kuadrat variabel $p$. **Tips:** Memilih nilai negatif $p = -2$ tanpa memperhatikan batasan $p > 0$ yang diberikan pada soal."
   },
   {
     "id": "fun-geo-dasar-koordinat-007",
@@ -17455,7 +17983,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi jarak sama $PA = PB \\iff PA^2 = PB^2$ menghasilkan persamaan garis bagi tegak lurus (garis sumbu) dari ruas garis $AB$. **Tips:** Lupa menjabarkan suku tengah bentuk kuadrat binomial sehingga suku berderajat satu hilang."
   },
   {
     "id": "fun-geo-dasar-koordinat-008",
@@ -17488,7 +18017,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koordinat titik pembagi berbobot $m : n$ dirumuskan sebagai $x_C = \\frac{m \\cdot x_B + n \\cdot x_A}{m + n}$ dan $y_C = \\frac{m \\cdot y_B + n \\cdot y_A}{m + n}$. **Tips:** Tertukar bobot perbandingan dengan mengalikan $m$ ke titik $A$ dan $n$ ke titik $B$ sehingga menghasilkan $(3, 4)$."
   },
   {
     "id": "fun-geo-dasar-koordinat-009",
@@ -17521,7 +18051,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keliling segitiga adalah jumlahan panjang ketiga sisinya: $K = AB + BC + CA$."
   },
   {
     "id": "fun-geo-dasar-koordinat-010",
@@ -17554,7 +18085,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Koordinat & Jarak Dua Titik",
     "subTopic": "Koordinat & Jarak Dua Titik",
     "chapterTitle": "Geometri Analitik Bidang",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat (centroid) segitiga dengan titik-titik sudut $(x_1, y_1)$, $(x_2, y_2)$, dan $(x_3, y_3)$ dirumuskan sebagai $G = \\left(\\frac{x_1 + x_2 + x_3}{3}, \\frac{y_1 + y_2 + y_3}{3}\\right)$. **Tips:** Membagi jumlah koordinat dengan 2 (seperti rumus titik tengah) bukannya membagi dengan 3."
   },
   {
     "id": "sedang-mtk-10",
@@ -17587,7 +18119,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Jarak Titik ke Garis",
     "chapterTitle": "Geometri Analitik Bidang",
     "subChapterId": "fun-geo-dasar",
-    "subTopicSlug": "jarak-titik-ke-garis"
+    "subTopicSlug": "jarak-titik-ke-garis",
+    "hint": "Jarak Titik $(x_1, y_1)$ ke Garis $Ax + By + C = 0$: $$d = \\frac{|A x_1 + B y_1 + C|}{\\sqrt{A^2 + B^2}}$$. **Tips:** Perhatikan tanda mutlak di pembilang untuk memastikan nilai jarak selalu bernilai non-negatif."
   },
   {
     "id": "fun-mutlak-dasar-akar-006",
@@ -17620,7 +18153,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Radikan di dalam akar kuadrat harus bernilai non-negatif ($x^2 - 16 \\ge 0$). Pertidaksamaan kuadrat diselesaikan melalui pemfaktoran dan uji garis bilangan. **Tips:** Tertukar dengan daerah interval tertutup $-4 \\le x \\le 4$ yang merupakan penyelesaian untuk $x^2 - 16 \\le 0$."
   },
   {
     "id": "fun-mutlak-dasar-akar-007",
@@ -17653,7 +18187,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyelesaian dari pertidaksamaan kuadrat bertanda koefisien $x^2$ negatif $a - x^2 \\ge 0$ berbentuk interval tertutup $-\\sqrt{a} \\le x \\le \\sqrt{a}$. **Tips:** Lupa membalik tanda pertidaksamaan saat mengalikan dengan $-1$ sehingga memilih daerah di luar akar $x \\le -3$ atau $x \\ge 3$."
   },
   {
     "id": "fun-mutlak-dasar-akar-008",
@@ -17686,7 +18221,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika bentuk akar berada pada posisi penyebut pecahan, radikan harus positif tegas ($> 0$), karena penyebut tidak boleh sama dengan nol dan radikan tidak boleh negatif."
   },
   {
     "id": "fun-mutlak-dasar-akar-009",
@@ -17719,7 +18255,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat radikan pecahan adalah $\\frac{x - 1}{x + 2} \\ge 0$ dengan syarat tambahan penyebut $x + 2 \\neq 0$. **Tips:** Memasukkan tanda sama dengan pada titik $-2$ ($x \\le -2$) yang membuat penyebut bernilai nol."
   },
   {
     "id": "fun-mutlak-dasar-akar-010",
@@ -17752,7 +18289,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Bentuk Akar",
     "subTopic": "Syarat Fungsi Bentuk Akar",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah asal dari jumlahan dua fungsi irasional merupakan irisan dari daerah asal masing-masing suku akar: $D_f = D_1 \\cap D_2$. **Tips:** Menggabungkan (union) kedua interval alih-alih mengirisnya (intersection)."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-006",
@@ -17785,7 +18323,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $|f(x)| = |g(x)|$ ekuivalen dengan $(f(x) - g(x))(f(x) + g(x)) = 0$, yang setara dengan $f(x) = g(x)$ atau $f(x) = -g(x)$. **Tips:** Lupa mendistribusikan tanda minus pada seluruh suku kurung kedua saat $-(x + 4)$ sehingga keliru menulis $-x + 4$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-007",
@@ -17818,7 +18357,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk persamaan $|f(x)| = g(x)$, ruas kanan harus memenuhi syarat non-negatif $g(x) \\ge 0$, kemudian diselesaikan dengan cabang $f(x) = g(x)$ atau $f(x) = -g(x)$. **Tips:** Langsung mencoret akar negatif tanpa mengecek apakah nilai tersebut memenuhi batas syarat ruas kanan $x \\ge -3{,}5$."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-008",
@@ -17851,7 +18391,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan pemisalan variabel baru $u = |x - 2| \\ge 0$ untuk mengubahnya menjadi persamaan kuadrat biasa, kemudian buang akar yang tidak memenuhi syarat $u \\ge 0$. **Tips:** Menyelesaikan $|x - 2| = -1$ yang menghasilkan akar imajiner/tidak sah, atau salah mengalikan tanda akar."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-009",
@@ -17884,7 +18425,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Secara geometris, $|x - a| + |x - b|$ menyatakan jumlah jarak dari titik $x$ ke titik $a$ dan ke titik $b$. Jika jumlah jaraknya sama dengan jarak antara $a$ dan $b$ ($|b - a|$), maka seluruh titik pada segmen $[a, b]$ adalah solusinya."
   },
   {
     "id": "fun-mutlak-dasar-persamaan-010",
@@ -17917,7 +18459,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Nilai Mutlak",
     "subTopic": "Persamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Isolasi bentuk nilai mutlak ke satu ruas: $|2x - 6| = 9 - x$, dengan syarat ruas kanan non-negatif: $9 - x \\ge 0 \\iff x \\le 9$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-006",
@@ -17950,7 +18493,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pertidaksamaan bentuk $|f(x)| \\le |g(x)|$ dapat diselesaikan dengan memfaktorkan selisih kuadrat: $(f(x) - g(x))(f(x) + g(x)) \\le 0$. **Tips:** Lupa mendistribusikan tanda minus pada $(x + 6)$ sehingga salah menghitung faktor $(x - 3)$ menjadi $(x + 9)$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-007",
@@ -17983,7 +18527,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan pengkuadratan kedua ruas dan faktorisasi selisih kuadrat: $(f(x) - g(x))(f(x) + g(x)) > 0$. **Tips:** Memilih daerah di antara dua akar $-\\frac{1}{2} < x < 3$ yang merupakan penyelesaian jika tandanya adalah $< 0$."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-008",
@@ -18016,7 +18561,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pertidaksamaan $a < |u| \\le b$ dipecah menjadi sistem dua kondisi yang harus dipenuhi secara bersamaan: $|u| \\le b$ diiriskan dengan $|u| > a$. **Tips:** Hanya menyelesaikan batas atas $|x - 2| \\le 4$ dan mengabaikan pembatasan dari batas bawah."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-009",
@@ -18049,7 +18595,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan pemisalan $u = |x - 1| \\ge 0$. Selesaikan pertidaksamaan kuadrat dalam $u$, kemudian kembalikan ke variabel $x$. **Tips:** Membuka nilai mutlak sebelum menyelesaikan pertidaksamaan kuadrat yang membuat proses perhitungan sangat rumit."
   },
   {
     "id": "fun-mutlak-dasar-pertidaksamaan-010",
@@ -18082,7 +18629,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pertidaksamaan Nilai Mutlak",
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembilang memuat nilai mutlak $|x + 1| \\ge 0$. Agar pecahan bernilai negatif tegas ($< 0$), penyebut harus bernilai negatif dan pembilang tidak boleh bernilai nol. **Tips:** Lupa mengecualikan $x = -1$ sehingga salah memilih $x < 2$ ()."
   },
   {
     "id": "fun-mutlak-dasar-rasional-006",
@@ -18115,7 +18663,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi rasional mensyaratkan penyebut tidak sama dengan nol. Nilai pembuat nol pembilang tidak memengaruhi daerah asal alami kecuali fungsi tidak terdefinisi."
   },
   {
     "id": "fun-mutlak-dasar-rasional-007",
@@ -18148,7 +18697,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk kuadrat murni yang ditambah konstanta positif ($x^2 + c$, $c > 0$) bersifat definit positif dan tidak pernah bernilai nol untuk setiap $x \\in \\mathbb{R}$. **Tips:** Menganggap $x^2 + 4$ dapat difaktorkan menjadi $(x - 2)(x + 2)$ di himpunan bilangan real sehingga memilih $x \\neq \\pm 2$."
   },
   {
     "id": "fun-mutlak-dasar-rasional-008",
@@ -18181,7 +18731,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pecahan bersusun, syarat penyebut tidak sama dengan nol harus diterapkan pada setiap penyebut yang muncul di semua tingkatan pecahan."
   },
   {
     "id": "fun-mutlak-dasar-rasional-009",
@@ -18214,7 +18765,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyebut kuadrat $ax^2 + bx + c$ tidak memiliki pembuat nol real jika diskriminannya bernilai negatif tegas ($D < 0$)."
   },
   {
     "id": "fun-mutlak-dasar-rasional-010",
@@ -18247,7 +18799,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Syarat Fungsi Rasional",
     "subTopic": "Syarat Fungsi Rasional",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyelesaian pertidaksamaan rasional menggunakan pembuat nol pembilang dan penyebut, dengan catatan pembuat nol penyebut tidak pernah boleh masuk ke dalam himpunan penyelesaian ($Q(x) \\neq 0$)."
   },
   {
     "id": "sedang-mtk-01",
@@ -18280,7 +18833,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Pertidaksamaan Nilai Mutlak",
     "chapterTitle": "Pertidaksamaan & Nilai Mutlak",
     "subChapterId": "fun-mutlak-dasar",
-    "subTopicSlug": "pertidaksamaan-nilai-mutlak"
+    "subTopicSlug": "pertidaksamaan-nilai-mutlak",
+    "hint": "Metode Kuadrat Kedua Ruas $|A| \\le |B|$: Karena kedua ruas non-negatif, kuadratkan kedua ruas: $$A^2 \\le B^2 \\iff A^2 - B^2 \\le 0 \\iff (A - B)(A + B) \\le 0$$."
   },
   {
     "id": "fun-trig-dasar-jumlah-006",
@@ -18313,7 +18867,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas Pythagoras untuk mencari nilai trigonometri pasangan ($\\cos A$ dan $\\sin B$), lalu terapkan rumus $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$. **Tips:** Lupa mencari nilai $\\cos A$ dan $\\sin B$ terlebih dahulu dan langsung mengalikan nilai yang ada di soal."
   },
   {
     "id": "fun-trig-dasar-jumlah-007",
@@ -18346,7 +18901,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rumus selisih sudut untuk cosinus adalah $\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B$."
   },
   {
     "id": "fun-trig-dasar-jumlah-008",
@@ -18379,7 +18935,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rumus tangen penjumlahan dua sudut adalah $\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$. **Tips:** Lupa mengurangkan hasil kali tangen dari 1 pada penyebut sehingga salah dalam operasi pecahan kompleks."
   },
   {
     "id": "fun-trig-dasar-jumlah-009",
@@ -18412,7 +18969,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam segitiga berlaku $A + B + C = 180^\\circ \\implies C = 180^\\circ - (A + B)$, sehingga $\\cos C = \\cos(180^\\circ - (A + B)) = -\\cos(A + B)$."
   },
   {
     "id": "fun-trig-dasar-jumlah-010",
@@ -18445,7 +19003,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Jumlah dan Selisih Sudut",
     "subTopic": "Rumus Jumlah dan Selisih Sudut",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus selisih sudut sinus: $\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B$. **Tips:** Menjumlahkan $\\frac{2}{3} + \\frac{1}{2} = \\frac{7}{6}$ karena keliru dalam aljabar perpindahan ruas persamaan."
   },
   {
     "id": "fun-trig-dasar-kuadran-006",
@@ -18478,7 +19037,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut tumpul berada di Kuadran II, sehingga nilai cosinus dan tangen keduanya bertanda negatif: $\\cos A < 0$ dan $\\tan A < 0$. **Tips:** Lupa bahwa $\\cos A$ dan $\\tan A$ bertanda negatif di Kuadran II, sehingga keliru menghitung nilai tanda operasi."
   },
   {
     "id": "fun-trig-dasar-kuadran-007",
@@ -18511,7 +19071,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi sinus dan cosinus memiliki periode sebesar $360^\\circ$ ($2\\pi$), sehingga berlaku sifat $\\cos(k \\cdot 360^\\circ + \\alpha) = \\cos \\alpha$ dan $\\sin(k \\cdot 360^\\circ + \\alpha) = \\sin \\alpha$ untuk setiap bilangan bulat $k$. **Tips:** Keliru saat membagi sudut dengan $360^\\circ$ sehingga menghasilkan sisa sudut yang salah."
   },
   {
     "id": "fun-trig-dasar-kuadran-008",
@@ -18544,7 +19105,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan kaidah sudut berelasi dan kofungsi: - $\\sin(90^\\circ + \\alpha) = \\cos \\alpha$ (Kuadran II, sinus positif dan kofungsi berubah). - $\\cos(180^\\circ - \\alpha) = -\\cos \\alpha$ (Kuadran II, cosinus negatif). - $\\tan(270^\\circ - \\alpha) = \\cot \\alpha = \\frac{\\cos \\alpha}{\\sin \\alpha}$ (Kuadran III, tangen positif dan kofungsi berubah). **Tips:** Lupa mengubah fungsi trigonometri menjadi kofungsinya saat berelasi dengan sudut ganjil $90^\\circ$ atau $270^\\circ$."
   },
   {
     "id": "fun-trig-dasar-kuadran-009",
@@ -18577,7 +19139,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi tangen bernilai negatif pada Kuadran II dan Kuadran IV. Dalam rentang $180^\\circ \\le x \\le 360^\\circ$, daerah yang memenuhi adalah Kuadran IV ($270^\\circ < x < 360^\\circ$). **Tips:** Memilih sudut Kuadran II ($120^\\circ$) yang berada di luar batas interval soal atau keliru memilih sudut acuan $30^\\circ$."
   },
   {
     "id": "fun-trig-dasar-kuadran-010",
@@ -18610,7 +19173,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Sudut Istimewa & Relasi Kuadran",
     "subTopic": "Sudut Istimewa & Relasi Kuadran",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut $\\theta$ dengan interval $180^\\circ < \\theta < 270^\\circ$ berada di Kuadran III. Di Kuadran III, nilai sinus dan cosinus keduanya bertanda negatif: $\\sin \\theta < 0$ dan $\\cos \\theta < 0$. **Tips:** Lupa memberi tanda negatif pada sinus dan cosinus di Kuadran III sehingga mendapatkan jawaban positif $+10$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-006",
@@ -18643,7 +19207,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pecahan homogen derajat 1 yang memuat $\\sin \\alpha$ dan $\\cos \\alpha$ dapat disederhanakan dengan membagi pembilang dan penyebut dengan $\\cos \\alpha$ agar langsung dinyatakan dalam bentuk $\\tan \\alpha$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-007",
@@ -18676,7 +19241,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis tinggi $AD$ membagi segitiga $ABC$ menjadi dua segitiga siku-siku $\\triangle ABD$ dan $\\triangle ACD$ dengan siku-siku di $D$. Panjang sisi $BC$ adalah penjumlahan $BC = BD + DC$. **Tips:** Mengabaikan bahwa sudut $45^\\circ$ dan $30^\\circ$ berada pada segitiga yang berbeda dan salah menggunakan aturan sinus sembarang."
   },
   {
     "id": "fun-trig-dasar-perbandingan-008",
@@ -18709,7 +19275,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadratkan kedua ruas persamaan dan gunakan identitas Pythagoras trigonometri dasar: $\\sin^2 x + \\cos^2 x = 1$. **Tips:** Lupa membagi 2 di langkah akhir sehingga memilih opsi $\\frac{24}{25}$."
   },
   {
     "id": "fun-trig-dasar-perbandingan-009",
@@ -18742,7 +19309,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan model dua segitiga siku-siku dengan tinggi yang sama $h$ dan jarak horizontal $x$ dari titik $B$ ke dasar menara, serta $(x + 40)$ dari titik $A$ ke dasar menara. **Tips:** Salah membedakan jarak antara $x$ dan $x + 40$ atau keliru rasionalisasi bentuk akar."
   },
   {
     "id": "fun-trig-dasar-perbandingan-010",
@@ -18775,7 +19343,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Trigonometri Siku-Siku",
     "subTopic": "Perbandingan Trigonometri Siku-Siku",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas trigonometri turunan Pythagoras menyatakan $\\sec^2 \\beta - \\tan^2 \\beta = 1$. Bentuk ini dapat difaktorkan sebagai selisih kuadrat: $(\\sec \\beta - \\tan \\beta)(\\sec \\beta + \\tan \\beta) = 1$. **Tips:** Mencari nilai sisi-sisi segitiga secara manual yang memakan waktu lama, padahal kedua bentuk saling berkebalikan."
   },
   {
     "id": "fun-trig-dasar-pythagoras-006",
@@ -18808,7 +19377,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penyederhanaan pecahan trigonometri dilakukan dengan menyamakan penyebut dan menerapkan identitas pokok $\\sin^2 x + \\cos^2 x = 1$ serta $\\csc x = \\frac{1}{\\sin x}$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-007",
@@ -18841,7 +19411,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dengan menguadratkan kedua ruas persamaan $(\\sin x + \\cos x)^2$, identitas $\\sin^2 x + \\cos^2 x = 1$ memunculkan suku perkalian $2\\sin x \\cos x$. **Tips:** Lupa membagi dengan 2 setelah mengurangkan 1 dari $\\frac{49}{25}$, sehingga memilih $\\frac{24}{25}$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-008",
@@ -18874,7 +19445,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk selisih dua kuadrat trigonometri memanfaatkan identitas turunan Pythagoras $\\sec^2 \\theta - \\tan^2 \\theta = 1$ dan $\\csc^2 \\theta - \\cot^2 \\theta = 1$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-009",
@@ -18907,7 +19479,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena $\\cot x = \\frac{1}{\\tan x}$, maka hasil kali $\\tan x \\cdot \\cot x = 1$. Gunakan manipulasi kuadrat aljabar $a^2 + b^2 = (a + b)^2 - 2ab$. **Tips:** Langsung menguadratkan angka 3 menjadi 9 tanpa mengurangkan suku silang $2\\tan x\\cot x$."
   },
   {
     "id": "fun-trig-dasar-pythagoras-010",
@@ -18940,7 +19513,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Identitas Pythagoras",
     "subTopic": "Identitas Pythagoras",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian penyebut sekawan $(1 - \\sin x)(1 + \\sin x) = 1 - \\sin^2 x = \\cos^2 x$ memungkinkan pecahan diubah menjadi bentuk secan kuadrat. **Tips:** Keliru dalam operasi aljabar penyebut dengan menulis $1 + \\sin^2 x$ bukannya $1 - \\sin^2 x$."
   },
   {
     "id": "fun-trig-dasar-rangkap-006",
@@ -18973,7 +19547,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadrat dari selisih $(\\sin x - \\cos x)^2$ memuat identitas Pythagoras dan sudut rangkap: $(\\sin x - \\cos x)^2 = 1 - \\sin 2x$. **Tips:** Lupa bahwa tanda suku silang bernilai negatif $(-2\\sin x \\cos x)$ sehingga malah menghitung $1 + \\frac{1}{25} = \\frac{26}{25}$."
   },
   {
     "id": "fun-trig-dasar-rangkap-007",
@@ -19006,7 +19581,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus sudut rangkap $\\sin 2x = 2\\sin x \\cos x$ dan $1 + \\cos 2x = 2\\cos^2 x$. **Tips:** Memilih varian cosinus sudut rangkap yang salah pada penyebut sehingga tidak saling mengeliminasi dengan angka 1."
   },
   {
     "id": "fun-trig-dasar-rangkap-008",
@@ -19039,7 +19615,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan hubungan matematis dasar: $\\sin^2 A = \\frac{1 - \\cos 2A}{2}$ dan $\\cos^2 A = \\frac{1 + \\cos 2A}{2}$. **Tips:** Terbalik dalam pembagian nilai $\\frac{\\sin A}{\\cos A}$ sehingga memilih $\\frac{4}{3}$."
   },
   {
     "id": "fun-trig-dasar-rangkap-009",
@@ -19072,7 +19649,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas sudut rangkap $1 - \\cos 2\\theta = 2\\sin^2 \\theta$ dan $\\sin 2\\theta = 2\\sin \\theta \\cos \\theta$. **Tips:** Tertukar antara $\\tan \\theta$ dan $\\cot \\theta$ karena salah menempatkan sinus kuadrat pada penyebut."
   },
   {
     "id": "fun-trig-dasar-rangkap-010",
@@ -19105,7 +19683,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rumus Sudut Rangkap",
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas $\\sin \\alpha \\cos \\alpha = \\frac{1}{2}\\sin 2\\alpha$ dapat diterapkan secara beruntun pada sudut-sudut kelipatan dua. **Tips:** Lupa faktor $\\frac{1}{2}$ pada setiap penerapan rumus sudut rangkap sehingga menghasilkan jawaban yang 2 atau 4 kali lebih besar."
   },
   {
     "id": "sedang-mtk-09",
@@ -19138,7 +19717,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Rumus Sudut Rangkap",
     "chapterTitle": "Trigonometri Dasar",
     "subChapterId": "fun-trig-dasar",
-    "subTopicSlug": "rumus-sudut-rangkap"
+    "subTopicSlug": "rumus-sudut-rangkap",
+    "hint": "Identitas Sinus Sudut Rangkap: $$\\sin 2x = 2 \\sin x \\cos x$$ Di kuadran III, nilai $\\sin x < 0$ dan $\\cos x < 0$. **Tips:** Perkalian dua bilangan negatif menghasilkan nilai positif: $(-)(-) = (+)$, sehingga $\\sin 2x$ bernilai positif $+\\frac{24}{25}$."
   },
   {
     "id": "mat-alj-fungsi-akar-006",
@@ -19171,7 +19751,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah asal fungsi pecahan yang memuat bentuk akar di pembilangnya harus memenuhi dua syarat serentak: ekspresi di dalam akar non-negatif ($x^2 - 4 \\geq 0$) dan penyebut tidak sama dengan nol ($x - 3 \\neq 0$)."
   },
   {
     "id": "mat-alj-fungsi-akar-007",
@@ -19204,7 +19785,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk akar utama selalu bernilai $\\sqrt{u} \\geq 0$. Pengali negatif pada suku akar membalik ketidaksamaan menjadi $-\\sqrt{u} \\leq 0$, sehingga fungsi memiliki nilai maksimum lokal pada titik pembuat nol radikan. **Tips:** Mengabaikan tanda minus di depan akar sehingga keliru menyimpulkan $y \\geq 4$."
   },
   {
     "id": "mat-alj-fungsi-akar-008",
@@ -19237,7 +19819,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat menyelesaikan persamaan irasional $\\sqrt{f(x)} = g(x)$, ruas kanan harus non-negatif ($g(x) \\geq 0$) sebelum kedua ruas dikuadratkan untuk menghindari akar semu (*extraneous solutions*)."
   },
   {
     "id": "mat-alj-fungsi-akar-009",
@@ -19270,7 +19853,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk fungsi akar bersarang $f(x) = \\sqrt{g(\\sqrt{x})}$, syarat numerus harus dipenuhi pada setiap tingkatan akar: akar bagian dalam harus terdefinisi, dan radikan akar bagian luar harus non-negatif. **Tips:** Lupa menguadratkan angka 4 sehingga menyimpulkan $x \\leq 4$, atau lupa syarat akar dalam $x \\geq 0$."
   },
   {
     "id": "mat-alj-fungsi-akar-010",
@@ -19303,7 +19887,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Irasional (Bentuk Akar)",
     "subTopic": "Fungsi Irasional (Bentuk Akar)",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi invers $f^{-1}(x)$ diperoleh dengan mengisolasi variabel $x$ sebagai fungsi dari $y$. Daerah asal dari fungsi invers ($D_{f^{-1}}$) sama dengan daerah hasil dari fungsi asalnya ($R_f$). **Tips:** Lupa mencantumkan pembatasan domain $x \\geq 3$ pada fungsi kuadrat hasil invers atau menggunakan batas domain $x geq 5/2$."
   },
   {
     "id": "mat-alj-fungsi-domain-006",
@@ -19336,7 +19921,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi $f(x) = \\sqrt{\\frac{g(x)}{h(x)}}$ terdefinisi pada himpunan bilangan real jika nilai pecahan di dalam akar non-negatif ($\\frac{g(x)}{h(x)} \\geq 0$) dan penyebutnya tidak sama dengan nol ($h(x) \\neq 0$). **Tips:** Menutup selang pada penyebut sehingga memilih $x \\leq -3$ yang mengakibatkan penyebut bernilai nol."
   },
   {
     "id": "mat-alj-fungsi-domain-007",
@@ -19369,7 +19955,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah hasil fungsi homografik $f(x) = \\frac{ax + b}{cx + d}$ dapat ditentukan dengan mencari nilai asimtot datarnya $y = \\frac{a}{c}$, atau dengan menyatakan variabel $x$ sebagai fungsi dari $y$ ($x = f^{-1}(y)$) lalu menentukan syarat terdefinisinya $x$. **Tips:** Tertukar antara batas domain ($x \\neq -2$) dengan batas range ($y \\neq 3$)."
   },
   {
     "id": "mat-alj-fungsi-domain-008",
@@ -19402,7 +19989,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi logaritma $f(x) = \\log(g(x))$ terdefinisi pada bilangan real jika dan hanya jika syarat numerusnya bernilai positif murni: $g(x) > 0$. **Tips:** Menyertakan tanda sama dengan ($geq$) padahal numerus logaritma tidak boleh bernilai nol ($log(0)$ tidak terdefinisi)."
   },
   {
     "id": "mat-alj-fungsi-domain-009",
@@ -19435,7 +20023,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Daerah asal dari jumlah dua fungsi $(f_1 + f_2)(x)$ adalah irisan dari daerah asal masing-masing fungsi: $D_f = D_{f_1} \\cap D_{f_2}$. **Tips:** Lupa membalik tanda pertidaksamaan saat membagi dengan bilangan negatif pada $-2x geq -6$."
   },
   {
     "id": "mat-alj-fungsi-domain-010",
@@ -19468,7 +20057,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Domain, Kodomain, dan Range",
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi $f(x) = \\sqrt{r^2 - x^2}$ merepresentasikan persamaan setengah lingkaran atas dengan pusat $(0,0)$ dan jari-jari $r$. Nilai fungsi selalu non-negatif dan dibatasi oleh nilai jari-jarinya: $0 \\leq y \\leq r$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-006",
@@ -19501,7 +20091,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Grafik fungsi eksponen $f(x) = a \\cdot b^x + c$ memiliki asimtot datar pada garis horizontal $y = c$ karena untuk basis $b > 1$, saat $x \\to -\\infty$ nilai suku eksponensial mendekati nol."
   },
   {
     "id": "mat-alj-fungsi-eksponen-007",
@@ -19534,7 +20125,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sifat dasar fungsi eksponen dengan basis positif menyatakan bahwa untuk setiap eksponen riil, nilai perpangkatan selalu positif tegas, yaitu $a^{g(x)} > 0$ untuk $a > 0$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-008",
@@ -19567,7 +20159,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong kurva dengan sumbu koordinat diperoleh dengan menetapkan $y = 0$ untuk perpotongan sumbu-$X$ dan $x = 0$ untuk perpotongan sumbu-$Y$."
   },
   {
     "id": "mat-alj-fungsi-eksponen-009",
@@ -19600,7 +20193,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong dua kurva dicari dengan menyamakan kedua fungsi $f(x) = g(x)$ dan menyelesaikannya menggunakan pemisalan aljabar persamaan kuadrat."
   },
   {
     "id": "mat-alj-fungsi-eksponen-010",
@@ -19633,7 +20227,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Eksponensial",
     "subTopic": "Fungsi Eksponensial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Model pertumbuhan eksponensial $N(t) = N_0 \\cdot b^{kt}$ diselesaikan dengan menentukan konstanta laju pertumbuhan $k$ terlebih dahulu melalui data awal dan pengamatan."
   },
   {
     "id": "mat-alj-fungsi-logaritma-006",
@@ -19666,7 +20261,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Asimtot tegak kurva fungsi logaritma $f(x) = {}^a\\log(x - h) + k$ terjadi pada garis pembuat nol numerus, yaitu $x = h$. Titik potong kurva dengan garis horizontal $y = c$ diperoleh dengan menyelesaikan persamaan $f(x) = c$."
   },
   {
     "id": "mat-alj-fungsi-logaritma-007",
@@ -19699,7 +20295,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Invers dari suatu fungsi logaritma merupakan fungsi eksponensial. Prosedur pencarian invers dilakukan dengan menyatakan variabel $x$ dalam bentuk variabel $y$, lalu menukar kembali kedua variabel tersebut."
   },
   {
     "id": "mat-alj-fungsi-logaritma-008",
@@ -19732,7 +20329,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Parameter fungsi ditentukan dengan membentuk sistem persamaan nonlinier dari titik-titik yang dilalui oleh kurva, lalu menggunakan sifat perbandingan logaritma."
   },
   {
     "id": "mat-alj-fungsi-logaritma-009",
@@ -19765,7 +20363,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong dua grafik logaritma dengan basis yang sama ditentukan dengan menyamakan kedua fungsi $f(x) = g(x)$ serta memastikan solusi memenuhi irisan syarat numerus kedua fungsi. **Tips:** Lupa memeriksa apakah nilai absis yang diperoleh memenuhi syarat numerus positif untuk kedua kurva logaritma."
   },
   {
     "id": "mat-alj-fungsi-logaritma-010",
@@ -19798,7 +20397,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Logaritma",
     "subTopic": "Fungsi Logaritma",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perpotongan kurva dengan sumbu-$X$ dicari dengan menetapkan $y = 0$, sedangkan perpotongan kurva dengan sumbu-$Y$ dicari dengan menetapkan $x = 0$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-006",
@@ -19831,7 +20431,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong kurva dengan garis horizontal dicari dengan menyamakan rumus fungsi dengan nilai ordinat garis. Jarak antara dua titik pada garis horizontal sama dengan selisih mutlak dari kedua absisnya, yaitu $|x_1 - x_2|$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-007",
@@ -19864,7 +20465,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan ketaksamaan segitiga $|a| + |b| \\ge |a + b|$, penjumlahan jarak $|x - a| + |x - b|$ bernilai minimum konstan sebesar $|b - a|$ untuk setiap $x$ yang terletak di antara $a$ dan $b$."
   },
   {
     "id": "mat-alj-fungsi-mutlak-008",
@@ -19897,7 +20499,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Grafik fungsi simetris $f(x) = c - |ax|$ yang berada di atas sumbu-$X$ membentuk bangun datar segitiga sama kaki dengan titik puncak pada sumbu-$Y$ dan alas pada sumbu-$X$. **Tips:** Lupa membagi dengan 2 pada rumus luas segitiga sehingga menghasilkan jawaban 36 yang merupakan luas persegi panjang."
   },
   {
     "id": "mat-alj-fungsi-mutlak-009",
@@ -19930,7 +20533,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi $(f \\circ g)(x) = f(g(x))$ diuraikan dengan menyubstitusikan $g(x)$ ke dalam fungsi nilai mutlak $f$, kemudian menyelesaikan persamaan nilai mutlak yang terbentuk. **Tips:** Memaksakan mencari solusi pada kasus diskriminan negatif atau salah memfaktorkan persamaan kuadrat pada kasus pertama."
   },
   {
     "id": "mat-alj-fungsi-mutlak-010",
@@ -19963,7 +20567,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Nilai Mutlak & Piecewise",
     "subTopic": "Fungsi Nilai Mutlak & Piecewise",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pertidaksamaan berbentuk $|A| < |B|$ dapat diselesaikan dengan menguadratkan kedua ruas, yang setara dengan pemfaktoran selisih kuadrat $(A + B)(A - B) < 0$."
   },
   {
     "id": "mat-alj-fungsi-polinom-006",
@@ -19996,7 +20601,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik stasioner suatu fungsi kontinu $f(x)$ terjadi pada saat gradien garis singgungnya bernilai nol, yaitu memenuhi syarat turunan pertama $f'(x) = 0$."
   },
   {
     "id": "mat-alj-fungsi-polinom-007",
@@ -20029,7 +20635,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Parabola menyinggung garis lurus jika dan hanya jika persamaan kuadrat sekutu hasil substitusi kedua persamaan memiliki nilai diskriminan sama dengan nol ($D = 0$). **Tips:** Lupa mengubah tanda konstanta $-1$ menjadi $+1$ saat memindahkan ke ruas kiri."
   },
   {
     "id": "mat-alj-fungsi-polinom-008",
@@ -20062,7 +20669,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi kuadrat yang diketahui titik baliknya $(x_p, y_p)$ dapat dirumuskan sebagai $f(x) = a(x - x_p)^2 + y_p$. Nilai parameter $a$ dicari melalui substitusi titik lain yang dilalui grafik."
   },
   {
     "id": "mat-alj-fungsi-polinom-009",
@@ -20095,7 +20703,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi kuadrat definit positif (selalu bernilai positif untuk semua $x \\in \\mathbb{R}$) harus memenuhi dua syarat mutlak: koefisien utama positif ($a > 0$) dan nilai diskriminan negatif ($D < 0$). **Tips:** Lupa mengiriskan dengan syarat $a > 0$ sehingga keliru memilih $m < -3$ atau $m > 2$."
   },
   {
     "id": "mat-alj-fungsi-polinom-010",
@@ -20128,7 +20737,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Polinom",
     "subTopic": "Fungsi Polinom",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi fungsi $y = f(x)$ sejauh $h$ satuan ke kanan dan $k$ satuan ke atas menghasilkan fungsi baru $y = f(x - h) + k$. **Tips:** Tertukar tanda pergeseran horizontal, yaitu menggunakan $(x + 3)$ padahal pergeseran ke kanan menggunakan $(x - 3)$."
   },
   {
     "id": "mat-alj-fungsi-rasional-006",
@@ -20161,7 +20771,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Asimtot miring terjadi pada fungsi rasional ketika derajat pembilang tepat satu tingkat lebih tinggi daripada derajat penyebut. Persamaan asimtot miring diperoleh dari hasil bagi polinomial (tanpa sisa)."
   },
   {
     "id": "mat-alj-fungsi-rasional-007",
@@ -20194,7 +20805,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik lubang (*hole*) terjadi ketika pembilang dan penyebut memiliki faktor persekutuan yang bernilai nol pada absis yang sama. Ordinat lubang dicari dengan mensubstitusikan absis tersebut ke bentuk fungsi yang telah disederhanakan."
   },
   {
     "id": "mat-alj-fungsi-rasional-008",
@@ -20227,7 +20839,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kurva fungsi rasional dapat memotong asimtot datarnya pada nilai $x$ berhingga. Titik potong dicari dengan menyamakan rumus fungsi dengan nilai asimtot datarnya: $f(x) = y_{\\text{asimtot}}$."
   },
   {
     "id": "mat-alj-fungsi-rasional-009",
@@ -20260,7 +20873,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Asimtot tegak $x = x_0$ diperoleh dari penyebut $x_0 + c = 0$. Asimtot datar $y = y_0$ diperoleh dari rasio koefisien $\\frac{a}{1} = y_0$. Titik potong sumbu-$Y$ diperoleh dari $f(0) = \\frac{b}{c}$."
   },
   {
     "id": "mat-alj-fungsi-rasional-010",
@@ -20293,7 +20907,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Fungsi Rasional",
     "subTopic": "Fungsi Rasional",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Total garis asimtot diperoleh dengan menghitung banyaknya asimtot tegak (pembuat nol penyebut yang tidak dapat disederhanakan oleh pembilang) ditambah asimtot datar."
   },
   {
     "id": "mat-alj-fungsi-trigono-006",
@@ -20326,7 +20941,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk kombinasi linier $A\\cos(x) + B\\sin(x)$ dapat diubah menjadi bentuk gelombang tunggal $R\\cos(x - \\alpha)$ dengan amplitudo $R = \\sqrt{A^2 + B^2}$. Nilai maksimum bentuk tersebut adalah $R + c$."
   },
   {
     "id": "mat-alj-fungsi-trigono-007",
@@ -20359,7 +20975,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik potong grafik dengan sumbu-$X$ dicari dengan menyelesaikan persamaan trigonometri $f(x) = 0$ dan menghitung jumlah solusi sudut yang berada dalam batasan interval domain yang ditentukan."
   },
   {
     "id": "mat-alj-fungsi-trigono-008",
@@ -20392,7 +21009,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk umum gelombang sinusoidal bertranslasi adalah $y = A\\sin(k(x - h)) + d$, dengan $A$ amplitudo, $k = \\frac{2\\pi}{T}$, $h$ pergeseran horizontal, dan $d$ pergeseran vertikal."
   },
   {
     "id": "mat-alj-fungsi-trigono-009",
@@ -20425,7 +21043,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi kuadrat dalam trigonometri $f(u) = au^2 + bu + c$ diselesaikan dengan pemisalan $u = \\sin(x)$ yang memiliki batas tertutup $-1 \\le u \\le 1$, lalu mencari nilai ekstrim pada interval tersebut."
   },
   {
     "id": "mat-alj-fungsi-trigono-010",
@@ -20458,7 +21077,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Grafik & Periode Fungsi Trigonometri",
     "subTopic": "Grafik & Periode Fungsi Trigonometri",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi tangen $\\tan(x)$ bersifat monoton naik pada interval $-\\frac{\\pi}{4} \\le x \\le \\frac{\\pi}{4}$ dengan rentang $-1 \\le \\tan(x) \\le 1$. Nilai kuadratnya memiliki rentang $0 \\le \\tan^2(x) \\le 1$."
   },
   {
     "id": "sedang-mtk-08",
@@ -20491,7 +21111,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Domain, Kodomain, dan Range",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-fungsi",
-    "subTopicSlug": "domain-kodomain-range"
+    "subTopicSlug": "domain-kodomain-range",
+    "hint": "Sifat Dasar Fungsi Invers: $$(f \\circ g)^{-1}(k) = a \\iff (f \\circ g)(a) = k$$ Daripada mencari rumus invers yang panjang, gunakan sifat kesetaraan nilai input-output secara langsung!"
   },
   {
     "id": "mat-alj-matriks-det-006",
@@ -20524,7 +21145,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Determinan matriks $3 \\times 3$ dapat dihitung menggunakan aturan Sarrus atau ekspansi kofaktor baris/kolom. Menggunakan ekspansi kofaktor pada baris yang memuat elemen 0 akan mempermudah perhitungan aljabar. **Tips:** Kesalahan tanda selang-seling $+ - +$ pada kofaktor atau salah mengalikan diagonal pada aturan Sarrus."
   },
   {
     "id": "mat-alj-matriks-det-007",
@@ -20557,7 +21179,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk matriks berordo $n \\times n$ berlaku sifat-sifat determinan aljabar linier: 1. $\\det(k M) = k^n \\det(M)$ 2. $\\det(M_1 M_2) = \\det(M_1) \\cdot \\det(M_2)$ 3. $\\det(M^{-1}) = \\frac{1}{\\det(M)}$ 4. $\\det(M^T) = \\det(M)$."
   },
   {
     "id": "mat-alj-matriks-det-008",
@@ -20590,7 +21213,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks memiliki determinan yang sama jika nilai numerik hasil ekspansi masing-masing determinan memenuhi kesamaan aljabar: $\\det(C) = \\det(D)$."
   },
   {
     "id": "mat-alj-matriks-det-009",
@@ -20623,7 +21247,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat perlu dan cukup agar suatu matriks persegi berordo $3 \\times 3$ berstatus singular adalah nilai determinannya bernilai nol ($det(K) = 0$)."
   },
   {
     "id": "mat-alj-matriks-det-010",
@@ -20656,7 +21281,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Determinan Matriks 2x2 dan 3x3",
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $\\det(A - \\lambda I) = 0$ disebut persamaan karakteristik matriks. Untuk matriks $2 \\times 2$, jumlah akar-akar karakteristik $\\lambda_1 + \\lambda_2$ sama dengan nilai jejak (*trace*) dari matriks $A$, yaitu jumlah elemen-elemen diagonal utamanya. **Tips:** Salah menjabarkan perkalian suku aljabar $(5 - \\lambda)(2 - \\lambda)$ atau salah tanda pada rumus Vieta."
   },
   {
     "id": "mat-alj-matriks-invers-006",
@@ -20689,7 +21315,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan teorema pembalikan urutan invers pada perkalian matriks (*reversal property*), invers dari hasil perkalian dua matriks adalah: $$(AB)^{-1} = B^{-1} \\cdot A^{-1}$$. **Tips:** Mengira urutan perkalian invers tidak berbalik, yaitu salah menghitung $A^{-1} B^{-1}$ alih-alih $B^{-1} A^{-1}$."
   },
   {
     "id": "mat-alj-matriks-invers-007",
@@ -20722,7 +21349,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks $(M^{-1})^2$ diperoleh dengan mencari invers $M^{-1}$ terlebih dahulu, kemudian mengalikan matriks invers tersebut dengan dirinya sendiri: $(M^{-1})^2 = M^{-1} \\cdot M^{-1}$. **Tips:** Menguadratkan masing-masing elemen di dalam matriks invers alih-alih melakukan perkalian baris kali kolom."
   },
   {
     "id": "mat-alj-matriks-invers-008",
@@ -20755,7 +21383,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk matriks diagonal tak-singular berordo $3 \\times 3$, invers matriksnya merupakan matriks diagonal yang elemen diagonalnya adalah resiprokal (kebalikan) dari elemen diagonal matriks semula. **Tips:** Salah menyamakan penyebut pecahan atau salah tanda pada $-1$."
   },
   {
     "id": "mat-alj-matriks-invers-009",
@@ -20788,7 +21417,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika matriks $A$ memenuhi persamaan polinomial $A^2 + pA + qI = O$ dengan $q \\neq 0$, maka matriks tersebut memiliki invers yang dapat dicari dengan memfaktorkan perkalian matriks $A$ terhadap matriks identitas $I$. **Tips:** Salah tanda ketika membagi dengan $-2$ sehingga memilih $\\frac{1}{2}(A - 5I)$."
   },
   {
     "id": "mat-alj-matriks-invers-010",
@@ -20821,7 +21451,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Invers Matriks 2x2 dan 3x3",
     "subTopic": "Invers Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Invers matriks $T$ memenuhi relasi $T \\cdot T^{-1} = I$. Elemen kolom ke-3 dari $T^{-1}$, yaitu $\\mathbf{v}_3 = \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix}$, dapat diselesaikan melalui sistem persamaan $T \\mathbf{v}_3 = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$. **Tips:** Sering mengira nilai elemen tetap 0 seperti matriks asalnya atau keliru tanda menjadi $-6$."
   },
   {
     "id": "mat-alj-matriks-kali-006",
@@ -20854,7 +21485,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian matriks pada umumnya tidak bersifat komutatif ($AB \\neq BA$). Operasi $AB - BA$ (disebut komutator) dihitung dengan mengalikan masing-masing urutan terlebih dahulu, kemudian mengurangkan elemen-elemen yang seletak. **Tips:** Mengasumsikan bahwa $AB = BA$ sehingga langsung menjawab matriks nol $\\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-kali-007",
@@ -20887,7 +21519,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk menghitung perpangkatan matriks berpangkat besar $A^n$, selidiki pola dari $A^2, A^3, \\dots$. Matriks segitiga atas satuan berpola $\\begin{pmatrix} 1 & k \\\\ 0 & 1 \\end{pmatrix}^n = \\begin{pmatrix} 1 & n \\cdot k \\\\ 0 & 1 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-kali-008",
@@ -20920,7 +21553,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Teorema Cayley-Hamilton, setiap matriks persegi ordo $2 \\times 2$ memenuhi persamaan karakteristiknya sendiri: $$A^2 - \\text{tr}(A) \\cdot A + \\det(A) \\cdot I = O \\implies A^2 = \\text{tr}(A) \\cdot A - \\det(A) \\cdot I$$ dengan $\\text{tr}(A) = a + d$ (trace matriks) dan $\\det(A) = ad - bc$."
   },
   {
     "id": "mat-alj-matriks-kali-009",
@@ -20953,7 +21587,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks bernilai sama jika elemen-elemen seletaknya bernilai sama. Perkalian matriks pada ruas kiri dijabarkan terlebih dahulu, lalu elemen-elemen yang bersesuaian disamakan untuk menyusun sistem persamaan linier satu peubah."
   },
   {
     "id": "mat-alj-matriks-kali-010",
@@ -20986,7 +21621,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Skalar dan Dua Matriks",
     "subTopic": "Perkalian Skalar dan Dua Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Transpos dari perkalian dua matriks memenuhi sifat $(AB)^T = B^T A^T$. Kita dapat menghitung hasil kali $AB$ terlebih dahulu lalu mentransposkannya dengan menukar baris menjadi kolom. **Tips:** Lupa mentransposkan matriks hasil perkalian sehingga memilih $\\begin{pmatrix} 10 & -8 \\\\ 8 & 2 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-operasi-006",
@@ -21019,7 +21655,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan matriks linear diselesaikan menggunakan sifat aljabar penjumlahan dan perkalian skalar: kumpulkan suku yang memuat variabel matriks $X$ ke satu ruas: $$2X + X = 3B - A \\implies 3X = 3B - A \\implies X = \\frac{1}{3}(3B - A)$$. **Tips:** Lupa mengalikan dengan skalar $\\frac{1}{3}$ di langkah terakhir sehingga memilih $\\begin{pmatrix} 9 & 6 \\\\ 9 & 6 \\end{pmatrix}$."
   },
   {
     "id": "mat-alj-matriks-operasi-007",
@@ -21052,7 +21689,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Lakukan operasi skalar dan pengurangan pada ruas kiri terlebih dahulu, lalu samakan elemen-elemen yang seletak untuk memperoleh sistem persamaan linear dua variabel (SPLDV) dalam $x$ dan $y$."
   },
   {
     "id": "mat-alj-matriks-operasi-008",
@@ -21085,7 +21723,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kombinasi linier dua matriks $C = p A + q B$ berarti setiap elemen matriks $C$ merupakan jumlahan dari perkalian skalar elemen matriks $A$ dan $B$: $c_{ij} = p a_{ij} + q b_{ij}$. **Tips:** Kesalahan membaca elemen baris 2 kolom 1 (lupa tanda minus pada $-q = -2$)."
   },
   {
     "id": "mat-alj-matriks-operasi-009",
@@ -21118,7 +21757,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Elemen pada baris ke-$i$ dan kolom ke-$j$ dari matriks transpos $N^T$ adalah elemen baris ke-$j$ dan kolom ke-$i$ dari matriks asal $N$, yaitu $(N^T)_{ij} = n_{ji}$."
   },
   {
     "id": "mat-alj-matriks-operasi-010",
@@ -21151,7 +21791,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Matriks",
     "subTopic": "Penjumlahan dan Pengurangan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan dekomposisi matriks menjadi bagian simetris $\\frac{1}{2}(A + A^T)$ dan bagian antisimetris $\\frac{1}{2}(A - A^T)$: $$A = \\frac{1}{2}(A + A^T) + \\frac{1}{2}(A - A^T)$$."
   },
   {
     "id": "mat-alj-matriks-ordo-006",
@@ -21184,7 +21825,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Trace dari suatu matriks persegi adalah jumlahan dari semua elemen yang berada pada diagonal utama, yaitu $\\text{Trace}(A) = \\sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \\dots + a_{nn}$. **Tips:** Menghitung seluruh elemen matriks yang tidak perlu; cukup hitung tiga elemen pada diagonal utama ($i=j$) untuk menghemat waktu."
   },
   {
     "id": "mat-alj-matriks-ordo-007",
@@ -21217,7 +21859,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada matriks simetris miring, berlaku $K^T = -K$, yang berarti elemen diagonal utama bernilai nol ($k_{ii} = 0$) dan pasangan elemen yang saling berkebalikan letaknya memenuhi relasi $k_{ij} = -k_{ji}$."
   },
   {
     "id": "mat-alj-matriks-ordo-008",
@@ -21250,7 +21893,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks $A_{m \\times k}$ dan $B_{k \\times n}$ dapat dikalikan dan menghasilkan matriks berordo $m \\times n$. Jika matriks $M$ berordo $m \\times n$, maka matriks transposnya $M^T$ memiliki ordo yang dibalik, yaitu $n \\times m$. **Tips:** Lupa melakukan operasi transpos di akhir sehingga menjawab $2 \\times 5$ ()."
   },
   {
     "id": "mat-alj-matriks-ordo-009",
@@ -21283,7 +21927,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks segitiga atas adalah matriks persegi yang semua elemen di bawah diagonal utamanya bernilai nol ($s_{ij} = 0$ untuk $i > j$)."
   },
   {
     "id": "mat-alj-matriks-ordo-010",
@@ -21316,7 +21961,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Ordo, Kesamaan, dan Transpose",
     "subTopic": "Ordo, Kesamaan, dan Transpose",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua matriks bernilai sama ($A = B^T$) jika dan hanya jika keduanya memiliki ordo yang sama dan setiap pasangan elemen yang bersesuaian nilainya tepat sama. **Tips:** Langsung menyamakan $A = B$ tanpa melakukan transpos terlebih dahulu pada matriks $B$."
   },
   {
     "id": "mat-alj-matriks-persamaan-006",
@@ -21349,7 +21995,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk menyelesaikan persamaan $AXB = C$, kalikan dengan invers $A^{-1}$ dari arah kiri dan invers $B^{-1}$ dari arah kanan: $$A^{-1}(AXB)B^{-1} = A^{-1} C B^{-1} \\implies (A^{-1}A) X (B B^{-1}) = A^{-1} C B^{-1} \\implies I X I = A^{-1} C B^{-1} \\implies X = A^{-1} C B^{-1}$$."
   },
   {
     "id": "mat-alj-matriks-persamaan-007",
@@ -21382,7 +22029,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $XA = B$ diselesaikan melalui hubungan $X = B \\cdot A^{-1}$ dengan $A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)$. **Tips:** Mengalikan $A^{-1} B$ dari sebelah kiri yang menghasilkan matriks yang salah karena perkalian matriks tidak komutatif."
   },
   {
     "id": "mat-alj-matriks-persamaan-008",
@@ -21415,7 +22063,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $AX + B = C$ disederhanakan menjadi $AX = C - B$. Nilai determinan matriks $X$ kemudian dihitung memanfaatkan sifat $\\det(A) \\cdot \\det(X) = \\det(C - B)$. **Tips:** Lupa mengurangkan matriks $C - B$ terlebih dahulu atau langsung membagi elemen tanpa menghitung determinan."
   },
   {
     "id": "mat-alj-matriks-persamaan-009",
@@ -21448,7 +22097,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan sifat invers ganda: $((M)^{-1})^{-1} = M$. Jika $(A + X)^{-1} = B$, lakukan inversi pada kedua ruas untuk mengisolasi suku $(A + X)$. **Tips:** Mengasumsikan $(A + X)^{-1} = A^{-1} + X^{-1}$, padahal invers tidak bersifat distributif terhadap penjumlahan matriks."
   },
   {
     "id": "mat-alj-matriks-persamaan-010",
@@ -21481,7 +22131,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Matriks",
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Persamaan $A^T X = B$ diselesaikan dengan $X = (A^T)^{-1} B$. Transpose matriks diperoleh dengan menukar baris menjadi kolom. **Tips:** Lupa melakukan transpose pada matriks $A$ terlebih dahulu sebelum mencari invers dan mengalikan vektor."
   },
   {
     "id": "mat-alj-matriks-spl-006",
@@ -21514,7 +22165,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Determinan utama ($D$) dari SPLTV tiga variabel $3 \\times 3$ diperoleh dari matriks koefisien variabel $x, y, z$. Nilai determinan dapat dihitung menggunakan ekspansi kofaktor sepanjang baris pertama. **Tips:** Kesalahan tanda pada kofaktor elemen tengah baris pertama ($-a_{12}$) atau salah tanda saat mengurangkan bilangan negatif."
   },
   {
     "id": "mat-alj-matriks-spl-007",
@@ -21547,7 +22199,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dalam Aturan Cramer, determinan $D_y$ diperoleh dengan mengganti kolom kedua (koefisien $y$) dengan vektor konstanta. Nilai variabel $y$ kemudian dihitung dari $y = \\frac{D_y}{D}$. **Tips:** Lupa membagi $D_y$ dengan determinan utama $D$ atau salah mengganti kolom $x$ alih-alih kolom $y$."
   },
   {
     "id": "mat-alj-matriks-spl-008",
@@ -21580,7 +22233,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem persamaan linear homogen $A \\mathbf{x} = \\mathbf{0}$ selalu memiliki solusi trivial $\\mathbf{x} = \\mathbf{0}$. Sistem tersebut memiliki solusi tak-trivial (solusi selain nol) jika dan hanya jika matriks koefisiennya singular, yaitu $\\det(A) = 0$. **Tips:** Lupa bahwa solusi tak-trivial mensyaratkan determinan nol, atau salah memilih nilai negatif $-3$."
   },
   {
     "id": "mat-alj-matriks-spl-009",
@@ -21613,7 +22267,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Model persamaan linear dari cerita diubah ke bentuk matriks $A \\mathbf{x} = \\mathbf{b}$, kemudian diselesaikan dengan $\\mathbf{x} = A^{-1} \\mathbf{b}$ dengan $A^{-1} = \\frac{1}{\\det(A)} \\text{adj}(A)$. **Tips:** Lupa tanda minus pada determinan $-10$ sehingga tanda skala invers menjadi salah."
   },
   {
     "id": "mat-alj-matriks-spl-010",
@@ -21646,7 +22301,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks pada SPL & Program Linear",
     "subTopic": "Matriks pada SPL & Program Linear",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sistem dua persamaan linear dua variabel tidak memiliki solusi (garis-garisnya sejajar dan tidak berpotongan) jika rasio koefisien variabelnya sama tetapi rasio konstanta hasilnya berbeda: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$."
   },
   {
     "id": "sup-mtk-alj-02",
@@ -21679,7 +22335,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Determinan Matriks 2x2 dan 3x3",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-matriks",
-    "subTopicSlug": "determinan-matriks"
+    "subTopicSlug": "determinan-matriks",
+    "hint": "Metode Sarrus Matriks $3\\times3$: Salin dua kolom pertama ke sebelah kanan matriks, jumlahkan hasil kali diagonal utama ke bawah, lalu kurangkan hasil kali diagonal sekunder ke atas. **Tips:** Kesalahan tanda minus pada suku $(-1)$ saat melakukan perkalian diagonal sekunder."
   },
   {
     "id": "sedang-mtk-11",
@@ -21712,7 +22369,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Persamaan Matriks",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-matriks",
-    "subTopicSlug": "persamaan-matriks"
+    "subTopicSlug": "persamaan-matriks",
+    "hint": "Sifat-Sifat Determinan Matriks: • $\\det(A \\cdot B) = \\det(A) \\cdot \\det(B)$ • Untuk matriks ordo $n\\times n$: $\\det(k \\cdot M) = k^n \\cdot \\det(M)$."
   },
   {
     "id": "mat-alj-polinom-faktor-006",
@@ -21745,7 +22403,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Teorema Faktor, jika $(x - c_1)$ dan $(x - c_2)$ adalah faktor-faktor dari $P(x)$, maka berlaku $P(c_1) = 0$ dan $P(c_2) = 0$. **Tips:** Kesalahan tanda saat mengurangkan $-(-2p) = +2p$ atau keliru memindahkan ruas."
   },
   {
     "id": "mat-alj-polinom-faktor-007",
@@ -21778,7 +22437,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Akar persamaan suku banyak memenuhi $P(x_1) = 0$. Berdasarkan Teorema Vieta untuk kubik $ax^3 + bx^2 + cx + d = 0$, jumlah hasil kali sepasang akar adalah $\\frac{c}{a}$. **Tips:** Mencoba mencari akar-akar $x_2$ dan $x_3$ secara terpisah padahal dapat langsung dijawab melalui rumus Vieta $\\frac{c}{a}$."
   },
   {
     "id": "mat-alj-polinom-faktor-008",
@@ -21811,7 +22471,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas aljabar tiga variabel: $$\\alpha^2 + \\beta^2 + \\gamma^2 = (\\alpha + \\beta + \\gamma)^2 - 2(\\alpha\\beta + \\beta\\gamma + \\alpha\\gamma)$$."
   },
   {
     "id": "mat-alj-polinom-faktor-009",
@@ -21844,7 +22505,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tiga bilangan yang membentuk barisan aritmetika dapat dimisalkan sebagai $(a - b), a, (a + b)$. Jumlah ketiga akar sama dengan $3a = -\\frac{\\text{koef } x^2}{\\text{koef } x^3}$. **Tips:** Salah memisalkan suku tengah barisan aritmetika sehingga penyelesaian menjadi sangat rumit."
   },
   {
     "id": "mat-alj-polinom-faktor-010",
@@ -21877,7 +22539,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Faktor & Akar Polinomial",
     "subTopic": "Teorema Faktor & Akar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Penjumlahan kebalikan akar-akar polinomial dapat disamakan penyebutnya: $$\\frac{1}{x_1} + \\frac{1}{x_2} + \\frac{1}{x_3} = \\frac{x_1 x_2 + x_2 x_3 + x_1 x_3}{x_1 x_2 x_3} = \\frac{c / a}{-d / a} = -\\frac{c}{d}$$. **Tips:** Lupa tanda minus pada $-\\frac{d}{a}$ yang membatalkan tanda negatif dari $d = -3$."
   },
   {
     "id": "mat-alj-polinom-horner-006",
@@ -21910,7 +22573,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada metode Horner Kino untuk pembagi berderajat dua $Q(x) = x^2 - c_1 x - c_0$, persamaan pembuat nol diubah menjadi $x^2 = c_1 x + c_0$. Nilai pengali pada bagan Horner Kino adalah $k_1 = -(-c_0) = c_0$ (pengali konstanta) dan $k_2 = -(-c_1) = c_1$ (pengali koefisien linear). **Tips:** Lupa mengubah tanda negatif dari koefisien pembagi sehingga memilih $-2$ dan $-1$."
   },
   {
     "id": "mat-alj-polinom-horner-007",
@@ -21943,7 +22607,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Koefisien $A, B, C, D$ dari ekspansi Taylor polinomial dalam pangkat $(x - c)$ dapat ditentukan melalui sisa-sisa pembagian bertingkat menggunakan bagan Horner berulang pada $x = c$. **Tips:** Urutan penamaan koefisien terbalik dari $A$ ke $D$ atau salah mengalikan pada baris kedua."
   },
   {
     "id": "mat-alj-polinom-horner-008",
@@ -21976,7 +22641,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sisa pembagian pada bagan Horner merupakan elemen terakhir yang diperoleh dari akumulasi operasi kali dan tambah berturut-turut. **Tips:** Lupa mengalikan 2 pada suku $(4a + 15)$ sebelum menambahkan ke konstanta $-6$."
   },
   {
     "id": "mat-alj-polinom-horner-009",
@@ -22009,7 +22675,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suku banyak dibagi bertingkat oleh $(x - c)$ dua kali menghasilkan sisa pertama $S_1$ dan sisa kedua $S_2$, maka rumus sisa pembagian total oleh $(x - c)^2$ adalah $S(x) = S_2(x - c) + S_1$."
   },
   {
     "id": "mat-alj-polinom-horner-010",
@@ -22042,7 +22709,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Skema Horner",
     "subTopic": "Skema Horner",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk pembagi $(ax + b)$, nilai pembuat nol pada bagan adalah $k = -\\frac{b}{a}$. Hasil bagi sebenarnya diperoleh dengan membagi koefisien baris bawah dengan $a$, sedangkan nilai sisa pada kolom terakhir tidak dibagi dengan $a$. **Tips:** Ikut membagi sisa pembagian dengan 3 sehingga menjawab sisa 2, atau lupa membagi hasil bagi dengan 3."
   },
   {
     "id": "mat-alj-polinom-operasi-006",
@@ -22075,7 +22743,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua suku banyak bernilai identik ($equiv$) jika dan hanya jika koefisien suku-suku yang bersesuaian pada kedua ruas bernilai sama untuk setiap derajat variabel $x$. **Tips:** Salah tanda pada saat menyamakan koefisien $c - (-1) = c + 1$ atau salah memindahkan ruas."
   },
   {
     "id": "mat-alj-polinom-operasi-007",
@@ -22108,7 +22777,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jumlah seluruh koefisien dari suatu polinomial $P(x)$ dapat ditentukan secara langsung dengan mengevaluasi nilai fungsi polinomial tersebut pada $x = 1$, yaitu menghitung $P(1)$. **Tips:** Mencoba menjabarkan ekspansi binomial berpangkat 2024 yang mustahil dilakukan secara manual."
   },
   {
     "id": "mat-alj-polinom-operasi-008",
@@ -22141,7 +22811,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan teorema binomial Newton $(1 + y)^n = 1 + n y + \\frac{n(n-1)}{2} y^2 + \\dots$ untuk mengekspansi $(1 - 2x)^4$, kemudian kalikan dengan faktor linear $(1 + ax)$."
   },
   {
     "id": "mat-alj-polinom-operasi-009",
@@ -22174,7 +22845,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Polinomial berderajat 2 ditentukan secara tunggal oleh 3 titik berbeda. Pola nilai fungsi atau metode beda hingga (*finite differences*) dapat digunakan untuk mengidentifikasi rumus eksplisit $f(x)$. **Tips:** Menghitung secara eliminasi manual 3 variabel yang rawan salah hitung tanda aljabar."
   },
   {
     "id": "mat-alj-polinom-operasi-010",
@@ -22207,7 +22879,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Operasi Aljabar Polinomial",
     "subTopic": "Operasi Aljabar Polinomial",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dekomposisi pecahan parsial dengan faktor kuadrat definit $x^2 + 2$ memiliki pembilang berbentuk linear $(Bx + C)$. Kesamaan pembilang diselesaikan dengan substitusi nilai strategis atau menyamakan koefisien."
   },
   {
     "id": "mat-alj-polinom-sisa-006",
@@ -22240,7 +22913,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suku banyak dibagi oleh pembagi kuadrat yang dapat difaktorkan $(x - x_1)(x - x_2)$, sisa pembagiannya berbentuk linear $S(x) = ax + b$ dengan nilai $S(x_1) = f(x_1)$ dan $S(x_2) = f(x_2)$."
   },
   {
     "id": "mat-alj-polinom-sisa-007",
@@ -22273,7 +22947,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Menurut Teorema Sisa, sisa pembagian fungsi polinomial komposit $R(x)$ oleh $(x - c)$ sama dengan nilai $R(c)$, yang dapat dihitung langsung dari nilai $P(c)$ dan $Q(c)$. **Tips:** Salah tanda pada perkalian $-2(-3) = +6$ menjadi $-6$ sehingga menghasilkan 23."
   },
   {
     "id": "mat-alj-polinom-sisa-008",
@@ -22306,7 +22981,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk pembagi $(x^2 - 1) = (x - 1)(x + 1)$ dan sisa $S(x)$, berlaku hubungan Teorema Sisa: $P(1) = S(1)$ dan $P(-1) = S(-1)$."
   },
   {
     "id": "mat-alj-polinom-sisa-009",
@@ -22339,7 +23015,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan Teorema Sisa, sisa pembagian $F(x)$ oleh $(x - c)$ adalah $F(c)$. Untuk fungsi komposisi $F(x) = P(g(x))$, nilainya adalah $P(g(c))$. **Tips:** Membagi sisa dengan 2 atau mengalikan dengan 2 karena ada koefisien $2x$ di dalam argumen fungsi."
   },
   {
     "id": "mat-alj-polinom-sisa-010",
@@ -22372,7 +23049,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Teorema Sisa",
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembagian oleh pembagi berderajat 3 menghasilkan sisa berderajat maksimum 2. Dengan memisalkan sisa $S(x) = A(x^2 - 1) + (2x + 3)$, syarat sisa pada $(x^2 - 1)$ otomatis terpenuhi. **Tips:** Menggunakan pemisalan standar $ax^2 + bx + c$ yang membutuhkan eliminasi 3 variabel yang panjang dan rawan salah hitung."
   },
   {
     "id": "mat-alj-polinom-susun-006",
@@ -22405,7 +23083,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembagian suku banyak oleh pembagi berbentuk kuadrat definit yang tidak dapat difaktorkan diselesaikan menggunakan algoritma pembagian bersusun panjang hingga menghasilkan sisa dengan derajat kurang dari 2 (bentuk linear $Ax + B$). **Tips:** Kesalahan tanda saat mengurangkan suku-suku negatif pada setiap tahapan bersusun."
   },
   {
     "id": "mat-alj-polinom-susun-007",
@@ -22438,7 +23117,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika suku banyak $P(x)$ habis dibagi oleh $(x^2 + x - 2) = (x + 2)(x - 1)$, maka menurut teorema faktor berlaku $P(-2) = 0$ dan $P(1) = 0$. **Tips:** Lupa bahwa $(-2)^3 = -8$ dan $-b(-2) = +2b$."
   },
   {
     "id": "mat-alj-polinom-susun-008",
@@ -22471,7 +23151,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas pembagian suku banyak menyatakan bahwa polinomial asal diperoleh dari perkalian pembagi dengan hasil bagi ditambah sisa pembagian: $P(x) = Q(x) \\cdot H(x) + S(x)$."
   },
   {
     "id": "mat-alj-polinom-susun-009",
@@ -22504,7 +23185,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada pembagian bersusun dengan koefisien utama pembagi $a > 1$, hasil bagi ditentukan melalui pembagian suku tertinggi berturut-turut oleh suku utama pembagi ($2x^2$). **Tips:** Lupa membagi koefisien dengan 2 pada setiap langkah pembagian suku baru."
   },
   {
     "id": "mat-alj-polinom-susun-010",
@@ -22537,7 +23219,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Pembagian Bersusun",
     "subTopic": "Pembagian Bersusun",
     "chapterTitle": "Aljabar",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika polinomial habis dibagi oleh $(x^2 - 1) = (x - 1)(x + 1)$, maka sisa pembagian untuk pembuat nol $x = 1$ dan $x = -1$ keduanya harus bernilai nol ($P(1) = 0$ dan $P(-1) = 0$)."
   },
   {
     "id": "sedang-mtk-03",
@@ -22570,7 +23253,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Teorema Sisa",
     "chapterTitle": "Aljabar",
     "subChapterId": "mat-alj-polinom",
-    "subTopicSlug": "teorema-sisa"
+    "subTopicSlug": "teorema-sisa",
+    "hint": "Teorema Sisa Polinomial Berderajat 2: Jika pembagi berderajat 2 yaitu $D(x) = (x - x_1)(x - x_2)$, maka sisa pembagian adalah linear: $S(x) = ax + b$. Berdasarkan Teorema Sisa: $$P(x_1) = S(x_1) = a x_1 + b$$ $$P(x_2) = S(x_2) = a x_2 + b$$. **Tips:** Perhatikan tanda negatif saat substitusi $P(-1)$: $-a + b = -1$."
   },
   {
     "id": "mat-geo-lingkaran-busur-006",
@@ -22603,7 +23287,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sifat utama segi empat tali busur menyatakan bahwa jumlah dua sudut yang saling berhadapan selalu sama dengan sudut lurus ($180^\\circ$), yaitu $\\angle A + \\angle C = 180^\\circ$."
   },
   {
     "id": "mat-geo-lingkaran-busur-007",
@@ -22636,7 +23321,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Besar sudut antara dua tali busur yang berpotongan di dalam lingkaran sama dengan setengah dari jumlah sudut-sudut pusat busur yang dihadapi oleh sudut tersebut dan sudut bertolak belakangnya: $\\angle AEB = \\frac{1}{2}(\\angle AOB + \\angle COD)$. **Tips:** Mengurangkan kedua sudut pusat (yang merupakan rumus untuk perpotongan di luar lingkaran) alih-alih menjumlahkannya."
   },
   {
     "id": "mat-geo-lingkaran-busur-008",
@@ -22669,7 +23355,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Besar sudut yang dibentuk oleh perpotongan dua tali busur di luar lingkaran sama dengan setengah dari selisih besar sudut pusat busur besar dan busur kecil yang diapitnya: $\\angle APC = \\frac{1}{2}(\\text{sudut busur besar} - \\text{sudut busur kecil})$."
   },
   {
     "id": "mat-geo-lingkaran-busur-009",
@@ -22702,7 +23389,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema perkalian segmen tali busur (Chord Theorem) menyatakan bahwa jika dua tali busur $AB$ dan $CD$ berpotongan di titik $P$, maka hasil kali panjang segmen pada satu tali busur sama dengan hasil kali panjang segmen pada tali busur lainnya: $AP \\times PB = CP \\times PD$. **Tips:** Keliru menyamakan penjumlahan segmen $AP + PB = CP + PD$ alih-alih perkalian segmen garis."
   },
   {
     "id": "mat-geo-lingkaran-busur-010",
@@ -22735,7 +23423,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang Busur, Juring, dan Tembereng",
     "subTopic": "Panjang Busur, Juring, dan Tembereng",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Teorema garis singgung-potong (Tangent-Secant Theorem) menyatakan bahwa kuadrat panjang segmen garis singgung sama dengan hasil kali panjang segmen garis potong luar dengan panjang keseluruhan garis potong: $PT^2 = PA \\times PB$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-006",
@@ -22768,7 +23457,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik $(x_1, y_1)$ terletak di luar lingkaran umum $x^2 + y^2 + Ax + By + C = 0$ jika nilai kuasanya lebih besar dari nol, yaitu $x_1^2 + y_1^2 + Ax_1 + By_1 + C > 0$. **Tips:** Memilih daerah interval di antara kedua akar ($-3 < k < 7$), yang merupakan daerah untuk titik di dalam lingkaran."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-007",
@@ -22801,7 +23491,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak terdekat dari titik luar $A$ ke kurva lingkaran berpusat $P$ dengan jari-jari $r$ dirumuskan sebagai selisih jarak titik ke pusat dengan jari-jari lingkaran: $d_{\\text{min}} = |AP| - r$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-008",
@@ -22834,7 +23525,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang tali busur lingkaran yang dipotong oleh garis lurus dapat dihitung menggunakan teorema Pythagoras pada segitiga siku-siku antara jari-jari $r$, jarak garis ke pusat $d$, dan setengah tali busur: $|AB| = 2\\sqrt{r^2 - d^2}$. **Tips:** Lupa mengalikan 2 di akhir langkah sehingga memilih panjang setengah tali busur $\\frac{7}{2}\\sqrt{2}$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-009",
@@ -22867,7 +23559,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis memotong lingkaran di dua titik berbeda jika sistem persamaan keduanya menghasilkan persamaan kuadrat dengan nilai diskriminan $D > 0$. **Tips:** Lupa membalik tanda ketaksamaan saat membagi dengan bilangan negatif $-4$."
   },
   {
     "id": "mat-geo-lingkaran-kedudukan-010",
@@ -22900,7 +23593,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Kedudukan Titik dan Garis",
     "subTopic": "Kedudukan Titik dan Garis",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kedudukan dua lingkaran ditentukan dengan membandingkan jarak antarpusat $d = |P_1 P_2|$ terhadap jumlah atau selisih panjang jari-jari: jika $d > r_1 + r_2$, maka kedua lingkaran saling terpisah di luar (saling lepas). **Tips:** Terkecoh menyimpulkan bersinggungan di luar ($d = r_1 + r_2$) tanpa menghitung jarak riil antarpusat."
   },
   {
     "id": "mat-geo-lingkaran-luas-006",
@@ -22933,7 +23627,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas tembereng diperoleh dari selisih antara luas juring lingkaran dan luas segitiga sama sisi yang dibentuk oleh kedua jari-jari dan tali busur: $L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$. **Tips:** Salah menghitung nilai $\\sin(60^\\circ) = \\frac{1}{2}\\sqrt{3}$ atau keliru mengurangkan luas segitiga dari luas juring."
   },
   {
     "id": "mat-geo-lingkaran-luas-007",
@@ -22966,7 +23661,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keliling juring adalah $K = 2r + s$, dan luas juring adalah $L = \\frac{1}{2}rs$. Nilai maksimum luas dicapai pada titik puncak fungsi kuadrat $L(r)$."
   },
   {
     "id": "mat-geo-lingkaran-luas-008",
@@ -22999,7 +23695,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas tembereng untuk sembarang sudut pusat $\\theta$ dihitung dari $L_{\\text{tembereng}} = L_{\\text{juring}} - L_{\\triangle}$, dengan $L_{\\triangle} = \\frac{1}{2}r^2\\sin(\\theta)$. **Tips:** Salah memasukkan tanda negatif pada nilai $\\sin(120^\\circ)$, padahal fungsi sinus tetap bertanda positif di kuadran II."
   },
   {
     "id": "mat-geo-lingkaran-luas-009",
@@ -23032,7 +23729,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rasio luas tembereng terhadap juring dihitung dengan membagi formula aljabar luas tembereng terhadap luas juring pada sudut pusat yang sama."
   },
   {
     "id": "mat-geo-lingkaran-luas-010",
@@ -23065,7 +23763,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Keliling dan Luas Lingkaran",
     "subTopic": "Keliling dan Luas Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika jarak antarpusat sama dengan jari-jari lingkaran ($d = r$), daerah irisan dibentuk oleh dua juring lingkaran bersudut pusat $120^\\circ$ yang saling bertumpukan pada layang-layang (dua segitiga sama sisi). Luas irisan = $2 \\times L_{\\text{juring}(120^\\circ)} - L_{\\text{belah ketupat}}$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-006",
@@ -23098,7 +23797,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik pusat lingkaran yang memiliki diameter dengan ujung $A(x_1, y_1)$ dan $B(x_2, y_2)$ adalah titik tengah segmen garis $AB$, dan jari-jarinya adalah setengah dari panjang segmen garis $AB$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-007",
@@ -23131,7 +23831,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jari-jari lingkaran yang menyinggung garis $Ax + By + C = 0$ sama dengan jarak tegak lurus dari titik pusat $(x_0, y_0)$ ke garis tersebut: $r = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-008",
@@ -23164,7 +23865,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua lingkaran konsentris memiliki koordinat titik pusat yang identik. Karena luas lingkaran sebanding dengan kuadrat jari-jarinya ($L = \\pi r^2$), maka luas yang berlipat ganda berarti kuadrat jari-jari barunya menjadi dua kali kuadrat jari-jari awal."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-009",
@@ -23197,7 +23899,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Segitiga $OAB$ merupakan segitiga siku-siku di titik $O(0, 0)$. Berdasarkan teorema Thales, hipotenusa $AB$ bertindak sebagai diameter dari lingkaran luar segitiga tersebut."
   },
   {
     "id": "mat-geo-lingkaran-persamaan-010",
@@ -23230,7 +23933,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Persamaan Lingkaran",
     "subTopic": "Persamaan Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Lingkaran di kuadran IV yang menyinggung kedua sumbu koordinat memiliki titik pusat $(r, -r)$ dengan panjang jari-jari $r > 0$, sehingga persamaannya adalah $(x - r)^2 + (y + r)^2 = r^2$."
   },
   {
     "id": "mat-geo-lingkaran-singgung-006",
@@ -23263,7 +23967,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis singgung lingkaran $(x - a)^2 + (y - b)^2 = r^2$ yang tegak lurus garis dengan gradien $m_1$ memiliki gradien $m_2 = -\\frac{1}{m_1}$. Persamaan garis singgungnya dirumuskan sebagai $y - b = m_2(x - a) \\pm r\\sqrt{1 + m_2^2}$. **Tips:** Langsung memakai gradien $m = -2$ tanpa mengubahnya dengan syarat tegak lurus $m_2 = \\frac{1}{2}$."
   },
   {
     "id": "mat-geo-lingkaran-singgung-007",
@@ -23296,7 +24001,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis kutub (polar) yang ditarik dari titik luar $(x_1, y_1)$ menuju lingkaran $x^2 + y^2 = r^2$ memiliki rumus yang identik dengan rumus bagi adil garis singgung: $x_1 x + y_1 y = r^2$. **Tips:** Mengganti ruas kanan dengan nilai kuasa titik ($26$) alih-alih nilai kuadrat jari-jari lingkaran ($9$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-008",
@@ -23329,7 +24035,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang ruas garis singgung dari titik $(x_1, y_1)$ ke lingkaran $x^2 + y^2 + Ax + By + C = 0$ dihitung menggunakan akar dari nilai kuasa titik: $|AT| = \\sqrt{x_1^2 + y_1^2 + Ax_1 + By_1 + C}$. **Tips:** Lupa menarik akar kuadrat di akhir langkah sehingga memilih nilai kuadrat panjang garis singgung ($36$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-009",
@@ -23362,7 +24069,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis singgung lingkaran selalu tegak lurus terhadap jari-jari di titik singgung. Sudut separuh $\\alpha$ antara garis hubung pusat dan garis singgung memenuhi $\\sin(\\alpha) = \\frac{r}{|OP|}$, dan sudut antara kedua garis singgung adalah $2\\alpha$. **Tips:** Lupa mengalikan sudut $\\alpha$ dengan 2 sehingga langsung menjawab dengan sudut separuh ($30^\\circ$)."
   },
   {
     "id": "mat-geo-lingkaran-singgung-010",
@@ -23395,7 +24103,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Garis Singgung Lingkaran",
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Garis yang sejajar memiliki gradien yang sama ($m_1 = m_2$). Persamaan garis singgung bergradien $m$ pada lingkaran berpusat di $(a, b)$ dirumuskan sebagai $y - b = m(x - a) \\pm r\\sqrt{1 + m^2}$."
   },
   {
     "id": "sedang-mtk-05",
@@ -23428,7 +24137,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Garis Singgung Lingkaran",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-lingkaran",
-    "subTopicSlug": "garis-singgung-lingkaran"
+    "subTopicSlug": "garis-singgung-lingkaran",
+    "hint": "Garis Singgung Lingkaran $x^2 + y^2 = r^2$ dengan Gradien $m$: $$y = mx \\pm r\\sqrt{1 + m^2}$$. **Tips:** Sering lupa bahwa kondisi tegak lurus menuntut $m = -\\frac{1}{m_1}$."
   },
   {
     "id": "mat-geo-trans-dilatasi-006",
@@ -23461,7 +24171,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi kurva $[O, k]$ dilakukan dengan mensubstitusi variabel asal $x = \\frac{x'}{k}$ dan $y = \\frac{y'}{k}$ ke dalam persamaan kurva."
   },
   {
     "id": "mat-geo-trans-dilatasi-007",
@@ -23494,7 +24205,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi lingkaran $[P(a, b), k]$ memperbesar jari-jari menurut $r' = |k| \\cdot r$ dan memetakan pusat lingkaran $(x_c, y_c)$ menurut rumus dilatasi terhadap titik pusat: $x_c' = a + k(x_c - a)$ dan $y_c' = b + k(y_c - b)$."
   },
   {
     "id": "mat-geo-trans-dilatasi-008",
@@ -23527,7 +24239,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi garis menghasilkan garis baru yang sejajar dengan garis asal. Hubungan koordinat asal dan bayangan terhadap pusat $P(a, b)$ adalah $x = a + \\frac{x' - a}{k}$ dan $y = b + \\frac{y' - b}{k}$."
   },
   {
     "id": "mat-geo-trans-dilatasi-009",
@@ -23560,7 +24273,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi dua dilatasi berturut-turut dengan titik pusat yang sama ekuivalen dengan sebuah dilatasi tunggal berpusat di titik yang sama dengan faktor skala perkalian: $k_{\\text{total}} = k_1 \\times k_2$."
   },
   {
     "id": "mat-geo-trans-dilatasi-010",
@@ -23593,7 +24307,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Dilatasi",
     "subTopic": "Dilatasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dilatasi dengan faktor skala $k$ mengubah besaran panjang dan keliling sebanding dengan $|k|$, sedangkan luas bangun datar berubah sebanding dengan kuadrat faktor skala ($k^2$)."
   },
   {
     "id": "mat-geo-trans-komposisi-006",
@@ -23626,7 +24341,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Cari relasi variabel asal $(x, y)$ terhadap variabel akhir $(x', y')$ melalui dua tahap transformasi berurutan: pertama transformasi linear oleh matriks, kemudian translasi. **Tips:** Salah membalikkan urutan substitusi variabel atau keliru tanda minus ketika mengalikan $-3(-x' + 2)$."
   },
   {
     "id": "mat-geo-trans-komposisi-007",
@@ -23659,7 +24375,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi berturut-turut terhadap dua garis yang saling tegak lurus $x = h$ dan $y = k$ setara dengan rotasi $180^\\circ$ berpusat di titik potong $(h, k)$, dengan rumus $x' = 2h - x$ dan $y' = 2k - y$."
   },
   {
     "id": "mat-geo-trans-komposisi-008",
@@ -23692,7 +24409,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pencerminan terhadap $y = x$ menukar variabel $(x, y) \\to (y, x)$. Dilatasi $[O, k]$ memperbesar koordinat menurut $(x', y') = (kx_1, ky_1)$. **Tips:** Lupa membagi 2 pada variabel $x$ dan $y$ saat mensubstitusikan hasil dilatasi ke fungsi semula."
   },
   {
     "id": "mat-geo-trans-komposisi-009",
@@ -23725,7 +24443,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika dua rotasi memiliki pusat yang berbeda, kita tidak dapat langsung menjumlahkan sudutnya begitu saja; kita harus menghitung koordinat bayangan tahap demi tahap secara berurutan."
   },
   {
     "id": "mat-geo-trans-komposisi-010",
@@ -23758,7 +24477,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Komposisi Transformasi",
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bayangan titik $P$ oleh komposisi transformasi $T_2 \\circ T_1$ dihitung dengan mengalikan matriks $M_2$ terhadap hasil kali $M_1 P$: $P' = M_2 (M_1 P)$. **Tips:** Menghitung urutan perkalian matriks secara terbalik ($T_1 \\circ T_2$), yaitu mengalikan $M_1$ dengan $M_2 P$."
   },
   {
     "id": "mat-geo-trans-luas-006",
@@ -23791,7 +24511,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas segitiga dengan salah satu titik sudut di titik asal $(0, 0)$ dan dua titik lainnya $(x_1, y_1)$ serta $(x_2, y_2)$ adalah $L = \\frac{1}{2}|x_1 y_2 - x_2 y_1|$. Luas bayangannya setelah transformasi matriks $M$ adalah $L' = |\\det(M)| \\times L$. **Tips:** Lupa membagi 2 pada luas segitiga awal sehingga memperoleh hasil dua kali lipat yaitu $252\\text{ satuan luas}$."
   },
   {
     "id": "mat-geo-trans-luas-007",
@@ -23824,7 +24545,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada komposisi dua transformasi matriks berurutan $M_1$ dan $M_2$, determinan matriks total adalah perkalian determinan masing-masing: $\\det(M_2 M_1) = \\det(M_2) \\times \\det(M_1)$. Luas bayangan akhir adalah $L' = |\\det(M_2)| \\times |\\det(M_1)| \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-008",
@@ -23857,7 +24579,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Luas daerah elips $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ adalah $L = \\pi a b$. Luas daerah setelah transformasi matriks $M$ menjadi $L' = |\\det(M)| \\times L$."
   },
   {
     "id": "mat-geo-trans-luas-009",
@@ -23890,7 +24613,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan perubahan luas dinyatakan oleh $|\\det(M)| = \\frac{L'}{L}$. Selesaikan nilai mutlak determinan matriks untuk memperoleh nilai parameter $x$. **Tips:** Lupa bahwa determinan matriks dapat bernilai negatif di dalam tanda mutlak atau salah mengurangkan suku determinan."
   },
   {
     "id": "mat-geo-trans-luas-010",
@@ -23923,7 +24647,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Luas Bangun Hasil Transformasi",
     "subTopic": "Luas Bangun Hasil Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi merupakan transformasi isometri yang mempertahankan luas awal bangun datar (pengali luas = 1). Dilatasi dengan faktor skala $k$ melipatgandakan luas sebesar kuadrat faktor skalanya ($k^2$)."
   },
   {
     "id": "mat-geo-trans-matriks-006",
@@ -23956,7 +24681,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk mencari bayangan kurva oleh transformasi matriks $\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = M\\begin{pmatrix} x \\\\ y \\end{pmatrix}$, kita gunakan matriks invers $\\begin{pmatrix} x \\\\ y \\end{pmatrix} = M^{-1}\\begin{pmatrix} x' \\\\ y' \\end{pmatrix}$ untuk mensubstitusikan variabel $x$ dan $y$ ke persamaan asal kurva. **Tips:** Langsung mensubstitusikan $x' = x + 2y$ dan $y' = x + 3y$ ke persamaan asal tanpa mencari invers matriksnya terlebih dahulu."
   },
   {
     "id": "mat-geo-trans-matriks-007",
@@ -23989,7 +24715,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks transformasi linear berukuran $2 \\times 2$ memiliki kolom-kolom yang tepat sama dengan vektor bayangan dari vektor basis standar $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ dan $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$. **Tips:** Menyusun vektor bayangan sebagai baris bukannya kolom pada matriks $M$."
   },
   {
     "id": "mat-geo-trans-matriks-008",
@@ -24022,7 +24749,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika transformasi $T_1$ dilanjutkan dengan transformasi $T_2$, maka matriks transformasi gabungannya diperoleh dari perkalian matriks secara terbalik: $M = M_2 \\times M_1$. **Tips:** Membalik urutan perkalian menjadi $M_1 \\times M_2$ yang menghasilkan matriks $\\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-trans-matriks-009",
@@ -24055,7 +24783,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Matriks peregangan horizontal $M = \\begin{pmatrix} 2 & 0 \\\\ 0 & 1 \\end{pmatrix}$ menghasilkan $x' = 2x \\implies x = \\frac{x'}{2}$ dan $y' = y$. Masukkan hubungan ini ke fungsi kuadrat asal."
   },
   {
     "id": "mat-geo-trans-matriks-010",
@@ -24088,7 +24817,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Matriks Transformasi",
     "subTopic": "Matriks Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Hubungan transformasi $\\begin{pmatrix} x' \\\\ y' \\end{pmatrix} = M\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ menghasilkan sistem persamaan linear untuk menentukan nilai parameter matriks."
   },
   {
     "id": "mat-geo-trans-refleksi-006",
@@ -24121,7 +24851,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi suatu kurva terhadap garis vertikal $x = h$ memenuhi rumus koordinat $x' = 2h - x \\iff x = 2h - x'$ dan $y' = y \\iff y = y'$. Substitusikan relasi ini ke persamaan garis asal. **Tips:** Lupa mengalikan $-1$ pada seluruh suku, atau salah menerapkan rumus $2h - x$ menjadi $x - 2h$."
   },
   {
     "id": "mat-geo-trans-refleksi-007",
@@ -24154,7 +24885,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pencerminan terhadap garis horizontal $y = k$ mengubah koordinat menurut $x' = x \\iff x = x'$ dan $y' = 2k - y \\iff y = 2k - y'$. **Tips:** Hanya menegatifkan ruas kanan tanpa mengurangkan dari $2k$, sehingga menghasilkan $y = -x^2 + 4x - 1$."
   },
   {
     "id": "mat-geo-trans-refleksi-008",
@@ -24187,7 +24919,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi dua refleksi berurutan terhadap dua garis vertikal sejajar $x = h_1$ lalu $x = h_2$ ekuivalen dengan pergeseran (translasi) horizontal sejauh $\\Delta x = 2(h_2 - h_1)$ dengan ordinat tetap ($y' = y$). **Tips:** Membalik urutan pengurangan garis cermin $2(h_1 - h_2)$ yang menghasilkan pergeseran positif alih-alih negatif."
   },
   {
     "id": "mat-geo-trans-refleksi-009",
@@ -24220,7 +24953,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Refleksi merupakan transformasi isometri sehingga jari-jari lingkaran bayangan tetap ($r' = r$). Oleh karena itu, kita cukup merefleksikan koordinat titik pusat lingkaran $P(x_p, y_p)$ terhadap garis $y = -x$, yang memenuhi $(x', y') = (-y_p, -x_p)$. **Tips:** Lupa menukar komponen absis dan ordinat saat mencerminkan terhadap garis $y = -x$ sehingga hanya mengubah tandanya saja."
   },
   {
     "id": "mat-geo-trans-refleksi-010",
@@ -24253,7 +24987,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Refleksi",
     "subTopic": "Refleksi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jarak antara dua titik $(x_1, y_1)$ dan $(x_2, y_2)$ dihitung dengan rumus $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Bayangan titik dicari secara bertahap menggunakan kaidah refleksi sumbu-$X$ lalu refleksi garis vertikal $x = h$. **Tips:** Salah menghitung selisih ordinat $(-6 - 2)$ menjadi $-4$ karena keliru tanda pengurangan bilangan negatif."
   },
   {
     "id": "mat-geo-trans-rotasi-006",
@@ -24286,7 +25021,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi titik $(x, y)$ terhadap pusat $(a, b)$ sebesar $+90^\\circ$ berlawanan arah jarum jam memenuhi relasi matriks $\\begin{pmatrix} x' - a \\\\ y' - b \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} x - a \\\\ y - b \\end{pmatrix}$, yang menghasilkan $x' - a = -(y - b)$ dan $y' - b = x - a$."
   },
   {
     "id": "mat-geo-trans-rotasi-007",
@@ -24319,7 +25055,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi $[O, 90^\\circ]$ memetakan koordinat menurut $x' = -y \\iff y = -x'$ dan $y' = x \\iff x = y'$. Substitusikan relasi variabel lama dalam variabel baru ke persamaan garis asal. **Tips:** Salah memasukkan substitusi variabel (misalnya tertukar antara $x = -y'$ dan $y = x'$)."
   },
   {
     "id": "mat-geo-trans-rotasi-008",
@@ -24352,7 +25089,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi $180^\\circ$ terhadap pusat $P(x_p, y_p)$ menjadikan titik $P$ sebagai titik tengah antara titik asal $(x, y)$ dan titik bayangan $(x', y')$, sehingga berlaku hubungan titik tengah: $x_p = \\frac{x + x'}{2}$ dan $y_p = \\frac{y + y'}{2}$. **Tips:** Lupa mengalikan 2 pada koordinat pusat saat menyelesaikan persamaan titik tengah."
   },
   {
     "id": "mat-geo-trans-rotasi-009",
@@ -24385,7 +25123,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Dua rotasi berurutan yang memiliki titik pusat yang sama bersesuaian dengan rotasi tunggal dengan titik pusat tersebut dan besar sudut total sama dengan jumlah kedua sudut rotasi: $\\theta_{\\text{total}} = \\theta_1 + \\theta_2$."
   },
   {
     "id": "mat-geo-trans-rotasi-010",
@@ -24418,7 +25157,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Rotasi",
     "subTopic": "Rotasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Rotasi sebesar $270^\\circ$ searah jarum jam memiliki sudut $\\theta = -270^\\circ$, yang secara posisi sudut setara dengan rotasi $+90^\\circ$ berlawanan arah jarum jam $(-270^\\circ + 360^\\circ = +90^\\circ)$. Rotasi mempertahankan jari-jari lingkaran ($r' = r$), sehingga cukup merotasikan titik pusat lingkaran."
   },
   {
     "id": "mat-geo-trans-translasi-006",
@@ -24451,7 +25191,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika sebuah kurva $F(x, y) = 0$ ditranslasikan oleh $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$, maka koordinat baru memenuhi $x' = x + a \\iff x = x' - a$ dan $y' = y + b \\iff y = y' - b$. Persamaan bayangannya diperoleh dengan mensubstitusikan $x$ dan $y$ ke persamaan asal: $F(x' - a, y' - b) = 0$."
   },
   {
     "id": "mat-geo-trans-translasi-007",
@@ -24484,7 +25225,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi parabola oleh $T = \\begin{pmatrix} a \\\\ b \\end{pmatrix}$ mengubah variabel $(x, y)$ menjadi $(x' - a, y' - b)$. Substitusikan bentuk ini ke persamaan parabola untuk mendapatkan kurva bayangan. **Tips:** Keliru saat melakukan substitusi variabel, seperti memasukkan $(x - 3)$ ke fungsi kuadrat padahal $x = x' + 3$."
   },
   {
     "id": "mat-geo-trans-translasi-008",
@@ -24517,7 +25259,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi lingkaran cukup ditinjau melalui pergeseran titik pusatnya. Jika pusat lingkaran awal adalah $P(x_p, y_p)$ dan pusat bayangan adalah $P'(x_p', y_p')$, maka vektor translasi berlaku $T = \\begin{pmatrix} x_p' - x_p \\\\ y_p' - y_p \\end{pmatrix}$."
   },
   {
     "id": "mat-geo-trans-translasi-009",
@@ -24550,7 +25293,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Komposisi translasi berturut-turut $T_1$ dan $T_2$ setara dengan translasi tunggal $T = T_1 + T_2$. Titik puncak bayangan parabola diperoleh dari mentranslasikan titik puncak parabola mula-mula."
   },
   {
     "id": "mat-geo-trans-translasi-010",
@@ -24583,7 +25327,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Translasi",
     "subTopic": "Translasi",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Translasi merupakan transformasi isometri (mempertahankan jarak dan sudut), sehingga luas bangun geometri bayangan tidak berubah ($L' = L$). Titik berat segitiga dengan titik-titik sudut $(x_i, y_i)$ adalah $Z\\left(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}\\right)$ dan titik berat bayangan memenuhi $Z' = Z + T$."
   },
   {
     "id": "sedang-mtk-12",
@@ -24616,7 +25361,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Komposisi Transformasi",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-trans",
-    "subTopicSlug": "komposisi-transformasi"
+    "subTopicSlug": "komposisi-transformasi",
+    "hint": "• Rotasi $+90^\\circ$ pusat $(0,0)$: $(x, y) \\to (-y, x)$ • Refleksi garis $y = -x$: $(x', y') \\to (-y', -x')$. **Tips:** Perhatikan urutan komposisi: rotasi dilakukan terlebih dahulu, baru kemudian direfleksikan terhadap garis $y = -x$."
   },
   {
     "id": "mat-geo-vektor-dot-006",
@@ -24649,7 +25395,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut antara dua vektor $\\theta$ merupakan sudut tumpul ($90^\\circ < \\theta \\le 180^\\circ$) jika dan hanya jika nilai kosinusnya negatif, yang berarti hasil perkalian skalar keduanya bernilai negatif tegas: $\\vec{a} \\cdot \\vec{b} < 0$."
   },
   {
     "id": "mat-geo-vektor-dot-007",
@@ -24682,7 +25429,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kuadrat panjang kombinasi linier vektor diuraikan dengan sifat distributif perkalian titik: $|c_1\\vec{u} + c_2\\vec{v}|^2 = c_1^2|\\vec{u}|^2 + 2c_1 c_2(\\vec{u} \\cdot \\vec{v}) + c_2^2|\\vec{v}|^2$."
   },
   {
     "id": "mat-geo-vektor-dot-008",
@@ -24715,7 +25463,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sudut $\\angle BAC$ dibentuk oleh dua vektor yang berpangkal di titik $A$, yaitu vektor $\\vec{AB}$ dan $\\vec{AC}$. Nilai kosinusnya dirumuskan sebagai $\\cos(\\angle BAC) = \\frac{\\vec{AB} \\cdot \\vec{AC}}{|\\vec{AB}||\\vec{AC}|}$."
   },
   {
     "id": "mat-geo-vektor-dot-009",
@@ -24748,7 +25497,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proyeksi vektor ortogonal dari vektor $\\vec{a}$ pada vektor $\\vec{b}$ menghasilkan besaran vektor yang searah dengan vektor $\\vec{b}$, dirumuskan sebagai $\\vec{p} = \\left(\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2}\\right)\\vec{b}$."
   },
   {
     "id": "mat-geo-vektor-dot-010",
@@ -24781,7 +25531,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perkalian Titik (Dot Product)",
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Berdasarkan sifat distributif perkalian titik, perkalian bentuk jumlah dan selisih dua vektor setara dengan selisih kuadrat panjang masing-masing vektor: $(\\vec{a} + \\vec{b}) \\cdot (\\vec{a} - \\vec{b}) = |\\vec{a}|^2 - |\\vec{b}|^2$. **Tips:** Terkecoh menghitung nilai sudut $120^\\circ$ secara rumit padahal suku silang saling meniadakan secara aljabar vektor."
   },
   {
     "id": "mat-geo-vektor-komponen-006",
@@ -24814,7 +25565,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor posisi titik pembagi ruas garis $P$ yang membagi $AB$ dengan rasio $m : n$ dirumuskan sebagai $\\vec{p} = \\frac{m\\vec{b} + n\\vec{a}}{m + n}$. **Tips:** Tertukar dalam memasangkan rasio pengali, yaitu mengalikan rasio $m$ dengan titik $A$ dan rasio $n$ dengan titik $B$."
   },
   {
     "id": "mat-geo-vektor-komponen-007",
@@ -24847,7 +25599,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Tiga titik $A$, $B$, dan $C$ kolinier jika vektor $\\vec{AC}$ merupakan kelipatan skalar dari vektor $\\vec{AB}$, yaitu $\\vec{AC} = k \\cdot \\vec{AB}$."
   },
   {
     "id": "mat-geo-vektor-komponen-008",
@@ -24880,7 +25633,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor satuan yang searah dengan sembarang vektor $\\vec{v}$ diperoleh dengan membagi vektor tersebut dengan panjang (norma) mutlaknya: $\\hat{u} = \\frac{\\vec{v}}{|\\vec{v}|}$."
   },
   {
     "id": "mat-geo-vektor-komponen-009",
@@ -24913,7 +25667,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat suatu segitiga $ABC$ memiliki vektor posisi yang merupakan rata-rata aritmetika dari ketiga vektor posisi titik sudutnya: $\\vec{z} = \\frac{\\vec{a} + \\vec{b} + \\vec{c}}{3}$. **Tips:** Lupa membagi dengan 3 setelah menjumlahkan ketiga koordinat titik sudut segitiga."
   },
   {
     "id": "mat-geo-vektor-komponen-010",
@@ -24946,7 +25701,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Vektor Bidang (R2) dan Ruang (R3)",
     "subTopic": "Vektor Bidang (R2) dan Ruang (R3)",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kombinasi linier $\\vec{w} = p\\vec{u} + q\\vec{v}$ diselesaikan dengan membentuk sistem persamaan linier dua variabel (SPLDV) dari kesamaan komponen vektor seletak. **Tips:** Kesalahan saat melakukan substitusi aljabar tanda minus $3(-8) = -24$ yang sering keliru menjadi tanda positif."
   },
   {
     "id": "mat-geo-vektor-operasi-006",
@@ -24979,7 +25735,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kosinus sudut antara dua vektor $\\theta$ dihitung dengan membagi perkalian skalar terhadap hasil kali panjang kedua vektor: $\\cos(\\theta) = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|}$. Bila perkalian titik bernilai nol, kedua vektor saling tegak lurus ($\\theta = 90^\\circ$)."
   },
   {
     "id": "mat-geo-vektor-operasi-007",
@@ -25012,7 +25769,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Syarat perlu dan cukup agar dua buah vektor bukan nol saling tegak lurus (ortogonal) adalah hasil perkalian titik (dot product) keduanya sama dengan nol: $\\vec{u} \\cdot \\vec{v} = 0$. **Tips:** Kekeliruan tanda saat mengoperasikan $-2(4) = -8$, misalnya salah menuliskan $+8$ yang berakibat menghasilkan $k = -7$."
   },
   {
     "id": "mat-geo-vektor-operasi-008",
@@ -25045,7 +25803,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian skalar bersifat distributif terhadap penjumlahan vektor: $\\vec{p} \\cdot (\\vec{p} + \\vec{q}) = \\vec{p} \\cdot \\vec{p} + \\vec{p} \\cdot \\vec{q} = |\\vec{p}|^2 + |\\vec{p}||\\vec{q}|\\cos(\\theta)$."
   },
   {
     "id": "mat-geo-vektor-operasi-009",
@@ -25078,7 +25837,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Proyeksi skalar ortogonal dari vektor $\\vec{a}$ pada vektor $\\vec{b}$ dirumuskan sebagai pembagian hasil kali titik dengan panjang vektor landasan: $|\\vec{c}| = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$. **Tips:** Membagi perkalian skalar dengan panjang vektor $\\vec{a}$ alih-alih vektor tujuan proyeksi $\\vec{b}$."
   },
   {
     "id": "mat-geo-vektor-operasi-010",
@@ -25111,7 +25871,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Penjumlahan dan Pengurangan Vektor",
     "subTopic": "Penjumlahan dan Pengurangan Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perkalian silang dua vektor di ruang $\\mathbb{R}^3$ menghasilkan vektor yang tegak lurus terhadap kedua vektor awal, dihitung menggunakan determinan matriks $3 \\times 3$ dengan basis satuan. **Tips:** Lupa tanda minus di depan kofaktor basis $\\hat{j}$ pada ekspansi baris pertama determinan matriks."
   },
   {
     "id": "mat-geo-vektor-panjang-006",
@@ -25144,7 +25905,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang vektor penjumlahan $|\\vec{a} + \\vec{b}|$ dihitung menggunakan aturan kosinus pada vektor: $|\\vec{a} + \\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 + 2|\\vec{a}||\\vec{b}|\\cos(\\theta)$."
   },
   {
     "id": "mat-geo-vektor-panjang-007",
@@ -25177,7 +25939,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Identitas jajar genjang pada vektor menyatakan hubungan antara jumlah dan selisih dua vektor: $|\\vec{u} + \\vec{v}|^2 + |\\vec{u} - \\vec{v}|^2 = 2(|\\vec{u}|^2 + |\\vec{v}|^2)$."
   },
   {
     "id": "mat-geo-vektor-panjang-008",
@@ -25210,7 +25973,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Panjang minimum kombinasi linier $|\\vec{a} + t\\vec{b}|$ dapat ditentukan dengan mencari nilai ekstrim minimum fungsi kuadrat dari kuadrat panjang vektor $f(t) = |\\vec{c}|^2$. **Tips:** Lupa menarik akar kuadrat di langkah akhir sehingga memilih nilai kuadrat panjang $\\frac{25}{3}$."
   },
   {
     "id": "mat-geo-vektor-panjang-009",
@@ -25243,7 +26007,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Keliling suatu segitiga dihitung dengan menjumlahkan panjang ketiga vektor sisi pembentuknya: $K = |\\vec{PQ}| + |\\vec{PR}| + |\\vec{QR}|$."
   },
   {
     "id": "mat-geo-vektor-panjang-010",
@@ -25276,7 +26041,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Panjang (Modulus) Vektor",
     "subTopic": "Panjang (Modulus) Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bila dua vektor saling tegak lurus (ortogonal), sudut apitnya $\\theta = 90^\\circ$ sehingga perkalian titiknya bernilai nol ($\\vec{u} \\cdot \\vec{v} = 0$). Teorema Pythagoras berlaku: $|\\vec{u} + \\vec{v}|^2 = |\\vec{u}|^2 + |\\vec{v}|^2$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-006",
@@ -25309,7 +26075,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jika titik $T$ membagi perpanjangan ruas garis $AB$ dengan perbandingan $AT : TB = 3 : -1$, maka vektor posisi titik $T$ dirumuskan sebagai $\\vec{t} = \\frac{3\\vec{b} - \\vec{a}}{3 - 1} = \\frac{3\\vec{b} - \\vec{a}}{2}$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-007",
@@ -25342,7 +26109,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik berat segitiga membagi garis berat dari titik sudut ke titik tengah sisi di hadapannya dengan rasio tetap $2 : 1$. Berdasarkan rumus perbandingan ruas garis berbobot, $\\vec{g} = \\frac{m\\vec{d} + n\\vec{a}}{m + n}$. **Tips:** Tertukar bobot pengali perbandingan menjadi $\\frac{2\\vec{a} + \\vec{d}}{3}$ akibat salah meletakkan posisi segmen $AG$ dan $GD$."
   },
   {
     "id": "mat-geo-vektor-perbandingan-008",
@@ -25375,7 +26143,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Karena titik $P$ terletak pada ruas garis $KL$, rasio pembagian $KP : PL = m : n$ dapat dicari terlebih dahulu melalui komponen ordinat $y$ yang nilainya telah diketahui lengkap."
   },
   {
     "id": "mat-geo-vektor-perbandingan-009",
@@ -25408,7 +26177,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Sifat geometris jajar genjang menyatakan bahwa kedua garis diagonalnya saling berpotongan dan membagi dua sama panjang di titik tengah masing-masing diagonal. **Tips:** Mencari titik tengah ruas garis $AB$ alih-alih diagonal $AC$, yang keliru menganggap sisi jajar genjang sebagai diagonalnya."
   },
   {
     "id": "mat-geo-vektor-perbandingan-010",
@@ -25441,7 +26211,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Perbandingan Ruas Garis Vektor",
     "subTopic": "Perbandingan Ruas Garis Vektor",
     "chapterTitle": "Geometri dan Pengukuran",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perbandingan luas dua segitiga yang memiliki satu sudut persekutuan yang sama ($angle O$) sama dengan perbandingan hasil kali sisi-sisi pengapit sudut tersebut: $\\frac{\\text{Luas } \\triangle OPQ}{\\text{Luas } \\triangle OAB} = \\frac{OP}{OA} \\times \\frac{OQ}{OB}$."
   },
   {
     "id": "sedang-mtk-04",
@@ -25474,7 +26245,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Perkalian Titik (Dot Product)",
     "chapterTitle": "Geometri dan Pengukuran",
     "subChapterId": "mat-geo-vektor",
-    "subTopicSlug": "perkalian-titik-dot-product"
+    "subTopicSlug": "perkalian-titik-dot-product",
+    "hint": "Gunakan hubungan matematis dasar: $$\\cos\\theta = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| \\cdot |\\vec{v}|}$$. **Tips:** Perhatikan bahwa komponen $\\hat{k}$ pada vektor $\\vec{v}$ adalah nol karena hanya ditulis $\\hat{i} + \\hat{j}$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-006",
@@ -25507,7 +26279,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk tak tentu $\\frac{0}{0}$ yang memuat bentuk irasional di penyebut diatasi dengan mengalikan pembilang dan penyebut dengan bentuk sekawannya, yaitu $(\\sqrt{2x + 5} + 3)$, agar diperoleh selisih kuadrat $(a - b)(a + b) = a^2 - b^2$. **Tips:** Lupa memfaktorkan angka 2 dari $(2x - 4)$ sehingga keliru membagi penyebut secara langsung."
   },
   {
     "id": "mat-lim-fungsi-aljabar-007",
@@ -25540,7 +26313,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ubah suku $(2x - 3)$ menjadi bentuk akar $\\sqrt{(2x - 3)^2} = \\sqrt{4x^2 - 12x + 9}$. Rumus cepat selisih akar kuadrat untuk koefisien $a$ yang sama pada $\\lim_{x \\to \\infty} (\\sqrt{ax^2 + bx + c} - \\sqrt{ax^2 + px + q})$ adalah $L = \\frac{b - p}{2\\sqrt{a}}$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-008",
@@ -25573,7 +26347,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar limit fungsi rasional dengan penyebut nol saat $x \\to c$ menghasilkan nilai berhingga, pembilang harus memiliki pembuat nol yang sama ($x = c$), sehingga substitusi $x = c$ ke pembilang harus bernilai 0. Kemudian gunakan dalil L'Hopital atau pemfaktoran aljabar."
   },
   {
     "id": "mat-lim-fungsi-aljabar-009",
@@ -25606,7 +26381,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Faktorkan selisih dua kubik pada pembilang menggunakan rumus aljabar $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$ dan faktorkan bentuk kuadrat penyebut untuk mengeliminasi pembuat nol $(x - 2)$."
   },
   {
     "id": "mat-lim-fungsi-aljabar-010",
@@ -25639,7 +26415,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Aljabar",
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk tak tentu $\\frac{0}{0}$ dengan selisih dua akar pada penyebut diselesaikan dengan mengalikan pembilang dan penyebut dengan bentuk sekawannya $(\\sqrt{1 + 3x} + \\sqrt{1 - 2x})$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-006",
@@ -25672,7 +26449,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Fungsi $f(x)$ dikatakan kontinu di $x = c$ jika memenuhi tiga syarat: $f(c)$ terdefinisi, limit $\\lim_{x \\to c} f(x)$ ada (limit kiri sama dengan limit kanan), dan $\\lim_{x \\to c} f(x) = f(c)$. **Tips:** Lupa mengalikan 2 dengan nilai $x$ pada suku kuadrat atau salah memindahkan suku konstanta $7 - 3$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-007",
@@ -25705,7 +26483,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Untuk menguji keberadaan limit dua sisi fungsi yang memuat tanda mutlak di sekitar titik kritis pembuat nol, kita harus memeriksa kesamaan antara limit kiri dan limit kanannya. **Tips:** Hanya menghitung salah satu arah limit saja dan terburu-buru memilih jawaban $6$ atau $-6$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-008",
@@ -25738,7 +26517,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Agar fungsi kontinu di seluruh domain bilangan real, fungsi harus kontinu pada setiap titik peralihan interval, yaitu di $x = -1$ dan $x = 1$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-009",
@@ -25771,7 +26551,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perhatikan tanda dari argumen di dalam nilai mutlak $(x^2 - 1)$ saat $x$ mendekati 1 dari arah kiri ($x < 1$). Jika $x < 1$ (misalkan $x = 0{,}9$), maka $x^2 < 1$, sehingga $x^2 - 1 < 0$ dan $|x^2 - 1| = -(x^2 - 1)$."
   },
   {
     "id": "mat-lim-fungsi-piecewise-010",
@@ -25804,7 +26585,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Piecewise",
     "subTopic": "Limit Fungsi Piecewise",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Titik diskontinuitas yang dapat dihilangkan (*removable discontinuity*) terjadi ketika limit $\\lim_{x \\to c} f(x)$ ada, dan kekontinuan dicapai dengan menetapkan nilai fungsi $f(c) = k = \\lim_{x \\to c} f(x)$. **Tips:** Salah memfaktorkan pembilang menjadi $(x + 3)(x - 1)$ yang menyebabkan salah perhitungan."
   },
   {
     "id": "mat-lim-fungsi-takhingga-006",
@@ -25837,7 +26619,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk selisih $\\sqrt{ax^2 + bx + c} - (px + q)$ diubah menjadi $\\sqrt{ax^2 + bx + c} - \\sqrt{(px + q)^2}$. Jika koefisien kuadratnya sama ($a = p^2$), rumus praktis nilai limitnya adalah $L = \\frac{b - \\text{koefisien } x \\text{ bentuk kedua}}{2\\sqrt{a}}$. **Tips:** Lupa mengubah tanda positif $+1$ saat memfaktorkan tanda minus: $-(3x - 1)$, bukan $-(3x + 1)$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-007",
@@ -25870,7 +26653,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Perhatikan bahwa untuk $x < 0$ saat $x \\to -\\infty$, berlaku $\\sqrt{x^2} = |x| = -x$, sehingga $x = -\\sqrt{x^2}$. Hal ini menyebabkan faktor pembuat tanda minus keluar saat membagi bentuk akar dengan $x$. **Tips:** Lupa bahwa $\\sqrt{x^2} = -x$ untuk $x < 0$, sehingga menghasilkan nilai positif $+\\frac{3}{2}$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-008",
@@ -25903,7 +26687,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pecah suku tengah $-2\\sqrt{x^2 + x}$ menjadi $-\\sqrt{x^2 + x} - \\sqrt{x^2 + x}$, kemudian kelompokkan masing-masing dengan suku pertama dan suku ketiga agar dapat diselesaikan menggunakan rumus selisih dua akar kuadrat. **Tips:** Mencoba mengalikan ketiga bentuk akar sekaligus dengan sekawan panjang yang berakibat pada kerumitan aljabar tak berujung."
   },
   {
     "id": "mat-lim-fungsi-takhingga-009",
@@ -25936,7 +26721,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk $(x - 2)$ diubah menjadi bentuk akar $\\sqrt{(x - 2)^2} = \\sqrt{x^2 - 4x + 4}$. Samakan hasil rumus limit selisih akar $\\frac{b - p}{2\\sqrt{a}}$ dengan nilai limit yang diberikan untuk mencari parameter $k$. **Tips:** Lupa bahwa $(-2)^2$ menghasilkan tanda negatif pada suku tengah $-4x$, sehingga salah menuliskan tanda $p$."
   },
   {
     "id": "mat-lim-fungsi-takhingga-010",
@@ -25969,7 +26755,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Menuju Tak Hingga",
     "subTopic": "Limit Menuju Tak Hingga",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pembilang dan penyebut masing-masing berbentuk tak tentu $\\infty - \\infty$. Kita dapat menyelesaikan nilai limit pembilang dan nilai limit penyebut secara terpisah dengan rumus selisih akar."
   },
   {
     "id": "mat-lim-fungsi-trigono-006",
@@ -26002,7 +26789,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus selisih dua fungsi cosinus: $\\cos A - \\cos B = -2\\sin\\left(\\frac{A + B}{2}\\right)\\sin\\left(\\frac{A - B}{2}\\right)$. **Tips:** Lupa tanda minus di depan rumus selisih cosinus ($-2\\sin...\\sin...$) sehingga menghasilkan jawaban positif $+6$."
   },
   {
     "id": "mat-lim-fungsi-trigono-007",
@@ -26035,7 +26823,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Lakukan substitusi variabel $u = x - 2$. Ketika $x \\to 2$, maka $u \\to 0$. Faktorkan penyebut $x^2 - 4 = (x - 2)(x + 2)$ untuk memanfaatkan limit standar $\\lim_{u \\to 0} \\frac{\\sin u}{u} = 1$. **Tips:** Hanya menghitung bagian trigonometrinya menjadi 1 tanpa mengevaluasi faktor aljabar $(x + 2)$ di penyebut."
   },
   {
     "id": "mat-lim-fungsi-trigono-008",
@@ -26068,7 +26857,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas sudut ganda: $1 - \\cos 4x = 2\\sin^2 2x$. Selanjutnya pasangkan faktor-faktor sinus pada pembilang dengan variabel aljabar dan tangen pada penyebut."
   },
   {
     "id": "mat-lim-fungsi-trigono-009",
@@ -26101,7 +26891,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan substitusi variabel $y = \\frac{1}{x}$. Saat $x \\to \\infty$, maka $y \\to 0$. Ekspresi $x$ dapat ditulis sebagai $\\frac{1}{y}$, sehingga bentuk limit berubah menjadi limit trigonometri di sekitar nol."
   },
   {
     "id": "mat-lim-fungsi-trigono-010",
@@ -26134,7 +26925,8 @@ window.QUESTIONS_SEDANG = [
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas $1 - \\cos 2x = 2\\sin^2 x$ untuk menyederhanakan penyebut, kemudian gunakan teorema limit trigonometri untuk menyelesaikan nilai konstanta $a$."
   },
   {
     "id": "sup-mtk-tri-01",
@@ -26167,7 +26959,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Limit Fungsi Aljabar",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-aljabar"
+    "subTopicSlug": "limit-fungsi-aljabar",
+    "hint": "Metode Perkalian Sekawan Akar (Tanpa L'Hôpital): Bentuk tak tentu $\\frac{0}{0}$ diselesaikan dengan mengalikan faktor sekawan $(\\sqrt{x} + 2)$ pada pembilang dan penyebut sehingga faktor pembuat nol $(x - 4)$ dapat dieliminasi. **Tips:** Mengabaikan instruksi tanpa L'Hôpital atau salah mengalikan faktor sekawan."
   },
   {
     "id": "sedang-mtk-06",
@@ -26200,7 +26993,8 @@ window.QUESTIONS_SEDANG = [
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-trigonometri"
+    "subTopicSlug": "limit-fungsi-trigonometri",
+    "hint": "Identitas Sudut Rangkap & Teorema Limit Trigonometri Dasar: • $1 - \\cos 2u = 2\\sin^2 u \\implies 1 - \\cos 4x = 2\\sin^2(2x)$ • Teorema limit dasar: $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$. **Tips:** Perhatikan pengali 2 dari rumus identitas: $2\\sin^2(2x)$ bukan $\\sin^2(2x)$."
   }
 ];
 if (typeof module !== 'undefined') module.exports = window.QUESTIONS_SEDANG;

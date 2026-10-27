@@ -44,7 +44,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Bunyi Hukum Archimedes menyatakan bahwa gaya apung ke atas ($F_a$) yang dialami suatu benda tepat sama dengan berat fluida yang dipindahkan (didesak) oleh bagian benda yang tercelup: $$F_a = W_{\\text{fluida}} = m_f \\cdot g = \\rho_f \\cdot V_{bf} \\cdot g$$Di mana $\\rho_f$ adalah massa jenis fluida dan $V_{bf}$ adalah volume benda yang tercelup."
   },
   {
     "id": "fis-flu-statis-archimedes-002",
@@ -77,7 +78,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berat semu benda di dalam fluida ($W'$) adalah berat benda di udara ($W$) dikurangi gaya apung Archimedes ($F_a$): $$W' = W - F_a$$Di mana $W = \\rho_b \\cdot V \\cdot g$ dan $F_a = \\rho_a \\cdot V \\cdot g$."
   },
   {
     "id": "fis-flu-statis-archimedes-003",
@@ -110,7 +112,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Pada kondisi benda terapung seimbang, berat total benda sama dengan gaya apung Archimedes: $$W = F_a \\iff \\rho_b \\cdot V_b \\cdot g = \\rho_a \\cdot V_{bf} \\cdot g$$Sehingga massa jenis benda terapung sebanding dengan fraksi volume yang tercelup: $$\\rho_b = \\rho_a \\cdot \\frac{V_{bf}}{V_b}$$."
   },
   {
     "id": "fis-flu-statis-archimedes-004",
@@ -143,7 +146,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Fraksi volume benda terapung yang tercelup di dalam cairan adalah: $$\\frac{V_{\\text{celup}}}{V_{\\text{total}}} = \\frac{\\rho_{\\text{es}}}{\\rho_{\\text{air}}}$$Sedangkan fraksi volume yang muncul di atas permukaan zat cair adalah: $$\\frac{V_{\\text{muncul}}}{V_{\\text{total}}} = 1 - \\frac{V_{\\text{celup}}}{V_{\\text{total}}} = 1 - \\frac{\\rho_{\\text{es}}}{\\rho_{\\text{air}}}$$."
   },
   {
     "id": "fis-flu-statis-archimedes-005",
@@ -176,7 +180,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Syarat fisis kesetimbangan benda di dalam fluida statis ditentukan oleh perbandingan massa jenis rata-rata benda ($\\rho_b$) terhadap massa jenis fluida ($\\rho_f$): 1) Terapung: $\\rho_b < \\rho_f$ (gaya apung saat tercelup total melebihi berat benda). 2) Melayang: $\\rho_b = \\rho_f$ (gaya apung tepat sama dengan berat benda pada volume total). 3) Tenggelam: $\\rho_b > \\rho_f$ (gaya apung maksimum lebih kecil daripada berat benda)."
   },
   {
     "id": "fis-flu-statis-archimedes-006",
@@ -209,7 +214,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Ketika benda terapung di antara dua cairan yang tak bercampur, gaya apung total adalah jumlah gaya apung yang diberikan oleh masing-masing cairan: $$F_{a,\\text{total}} = F_{a,\\text{air}} + F_{a,\\text{minyak}} = \\rho_a \\cdot g \\cdot V_{\\text{air}} + \\rho_m \\cdot g \\cdot V_{\\text{minyak}}$$Pada kesetimbangan statis, gaya apung total sama dengan berat benda: $$\\rho_b \\cdot g \\cdot V_{\\text{total}} = \\rho_a \\cdot g \\cdot V_{\\text{air}} + \\rho_m \\cdot g \\cdot V_{\\text{minyak}}$$Karena penampang balok seragam, rasio volume setara dengan rasio ketinggian."
   },
   {
     "id": "fis-flu-statis-archimedes-007",
@@ -242,7 +248,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "1) Volume total luar mahkota diperoleh dari gaya apung (selisih massa semu dalam air): $$V_{\\text{total}} = \\frac{m - m'}{\\rho_a}$$ 2) Volume bahan emas murni diperoleh dari massa nyata dibagi massa jenis emas: $$V_{\\text{emas}} = \\frac{m}{\\rho_{\\text{emas}}}$$ 3) Volume rongga dihitung dari selisihnya: $$V_{\\text{rongga}} = V_{\\text{total}} - V_{\\text{emas}}$$."
   },
   {
     "id": "fis-flu-statis-archimedes-008",
@@ -275,7 +282,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kondisi batas balon dapat terangkat terjadi ketika gaya apung udara ($F_a$) setimbang dengan berat total sistem: $$F_a = W_{\\text{He}} + W_0 + W_{\\text{beban}}$$Di mana: • $F_a = \\rho_{\\text{udara}} \\cdot V \\cdot g$ • $W_{\\text{He}} = \\rho_{\\text{He}} \\cdot V \\cdot g$ • $W_0 = m_0 \\cdot g$."
   },
   {
     "id": "fis-flu-statis-archimedes-009",
@@ -308,7 +316,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Pada balok yang terbenam dan ditahan oleh tali di dasar wadah, bekerja tiga gaya vertikal: • Gaya apung ke atas: $F_a = \\rho_a \\cdot V \\cdot g$ • Gaya berat balok ke bawah: $W = \\rho_b \\cdot V \\cdot g$ • Gaya tegangan tali ke bawah: $T$ Persamaan kesetimbangan gaya vertikal ($\\Sigma F_y = 0$): $$F_a - W - T = 0 \\implies T = F_a - W = (\\rho_a - \\rho_b) \\cdot V \\cdot g$$. **Tips:** Terkecoh menganggap tegangan tali sama dengan gaya apung murni ($20\\text{ N}$, ) atau berat balok murni ($12\\text{ N}$, )."
   },
   {
     "id": "fis-flu-statis-archimedes-010",
@@ -341,7 +350,8 @@
     "subBab": "Hukum Archimedes",
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Saat balok tepat terbenam seluruhnya di dalam air, volume air yang dipindahkan sama dengan volume total balok ($V_{bf} = V$). Kesetimbangan gaya vertikal mensyaratkan: $$F_a = W_{\\text{kayu}} + W_{\\text{timbal}}$$Di mana $W_{\\text{timbal}} = m_{\\text{timbal}} \\cdot g$, sehingga: $$m_{\\text{timbal}} = (\\rho_a - \\rho_b) \\cdot V$$."
   },
   {
     "id": "sedang-fis-03",
@@ -374,7 +384,8 @@
     "subTopic": "Hukum Archimedes",
     "chapterTitle": "Fluida",
     "subChapterId": "fis-flu-statis",
-    "subTopicSlug": "hukum-archimedes"
+    "subTopicSlug": "hukum-archimedes",
+    "hint": "Keseimbangan Benda Terapung Multilapis: Gaya berat total benda sama dengan jumlah seluruh gaya apung Archimedes dari fluida-fluida yang terdesak: $$W = F_{A1} + F_{A2} \\implies \\rho_b V_b g = \\rho_A V_{A} g + \\rho_B V_{B} g$$ $$\\rho_b = \\rho_A \\left(\\frac{V_A}{V_b}\\right) + \\rho_B \\left(\\frac{V_B}{V_b}\\right)$$."
   }
 ];
 

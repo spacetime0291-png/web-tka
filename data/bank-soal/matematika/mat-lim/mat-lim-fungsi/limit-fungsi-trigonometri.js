@@ -44,7 +44,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Berdasarkan teorema limit trigonometri dasar, untuk setiap konstanta real $a$ dan $b$ dengan $b \\ne 0$, berlaku $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$. **Tips:** Mencoba mencoret nilai $x$ secara langsung dari dalam argumen sinus $\\sin(6x)$ tanpa menggunakan sifat limit trigonometri."
   },
   {
     "id": "mat-lim-fungsi-trigono-002",
@@ -77,7 +78,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Untuk $x \\to 0$, perbandingan fungsi tangen dan sinus memenuhi $\\lim_{x \\to 0} \\frac{\\tan ax}{\\sin bx} = \\frac{a}{b}$."
   },
   {
     "id": "mat-lim-fungsi-trigono-003",
@@ -110,7 +112,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Jika penyebut dari suatu fungsi rasional trigonometri tidak bernilai nol pada titik limit yang dituju, nilai limit dapat dihitung secara langsung menggunakan substitusi nilai variabel. **Tips:** Salah mengingat nilai trigonometri istimewa pada sudut $\\frac{\\pi}{4}$ atau menduga bahwa limit bernilai tak tentu $\\frac{0}{0}$."
   },
   {
     "id": "mat-lim-fungsi-trigono-004",
@@ -143,7 +146,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gunakan identitas trigonometri sudut rangkap: $\\cos 2x = 1 - 2\\sin^2 x \\iff 1 - \\cos 2x = 2\\sin^2 x$. **Tips:** Lupa faktor 2 di depan $\\sin^2 x$ sehingga mengira hasilnya adalah $1$."
   },
   {
     "id": "mat-lim-fungsi-trigono-005",
@@ -176,7 +180,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Uraikan penyebut kuadrat $\\sin^2 2x = (\\sin 2x)(\\sin 2x)$ dan pasangkan masing-masing dengan suku pembilang."
   },
   {
     "id": "mat-lim-fungsi-trigono-006",
@@ -209,7 +214,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan rumus selisih dua fungsi cosinus: $\\cos A - \\cos B = -2\\sin\\left(\\frac{A + B}{2}\\right)\\sin\\left(\\frac{A - B}{2}\\right)$. **Tips:** Lupa tanda minus di depan rumus selisih cosinus ($-2\\sin...\\sin...$) sehingga menghasilkan jawaban positif $+6$."
   },
   {
     "id": "mat-lim-fungsi-trigono-007",
@@ -242,7 +248,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Lakukan substitusi variabel $u = x - 2$. Ketika $x \\to 2$, maka $u \\to 0$. Faktorkan penyebut $x^2 - 4 = (x - 2)(x + 2)$ untuk memanfaatkan limit standar $\\lim_{u \\to 0} \\frac{\\sin u}{u} = 1$. **Tips:** Hanya menghitung bagian trigonometrinya menjadi 1 tanpa mengevaluasi faktor aljabar $(x + 2)$ di penyebut."
   },
   {
     "id": "mat-lim-fungsi-trigono-008",
@@ -275,7 +282,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas sudut ganda: $1 - \\cos 4x = 2\\sin^2 2x$. Selanjutnya pasangkan faktor-faktor sinus pada pembilang dengan variabel aljabar dan tangen pada penyebut."
   },
   {
     "id": "mat-lim-fungsi-trigono-009",
@@ -308,7 +316,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan substitusi variabel $y = \\frac{1}{x}$. Saat $x \\to \\infty$, maka $y \\to 0$. Ekspresi $x$ dapat ditulis sebagai $\\frac{1}{y}$, sehingga bentuk limit berubah menjadi limit trigonometri di sekitar nol."
   },
   {
     "id": "mat-lim-fungsi-trigono-010",
@@ -341,7 +350,8 @@
     "subBab": "Limit Fungsi Trigonometri",
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Gunakan identitas $1 - \\cos 2x = 2\\sin^2 x$ untuk menyederhanakan penyebut, kemudian gunakan teorema limit trigonometri untuk menyelesaikan nilai konstanta $a$."
   },
   {
     "id": "sedang-mtk-06",
@@ -374,7 +384,8 @@
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-trigonometri"
+    "subTopicSlug": "limit-fungsi-trigonometri",
+    "hint": "Identitas Sudut Rangkap & Teorema Limit Trigonometri Dasar: • $1 - \\cos 2u = 2\\sin^2 u \\implies 1 - \\cos 4x = 2\\sin^2(2x)$ • Teorema limit dasar: $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$. **Tips:** Perhatikan pengali 2 dari rumus identitas: $2\\sin^2(2x)$ bukan $\\sin^2(2x)$."
   },
   {
     "id": "hots-mtk-02",
@@ -407,7 +418,8 @@
     "subTopic": "Limit Fungsi Trigonometri",
     "chapterTitle": "Kalkulus Limit",
     "subChapterId": "mat-lim-fungsi",
-    "subTopicSlug": "limit-fungsi-trigonometri"
+    "subTopicSlug": "limit-fungsi-trigonometri",
+    "hint": "• $\\cos A - \\cos B = -2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)$ • $\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$ dan $\\lim_{x \\to 0} \\frac{cx}{\\tan dx} = \\frac{c}{d}$. **Tips:** Tanda minus pada rumus selisih kosinus $-2\\sin\\sin$ sangat vital."
   }
 ];
 

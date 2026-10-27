@@ -44,7 +44,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gerak parabola adalah perpaduan dua gerak saling tegak lurus yang independen: • Sumbu-$x$ (horizontal): tidak bekerja gaya luar ($F_x = 0 \\implies a_x = 0$), sehingga berlaku Gerak Lurus Beraturan (GLB). • Sumbu-$y$ (vertikal): bekerja gaya gravitasi bumi konstan ($a_y = -g$), sehingga berlaku Gerak Lurus Berubah Beraturan (GLBB). **Tips:** Terkecoh menganggap sumbu-$x$ juga mengalami perlambatan gravitasi, padahal gaya gravitasi bekerja eksklusif pada arah vertikal."
   },
   {
     "id": "fis-kin-lengkung-parabola-002",
@@ -77,7 +78,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Penguraian vektor kecepatan awal $v_0$ dengan sudut elevasi $\\theta$ terhadap garis horizontal: $$v_{0x} = v_0 \\cos\\theta$$ $$v_{0y} = v_0 \\sin\\theta$$."
   },
   {
     "id": "fis-kin-lengkung-parabola-003",
@@ -110,7 +112,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Kecepatan vertikal sesaat pada gerak parabola mengalami perlambatan gravitasi bumi: $$v_y(t) = v_{0y} - gt$$. **Tips:** Menghitung kecepatan resultan bukan kecepatan vertikal semata, atau lupa mengalikan waktu dengan percepatan gravitasi."
   },
   {
     "id": "fis-kin-lengkung-parabola-004",
@@ -143,7 +146,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Gerak setengah parabola (dilepas mendatar): • Kecepatan awal vertikal nol ($v_{0y} = 0$), sehingga waktu jatuh sama dengan gerak jatuh bebas: $t = \\sqrt{\\frac{2h}{g}}$. • Jarak horizontal GLB: $x = v_{0x} \\cdot t$. **Tips:** Mengabaikan kecepatan mendatar pesawat sehingga mengira paket langsung jatuh tegak lurus di bawah titik lepas pesawat."
   },
   {
     "id": "fis-kin-lengkung-parabola-005",
@@ -176,7 +180,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Mudah"
+    "difficultyLabel": "Mudah",
+    "hint": "Dalam gerak parabola: • Percepatan gerak adalah percepatan gravitasi bumi yang konstan berarah tegak ke bawah: $\\vec{a} = -g\\hat{j}$. • Karena tidak ada komponen percepatan horizontal ($a_x = 0$), maka komponen kecepatan horizontal $v_x = v_0 \\cos\\theta$ selalu bernilai konstan sepanjang perjalanan. **Tips:** Menyatakan bahwa kecepatan total $\\vec{v}$ bernilai konstan, padahal hanya komponen horizontalnya ($v_x$) yang konstan."
   },
   {
     "id": "fis-kin-lengkung-parabola-006",
@@ -209,7 +214,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan sesaat pada gerak parabola merupakan resultan dari komponen horizontal konstan ($v_x$) dan komponen vertikal berubah beraturan ($v_y$): $$|\\vec{v}| = \\sqrt{v_x^2 + v_y^2},\\quad \\tan\\alpha = \\frac{v_y}{v_x}$$. **Tips:** Lupa bahwa komponen horizontal $v_x$ tetap bernilai $30\\text{ m/s}$ dan tidak terpengaruh gravitasi."
   },
   {
     "id": "fis-kin-lengkung-parabola-007",
@@ -242,7 +248,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Kecepatan tumbuk batu ke permukaan air laut diperoleh dari gabungan komponen horizontal konstan ($v_x = v_0$) dan komponen vertikal akibat jatuh bebas ($v_y = \\sqrt{2gH}$): $$v = \\sqrt{v_x^2 + v_y^2}$$. **Tips:** Menghitung hanya komponen vertikalnya saja ($20\\text{ m/s}$) dan melupakan kecepatan mendatar awal lemparan."
   },
   {
     "id": "fis-kin-lengkung-parabola-008",
@@ -275,7 +282,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Bentuk baku persamaan trajektori gerak parabola adalah: $$y = x\\tan\\theta - \\frac{g}{2 v_0^2 \\cos^2\\theta} x^2$$. **Tips:** Lupa mengkuadratkan nilai $\\cos 45^\\circ$ pada penyebut koefisien kuadratik."
   },
   {
     "id": "fis-kin-lengkung-parabola-009",
@@ -308,7 +316,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Jangkauan mendatar peluru dirumuskan oleh: $$X_{\\max} = \\frac{v_0^2 \\sin(2\\theta)}{g}$$ Dua sudut komplementer ($\\theta_1 + \\theta_2 = 90^\\circ$) menghasilkan jangkauan mendatar yang sama karena $\\sin(2(90^\\circ - \\theta)) = \\sin(180^\\circ - 2\\theta) = \\sin(2\\theta)$."
   },
   {
     "id": "fis-kin-lengkung-parabola-010",
@@ -341,7 +350,8 @@
     "subBab": "Vektor Gerak Parabola",
     "subTopic": "Vektor Gerak Parabola",
     "chapterTitle": "Kinematika",
-    "difficultyLabel": "Sedang"
+    "difficultyLabel": "Sedang",
+    "hint": "Vektor kecepatan diperoleh dari turunan pertama $\\vec{v} = \\frac{d\\vec{r}}{dt}$ dan percepatan dari $\\vec{a} = \\frac{d\\vec{v}}{dt}$. Di titik tertinggi, komponen kecepatan vertikal nol ($v_y = 0$), sehingga kecepatan peluru murni merupakan komponen horizontal ($v_x$)."
   }
 ];
 
