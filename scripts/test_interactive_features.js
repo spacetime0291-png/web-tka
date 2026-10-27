@@ -281,12 +281,12 @@ assert(app.state.setupForm.activeModalChapter === 'fis-gel', 'Direct drill sets 
 
 // Case B: Chapter Drill selects all subtopics of that chapter
 app.openDrillSetupModal('fisika', 'fis-kin', 'all', 'Kinematika');
-assert(app.state.setupForm.selectedSubTopicIds.size === 16, 'Chapter drill on Kinematika selects all 16 subtopics of Kinematika');
+assert(app.state.setupForm.selectedSubTopicIds.size === 0, 'Chapter drill defaults to 0 selected (kosong agar bisa disetting)');
 assert(app.state.setupForm.activeModalChapter === 'fis-kin', 'Chapter drill sets activeModalChapter to fis-kin');
 
 // Case C: Global Drill selects all 137 subtopics across all 14 chapters
 app.openDrillSetupModal('all', 'all', 'all', 'Semua Materi');
-assert(app.state.setupForm.selectedSubTopicIds.size === 137, 'Global drill auto-selects all 137 subtopics across 14 chapters');
+assert(app.state.setupForm.selectedSubTopicIds.size === 0, 'Global drill defaults to 0 selected (kosong agar bisa disetting)');
 
 // Case D: Zero-Count State handling
 app.state.setupForm.selectedSubTopicIds = new Set();

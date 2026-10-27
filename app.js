@@ -441,7 +441,7 @@ function getFilteredQuestions(filter = {}) {
 if (typeof document !== 'undefined') {
   document.addEventListener('DOMContentLoaded', () => {
     initTheme();
-    state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
+    state.setupForm.selectedSubTopicIds = new Set();
     renderSyllabusHub();
     updateGlobalCounters();
     bindGlobalEvents();
@@ -1486,20 +1486,18 @@ function renderModalLevel4SubTopics() {
                    onchange="toggleSetupSubTopic('${sub.id}', this.checked)" 
                    onclick="event.stopPropagation()"
                    title="Pilih sub-bab ${escapeHtml(sub.title)}">
-            <div class="modal-subtopic-name-wrap">
-              <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '600' : '500'};">${escapeHtml(sub.title)}</span>
-              ${hasIndicators ? `
-                <button type="button" class="subtopic-info-btn ${isInfoExpanded ? 'active' : ''}" 
-                        id="modal-infobtn-${sub.id}"
-                        onclick="toggleSubTopicInfo('${sub.id}', event)" 
-                        aria-expanded="${isInfoExpanded ? 'true' : 'false'}"
-                        title="${isInfoExpanded ? 'Sembunyikan penjelasan' : 'Lihat penjelasan sub-bab'}">
-                  <i class="fa-solid fa-circle-info"></i>
-                </button>
-              ` : ''}
-            </div>
+            <span class="modal-subtopic-name" style="font-weight: ${isChecked ? '600' : '500'};">${escapeHtml(sub.title)}</span>
           </div>
           <div class="modal-subtopic-right">
+            ${hasIndicators ? `
+              <button type="button" class="subtopic-info-btn ${isInfoExpanded ? 'active' : ''}" 
+                      id="modal-infobtn-${sub.id}"
+                      onclick="toggleSubTopicInfo('${sub.id}', event)" 
+                      aria-expanded="${isInfoExpanded ? 'true' : 'false'}"
+                      title="${isInfoExpanded ? 'Sembunyikan penjelasan' : 'Lihat penjelasan sub-bab'}">
+                <i class="fa-solid fa-circle-info"></i>
+              </button>
+            ` : ''}
             <span class="subtopic-count-pill">${subQuestions.length} Soal</span>
           </div>
         </div>
@@ -1733,13 +1731,14 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
   state.setupForm.scopeTitle = scopeTitle;
   state.setupForm.isProgressive = false;
   state.setupForm.wrongOnly = false;
+  state.setupForm.expandedInfoSubTopicIds = new Set();
 
   // Multi-select subTopic selection mapping & 4-level navigation synchronization
   if (typeof subTopicId === 'string' && subTopicId.startsWith('subchapter:')) {
     const scId = subTopicId.replace('subchapter:', '');
     const foundSc = findSubChapterById(scId);
     if (foundSc) {
-      state.setupForm.selectedSubTopicIds = new Set(foundSc.subChapter.subTopics.map(s => s.id));
+      state.setupForm.selectedSubTopicIds = new Set();
       state.setupForm.activeModalPillar = foundSc.pillar.id;
       state.setupForm.activeModalChapter = foundSc.chapter.id;
       state.setupForm.activeModalSubChapterId = foundSc.subChapter.id;
@@ -1755,8 +1754,6 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
       state.setupForm.selectedSubTopicIds = new Set([subTopicId]);
     }
   } else if (chapterId !== 'all') {
-    const ch = findChapterById(chapterId);
-    state.setupForm.selectedSubTopicIds = ch ? new Set(ch.subTopics.map(s => s.id)) : new Set(getAllSubTopicIds());
     const found = findChapterWithPillar(chapterId);
     if (found) {
       state.setupForm.activeModalPillar = found.pillar.id;
@@ -1765,15 +1762,10 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
         state.setupForm.activeModalSubChapterId = found.chapter.subChapters[0].id;
       }
     }
+    state.setupForm.selectedSubTopicIds = new Set();
   } else if (subject !== 'all') {
     const pillar = window.SYLLABUS_DATA.pillars.find(p => p.id === subject);
-    const pSubIds = [];
-    if (pillar && Array.isArray(pillar.chapters)) {
-      pillar.chapters.forEach(ch => {
-        (ch.subTopics || []).forEach(s => pSubIds.push(s.id));
-      });
-    }
-    state.setupForm.selectedSubTopicIds = new Set(pSubIds);
+    state.setupForm.selectedSubTopicIds = new Set();
     state.setupForm.activeModalPillar = subject;
     if (pillar && pillar.chapters.length > 0) {
       state.setupForm.activeModalChapter = pillar.chapters[0].id;
@@ -1782,8 +1774,8 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
       }
     }
   } else {
-    // Default to all subtopics across all chapters
-    state.setupForm.selectedSubTopicIds = new Set(getAllSubTopicIds());
+    // Default: Semua sub-bab kosong agar pengguna bisa leluasa men-setting dari awal
+    state.setupForm.selectedSubTopicIds = new Set();
     state.setupForm.activeModalPillar = 'fisika';
     state.setupForm.activeModalChapter = 'fis-kin';
     state.setupForm.activeModalSubChapterId = 'fis-kin-ukur';
