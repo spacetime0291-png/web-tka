@@ -78,7 +78,11 @@ const mockElements = {
   headerProgressFill: { style: {} },
   btnHint: { classList: { _c: new Set(), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} } },
   hintAccordion: { classList: { _c: new Set(['hidden']), add(c){this._c.add(c);}, remove(c){this._c.delete(c);}, contains(c){return this._c.has(c);} }, scrollIntoView() {} },
-  hintContent: { innerHTML: '' }
+  hintContent: { innerHTML: '' },
+  chkShuffleQuestions: { checked: true },
+  chkInterleaveTopics: { checked: true },
+  chkShuffleOptions: { checked: true },
+  rowInterleaveTopics: { style: {} }
 };
 
 global.document = {
@@ -634,6 +638,92 @@ app.state.sessionMode = 'ujian';
 app.state.isReviewMode = false;
 app.toggleHintAccordion();
 assert(app.state.hintOpen[0] === false, 'In exam mode, toggleHintAccordion does not open hint');
+
+console.log('\n--- TEST GROUP 12: INTERLEAVED TOPIC ROTATION SYSTEM ---');
+// 1. DOM & Export verification
+assert(indexHtmlContent.includes('id="rowInterleaveTopics"'),
+  'index.html contains #rowInterleaveTopics toggle container');
+assert(indexHtmlContent.includes('id="chkInterleaveTopics"'),
+  'index.html contains #chkInterleaveTopics checkbox');
+assert(typeof app.balanceAndInterleaveQuestions === 'function',
+  'app.balanceAndInterleaveQuestions is defined and exported');
+assert(typeof app.toggleSetupCheckbox === 'function',
+  'app.toggleSetupCheckbox is defined and exported');
+
+// 2. Checkbox toggle functionality
+mockElements.chkInterleaveTopics.checked = true;
+app.state.setupForm.interleaveTopics = true;
+app.toggleSetupCheckbox('chkInterleaveTopics');
+assert(app.state.setupForm.interleaveTopics === false,
+  'toggleSetupCheckbox unchecks interleaveTopics when called');
+assert(mockElements.chkInterleaveTopics.checked === false,
+  'mock checkbox state updated to false');
+app.toggleSetupCheckbox('chkInterleaveTopics');
+assert(app.state.setupForm.interleaveTopics === true,
+  'toggleSetupCheckbox re-enables interleaveTopics when clicked again');
+
+// 3. Multi-chapter interleaving and balanced distribution
+const mockCrossChapterPool = [
+  { id: 'k1', chapterId: 'fis-kin', subTopicId: 'glb' },
+  { id: 'k2', chapterId: 'fis-kin', subTopicId: 'glb' },
+  { id: 'k3', chapterId: 'fis-kin', subTopicId: 'glbb' },
+  { id: 'k4', chapterId: 'fis-kin', subTopicId: 'glbb' },
+  { id: 'd1', chapterId: 'fis-din', subTopicId: 'hukum-newton' },
+  { id: 'd2', chapterId: 'fis-din', subTopicId: 'hukum-newton' },
+  { id: 'd3', chapterId: 'fis-din', subTopicId: 'gaya-gesek' },
+  { id: 'd4', chapterId: 'fis-din', subTopicId: 'gaya-gesek' }
+];
+
+const crossResult = app.balanceAndInterleaveQuestions(mockCrossChapterPool);
+assert(crossResult.length === 8, 'balanceAndInterleaveQuestions preserves all 8 questions');
+let hasConsecutiveSameChapter = false;
+for (let i = 0; i < crossResult.length - 1; i++) {
+  if (crossResult[i].chapterId === crossResult[i + 1].chapterId) {
+    hasConsecutiveSameChapter = true;
+    break;
+  }
+}
+assert(!hasConsecutiveSameChapter, 'Cross-chapter result alternates chapters between every consecutive question');
+
+// 4. Single-chapter multi-subtopic interleaving
+const mockSingleChapterPool = [
+  { id: 's1', chapterId: 'fis-kin', subTopicId: 'sub-a' },
+  { id: 's2', chapterId: 'fis-kin', subTopicId: 'sub-a' },
+  { id: 's3', chapterId: 'fis-kin', subTopicId: 'sub-b' },
+  { id: 's4', chapterId: 'fis-kin', subTopicId: 'sub-b' },
+  { id: 's5', chapterId: 'fis-kin', subTopicId: 'sub-c' },
+  { id: 's6', chapterId: 'fis-kin', subTopicId: 'sub-c' }
+];
+
+const subTopicResult = app.balanceAndInterleaveQuestions(mockSingleChapterPool);
+assert(subTopicResult.length === 6, 'balanceAndInterleaveQuestions preserves all 6 questions');
+let hasConsecutiveSameSubTopic = false;
+for (let i = 0; i < subTopicResult.length - 1; i++) {
+  if (subTopicResult[i].subTopicId === subTopicResult[i + 1].subTopicId) {
+    hasConsecutiveSameSubTopic = true;
+    break;
+  }
+}
+assert(!hasConsecutiveSameSubTopic, 'Single-chapter result alternates subtopics between every consecutive question');
+
+// 5. Clamping and balanced quota allocation
+const sliced6 = subTopicResult.slice(0, 3);
+const countsBySub = {};
+sliced6.forEach(q => { countsBySub[q.subTopicId] = (countsBySub[q.subTopicId] || 0) + 1; });
+assert(Object.keys(countsBySub).length === 3 && Object.values(countsBySub).every(c => c === 1),
+  'First 3 questions contain exactly 1 from each of the 3 subtopics (balanced quota)');
+
+// 6. UI Sync: Dimming toggle when shuffle questions is turned off
+mockElements.chkShuffleQuestions.checked = true;
+app.state.setupForm.shuffleQuestions = true;
+app.toggleSetupCheckbox('chkShuffleQuestions');
+assert(app.state.setupForm.shuffleQuestions === false, 'toggleSetupCheckbox turned off shuffleQuestions');
+assert(mockElements.rowInterleaveTopics.style.opacity === '0.45',
+  'rowInterleaveTopics opacity dimmed to 0.45 when shuffleQuestions is disabled');
+app.toggleSetupCheckbox('chkShuffleQuestions');
+assert(app.state.setupForm.shuffleQuestions === true, 'toggleSetupCheckbox re-enabled shuffleQuestions');
+assert(mockElements.rowInterleaveTopics.style.opacity === '1',
+  'rowInterleaveTopics opacity restored to 1 when shuffleQuestions is enabled');
 
 console.log('\n----------------------------------------------------');
 console.log(` RESULT: ${passedTests} / ${totalTests} tests passed.`);

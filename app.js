@@ -52,6 +52,7 @@ const state = {
     timerMode: 'countdown',
     questionCount: 10,
     shuffleQuestions: true,
+    interleaveTopics: true,
     shuffleOptions: true
   }
 };
@@ -1110,12 +1111,18 @@ function renderChapterCard(chapter, pillarId) {
                       <span class="subchapter-title">${sc.title}</span>
                       <span class="subchapter-badge">${scQuestions.length} Soal</span>
                     </div>
-                    <div class="subchapter-header-right">
+                    <div class="subchapter-header-right" style="display: flex; align-items: center; gap: 6px;">
+                      <button type="button" class="tactile-btn tactile-btn-compact tactile-btn-secondary" 
+                              onclick="event.stopPropagation(); openFormulaModal('${sc.id}')"
+                              title="Buka Rangkuman Rumus ${sc.title}">
+                        <i class="fa-solid fa-book-open mr-1 text-blue-600"></i>
+                        <span>Rumus</span>
+                      </button>
                       <button type="button" class="tactile-btn tactile-btn-compact tactile-btn-secondary" 
                               onclick="event.stopPropagation(); openDrillSetupModal('${pillarId}', '${chapter.id}', 'subchapter:${sc.id}', '${sc.title}')"
                               title="Drill Bab Kecil ${sc.title}">
                         <i class="fa-solid fa-play mr-1"></i>
-                        <span>Drill Bab Kecil</span>
+                        <span>Drill</span>
                       </button>
                     </div>
                   </div>
@@ -1803,6 +1810,7 @@ function openDrillSetupModal(subject = 'all', chapterId = 'all', subTopicId = 'a
 
   // Refresh active pills styling and question count preview
   syncSetupPillStyles();
+  syncSetupTogglesUI();
   updateSetupPreviewCount();
 
   // Check for in-progress session matching this material
@@ -2121,13 +2129,106 @@ function updateReactiveTimerEstimation() {
   }
 }
 
+function syncSetupTogglesUI() {
+  const chkShuffleQ = document.getElementById('chkShuffleQuestions');
+  if (chkShuffleQ) chkShuffleQ.checked = Boolean(state.setupForm.shuffleQuestions);
+
+  const chkInterleave = document.getElementById('chkInterleaveTopics');
+  if (chkInterleave) chkInterleave.checked = Boolean(state.setupForm.interleaveTopics);
+
+  const chkShuffleOpt = document.getElementById('chkShuffleOptions');
+  if (chkShuffleOpt) chkShuffleOpt.checked = Boolean(state.setupForm.shuffleOptions);
+
+  const rowInterleave = document.getElementById('rowInterleaveTopics');
+  if (rowInterleave) {
+    rowInterleave.style.opacity = state.setupForm.shuffleQuestions ? '1' : '0.45';
+    rowInterleave.style.pointerEvents = state.setupForm.shuffleQuestions ? 'auto' : 'none';
+  }
+}
+
 function toggleSetupCheckbox(id) {
   const chk = document.getElementById(id);
   if (chk) {
     chk.checked = !chk.checked;
     if (id === 'chkShuffleQuestions') state.setupForm.shuffleQuestions = chk.checked;
+    if (id === 'chkInterleaveTopics') state.setupForm.interleaveTopics = chk.checked;
     if (id === 'chkShuffleOptions') state.setupForm.shuffleOptions = chk.checked;
+    syncSetupTogglesUI();
   }
+}
+
+/**
+ * Mengelompokkan dan merotasi urutan soal secara interleaved (bergantian topik)
+ * sehingga topik terdistribusi merata dan berganti di setiap nomor soal.
+ * Mendukung rotasi seimbang di tingkat Bab dan Sub-Bab.
+ * @param {Array} questions - Kumpulan soal yang telah difilter
+ * @returns {Array} Kumpulan soal yang telah dirotasi secara seimbang
+ */
+function balanceAndInterleaveQuestions(questions) {
+  if (!Array.isArray(questions) || questions.length <= 1) {
+    return questions;
+  }
+
+  const getChapterKey = q => q.chapterId || q.bab || 'ch_default';
+  const getSubTopicKey = q => q.subTopicId || q.subBab || q.subTopicSlug || q.subTopic || q.subChapterId || 'sub_default';
+
+  // 1. Kelompokkan soal per Bab, lalu per Sub-Bab di dalam Bab tersebut
+  const chapterMap = new Map();
+  questions.forEach(q => {
+    const chKey = getChapterKey(q);
+    if (!chapterMap.has(chKey)) {
+      chapterMap.set(chKey, new Map());
+    }
+    const subMap = chapterMap.get(chKey);
+    const subKey = getSubTopicKey(q);
+    if (!subMap.has(subKey)) {
+      subMap.set(subKey, []);
+    }
+    subMap.get(subKey).push(q);
+  });
+
+  // 2. Acak urutan soal di dalam masing-masing sub-bab
+  chapterMap.forEach(subMap => {
+    subMap.forEach(qList => {
+      qList.sort(() => Math.random() - 0.5);
+    });
+  });
+
+  // 3. Untuk setiap bab, buat antrean bergiliran dari sub-babnya
+  const chapterQueues = [];
+  chapterMap.forEach((subMap, chKey) => {
+    const subQueues = Array.from(subMap.values()).sort(() => Math.random() - 0.5);
+    const chapterStream = [];
+    let hasMoreSub = true;
+    while (hasMoreSub) {
+      hasMoreSub = false;
+      for (const sq of subQueues) {
+        if (sq.length > 0) {
+          chapterStream.push(sq.shift());
+          if (sq.length > 0) hasMoreSub = true;
+        }
+      }
+    }
+    chapterQueues.push({ chapterKey: chKey, queue: chapterStream });
+  });
+
+  // Acak urutan bab awal agar bab pembuka tidak selalu statis
+  chapterQueues.sort(() => Math.random() - 0.5);
+
+  // 4. Rotasi bergantian antar-bab (Round-Robin Interleaving)
+  const result = [];
+  let hasMoreCh = true;
+  while (hasMoreCh) {
+    hasMoreCh = false;
+    for (const cq of chapterQueues) {
+      if (cq.queue.length > 0) {
+        result.push(cq.queue.shift());
+        if (cq.queue.length > 0) hasMoreCh = true;
+      }
+    }
+  }
+
+  return result;
 }
 
 // Start Session from Configurator
@@ -2142,9 +2243,23 @@ function startConfiguredDrillSession() {
   // Deep clone questions so shuffling options does not mutate original data bank
   let sessionPool = JSON.parse(JSON.stringify(matches));
 
-  // Acak urutan soal jika opsi shuffle aktif dan bukan mode progresif murni
+  // Acak atau rotasikan urutan soal jika opsi shuffle aktif
   if (state.setupForm.shuffleQuestions && !state.setupForm.isProgressive) {
-    sessionPool.sort(() => Math.random() - 0.5);
+    if (state.setupForm.interleaveTopics) {
+      sessionPool = balanceAndInterleaveQuestions(sessionPool);
+    } else {
+      sessionPool.sort(() => Math.random() - 0.5);
+    }
+  } else if (state.setupForm.isProgressive && state.setupForm.interleaveTopics) {
+    // Pada mode progresif, rotasikan topik secara seimbang di dalam tiap jenjang kesulitan
+    const mudahList = sessionPool.filter(q => q.difficulty === 'mudah');
+    const sedangList = sessionPool.filter(q => q.difficulty === 'sedang');
+    const hotsList = sessionPool.filter(q => q.difficulty === 'hots');
+    sessionPool = [
+      ...balanceAndInterleaveQuestions(mudahList),
+      ...balanceAndInterleaveQuestions(sedangList),
+      ...balanceAndInterleaveQuestions(hotsList)
+    ];
   }
 
   // Terapkan batasan jumlah soal
@@ -3058,6 +3173,7 @@ function bindGlobalEvents() {
         if (e.target === el) {
           if (id === 'completionModal') closeCompletionModal();
           else if (id === 'drillSetupModal') closeDrillSetupModal();
+          else if (id === 'formulaModal') closeFormulaModal();
         }
       });
     }
@@ -3067,6 +3183,235 @@ function bindGlobalEvents() {
   if (mobileDrawerOverlay) {
     mobileDrawerOverlay.addEventListener('click', closeMobileDrawer);
   }
+}
+
+// ============================================================================
+// FORMULA BANK & RANGKUMAN MATERI CONTROLLER
+// ============================================================================
+function openFormulaModal(targetSubChapterId) {
+  const modal = document.getElementById('formulaModal');
+  const select = document.getElementById('formulaSubChapterSelect');
+  if (!modal) return;
+
+  // Populate sub-chapter select dropdown if not already populated
+  if (select && window.SYLLABUS_DATA && window.SYLLABUS_DATA.pillars) {
+    let currentVal = targetSubChapterId || select.value;
+    select.innerHTML = window.SYLLABUS_DATA.pillars.map(pillar => {
+      const options = [];
+      (pillar.chapters || []).forEach(ch => {
+        (ch.subChapters || []).forEach(sc => {
+          options.push(`<option value="${sc.id}">${pillar.name}: ${sc.title}</option>`);
+        });
+      });
+      return `<optgroup label="${pillar.name}">${options.join('')}</optgroup>`;
+    }).join('');
+
+    if (currentVal && window.FORMULA_BANK && window.FORMULA_BANK[currentVal]) {
+      select.value = currentVal;
+    } else {
+      currentVal = select.options[0] ? select.options[0].value : 'mat-alj-matriks';
+      select.value = currentVal;
+    }
+    renderFormulaModalContent(currentVal);
+  } else if (targetSubChapterId) {
+    renderFormulaModalContent(targetSubChapterId);
+  }
+
+  modal.classList.add('open');
+  triggerMathTypeset();
+}
+
+function closeFormulaModal() {
+  const modal = document.getElementById('formulaModal');
+  if (modal) modal.classList.remove('open');
+}
+
+function renderFormulaModalContent(subChapterId) {
+  const body = document.getElementById('formulaModalBody');
+  const title = document.getElementById('formulaModalTitle');
+  if (!body) return;
+
+  const data = (window.FORMULA_BANK && window.FORMULA_BANK[subChapterId]) ? window.FORMULA_BANK[subChapterId] : null;
+
+  if (!data) {
+    body.innerHTML = `
+      <div style="padding: 30px; text-align: center; color: var(--ink-muted);">
+        <i class="fa-solid fa-triangle-exclamation text-2xl text-amber-500 mb-2"></i>
+        <p>Rangkuman rumus untuk bab ini belum dimuat atau sedang disiapkan.</p>
+      </div>
+    `;
+    return;
+  }
+
+  if (title) {
+    title.textContent = `${data.title} (${data.pillarTitle || ''})`;
+  }
+
+  const formulasHtml = (data.formulas || []).map((f, idx) => {
+    const varsRows = (f.variables || []).map(v => `
+      <tr>
+        <td style="font-family: 'JetBrains Mono', monospace; font-weight: 600; width: 30%;">${v.symbol}</td>
+        <td>${v.desc}</td>
+      </tr>
+    `).join('');
+
+    const stepsHtml = (f.example && Array.isArray(f.example.steps)) ? f.example.steps.map(st => `
+      <li>${st}</li>
+    `).join('') : '';
+
+    return `
+      <div class="formula-card-item" id="f-card-${f.id || idx}">
+        <div class="formula-item-header">
+          <span class="formula-code-badge">${f.code || `R-${idx+1}`}</span>
+          <span class="formula-item-title">${f.title}</span>
+        </div>
+
+        <div class="formula-latex-box">
+          $${f.formulaLatex}$
+        </div>
+
+        ${f.conditions ? `
+          <div class="formula-callout-conditions">
+            <strong><i class="fa-solid fa-circle-check text-blue-600 mr-1"></i> Syarat & Kondisi:</strong> ${f.conditions}
+          </div>
+        ` : ''}
+
+        ${f.traps ? `
+          <div class="formula-callout-traps">
+            <strong><i class="fa-solid fa-triangle-exclamation mr-1"></i> Jebakan TKA:</strong> ${f.traps}
+          </div>
+        ` : ''}
+
+        ${varsRows ? `
+          <div class="formula-table-wrap">
+            <table class="formula-vars-table">
+              <thead>
+                <tr>
+                  <th>Simbol</th>
+                  <th>Keterangan Besaran / Satuan</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${varsRows}
+              </tbody>
+            </table>
+          </div>
+        ` : ''}
+
+        ${f.example ? `
+          <div class="formula-example-card">
+            <div class="formula-example-header">
+              <span class="formula-example-badge"><i class="fa-solid fa-pen-to-square mr-1"></i> CONTOH SOAL</span>
+              <span style="font-size: 0.75rem; color: var(--ink-muted); font-family: 'JetBrains Mono', monospace;">Tipe TKA / UTBK</span>
+            </div>
+            <div class="formula-example-q">${f.example.question}</div>
+            
+            <details style="margin-top: 8px;" open>
+              <summary style="cursor: pointer; font-size: 0.8rem; font-weight: 600; color: #2563EB; margin-bottom: 6px;">
+                <i class="fa-solid fa-lightbulb mr-1"></i> Pembahasan Terpandu (Step-by-Step):
+              </summary>
+              <ol class="formula-steps-list">
+                ${stepsHtml}
+              </ol>
+              <div style="margin-top: 8px;">
+                <span class="formula-answer-pill">
+                  <i class="fa-solid fa-check mr-1"></i> Jawaban: ${f.example.answer}
+                </span>
+              </div>
+            </details>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+
+  const navPills = (data.formulas || []).map((f, idx) => `
+    <button type="button" class="formula-nav-pill" onclick="document.getElementById('f-card-${f.id || idx}')?.scrollIntoView({ behavior: 'smooth', block: 'center' });">
+      ${f.code || `R-${idx+1}`} ${f.title.substring(0, 18)}...
+    </button>
+  `).join('');
+
+  body.innerHTML = `
+    <div class="formula-hero-card">
+      <div style="display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap;">
+        <span class="tactile-badge badge-neutral">${data.pillarTitle}</span>
+        <span class="tactile-badge badge-neutral">${data.chapterTitle}</span>
+        <span class="tactile-badge badge-math">${(data.formulas || []).length} Rumus Inti</span>
+      </div>
+      <h2 class="formula-hero-title">${data.title}</h2>
+      <p class="formula-hero-desc">${data.summary || ''}</p>
+      
+      <div style="font-size: 0.8rem; font-weight: 600; color: var(--ink); margin-top: 8px;">
+        <i class="fa-solid fa-list-ol mr-1 text-blue-600"></i> Navigasi Rumus Bab Ini:
+      </div>
+      <div class="formula-nav-pills">
+        ${navPills}
+      </div>
+    </div>
+
+    <div class="formula-cards-wrapper">
+      ${formulasHtml}
+    </div>
+  `;
+
+  triggerMathTypeset();
+}
+
+function printFormulaSummary() {
+  const body = document.getElementById('formulaModalBody');
+  const title = document.getElementById('formulaModalTitle') ? document.getElementById('formulaModalTitle').textContent : 'Rangkuman Rumus TKA';
+  if (!body) return;
+
+  const printWindow = window.open('', '_blank', 'width=900,height=700');
+  if (!printWindow) {
+    alert("Mohon izinkan pop-up browser untuk mencetak rangkuman rumus.");
+    return;
+  }
+
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>${title}</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+      <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; padding: 24px; color: #111; }
+        .formula-card-item { border: 1px solid #ccc; border-radius: 6px; padding: 14px; margin-bottom: 18px; page-break-inside: avoid; }
+        .formula-latex-box { background: #f8f8f8; padding: 10px; border-radius: 4px; text-align: center; margin: 10px 0; }
+        .formula-vars-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
+        .formula-vars-table th, .formula-vars-table td { border: 1px solid #ddd; padding: 5px 8px; text-align: left; }
+        .formula-callout-conditions, .formula-callout-traps { padding: 6px 10px; font-size: 13px; margin: 6px 0; border-left: 3px solid #2563EB; background: #f0f4ff; }
+        .formula-example-card { border: 1px dashed #aaa; padding: 10px; background: #fafafa; border-radius: 4px; margin-top: 8px; }
+        .formula-answer-pill { display: inline-block; padding: 3px 8px; background: #e6f4ea; color: #137333; font-weight: bold; border-radius: 3px; }
+        @media print {
+          body { padding: 0; }
+          button { display: none !important; }
+        }
+      </style>
+    </head>
+    <body>
+      <h1>${title}</h1>
+      <div>${body.innerHTML}</div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          if (window.renderMathInElement) {
+            renderMathInElement(document.body, {
+              delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+              ],
+              throwOnError: false
+            });
+          }
+          setTimeout(() => { window.print(); }, 500);
+        });
+      </script>
+    </body>
+    </html>
+  `);
+  printWindow.document.close();
 }
 
 // Global and Module Exports for Testing & Integration
@@ -3127,10 +3472,24 @@ if (typeof window !== 'undefined') {
   window.checkActiveSessionResume = checkActiveSessionResume;
   window.renderChapterCard = renderChapterCard;
   window.toggleSubTopicInfo = toggleSubTopicInfo;
+  window.toggleSetupCheckbox = toggleSetupCheckbox;
+  window.syncSetupTogglesUI = syncSetupTogglesUI;
+  window.balanceAndInterleaveQuestions = balanceAndInterleaveQuestions;
+  window.openFormulaModal = openFormulaModal;
+  window.closeFormulaModal = closeFormulaModal;
+  window.renderFormulaModalContent = renderFormulaModalContent;
+  window.printFormulaSummary = printFormulaSummary;
 }
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
+    openFormulaModal,
+    closeFormulaModal,
+    renderFormulaModalContent,
+    printFormulaSummary,
     toggleSubTopicInfo,
+    toggleSetupCheckbox,
+    syncSetupTogglesUI,
+    balanceAndInterleaveQuestions,
     getFilteredQuestions,
     state,
     getAllSubTopicIds,

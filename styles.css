@@ -3363,3 +3363,248 @@ h4, h5, h6 {
 
 
 
+
+
+/* ==========================================================================
+   FORMULA BANK & CHEAT SHEET MODAL (TACTILE NEO-BRUTALIST SYSTEM)
+   ========================================================================== */
+.badge-formula-header {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #3B82F6;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.formula-modal-toolbar {
+  padding: 10px 20px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.formula-selector-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.formula-select-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.formula-content-scroll {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(85vh - 120px);
+}
+
+.formula-hero-card {
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  background: var(--bg);
+  box-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+.formula-hero-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.formula-hero-desc {
+  font-size: 0.86rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.formula-nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.formula-nav-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.formula-nav-pill:hover {
+  background: #3B82F6;
+  color: #FFFFFF;
+}
+
+.formula-card-item {
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: var(--card-bg);
+  box-shadow: 3px 3px 0 var(--shadow-color);
+  transition: transform 0.15s ease;
+}
+
+.formula-card-item:hover {
+  transform: translateY(-1px);
+}
+
+.formula-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.formula-code-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.formula-item-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.formula-latex-box {
+  background: var(--bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.formula-table-wrap {
+  margin: 12px 0;
+  overflow-x: auto;
+}
+
+.formula-vars-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.formula-vars-table th, .formula-vars-table td {
+  border: 1px solid rgba(24, 24, 27, 0.2);
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.formula-vars-table th {
+  background: var(--bg);
+  font-weight: 600;
+}
+
+.formula-callout-conditions {
+  background: var(--card-bg);
+  border-left: 3.5px solid #3B82F6;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.82rem;
+  margin-bottom: 8px;
+}
+
+.formula-callout-traps {
+  background: var(--ragu-bg);
+  border-left: 3.5px solid var(--ragu);
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.82rem;
+  margin-bottom: 14px;
+  color: #713F12;
+}
+
+[data-theme="dark"] .formula-callout-traps {
+  color: #FEF08A;
+}
+
+.formula-example-card {
+  border: 1.5px dashed var(--ink);
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: var(--bg);
+  margin-top: 10px;
+}
+
+.formula-example-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.formula-example-badge {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #16A34A;
+  color: #FFFFFF;
+}
+
+.formula-example-q {
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.formula-steps-list {
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.formula-steps-list li {
+  margin-bottom: 4px;
+}
+
+.formula-answer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--correct-bg);
+  color: var(--correct);
+  font-weight: 600;
+  font-size: 0.82rem;
+  border: 1px solid var(--correct);
+}
